@@ -1,0 +1,145 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{poulin2011quantum}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7575941816e4f25600383f3d6cf5051f}{%
+           family={Poulin},
+           family_i={P\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+        {{hash=6538192e643c0c7f2ae5e68c8135fb67}{%
+           family={Qarry},
+           family_i={Q\bibinitperiod},
+           given={Angie},
+           given_i={A\bibinitperiod}}}%
+        {{hash=5f94d09d4fec38411fa2280fd855bd45}{%
+           family={Somma},
+           family_i={S\bibinitperiod},
+           given={Rolando},
+           given_i={R\bibinitperiod}}}%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           family_i={V\bibinitperiod},
+           given={Frank},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{0d866ac8909acce82664a13ee2f670ad}
+      \strng{fullhash}{045e59d82f707e4711feb8c4b54460ad}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{17}
+      \field{title}{Quantum simulation of time-dependent Hamiltonians and the convenient illusion of Hilbert space}
+      \field{volume}{106}
+      \field{year}{2011}
+      \field{pages}{170501}
+      \range{pages}{1}
+    \endentry
+    \entry{white1992density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d77dc1d7b121038d04902228d0ab5931}
+      \strng{fullhash}{d77dc1d7b121038d04902228d0ab5931}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{19}
+      \field{title}{Density matrix formulation for quantum renormalization groups}
+      \field{volume}{69}
+      \field{year}{1992}
+      \field{pages}{2863}
+      \range{pages}{1}
+    \endentry
+    \entry{white1992real}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a6b4f8ea7e4a7c508db297f7bf4863d4}{%
+           family={Noack},
+           family_i={N\bibinitperiod},
+           given={RM},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{ac164437f88282aed8f3dae01782c53f}
+      \strng{fullhash}{ac164437f88282aed8f3dae01782c53f}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{24}
+      \field{title}{Real-space quantum renormalization groups}
+      \field{volume}{68}
+      \field{year}{1992}
+      \field{pages}{3487}
+      \range{pages}{1}
+    \endentry
+    \entry{wilson1975renormalization}{article}{}
+      \name{author}{1}{}{%
+        {{hash=96151a079599629d8b921f6ab7518a2a}{%
+           family={Wilson},
+           family_i={W\bibinitperiod},
+           given={Kenneth\bibnamedelima G},
+           given_i={K\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{96151a079599629d8b921f6ab7518a2a}
+      \strng{fullhash}{96151a079599629d8b921f6ab7518a2a}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{4}
+      \field{title}{The renormalization group: Critical phenomena and the Kondo problem}
+      \field{volume}{47}
+      \field{year}{1975}
+      \field{pages}{773}
+      \range{pages}{1}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

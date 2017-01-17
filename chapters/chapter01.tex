@@ -1,7 +1,132 @@
-\section{Titel}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum. \cite{einstein1905}
+\section{Abstract}
+
+The variational method is introduced in its historical context -- that of
+interacting 1D quantum lattice systems. An overview of White's density
+matrix renormalization group \cite{white1992density} is given. Then, the
+formal connection to 2D classical lattices is made.
+
+\section{Strongly interacting 1D quantum lattice models}
+
+\subsection{The Hilbert space is enormous}
+
+Consider the problem of numerically finding the ground state $\ket{\Psi_0}$ of the
+$N$-site 1-dimensional transverse-field Ising-model, given by
+
+\begin{equation} 
+  H = -J \sum_{i = 1}^{N} \sigma_{i}^{z}\sigma_{i+1}^{z}
+  - h \sum_{i=1}^{N} \sigma_{i}^{x}
+\end{equation}
+
+The underlying Hilbert space of the system is a tensor product of the
+local Hilbert spaces $\mathcal{H}_{\text{site}}$, which are spanned by the
+states $\{\ket{\uparrow}, \ket{\downarrow}\}$. Thus, a general state of the system is a unit vector in
+a $2^N$-dimensional space.
+
+\begin{equation}
+  \ket{\Psi} = \sum_{i_1, i_2, \ldots \in \{\ket{\uparrow}, \ket{\downarrow}\}} c_{i_1, i_2, \ldots, i_N} \ket{\sigma_1} \otimes \ket{\sigma_2} \otimes \ldots \otimes \ket{\sigma_N}
+\end{equation}
+
+So, for a system with 1000 particles, the dimensionality of the Hilbert
+space comes in at about $10^301$, some 220 orders of magnitude larger than
+the number of atoms in the observable universe. As it turns out, nature is
+very well described by Hamiltonians that are local -- that do not contain
+interactions between an arbitrary number of bodies. And for these
+Hamiltonians, only an exponentially small subset of states can be explored
+in the lifetime of the universe \cite{poulin2011quantum}. That is, only
+exponentially few states are physical. \todo[inline]{Expand a bit. Refer
+back to problem of finding ground state.}
+
+
+\section{Density matrix renormalization group}
+
+The density matrix renormalization group (DMRG), introduced in 1992 by
+White \cite{white1992density}, aims to find the best approximation of
+a many-body quantum state, given that only a fixed amount of basis vectors
+is kept. This amounts to finding the best truncation
+
+\begin{equation}
+  \mathcal{H}_N \rightarrow \mathcal{H}_{\text{eff}}
+\end{equation}
+
+From the full $N$-particle Hilbert space to an effective lower dimensional
+one. This corresponds to renormalizing the Hamiltonian $H$. Before the
+DMRG paper, several methods for achieving this truncation were proposed,
+most notably Wilson's real-space renormalization group
+\cite{wilson1975renormalization}.
+
+\subsection{Real-space renormalization group}
+
+Consider the problem of finding the ground state of a many-body
+Hamiltonian $H$. A natural way of renormalizing $H$ in real-space is by
+partitioning the lattice in blocks, and writing $H$ as 
+
+\begin{equation}
+  H = H_A \otimes \ldots \otimes H_A
+\end{equation}
+
+where $H_A$ is the Hamiltonian of a block. \todo[inline]{Make figures.} The blocking procedure now
+entails finding an effective Hamiltonian $H_{A}'$ of the two-block
+Hamiltonian $H_{AA} = H_A \otimes H_A$. In numerical renormalization
+introduced by Wilson, $H_{A}'$ is formed by keeping the $m$ lowest lying
+eigenstates $\ket{\epsilon_{i}}$ of $H_{AA}$.
+
+\begin{equation}
+  H_{A}' = \sum_{i = 1}^{m} \epsilon_{i} \ket{\epsilon_{i}}\bra{\epsilon_{i}}
+ \end{equation}
+
+This is equivalent to writing
+
+\begin{equation}
+  H_{A}' = O H_{AA} O^{\dagger}
+\end{equation}
+
+With $O$ an $m \times 2^L$ matrix, with rows being the $m$ lowest-lying
+eigenvectors of $H_{AA}$, and $L$ the number of lattice sites of a block. At
+the fixed point of this iteration procedure, $H_A$ represents the hamiltonian
+of a half-infinite chain. In choosing this truncation, it is assumed that the
+low-lying eigenstates of the system in the thermodynamic limit are composed of
+low-lying eigenstates of smaller blocks. It turns out that this method gives
+poor results for many lattice systems. Following an example put forth by White
+and Noack \cite{white1992real}, we establish here an intuition why.
+
+\subsection{Single particle in a box}
+
+Consider the Hamiltonian
+
+\begin{equation} 
+  H = 2 \sum_i \ket{i}\bra{i} - \sum_{\langle i, j \rangle} \ket{i}\bra{j}
+\end{equation}
+
+Where the second summation is over nearest neighbors $\langle i,
+j \rangle$. $H$ represents the discretized version of the
+particle-in-a-box Hamiltonian, so we expect its ground state to be
+approximately a standing wave with wavelength double the box size.
+However, the blocking procedure just described tries to build the ground
+state iteratively from ground states of smaller blocks. No matter the
+amount of states kept, the final result will always incur large errors.
+
+For this simple model, White and Noack solved the problem by diagonalizing
+the Hamiltonian of a block with different boundary conditions, and
+combining the lowest eigenstates of each. Additionally, they noted that
+diagonalizing $p > 2$ blocks, and projecting out $p - 2$ blocks to arrive
+at $H_{AA}$ also gives accurate results, and that this is
+a generalization of applying multiple boundary conditions. It is
+a slightly changed version of this last method that is now known as DMRG.
+
+
+\subsection{Density matrix method}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
