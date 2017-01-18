@@ -23,11 +23,11 @@ states $\{\ket{\uparrow}, \ket{\downarrow}\}$. Thus, a general state of the syst
 a $2^N$-dimensional space.
 
 \begin{equation}
-  \ket{\Psi} = \sum_{i_1, i_2, \ldots \in \{\ket{\uparrow}, \ket{\downarrow}\}} c_{i_1, i_2, \ldots, i_N} \ket{\sigma_1} \otimes \ket{\sigma_2} \otimes \ldots \otimes \ket{\sigma_N}
+  \ket{\Psi} = \sum_{\sigma_1, \sigma_2, \ldots \in \{\ket{\uparrow}, \ket{\downarrow}\}} c_{\sigma_1, \sigma_2, \ldots, \sigma_N} \ket{\sigma_1} \otimes \ket{\sigma_2} \otimes \ldots \otimes \ket{\sigma_N}
 \end{equation}
 
 So, for a system with 1000 particles, the dimensionality of the Hilbert
-space comes in at about $10^301$, some 220 orders of magnitude larger than
+space comes in at about $10^{301}$, some 220 orders of magnitude larger than
 the number of atoms in the observable universe. As it turns out, nature is
 very well described by Hamiltonians that are local -- that do not contain
 interactions between an arbitrary number of bodies. And for these
@@ -82,12 +82,14 @@ This is equivalent to writing
 
 With $O$ an $m \times 2^L$ matrix, with rows being the $m$ lowest-lying
 eigenvectors of $H_{AA}$, and $L$ the number of lattice sites of a block. At
-the fixed point of this iteration procedure, $H_A$ represents the hamiltonian
-of a half-infinite chain. In choosing this truncation, it is assumed that the
-low-lying eigenstates of the system in the thermodynamic limit are composed of
-low-lying eigenstates of smaller blocks. It turns out that this method gives
-poor results for many lattice systems. Following an example put forth by White
-and Noack \cite{white1992real}, we establish here an intuition why.
+the fixed point of this iteration procedure, $H_A$ represents the
+hamiltonian of an infinite chain. \todo[inline]{Explain renormalization
+group idea somewhere.} In choosing this truncation, it is assumed that the
+low-lying eigenstates of the system in the thermodynamic limit are
+composed of low-lying eigenstates of smaller blocks. It turns out that
+this method gives poor results for many lattice systems. Following an
+example put forth by White and Noack \cite{white1992real}, we establish
+here an intuition why.
 
 \subsection{Single particle in a box}
 
@@ -109,20 +111,171 @@ For this simple model, White and Noack solved the problem by diagonalizing
 the Hamiltonian of a block with different boundary conditions, and
 combining the lowest eigenstates of each. Additionally, they noted that
 diagonalizing $p > 2$ blocks, and projecting out $p - 2$ blocks to arrive
-at $H_{AA}$ also gives accurate results, and that this is
-a generalization of applying multiple boundary conditions. It is
-a slightly changed version of this last method that is now known as DMRG.
+at $H_{AA}$ also gives accurate results, and that this is a generalization
+of applying multiple boundary conditions. In the limit $p \to \infty$
+this method becomes exact, since we then find exactly the correct
+contribution of $H_{AA}$ to the final ground state. It is a slightly
+changed version of this last method that is now known as DMRG.
 
 
 \subsection{Density matrix method}
 
+The fundamental idea of the density matrix renormalization group method
+rests on the fact that if we know the state of the final lattice, we can find the $m$
+most important states for $H_{AA}$ by diagonalizing the reduced density
+matrix $\rho_{AA}$ of the two blocks.
+
+To see this, suppose, for simplicity, that the entire lattice is in a pure
+state\footnote{For a proof for a mixed state, see \cite{noack1999workshop}} $\ket{\Psi} = \sum c_{b, e} \ket{b} \ket{e}$, with $b = 1, \ldots, l$ the
+states of $H_{AA}$ and $e = 1, \ldots, N_{\text{env}}$ the environment states. The
+reduced density matrix is given by
+
+\begin{equation}
+  \rho_{AA} = \sum_{e} \ket{\Psi} \bra{\Psi} = \sum_{b, b'} c_{b, e} c_{b', e} \ket{b} \bra{b'}
+\end{equation}
+
+We now wish to find a set of orthonormal states $\ket{\lambda} \in \mathcal{H}_{AA}$,
+$\lambda = 1, \ldots, m$ with $m < l$, such that the quadratic norm
+
+\begin{equation}\label{eq:quadratic_norm}
+  \Vert \ket{\Psi} - \ket{\widetilde{\Psi}} \Vert = 1 - 2 \sum_{\lambda, b, e} a_{\lambda, e} c_{b, e} u_{\lambda, b} + \sum_{\lambda, e} a_{\lambda, e}^2
+\end{equation}
+
+is minimized. Here,
+
+\begin{equation}
+  \ket{\widetilde{\Psi}} = \sum_{\lambda = 1}^{m} \sum_{e = 1}^{N_{\text{env}}} a_{\lambda, e} \ket{\lambda} \ket{e}
+\end{equation}
+
+is the representation of $\ket{\Psi}$ given the constraint that we can only use
+$m$ states from $\mathcal{H}_{AA}$. The $u_{\lambda, b}$ are given by
+
+\begin{equation}
+  \lambda = \sum_{b} u_{\lambda, b} \ket{b}
+\end{equation}
+
+We need to minimize \eqref{eq:quadratic_norm} with respect to $a_{\lambda, e}$
+and $u_{\lambda, b}$. Setting the derivative with respect to $a_{\lambda, e}$ equal to 0 yields
+
+\begin{equation}
+  -2 \sum_{\lambda, b, e} c_{b, e} u_{\lambda, b} + 2 \sum_{\lambda, e} a_{\lambda, e} = 0
+\end{equation}
+
+So we see that $a_{\lambda, e} = \sum_{b} c_{b, e} u_{\lambda, b}$, and we are left to minimize
+
+\begin{equation}
+  1 - \sum_{\lambda, b, b'} u_{\lambda, b} (\rho_{AA})_{b, b'} u_{\lambda, b'}
+\end{equation}
+
+with respect to $u_{\lambda, b}$. But this is equal to
+
+\begin{equation}
+  1 - \sum_{\lambda = 1}^{m} \bra{\lambda} \rho_{AA} \ket{\lambda}
+\end{equation}
+
+and because the eigenvalues of $\rho_{AA}$ represent probabilities and are thus
+non-negative, this is clearly minimal when $\ket{\lambda}$ are the $m$
+eigenvectors of $\rho_{AA}$ corresponding to the largest eigenvalues. This minimal value is
+
+\begin{equation}\label{eq:truncation_error}
+  1 - \sum_{\lambda = 1}^{m} w_{\lambda}
+\end{equation}
+
+with $w_{\lambda}$ the eigenvalues of the reduced density matrix.
+\eqref{eq:truncation_error} is called the truncation error or residual
+probability, and quantifies the incurred error when taking a number $m < l$ states to
+represent $\mathcal{H}_{AA}$.
+
+\todo[inline]{Look ahead to SVD}
+
+We have proven that the optimal (in the sense that $\Vert \ket{\Psi}
+- \ket{\widetilde{\Psi}} \Vert$ is minimized.\footnote{There are several other
+arguments for why these states are optimal, for example, they minimize the
+error in expectation values $\langle A \rangle$ of operators. For an overview,
+see \cite{schollwock2005density}.}) states to keep for a subsystem are the
+states given by the reduced density matrix, obtained by tracing out the entire
+lattice in the ground state (or some other target state). The problem, of
+course, is that we do not know the state of the entire lattice, since that is
+exactly what we're trying to approximate. 
+
+Instead then, we should try to calculate the reduced density matrix of the
+system embedded in of \textit{some} larger environment. The combination of
+the system block and this environment block is usually called
+\textit{superblock}. Analogous to how White and Noack solved the particle
+in a box problem, we could calculate the ground state of $p > 2$ blocks,
+and trace out all but 2, doubling our block size each iteration. In
+practice, this doesn't work well for interacting Hamiltonians, since this
+would involve finding the largest eigenvalue of a $N_{\text{block}}^p
+\times N_{\text{block}}^p$ matrix (compare this with the particle in a box
+Hamiltonian, which only grows linearly in the amount of lattice sites).
+The widely adopted algorithm proposed by White \cite{white1993density} for
+finding the ground state of a system in the thermodynamic limit proceeds
+as follows.
 
 
+\subsection{Infinite-system method}
 
+\todo[inline]{Add figures.} \todo[inline]{Mention boundary conditions somewere}
+Instead of using an exponential blocking procedure (doubling or tripling the
+amount of effective sites in a block at each iteration), the infinite-system
+method in the DMRG formulation adds a single site before truncating the Hilbert
+space to have at most $m$ basis states.
 
+\begin{enumerate}
+  \item \label{step1} Consider a block $A$ of size $l$, with $l$ small. Suppose, for
+  simplicity, that the number of basis states of the block is already
+  $m$. States of this block can be written as
+ 
+  \begin{equation}  
+    \ket{\Psi_A} = \sum_{b = 1}^{m} c_{i} \ket{b}
+  \end{equation}
 
+  The Hamiltonian is written as (similarly for other operators)
 
+  \begin{equation}
+    \hat{H}_{A} = \sum_{b, b'}^{m} H_{b b'} \ket{b} \bra{b}
+  \end{equation}
 
+  \item Construct an enlarged block with one additional site, denoted by $A
+  \cdot$. States are now written
+  \begin{equation}
+    \ket{\Psi_{A\cdot}} = \sum_{b, \sigma} c_{b, \sigma} \ket{b} \otimes \ket{\sigma}
+  \end{equation}
+
+  Here, $\sigma$ runs over the $d$ local basis states of $\mathcal{H}_{\text{site}}$.
+
+  \item Construct a superblock, consisting of the enlarged system block $A
+  \cdot$ and a reflected environment block $\cdot A$, together denoted by $A \cdot
+  \cdot A$. Find the ground state $\ket{\Psi_0}$ of $A \cdot \cdot A$, for example
+  with the Lanczos method.
+
+  \item Obtain the reduced density matrix of the enlarged block by tracing out
+  the environment, and write it in diagonal form.
+
+  \begin{equation}
+  \begin{aligned}
+    \rho_{A \cdot} & = \sum_{e, \sigma} (\bra{\sigma} \otimes \bra{e}) \ket{\Psi_0} \bra{\Psi_0} (\ket{\sigma} \otimes \ket{e}) \\
+    & = \sum_{i = 1}^{d m} w_{i} \ket{\lambda_i} \bra{\lambda_i}
+  \end{aligned}
+  \end{equation}
+
+  Here, we have chosen $w_0 >= w_1 \ldots >= w_{d m}$. In this basis, the Hamiltonian is written as
+
+  \begin{equation}
+    \hat{H}_{A \cdot} = \sum_{i, j}^{d m} H_{ij} \ket{\lambda_i}\bra{\lambda_j}
+  \end{equation}
+
+  \item Truncate the Hilbert space by keeping only the $m$ eigenstates of
+  $\rho_{A \cdot}$ with largest eigenvalues. Operators truncate as follows:
+
+  \begin{align}
+    \widetilde{\rho}_{A \cdot} & = \sum_{i = 1}^{m} w_i \ket{\lambda_i}\bra{\lambda_j} \\
+    \widetilde{H}_{A \cdot} & = \sum_{i, j}^{m} H_{ij} \ket{\lambda_i}\bra{\lambda_j}   
+  \end{align}
+
+  \item Set $H_{A} \leftarrow \widetilde{H}_{A \cdot}$ and return to \ref{step1}.
+
+\end{enumerate} 
 
 
 

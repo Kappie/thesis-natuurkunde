@@ -8,14 +8,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Strongly interacting 1D quantum lattice models}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{The Hilbert space is enormous}{2}{section*.2}
+\contentsline {subsection}{\numberline {1.2.1}The Hilbert space is enormous}{2}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Density matrix renormalization group}{2}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Real-space renormalization group}{3}{section*.4}
+\contentsline {subsection}{\numberline {1.3.1}Real-space renormalization group}{3}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Single particle in a box}{4}{section*.6}
+\contentsline {subsection}{\numberline {1.3.2}Single particle in a box}{4}{subsection.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Density matrix method}{4}{section*.7}
+\contentsline {subsection}{\numberline {1.3.3}Density matrix method}{5}{subsection.1.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{5}{section*.9}
+\contentsline {subsection}{\numberline {1.3.4}Infinite-system method}{7}{subsection.1.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{10}{section*.9}
