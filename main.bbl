@@ -19,6 +19,31 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{nishino1995density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={Tomotoshi},
+           given_i={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Physical Society of Japan}%
+      }
+      \strng{namehash}{d5b07ca69d0b3a5496281746f00e4300}
+      \strng{fullhash}{d5b07ca69d0b3a5496281746f00e4300}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Physical Society of Japan}
+      \field{number}{10}
+      \field{title}{Density matrix renormalization group method for 2D classical models}
+      \field{volume}{64}
+      \field{year}{1995}
+      \field{pages}{3598\bibrangedash 3601}
+      \range{pages}{4}
+    \endentry
     \entry{noack1999workshop}{incollection}{}
       \name{author}{2}{}{%
         {{hash=ea54eab4b79259783877ff0590e1bf42}{%

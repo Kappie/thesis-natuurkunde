@@ -5,38 +5,6 @@ interacting 1D quantum lattice systems. An overview of White's density
 matrix renormalization group \cite{white1992density} is given. Then, the
 formal connection to 2D classical lattices is made.
 
-\section{Strongly interacting 1D quantum lattice models}
-
-\subsection{The Hilbert space is enormous}
-
-Consider the problem of numerically finding the ground state $\ket{\Psi_0}$ of the
-$N$-site 1-dimensional transverse-field Ising-model, given by
-
-\begin{equation} 
-  H = -J \sum_{i = 1}^{N} \sigma_{i}^{z}\sigma_{i+1}^{z}
-  - h \sum_{i=1}^{N} \sigma_{i}^{x}
-\end{equation}
-
-The underlying Hilbert space of the system is a tensor product of the
-local Hilbert spaces $\mathcal{H}_{\text{site}}$, which are spanned by the
-states $\{\ket{\uparrow}, \ket{\downarrow}\}$. Thus, a general state of the system is a unit vector in
-a $2^N$-dimensional space.
-
-\begin{equation}
-  \ket{\Psi} = \sum_{\sigma_1, \sigma_2, \ldots \in \{\ket{\uparrow}, \ket{\downarrow}\}} c_{\sigma_1, \sigma_2, \ldots, \sigma_N} \ket{\sigma_1} \otimes \ket{\sigma_2} \otimes \ldots \otimes \ket{\sigma_N}
-\end{equation}
-
-So, for a system with 1000 particles, the dimensionality of the Hilbert
-space comes in at about $10^{301}$, some 220 orders of magnitude larger than
-the number of atoms in the observable universe. As it turns out, nature is
-very well described by Hamiltonians that are local -- that do not contain
-interactions between an arbitrary number of bodies. And for these
-Hamiltonians, only an exponentially small subset of states can be explored
-in the lifetime of the universe \cite{poulin2011quantum}. That is, only
-exponentially few states are physical. \todo[inline]{Expand a bit. Refer
-back to problem of finding ground state.}
-
-
 \section{Density matrix renormalization group}
 
 The density matrix renormalization group (DMRG), introduced in 1992 by
@@ -199,10 +167,11 @@ course, is that we do not know the state of the entire lattice, since that is
 exactly what we're trying to approximate. 
 
 Instead then, we should try to calculate the reduced density matrix of the
-system embedded in of \textit{some} larger environment. The combination of
-the system block and this environment block is usually called
-\textit{superblock}. Analogous to how White and Noack solved the particle
-in a box problem, we could calculate the ground state of $p > 2$ blocks,
+system embedded in \textit{some} larger environment, as closely as possible
+resembling the one in which it should be embedded.  The combination of the
+system block and this environment block is usually called \textit{superblock}.
+Analogous to how White and Noack solved the particle in a box problem, we could
+calculate the ground state of $p > 2$ blocks,
 and trace out all but 2, doubling our block size each iteration. In
 practice, this doesn't work well for interacting Hamiltonians, since this
 would involve finding the largest eigenvalue of a $N_{\text{block}}^p
@@ -277,6 +246,9 @@ space to have at most $m$ basis states.
 
 \end{enumerate} 
 
+\todo[inline]{Expand. Present or link to some results. Finite-system algorithm. Maybe in other chapter: rephrase in MPS, primer on entropy and eigenvalue spectrum of density matrix.}
+This methods finds ground state energies with astounding accuracy, and has been
+the reference point in all 1D quantum lattice simulation since its invention.
 
 
 

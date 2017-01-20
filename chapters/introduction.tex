@@ -1,0 +1,30 @@
+\section{Strongly interacting 1D quantum lattice models}
+
+\subsection{The Hilbert space is enormous}
+
+Consider the problem of numerically finding the ground state $\ket{\Psi_0}$ of the
+$N$-site 1-dimensional transverse-field Ising-model, given by
+
+\begin{equation} 
+  H = -J \sum_{i = 1}^{N} \sigma_{i}^{z}\sigma_{i+1}^{z}
+  - h \sum_{i=1}^{N} \sigma_{i}^{x}
+\end{equation}
+
+The underlying Hilbert space of the system is a tensor product of the
+local Hilbert spaces $\mathcal{H}_{\text{site}}$, which are spanned by the
+states $\{\ket{\uparrow}, \ket{\downarrow}\}$. Thus, a general state of the system is a unit vector in
+a $2^N$-dimensional space.
+
+\begin{equation}
+  \ket{\Psi} = \sum_{\sigma_1, \sigma_2, \ldots \in \{\ket{\uparrow}, \ket{\downarrow}\}} c_{\sigma_1, \sigma_2, \ldots, \sigma_N} \ket{\sigma_1} \otimes \ket{\sigma_2} \otimes \ldots \otimes \ket{\sigma_N}
+\end{equation}
+
+So, for a system with 1000 particles, the dimensionality of the Hilbert
+space comes in at about $10^{301}$, some 220 orders of magnitude larger than
+the number of atoms in the observable universe. As it turns out, nature is
+very well described by Hamiltonians that are local -- that do not contain
+interactions between an arbitrary number of bodies. And for these
+Hamiltonians, only an exponentially small subset of states can be explored
+in the lifetime of the universe \cite{poulin2011quantum}. That is, only
+exponentially few states are physical. \todo[inline]{Expand a bit. Refer
+back to problem of finding ground state.}

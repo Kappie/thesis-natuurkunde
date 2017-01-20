@@ -1,10 +1,10 @@
 \documentclass[10pt, ebook, openany, oneside]{memoir}
+
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[backend=biber, style=numeric, hyperref]{biblatex}
 \usepackage{todonotes}
-
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{braket}
@@ -17,6 +17,12 @@
 \setlength{\parindent}{0pt}
 \maxtocdepth{subsection}
 \setsecnumdepth{subsection}
+
+
+
+\DeclareMathOperator{\tr}{Tr}
+
+
 
 \begin{document}
 
@@ -40,12 +46,17 @@
 
 \mainmatter
 
-\chapter{Variational approximation of the partition function of 2D classical lattice models}
+\chapter{Introduction}
+\input{chapters/introduction}
+
+\chapter{Density matrix renormalization group method}
 \input{chapters/chapter01}
 
-%\chapter{Finite-size scaling}
-%\input{chapters/chapter02}
+\chapter{DRMG applied to 2D classical lattice models}
+\input{chapters/dmrg_2d_classical}
 
+\chapter{Matrix Product States}
+\input{chapters/chapter02}
 
 
 %\appendix

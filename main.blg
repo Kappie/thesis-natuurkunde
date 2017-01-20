@@ -1,15 +1,18 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'main.blg'
-[71] biber-darwin:290> INFO - === Wed Jan 18, 2017, 13:22:50
-[103] Biber.pm:351> INFO - Reading 'main.bcf'
-[216] Biber.pm:776> INFO - Found 7 citekeys in bib section 0
-[230] Biber.pm:3493> INFO - Processing section 0
-[268] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
-[270] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[273] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
-[314] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[314] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[314] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[314] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[323] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[325] bbl.pm:619> INFO - Output to main.bbl
+[89] biber-darwin:290> INFO - === Fri Jan 20, 2017, 19:48:54
+[131] Biber.pm:351> INFO - Reading 'main.bcf'
+[274] Biber.pm:776> INFO - Found 8 citekeys in bib section 0
+[297] Biber.pm:3493> INFO - Processing section 0
+[336] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
+[340] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[343] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
+[347] Utils.pm:149> WARN - Duplicate entry key: 'nishino1995density' in file 'references.bib', skipping ...
+[347] Utils.pm:149> WARN - Duplicate entry key: 'nishino1996corner' in file 'references.bib', skipping ...
+[389] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[389] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[389] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[389] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[402] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[405] bbl.pm:619> INFO - Output to main.bbl
+[405] Biber.pm:108> INFO - WARNINGS: 2

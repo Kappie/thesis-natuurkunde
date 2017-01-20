@@ -1,0 +1,90 @@
+\section{Partition functions of classical lattices}
+The central quantity in equilibrium statistical mechanics is the partition
+function $Z$, which, for a discrete system such as a lattice, is defined as
+
+\begin{equation}
+  Z = \sum_{s} \exp{(-\beta H(s))}
+\end{equation}
+
+where the sum is over all microstates $s$, $H$ is the energy function, $J > 0$ and
+$\beta = T^{-1}$, the inverse temperature.
+
+\section{Transfer matrices of lattice models}
+
+\subsection{1D Ising model}
+
+\todo[inline]{refer to Ising, talk a bit about model (magnetism etc).}
+
+Consider the 1D zero-field Ising model, defined by the energy function
+
+\begin{equation}\label{ising_energy_function}
+  H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j
+\end{equation}
+
+Here, we sum over nearest neighbors $\langle i j \rangle$ and the spins
+$\sigma_i$ take the values $\pm 1$. Assume, for the moment, that the chain
+consists of $N$ spins, and apply periodic boundary conditions.
+The partition function of this system is given by
+
+\begin{equation}
+  Z_{N} = \sum_{\sigma_i \in \{-1, 1\}} \exp (-\beta H(\sigma))
+\end{equation}
+
+Exploiting the local nature of the interaction between spins, we can write
+
+\begin{equation}
+  Z_{N} = \sum_{\sigma_i \in \{-1, 1\}} \prod_{\langle i, j \rangle} e^{K\sigma_i \sigma_j}
+\end{equation}
+
+where we defined $K \equiv \beta J$. Now, we can define
+the $2 \times 2$ matrix $T_{\sigma \sigma'} = \exp(K \sigma \sigma')$ to get
+
+\begin{equation}
+  Z_N = \sum_{\sigma_1} \dotsi \sum_{\sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N
+\end{equation}
+
+$T$ is called the transfer matrix. Since $T^N = P D^N P^{-1}$, where $P$
+consists of the eigenvectors of $T$, and by the cyclic property of the trace, we
+have
+
+\begin{equation}
+  Z = \lambda_{1}^{N} + \lambda_{2}^{N}
+\end{equation}
+
+Thus, we have reduced the problem of finding the partition function to an
+eigenvalue problem, which is quite easy in this case. Also, note that in the thermodynamic limit $N \to \infty$
+
+\begin{equation}
+  Z = \lim_{N \to \infty} \lambda_{1}^{N}
+\end{equation}
+
+where $\lambda_1$ is the non-degenerate largest eigenvalue (in absolute value) of $T$.
+
+\subsection{2D Ising model}
+
+Next, we treat the two-dimensional, square-lattice Ising model. In two
+dimensions, the energy function is still written as in
+\eqref{ising_energy_function}, but now every lattice site has four neighbors.
+Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume 
+$l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the one-dimensional case.
+In the horizontal direction, we keep an open boundary.
+
+Similarly to the 1D case, the partition function can be written as 
+
+
+
+
+
+\section{DMRG applied to 2D classical lattice models}
+
+
+
+
+
+\todo[inline]{More about connection between 1D quantum and 2D classical}
+\todo[inline]{Pictures}
+
+Nishino \cite{nishino1995density} was the first one to apply DMRG in its modern
+form to the problem of finding the partition function $Z$ of 2D classical
+lattices. Consider the zero-field Ising model on a square lattice, with energy function
+
