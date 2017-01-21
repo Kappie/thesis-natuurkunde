@@ -27,20 +27,20 @@ consists of $N$ spins, and apply periodic boundary conditions.
 The partition function of this system is given by
 
 \begin{equation}
-  Z_{N} = \sum_{\sigma_i \in \{-1, 1\}} \exp (-\beta H(\sigma))
+  Z_{N} = \sum_{\sigma_1, \dotsc, \sigma_N \in \{-1, 1\}} \exp (-\beta H(\sigma))
 \end{equation}
 
 Exploiting the local nature of the interaction between spins, we can write
 
 \begin{equation}
-  Z_{N} = \sum_{\sigma_i \in \{-1, 1\}} \prod_{\langle i, j \rangle} e^{K\sigma_i \sigma_j}
+  Z_{N} = \sum_{\sigma_1, \cdots, \sigma_N \in \{-1, 1\}} \prod_{\langle i, j \rangle} e^{K\sigma_i \sigma_j}
 \end{equation}
 
 where we defined $K \equiv \beta J$. Now, we can define
 the $2 \times 2$ matrix $T_{\sigma \sigma'} = \exp(K \sigma \sigma')$ to get
 
 \begin{equation}
-  Z_N = \sum_{\sigma_1} \dotsi \sum_{\sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N
+  Z_N = \sum_{\sigma_1, \cdots, \sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N
 \end{equation}
 
 $T$ is called the transfer matrix. Since $T^N = P D^N P^{-1}$, where $P$
@@ -70,6 +70,32 @@ $l \gg N$. In the vertical direction, we apply periodic boundary conditions, as 
 In the horizontal direction, we keep an open boundary.
 
 Similarly to the 1D case, the partition function can be written as 
+
+\begin{equation}
+  \sum_{\bm{\sigma}} \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l)
+\end{equation}
+
+where the product runs over all groups of four spins sharing the same face. The Boltzmann weight of such a face is given by
+
+\begin{equation}
+  W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) = \exp \left\{ \frac{K}{2} (\sigma_i \sigma_j + \sigma_j \sigma_k + \sigma_k \sigma_l + \sigma_l \sigma_i) \right\}
+\end{equation}
+
+We can express the Boltzmann weight of a configuration of the whole lattice as a product of the Boltzmann weights of the rows
+
+\begin{equation}
+  Z = \sum_{\bm{\sigma}} \prod_{r = 1}^{l - 1} \prod_{c = 1}^{N - 1} W(\sigma_{r, c}, \sigma_{r, c + 1}, \sigma_{r + 1, c}, \sigma_{r + 1, c + 1})
+\end{equation}
+
+Now, we can generalize the definition of the transfer matrix to two dimensions, by defining it as the Boltzmann weight of an entire row
+
+\begin{equation} 
+  T_{N}(\bm{\sigma} | \bm{\sigma'}) = \prod_{\text{lol}}
+\end{equation}
+
+
+
+
 
 
 
