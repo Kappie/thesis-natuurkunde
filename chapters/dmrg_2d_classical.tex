@@ -6,7 +6,7 @@ function $Z$, which, for a discrete system such as a lattice, is defined as
   Z = \sum_{s} \exp{(-\beta H(s))}
 \end{equation}
 
-where the sum is over all microstates $s$, $H$ is the energy function, $J > 0$ and
+where the sum is over all microstates $s$, $H$ is the energy function, and
 $\beta = T^{-1}$, the inverse temperature.
 
 \section{Transfer matrices of lattice models}
@@ -15,14 +15,14 @@ $\beta = T^{-1}$, the inverse temperature.
 
 \todo[inline]{refer to Ising, talk a bit about model (magnetism etc).}
 
-Consider the 1D zero-field Ising model, defined by the energy function
+Consider the 1D zero-field ferromagnetic Ising model, defined by the energy function
 
 \begin{equation}\label{ising_energy_function}
   H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j
 \end{equation}
 
 Here, we sum over nearest neighbors $\langle i j \rangle$ and the spins
-$\sigma_i$ take the values $\pm 1$. Assume, for the moment, that the chain
+$\sigma_i$ take the values $\pm 1$. $J > 0$. Assume, for the moment, that the chain
 consists of $N$ spins, and apply periodic boundary conditions.
 The partition function of this system is given by
 
@@ -48,7 +48,7 @@ consists of the eigenvectors of $T$, and by the cyclic property of the trace, we
 have
 
 \begin{equation}
-  Z = \lambda_{1}^{N} + \lambda_{2}^{N}
+  Z_N = \lambda_{1}^{N} + \lambda_{2}^{N}
 \end{equation}
 
 Thus, we have reduced the problem of finding the partition function to an
@@ -61,18 +61,20 @@ eigenvalue problem, which is quite easy in this case. Also, note that in the the
 where $\lambda_1$ is the non-degenerate largest eigenvalue (in absolute value) of $T$.
 
 \subsection{2D Ising model}
+\todo[inline]{Talk about exact solution (Onsager). Why is it important? Maybe
+star-triangle relation (Baxter). Not all IRF models solvable.}
 
 Next, we treat the two-dimensional, square-lattice Ising model. In two
 dimensions, the energy function is still written as in
 \eqref{ising_energy_function}, but now every lattice site has four neighbors.
 Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume 
 $l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the one-dimensional case.
-In the horizontal direction, we keep an open boundary.
+In the horizontal direction, we keep an open boundary. We refer to $N$ as the system size.
 
 Similarly to the 1D case, the partition function can be written as 
 
 \begin{equation}
-  \sum_{\bm{\sigma}} \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l)
+  Z_N = \sum_{\bm{\sigma}} \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l)
 \end{equation}
 
 where the product runs over all groups of four spins sharing the same face. The Boltzmann weight of such a face is given by
@@ -84,33 +86,66 @@ where the product runs over all groups of four spins sharing the same face. The 
 We can express the Boltzmann weight of a configuration of the whole lattice as a product of the Boltzmann weights of the rows
 
 \begin{equation}
-  Z = \sum_{\bm{\sigma}} \prod_{r = 1}^{l - 1} \prod_{c = 1}^{N - 1} W(\sigma_{r, c}, \sigma_{r, c + 1}, \sigma_{r + 1, c}, \sigma_{r + 1, c + 1})
+  Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} W(\sigma_{1}^{r}, \sigma_{2}^{r}, \sigma_{1}^{r+1}, \sigma_{2}^{r+1}) \dots W(\sigma_{N-1}^{r}, \sigma_{N}^{r}, \sigma_{N-1}^{r+1}, \sigma_{N}^{r+1})
 \end{equation}
 
-Now, we can generalize the definition of the transfer matrix to two dimensions, by defining it as the Boltzmann weight of an entire row
+Where $\sigma_{i}^{r}$ denotes the value of the $i$th spin of row $r$. Now, we
+can generalize the definition of the transfer matrix to two dimensions, by
+defining it as the Boltzmann weight of an entire row
 
 \begin{equation} 
-  T_{N}(\bm{\sigma} | \bm{\sigma'}) = \prod_{\text{lol}}
+  T_{N}(\bm{\sigma}, \bm{\sigma'}) = W(\sigma_1, \sigma_2, \sigma_1', \sigma_2') \dots W(\sigma_{N-1}, \sigma_N, \sigma_{N-1}', \sigma_{N}')
+\end{equation}
+
+The dimensions of $T_N$ are $2^N \times 2^N$. Similarly as in the one-dimensional case, the partition function now becomes
+
+\begin{equation}
+  Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} T_{N}(\bm{\sigma}^r, \bm{\sigma}^{r+1}) = \tr T_{N}^l
+\end{equation}
+
+In the limit of an $N \times \infty$ cylinder, the partition function is once again determined by the largest eigenvalue.
+
+\begin{equation}\label{largest_eigenvalue_transfer_matrix}
+  Z_N = \lim_{l \to \infty} T_{N}^{l} = \lim_{l \to \infty} (\lambda_0)_{N}^{l}
+\end{equation}
+
+The partition function in the thermodynamic limit is given by
+
+\begin{equation}
+  Z = \lim_{N \to \infty} Z_N
 \end{equation}
 
 
-
-
-
-
-
-
-
-\section{DMRG applied to 2D classical lattice models}
-
-
-
-
-
+\section{Transfer matrix renormalization group}
 \todo[inline]{More about connection between 1D quantum and 2D classical}
 \todo[inline]{Pictures}
 
 Nishino \cite{nishino1995density} was the first one to apply DMRG in its modern
-form to the problem of finding the partition function $Z$ of 2D classical
-lattices. Consider the zero-field Ising model on a square lattice, with energy function
+form to approximate the transfer matrix of a two-dimensional classical lattice system.
+
+In the limit of an $N \times \infty$ lattice, $T_{N}^{l}$ becomes proportional
+to the projector onto the eigenspace of the largest eigenvalue
+
+\begin{equation}
+  \lim_{l \to \infty} T_{N}^{l} = \lim_{l \to \infty} (\lambda_0)_{N}^{l} \ket{\lambda_0}_{N}\bra{\lambda_0}_{N} \thicksim \ket{\lambda_0}_{N}\bra{\lambda_0}_N
+\end{equation}
+
+Now, the connection to ground state DMRG is clear. Recall the full-system density matrix of an $N$-site 1D quantum lattice system in the ground state:
+
+\begin{equation}
+  \rho_N = \ket{\Psi_0}_{N}\bra{\Psi_0}_{N}
+\end{equation}
+
+\todo[inline]{Explain bla bla bla}
+
+
+
+\section{Corner transfer matrices}
+
+\begin{figure}
+  \input{images/test}
+  \caption{a test image}
+\end{figure}
+
+
 

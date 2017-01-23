@@ -1,5 +1,7 @@
-\documentclass[10pt, ebook, openany, oneside]{memoir}
+\documentclass[9pt, ebook, openany, oneside]{memoir}
 
+\usepackage{standalone}
+\usepackage{tikz}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -50,6 +52,9 @@
 \chapter{Introduction}
 \input{chapters/introduction}
 
+%\chapter{Tensor networks}
+%\input{chapters/tensor_networks}
+
 \chapter{Density matrix renormalization group method}
 \input{chapters/chapter01}
 
@@ -60,9 +65,9 @@
 \input{chapters/chapter02}
 
 
-%\appendix
-%\chapter{Mijn Appendix}
-%\input{chapters/appendix}
+\appendix
+\chapter{Correspondence of 1D quantum and 2D classical lattices}
+\input{chapters/correspondence_1d_quantum_2d_classical}
 
 
 \backmatter
