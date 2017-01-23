@@ -2105,6 +2105,9 @@
     <bcf:citekey order="7">schollwock2005density</bcf:citekey>
     <bcf:citekey order="8">white1993density</bcf:citekey>
     <bcf:citekey order="9">nishino1995density</bcf:citekey>
+    <bcf:citekey order="10">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="10">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="10">baxter1982exactly</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

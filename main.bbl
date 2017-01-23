@@ -19,6 +19,77 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{baxter1968dimers}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1aed507145de1146326799ff92d30c2e}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={RJ},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
+      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{4}
+      \field{title}{Dimers on a rectangular lattice}
+      \field{volume}{9}
+      \field{year}{1968}
+      \field{pages}{650\bibrangedash 654}
+      \range{pages}{5}
+    \endentry
+    \entry{baxter1978variational}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1aed507145de1146326799ff92d30c2e}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={RJ},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
+      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Physics}
+      \field{number}{5}
+      \field{title}{Variational approximations for square lattice models in statistical mechanics}
+      \field{volume}{19}
+      \field{year}{1978}
+      \field{pages}{461\bibrangedash 478}
+      \range{pages}{18}
+    \endentry
+    \entry{baxter1982exactly}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5d7938845ab1d10daf812e33b6b814a9}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={Rodney\bibnamedelima J},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5d7938845ab1d10daf812e33b6b814a9}
+      \strng{fullhash}{5d7938845ab1d10daf812e33b6b814a9}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{13}
+      \field{title}{Exactly solved models in statistical mechanics}
+      \field{year}{1982}
+    \endentry
     \entry{nishino1995density}{article}{}
       \name{author}{1}{}{%
         {{hash=d5b07ca69d0b3a5496281746f00e4300}{%

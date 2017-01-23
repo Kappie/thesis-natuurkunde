@@ -7,7 +7,7 @@ function $Z$, which, for a discrete system such as a lattice, is defined as
 \end{equation}
 
 where the sum is over all microstates $s$, $H$ is the energy function, and
-$\beta = T^{-1}$, the inverse temperature.
+$\beta = T^{-1}$ the inverse temperature.
 
 \section{Transfer matrices of lattice models}
 
@@ -93,7 +93,7 @@ Where $\sigma_{i}^{r}$ denotes the value of the $i$th spin of row $r$. Now, we
 can generalize the definition of the transfer matrix to two dimensions, by
 defining it as the Boltzmann weight of an entire row
 
-\begin{equation} 
+\begin{equation}\label{row_to_row_transfer_matrix} 
   T_{N}(\bm{\sigma}, \bm{\sigma'}) = W(\sigma_1, \sigma_2, \sigma_1', \sigma_2') \dots W(\sigma_{N-1}, \sigma_N, \sigma_{N-1}', \sigma_{N}')
 \end{equation}
 
@@ -142,10 +142,23 @@ Now, the connection to ground state DMRG is clear. Recall the full-system densit
 
 \section{Corner transfer matrices}
 
-\begin{figure}
-  \input{images/test}
-  \caption{a test image}
-\end{figure}
+The concept of corner transfer matrices for 2D lattices was first introduced by
+Baxter \cite{baxter1968dimers, baxter1978variational, baxter1982exactly}.
+Whereas the row-to-row transfer matrix \eqref{row_to_row_transfer_matrix}
+corresponds to adding a row to the lattice, the corner transfer matrix adds
+a quadrant of spins. It is defined as
+
+\begin{equation}
+  A_{\bm{\sigma}, \bm{\sigma'}} =
+  \begin{cases}
+    \sum \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) & \text{if } \sigma_{1} = \sigma_{1}' \\
+    0 & \text{if } \sigma_{1} \neq \sigma_{1}'
+  \end{cases}
+\end{equation}
+
+\todo[inline]{Picture.}
+Here, the product runs over groups of four spins that share the same face, and
+the sum is over all spins in the interior of the quadrant.
 
 
 
