@@ -2108,6 +2108,7 @@
     <bcf:citekey order="10">baxter1968dimers</bcf:citekey>
     <bcf:citekey order="10">baxter1978variational</bcf:citekey>
     <bcf:citekey order="10">baxter1982exactly</bcf:citekey>
+    <bcf:citekey order="11">nishino1996corner</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

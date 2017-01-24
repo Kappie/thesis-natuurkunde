@@ -99,7 +99,7 @@ defining it as the Boltzmann weight of an entire row
 
 The dimensions of $T_N$ are $2^N \times 2^N$. Similarly as in the one-dimensional case, the partition function now becomes
 
-\begin{equation}
+\begin{equation}\label{z_n_times_infty}
   Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} T_{N}(\bm{\sigma}^r, \bm{\sigma}^{r+1}) = \tr T_{N}^l
 \end{equation}
 
@@ -116,6 +116,12 @@ The partition function in the thermodynamic limit is given by
 \end{equation}
 
 
+
+\section{Partition function of 2D lattice as a tensor network}
+
+hallo
+
+
 \section{Transfer matrix renormalization group}
 \todo[inline]{More about connection between 1D quantum and 2D classical}
 \todo[inline]{Pictures}
@@ -130,13 +136,16 @@ to the projector onto the eigenspace of the largest eigenvalue
   \lim_{l \to \infty} T_{N}^{l} = \lim_{l \to \infty} (\lambda_0)_{N}^{l} \ket{\lambda_0}_{N}\bra{\lambda_0}_{N} \thicksim \ket{\lambda_0}_{N}\bra{\lambda_0}_N
 \end{equation}
 
-Now, the connection to ground state DMRG is clear. Recall the full-system density matrix of an $N$-site 1D quantum lattice system in the ground state:
+Now, the connection to ground state DMRG is clear. Recall the full-system
+density matrix of an $N$-site 1D quantum lattice system (the superblock) in the
+ground state (cf. \eqref{eq:density_matrix_superblock})
 
 \begin{equation}
   \rho_N = \ket{\Psi_0}_{N}\bra{\Psi_0}_{N}
 \end{equation}
 
-\todo[inline]{Explain bla bla bla}
+
+\todo[inline]{Write down equations that are analogous to reduced density matrix. Pictures}
 
 
 
@@ -159,6 +168,25 @@ a quadrant of spins. It is defined as
 \todo[inline]{Picture.}
 Here, the product runs over groups of four spins that share the same face, and
 the sum is over all spins in the interior of the quadrant.
+In a symmetric and isotropic model, we have
+
+\begin{equation}
+  W(a, b, c, d) = W(b, a, d, c) = W(c, a, d, b) = W(d, c, b, a)
+\end{equation}
+
+and the partition of an $N \times N$ lattice is expressed as
+
+\begin{equation}\label{z_n_times_n}
+  Z_{N \times N} = \tr A^4
+\end{equation}
+
+In the thermodynamic limit, \eqref{z_n_times_n} is equal to \eqref{z_n_times_infty}.
 
 
+
+\subsection{Corner transfer matrix renormalization group}
+
+\todo[inline]{More about Baxter's variational approach.}
+Nishino and Okunishi combined ideas from Baxter and White to formulate the
+corner transfer matrix renormalization group \cite{nishino1996corner}.
 

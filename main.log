@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  23 JAN 2017 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  24 JAN 2017 09:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1581,10 +1581,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [1
+) [1
 
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [2]
 (./chapters/introduction.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 30.
@@ -1601,11 +1601,11 @@ on group method
 
 [5] [6] [7] [8]) [9] (./chapters/dmrg_2d_classical.tex [10
 
-] [11] [12]) [13]
-(./chapters/chapter02.tex) [14
+] [11] [12] [13])
+[14] (./chapters/chapter02.tex) [15
 
 ]
-(./chapters/correspondence_1d_quantum_2d_classical.tex) [15
+(./chapters/correspondence_1d_quantum_2d_classical.tex) [16
 
 ]
 Overfull \hbox (1.98262pt too wide) in paragraph at lines 75--75
@@ -1631,10 +1631,10 @@ Overfull \hbox (8.3558pt too wide) in paragraph at lines 75--75
 t-ters \OT1/cmr/m/n/9 69.19 (1992), p. 2863. 
  []
 
-[16
+[17
 
 
-] [17]
+] [18]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1644,20 +1644,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 209B1FC6F55F057959FD73732197DCF0;1676.
+(rerunfilecheck)             Checksum: 2CABFD36D4CFB77CEE467816999B1178;1873.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 27280 strings out of 493014
- 488157 string characters out of 6133351
- 923327 words of memory out of 5000000
- 30238 multiletter control sequences out of 15000+600000
+ 27296 strings out of 493014
+ 488475 string characters out of 6133351
+ 923583 words of memory out of 5000000
+ 30247 multiletter control sequences out of 15000+600000
  14486 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,83p,931b,1091s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,83p,931b,1143s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
 5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/c
 mbsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
@@ -1680,10 +1680,10 @@ ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (19 pages, 266052 bytes).
+Output written on main.pdf (20 pages, 269818 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 115 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

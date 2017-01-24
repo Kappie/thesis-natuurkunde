@@ -32,16 +32,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}2D Ising model}{11}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Transfer matrix renormalization group}{13}{section.3.3}
+\contentsline {section}{\numberline {3.3}Partition function of 2D lattice as a tensor network}{13}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Corner transfer matrices}{13}{section.3.4}
+\contentsline {section}{\numberline {3.4}Transfer matrix renormalization group}{13}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}Matrix Product States}{14}{chapter.4}
+\contentsline {section}{\numberline {3.5}Corner transfer matrices}{13}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}From the DMRG algorithm to matrix product states}{14}{section.4.1}
+\contentsline {subsection}{\numberline {3.5.1}Corner transfer matrix renormalization group}{14}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {A}Correspondence of 1D quantum and 2D classical lattices}{15}{appendix.A}
+\contentsline {chapter}{\chapternumberline {4}Matrix Product States}{15}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Hoi}{15}{section.A.1}
+\contentsline {section}{\numberline {4.1}From the DMRG algorithm to matrix product states}{15}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{16}{section*.16}
+\contentsline {appendix}{\chapternumberline {A}Correspondence of 1D quantum and 2D classical lattices}{16}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Hoi}{16}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{17}{section*.17}

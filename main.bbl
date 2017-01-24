@@ -115,6 +115,36 @@
       \field{pages}{3598\bibrangedash 3601}
       \range{pages}{4}
     \endentry
+    \entry{nishino1996corner}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={Tomotoshi},
+           given_i={T\bibinitperiod}}}%
+        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={Kouichi},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Physical Society of Japan}%
+      }
+      \strng{namehash}{f7e512668257363d4c92111b5df681ca}
+      \strng{fullhash}{f7e512668257363d4c92111b5df681ca}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Physical Society of Japan}
+      \field{number}{4}
+      \field{title}{Corner transfer matrix renormalization group method}
+      \field{volume}{65}
+      \field{year}{1996}
+      \field{pages}{891\bibrangedash 894}
+      \range{pages}{4}
+    \endentry
     \entry{noack1999workshop}{incollection}{}
       \name{author}{2}{}{%
         {{hash=ea54eab4b79259783877ff0590e1bf42}{%

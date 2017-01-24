@@ -14,10 +14,12 @@
 \BOOKMARK [1][-]{section.3.2}{Transfer matrices of lattice models}{chapter.3}% 14
 \BOOKMARK [2][-]{subsection.3.2.1}{1D Ising model}{section.3.2}% 15
 \BOOKMARK [2][-]{subsection.3.2.2}{2D Ising model}{section.3.2}% 16
-\BOOKMARK [1][-]{section.3.3}{Transfer matrix renormalization group}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.4}{Corner transfer matrices}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Matrix Product States}{}% 19
-\BOOKMARK [1][-]{section.4.1}{From the DMRG algorithm to matrix product states}{chapter.4}% 20
-\BOOKMARK [0][-]{appendix.A}{Correspondence of 1D quantum and 2D classical lattices}{}% 21
-\BOOKMARK [1][-]{section.A.1}{Hoi}{appendix.A}% 22
-\BOOKMARK [0][-]{section*.16}{Bibliography}{}% 23
+\BOOKMARK [1][-]{section.3.3}{Partition function of 2D lattice as a tensor network}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Transfer matrix renormalization group}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{Corner transfer matrices}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.5.1}{Corner transfer matrix renormalization group}{section.3.5}% 20
+\BOOKMARK [0][-]{chapter.4}{Matrix Product States}{}% 21
+\BOOKMARK [1][-]{section.4.1}{From the DMRG algorithm to matrix product states}{chapter.4}% 22
+\BOOKMARK [0][-]{appendix.A}{Correspondence of 1D quantum and 2D classical lattices}{}% 23
+\BOOKMARK [1][-]{section.A.1}{Hoi}{appendix.A}% 24
+\BOOKMARK [0][-]{section*.17}{Bibliography}{}% 25
