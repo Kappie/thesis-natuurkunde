@@ -1,0 +1,81 @@
+\section{Tensors, or multidimensional arrays}
+
+In the field of tensor networks, a tensor is a multidimensional table with numbers -- a convenient
+way to organize information. It is the generalization of a vector
+
+\begin{equation}
+  v_i =
+  \begin{bmatrix}
+    v_1 \\
+    \vdots \\
+    v_n
+  \end{bmatrix}
+\end{equation}
+
+which has one index, and a matrix
+
+\begin{equation}
+  M_{i j} = 
+  \begin{bmatrix}
+  M_{1 1} & \dots & M_{1 n} \\
+  \vdots  & & \vdots \\
+  M_{m 1} & \dots & M_{m n} 
+  \end{bmatrix}
+\end{equation}
+
+which has two. A tensor of rank $N$ has $N$ indices\footnote{The definition of rank in this
+context is not to be confused with the rank of a matrix, which is the number of
+linearly independent columns. Synonyms of tensor rank are tensor degree and
+tensor order.}
+
+\begin{equation}
+  T_{i_1 \dots i_N}
+\end{equation}
+
+\section{Tensor contraction}
+
+Tensor contraction is the higher-dimensional generalization of the dot product
+
+\begin{equation}
+  \bm{a} \cdot \bm{b} = \sum_i a_i b_i
+\end{equation}
+
+where a lower-dimensional tensor (in this case, a scalar, which is a
+zero-dimensional tensor) is obtained by summing over all values of a repeated
+index. Examples are matrix-vector multiplication
+
+\begin{equation}
+  (M \bm{a})_{i} = \sum_j M_{i j} a_j
+\end{equation}
+
+and matrix-matrix multiplication
+
+\begin{equation}
+  (A B)_{i j} = \sum_k A_{i k} B_{k j}
+\end{equation}
+
+But a more elaborate tensor multiplication could look like
+
+\begin{equation}
+  w_{a b c} = \sum_{d, e, f} T_{a b c d e f} v_{d e f}
+\end{equation}
+
+As with the dot product between vectors, matrix-vector multiplication and
+matrix-matrix multiplication, a contraction between tensors is only defined if
+the dimensions of the indices match.
+
+\section{Tensor networks}
+
+A tensor network is specified by a set of tensors, together with a set of contractions to be performed. For example:
+
+\begin{equation}
+  M_{a b} = \sum_{i, j, k} A_{a i} B_{i j} C_{j k} D_{k b}
+\end{equation}
+
+which corresponds to the matrix product $A B C D$.
+
+\subsection{Graphical notation}
+It is highly convenient to introduce a graphical notation, which
+greatly simplifies expressions and makes certain properties manifest.
+
+

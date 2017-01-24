@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  24 JAN 2017 09:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  24 JAN 2017 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1601,63 +1601,90 @@ on group method
 
 [5] [6] [7] [8]) [9] (./chapters/dmrg_2d_classical.tex [10
 
-] [11] [12] [13])
-[14] (./chapters/chapter02.tex) [15
+] [11] [12]
+(./images/2d_classical_partition_function_as_tensor_network.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: images/2d_classical_partition_function_as_tensor_network.tex Graphic file
+ (type tex)
+ [13] [14])
+[15] (./chapters/chapter02.tex) [16
 
 ]
-(./chapters/correspondence_1d_quantum_2d_classical.tex) [16
+(./chapters/correspondence_1d_quantum_2d_classical.tex) [17
 
 ]
-Overfull \hbox (1.98262pt too wide) in paragraph at lines 75--75
+(./chapters/tensor_network_notation.tex [18
+
+]) [19]
+Overfull \hbox (1.98262pt too wide) in paragraph at lines 78--78
 []\OT1/cmr/m/n/9 Tomotoshi Nishino. ``Den-sity ma-trix renor-mal-iza-tion group
  method
  []
 
 
-Overfull \hbox (4.2323pt too wide) in paragraph at lines 75--75
+Overfull \hbox (4.2323pt too wide) in paragraph at lines 78--78
 \OT1/cmr/m/it/9 new nu-mer-i-cal method in physics\OT1/cmr/m/n/9 . Ed. by Ingo 
 Peschel et al. Vol. 528.
  []
 
 
-Overfull \hbox (1.16039pt too wide) in paragraph at lines 75--75
+Overfull \hbox (1.16039pt too wide) in paragraph at lines 78--78
 []\OT1/cmr/m/n/9 David Poulin et al. ``Quan-tum sim-u-la-tion of time-dependent
  Hamil-
  []
 
 
-Overfull \hbox (8.3558pt too wide) in paragraph at lines 75--75
+Overfull \hbox (8.3558pt too wide) in paragraph at lines 78--78
 \OT1/cmr/m/n/9 mal-iza-tion groups''. In: \OT1/cmr/m/it/9 Phys-i-cal Re-view Le
 t-ters \OT1/cmr/m/n/9 69.19 (1992), p. 2863. 
  []
 
-[17
+[20
 
 
-] [18]
+] [21]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2CABFD36D4CFB77CEE467816999B1178;1873.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: A84E9F1E01C905F517896BEF0D87D2BE;2153
+(rerunfilecheck)             After:  20ED557CEC25F48B31D08D8C0E73B5DB;2225.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 27296 strings out of 493014
- 488475 string characters out of 6133351
- 923583 words of memory out of 5000000
- 30247 multiletter control sequences out of 15000+600000
+ 27524 strings out of 493014
+ 492301 string characters out of 6133351
+ 930731 words of memory out of 5000000
+ 30450 multiletter control sequences out of 15000+600000
  14486 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,83p,931b,1143s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,91p,931b,1143s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
 5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/c
 mbsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
@@ -1680,10 +1707,10 @@ ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (20 pages, 269818 bytes).
+Output written on main.pdf (23 pages, 281331 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 122 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
+ 140 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

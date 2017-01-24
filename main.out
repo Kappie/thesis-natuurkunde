@@ -22,4 +22,9 @@
 \BOOKMARK [1][-]{section.4.1}{From the DMRG algorithm to matrix product states}{chapter.4}% 22
 \BOOKMARK [0][-]{appendix.A}{Correspondence of 1D quantum and 2D classical lattices}{}% 23
 \BOOKMARK [1][-]{section.A.1}{Hoi}{appendix.A}% 24
-\BOOKMARK [0][-]{section*.17}{Bibliography}{}% 25
+\BOOKMARK [0][-]{appendix.B}{Introduction to tensor networks}{}% 25
+\BOOKMARK [1][-]{section.B.1}{Tensors, or multidimensional arrays}{appendix.B}% 26
+\BOOKMARK [1][-]{section.B.2}{Tensor contraction}{appendix.B}% 27
+\BOOKMARK [1][-]{section.B.3}{Tensor networks}{appendix.B}% 28
+\BOOKMARK [2][-]{subsection.B.3.1}{Graphical notation}{section.B.3}% 29
+\BOOKMARK [0][-]{section*.17}{Bibliography}{}% 30

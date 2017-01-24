@@ -83,7 +83,8 @@ where the product runs over all groups of four spins sharing the same face. The 
   W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) = \exp \left\{ \frac{K}{2} (\sigma_i \sigma_j + \sigma_j \sigma_k + \sigma_k \sigma_l + \sigma_l \sigma_i) \right\}
 \end{equation}
 
-We can express the Boltzmann weight of a configuration of the whole lattice as a product of the Boltzmann weights of the rows
+We can express the Boltzmann weight of a configuration of the whole lattice as
+a product of the Boltzmann weights of the rows
 
 \begin{equation}
   Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} W(\sigma_{1}^{r}, \sigma_{2}^{r}, \sigma_{1}^{r+1}, \sigma_{2}^{r+1}) \dots W(\sigma_{N-1}^{r}, \sigma_{N}^{r}, \sigma_{N-1}^{r+1}, \sigma_{N}^{r+1})
@@ -97,7 +98,8 @@ defining it as the Boltzmann weight of an entire row
   T_{N}(\bm{\sigma}, \bm{\sigma'}) = W(\sigma_1, \sigma_2, \sigma_1', \sigma_2') \dots W(\sigma_{N-1}, \sigma_N, \sigma_{N-1}', \sigma_{N}')
 \end{equation}
 
-The dimensions of $T_N$ are $2^N \times 2^N$. Similarly as in the one-dimensional case, the partition function now becomes
+The dimensions of $T_N$ are $2^N \times 2^N$. Similarly as in the
+one-dimensional case, the partition function now becomes
 
 \begin{equation}\label{z_n_times_infty}
   Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} T_{N}(\bm{\sigma}^r, \bm{\sigma}^{r+1}) = \tr T_{N}^l
@@ -118,8 +120,22 @@ The partition function in the thermodynamic limit is given by
 
 
 \section{Partition function of 2D lattice as a tensor network}
+In calculating the partition function of 1D and 2D lattices, matrices of Boltzmann weights like $W$
+and $T$ play a crucial role. Up until now, we have formulated them in a way
+that serves us analytically, but makes it less clear how we should use them to
+implement a partition sum in a computer program, when calculations typically
+have to be written as matrix multiplications in order to be fast. Now, we
+rewrite the partition sum of 2D classical lattices in the language of tensor
+networks to make the computational steps more manifest, while retaining the
+intuitions of the earlier formulation.
 
-hallo
+
+
+\begin{figure}
+  \includestandalone{images/2d_classical_partition_function_as_tensor_network}
+  \caption{2D lattice to as a tensor network. bla bla.}
+  \label{fig:2d_classical_partition_function_as_tensor_network}
+\end{figure}
 
 
 \section{Transfer matrix renormalization group}
