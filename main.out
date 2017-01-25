@@ -27,4 +27,5 @@
 \BOOKMARK [1][-]{section.B.2}{Tensor contraction}{appendix.B}% 27
 \BOOKMARK [1][-]{section.B.3}{Tensor networks}{appendix.B}% 28
 \BOOKMARK [2][-]{subsection.B.3.1}{Graphical notation}{section.B.3}% 29
-\BOOKMARK [0][-]{section*.17}{Bibliography}{}% 30
+\BOOKMARK [2][-]{subsection.B.3.2}{Computational complexity of contraction}{section.B.3}% 30
+\BOOKMARK [0][-]{section*.19}{Bibliography}{}% 31

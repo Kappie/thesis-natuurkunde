@@ -1,5 +1,8 @@
 \section{Tensors, or multidimensional arrays}
 
+\todo[inline]{Make clear that there is a difference between tensors that are
+defined with a metric.}
+
 In the field of tensor networks, a tensor is a multidimensional table with numbers -- a convenient
 way to organize information. It is the generalization of a vector
 
@@ -23,7 +26,7 @@ which has one index, and a matrix
   \end{bmatrix}
 \end{equation}
 
-which has two. A tensor of rank $N$ has $N$ indices\footnote{The definition of rank in this
+which has two. A tensor of rank $N$ has $N$ indices:\footnote{The definition of rank in this
 context is not to be confused with the rank of a matrix, which is the number of
 linearly independent columns. Synonyms of tensor rank are tensor degree and
 tensor order.}
@@ -31,6 +34,8 @@ tensor order.}
 \begin{equation}
   T_{i_1 \dots i_N}
 \end{equation}
+
+A tensor of rank zero is just a scalar.
 
 \section{Tensor contraction}
 
@@ -75,7 +80,36 @@ A tensor network is specified by a set of tensors, together with a set of contra
 which corresponds to the matrix product $A B C D$.
 
 \subsection{Graphical notation}
-It is highly convenient to introduce a graphical notation, which
-greatly simplifies expressions and makes certain properties manifest.
+It is highly convenient to introduce a graphical notation that is common in the
+tensor network community. It greatly simplifies expressions and makes certain
+properties manifest.
 
+Each tensor is represented by a shape. Open ended-lines, called legs, represent
+unsummed indices. See \autoref{fig:tensors_graphical_notation}. Each contracted
+index is represented by a connected line. See \autoref{fig:contracted_tensors}.
+
+Many tensor equations, while burdensome when written out, are readily
+understood in this graphical way. As an example, consider the matrix trace in
+\autoref{fig:contracted_tensors}, where its cyclic property is manifest.
+
+\begin{figure}
+  \includestandalone{images/tensors_graphical_notation}
+  \caption{Open-ended lines, called legs, represent unsummed indices. A tensor
+  with no open legs is a scalar.}
+  \label{fig:tensors_graphical_notation}
+\end{figure}
+
+\begin{figure}
+  \includestandalone{images/contracted_tensors}
+  \caption{Connected legs represent contracted indices. The networks in the
+  figure represent $\sum_i a_i b_i$ (dot product), 
+  $\sum_j M_{i j} a_j$ (matrix-vector product), $\sum_{k} A_{i k} B_{k
+  j}$ (matrix-matrix product) and $\tr A B C D$, respectively.}
+  \label{fig:contracted_tensors}
+\end{figure}
+
+
+
+\subsection{Computational complexity of contraction}
+\todo[inline]{Computational complexity.}
 

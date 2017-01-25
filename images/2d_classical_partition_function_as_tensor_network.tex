@@ -4,8 +4,8 @@
 \begin{document}
 \begin{tikzpicture}
   \tikzstyle{tensor} = [circle, inner sep = 0pt, minimum size = 0.2cm]
-  \tikzstyle{QTensor} = [tensor, draw, fill=green!50, minimum size = 0.3cm]
-  \tikzstyle{delta} = [tensor, draw, fill=red!50, minimum size = 0.4cm]
+  \tikzstyle{QTensor} = [tensor, semithick, draw, fill=blue, minimum size = 0.3cm]
+  \tikzstyle{delta} = [tensor, thick, draw, fill=orange, minimum size = 0.4cm]
   \tikzstyle{ellipsisNode} = [tensor, minimum size = 0.7cm]
 
   % Draw delta tensors
@@ -34,8 +34,8 @@
     \foreach \y in {2, 4}
     {
     \pgfmathtruncatemacro{\neighbor}{\x + 1};
-    \draw (\x-\y) -- (\neighbor-\y);
-    \draw (\y-\x) -- (\y-\neighbor);
+    \draw[thick] (\x-\y) -- (\neighbor-\y);
+    \draw[thick] (\y-\x) -- (\y-\neighbor);
     }
 
 \end{tikzpicture}

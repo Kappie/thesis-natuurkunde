@@ -54,8 +54,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B.2}Tensor contraction}{19}{section.B.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Tensor networks}{19}{section.B.3}
+\contentsline {section}{\numberline {B.3}Tensor networks}{20}{section.B.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.1}Graphical notation}{19}{subsection.B.3.1}
+\contentsline {subsection}{\numberline {B.3.1}Graphical notation}{20}{subsection.B.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{20}{section*.17}
+\contentsline {subsection}{\numberline {B.3.2}Computational complexity of contraction}{20}{subsection.B.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{22}{section*.19}
