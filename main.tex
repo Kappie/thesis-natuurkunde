@@ -1,8 +1,16 @@
-\documentclass[9pt, ebook, openany, oneside]{memoir}
+\documentclass[10pt, ebook, openany, oneside]{memoir}
 
+% Packages for baskerville font.
+\usepackage[T1]{fontenc}
+\usepackage{baskervillef}
+\usepackage[varqu,varl,var0]{inconsolata}
+\usepackage[scale=.95,type1]{cabin}
+\usepackage[baskerville,vvarbb]{newtxmath}
+\usepackage[cal=boondoxo]{mathalfa}
+
+\usepackage[english]{babel}
 \usepackage{standalone}
 \usepackage{tikz}
-\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{todonotes}
@@ -12,6 +20,7 @@
 \usepackage{bm}
 \usepackage{xcolor}
 \usepackage[backend=biber, style=numeric, hyperref]{biblatex}
+\usepackage{hyperref}
 
 % Rebel Princess color scheme
 %\definecolor{orange}{RGB}{254,178,151}
@@ -27,10 +36,34 @@
 
 
 
-\setlength{\parindent}{0pt}
+% \setlength{\parindent}{6pt}
 \maxtocdepth{subsection}
 \setsecnumdepth{subsection}
+\chapterstyle{crosshead}
 
+%\setlength{\beforechapskip}{20pt}
+
+\makeatletter
+ \renewcommand{\chapterheadstart}{\vspace*{\beforechapskip}}
+ \renewcommand{\printchaptername}{}
+ \renewcommand{\chapternamenum}{\space}
+ \renewcommand{\printchapternum}{\centering\chapnumfont\thechapter}
+ \renewcommand{\afterchapternum}{\par\nobreak\vskip \midchapskip}
+ \renewcommand{\printchapternonum}{}
+ \renewcommand{\printchaptertitle}[1]{\centering\chaptitlefont\MakeLowercase #1}
+ % \renewcommand{\afterchaptertitle}{\par\nobreak\vskip \afterchapskip}
+ \renewcommand{\afterchaptertitle}{%
+ \vskip2em
+ \hrule height 0.6pt
+ \vskip2em
+ }
+ \renewcommand{\chapnamefont}{\normalfont\huge\bfseries}
+ \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
+ \renewcommand{\chaptitlefont}{\normalfont\huge\bfseries\scshape}
+ \setlength{\beforechapskip}{0.5em}
+ \setlength{\midchapskip}{0.5em}
+ \setlength{\afterchapskip}{4em}
+\makeatother
 
 
 \DeclareMathOperator{\tr}{Tr}
@@ -38,8 +71,6 @@
 
 
 \begin{document}
-
-
 
 \pagestyle{simple}
 
@@ -55,7 +86,11 @@
   %\maketitle
 %\end{titlingpage}
 
-\tableofcontents
+\begingroup
+\renewcommand{\afterchaptertitle}{}
+
+\tableofcontents*
+\endgroup
 
 \mainmatter
 
@@ -66,13 +101,14 @@
 %\input{chapters/tensor_networks}
 
 \chapter{Density matrix renormalization group method}
-\input{chapters/chapter01}
+\input{chapters/dmrg}
 
 \chapter{DRMG applied to 2D classical lattice models}
 \input{chapters/dmrg_2d_classical}
 
-\chapter{Matrix Product States}
-\input{chapters/chapter02}
+\chapter{Finite-size scaling}
+\input{chapters/finite_size_scaling}
+
 
 
 \appendix
@@ -80,7 +116,7 @@
 \input{chapters/correspondence_1d_quantum_2d_classical}
 
 \chapter{Introduction to tensor networks}
-\input{chapters/tensor_network_notation}
+\input{chapters/introduction_tensor_networks}
 
 
 \backmatter

@@ -26,7 +26,7 @@ most notably Wilson's real-space renormalization group
 
 Consider the problem of finding the ground state of a many-body
 Hamiltonian $H$. A natural way of renormalizing $H$ in real-space is by
-partitioning the lattice in blocks, and writing $H$ as 
+partitioning the lattice in blocks, and writing $H$ as
 
 \begin{equation}
   H = H_A \otimes \ldots \otimes H_A
@@ -63,7 +63,7 @@ here an intuition why.
 
 Consider the Hamiltonian
 
-\begin{equation} 
+\begin{equation}
   H = 2 \sum_i \ket{i}\bra{i} - \sum_{\langle i, j \rangle} \ket{i}\bra{j}
 \end{equation}
 
@@ -97,27 +97,20 @@ To see this, suppose, for simplicity, that the entire lattice is in a pure
 state\footnote{For a proof for a mixed state, see \cite{noack1999workshop}} $\ket{\Psi} = \sum c_{b, e} \ket{b} \ket{e}$, with $b = 1, \ldots, l$ the
 states of $H_{AA}$ and $e = 1, \ldots, N_{\text{env}}$ the environment states. The
 reduced density matrix is given by
-
 \begin{equation}\label{eq:density_matrix_superblock}
   \rho_{AA} = \sum_{e} \ket{\Psi} \bra{\Psi} = \sum_{b, b'} c_{b, e} c_{b', e} \ket{b} \bra{b'}
 \end{equation}
-
 We now wish to find a set of orthonormal states $\ket{\lambda} \in \mathcal{H}_{AA}$,
 $\lambda = 1, \ldots, m$ with $m < l$, such that the quadratic norm
-
 \begin{equation}\label{eq:quadratic_norm}
   \Vert \ket{\Psi} - \ket{\widetilde{\Psi}} \Vert = 1 - 2 \sum_{\lambda, b, e} a_{\lambda, e} c_{b, e} u_{\lambda, b} + \sum_{\lambda, e} a_{\lambda, e}^2
 \end{equation}
-
 is minimized. Here,
-
 \begin{equation}
   \ket{\widetilde{\Psi}} = \sum_{\lambda = 1}^{m} \sum_{e = 1}^{N_{\text{env}}} a_{\lambda, e} \ket{\lambda} \ket{e}
 \end{equation}
-
 is the representation of $\ket{\Psi}$ given the constraint that we can only use
 $m$ states from $\mathcal{H}_{AA}$. The $u_{\lambda, b}$ are given by
-
 \begin{equation}
   \lambda = \sum_{b} u_{\lambda, b} \ket{b}
 \end{equation}
@@ -164,7 +157,7 @@ see \cite{schollwock2005density}.}) states to keep for a subsystem are the
 states given by the reduced density matrix, obtained by tracing out the entire
 lattice in the ground state (or some other target state). The problem, of
 course, is that we do not know the state of the entire lattice, since that is
-exactly what we're trying to approximate. 
+exactly what we're trying to approximate.
 
 Instead then, we should try to calculate the reduced density matrix of the
 system embedded in \textit{some} larger environment, as closely as possible
@@ -194,8 +187,8 @@ space to have at most $m$ basis states.
   \item \label{step1} Consider a block $A$ of size $l$, with $l$ small. Suppose, for
   simplicity, that the number of basis states of the block is already
   $m$. States of this block can be written as
- 
-  \begin{equation}  
+
+  \begin{equation}
     \ket{\Psi_A} = \sum_{b = 1}^{m} c_{i} \ket{b}
   \end{equation}
 
@@ -239,19 +232,13 @@ space to have at most $m$ basis states.
 
   \begin{align}
     \widetilde{\rho}_{A \cdot} & = \sum_{i = 1}^{m} w_i \ket{\lambda_i}\bra{\lambda_j} \\
-    \widetilde{H}_{A \cdot} & = \sum_{i, j}^{m} H_{ij} \ket{\lambda_i}\bra{\lambda_j}   
+    \widetilde{H}_{A \cdot} & = \sum_{i, j}^{m} H_{ij} \ket{\lambda_i}\bra{\lambda_j}
   \end{align}
 
   \item Set $H_{A} \leftarrow \widetilde{H}_{A \cdot}$ and return to \ref{step1}.
 
-\end{enumerate} 
+\end{enumerate}
 
 \todo[inline]{Expand. Present or link to some results. Finite-system algorithm. Maybe in other chapter: rephrase in MPS, primer on entropy and eigenvalue spectrum of density matrix.}
 This methods finds ground state energies with astounding accuracy, and has been
 the reference point in all 1D quantum lattice simulation since its invention.
-
-
-
-
-
-

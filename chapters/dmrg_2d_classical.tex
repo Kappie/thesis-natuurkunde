@@ -37,7 +37,13 @@ Exploiting the local nature of the interaction between spins, we can write
 \end{equation}
 
 where we defined $K \equiv \beta J$. Now, we can define
-the $2 \times 2$ matrix $T_{\sigma \sigma'} = \exp(K \sigma \sigma')$ to get
+the $2 \times 2$ matrix
+
+\begin{equation}\label{eq:transfer_matrix_1d_ising}
+  T_{\sigma \sigma'} = \exp(K \sigma \sigma')
+\end{equation}
+
+to obtain
 
 \begin{equation}
   Z_N = \sum_{\sigma_1, \cdots, \sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N
@@ -67,11 +73,11 @@ star-triangle relation (Baxter). Not all IRF models solvable.}
 Next, we treat the two-dimensional, square-lattice Ising model. In two
 dimensions, the energy function is still written as in
 \eqref{ising_energy_function}, but now every lattice site has four neighbors.
-Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume 
+Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume
 $l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the one-dimensional case.
 In the horizontal direction, we keep an open boundary. We refer to $N$ as the system size.
 
-Similarly to the 1D case, the partition function can be written as 
+Similarly to the 1D case, the partition function can be written as
 
 \begin{equation}
   Z_N = \sum_{\bm{\sigma}} \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l)
@@ -79,7 +85,7 @@ Similarly to the 1D case, the partition function can be written as
 
 where the product runs over all groups of four spins sharing the same face. The Boltzmann weight of such a face is given by
 
-\begin{equation}
+\begin{equation}\label{eq:boltzmann_weight_face_ising_model}
   W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) = \exp \left\{ \frac{K}{2} (\sigma_i \sigma_j + \sigma_j \sigma_k + \sigma_k \sigma_l + \sigma_l \sigma_i) \right\}
 \end{equation}
 
@@ -94,7 +100,7 @@ Where $\sigma_{i}^{r}$ denotes the value of the $i$th spin of row $r$. Now, we
 can generalize the definition of the transfer matrix to two dimensions, by
 defining it as the Boltzmann weight of an entire row
 
-\begin{equation}\label{row_to_row_transfer_matrix} 
+\begin{equation}\label{row_to_row_transfer_matrix}
   T_{N}(\bm{\sigma}, \bm{\sigma'}) = W(\sigma_1, \sigma_2, \sigma_1', \sigma_2') \dots W(\sigma_{N-1}, \sigma_N, \sigma_{N-1}', \sigma_{N}')
 \end{equation}
 
@@ -119,20 +125,68 @@ The partition function in the thermodynamic limit is given by
 
 
 
-\section{Partition function of 2D lattice as a tensor network}
-In calculating the partition function of 1D and 2D lattices, matrices of Boltzmann weights like $W$
-and $T$ play a crucial role. Up until now, we have formulated them in a way
-that serves us analytically, but makes it less clear how we should use them to
-implement a partition sum in a computer program, when calculations typically
-have to be written as matrix multiplications in order to be fast. In the
-language of tensor networks, the computational steps required become more
-clear.
+\section{Partition function of the 2D Ising model as a tensor network}
+In calculating the partition function of 1D and 2D lattices, matrices of Boltzmann weights
+like $W$ and $T$ play a crucial role. We have formulated them in a way that is valid for
+any interaction-round-a-face (IRF) model, defined by
+
+\begin{equation}
+  H \thicksim \sum_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k,
+  \sigma_l)
+\end{equation}
+
+where the summation is over all spins sharing a face. $W$ can contain 4-spin,
+3-spin, 2-spin and 1-spin interaction terms. The Ising model is a special case of the IRF
+model, with $W$ given by \autoref{eq:boltzmann_weight_face_ising_model}.
+
+We will now redefine the matrices $W$ and $T$ in terms of tensor networks. This allows us
+to visualize the equations in a way that is consistent with the many other tensor network
+algorithms under research today.
 
 \todo[inline]{Help! I don't know what the formal connection between the
   transfer matrix and the tensor network representation is! Yes you do! For any
   $l$, the trace over the transfer matrix is the same in both definitions of
   $T$. It is symmetric, so they should be related by a basis transformation. Is
   it, perhaps, exactly the basis in which the CTM is diagonal? }
+
+\subsection{A system of four spins}
+
+We define
+
+\begin{equation}
+  Q(\sigma_i \sigma_j) = \exp(K \sigma_i \sigma_j)
+\end{equation}
+
+as the Boltzmann weight of the bond between $\sigma_i$ and $\sigma_j$. It is the
+same as the 1D transfer matrix in \autoref{eq:transfer_matrix_1d_ising}.
+
+The Boltzmann weight of a face $W$ now decomposes into a product of Boltzmann weights of
+bonds
+
+\begin{equation}
+  W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) =
+  Q(\sigma_i, \sigma_j)Q(\sigma_j, \sigma_l)Q(\sigma_l, \sigma_k)Q(\sigma_k, \sigma_i)
+\end{equation}
+
+It is now easy to see, that the partition function
+
+\begin{equation}
+  Z_{2 \times 2} = \sum_{\sigma_1, \sigma_2, \sigma_3, \sigma_4} W(\sigma_1, \sigma_2,
+  \sigma_3, \sigma_4)
+\end{equation}
+
+is equal to the contracted tensor network in \autoref{fig:tensor_network_4_sites}
+
+\begin{equation}
+  Z = \text{bam}
+\end{equation}
+
+\begin{figure}
+  \caption{Hallo hier staat nog niks}
+  \label{fig:tensor_network_4_sites}
+\end{figure}
+
+
 
 
 
@@ -213,4 +267,3 @@ In the thermodynamic limit, \eqref{z_n_times_n} is equal to \eqref{z_n_times_inf
 \todo[inline]{More about Baxter's variational approach.}
 Nishino and Okunishi combined ideas from Baxter and White to formulate the
 corner transfer matrix renormalization group \cite{nishino1996corner}.
-

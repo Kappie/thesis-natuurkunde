@@ -1,6 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Contents}{i}{section*.1}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -16,48 +16,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Real-space renormalization group}{4}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Single particle in a box}{4}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Single particle in a box}{5}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Density matrix method}{5}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Infinite-system method}{7}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Infinite-system method}{8}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}DRMG applied to 2D classical lattice models}{10}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}DRMG applied to 2D classical lattice models}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Partition functions of classical lattices}{10}{section.3.1}
+\contentsline {section}{\numberline {3.1}Partition functions of classical lattices}{11}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Transfer matrices of lattice models}{10}{section.3.2}
+\contentsline {section}{\numberline {3.2}Transfer matrices of lattice models}{11}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}1D Ising model}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}1D Ising model}{11}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}2D Ising model}{11}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}2D Ising model}{13}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Partition function of 2D lattice as a tensor network}{13}{section.3.3}
+\contentsline {section}{\numberline {3.3}Partition function of the 2D Ising model as a tensor network}{14}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Transfer matrix renormalization group}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.3.1}A system of four spins}{15}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Corner transfer matrices}{14}{section.3.5}
+\contentsline {section}{\numberline {3.4}Transfer matrix renormalization group}{16}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Corner transfer matrix renormalization group}{15}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.5}Corner transfer matrices}{17}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}Matrix Product States}{16}{chapter.4}
+\contentsline {subsection}{\numberline {3.5.1}Corner transfer matrix renormalization group}{18}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}From the DMRG algorithm to matrix product states}{16}{section.4.1}
+\contentsline {chapter}{\chapternumberline {4}Finite-size scaling}{19}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {A}Correspondence of 1D quantum and 2D classical lattices}{17}{appendix.A}
+\contentsline {section}{\numberline {4.1}Hallo}{19}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Hoi}{17}{section.A.1}
+\contentsline {appendix}{\chapternumberline {A}Correspondence of 1D quantum and 2D classical lattices}{20}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {B}Introduction to tensor networks}{18}{appendix.B}
+\contentsline {section}{\numberline {A.1}Hoi}{20}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Tensors, or multidimensional arrays}{18}{section.B.1}
+\contentsline {appendix}{\chapternumberline {B}Introduction to tensor networks}{21}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}Tensor contraction}{19}{section.B.2}
+\contentsline {section}{\numberline {B.1}Tensors, or multidimensional arrays}{21}{section.B.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Tensor networks}{20}{section.B.3}
+\contentsline {section}{\numberline {B.2}Tensor contraction}{22}{section.B.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.1}Graphical notation}{20}{subsection.B.3.1}
+\contentsline {section}{\numberline {B.3}Tensor networks}{23}{section.B.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.2}Computational complexity of contraction}{20}{subsection.B.3.2}
+\contentsline {subsection}{\numberline {B.3.1}Graphical notation}{23}{subsection.B.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{22}{section*.20}
+\contentsline {subsection}{\numberline {B.3.2}Computational complexity of contraction}{23}{subsection.B.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{25}{section*.19}
