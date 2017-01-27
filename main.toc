@@ -60,4 +60,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {B.3.2}Computational complexity of contraction}{20}{subsection.B.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{22}{section*.19}
+\contentsline {chapter}{Bibliography}{22}{section*.20}
