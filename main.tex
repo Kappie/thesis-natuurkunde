@@ -1,6 +1,6 @@
-\documentclass[10pt, ebook, openany, oneside]{memoir}
+\documentclass[9pt, ebook, openany, oneside]{memoir}
 
-% Packages for baskerville font.
+% Packages for baskervillef font.
 \usepackage[T1]{fontenc}
 \usepackage{baskervillef}
 \usepackage[varqu,varl,var0]{inconsolata}
@@ -36,13 +36,11 @@
 
 
 
-% \setlength{\parindent}{6pt}
 \maxtocdepth{subsection}
 \setsecnumdepth{subsection}
-\chapterstyle{crosshead}
 
-%\setlength{\beforechapskip}{20pt}
 
+% Commands below define chapter title style.
 \makeatletter
  \renewcommand{\chapterheadstart}{\vspace*{\beforechapskip}}
  \renewcommand{\printchaptername}{}
@@ -50,8 +48,9 @@
  \renewcommand{\printchapternum}{\centering\chapnumfont\thechapter}
  \renewcommand{\afterchapternum}{\par\nobreak\vskip \midchapskip}
  \renewcommand{\printchapternonum}{}
- \renewcommand{\printchaptertitle}[1]{\centering\chaptitlefont\MakeLowercase #1}
- % \renewcommand{\afterchaptertitle}{\par\nobreak\vskip \afterchapskip}
+ % \renewcommand{\printchaptertitle}[1]{\centering\chaptitlefont\MakeLowercase{ \oldstylenums #1}}
+ \renewcommand{\printchaptertitle}[1]{\centering\chaptitlefont #1}
+ % \renewcommand{\printchaptertitle}[1]{\centering\chaptitlefont}
  \renewcommand{\afterchaptertitle}{%
  \vskip2em
  \hrule height 0.6pt
@@ -59,7 +58,7 @@
  }
  \renewcommand{\chapnamefont}{\normalfont\huge\bfseries}
  \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
- \renewcommand{\chaptitlefont}{\normalfont\huge\bfseries\scshape}
+ \renewcommand{\chaptitlefont}{\normalfont\huge\bfseries}
  \setlength{\beforechapskip}{0.5em}
  \setlength{\midchapskip}{0.5em}
  \setlength{\afterchapskip}{4em}
@@ -87,36 +86,36 @@
 %\end{titlingpage}
 
 \begingroup
-\renewcommand{\afterchaptertitle}{}
+\renewcommand{\afterchaptertitle}{\vskip1.5em}
 
 \tableofcontents*
 \endgroup
 
 \mainmatter
 
-\chapter{Introduction}
-\input{chapters/introduction}
+% \chapter{Introduction}
+% \input{chapters/introduction}
 
 %\chapter{Tensor networks}
 %\input{chapters/tensor_networks}
 
-\chapter{Density matrix renormalization group method}
-\input{chapters/dmrg}
+% \chapter{Density matrix renormalization group method}
+% \input{chapters/dmrg}
 
-\chapter{DRMG applied to 2D classical lattice models}
+\chapter{DRMG applied to two-dimensional classical lattice models}
 \input{chapters/dmrg_2d_classical}
 
-\chapter{Finite-size scaling}
-\input{chapters/finite_size_scaling}
+% \chapter{Finite-size scaling}
+% \input{chapters/finite_size_scaling}
 
 
 
-\appendix
-\chapter{Correspondence of 1D quantum and 2D classical lattices}
-\input{chapters/correspondence_1d_quantum_2d_classical}
-
-\chapter{Introduction to tensor networks}
-\input{chapters/introduction_tensor_networks}
+% \appendix
+% \chapter{Correspondence of 1D $1D$ quantum and 2D classical lattices}
+% \input{chapters/correspondence_1d_quantum_2d_classical}
+%
+% \chapter{Introduction to tensor networks}
+% \input{chapters/introduction_tensor_networks}
 
 
 \backmatter

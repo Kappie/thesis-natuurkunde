@@ -1,11 +1,9 @@
 \section{Partition functions of classical lattices}
 The central quantity in equilibrium statistical mechanics is the partition
 function $Z$, which, for a discrete system such as a lattice, is defined as
-
 \begin{equation}
   Z = \sum_{s} \exp{(-\beta H(s))}
 \end{equation}
-
 where the sum is over all microstates $s$, $H$ is the energy function, and
 $\beta = T^{-1}$ the inverse temperature.
 
@@ -16,54 +14,48 @@ $\beta = T^{-1}$ the inverse temperature.
 \todo[inline]{refer to Ising, talk a bit about model (magnetism etc).}
 
 Consider the 1D zero-field ferromagnetic Ising model, defined by the energy function
-
 \begin{equation}\label{ising_energy_function}
   H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j
 \end{equation}
-
 Here, we sum over nearest neighbors $\langle i j \rangle$ and the spins
-$\sigma_i$ take the values $\pm 1$. $J > 0$. Assume, for the moment, that the chain
+$\sigma_i$ take the values $\pm 1$. $J > 0$.
+
+Assume, for the moment, that the chain
 consists of $N$ spins, and apply periodic boundary conditions.
 The partition function of this system is given by
-
 \begin{equation}
   Z_{N} = \sum_{\sigma_1, \dotsc, \sigma_N \in \{-1, 1\}} \exp (-\beta H(\sigma))
 \end{equation}
-
 Exploiting the local nature of the interaction between spins, we can write
-
 \begin{equation}
   Z_{N} = \sum_{\sigma_1, \cdots, \sigma_N \in \{-1, 1\}} \prod_{\langle i, j \rangle} e^{K\sigma_i \sigma_j}
 \end{equation}
+where we defined $K \equiv \beta J$.
 
-where we defined $K \equiv \beta J$. Now, we can define
+Now, we can define
 the $2 \times 2$ matrix
-
 \begin{equation}\label{eq:transfer_matrix_1d_ising}
   T_{\sigma \sigma'} = \exp(K \sigma \sigma')
 \end{equation}
-
 to obtain
-
 \begin{equation}
   Z_N = \sum_{\sigma_1, \cdots, \sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N
 \end{equation}
 
-$T$ is called the transfer matrix. Since $T^N = P D^N P^{-1}$, where $P$
-consists of the eigenvectors of $T$, and by the cyclic property of the trace, we
-have
-
+$T$ is called the transfer matrix. Since $T$ is, in fact, diagonalizable, $T^N = P D^N
+P^{-1}$, where $P$ consists of the eigenvectors of $T$. By the cyclic property of the
+trace, we have
 \begin{equation}
   Z_N = \lambda_{1}^{N} + \lambda_{2}^{N}
 \end{equation}
 
 Thus, we have reduced the problem of finding the partition function to an
-eigenvalue problem, which is quite easy in this case. Also, note that in the thermodynamic limit $N \to \infty$
+eigenvalue problem, which is quite easy in this case.
 
+Note that in the thermodynamic limit $N \to \infty$
 \begin{equation}
   Z = \lim_{N \to \infty} \lambda_{1}^{N}
 \end{equation}
-
 where $\lambda_1$ is the non-degenerate largest eigenvalue (in absolute value) of $T$.
 
 \subsection{2D Ising model}
@@ -73,75 +65,68 @@ star-triangle relation (Baxter). Not all IRF models solvable.}
 Next, we treat the two-dimensional, square-lattice Ising model. In two
 dimensions, the energy function is still written as in
 \eqref{ising_energy_function}, but now every lattice site has four neighbors.
+
 Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume
-$l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the one-dimensional case.
-In the horizontal direction, we keep an open boundary. We refer to $N$ as the system size.
+$l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the
+one-dimensional case. In the horizontal direction, we keep an open boundary. We refer to
+$N$ as the system size.
 
 Similarly to the 1D case, the partition function can be written as
-
 \begin{equation}
   Z_N = \sum_{\bm{\sigma}} \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l)
 \end{equation}
-
 where the product runs over all groups of four spins sharing the same face. The Boltzmann weight of such a face is given by
-
 \begin{equation}\label{eq:boltzmann_weight_face_ising_model}
   W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) = \exp \left\{ \frac{K}{2} (\sigma_i \sigma_j + \sigma_j \sigma_k + \sigma_k \sigma_l + \sigma_l \sigma_i) \right\}
 \end{equation}
 
 We can express the Boltzmann weight of a configuration of the whole lattice as
 a product of the Boltzmann weights of the rows
-
 \begin{equation}
   Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} W(\sigma_{1}^{r}, \sigma_{2}^{r}, \sigma_{1}^{r+1}, \sigma_{2}^{r+1}) \dots W(\sigma_{N-1}^{r}, \sigma_{N}^{r}, \sigma_{N-1}^{r+1}, \sigma_{N}^{r+1})
 \end{equation}
+where $\sigma_{i}^{r}$ denotes the value of the $i$th spin of row $r$.
 
-Where $\sigma_{i}^{r}$ denotes the value of the $i$th spin of row $r$. Now, we
-can generalize the definition of the transfer matrix to two dimensions, by
+Now, we can generalize the definition of the transfer matrix to two dimensions, by
 defining it as the Boltzmann weight of an entire row
-
-\begin{equation}\label{row_to_row_transfer_matrix}
+\begin{equation}\label{eq:row_to_row_transfer_matrix}
   T_{N}(\bm{\sigma}, \bm{\sigma'}) = W(\sigma_1, \sigma_2, \sigma_1', \sigma_2') \dots W(\sigma_{N-1}, \sigma_N, \sigma_{N-1}', \sigma_{N}')
 \end{equation}
+The dimensions of $T_N$ are $2^N \times 2^N$.
 
-The dimensions of $T_N$ are $2^N \times 2^N$. Similarly as in the
-one-dimensional case, the partition function now becomes
-
+Similarly as in the one-dimensional case, the partition function now becomes
 \begin{equation}\label{z_n_times_infty}
   Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} T_{N}(\bm{\sigma}^r, \bm{\sigma}^{r+1}) = \tr T_{N}^l
 \end{equation}
 
-In the limit of an $N \times \infty$ cylinder, the partition function is once again determined by the largest eigenvalue.
-
+In the limit of an $N \times \infty$ cylinder, the partition function is once again
+determined by the largest eigenvalue\footnote{As in the 1D case, $T$ is symmetric, so it
+orthogonally diagonalizable.}.
 \begin{equation}\label{largest_eigenvalue_transfer_matrix}
   Z_N = \lim_{l \to \infty} T_{N}^{l} = \lim_{l \to \infty} (\lambda_0)_{N}^{l}
 \end{equation}
 
 The partition function in the thermodynamic limit is given by
-
 \begin{equation}
   Z = \lim_{N \to \infty} Z_N
 \end{equation}
-
-
 
 \section{Partition function of the 2D Ising model as a tensor network}
 In calculating the partition function of 1D and 2D lattices, matrices of Boltzmann weights
 like $W$ and $T$ play a crucial role. We have formulated them in a way that is valid for
 any interaction-round-a-face (IRF) model, defined by
-
 \begin{equation}
   H \thicksim \sum_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k,
   \sigma_l)
 \end{equation}
-
 where the summation is over all spins sharing a face. $W$ can contain 4-spin,
 3-spin, 2-spin and 1-spin interaction terms. The Ising model is a special case of the IRF
 model, with $W$ given by \autoref{eq:boltzmann_weight_face_ising_model}.
 
-We will now redefine the matrices $W$ and $T$ in terms of tensor networks. This allows us
-to visualize the equations in a way that is consistent with the many other tensor network
-algorithms under research today.
+We will now express the partition function of the 2D Ising model as a tensor network. The
+transfer matrix $T$ is redefined in the process. This allows us to visualize the equations
+in a way that is consistent with the many other tensor network algorithms under research
+today.
 
 \todo[inline]{Help! I don't know what the formal connection between the
   transfer matrix and the tensor network representation is! Yes you do! For any
@@ -152,33 +137,38 @@ algorithms under research today.
 \subsection{A system of four spins}
 
 We define
-
 \begin{equation}
-  Q(\sigma_i \sigma_j) = \exp(K \sigma_i \sigma_j)
+  Q(\sigma_i, \sigma_j) = \exp(K \sigma_i \sigma_j)
 \end{equation}
-
 as the Boltzmann weight of the bond between $\sigma_i$ and $\sigma_j$. It is the
 same as the 1D transfer matrix in \autoref{eq:transfer_matrix_1d_ising}.
 
-The Boltzmann weight of a face $W$ now decomposes into a product of Boltzmann weights of
+The Boltzmann weight of a face $W$ decomposes into a product of Boltzmann weights of
 bonds
-
 \begin{equation}
   W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) =
   Q(\sigma_i, \sigma_j)Q(\sigma_j, \sigma_l)Q(\sigma_l, \sigma_k)Q(\sigma_k, \sigma_i)
 \end{equation}
 
-It is now easy to see, that the partition function
-
+It is now easy to see that the partition function is equal to the contracted tensor
+network in \autoref{fig:tensor_network_4_sites}
 \begin{equation}
-  Z_{2 \times 2} = \sum_{\sigma_1, \sigma_2, \sigma_3, \sigma_4} W(\sigma_1, \sigma_2,
-  \sigma_3, \sigma_4)
+  \begin{split}
+    Z_{2 \times 2} & =
+    \sum_{\sigma_1, \sigma_2, \sigma_3, \sigma_4} \sum_{a, b, c, d}
+    \delta_{\sigma_1, a} Q(a, b) \delta_{\sigma_2, b} Q(b, c)
+    \delta_{\sigma_3, c} Q(c, d) \delta_{\sigma_4, d} Q(d, a) \\
+    & =
+    \sum_{\sigma_1, \sigma_2, \sigma_3, \sigma_4} W(\sigma_1, \sigma_2, \sigma_3, \sigma_4)
+  \end{split}
 \end{equation}
-
-is equal to the contracted tensor network in \autoref{fig:tensor_network_4_sites}
-
+where the Kronecker delta is defined as usual:
 \begin{equation}
-  Z = \text{bam}
+  \delta_{i j} =
+  \begin{cases}
+    1 & \text{if } i = j \\
+    0 & \text{if } i \neq j
+  \end{cases}
 \end{equation}
 
 \begin{figure}
@@ -187,17 +177,58 @@ is equal to the contracted tensor network in \autoref{fig:tensor_network_4_sites
 \end{figure}
 
 
+\subsection{Thermodynamic limit}
+
+We define the matrix $P$ by
+\begin{equation}
+  P^2 = Q
+\end{equation}
+and can now write the partition function of an arbitrary square lattice as a tensor
+network of a single recurrent tensor $a_{i j k l}$, given by
+\begin{equation}
+  a_{i j k l} = \sum_{a, b, c, d} \delta_{a b c d} P_{i a} P_{j b} P_{k c} P_{l d}
+\end{equation}
+where the generalization of the Kronecker delta is defined as
+\begin{equation}
+  \delta_{i_1 \dots i_n} =
+  \begin{cases}
+    1 & \text{if } i_1 = \ldots = i_n \\
+    0 & \text{otherwise}
+  \end{cases}
+\end{equation}
+
+See \autoref{fig:2d_classical_partition_function_as_tensor_network}. At the edges and
+corners, we have suitable 2 and 3 legged tensors, which we will also denote by $a$.
+\begin{align*}
+  a_{i j k} &= \sum_{a b c} \delta_{a b c} P_{i a} P_{j b} P_{k c} \\
+  a_{i j} &= \sum_{a b} \delta_{a b} P_{i a} P_{j b}
+\end{align*}
+
+The challenge is to approximate this tensor network in the thermodynamic limit.
 
 
+\subsection{The transfer matrix as a tensor network}
+\todo[inline]{Say something about reshaping legs.}
 
+We can now redefine the row-to-row transfer matrix from
+\autoref{eq:row_to_row_transfer_matrix} as the tensor network expressed in
+\autoref{fig:transfer_matrix_as_tensor_network}. For all $l$, it is still true that
+\begin{equation}
+  Z_{N \times l} = \tr T_{N}^{l} = \sum_{i = 1}^{2^N} \lambda_{i}^{l}
+\end{equation}
+so the eigenvalues must be the same. That means that the new definition of the transfer
+matrix is related to the old one by a basis transformation
+\begin{equation}
+  T_{\text{new}} = P T_{\text{old}} P^{-1}
+\end{equation}
 
 
 
 \begin{figure}
-  \includestandalone{images/2d_classical_partition_function_as_tensor_network}
-  \caption{2D lattice to as a tensor network. bla bla.}
-  \label{fig:2d_classical_partition_function_as_tensor_network}
+  \caption{lalala nog niks}
+  \label{fig:transfer_matrix_as_tensor_network}
 \end{figure}
+
 
 
 \section{Transfer matrix renormalization group}
@@ -231,7 +262,7 @@ ground state (cf. \eqref{eq:density_matrix_superblock})
 
 The concept of corner transfer matrices for 2D lattices was first introduced by
 Baxter \cite{baxter1968dimers, baxter1978variational, baxter1982exactly}.
-Whereas the row-to-row transfer matrix \eqref{row_to_row_transfer_matrix}
+Whereas the row-to-row transfer matrix \eqref{eq:row_to_row_transfer_matrix}
 corresponds to adding a row to the lattice, the corner transfer matrix adds
 a quadrant of spins. It is defined as
 

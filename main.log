@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  27 JAN 2017 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  2 FEB 2017 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -33,8 +33,8 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/memoir/mem10.clo
-File: mem10.clo 2008/01/30 v0.3 memoir class 10pt size option
+(/usr/local/texlive/2016/texmf-dist/tex/latex/memoir/mem9.clo
+File: mem9.clo 2008/01/30 v0.4 memoir class 9pt size option
 )
 \binding=\skip48
 \spinemargin=\skip49
@@ -2185,7 +2185,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip265
 )
 LaTeX Font Info:    Try loading font information for T1+BaskervilleF-TLF on inp
-ut line 73.
+ut line 72.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/T1BaskervilleF-TLF.f
 d
@@ -2193,7 +2193,7 @@ File: T1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for T1/Baske
 rvilleF-TLF.
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 73.
+(Font)              scaled to size 10.0pt on input line 72.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -2208,62 +2208,64 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 73.
-LaTeX Font Info:    Try loading font information for OML+zbami on input line 73
+LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 72.
+LaTeX Font Info:    Try loading font information for OML+zbami on input line 72
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
 File: omlzbami.fd 2016/11/11 Fontinst v1.933 font definitions for OML/zbami.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 72.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 72.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 72.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 72.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 73
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 72.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 72
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 72.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 7
-3.
+2.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 72.
 \c@mv@tabular=\count385
 \c@mv@boldtabular=\count386
 
@@ -2308,10 +2310,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 73.
-Package biblatex Info: Reference segment=0 on input line 73.
+Package biblatex Info: Reference section=0 on input line 72.
+Package biblatex Info: Reference segment=0 on input line 72.
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 73.
+Package hyperref Info: Link coloring OFF on input line 72.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2323,46 +2325,161 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 73.
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 92.
+(Font)              scaled to size 14.4pt on input line 91.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 92.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/sc' will be
-(Font)              scaled to size 17.28pt on input line 92.
+(Font)              scaled to size 14.4pt on input line 91.
  (./main.toc
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 5.
+LaTeX Font Info:    Try loading font information for OT1+BaskervilleF-TLF on in
+put line 5.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/OT1BaskervilleF-TLF.
+fd
+File: OT1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for OT1/Bas
+kervilleF-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 5.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 5.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 5.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...ernumberline {1}Introduction}{1}{chapter.1}
-                                                  
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.5 ...ernumberline {1}Introduction}{1}{chapter.1}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 5.
 
- 
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 5.5pt on input line 5.
+) [1
+
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 105.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 105.
+
+(./chapters/dmrg_2d_classical.tex
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 12.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 14.
+ [1
+
+
+] [2]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 103.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 104.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 104.
+ [3] [4]
+
+LaTeX Warning: Reference `fig:2d_classical_partition_function_as_tensor_network
+' on page 5 undefined on input line 200.
+
+[5]
+
+LaTeX Warning: Reference `eq:density_matrix_superblock' on page 6 undefined on 
+input line 250.
+
+[6]) [7]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 122.
+
+Overfull \hbox (6.17421pt too wide) in paragraph at lines 123--123
+[]\T1/BaskervilleF-TLF/m/n/9 Tomotoshi Nishino and Kouichi Oku-n-ishi. ``Cor-ne
+r trans-fer ma-trix renor-
+ []
+
+[8
+
+
+]
+\tf@toc=\write8
+\openout8 = `main.toc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 82B94C0A987EDF1562968D54A3F10B90;1041.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 29528 strings out of 493014
- 519228 string characters out of 6133351
- 943925 words of memory out of 5000000
- 32516 multiletter control sequences out of 15000+600000
- 60615 words of font info for 22 fonts, out of 8000000 for 9000
+ 29946 strings out of 493014
+ 526544 string characters out of 6133351
+ 948060 words of memory out of 5000000
+ 32771 multiletter control sequences out of 15000+600000
+ 299082 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,1n,59p,893b,1498s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 68i,15n,83p,893b,1606s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
+nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
+enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/Baskerville
+F-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/
+BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/newtx/rtxbmi-rev.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/newtx/txbsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx
+/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on main.pdf (9 pages, 140031 bytes).
+PDF statistics:
+ 250 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+
