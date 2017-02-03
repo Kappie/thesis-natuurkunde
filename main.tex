@@ -8,9 +8,9 @@
 \usepackage[baskerville,vvarbb]{newtxmath}
 \usepackage[cal=boondoxo]{mathalfa}
 
+% Bulk of packages:
 \usepackage[english]{babel}
 \usepackage{standalone}
-\usepackage{tikz}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{todonotes}
@@ -18,7 +18,11 @@
 \usepackage{amssymb}
 \usepackage{braket}
 \usepackage{bm}
-\usepackage{xcolor}
+
+% Input packages for tikz pictures.
+\input{images/tikz_declarations}
+
+% Just to make sure: import these packages last.
 \usepackage[backend=biber, style=numeric, hyperref]{biblatex}
 \usepackage{hyperref}
 
@@ -114,8 +118,8 @@
 % \chapter{Correspondence of 1D $1D$ quantum and 2D classical lattices}
 % \input{chapters/correspondence_1d_quantum_2d_classical}
 %
-% \chapter{Introduction to tensor networks}
-% \input{chapters/introduction_tensor_networks}
+\chapter{Introduction to tensor networks}
+\input{chapters/introduction_tensor_networks}
 
 
 \backmatter

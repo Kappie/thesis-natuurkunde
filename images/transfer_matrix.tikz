@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={a-tensor}] (0) at (-1, -0) {$a$};
+		\node [style={a-tensor}] (1) at (0, -0) {$a$};
+		\node [style={white no border}] (2) at (1, -0) {$\dots$};
+		\node [style={a-tensor}] (3) at (2, -0) {$a$};
+		\node [style={a-tensor}] (4) at (3, -0) {$a$};
+		\node [style={white no border}] (5) at (3, 1) {};
+		\node [style={white no border}] (6) at (2, 1) {};
+		\node [style={white no border}] (7) at (0, 1) {};
+		\node [style={white no border}] (8) at (-1, 1) {};
+		\node [style={white no border}] (9) at (-1, -1) {};
+		\node [style={white no border}] (10) at (0, -1) {};
+		\node [style={white no border}] (11) at (2, -1) {};
+		\node [style={white no border}] (12) at (3, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (0) to (1);
+		\draw [style=simple] (1) to (2);
+		\draw [style=simple] (2) to (3);
+		\draw [style=simple] (3) to (4);
+		\draw [style=simple] (4) to (5);
+		\draw [style=simple] (3) to (6);
+		\draw [style=simple] (1) to (7);
+		\draw [style=simple] (0) to (8);
+		\draw [style=simple] (0) to (9);
+		\draw [style=simple] (1) to (10);
+		\draw [style=simple] (3) to (11);
+		\draw [style=simple] (4) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={red tensor}] (0) at (0, -0) {};
+		\node [style={white no border}] (1) at (1, -0) {};
+		\node [style={white no border}] (2) at (0, 1) {};
+		\node [style={white no border}] (3) at (-1, -0) {};
+		\node [style={white no border}] (4) at (0, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (0) to (1);
+		\draw [style=simple] (0) to (2);
+		\draw [style=simple] (0) to (3);
+		\draw [style=simple] (0) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}

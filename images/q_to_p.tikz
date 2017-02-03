@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=q-tensor, label={$Q$}] (0) at (0, 0) {};
+		\node [style=white no border] (1) at (-1, 0) {};
+		\node [style=white no border] (2) at (1, 0) {$=$};
+		\node [style=p-tensor-right, label={$P$}] (3) at (2, 0) {};
+		\node [style=p-tensor-left, label={$P$}] (4) at (2.75, 0) {};
+		\node [style=white no border] (5) at (3.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (0) to (1);
+		\draw [style=simple] (0) to (2);
+		\draw [style=simple] (3) to (4);
+		\draw [style=simple] (4) to (5);
+		\draw [style=simple] (3) to (2);
+	\end{pgfonlayer}
+\end{tikzpicture}

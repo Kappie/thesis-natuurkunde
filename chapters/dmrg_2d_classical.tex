@@ -172,12 +172,24 @@ where the Kronecker delta is defined as usual:
 \end{equation}
 
 \begin{figure}
+  \input{images/tensor_network_4_sites.tikz}
   \caption{Hallo hier staat nog niks}
   \label{fig:tensor_network_4_sites}
 \end{figure}
 
 
 \subsection{Thermodynamic limit}
+\begin{figure}
+  \input{images/q_to_p.tikz}
+  \caption{Hallo hier staat nog niks}
+  \label{fig:q_to_p}
+\end{figure}
+
+\begin{figure}
+  \input{images/a_tensor.tikz}
+  \caption{Hallo hier staat nog niks}
+  \label{fig:q_to_p}
+\end{figure}
 
 We define the matrix $P$ by
 \begin{equation}
@@ -197,6 +209,7 @@ where the generalization of the Kronecker delta is defined as
   \end{cases}
 \end{equation}
 
+
 See \autoref{fig:2d_classical_partition_function_as_tensor_network}. At the edges and
 corners, we have suitable 2 and 3 legged tensors, which we will also denote by $a$.
 \begin{align*}
@@ -206,6 +219,10 @@ corners, we have suitable 2 and 3 legged tensors, which we will also denote by $
 
 The challenge is to approximate this tensor network in the thermodynamic limit.
 
+\begin{figure}
+  \caption{Hallo hier staat nog niks}
+  \label{fig:a_tensor}
+\end{figure}
 
 \subsection{The transfer matrix as a tensor network}
 \todo[inline]{Say something about reshaping legs.}
@@ -225,6 +242,7 @@ matrix is related to the old one by a basis transformation
 
 
 \begin{figure}
+  \input{images/shapes_test.tikz}
   \caption{lalala nog niks}
   \label{fig:transfer_matrix_as_tensor_network}
 \end{figure}
@@ -235,8 +253,10 @@ matrix is related to the old one by a basis transformation
 \todo[inline]{More about connection between 1D quantum and 2D classical}
 \todo[inline]{Pictures}
 
-Nishino \cite{nishino1995density} was the first one to apply DMRG in its modern
-form to approximate the transfer matrix of a two-dimensional classical lattice system.
+We will now focus on contracting the infinite tensor network of
+\autoref{fig:transfer_matrix_as_tensor_network}. Nishino \cite{nishino1995density} was the
+first one to apply DMRG in its modern form to approximate the transfer matrix of a
+two-dimensional classical lattice system.
 
 In the limit of an $N \times \infty$ lattice, $T_{N}^{l}$ becomes proportional
 to the projector onto the eigenspace of the largest eigenvalue

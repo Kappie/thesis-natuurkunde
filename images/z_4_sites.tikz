@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=delta-tensor] (0) at (-1, 0) {};
+		\node [style=delta-tensor] (1) at (1, 0) {};
+		\node [style=delta-tensor] (2) at (1, 2) {};
+		\node [style=delta-tensor] (3) at (-1, 2) {};
+		\node [style=q-tensor] (4) at (1, 1) {};
+		\node [style=q-tensor] (5) at (0, 2) {};
+		\node [style=q-tensor] (6) at (-1, 1) {};
+		\node [style=q-tensor] (7) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3) to (6);
+		\draw (6) to (0);
+		\draw (0) to (7);
+		\draw (7) to (1);
+		\draw (1) to (4);
+		\draw (4) to (2);
+		\draw (2) to (5);
+		\draw (5) to (3);
+	\end{pgfonlayer}
+\end{tikzpicture}

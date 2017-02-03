@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=delta-tensor] (0) at (-1, 0) {};
+		\node [style=delta-tensor] (1) at (1, 0) {};
+		\node [style=delta-tensor] (2) at (1, 2) {};
+		\node [style=delta-tensor, label={$\delta$}] (3) at (-1, 2) {};
+		\node [style=q-tensor] (4) at (1, 1) {};
+		\node [style=q-tensor, label={$Q$}] (5) at (0, 2) {};
+		\node [style=q-tensor] (6) at (-1, 1) {};
+		\node [style=q-tensor] (7) at (0, 0) {};
+		\node [style=white no border] (8) at (-2, 1) {$Z_{2 \times 2} = $};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (3) to (6);
+		\draw [style=simple] (6) to (0);
+		\draw [style=simple] (0) to (7);
+		\draw [style=simple] (7) to (1);
+		\draw [style=simple] (1) to (4);
+		\draw [style=simple] (4) to (2);
+		\draw [style=simple] (2) to (5);
+		\draw [style=simple] (5) to (3);
+	\end{pgfonlayer}
+\end{tikzpicture}
