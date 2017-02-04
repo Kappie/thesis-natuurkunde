@@ -5,7 +5,6 @@ defined with a metric.}
 
 In the field of tensor networks, a tensor is a multidimensional table with numbers -- a
 convenient way to organize information. It is the generalization of a vector
-
 \begin{equation}
   v_i =
   \begin{bmatrix}
@@ -14,9 +13,7 @@ convenient way to organize information. It is the generalization of a vector
     v_n
   \end{bmatrix}
 \end{equation}
-
 which has one index, and a matrix
-
 \begin{equation}
   M_{i j} =
   \begin{bmatrix}
@@ -25,12 +22,11 @@ which has one index, and a matrix
   M_{m 1} & \dots & M_{m n}
   \end{bmatrix}
 \end{equation}
-
-which has two. A tensor of rank $N$ has $N$ indices:\footnote{The definition of rank in this
+which has two.
+A tensor of rank $N$ has $N$ indices:\footnote{The definition of rank in this
 context is not to be confused with the rank of a matrix, which is the number of
 linearly independent columns. Synonyms of tensor rank are tensor degree and
 tensor order.}
-
 \begin{equation}
   T_{i_1 \dots i_N}
 \end{equation}
@@ -67,11 +63,9 @@ the dimensions of the indices match.
 \section{Tensor networks}
 
 A tensor network is specified by a set of tensors, together with a set of contractions to be performed. For example:
-
 \begin{equation}
   M_{a b} = \sum_{i, j, k} A_{a i} B_{i j} C_{j k} D_{k b}
 \end{equation}
-
 which corresponds to the matrix product $A B C D$.
 
 \subsection{Graphical notation}
@@ -79,23 +73,26 @@ It is highly convenient to introduce a graphical notation that is common in the
 tensor network community. It greatly simplifies expressions and makes certain
 properties manifest.
 
-Each tensor is represented by a shape. Open-ended lines, called legs, represent
-unsummed indices. See \autoref{fig:tensors_graphical_notation}. Each contracted
-index is represented by a connected line. See \autoref{fig:contracted_tensors}.
+Each tensor is represented by a shape. Open-ended lines, called legs, represent unsummed
+indices. See \autoref{fig:tensors_graphical_notation}. If it clear from the context, index
+labels may be omitted from the open legs.
+
+Each contracted index is represented by a connected line. See
+\autoref{fig:contracted_tensors}.
 
 Many tensor equations, while burdensome when written out, are readily
 understood in this graphical way. As an example, consider the matrix trace in
 \autoref{fig:contracted_tensors}, where its cyclic property is manifest.
 
 \begin{figure}
-  \includestandalone{images/tensors_graphical_notation}
+  \input{images/tensors.tikz}
   \caption{Open-ended lines, called legs, represent unsummed indices. A tensor
   with no open legs is a scalar.}
   \label{fig:tensors_graphical_notation}
 \end{figure}
 
 \begin{figure}
-  \includestandalone{images/contracted_tensors}
+  \input{images/contracted_tensors.tikz}
   \caption{Connected legs represent contracted indices. The networks in the
   figure represent $\sum_i a_i b_i$ (dot product),
   $\sum_j M_{i j} a_j$ (matrix-vector product), $\sum_{k} A_{i k} B_{k
@@ -103,7 +100,40 @@ understood in this graphical way. As an example, consider the matrix trace in
   \label{fig:contracted_tensors}
 \end{figure}
 
+\subsection{Reshaping tensors}
+Several indices can be taken together to form a single, joint index, that runs over all
+combinations of the indices that fused into it. For example, an $m \times n$ matrix can be
+reshaped into an $m n$ vector.
+\begin{equation}
+  M_{i j} = \bm{v_a} \qquad a \in \{ 1, \dots, m n \}
+\end{equation}
+
+Some convention has to be chosen to map the joint index $i, j$ onto the single index $a$,
+for example
+\begin{equation}
+  a = (n - 1)i + j
+\end{equation}
+which orders the indices of the matrix $M$ row by row
+\begin{equation}
+  1 1, 1 2, \dots, 1 n, 2 1, 2 2, \dots, m n - 1, m n
+\end{equation}
+
+Graphically, this can be represented as bundling the open legs of a tensor network, as in
+\autoref{fig:reshaped_tensor}.
+
+\begin{figure}
+  \input{images/reshaped_tensor.tikz}
+  \caption{Reshaping a tensor $T_{a b c d e f}$ to $T_{i j}$}
+  \label{fig:reshaped_tensor}
+\end{figure}
+
 
 
 \subsection{Computational complexity of contraction}
 \todo[inline]{Computational complexity.}
+
+
+\begin{figure}
+  \input{images/eigenvalue_equation.tikz}
+  \caption{Reshaping a tensor $T_{a b c d e f}$ to $T_{i j}$}
+\end{figure}

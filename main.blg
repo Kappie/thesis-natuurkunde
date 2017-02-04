@@ -1,18 +1,18 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
-[0] Config.pm:346> INFO - Logfile is 'main.blg'
-[80] biber-darwin:290> INFO - === Thu Feb  2, 2017, 16:12:24
-[113] Biber.pm:351> INFO - Reading 'main.bcf'
+[1] Config.pm:346> INFO - Logfile is 'main.blg'
+[73] biber-darwin:290> INFO - === Fri Feb  3, 2017, 17:53:47
+[106] Biber.pm:351> INFO - Reading 'main.bcf'
 [238] Biber.pm:776> INFO - Found 5 citekeys in bib section 0
-[255] Biber.pm:3493> INFO - Processing section 0
-[295] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
-[298] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[301] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
-[303] Utils.pm:149> WARN - Duplicate entry key: 'nishino1995density' in file 'references.bib', skipping ...
-[304] Utils.pm:149> WARN - Duplicate entry key: 'nishino1996corner' in file 'references.bib', skipping ...
-[332] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[332] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[333] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[333] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[343] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[345] bbl.pm:619> INFO - Output to main.bbl
-[346] Biber.pm:108> INFO - WARNINGS: 2
+[254] Biber.pm:3493> INFO - Processing section 0
+[280] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
+[284] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[291] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
+[295] Utils.pm:149> WARN - Duplicate entry key: 'nishino1995density' in file 'references.bib', skipping ...
+[295] Utils.pm:149> WARN - Duplicate entry key: 'nishino1996corner' in file 'references.bib', skipping ...
+[322] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[323] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[323] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[323] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[332] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[333] bbl.pm:619> INFO - Output to main.bbl
+[334] Biber.pm:108> INFO - WARNINGS: 2

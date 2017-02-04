@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=generic, label={$c$}] (0) at (-3, 0) {};
+		\node [style=generic, label={$v_i$}] (1) at (-1, 0) {};
+		\node [style=generic, label={$M_{i j}$}] (2) at (1, 0) {};
+		\node [style=generic, label={$T_{i j k}$}] (3) at (3, 0) {};
+		\node [style=white no border] (4) at (-2, 0) {};
+		\node [style=white no border] (5) at (0, 0) {};
+		\node [style=white no border] (6) at (2, 0) {};
+		\node [style=white no border] (7) at (4, 0) {};
+		\node [style=white no border] (8) at (3, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (1) to node[below]{$i$} (5);
+		\draw [style=simple] (2) to node[below]{$i$} (5);
+		\draw [style=simple, in=180, out=0, looseness=1.00] (2) to node[below]{$j$} (6);
+		\draw [style=simple, in=0, out=180, looseness=1.00] (3) to node[below]{$i$} (6);
+		\draw [style=simple] (3) to node[below]{$j$} (7);
+		\draw [style=simple] (3) to node[left]{$k$} (8);
+	\end{pgfonlayer}
+\end{tikzpicture}

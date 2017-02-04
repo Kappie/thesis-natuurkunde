@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=largest_eigenvector, rotate=-90, minimum width=2cm] (0) at (0, 0) {};
+		\node [style=white no border] (1) at (-1, 1) {};
+		\node [style=white no border] (2) at (0, 1) {};
+		\node [style=white no border] (3) at (1, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (0) to [out=90, in=-90] (1);
+		% \draw [style=simple] (0) to (2);
+		% \draw [style=simple] (0) to (3);
+	\end{pgfonlayer}
+\end{tikzpicture}

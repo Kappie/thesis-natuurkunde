@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  3 FEB 2017 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  4 FEB 2017 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1895,6 +1895,10 @@ s.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.markings.code.tex))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 )
@@ -2241,17 +2245,14 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count384
 \@quotereset=\count385
-(./main.aux
-
-LaTeX Warning: Label `fig:q_to_p' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 76.
 LaTeX Font Info:    Try loading font information for OML+zbami on input line 76
 .
- (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
 File: omlzbami.fd 2016/11/11 Fontinst v1.933 font definitions for OML/zbami.
 )
 LaTeX Font Info:    ... okay on input line 76.
@@ -2428,54 +2429,37 @@ LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 109.
+(Font)              scaled to size 17.28pt on input line 121.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 109.
+(Font)              scaled to size 17.28pt on input line 121.
 
-(./chapters/dmrg_2d_classical.tex
+(./chapters/introduction_tensor_networks.tex
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 12.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 14.
+ine 4.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 26.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 29.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 29.
  [1
 
 
-] [2]
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 103.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 104.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 104.
- [3] [4]
-(./images/tensor_network_4_sites.tikz) (./images/q_to_p.tikz)
-(./images/a_tensor.tikz) [5]
-
-LaTeX Warning: Reference `fig:2d_classical_partition_function_as_tensor_network
-' on page 6 undefined on input line 213.
-
-[6] (./images/shapes_test.tikz)
-
-LaTeX Warning: Reference `eq:density_matrix_superblock' on page 7 undefined on 
-input line 270.
-
-[7]) [8] (./chapters/introduction_tensor_networks.tex [9
-
 ]
-Overfull \hbox (18.31264pt too wide) in paragraph at lines 45--49
+Overfull \hbox (18.31264pt too wide) in paragraph at lines 41--45
 \T1/BaskervilleF-TLF/m/n/9 where a lower-dimensional ten-sor (in this case, a s
 calar, which is a zero-dimensional
  []
 
-[10] (./images/tensors_graphical_notation.tex)
-File: images/tensors_graphical_notation.tex Graphic file (type tex)
- (./images/contracted_tensors.tex)
-File: images/contracted_tensors.tex Graphic file (type tex)
-) [11]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 71.
+[2] (./images/tensors.tikz) (./images/contracted_tensors.tikz) [3]
+(./images/reshaped_tensor.tikz) (./images/eigenvalue_equation.tikz)) [4]
+[5]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 126.
 
@@ -2484,7 +2468,7 @@ Overfull \hbox (6.17421pt too wide) in paragraph at lines 127--127
 r trans-fer ma-trix renor-
  []
 
-[12
+[6
 
 
 ]
@@ -2497,26 +2481,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 705AFFCD8B00ED3ACEBC3D4AF39F1958;1482.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: B0F2BD25DC386FCB9BF3D1414D940445;553.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31269 strings out of 493014
- 560628 string characters out of 6133351
- 987161 words of memory out of 5000000
- 34022 multiletter control sequences out of 15000+600000
- 299082 words of font info for 148 fonts, out of 8000000 for 9000
+ 31177 strings out of 493014
+ 560863 string characters out of 6133351
+ 989504 words of memory out of 5000000
+ 34012 multiletter control sequences out of 15000+600000
+ 291977 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,90p,893b,1606s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,12n,83p,893b,1606s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}{
 /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.enc}
@@ -2525,19 +2502,14 @@ F-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/
 BaskervilleF-BoldItalic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/newtx/rtxbmi-rev.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/newtx/txbsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/tx
-fonts/txsyc.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/tx
-sys.pfb>
-Output written on main.pdf (13 pages, 169376 bytes).
+/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/newtx/txsys.pfb>
+Output written on main.pdf (7 pages, 128585 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 97 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

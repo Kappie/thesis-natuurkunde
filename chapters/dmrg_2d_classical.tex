@@ -64,7 +64,7 @@ star-triangle relation (Baxter). Not all IRF models solvable.}
 
 Next, we treat the two-dimensional, square-lattice Ising model. In two
 dimensions, the energy function is still written as in
-\eqref{ising_energy_function}, but now every lattice site has four neighbors.
+\autoref{ising_energy_function}, but now every lattice site has four neighbors.
 
 Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume
 $l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the
@@ -92,7 +92,8 @@ defining it as the Boltzmann weight of an entire row
 \begin{equation}\label{eq:row_to_row_transfer_matrix}
   T_{N}(\bm{\sigma}, \bm{\sigma'}) = W(\sigma_1, \sigma_2, \sigma_1', \sigma_2') \dots W(\sigma_{N-1}, \sigma_N, \sigma_{N-1}', \sigma_{N}')
 \end{equation}
-The dimensions of $T_N$ are $2^N \times 2^N$.
+If we take the spin configurations of an entire row as basis vectors, $T_N$ can be written
+as a matrix of dimensions $2^N \times 2^N$.
 
 Similarly as in the one-dimensional case, the partition function now becomes
 \begin{equation}\label{z_n_times_infty}
@@ -101,7 +102,7 @@ Similarly as in the one-dimensional case, the partition function now becomes
 
 In the limit of an $N \times \infty$ cylinder, the partition function is once again
 determined by the largest eigenvalue\footnote{As in the 1D case, $T$ is symmetric, so it
-orthogonally diagonalizable.}.
+is orthogonally diagonalizable.}.
 \begin{equation}\label{largest_eigenvalue_transfer_matrix}
   Z_N = \lim_{l \to \infty} T_{N}^{l} = \lim_{l \to \infty} (\lambda_0)_{N}^{l}
 \end{equation}
@@ -128,11 +129,10 @@ transfer matrix $T$ is redefined in the process. This allows us to visualize the
 in a way that is consistent with the many other tensor network algorithms under research
 today.
 
-\todo[inline]{Help! I don't know what the formal connection between the
-  transfer matrix and the tensor network representation is! Yes you do! For any
-  $l$, the trace over the transfer matrix is the same in both definitions of
-  $T$. It is symmetric, so they should be related by a basis transformation. Is
-  it, perhaps, exactly the basis in which the CTM is diagonal? }
+\todo[inline]{
+    For any $l$, the trace over the transfer matrix is the same in both definitions of
+    $T$. It is symmetric, so they should be related by a basis transformation. Is it,
+    perhaps, exactly the basis in which the CTM is diagonal? }
 
 \subsection{A system of four spins}
 
@@ -151,8 +151,8 @@ bonds
 \end{equation}
 
 It is now easy to see that the partition function is equal to the contracted tensor
-network in \autoref{fig:tensor_network_4_sites}
-\begin{equation}
+network in \autoref{fig:tensor_network_4_sites}:
+\begin{equation}\label{eq:tensor_network_4_sites}
   \begin{split}
     Z_{2 \times 2} & =
     \sum_{\sigma_1, \sigma_2, \sigma_3, \sigma_4} \sum_{a, b, c, d}
@@ -173,7 +173,8 @@ where the Kronecker delta is defined as usual:
 
 \begin{figure}
   \input{images/tensor_network_4_sites.tikz}
-  \caption{Hallo hier staat nog niks}
+  \caption{A tensor network representation of the partition function of the Ising model on
+  a $2 \times 2$ lattice. See \autoref{eq:tensor_network_4_sites}.}
   \label{fig:tensor_network_4_sites}
 \end{figure}
 
@@ -181,23 +182,24 @@ where the Kronecker delta is defined as usual:
 \subsection{Thermodynamic limit}
 \begin{figure}
   \input{images/q_to_p.tikz}
-  \caption{Hallo hier staat nog niks}
+  \caption{Graphical form of \autoref{eq:q_to_p}.}
   \label{fig:q_to_p}
 \end{figure}
 
 \begin{figure}
   \input{images/a_tensor.tikz}
-  \caption{Hallo hier staat nog niks}
-  \label{fig:q_to_p}
+  \caption{Graphical form of \autoref{eq:a_tensor}.}
+  \label{fig:a_tensor}
 \end{figure}
 
 We define the matrix $P$ by
-\begin{equation}
+\begin{equation}\label{eq:q_to_p}
   P^2 = Q
 \end{equation}
-and can now write the partition function of an arbitrary square lattice as a tensor
-network of a single recurrent tensor $a_{i j k l}$, given by
-\begin{equation}
+as in \autoref{fig:q_to_p}. This allows us to write the partition function of an arbitrary
+$N \times l$ square lattice as a tensor network of a single recurrent tensor $a_{i j k
+l}$, given by
+\begin{equation}\label{eq:a_tensor}
   a_{i j k l} = \sum_{a, b, c, d} \delta_{a b c d} P_{i a} P_{j b} P_{k c} P_{l d}
 \end{equation}
 where the generalization of the Kronecker delta is defined as
@@ -209,9 +211,8 @@ where the generalization of the Kronecker delta is defined as
   \end{cases}
 \end{equation}
 
-
-See \autoref{fig:2d_classical_partition_function_as_tensor_network}. At the edges and
-corners, we have suitable 2 and 3 legged tensors, which we will also denote by $a$.
+See \autoref{fig:a_tensor} and \autoref{fig:2d_ising_as_tensor_network}. At the edges and
+corners, we define suitable tensors of rank 3 and 2, which we will also denote by $a$.
 \begin{align*}
   a_{i j k} &= \sum_{a b c} \delta_{a b c} P_{i a} P_{j b} P_{k c} \\
   a_{i j} &= \sum_{a b} \delta_{a b} P_{i a} P_{j b}
@@ -220,14 +221,17 @@ corners, we have suitable 2 and 3 legged tensors, which we will also denote by $
 The challenge is to approximate this tensor network in the thermodynamic limit.
 
 \begin{figure}
-  \caption{Hallo hier staat nog niks}
-  \label{fig:a_tensor}
+  \input{images/2d_ising.tikz}
+  \caption{$Z_{N \times l}$ can be written as a contracted tensor network of $N \times l$
+  copies of the tensor $a$.}
+  \label{fig:2d_ising_as_tensor_network}
 \end{figure}
 
 \subsection{The transfer matrix as a tensor network}
 \todo[inline]{Say something about reshaping legs.}
 
-We can now redefine the row-to-row transfer matrix from
+With our newfound representation of the partition function as a tensor network, we can
+redefine the row-to-row transfer matrix from
 \autoref{eq:row_to_row_transfer_matrix} as the tensor network expressed in
 \autoref{fig:transfer_matrix_as_tensor_network}. For all $l$, it is still true that
 \begin{equation}
@@ -239,28 +243,26 @@ matrix is related to the old one by a basis transformation
   T_{\text{new}} = P T_{\text{old}} P^{-1}
 \end{equation}
 
-
-
 \begin{figure}
-  \input{images/shapes_test.tikz}
-  \caption{lalala nog niks}
+  \input{images/transfer_matrix.tikz}
+  \caption{The definition of $T_N$ as a network of $N$ copies of the tensor $a$.}
   \label{fig:transfer_matrix_as_tensor_network}
 \end{figure}
-
-
 
 \section{Transfer matrix renormalization group}
 \todo[inline]{More about connection between 1D quantum and 2D classical}
 \todo[inline]{Pictures}
 
 We will now focus on contracting the infinite tensor network of
-\autoref{fig:transfer_matrix_as_tensor_network}. Nishino \cite{nishino1995density} was the
+\autoref{fig:2d_ising_as_tensor_network}.
+
+Nishino \cite{nishino1995density} was the
 first one to apply DMRG in its modern form to approximate the transfer matrix of a
 two-dimensional classical lattice system.
 
-In the limit of an $N \times \infty$ lattice, $T_{N}^{l}$ becomes proportional
-to the projector onto the eigenspace of the largest eigenvalue
-
+From \autoref{largest_eigenvalue_transfer_matrix}, we know that in the limit of an $N
+\times \infty$ lattice, $T_{N}^{l}$ becomes proportional to the projector onto the
+eigenspace of the largest eigenvalue:
 \begin{equation}
   \lim_{l \to \infty} T_{N}^{l} = \lim_{l \to \infty} (\lambda_0)_{N}^{l} \ket{\lambda_0}_{N}\bra{\lambda_0}_{N} \thicksim \ket{\lambda_0}_{N}\bra{\lambda_0}_N
 \end{equation}
