@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  6 FEB 2017 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  6 FEB 2017 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2424,37 +2424,45 @@ LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 7.3pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 5.5pt on input line 5.
-) [1
-
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 106.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 106.
-
-(./chapters/dmrg_2d_classical.tex
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 1.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 1.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 12.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 14.
  [1
 
 
-] [2] [3]
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [2]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 141.
+(Font)              scaled to size 17.28pt on input line 100.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 100.
+
+(./chapters/introduction.tex
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 142.
+(Font)              scaled to size 10.95pt on input line 1.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 3.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 142.
+(Font)              scaled to size 7.3pt on input line 14.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 14.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 30.
+) [1
+
+
+] (./chapters/dmrg.tex [2
+
+] [3]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 97.
  [4]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 163.
+ [5] [6])
+[7] (./chapters/dmrg_2d_classical.tex [8
+
+] [9] [10] [11]
 (./images/tensor_network_4_sites.tikz) (./images/q_to_p.tikz)
-(./images/a_tensor.tikz) [5] [6] (./images/2d_ising.tikz)
+(./images/a_tensor.tikz) [12] [13] (./images/2d_ising.tikz)
 Overfull \hbox (16.80244pt too wide) in paragraph at lines 120--263
 [][]
  []
@@ -2464,71 +2472,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--263
 
  []
 
-(./images/transfer_matrix.tikz) [7] [8]
-
-LaTeX Warning: Reference `chapter:correspondence_quantum_classical' on page 9 u
-ndefined on input line 298.
-
-[9]
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 328.
- (./images/tmrg_initial_half_row_transfer_matrix.tikz)
+(./images/transfer_matrix.tikz) [14] [15] [16]
+(./images/tmrg_initial_half_row_transfer_matrix.tikz)
 (./images/tmrg_adding_a_site.tikz) (./images/tmrg_eigenvalue_equation.tikz)
-(./images/tmrg_reduced_density_matrix.tikz) [10] [11]) [12]
-Overfull \hbox (2.72528pt too wide) in paragraph at lines 125--125
+(./images/tmrg_reduced_density_matrix.tikz) [17] [18]
+(./images/corner_transfer_matrix_as_tensor_network.tikz)
+(./images/ctmrg_add_site_and_renormalize.tikz)) [19] [20]
+(./chapters/correspondence_quantum_classical.tex [21
+
+]) [22]
+(./chapters/introduction_tensor_networks.tex [23
+
+]
+Overfull \hbox (18.31264pt too wide) in paragraph at lines 41--45
+\T1/BaskervilleF-TLF/m/n/9 where a lower-dimensional ten-sor (in this case, a s
+calar, which is a zero-dimensional
+ []
+
+[24] (./images/tensors.tikz) (./images/contracted_tensors.tikz) [25]
+(./images/reshaped_tensor.tikz)) [26]
+Overfull \hbox (2.72528pt too wide) in paragraph at lines 126--126
 \T1/BaskervilleF-TLF/m/n/9 tis-ti-cal me-chan-ics''. In: \T1/BaskervilleF-TLF/m
 /it/9 Jour-nal of Sta-tis-ti-cal Physics \T1/BaskervilleF-TLF/m/n/9 19.5 (1978)
 , pp. 461^^U
  []
 
-[13
+[27
 
 
-] [14]
+] [28]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BA201DC2731DD2C5ABAFB5670092A701;1148.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 48C4698BEA9F2BA68F39640DB4F75574;2820.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31632 strings out of 493014
- 568934 string characters out of 6133351
- 1001689 words of memory out of 5000000
- 34375 multiletter control sequences out of 15000+600000
- 299082 words of font info for 148 fonts, out of 8000000 for 9000
+ 31871 strings out of 493014
+ 573775 string characters out of 6133351
+ 1006614 words of memory out of 5000000
+ 34483 multiletter control sequences out of 15000+600000
+ 300304 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,90p,893b,1606s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
-nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
-enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
+ 75i,15n,90p,893b,1849s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}{/
+usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.enc}{
+/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.enc}
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/Baskerville
 F-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/
-BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
-baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/newtx/rtxbmi-rev.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/newtx/txbsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx
-/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (15 pages, 162143 bytes).
+BaskervilleF-BoldItalic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/newtx/rtxbmi-rev.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/newtx/txbsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/tx
+fonts/txsyc.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/tx
+sys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrl8a.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
+
+Output written on main.pdf (30 pages, 236362 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 95 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 615 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

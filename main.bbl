@@ -217,6 +217,46 @@
       \field{volume}{528}
       \field{year}{1999}
     \endentry
+    \entry{poulin2011quantum}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7575941816e4f25600383f3d6cf5051f}{%
+           family={Poulin},
+           family_i={P\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+        {{hash=6538192e643c0c7f2ae5e68c8135fb67}{%
+           family={Qarry},
+           family_i={Q\bibinitperiod},
+           given={Angie},
+           given_i={A\bibinitperiod}}}%
+        {{hash=5f94d09d4fec38411fa2280fd855bd45}{%
+           family={Somma},
+           family_i={S\bibinitperiod},
+           given={Rolando},
+           given_i={R\bibinitperiod}}}%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           family_i={V\bibinitperiod},
+           given={Frank},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{0d866ac8909acce82664a13ee2f670ad}
+      \strng{fullhash}{045e59d82f707e4711feb8c4b54460ad}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{17}
+      \field{title}{Quantum simulation of time-dependent Hamiltonians and the convenient illusion of Hilbert space}
+      \field{volume}{106}
+      \field{year}{2011}
+      \field{pages}{170501}
+      \range{pages}{1}
+    \endentry
     \entry{schollwock2005density}{article}{}
       \name{author}{1}{}{%
         {{hash=47c87e3553597a3c6f21f2ae72571491}{%

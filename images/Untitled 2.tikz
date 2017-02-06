@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=a-tensor] (0) at (-3, 2) {};
+		\node [style=a-tensor] (1) at (-2.25, 2) {};
+		\node [style=a-tensor] (2) at (-3, 1.25) {};
+		\node [style=a-tensor] (3) at (-2.25, 1.25) {};
+		\node [style=none] (4) at (-1.5, 2) {$\dots$};
+		\node [style=none, rotate=90] (5) at (-2.25, 0.5) {$\dots$};
+		\node [style=none] (6) at (-1.5, 1.25) {$\dots$};
+		\node [style=none, rotate=90] (7) at (-3, 0.5) {$\dots$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (0) to (1);
+		\draw [style=simple] (0) to (2);
+		\draw [style=simple] (2) to (3);
+		\draw [style=simple] (3) to (1);
+		\draw [style=simple] (1) to (4.center);
+		\draw [style=simple] (3) to (6.center);
+		\draw [style=simple] (3) to (5.center);
+		\draw [style=simple] (2) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

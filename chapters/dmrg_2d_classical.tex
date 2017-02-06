@@ -305,94 +305,94 @@ lattices.
 
 \subsection{The infinite system algorithm for the transfer matrix}
 
-Analogous to the infinite system DMRG algorithm for quantum spin chains, our goal is to
+Analogous to the infinite system DMRG algorithm for approximating the Hamiltonian of quantum spin chains, our goal is to
 approximate the transfer matrix in the thermodynamic limit as well as possible within a
 restriced number of basis states $m$. We will do this by adding a single site at a time,
 and truncating the dimension from $2m$ to $m$ at each iteration.
 
 We start the algorithm from a transfer matrix that already has dimension $m$, perhaps by
 exactly diagonalizing the transfer matrix of a couple of sites. We call this transfer
-matrix $P_N$. FIGURE.
+matrix $P_N$. See \autoref{fig:tmrg_initial_half_row_transfer_matrix}.
 
 We enlarge the system with one site by contracting with an additional $a$-tensor,
-obtaining $P_{N + 1}$. FIGURE
+obtaining $P_{N + 1}$. See the first step in \autoref{fig:tmrg_adding_a_site}.
 
-In order to find the best projection from $2m$ basis states back to
-$m$, we embed the system in an environment that is the mirror image of the system we
-presently have. We call this matrix $T_{2N + 2}$. It represents the transfer matrix of $2N +
-2$ sites. We find the largest eigenvalue and corresponding eigenvector, as shown in
-FIGURE.
+In order to find the best projection from $2m$ basis states back to $m$, we embed the
+system in an environment that is the mirror image of the system we presently have. We call
+this matrix $T_{2N + 2}$. It represents the transfer matrix of $2N + 2$ sites. We find the
+largest eigenvalue and corresponding eigenvector, as shown in
+\autoref{fig:tmrg_eigenvalue_equation}.
 
-Having identified the lowest-lying eigenvector of the transfer matrix with the ground
-state of a superblock in DMRG, the equivalent of the \textit{reduced density matrix of a
+The equivalent of the \textit{reduced density matrix of a
 block} in the classical case is:
-\begin{equation}
+\begin{equation}\label{eq:reduced_density_matrix_classical_case}
   \rho_{N + 1} = \sum_{\sigma_B} \braket{\sigma_B | \lambda_0}\braket{\lambda_0 |
   \sigma_B}
 \end{equation}
 where we have summed over all the degrees of freedom of one of the half-row transfer
-matrices $P_{N+1}$. FIGURE. The optimal renormalization
+matrices $P_{N+1}$. See the first step of \autoref{fig:tmrg_reduced_density_matrix}.
+
+The optimal renormalization
 \begin{equation}
   \widetilde{P}_{N+1} = O P_{N + 1} O^{\dagger}
 \end{equation}
 is obtained by diagonalizing $\rho_{N + 1}$ and keeping the eigenvectors corresponding
-to the $m$ largest eigenvalues. FIGURE.
+to the $m$ largest eigenvalues. See the second step of \autoref{fig:tmrg_reduced_density_matrix}.
+
 With this blocking procedure, we can successively find
 \begin{equation}
     P_{N + 1} \rightarrow P_{N + 2} \rightarrow \dots
 \end{equation}
-until we have reached some termination procedure.
+until we have reached some termination condition.
 
 \begin{figure}
   \input{images/tmrg_initial_half_row_transfer_matrix.tikz}
-  \caption{lalalala nog niks}
+  \caption{A good starting point for the half-row transfer $P_N$ is obtained by
+  contracting a couple of $a$-tensors, until $P_N$ reaches dimension $m$.}
   \label{fig:tmrg_initial_half_row_transfer_matrix}
 \end{figure}
 
 \begin{figure}
   \input{images/tmrg_adding_a_site.tikz}
-  \caption{lalalala nog niks}
+  \caption{In the first step, $P_{N + 1}$ is obtained by contracting the current half-row
+  transfer matrix $P_N$ with an additional $a$-tensor.
+  In the second step, $P_{N + 1}$ is truncated back to an $m$-dimensional matrix, with the
+  optimal low-rank approximation given by the singular value decomposition of the reduced
+  density matrix, shown in \autoref{fig:tmrg_reduced_density_matrix}.
+  }
   \label{fig:tmrg_adding_a_site}
 \end{figure}
 
 \begin{figure}
   \input{images/tmrg_eigenvalue_equation.tikz}
-  \caption{lalalala nog niks}
+  \caption{Equation for the lowest-lying eigenvector of the row-to-row transfer matrix $T_{2N +
+  2}$.}
   \label{fig:tmrg_eigenvalue_equation}
 \end{figure}
 
 \begin{figure}
   \input{images/tmrg_reduced_density_matrix.tikz}
-  \caption{lalalala nog niks}
+  \caption{Graphical form of
+  \autoref{eq:reduced_density_matrix_classical_case}. The second step represents the
+  singular value decomposition of $\rho_{N + 1}$.}
   \label{fig:tmrg_reduced_density_matrix}
 \end{figure}
 
+\subsection{Physical interpretation of the reduced density matrix}
+\todo[inline]{Talk about how it represents a lattice with a cut in it.}
+Nishino and Okunishi combined ideas from Baxter and White to formulate the
+corner transfer matrix renormalization group \cite{nishino1996corner}.
 
-% Generalizing \autoref{eq:largest_eigenvector} to two dimensions, we know that the
-% normalized eigenvector corresponding to
-% largest (non-degenerate) eigenvalue of the transfer matrix contains the probabilities
-% of the different possible configurations of a row of spins $\bm{\sigma}$ at the boundary
-% of the half-infinite lattice.
-
-% Now, the connection to ground state DMRG is clear. Recall the full-system
-% density matrix of an $N$-site 1D quantum lattice system (the superblock) in the
-% ground state (cf. \eqref{eq:density_matrix_superblock})
-%
-% \begin{equation}
-%   \rho_N = \ket{\Psi_0}_{N}\bra{\Psi_0}_{N}
-% \end{equation}
-
-
-
-\section{Corner transfer matrices}
+\section{Corner transfer matrix renormalization group}
+\subsection{Corner transfer matrices}
 
 The concept of corner transfer matrices for 2D lattices was first introduced by
 Baxter \cite{baxter1968dimers, baxter1978variational, baxter1982exactly}.
-Whereas the row-to-row transfer matrix \eqref{eq:row_to_row_transfer_matrix}
+Whereas the row-to-row transfer matrix \autoref{eq:row_to_row_transfer_matrix}
 corresponds to adding a row to the lattice, the corner transfer matrix adds
-a quadrant of spins. It is defined as
+a quadrant of spins. It was originally defined by Baxter as
 
-\begin{equation}
+\begin{equation}\label{eq:corner_transfer_matrix}
   A_{\bm{\sigma}, \bm{\sigma'}} =
   \begin{cases}
     \sum \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) & \text{if } \sigma_{1} = \sigma_{1}' \\
@@ -400,27 +400,40 @@ a quadrant of spins. It is defined as
   \end{cases}
 \end{equation}
 
-\todo[inline]{Picture.}
 Here, the product runs over groups of four spins that share the same face, and
 the sum is over all spins in the interior of the quadrant.
-In a symmetric and isotropic model, we have
-
+In a symmetric and isotropic model such as the Ising model, we have
 \begin{equation}
   W(a, b, c, d) = W(b, a, d, c) = W(c, a, d, b) = W(d, c, b, a)
 \end{equation}
-
 and the partition of an $N \times N$ lattice is expressed as
-
 \begin{equation}\label{z_n_times_n}
   Z_{N \times N} = \tr A^4
 \end{equation}
 
-In the thermodynamic limit, \eqref{z_n_times_n} is equal to \eqref{eq:z_n_times_infty}.
+In the thermodynamic limit, this partition function is equal to
+the partition function of an $N \times \infty$ lattice, given by
+\autoref{eq:z_n_times_infty}.
 
+\subsection{Corner transfer matrix as a tensor network}
+Similarly to how we redefined the row-to-row transfer matrix
+(\autoref{eq:row_to_row_transfer_matrix}) as the tensor network in
+\autoref{fig:transfer_matrix_as_tensor_network}, we can redefine the corner transfer
+matrix (\autoref{eq:corner_transfer_matrix}) as the tensor network in
+\autoref{fig:corner_transfer_matrix_as_tensor_network}.
 
+\begin{figure}
+  \input{images/corner_transfer_matrix_as_tensor_network.tikz}
+  \caption{Corner transfer matrix expressed as a contraction of $a$-tensors.}
+  \label{fig:corner_transfer_matrix_as_tensor_network}
+\end{figure}
 
-\subsection{Corner transfer matrix renormalization group}
+\subsection{Corner transfer matrix renormalization group method}
+
+\begin{figure}
+  \input{images/ctmrg_add_site_and_renormalize.tikz}
+  \caption{lal}
+  \label{fig:ctmrg_add_site_and_renormalize}
+\end{figure}
 
 \todo[inline]{More about Baxter's variational approach.}
-Nishino and Okunishi combined ideas from Baxter and White to formulate the
-corner transfer matrix renormalization group \cite{nishino1996corner}.
