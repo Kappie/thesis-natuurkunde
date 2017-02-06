@@ -11,14 +11,19 @@
 		\node [style=none] (8) at (-1.5, 0.5) {};
 		\node [style=none] (9) at (-1.5, -0.5) {};
 		\node [style=none] (10) at (-0.75, 0) {$\longrightarrow$};
-		\node [style=a-tensor] (11) at (2, 0) {};
-		\node [style=none] (12) at (2, 0.5) {};
-		\node [style=none] (13) at (1.25, 0.5) {};
-		\node [style=none] (14) at (1.25, -0.5) {};
-		\node [style=none] (15) at (2, -0.5) {};
-		\node [style=generic2] (16) at (1.25, 0) {};
-		\node [style=isometry, rotate=90, anchor=left corner, minimum width=1.25cm] (17) at (1, 0.5) {};
-		\node [style=none] (18) at (1.75, 1.25) {};
+		\node [style=a-tensor] (11) at (0.75, 0) {};
+		\node [style=none] (12) at (0.75, 0.5) {};
+		\node [style=none] (13) at (0, 0.5) {};
+		\node [style=none] (14) at (0, -0.5) {};
+		\node [style=none] (15) at (0.75, -0.5) {};
+		\node [style=generic2] (16) at (0.0, 0) {};
+		\node [style=isometry, rotate=90, anchor=left corner, minimum width=1.25cm] (isometry
+		north) at (-0.25, 0.5) {};
+		\node [style=isometry, rotate=-90, anchor=right corner, minimum width=1.25cm]
+		(isometry south) at (-0.25, -0.5) {};
+		% \node [style=none] (18) at (1.75, 1.25) {};
+    \node [style=none, above = 0.15cm of isometry north.apex] (reference isometry north) {};
+    \node [style=none, below = 0.15cm of isometry south.apex] (reference isometry south) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=thick leg] (0) to (1.center);
@@ -33,6 +38,8 @@
 		\draw [style=simple] (16) to (11);
 		\draw [style=simple] (11) to (12.center);
 		\draw [style=simple] (11) to (15.center);
-		\draw [style=thick leg] (17.center) to (18.center);
+		% \draw [style=thick leg] (isometry north.center) to (18.center);
+    \draw [style=thick leg] (isometry north.center) to (reference isometry north.center);
+    \draw [style=thick leg] (isometry south.center) to (reference isometry south.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
