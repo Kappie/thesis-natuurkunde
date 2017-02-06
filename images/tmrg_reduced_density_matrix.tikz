@@ -1,0 +1,54 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={largest_eigenvector}, rotate=90] (0) at (-4.5, 1) {};
+		\node [style=none] (1) at (-5, 1) {};
+		\node [style=none] (2) at (-4, 1) {};
+		\node [style=none] (3) at (-6, 1) {};
+		\node [style=none] (4) at (-3, 1) {};
+		\node [style={largest_eigenvector}, rotate=90] (5) at (-4.5, 0) {};
+		\node [style=none] (6) at (-6, 0) {};
+		\node [style=none] (7) at (-5, 0) {};
+		\node [style=none] (8) at (-4, 0) {};
+		\node [style=none] (9) at (-3, 0) {};
+		\node [style=white no border small] (10) at (-6, 0.5) {};
+		\node [style=white no border small] (11) at (-5, 0.5) {};
+		\node [style=none] (12) at (-2, 0.5) {$=$};
+		\node [style=square] (13) at (-1, 0.5) {};
+		\node [style=white no border small] (14) at (-1, 0.75) {};
+		\node [style=white no border small] (15) at (-1, 0.25) {};
+		\node [style=none] (16) at (-1.5, 0.75) {};
+		\node [style=none] (17) at (-1.5, 0.25) {};
+		\node [style=none] (18) at (-0.5, 0.25) {};
+		\node [style=none] (19) at (-0.5, 0.75) {};
+		\node [style=none] (20) at (0, 0.5) {$\longrightarrow$};
+		\node [style=isometry] (21) at (1, 0.5) {};
+		\node [style=singular values matrix] (22) at (1.75, 0.5) {};
+		\node [style=none] (23) at (1, 0.75) {};
+		\node [style=none] (24) at (0.5, 0.75) {};
+		\node [style=none] (25) at (0.5, 0.25) {};
+		\node [style=none] (26) at (1, 0.25) {};
+		\node [style=none] (27) at (3, 0.25) {};
+		\node [style=isometry, rotate=180] (28) at (2.5, 0.5) {};
+		\node [style=none] (29) at (2.5, 0.75) {};
+		\node [style=none] (30) at (3, 0.75) {};
+		\node [style=none] (31) at (2.5, 0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=thick leg] (4.center) to (9.center);
+		\draw [style=thick leg] (6.center) to (10);
+		\draw [style=simple] (2.center) to (8.center);
+		\draw [style=simple] (11) to (7.center);
+		\draw [style=simple] (1.center) to (11);
+		\draw [style=thick leg] (3.center) to (10);
+		\draw [style=simple] (17.center) to (15);
+		\draw [style=simple] (18.center) to (15);
+		\draw [style=thick leg] (14) to (19.center);
+		\draw [style=thick leg] (14) to (16.center);
+		\draw [style=thick leg] (21.center) to (22.center);
+		\draw [style=thick leg] (24.center) to (23.center);
+		\draw [style=simple] (25.center) to (26.center);
+		\draw [style=thick leg] (30.center) to (29.center);
+		\draw [style=simple] (27.center) to (31.center);
+		\draw [style=thick leg] (22.center) to (28.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

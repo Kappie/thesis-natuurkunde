@@ -2,6 +2,7 @@
 \usetikzlibrary{decorations.markings}
 \usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
 
 \pgfdeclarelayer{edgelayer}
 \pgfdeclarelayer{nodelayer}
@@ -9,14 +10,15 @@
 
 \def\tensorsize{1.3em}
 
-\tikzstyle{none}=[inner sep=0pt]
 \definecolor{princess-orange}{rgb}{0.988,0.824,0.745}
 \definecolor{princess-green}{rgb}{0.929,0.929,0.792}
 \definecolor{princess-blue}{rgb}{0.627,0.808,0.808}
 
+\tikzstyle{none}=[inner sep=0pt]
 \tikzstyle{tensor}=[circle, draw=black, thick, minimum size = \tensorsize]
 \tikzstyle{generic} = [tensor, fill=princess-orange]
-\tikzstyle{generic2} = [tensor, fill=princess-green, minimum size = 1.2*\tensorsize]
+\tikzstyle{generic2} = [tensor, very thick, fill=princess-green, minimum size =
+1.15*\tensorsize]
 \tikzstyle{a-tensor}=[tensor,fill=princess-blue]
 \tikzstyle{p-tensor-up} = [tensor, minimum size = 0.5*\tensorsize, shape=semicircle,
 fill=princess-green]
@@ -26,9 +28,17 @@ fill=princess-green]
 \tikzstyle{q-tensor} = [tensor, fill=princess-green]
 \tikzstyle{delta-tensor}=[tensor, shape=diamond, minimum size = 0.75*\tensorsize, fill=princess-orange]
 \tikzstyle{white no border}=[tensor,minimum size=1.75*\tensorsize,fill=white,draw=white]
+\tikzstyle{white no border small}=[minimum size = .01*\tensorsize]
 \tikzstyle{largest_eigenvector}=[tensor, shape=rectangle, fill=princess-green, minimum
-height = 5cm]
+height = 4cm, minimum width = 0.75*\tensorsize]
+\tikzstyle{isometry}=[tensor, shape=isosceles triangle, isosceles triangle stretches,
+fill=princess-orange, minimum width = 2*\tensorsize]
+\tikzstyle{square}=[tensor, shape=rectangle, minimum width = 0.75*\tensorsize, minimum
+height = 2*\tensorsize, fill=princess-orange]
+\tikzstyle{singular values matrix} = [tensor, shape=diamond, minimum size =
+0.5*\tensorsize, fill=white]
 
 \tikzstyle{simple}=[-,draw=black,thick]
+\tikzstyle{thick leg}=[simple, very thick]
 \tikzstyle{arrow}=[-,draw=black,postaction={decorate},decoration={markings,mark=at position .5 with {\arrow{>}}},line width=2.000]
 \tikzstyle{tick}=[-,draw=black,postaction={decorate},decoration={markings,mark=at position .5 with {\draw (0,-0.1) -- (0,0.1);}},line width=2.000]

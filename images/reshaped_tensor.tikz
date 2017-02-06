@@ -23,11 +23,10 @@
 		\draw [style=simple] (0) to node[right]{$d$} (8);
 		\draw [style=simple, in=90, out=-90, looseness=1.00] (1) to node[right]{$e$} (7);
 		\draw [style=simple] (2) to node[right]{$f$} (6);
-		\draw [style=simple, ultra thick] (10) to node[right]{$i$} (11);
-		\draw [style=simple, ultra thick] (10) to node[right]{$j$} (12);
+		\draw [style=thick leg] (10) to node[right]{$i$} (11);
+		\draw [style=thick leg] (10) to node[right]{$j$} (12);
 	\end{pgfonlayer}
-
-		\draw [style=simple, decoration={brace, amplitude=0.5em}, decorate] (3.center) to (5.center);
-    \draw [style=simple, decoration={brace, amplitude=0.5em}, decorate, rotate=90] (6.center) to
-    (8.center);
+	\draw [style=simple, decoration={brace, amplitude=0.5em}, decorate] (3.center) to (5.center);
+	\draw [style=simple, decoration={brace, amplitude=0.5em}, decorate, rotate=90] (6.center) to
+	(8.center);
 \end{tikzpicture}
