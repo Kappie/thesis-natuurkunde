@@ -13,7 +13,7 @@ $\beta = T^{-1}$ the inverse temperature.
 
 \todo[inline]{refer to Ising, talk a bit about model (magnetism etc).}
 
-Consider the 1D zero-field ferromagnetic Ising model, defined by the energy function
+Consider the 1D zero-field ferromagnetic Ising model \cite{ising1925beitrag}, defined by the energy function
 \begin{equation}\label{ising_energy_function}
   H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j
 \end{equation}
@@ -32,13 +32,29 @@ Exploiting the local nature of the interaction between spins, we can write
 \end{equation}
 where we defined $K \equiv \beta J$.
 
-Now, we can define
-the $2 \times 2$ matrix
+Now, we define the $2 \times 2$ matrix
 \begin{equation}\label{eq:transfer_matrix_1d_ising}
   T_{\sigma \sigma'} = \exp(K \sigma \sigma')
 \end{equation}
-to obtain
-\begin{equation}
+
+A possible
+choice of basis is
+\begin{equation}\label{eq:basis_transfer_matrix_1d}
+  \bigl( \ket{\uparrow} = 1, \ket{\downarrow} = -1 \bigr) =
+  \bigl(
+  \begin{bmatrix}
+    1 \\
+    0
+  \end{bmatrix},
+  \begin{bmatrix}
+    0 \\
+    1
+  \end{bmatrix}
+  \bigr)
+\end{equation}
+
+In terms of this matrix, $Z_N$ is written as
+\begin{equation}\label{eq:partition_function_transfer_matrix_1d}
   Z_N = \sum_{\sigma_1, \cdots, \sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N
 \end{equation}
 
@@ -58,6 +74,27 @@ Note that in the thermodynamic limit $N \to \infty$
 \end{equation}
 where $\lambda_1$ is the non-degenerate largest eigenvalue (in absolute value) of $T$.
 
+\subsubsection{Fixed boundary conditions}
+We may also apply fixed boundary conditions. The partition function is then written as
+\begin{equation}
+  Z_N = \bra{\sigma'}T^N\ket{\sigma},
+\end{equation}
+where $\ket{\sigma}$ and $\ket{\sigma'}$ are the right and left boundary spins.
+
+In the large-$N$ limit, $T^N$ tends towards the projector onto the eigenspace spanned by
+the eigenvector belonging to the largest eigenvalue
+\begin{equation}\label{eq:largest_eigenvector}
+  \ket{\lambda_1} = \lim_{N \to \infty} \frac{T^N \ket{\sigma}}{\left\lVert T^N \ket{\sigma} \right\rVert}.
+\end{equation}
+
+\autoref{eq:largest_eigenvector} is true for any $\ket{\sigma}$ that is not orthogonal to $\ket{\lambda_1}$.
+
+The physical significance of the normalized lowest-lying eigenvector $\ket{\lambda_1}$ is
+that
+$\braket{\lambda_1 | \uparrow}$ and
+$\braket{\lambda_1 | \downarrow}$ represent the Boltzmann weight of $\ket{\uparrow}$ and
+$\ket{\downarrow}$ at the boundary of a half-infinite chain.
+
 \subsection{2D Ising model}
 \todo[inline]{Talk about exact solution (Onsager). Why is it important? Maybe
 star-triangle relation (Baxter). Not all IRF models solvable.}
@@ -71,7 +108,7 @@ $l \gg N$. In the vertical direction, we apply periodic boundary conditions, as 
 one-dimensional case. In the horizontal direction, we keep an open boundary. We refer to
 $N$ as the system size.
 
-Similarly to the 1D case, the partition function can be written as
+Similarly as in the 1D case, the partition function can be written as
 \begin{equation}
   Z_N = \sum_{\bm{\sigma}} \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l)
 \end{equation}
@@ -96,7 +133,7 @@ If we take the spin configurations of an entire row as basis vectors, $T_N$ can 
 as a matrix of dimensions $2^N \times 2^N$.
 
 Similarly as in the one-dimensional case, the partition function now becomes
-\begin{equation}\label{z_n_times_infty}
+\begin{equation}\label{eq:z_n_times_infty}
   Z_N = \sum_{\bm{\sigma}} \prod_{r = 1}^{l} T_{N}(\bm{\sigma}^r, \bm{\sigma}^{r+1}) = \tr T_{N}^l
 \end{equation}
 
@@ -250,33 +287,77 @@ matrix is related to the old one by a basis transformation
 \end{figure}
 
 \section{Transfer matrix renormalization group}
-\todo[inline]{More about connection between 1D quantum and 2D classical}
-\todo[inline]{Pictures}
+There is a deep connection between quantum mechanical lattice systems in $d$ dimensions
+and classical lattice systems in $d + 1$ dimensions. Via the imaginary time path integral
+formulation, the partition function of a one-dimensional quantum system can be written as
+the partition function of an effective two-dimensional classical system. The ground state
+of the quantum system corresponds to the largest eigenvector of the transfer matrix of the
+classical system.
 
-We will now focus on contracting the infinite tensor network of
-\autoref{fig:2d_ising_as_tensor_network}.
+For more on the quantum-classical correspondence, see
+\autoref{chapter:correspondence_quantum_classical}.
+\todo[inline]{I want to refer to Baxter's variational
+approach anno 1968 somehwere.}
 
-Nishino \cite{nishino1995density} was the
-first one to apply DMRG in its modern form to approximate the transfer matrix of a
-two-dimensional classical lattice system.
+Nishino \cite{nishino1995density, nishino1996corner} was the first to apply density matrix
+renormalization group methods in the context of two-dimensional classical
+lattices.
 
-From \autoref{largest_eigenvalue_transfer_matrix}, we know that in the limit of an $N
-\times \infty$ lattice, $T_{N}^{l}$ becomes proportional to the projector onto the
-eigenspace of the largest eigenvalue:
+\subsection{The infinite system algorithm for the transfer matrix}
+
+Analogous to the infinite system DMRG algorithm for quantum spin chains, our goal is to
+approximate the transfer matrix in the thermodynamic limit as well as possible within a
+restriced number of basis states $m$. We will do this by adding a single site at a time,
+and truncating the dimension from $2m$ to $m$ at each iteration.
+
+We start the algorithm from a transfer matrix that already has dimension $m$, perhaps by
+exactly diagonalizing the transfer matrix of a couple of sites. We call this transfer
+matrix $P_N$. FIGURE.
+
+We enlarge the system with one site by contracting with an additional $a$-tensor,
+obtaining $P_{N + 1}$. FIGURE
+
+In order to find the best projection from $2m$ basis states back to
+$m$, we embed the system in an environment that is the mirror image of the system we
+presently have. We call this matrix $T_{2N + 2}$. It represents the transfer matrix of $2N +
+2$ sites. We find the largest eigenvalue and corresponding eigenvector, as shown in
+FIGURE.
+
+Having identified the lowest-lying eigenvector of the transfer matrix with the ground
+state of a superblock in DMRG, the equivalent of the \textit{reduced density matrix of a
+block} in the classical case is:
 \begin{equation}
-  \lim_{l \to \infty} T_{N}^{l} = \lim_{l \to \infty} (\lambda_0)_{N}^{l} \ket{\lambda_0}_{N}\bra{\lambda_0}_{N} \thicksim \ket{\lambda_0}_{N}\bra{\lambda_0}_N
+  \rho_{N + 1} = \sum_{\sigma_B} \braket{\sigma_B | \lambda_0}\braket{\lambda_0 |
+  \sigma_B}
 \end{equation}
-
-Now, the connection to ground state DMRG is clear. Recall the full-system
-density matrix of an $N$-site 1D quantum lattice system (the superblock) in the
-ground state (cf. \eqref{eq:density_matrix_superblock})
-
+where we have summed over all the degrees of freedom of one of the half-row transfer
+matrices $P_{N+1}$. FIGURE. The optimal renormalization
 \begin{equation}
-  \rho_N = \ket{\Psi_0}_{N}\bra{\Psi_0}_{N}
+  \widetilde{P}_{N+1} = O P_{N + 1} O^{\dagger}
 \end{equation}
+is obtained by diagonalizing $\rho_{N + 1}$ and keeping the eigenvectors corresponding
+to the $m$ largest eigenvalues. FIGURE.
+With this blocking procedure, we can successively find
+\begin{equation}
+    P_{N + 1} \rightarrow P_{N + 2} \rightarrow \dots
+\end{equation}
+until we have reached some termination procedure.
 
 
-\todo[inline]{Write down equations that are analogous to reduced density matrix. Pictures}
+
+% Generalizing \autoref{eq:largest_eigenvector} to two dimensions, we know that the
+% normalized eigenvector corresponding to
+% largest (non-degenerate) eigenvalue of the transfer matrix contains the probabilities
+% of the different possible configurations of a row of spins $\bm{\sigma}$ at the boundary
+% of the half-infinite lattice.
+
+% Now, the connection to ground state DMRG is clear. Recall the full-system
+% density matrix of an $N$-site 1D quantum lattice system (the superblock) in the
+% ground state (cf. \eqref{eq:density_matrix_superblock})
+%
+% \begin{equation}
+%   \rho_N = \ket{\Psi_0}_{N}\bra{\Psi_0}_{N}
+% \end{equation}
 
 
 
@@ -311,7 +392,7 @@ and the partition of an $N \times N$ lattice is expressed as
   Z_{N \times N} = \tr A^4
 \end{equation}
 
-In the thermodynamic limit, \eqref{z_n_times_n} is equal to \eqref{z_n_times_infty}.
+In the thermodynamic limit, \eqref{z_n_times_n} is equal to \eqref{eq:z_n_times_infty}.
 
 
 

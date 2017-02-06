@@ -1,0 +1,57 @@
+The partition of a discrete quantum mechanical system is given by
+\begin{equation}\label{eq:quantum_partition_function}
+  Z_{q} = \tr \exp(-\beta H_{q}) =
+  \sum_{\sigma} \bra{\sigma} \exp(-\beta H_{q}) \ket{\sigma}
+\end{equation}
+Imagine splitting the imaginary time interval $\beta$ into $N$ smaller steps:
+\begin{align}
+  \beta &= N \delta \tau, \\
+  \exp(-\beta H_q) &= \exp(-\delta \tau H_q)^N.
+\end{align}
+Recall that for any orthonormal basis, the identity can be expressed as a sum over
+projectors onto the basis states
+\begin{equation}
+    \mathbb{1} = \sum_{\sigma} \ket{\sigma}\bra{\sigma}.
+\end{equation}
+If we insert $N - 1$ resolutions of indentity into
+\autoref{eq:quantum_partition_function}, we obtain
+\begin{equation}
+  Z_q = \sum_{\sigma} \sum_{\sigma_1, \dots, \sigma_{N-1}}
+  \braket{\sigma | \exp(-\beta \delta \tau) | \sigma_1} \dots
+  \braket{\sigma_{N-1} | \exp(-\beta \delta \tau) | \sigma}.
+\end{equation}
+
+This is the imaginary time path integral formulation of quantum mechanics. Similar to the
+real-time path integral, an evolution in the imaginary time direction is expressed as a
+sum over all paths connecting the initial and final state, which are the same here, since
+we are taking the trace.
+
+We turn to the partition function of a classical system, written as a product of
+its transfer matrix, as in \autoref{eq:partition_function_transfer_matrix_1d}:
+\begin{equation}
+  Z_{\text{cl}} = \tr T^N.
+\end{equation}
+There is a striking similarity between a quantum mechanical partition function in $d$
+dimensions and a classical partition function in $d + 1$ dimensions.
+Adding a row to the classical lattice by applying the transfer matrix corresponds to time
+evolution of a quantum system:
+\begin{equation}
+  T \longleftrightarrow \exp(-\delta \tau H_q).
+\end{equation}
+The classical temperature corresponds to the coupling constants in the Hamiltonian
+$H_{\text{q}}$.
+
+Letting $\beta \to \infty$ (or equivalently $T \to 0$) amounts to taking $N \to \infty$,
+while keeping $\delta \tau$ fixed. In this limit, analogously to the transfer matrix for
+the classical system (cf. \autoref{eq:largest_eigenvector}), the operator $\exp(-\beta
+H_{\text{q}})$ becomes a projector onto the ground state.
+
+Thus, a quantum lattice in the ground state corresponds to a
+classical lattice that is infinite in its additional dimension.
+
+\todo[inline]{What is the role $\delta \tau$? Why should it be small?
+If we want to make the correspondence $T \equiv H_q$, we need $\delta \tau \to 0$.
+But what does this imply for the lattice? How does the 'scaling limit' come into play?
+Also: explain the correspondence between the energy scale of the quantum system and the
+correlation length of the classical system. Maybe do an example of 0D quantum to 1D
+classical and 1D quantum to 2D classical (Ising model?).}

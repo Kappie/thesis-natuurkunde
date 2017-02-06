@@ -2096,6 +2096,20 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">white1992density</bcf:citekey>
+    <bcf:citekey order="2">white1992density</bcf:citekey>
+    <bcf:citekey order="3">wilson1975renormalization</bcf:citekey>
+    <bcf:citekey order="4">white1992real</bcf:citekey>
+    <bcf:citekey order="5">noack1999workshop</bcf:citekey>
+    <bcf:citekey order="6">schollwock2005density</bcf:citekey>
+    <bcf:citekey order="7">white1993density</bcf:citekey>
+    <bcf:citekey order="8">ising1925beitrag</bcf:citekey>
+    <bcf:citekey order="9">nishino1995density</bcf:citekey>
+    <bcf:citekey order="9">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="10">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="10">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="10">baxter1982exactly</bcf:citekey>
+    <bcf:citekey order="11">nishino1996corner</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

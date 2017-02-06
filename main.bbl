@@ -90,6 +90,31 @@
       \field{title}{Exactly solved models in statistical mechanics}
       \field{year}{1982}
     \endentry
+    \entry{ising1925beitrag}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ac607f8a2f05ebe851db6cea5d807d8f}{%
+           family={Ising},
+           family_i={I\bibinitperiod},
+           given={Ernst},
+           given_i={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ac607f8a2f05ebe851db6cea5d807d8f}
+      \strng{fullhash}{ac607f8a2f05ebe851db6cea5d807d8f}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeitschrift für Physik}
+      \field{number}{1}
+      \field{title}{Beitrag zur theorie des ferromagnetismus}
+      \field{volume}{31}
+      \field{year}{1925}
+      \field{pages}{253\bibrangedash 258}
+      \range{pages}{6}
+    \endentry
     \entry{nishino1995density}{article}{}
       \name{author}{1}{}{%
         {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
@@ -144,6 +169,183 @@
       \field{year}{1996}
       \field{pages}{891\bibrangedash 894}
       \range{pages}{4}
+    \endentry
+    \entry{noack1999workshop}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=ea54eab4b79259783877ff0590e1bf42}{%
+           family={Noack},
+           family_i={N\bibinitperiod},
+           given={Reinhard\bibnamedelima M},
+           given_i={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={Ingo},
+           given_i={I\bibinitperiod}}}%
+        {{hash=95b5cba9c7dd39e2f273615ee935ebde}{%
+           family={Want},
+           family_i={W\bibinitperiod},
+           given={Xiaoqun},
+           given_i={X\bibinitperiod}}}%
+        {{hash=06d6662abf759b92a282eef6ef0b8dac}{%
+           family={Kaulke},
+           family_i={K\bibinitperiod},
+           given={Matthias},
+           given_i={M\bibinitperiod}}}%
+        {{hash=40c4dff42427b975c0f2fc4bdb7a2ecf}{%
+           family={Hallberg},
+           family_i={H\bibinitperiod},
+           given={Karen},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6109a78902140f029a9e55d65e3a758a}
+      \strng{fullhash}{6109a78902140f029a9e55d65e3a758a}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Density-matrix renormalization, a new numerical method in physics}
+      \field{chapter}{2}
+      \field{title}{The Density Matrix Renormalization Group}
+      \field{volume}{528}
+      \field{year}{1999}
+    \endentry
+    \entry{schollwock2005density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=47c87e3553597a3c6f21f2ae72571491}{%
+           family={Schollwöck},
+           family_i={S\bibinitperiod},
+           given={Ulrich},
+           given_i={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{47c87e3553597a3c6f21f2ae72571491}
+      \strng{fullhash}{47c87e3553597a3c6f21f2ae72571491}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of modern physics}
+      \field{number}{1}
+      \field{title}{The density-matrix renormalization group}
+      \field{volume}{77}
+      \field{year}{2005}
+      \field{pages}{263\bibrangedash 265}
+      \range{pages}{3}
+    \endentry
+    \entry{white1992density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d77dc1d7b121038d04902228d0ab5931}
+      \strng{fullhash}{d77dc1d7b121038d04902228d0ab5931}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{19}
+      \field{title}{Density matrix formulation for quantum renormalization groups}
+      \field{volume}{69}
+      \field{year}{1992}
+      \field{pages}{2863}
+      \range{pages}{1}
+    \endentry
+    \entry{white1993density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d77dc1d7b121038d04902228d0ab5931}
+      \strng{fullhash}{d77dc1d7b121038d04902228d0ab5931}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{14}
+      \field{title}{Density-matrix algorithms for quantum renormalization groups}
+      \field{volume}{48}
+      \field{year}{1993}
+      \field{pages}{10345}
+      \range{pages}{1}
+    \endentry
+    \entry{white1992real}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a6b4f8ea7e4a7c508db297f7bf4863d4}{%
+           family={Noack},
+           family_i={N\bibinitperiod},
+           given={RM},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{ac164437f88282aed8f3dae01782c53f}
+      \strng{fullhash}{ac164437f88282aed8f3dae01782c53f}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{24}
+      \field{title}{Real-space quantum renormalization groups}
+      \field{volume}{68}
+      \field{year}{1992}
+      \field{pages}{3487}
+      \range{pages}{1}
+    \endentry
+    \entry{wilson1975renormalization}{article}{}
+      \name{author}{1}{}{%
+        {{hash=96151a079599629d8b921f6ab7518a2a}{%
+           family={Wilson},
+           family_i={W\bibinitperiod},
+           given={Kenneth\bibnamedelima G},
+           given_i={K\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{96151a079599629d8b921f6ab7518a2a}
+      \strng{fullhash}{96151a079599629d8b921f6ab7518a2a}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{4}
+      \field{title}{The renormalization group: Critical phenomena and the Kondo problem}
+      \field{volume}{47}
+      \field{year}{1975}
+      \field{pages}{773}
+      \range{pages}{1}
     \endentry
   \endsortlist
 \endrefsection
