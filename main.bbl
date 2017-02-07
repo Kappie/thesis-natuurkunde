@@ -19,6 +19,41 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{barber1983finite}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=300ea62e6e22cb1f05aaaefa11a0979d}{%
+           family={Barber},
+           family_i={B\bibinitperiod},
+           given={M.\bibnamedelimi N.},
+           given_i={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=31ade5b64b6a4653e344627768e563a4}{%
+           family={Domb},
+           family_i={D\bibinitperiod},
+           given={Cyril},
+           given_i={C\bibinitperiod}}}%
+        {{hash=05c0c5347c1ba45bc212897dda5645ad}{%
+           family={Lebowitz},
+           family_i={L\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           given_i={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic press}%
+      }
+      \strng{namehash}{300ea62e6e22cb1f05aaaefa11a0979d}
+      \strng{fullhash}{300ea62e6e22cb1f05aaaefa11a0979d}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Phase Transitions and Critical Phenomena}
+      \field{chapter}{2}
+      \field{title}{Finite-size Scaling}
+      \field{volume}{8}
+      \field{year}{1983}
+    \endentry
     \entry{baxter1968dimers}{article}{}
       \name{author}{1}{}{%
         {{hash=1aed507145de1146326799ff92d30c2e}{%
@@ -89,6 +124,27 @@
       \field{chapter}{13}
       \field{title}{Exactly solved models in statistical mechanics}
       \field{year}{1982}
+    \endentry
+    \entry{cardy1996scaling}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4ac5aa12178c604ccb16b418a3bdc44c}{%
+           family={Cardy},
+           family_i={C\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{4ac5aa12178c604ccb16b418a3bdc44c}
+      \strng{fullhash}{4ac5aa12178c604ccb16b418a3bdc44c}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scaling and renormalization in statistical physics}
+      \field{volume}{5}
+      \field{year}{1996}
     \endentry
     \entry{ising1925beitrag}{article}{}
       \name{author}{1}{}{%

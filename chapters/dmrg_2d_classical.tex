@@ -74,7 +74,7 @@ Note that in the thermodynamic limit $N \to \infty$
 \end{equation}
 where $\lambda_1$ is the non-degenerate largest eigenvalue (in absolute value) of $T$.
 
-\subsubsection{Fixed boundary conditions}
+\subsubsection{Fixed boundary conditions}\label{sec:fixed_boundary_conditions}
 We may also apply fixed boundary conditions. The partition function is then written as
 \begin{equation}
   Z_N = \bra{\sigma'}T^N\ket{\sigma},
@@ -277,7 +277,7 @@ redefine the row-to-row transfer matrix from
 so the eigenvalues must be the same. That means that the new definition of the transfer
 matrix is related to the old one by a basis transformation
 \begin{equation}
-  T_{\text{new}} = P T_{\text{old}} P^{-1}
+  T_{\text{new}} = P T_{\text{old}} P^{T}
 \end{equation}
 
 \begin{figure}
@@ -299,23 +299,33 @@ For more on the quantum-classical correspondence, see
 \todo[inline]{I want to refer to Baxter's variational
 approach anno 1968 somehwere.}
 
+
+\subsection{The infinite system algorithm for the transfer matrix}
 Nishino \cite{nishino1995density, nishino1996corner} was the first to apply density matrix
 renormalization group methods in the context of two-dimensional classical
 lattices.
 
-\subsection{The infinite system algorithm for the transfer matrix}
-
-Analogous to the infinite system DMRG algorithm for approximating the Hamiltonian of quantum spin chains, our goal is to
+Analogous to the infinite system DMRG algorithm for approximating the Hamiltonian of
+quantum spin chains, our goal is to
 approximate the transfer matrix in the thermodynamic limit as well as possible within a
 restriced number of basis states $m$. We will do this by adding a single site at a time,
 and truncating the dimension from $2m$ to $m$ at each iteration.
 
-We start the algorithm from a transfer matrix that already has dimension $m$, perhaps by
-exactly diagonalizing the transfer matrix of a couple of sites. We call this transfer
-matrix $P_N$. See \autoref{fig:tmrg_initial_half_row_transfer_matrix}.
+For simplicity, we assume that, at the start of the algorithm, the transfer matrix already
+has dimension $m$. We call this transfer matrix $P_N$. A good choice of initial
+transfer matrix is obtained by contracting a couple of $a$-tensors, until dimension $m$ is
+reached. See \autoref{fig:tmrg_initial_half_row_transfer_matrix}.
+
+To specify fixed instead of open boundary conditions, we may use as boundary tensor a
+slightly modified version of the three-legged version of $a$, namely
+\begin{equation}
+  a_{i j k}^{\sigma} = \sum_{a b c} \delta_{\sigma a b c} P_{i a}P_{j b}P_{k c}.
+\end{equation}
+that represents an edge site with spin fixed at $\sigma$.
 
 We enlarge the system with one site by contracting with an additional $a$-tensor,
-obtaining $P_{N + 1}$. See the first step in \autoref{fig:tmrg_adding_a_site}.
+obtaining $P_{N + 1}$. See the first network in
+\autoref{fig:tmrg_add_site_and_renormalize}.
 
 In order to find the best projection from $2m$ basis states back to $m$, we embed the
 system in an environment that is the mirror image of the system we presently have. We call
@@ -353,14 +363,14 @@ until we have reached some termination condition.
 \end{figure}
 
 \begin{figure}
-  \input{images/tmrg_adding_a_site.tikz}
+  \input{images/tmrg_add_site_and_renormalize.tikz}
   \caption{In the first step, $P_{N + 1}$ is obtained by contracting the current half-row
   transfer matrix $P_N$ with an additional $a$-tensor.
   In the second step, $P_{N + 1}$ is truncated back to an $m$-dimensional matrix, with the
-  optimal low-rank approximation given by the singular value decomposition of the reduced
-  density matrix, shown in \autoref{fig:tmrg_reduced_density_matrix}.
-  }
-  \label{fig:tmrg_adding_a_site}
+  optimal low-rank approximation given by keeping the basis states corresponding to the
+  $m$ largest eigenvalues of the density matrix. See
+  \autoref{fig:tmrg_reduced_density_matrix}. }
+  \label{fig:tmrg_add_site_and_renormalize}
 \end{figure}
 
 \begin{figure}
@@ -373,15 +383,31 @@ until we have reached some termination condition.
 \begin{figure}
   \input{images/tmrg_reduced_density_matrix.tikz}
   \caption{Graphical form of
-  \autoref{eq:reduced_density_matrix_classical_case}. The second step represents the
-  singular value decomposition of $\rho_{N + 1}$.}
+  \autoref{eq:reduced_density_matrix_classical_case}.
+  In the second step, $\rho_{N + 1}$ is diagonalized and only the eigenvectors
+  corresponding to the $m$ largest eigenvalues are kept.
+  }
   \label{fig:tmrg_reduced_density_matrix}
 \end{figure}
 
 \subsection{Physical interpretation of the reduced density matrix}
-\todo[inline]{Talk about how it represents a lattice with a cut in it.}
-Nishino and Okunishi combined ideas from Baxter and White to formulate the
-corner transfer matrix renormalization group \cite{nishino1996corner}.
+Generalizing the remarks from \autoref{sec:fixed_boundary_conditions} to the
+two-dimensional case, we see that the normalized lowest-lying eigenvector of the transfer
+matrix $T_N$ contains the Boltzmann weights of spin configurations on the boundary of a
+half-infinite $N \times \infty$ lattice.
+
+Therefore, the classical equivalent of the quantum mechanical reduced density matrix,
+given by \autoref{eq:reduced_density_matrix_classical_case}, and by the first network in
+\autoref{fig:tmrg_reduced_density_matrix}, represents the Boltzmann weights of
+configurations along a cut in an $N \times \infty$ lattice.
+
+Nishino and Okunishi \cite{nishino1996corner}, drawing on ideas from Baxter, realized the
+Boltzmann weights of configurations along this cut could be obtained by employing
+\textit{corner transfer matrices}, making it unneccessary to solve the eigenvalue problem
+in \autoref{fig:tmrg_eigenvalue_equation}. Their method, called the Corner Transfer Matrix
+Renormalization Group method, consumes far less resources while maintaining precision. For
+this reason, it is the method of choice for most of the simulations in this thesis.
+
 
 \section{Corner transfer matrix renormalization group}
 \subsection{Corner transfer matrices}
@@ -399,28 +425,44 @@ a quadrant of spins. It was originally defined by Baxter as
     0 & \text{if } \sigma_{1} \neq \sigma_{1}'
   \end{cases}
 \end{equation}
-
 Here, the product runs over groups of four spins that share the same face, and
 the sum is over all spins in the interior of the quadrant.
+
 In a symmetric and isotropic model such as the Ising model, we have
 \begin{equation}
   W(a, b, c, d) = W(b, a, d, c) = W(c, a, d, b) = W(d, c, b, a)
 \end{equation}
 and the partition of an $N \times N$ lattice is expressed as
 \begin{equation}\label{z_n_times_n}
-  Z_{N \times N} = \tr A^4
+  Z_{N \times N} = \tr A^4.
 \end{equation}
 
 In the thermodynamic limit, this partition function is equal to
 the partition function of an $N \times \infty$ lattice, given by
 \autoref{eq:z_n_times_infty}.
 
+The matrix in \autoref{eq:reduced_density_matrix_classical_case}, containing the Boltzmann
+weights of spins along a cut down the middle of an $N \times \infty$ system, is
+\textit{approximated} by
+\begin{equation}
+  \rho = A^4.
+\end{equation}
+The difference is that $A^4$ represents a square system of size $N \times N$ with a
+cut, instead of an $N \times \infty$ strip with a cut. In the thermodynamic limit, both
+systems become the same.
+
 \subsection{Corner transfer matrix as a tensor network}
 Similarly to how we redefined the row-to-row transfer matrix
 (\autoref{eq:row_to_row_transfer_matrix}) as the tensor network in
 \autoref{fig:transfer_matrix_as_tensor_network}, we can redefine the corner transfer
 matrix (\autoref{eq:corner_transfer_matrix}) as the tensor network in
-\autoref{fig:corner_transfer_matrix_as_tensor_network}.
+\autoref{fig:corner_transfer_matrix_as_tensor_network}. Again, the new and old definitions
+of $A$ are related by a basis tranformation
+\begin{equation}
+  A_{\text{new}} = P A_{\text{old}} P^T.
+\end{equation}
+
+\todo[inline]{Something about $A$ being symmetric. What about non-symmetric cases?}
 
 \begin{figure}
   \input{images/corner_transfer_matrix_as_tensor_network.tikz}
@@ -429,11 +471,72 @@ matrix (\autoref{eq:corner_transfer_matrix}) as the tensor network in
 \end{figure}
 
 \subsection{Corner transfer matrix renormalization group method}
+\todo[inline]{Say something about boundary conditions, also with TMRG algorithm.}
+
+The algorithm proceeds very much like the transfer matrix renormalization group method. In addition to renormalizing the half-row transfer matrix $P$, we also renormalize the
+corner transfer matrix $A$ at each step, using the projector obtained from diagonalizing
+$A^4$.
+
+\todo[inline]{Compare complexities of both algorithms.}
+
+We first initialize $P_N$ and $A_N$, imposing boundary conditions as we see fit.
+
+We then obtain the unrenormalized $A_{N+1}$ by adding a layer of spins to the quadrant
+represented by $A_N$. This is done by contracting with two half-row transfer matrices
+$P_N$ and a single $a$-tensor, as shown in the first step of
+\autoref{fig:ctmrg_add_site_and_renormalize}. We obtain the unnormalized $P_{N+1}$ as
+before, as shown in the first step of \autoref{fig:tmrg_add_site_and_renormalize}.
+
+To find the optimal projector from $2m$ to $m$ basis states, we can directly diagonalize
+$A_{N + 1}^4$, or, equivalently, $A_{N + 1}$. As always, we keep the basis states
+corresponding to the $m$ largest eigenvectors. This is shown in
+\autoref{fig:ctmrg_reduced_density_matrix}. We use the projector to obtain the
+renormalized versions of $A_{N + 1}$ and $T_{N + 1}$
+\begin{align}
+    \widetilde{A}_{N + 1} &= OA_{N + 1}O^{\dagger}, \\
+    \widetilde{T}_{N + 1} &= OT_{N + 1}O^{\dagger}.
+\end{align}
+shown in the second steps of \autoref{fig:ctmrg_add_site_and_renormalize} and
+\autoref{fig:tmrg_add_site_and_renormalize}.
+
+We repeat the above procedure to successively obtain
+\begin{align}
+  A_{N + 1} & \rightarrow A_{N + 2} \rightarrow \dots, \\
+  T_{N + 1} & \rightarrow T_{N + 2} \rightarrow \dots
+\end{align}
+until a convergence criterion is reached.
+\todo[inline]{Talk about convergence criterion.}
 
 \begin{figure}
   \input{images/ctmrg_add_site_and_renormalize.tikz}
-  \caption{lal}
+  \caption{In the first step, the unrenormalized $A_{N+1}$ is obtained by contracting with
+  two copies of $P_N$ and a single $a$-tensor. This corresponds to adding a layer of spins
+  to the quadrant, thus enlarging it from $N \times N$ to $N + 1 \times N + 1$. In the
+  second step, $A_{N + 1}$ is renormalized with the projector obtained from diagonalizing
+  $A_{N+1}^4$ and keeping the basis states corresponding to the $m$ largest eigenvalues.  }
   \label{fig:ctmrg_add_site_and_renormalize}
 \end{figure}
 
-\todo[inline]{More about Baxter's variational approach.}
+\begin{figure}
+  \input{images/ctmrg_reduced_density_matrix.tikz}
+  \caption{The matrix $A_{N+1}^4$ is approximately equal to $\rho_{N+1}$ in
+  \autoref{eq:reduced_density_matrix_classical_case}. Compare the graphical forms of this
+  network and the one shown in \autoref{fig:tmrg_reduced_density_matrix}. We obtain the
+  optimal projector by diagonalizing $A_{N + 1}^4$, or equivalently $A_{N+1}$.}
+  \label{fig:ctmrg_reduced_density_matrix}
+\end{figure}
+
+
+
+\section{Calculation of observable quantities}
+
+\todo[inline]{To do}
+
+\section{Validity of approximation}
+
+\todo[inline]{To do. Talk about spectrum of reduced density matrix/ctm and how it relates
+to energy gap/correlation length and critical behaviour.}
+
+\section{Equivalence to variational approximation in the space of matrix product states.}
+
+\todo[inline]{Talk about Baxter and recent MPS forms. Maybe in appendix?}
