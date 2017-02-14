@@ -1,21 +1,47 @@
+\section{Abstract}
+This chapter explains how to apply to ideas of the density matrix renormalization group to
+two-dimensional classical lattices. The Ising model is used throughout.
+
+First, we explain the transfer-matrix formulation for
+classical partition functions.
+
+Then, we show how to renormalize the transfer matrix using DMRG. This was first done by
+Nishino \cite{nishino1995density}. To make notation easier, we redefine the transfer
+matrix in terms of a tensor network.
+
+Then, we explain the
+corner transfer matrix renormalization group. This method, first introduced by Nishino and
+Okunishi \cite{nishino1996corner}, combines ideas from Baxter \cite{baxter1968dimers,
+baxter1978variational, baxter1982exactly} and White \cite{white1992density} to
+significantly speed up the renormalization of the transfer matrix.
+
 \section{Partition functions of classical lattices}
 The central quantity in equilibrium statistical mechanics is the partition
 function $Z$, which, for a discrete system such as a lattice, is defined as
 \begin{equation}
-  Z = \sum_{s} \exp{(-\beta H(s))}
+  Z = \sum_{s} \exp{(-\beta H(s))},
 \end{equation}
 where the sum is over all microstates $s$, $H$ is the energy function, and
 $\beta = T^{-1}$ the inverse temperature.
 
 \section{Transfer matrices of lattice models}
 
+Transfer matrices are used to re-express the partition function of classical
+lattice systems, allowing them to be solved exactly or approximated.
+
+We will introduce the transfer matrix in the context of the 1D classical
+Ising model, first introduced and solved using the transfer matrix method by Ising
+\cite{ising1925beitrag} in his PhD thesis.
+
 \subsection{1D Ising model}
 
-\todo[inline]{refer to Ising, talk a bit about model (magnetism etc).}
+\todo[inline]{talk a bit about model (magnetism etc).}
+\todo[inline]{Somewhere, I should introduce -- very briefly -- how the magnetization and
+free energy per site are defined. Maybe just calculate them for 1D Ising model.}
 
 Consider the 1D zero-field ferromagnetic Ising model \cite{ising1925beitrag}, defined by the energy function
 \begin{equation}\label{ising_energy_function}
-  H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j
+  H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j.
 \end{equation}
 Here, we sum over nearest neighbors $\langle i j \rangle$ and the spins
 $\sigma_i$ take the values $\pm 1$. $J > 0$.
@@ -34,7 +60,7 @@ where we defined $K \equiv \beta J$.
 
 Now, we define the $2 \times 2$ matrix
 \begin{equation}\label{eq:transfer_matrix_1d_ising}
-  T_{\sigma \sigma'} = \exp(K \sigma \sigma')
+  T_{\sigma \sigma'} = \exp(K \sigma \sigma').
 \end{equation}
 
 A possible
@@ -50,25 +76,39 @@ choice of basis is
     0 \\
     1
   \end{bmatrix}
-  \bigr)
+  \bigr).
 \end{equation}
 
 In terms of this matrix, $Z_N$ is written as
 \begin{equation}\label{eq:partition_function_transfer_matrix_1d}
-  Z_N = \sum_{\sigma_1, \cdots, \sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N
+  Z_N = \sum_{\sigma_1, \cdots, \sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N.
 \end{equation}
 
-$T$ is called the transfer matrix. Since $T$ is, in fact, diagonalizable, $T^N = P D^N
-P^{-1}$, where $P$ consists of the eigenvectors of $T$. By the cyclic property of the
+$T$ is called the transfer matrix. In the basis of \autoref{eq:basis_transfer_matrix_1d},
+$T$ is written as
+\begin{equation}
+  T = \begin{bmatrix}
+    e^K & e^{-K} \\
+    e^{-K} & e^{-K}
+  \end{bmatrix}.
+\end{equation}
+
+$T$ is, in fact, diagonalizable. So, we can write $T^N = P D^N
+P^{-1}$, where $P$ consists of the eigenvectors of $T$, and $D$ has the corresponding eigenvalues on the diagonal. By the cyclic property of the
 trace, we have
 \begin{equation}
-  Z_N = \lambda_{1}^{N} + \lambda_{2}^{N}
+  Z_N = \lambda_{1}^{N} + \lambda_{2}^{N},
 \end{equation}
+where
+\begin{align*}
+  \lambda_1 = e^K + e^{-K}, \\
+  \lambda_2 = e^K - e^{-K}.
+\end{align*}
 
 Thus, we have reduced the problem of finding the partition function to an
-eigenvalue problem, which is quite easy in this case.
+eigenvalue problem.
 
-Note that in the thermodynamic limit $N \to \infty$
+In the thermodynamic limit $N \to \infty$
 \begin{equation}
   Z = \lim_{N \to \infty} \lambda_{1}^{N}
 \end{equation}
@@ -94,6 +134,7 @@ that
 $\braket{\lambda_1 | \uparrow}$ and
 $\braket{\lambda_1 | \downarrow}$ represent the Boltzmann weight of $\ket{\uparrow}$ and
 $\ket{\downarrow}$ at the boundary of a half-infinite chain.
+\todo[inline]{Maybe picture of above claim?}
 
 \subsection{2D Ising model}
 \todo[inline]{Talk about exact solution (Onsager). Why is it important? Maybe
@@ -106,7 +147,7 @@ dimensions, the energy function is still written as in
 Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume
 $l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the
 one-dimensional case. In the horizontal direction, we keep an open boundary. We refer to
-$N$ as the system size.
+$N$ as the system size. \todo[inline]{Picture.}
 
 Similarly as in the 1D case, the partition function can be written as
 \begin{equation}
@@ -155,7 +196,7 @@ like $W$ and $T$ play a crucial role. We have formulated them in a way that is v
 any interaction-round-a-face (IRF) model, defined by
 \begin{equation}
   H \thicksim \sum_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k,
-  \sigma_l)
+  \sigma_l),
 \end{equation}
 where the summation is over all spins sharing a face. $W$ can contain 4-spin,
 3-spin, 2-spin and 1-spin interaction terms. The Ising model is a special case of the IRF
@@ -164,14 +205,10 @@ model, with $W$ given by \autoref{eq:boltzmann_weight_face_ising_model}.
 We will now express the partition function of the 2D Ising model as a tensor network. The
 transfer matrix $T$ is redefined in the process. This allows us to visualize the equations
 in a way that is consistent with the many other tensor network algorithms under research
-today.
+today. For an introduction to tensor network notation, see
+\autoref{chapter:introduction_to_tensor_networks}.
 
-\todo[inline]{
-    For any $l$, the trace over the transfer matrix is the same in both definitions of
-    $T$. It is symmetric, so they should be related by a basis transformation. Is it,
-    perhaps, exactly the basis in which the CTM is diagonal? }
-
-\subsection{A system of four spins}
+\subsection{Tensor network of the partition function of a system of four spins}
 
 We define
 \begin{equation}
@@ -184,7 +221,7 @@ The Boltzmann weight of a face $W$ decomposes into a product of Boltzmann weight
 bonds
 \begin{equation}
   W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) =
-  Q(\sigma_i, \sigma_j)Q(\sigma_j, \sigma_l)Q(\sigma_l, \sigma_k)Q(\sigma_k, \sigma_i)
+  Q(\sigma_i, \sigma_j)Q(\sigma_j, \sigma_l)Q(\sigma_l, \sigma_k)Q(\sigma_k, \sigma_i).
 \end{equation}
 
 It is now easy to see that the partition function is equal to the contracted tensor
@@ -196,7 +233,7 @@ network in \autoref{fig:tensor_network_4_sites}:
     \delta_{\sigma_1, a} Q(a, b) \delta_{\sigma_2, b} Q(b, c)
     \delta_{\sigma_3, c} Q(c, d) \delta_{\sigma_4, d} Q(d, a) \\
     & =
-    \sum_{\sigma_1, \sigma_2, \sigma_3, \sigma_4} W(\sigma_1, \sigma_2, \sigma_3, \sigma_4)
+    \sum_{\sigma_1, \sigma_2, \sigma_3, \sigma_4} W(\sigma_1, \sigma_2, \sigma_3, \sigma_4).
   \end{split}
 \end{equation}
 where the Kronecker delta is defined as usual:
@@ -204,7 +241,7 @@ where the Kronecker delta is defined as usual:
   \delta_{i j} =
   \begin{cases}
     1 & \text{if } i = j \\
-    0 & \text{if } i \neq j
+    0 & \text{if } i \neq j.
   \end{cases}
 \end{equation}
 
@@ -231,28 +268,28 @@ where the Kronecker delta is defined as usual:
 
 We define the matrix $P$ by
 \begin{equation}\label{eq:q_to_p}
-  P^2 = Q
+  P^2 = Q.
 \end{equation}
 as in \autoref{fig:q_to_p}. This allows us to write the partition function of an arbitrary
 $N \times l$ square lattice as a tensor network of a single recurrent tensor $a_{i j k
 l}$, given by
 \begin{equation}\label{eq:a_tensor}
-  a_{i j k l} = \sum_{a, b, c, d} \delta_{a b c d} P_{i a} P_{j b} P_{k c} P_{l d}
+  a_{i j k l} = \sum_{a, b, c, d} \delta_{a b c d} P_{i a} P_{j b} P_{k c} P_{l d},
 \end{equation}
 where the generalization of the Kronecker delta is defined as
 \begin{equation}
   \delta_{i_1 \dots i_n} =
   \begin{cases}
     1 & \text{if } i_1 = \ldots = i_n \\
-    0 & \text{otherwise}
+    0 & \text{otherwise.}
   \end{cases}
 \end{equation}
 
 See \autoref{fig:a_tensor} and \autoref{fig:2d_ising_as_tensor_network}. At the edges and
-corners, we define suitable tensors of rank 3 and 2, which we will also denote by $a$.
+corners, we define suitable tensors of rank 3 and 2, which we will also denote by $a$:
 \begin{align*}
-  a_{i j k} &= \sum_{a b c} \delta_{a b c} P_{i a} P_{j b} P_{k c} \\
-  a_{i j} &= \sum_{a b} \delta_{a b} P_{i a} P_{j b}
+  a_{i j k} &= \sum_{a b c} \delta_{a b c} P_{i a} P_{j b} P_{k c}, \\
+  a_{i j} &= \sum_{a b} \delta_{a b} P_{i a} P_{j b}.
 \end{align*}
 
 The challenge is to approximate this tensor network in the thermodynamic limit.
@@ -265,19 +302,19 @@ The challenge is to approximate this tensor network in the thermodynamic limit.
 \end{figure}
 
 \subsection{The transfer matrix as a tensor network}
-\todo[inline]{Say something about reshaping legs.}
+\todo[inline]{Say something about reshaping legs. It is implicit now.}
 
 With our newfound representation of the partition function as a tensor network, we can
 redefine the row-to-row transfer matrix from
 \autoref{eq:row_to_row_transfer_matrix} as the tensor network expressed in
 \autoref{fig:transfer_matrix_as_tensor_network}. For all $l$, it is still true that
 \begin{equation}
-  Z_{N \times l} = \tr T_{N}^{l} = \sum_{i = 1}^{2^N} \lambda_{i}^{l}
+  Z_{N \times l} = \tr T_{N}^{l} = \sum_{i = 1}^{2^N} \lambda_{i}^{l},
 \end{equation}
 so the eigenvalues must be the same. That means that the new definition of the transfer
 matrix is related to the old one by a basis transformation
 \begin{equation}
-  T_{\text{new}} = P T_{\text{old}} P^{T}
+  T_{\text{new}} = P T_{\text{old}} P^{T}.
 \end{equation}
 
 \begin{figure}
@@ -296,9 +333,6 @@ classical system.
 
 For more on the quantum-classical correspondence, see
 \autoref{chapter:correspondence_quantum_classical}.
-\todo[inline]{I want to refer to Baxter's variational
-approach anno 1968 somehwere.}
-
 
 \subsection{The infinite system algorithm for the transfer matrix}
 Nishino \cite{nishino1995density, nishino1996corner} was the first to apply density matrix
@@ -319,7 +353,7 @@ reached. See \autoref{fig:tmrg_initial_half_row_transfer_matrix}.
 To specify fixed instead of open boundary conditions, we may use as boundary tensor a
 slightly modified version of the three-legged version of $a$, namely
 \begin{equation}
-  a_{i j k}^{\sigma} = \sum_{a b c} \delta_{\sigma a b c} P_{i a}P_{j b}P_{k c}.
+  a_{i j k}^{\sigma} = \sum_{a b c} \delta_{\sigma a b c} P_{i a}P_{j b}P_{k c},
 \end{equation}
 that represents an edge site with spin fixed at $\sigma$.
 
@@ -337,7 +371,7 @@ The equivalent of the \textit{reduced density matrix of a
 block} in the classical case is:
 \begin{equation}\label{eq:reduced_density_matrix_classical_case}
   \rho_{N + 1} = \sum_{\sigma_B} \braket{\sigma_B | \lambda_0}\braket{\lambda_0 |
-  \sigma_B}
+  \sigma_B},
 \end{equation}
 where we have summed over all the degrees of freedom of one of the half-row transfer
 matrices $P_{N+1}$. See the first step of \autoref{fig:tmrg_reduced_density_matrix}.
@@ -351,9 +385,10 @@ to the $m$ largest eigenvalues. See the second step of \autoref{fig:tmrg_reduced
 
 With this blocking procedure, we can successively find
 \begin{equation}
-    P_{N + 1} \rightarrow P_{N + 2} \rightarrow \dots
+    P_{N + 1} \rightarrow P_{N + 2} \rightarrow \dots,
 \end{equation}
 until we have reached some termination condition.
+\todo[inline]{Say something about termination condition.}
 
 \begin{figure}
   \input{images/tmrg_initial_half_row_transfer_matrix.tikz}
@@ -422,7 +457,7 @@ a quadrant of spins. It was originally defined by Baxter as
   A_{\bm{\sigma}, \bm{\sigma'}} =
   \begin{cases}
     \sum \prod_{\langle i, j, k, l \rangle} W(\sigma_i, \sigma_j, \sigma_k, \sigma_l) & \text{if } \sigma_{1} = \sigma_{1}' \\
-    0 & \text{if } \sigma_{1} \neq \sigma_{1}'
+    0 & \text{if } \sigma_{1} \neq \sigma_{1}'.
   \end{cases}
 \end{equation}
 Here, the product runs over groups of four spins that share the same face, and
@@ -449,7 +484,8 @@ weights of spins along a cut down the middle of an $N \times \infty$ system, is
 \end{equation}
 The difference is that $A^4$ represents a square system of size $N \times N$ with a
 cut, instead of an $N \times \infty$ strip with a cut. In the thermodynamic limit, both
-systems become the same.
+systems become the same. In the corner transfer matrix renormalization group method, $A^4$
+is used to find the optimal projector onto $m$ basis states.
 
 \subsection{Corner transfer matrix as a tensor network}
 Similarly to how we redefined the row-to-row transfer matrix
@@ -539,4 +575,5 @@ to energy gap/correlation length and critical behaviour.}
 
 \section{Equivalence to variational approximation in the space of matrix product states.}
 
-\todo[inline]{Talk about Baxter and recent MPS forms. Maybe in appendix?}
+\todo[inline]{Talk about Baxter, Rommer and Ostlund, and more recent MPS algorithms. Maybe
+in appendix?}

@@ -18,6 +18,7 @@
 \usepackage{amssymb}
 \usepackage{braket}
 \usepackage{bm}
+\usepackage{tabularx}
 
 % Input packages for tikz pictures.
 \input{images/tikz_declarations}
@@ -26,17 +27,12 @@
 \usepackage[backend=biber, style=numeric, hyperref]{biblatex}
 \usepackage{hyperref}
 
-% Rebel Princess color scheme
-%\definecolor{orange}{RGB}{254,178,151}
 \definecolor{orange}{RGB}{252,210,190}
-\definecolor{green}{RGB}{237,237,202}
-\definecolor{blue}{RGB}{160,206,206}
-\definecolor{grey}{RGB}{167,156,167}
 
 
 
 \addbibresource{references.bib}
-\graphicspath{ {images/} }
+\graphicspath{{images/}{plots/}}
 
 
 
@@ -92,32 +88,35 @@
 \begingroup
 \renewcommand{\afterchaptertitle}{\vskip1.5em}
 
-\tableofcontents*
+% \tableofcontents*
 \endgroup
 
 \mainmatter
 
-\chapter{Introduction}
-\input{chapters/introduction}
+% \chapter{Introduction}
+% \input{chapters/introduction}
+%
+% \chapter{Density matrix renormalization group method}
+% \input{chapters/dmrg}
+%
+% \chapter{DRMG applied to two-dimensional classical lattice models}
+% \input{chapters/dmrg_2d_classical}
+%
+% \chapter{Critical behaviour and finite-size scaling}
+% \input{chapters/critical_behaviour_and_finite_size_scaling}
+%
+%
 
-\chapter{Density matrix renormalization group method}
-\input{chapters/dmrg}
+\chapter{Results}
+\input{chapters/results}
 
-\chapter{DRMG applied to two-dimensional classical lattice models}
-\input{chapters/dmrg_2d_classical}
-
-\chapter{Finite-size scaling}
-\input{chapters/finite_size_scaling}
-
-
-
-\appendix
-\chapter{Correspondence of quantum and classical lattice
-systems}\label{chapter:correspondence_quantum_classical}
-\input{chapters/correspondence_quantum_classical}
-
-\chapter{Introduction to tensor networks}
-\input{chapters/introduction_tensor_networks}
+% \appendix
+% \chapter{Correspondence of quantum and classical lattice
+% systems}\label{chapter:correspondence_quantum_classical}
+% \input{chapters/correspondence_quantum_classical}
+%
+% \chapter{Introduction to tensor networks}\label{chapter:introduction_to_tensor_networks}
+% \input{chapters/introduction_tensor_networks}
 
 % \chapter{Singular value decomposition}
 % \input{chapters/singular_value_decomposition}

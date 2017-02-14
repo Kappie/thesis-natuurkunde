@@ -2096,23 +2096,8 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">poulin2011quantum</bcf:citekey>
-    <bcf:citekey order="2">white1992density</bcf:citekey>
-    <bcf:citekey order="3">white1992density</bcf:citekey>
-    <bcf:citekey order="4">wilson1975renormalization</bcf:citekey>
-    <bcf:citekey order="5">white1992real</bcf:citekey>
-    <bcf:citekey order="6">noack1999workshop</bcf:citekey>
-    <bcf:citekey order="7">schollwock2005density</bcf:citekey>
-    <bcf:citekey order="8">white1993density</bcf:citekey>
-    <bcf:citekey order="9">ising1925beitrag</bcf:citekey>
-    <bcf:citekey order="10">nishino1995density</bcf:citekey>
-    <bcf:citekey order="10">nishino1996corner</bcf:citekey>
-    <bcf:citekey order="11">nishino1996corner</bcf:citekey>
-    <bcf:citekey order="12">baxter1968dimers</bcf:citekey>
-    <bcf:citekey order="12">baxter1978variational</bcf:citekey>
-    <bcf:citekey order="12">baxter1982exactly</bcf:citekey>
-    <bcf:citekey order="13">barber1983finite</bcf:citekey>
-    <bcf:citekey order="14">cardy1996scaling</bcf:citekey>
+    <bcf:citekey order="1">sandvik2010computational</bcf:citekey>
+    <bcf:citekey order="2">bhattacharjee2001measure</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

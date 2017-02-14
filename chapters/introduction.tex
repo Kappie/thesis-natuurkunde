@@ -1,30 +1,24 @@
-\section{Strongly interacting 1D quantum lattice models}
+We investigate finite-size scaling behaviour in two-dimensional classical systems using
+the corner transfer matrix renormalization group (CTMRG) method. Instead of scaling in the
+system size $N$, we perform a scaling analysis in the bond dimension -- or numbers of
+basis states kept -- in approximating the corner transfer matrix of the system. This
+dimension is denoted by $\chi$ or $m$.
 
-\subsection{The Hilbert space is enormous}
+This thesis is laid out as follows. Chapter one introduces the density matrix
+renormalization group (DMRG) method in the context of one-dimensional quantum systems.
+Since most of the literature and research focuses on quantum lattice models, it is helpful
+to keep this picture in mind.
 
-Consider the problem of numerically finding the ground state $\ket{\Psi_0}$ of the
-$N$-site 1-dimensional transverse-field Ising-model, given by
+Chapter two explains how the ideas of DMRG can be applied to two-dimensional classical
+lattices. After making this connection clear, we describe the corner transfer matrix
+renormalization group method, and apply it to the Ising model.
 
-\begin{equation} 
-  H = -J \sum_{i = 1}^{N} \sigma_{i}^{z}\sigma_{i+1}^{z}
-  - h \sum_{i=1}^{N} \sigma_{i}^{x}
-\end{equation}
+Chapter three introduces the concepts of critical behaviour and finite-size scaling.
 
-The underlying Hilbert space of the system is a tensor product of the
-local Hilbert spaces $\mathcal{H}_{\text{site}}$, which are spanned by the
-states $\{\ket{\uparrow}, \ket{\downarrow}\}$. Thus, a general state of the system is a unit vector in
-a $2^N$-dimensional space.
+Results are presented in chapter four.
 
-\begin{equation}
-  \ket{\Psi} = \sum_{\sigma_1, \sigma_2, \ldots \in \{\ket{\uparrow}, \ket{\downarrow}\}} c_{\sigma_1, \sigma_2, \ldots, \sigma_N} \ket{\sigma_1} \otimes \ket{\sigma_2} \otimes \ldots \otimes \ket{\sigma_N}
-\end{equation}
-
-So, for a system with 1000 particles, the dimensionality of the Hilbert
-space comes in at about $10^{301}$, some 220 orders of magnitude larger than
-the number of atoms in the observable universe. As it turns out, nature is
-very well described by Hamiltonians that are local -- that do not contain
-interactions between an arbitrary number of bodies. And for these
-Hamiltonians, only an exponentially small subset of states can be explored
-in the lifetime of the universe \cite{poulin2011quantum}. That is, only
-exponentially few states are physical. \todo[inline]{Expand a bit. Refer
-back to problem of finding ground state.}
+\todo[inline]{
+Maybe it's better to start with a chapter on statistical mechanics (introducing transfer
+matrices, computing quantities, etc), then a chapter on critical behaviour and finite-size
+scaling, and THEN a chapter that introduces DMRG, TMRG and CTMRG in one go.
+}

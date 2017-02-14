@@ -1,12 +1,47 @@
 \usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{tikzscale}
+
+\pgfplotscreateplotcyclelist{my mark list}{%
+    {mark=*},
+    {mark=square*},
+    {mark=triangle*},
+    {mark=diamond*},
+    {mark=o},
+    {mark=square},
+    {mark=triangle},
+    {mark=diamond}
+}
+
+\pgfplotsset{
+  compat=1.5,
+  table/search path={plots/data},
+  colormap name=viridis,
+  cycle multiindex list={
+      my mark list\nextlist
+      {[indices of colormap={0, 4, 8, 12, 16, 20, 24, 28}]}\nextlist
+  }
+}
+
+\tikzset{
+  every mark/.append style={solid}
+}
+
 \usetikzlibrary{decorations.markings}
 \usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{positioning}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{grffile}
+
+
 
 \pgfdeclarelayer{edgelayer}
 \pgfdeclarelayer{nodelayer}
 \pgfsetlayers{edgelayer,nodelayer,main}
+
 
 \def\tensorsize{1.3em}
 

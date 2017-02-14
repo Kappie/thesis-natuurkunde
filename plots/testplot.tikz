@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+  % \begin{axis}[
+  %   title=Mijn eerste plot,
+  %   xlabel={$x$},
+  %   ylabel={$y$},
+  %   ymin=-1,
+  %   ymax=1,
+  % ]
+  % \addplot+[
+  %   dashed,
+  %   mark=*,
+  % ]
+  % table {testdata.dat};
+  \begin{axis}[
+    stack plots = y, stack dir = minus,
+  ]
+
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \addplot coordinates {(0,1) (0.5,1) (1,1)};
+  \end{axis}
+  % \end{axis}
+\end{tikzpicture}

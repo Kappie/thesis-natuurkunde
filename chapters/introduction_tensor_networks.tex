@@ -11,7 +11,7 @@ convenient way to organize information. It is the generalization of a vector
     v_1 \\
     \vdots \\
     v_n
-  \end{bmatrix}
+  \end{bmatrix},
 \end{equation}
 which has one index, and a matrix
 \begin{equation}
@@ -20,7 +20,7 @@ which has one index, and a matrix
   M_{1 1} & \dots & M_{1 n} \\
   \vdots  & & \vdots \\
   M_{m 1} & \dots & M_{m n}
-  \end{bmatrix}
+  \end{bmatrix},
 \end{equation}
 which has two.
 A tensor of rank $N$ has $N$ indices:\footnote{The definition of rank in this
@@ -28,7 +28,7 @@ context is not to be confused with the rank of a matrix, which is the number of
 linearly independent columns. Synonyms of tensor rank are tensor degree and
 tensor order.}
 \begin{equation}
-  T_{i_1 \dots i_N}
+  T_{i_1 \dots i_N}.
 \end{equation}
 
 A tensor of rank zero is just a scalar.
@@ -37,7 +37,7 @@ A tensor of rank zero is just a scalar.
 
 Tensor contraction is the higher-dimensional generalization of the dot product
 \begin{equation}
-  \bm{a} \cdot \bm{b} = \sum_i a_i b_i
+  \bm{a} \cdot \bm{b} = \sum_i a_i b_i,
 \end{equation}
 where a lower-dimensional tensor (in this case, a scalar, which is a
 zero-dimensional tensor) is obtained by summing over all values of a repeated
@@ -45,7 +45,7 @@ index.
 
 Examples are matrix-vector multiplication
 \begin{equation}
-  (M \bm{a})_{i} = \sum_j M_{i j} a_j
+  (M \bm{a})_{i} = \sum_j M_{i j} a_j,
 \end{equation}
 and matrix-matrix multiplication
 \begin{equation}
@@ -64,7 +64,7 @@ the dimensions of the indices match.
 
 A tensor network is specified by a set of tensors, together with a set of contractions to be performed. For example:
 \begin{equation}
-  M_{a b} = \sum_{i, j, k} A_{a i} B_{i j} C_{j k} D_{k b}
+  M_{a b} = \sum_{i, j, k} A_{a i} B_{i j} C_{j k} D_{k b},
 \end{equation}
 which corresponds to the matrix product $A B C D$.
 
@@ -105,29 +105,27 @@ Several indices can be taken together to form a single, joint index, that runs o
 combinations of the indices that fused into it. For example, an $m \times n$ matrix can be
 reshaped into an $m n$ vector.
 \begin{equation}
-  M_{i j} = \bm{v_a} \qquad a \in \{ 1, \dots, m n \}
+  M_{i j} = \bm{v_a} \qquad a \in \{ 1, \dots, m n \}.
 \end{equation}
 
 Some convention has to be chosen to map the joint index $i, j$ onto the single index $a$,
 for example
 \begin{equation}
-  a = (n - 1)i + j
+  a = (n - 1)i + j,
 \end{equation}
 which orders the indices of the matrix $M$ row by row
 \begin{equation}
-  1 1, 1 2, \dots, 1 n, 2 1, 2 2, \dots, m n - 1, m n
+  1 1, 1 2, \dots, 1 n, 2 1, 2 2, \dots, m n - 1, m n.
 \end{equation}
 
-Graphically, this can be represented as bundling the open legs of a tensor network, as in
-\autoref{fig:reshaped_tensor}.
+Graphically, an index contraction is represented as a bundling of the open legs of a
+tensor network. See \autoref{fig:reshaped_tensor} for an example.
 
 \begin{figure}
   \input{images/reshaped_tensor.tikz}
   \caption{Reshaping a tensor $T_{a b c d e f}$ to $T_{i j}$}
   \label{fig:reshaped_tensor}
 \end{figure}
-
-
 
 \subsection{Computational complexity of contraction}
 \todo[inline]{Computational complexity.}
