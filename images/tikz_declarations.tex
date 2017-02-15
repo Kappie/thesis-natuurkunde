@@ -2,6 +2,7 @@
 \usepackage{pgfplots}
 \usepackage{tikzscale}
 
+\usepgfplotslibrary{colorbrewer}
 \pgfplotscreateplotcyclelist{my mark list}{%
     {mark=*},
     {mark=square*},
@@ -16,11 +17,11 @@
 \pgfplotsset{
   compat=1.5,
   table/search path={plots/data},
-  colormap name=viridis,
-  cycle multiindex list={
-      my mark list\nextlist
-      {[indices of colormap={0, 4, 8, 12, 16, 20, 24, 28}]}\nextlist
-  }
+  cycle list/Dark2-8,
+  cycle multiindex* list={
+    my mark list\nextlist
+    Dark2-8\nextlist
+  },
 }
 
 \tikzset{

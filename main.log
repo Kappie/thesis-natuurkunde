@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  14 FEB 2017 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  14 FEB 2017 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2240,6 +2240,10 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 . on line 564.
 .................................................
 )
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.colorbrewer.code.tex
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorb
+rewer.code.tex))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.markings.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
@@ -2763,7 +2767,9 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 7.3pt on input line 24.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 24.
-(./plots/testplot.tikz)) [1
+(./plots/testplot.tikz
+PGFPlots: reading {plots/data/testdata.dat}
+)) [1
 
 
 
@@ -2787,13 +2793,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48113 strings out of 493014
- 1037564 string characters out of 6133351
- 1506321 words of memory out of 5000000
- 50833 multiletter control sequences out of 15000+600000
+ 49797 strings out of 493014
+ 1091159 string characters out of 6133351
+ 1690028 words of memory out of 5000000
+ 52507 multiletter control sequences out of 15000+600000
  201326 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,82p,10417b,1901s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,88p,10417b,1884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
 enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
@@ -2806,7 +2812,7 @@ onts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/n
 ewtx/txsys.pfb>
-Output written on main.pdf (3 pages, 97356 bytes).
+Output written on main.pdf (3 pages, 97312 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
