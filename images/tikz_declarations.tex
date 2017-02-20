@@ -17,11 +17,15 @@
 \pgfplotsset{
   compat=1.5,
   table/search path={plots/data},
-  cycle list/Dark2-8,
-  cycle multiindex* list={
-    my mark list\nextlist
-    Dark2-8\nextlist
+  cycle list name =my mark list,
+  every tick/.style={
+    semithick,
   },
+  % cycle list/Dark2-8,
+  % cycle multiindex* list={
+  %   my mark list\nextlist
+  %   % Dark2-8\nextlist
+  % },
 }
 
 \tikzset{

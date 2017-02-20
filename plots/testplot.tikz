@@ -1,15 +1,19 @@
 \begin{tikzpicture}
-  \begin{axis}[
-    title=Mijn eerste plot,
-    xlabel={$x$},
+  \begin{semilogxaxis}[
+    title=matige fit,
+    xlabel={$\xi(\chi)$},
     ylabel={$y$},
-    ymin=-1,
-    ymax=1,
   ]
   \addplot+[
-    dashed,
     mark=*,
+    only marks,
   ]
-  table {testdata.dat};
-  \end{axis}
+  gnuplot [raw gnuplot] {plot 'plots/data/testdata.dat' index 0};
+
+  \addplot+[
+    solid,
+    mark=none,
+  ]
+  gnuplot [raw gnuplot] {plot 'plots/data/testdata.dat' index 1};
+\end{semilogxaxis}
 \end{tikzpicture}
