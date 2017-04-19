@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+  \def \filelocation {'plots/data/xi_vs_m_loglogfit_chi8-112_tol1e-7_q2.dat'}
+  \begin{loglogaxis}[
+    title=matige fit,
+    xlabel={$\xi(m)$},
+    ylabel={$\langle \sigma_0 \rangle$},
+  ]
+  \addplot+[
+    mark=o,
+    only marks,
+  ]
+  gnuplot [raw gnuplot] {plot \filelocation index 0};
+  \addplot+[
+    solid,
+    mark=none,
+  ]
+  gnuplot [raw gnuplot] {plot \filelocation index 1};
+
+  % \addplot+[
+  %   solid,
+  %   mark=none,
+  % ]
+  % gnuplot [raw gnuplot] {plot \filelocation index 1};
+\end{loglogaxis}
+\end{tikzpicture}

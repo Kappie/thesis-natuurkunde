@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+  \def \filelocation {'plots/data/order_param_vs_T_q2_chi2-8.dat'}
+
+  \begin{axis}[
+    width = \plotWidthTwoColumn,
+    title={blaf},
+    xlabel={$T$},
+    ylabel={$M(\chi, T)$},
+    legend style = {
+      legend pos = outer south,
+    },
+    legend cell align = left,
+    ]
+  \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 3};
+  \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 2};
+  \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 1};
+  \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 0};
+
+  % \addplot[
+  %   mark=none,
+  %   black
+  % ]
+  % coordinates {(2.26918, 0) (2.26918, 1)}
+  % \node[above] at (2.26918, 0) {$T_c$};
+  \addplot[mark=none, black, dashed, semithick, update limits=false]
+    coordinates {(2.26918,-1) (2.26918,1)};
+
+  \legend{$m = 2$, $m = 4$, $m = 6$, $m = 8$};
+
+  \end{axis}
+\end{tikzpicture}

@@ -1,42 +1,113 @@
-\begin{center}
-\begin{tabularx}{\textwidth}{ |X|X| }
-  \hline
-  method & $\beta$ \\
-  \hline
-  power law fit of $m(t = 0, \chi) \thicksim \xi(\chi)^{\beta} $, and varying which data
-  points to use. $\chi \in \{8, \dots, 112 \}$. & 0.124999 \\
-  \hline
-  best fit (polynomial fit of order 5) of $\kappa$ and $\beta$ in a data collapse with
-  $\xi(\chi) \thicksim \chi^{\kappa}$.  $\Delta t = 0.001$. $\chi \in \{12, 20, \dots, 60 \}$. &
-  0.12467 ($\kappa = 1.9256$) \\
-  \hline
-  best fit (polynomial fit of order 5) of $\beta$ in a data collapse with $\xi(\chi)$ from
-  row-to-row transfer matrix. $\Delta t = 0.001$. $\chi \in \{ 12, 20, \dots, 60 \}$. &
-  0.12461 \\
-  \hline
-\end{tabularx}
-\end{center}
+\section{Abstract}
 
-By fitting a power law
-\begin{equation*}
-    \xi(\chi) \thicksim \chi^{\kappa}
-\end{equation*}
-to the correlation length given by the transfer matrix at $T_{\text{crit}}$, I find
-\begin{equation*}
-    \kappa \approx 1.9
-\end{equation*}
+\todo[inline]{Cite more}
 
-For the fitness of the data collapse, I use the percentual norm of residuals of a
-polynomial fit of order 5 through all data points.
+We present finite-size scaling results using the corner transfer matrix renormalization
+group method on two-dimensional classical square lattices \cite{nishino1996corner}. We
+compare the results of conventional finite-size scaling in the system size $N$ with
+scaling in the number of states kept during the renormalization step of the algorithm,
+denoted by $m$. Such a comparison was first done in \cite{nishino1996numerical}. We
+highlight the areas in which method excels over the other.
 
-Another option that I tried was the percentual mean-squared error between the
-interpolations of data points of lower $\chi$ and the data points of the highest value of
-$\chi$. Both options are suggested in \cite{sandvik2010computational}.
-
-A generalization of the latter option is presented in \cite{bhattacharjee2001measure}.
-Here, the fitness is judged not only relative to the highest value of $\chi$, but relative
-to all values of $\chi$ with equal weight.
+Calculate critical temperature and exponents using information that is directly
+extractable from the corner transfer matrix.
 
 
+\section{Introduction}
 
-\includegraphics[]{testplot.tikz}
+The first direct comparison of finite-size scaling in the system size $N$ with scaling in
+the bond dimension of the corner transfer matrix renormalization group method $m$ was done
+in \cite{nishino1996numerical}. In explaining the basic concepts, we largely follow this
+paper.
+
+The error in the approximation of the partition function (and thus all thermodynamic
+quantities) in the thermodynamic limit with the corner transfer matrix method depends on
+two characteristic length
+scales. The first is the size of the system $N$. After $n$ steps of the infinite-system
+algorithm, we have
+\begin{equation}
+  N = 2n + 1.
+\end{equation}
+
+The second length scale is related to the finite bond dimension $m$. Baxter
+\cite{baxter1978variational}, and later Östlund and Rommer \cite{ostlund1995thermodynamic}
+(in the context of one-dimensional quantum systems) showed that in the thermodynamic
+limit, CTMRG and DMRG are variational optimizations in the space of matrix product states.
+\todo[inline]{Can extend this idea a bit.}
+
+\begin{figure}
+\includegraphics[]{order_parameter_vs_T.tikz}
+\caption{Upper panel: expectation value of the central spin $\langle \sigma_0 \rangle$
+  after $n$ CTMRG steps. $m$ is chosen such that the truncation error is smaller than
+  $10^{-6}$. Lower panel: $\langle \sigma_0 \rangle$ for systems with bond dimension $m$.
+  \todo[inline]{where to explain convergence criteria?}}
+\label{fig:order_parameter_vs_T}
+\end{figure}
+
+It is known that an MPS-ansatz with finite bond dimension inherently limits the
+correlation length of the system to a finite value \cite{wolf2006quantum}. Hence,
+thermodynamic quantities obtained from the CTMRG algorithm with finite $m$, in the limit
+$N \to \infty$, cannot diverge and must show finite-size effects similar to those of some
+effective finite system of size $N_{\text{eff}}(m)$ depending on the bond dimension $m$.
+
+\autoref{fig:order_parameter_vs_T} shows the behaviour of the order parameter of the
+two-dimensional Ising model for systems of finite-size, where $m$ has been chosen such
+that the truncation error is smaller than $10^{-6}$, and for systems of finite $m$, where
+the result is converged in the system size $N$. The results look very similar and support
+the above claim.
+
+In the thermodynamic limit (corresponding to infinite $m$ and $N$), we have the following
+expression for the correlation length of a classical system
+\cite{baxter1982exactly_correlation_length}
+\begin{equation}
+  \xi(T) = \frac{1}{\log\left(\frac{T_0}{T_1}\right)}.
+\end{equation}
+Here, $T_0$ and $T_1$ are the largest and second-largest eigenvalues of the row-to-row
+transfer matrix $T$, respectively. With $N$ tending towards infinity and finite $m$, near
+the critical point $\xi(T)$ should obey a scaling law of the form
+\begin{equation}
+  \xi(T, m) = N_{\text{eff}}(m) \mathcal{F}(\frac{N_{\text{eff}}(m)}{\xi(T)})
+\end{equation}
+with
+\begin{equation}
+  \mathcal{F}(x) = \begin{cases}
+      \text{const} & \text{if } x \to 0, \\
+      x^{-1} & \text{if } x \to \infty.
+    \end{cases}
+\end{equation}
+
+Hence, the effective length scale corresponding to the finite bond dimension $m$ is
+proportional to the correlation length of the system at the critical point $t = 0$.
+\begin{equation}
+  N_{\text{eff}}(m) \propto \xi(T = T_c, m).
+\end{equation}
+
+To test this assumption, the authors of \cite{nishino1996numerical} propose a scaling
+relation for the order parameter $M$ at the critical temperature of the form
+\begin{equation}
+  M(N, m) = N^{-\beta/\nu} \mathcal{G}(\xi(m) / N)
+\end{equation}
+with
+\begin{equation}
+  \mathcal{G}(x) =
+  \begin{cases}
+    \text{const} & \text{if } x \to \infty, \\
+    x^{-\beta/\nu} & \text{if } x \to 0.
+  \end{cases}
+\end{equation}
+
+\todo[inline]{Replicate Nishino's results. Get $\beta/\nu$ in both finite $N$ and $m$
+regime.}
+
+
+
+\section{Exponent $\kappa$ and finite-entropy scaling}
+
+In the asymptotically large $m$ regime, it is proven that the correlation length for
+critical systems scales as
+\begin{equation}
+  \xi \propto m^{\kappa},
+\end{equation}
+where $\kappa$ depends only on the central charge of the phase transition
+\cite{pollmann2009theory}. In \cite{tagliacozzo2008scaling}, the authors show that already
+for modest $m$, this relation holds approximately.

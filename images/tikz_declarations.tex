@@ -3,24 +3,43 @@
 \usepackage{tikzscale}
 
 \usepgfplotslibrary{colorbrewer}
+ \definecolor{scientific1}{rgb}{0.028, 0.5376, 0.5936}
+ \definecolor{scientific2}{rgb}{0.75, 0.315, 0.}
+ \definecolor{scientific3}{rgb}{0.531753, 0.331477, 0.920616}
+ \definecolor{scientific4}{rgb}{0.627887, 0.708654, 0.}
+ \definecolor{scientific5}{rgb}{0.237882, 0.510711, 0.979357}
+ \definecolor{scientific6}{rgb}{0.975692, 0.628459, 0.0656322}
+ \definecolor{scientific7}{rgb}{0.629898, 0.28, 0.684772}
+ \definecolor{scientific8}{rgb}{0.198854, 0.7, 0.446913}
+ \definecolor{scientific9}{rgb}{0.910038, 0.300188, 0.226913}
+ \definecolor{scientific10}{rgb}{0.440765, 0.385541, 1.}
+ \definecolor{scientific11}{rgb}{0.797526, 0.718694, 0.00486471}
+ \definecolor{scientific12}{rgb}{0.792386, 0.272363, 0.429254}
+ \definecolor{scientific13}{rgb}{0.289887, 0.478466, 0.985608}
+ \definecolor{scientific14}{rgb}{0.96081, 0.554048, 0.104292}
+ \definecolor{scientific15}{rgb}{0.633426, 0.29116, 0.697739}
 \pgfplotscreateplotcyclelist{my mark list}{%
-    {mark=*},
-    {mark=square*},
-    {mark=triangle*},
-    {mark=diamond*},
-    {mark=o},
-    {mark=square},
-    {mark=triangle},
-    {mark=diamond}
+    {scientific1, mark=o},
+    {scientific2, mark=square},
+    {scientific3, mark=triangle},
+    {scientific4, mark=diamond},
+    {scientific5, mark=pentagon},
+    {scientific6, mark=x},
+    {scientific7, mark=plus},
+    {scientific8, mark=asterisk},
+    {scientific9, mark=star},
 }
 
 \pgfplotsset{
   compat=1.5,
   table/search path={plots/data},
-  cycle list name =my mark list,
+  cycle list name = my mark list,
   every tick/.style={
     semithick,
   },
+  every line/.style={
+    semithick,
+  }
   % cycle list/Dark2-8,
   % cycle multiindex* list={
   %   my mark list\nextlist
@@ -29,8 +48,12 @@
 }
 
 \tikzset{
-  every mark/.append style={solid}
+  every mark/.append style={solid, semithick},
+  mark size = 2.5pt,
 }
+
+\newlength{\plotWidthTwoColumn}
+\setlength{\plotWidthTwoColumn}{0.5\textwidth}
 
 \usetikzlibrary{decorations.markings}
 \usetikzlibrary{decorations.pathreplacing}
@@ -39,6 +62,7 @@
 \usetikzlibrary{plotmarks}
 \usetikzlibrary{arrows.meta}
 \usepgfplotslibrary{patchplots}
+\usepgfplotslibrary{groupplots}
 \usepackage{grffile}
 
 

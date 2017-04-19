@@ -1,0 +1,42 @@
+\begin{center}
+\begin{tabularx}{\textwidth}{ |X|X| }
+  \hline
+  method & $\beta$ \\
+  \hline
+  power law fit of $m(t = 0, \chi) \thicksim \xi(\chi)^{\beta} $, and varying which data
+  points to use. $\chi \in \{8, \dots, 112 \}$. & 0.124999 \\
+  \hline
+  best fit (polynomial fit of order 5) of $\kappa$ and $\beta$ in a data collapse with
+  $\xi(\chi) \thicksim \chi^{\kappa}$.  $\Delta t = 0.001$. $\chi \in \{12, 20, \dots, 60 \}$. &
+  0.12467 ($\kappa = 1.9256$) \\
+  \hline
+  best fit (polynomial fit of order 5) of $\beta$ in a data collapse with $\xi(\chi)$ from
+  row-to-row transfer matrix. $\Delta t = 0.001$. $\chi \in \{ 12, 20, \dots, 60 \}$. &
+  0.12461 \\
+  \hline
+\end{tabularx}
+\end{center}
+
+By fitting a power law
+\begin{equation*}
+    \xi(\chi) \thicksim \chi^{\kappa}
+\end{equation*}
+to the correlation length given by the transfer matrix at $T_{\text{crit}}$, I find
+\begin{equation*}
+    \kappa \approx 1.9
+\end{equation*}
+
+For the fitness of the data collapse, I use the percentual norm of residuals of a
+polynomial fit of order 5 through all data points.
+
+Another option that I tried was the percentual mean-squared error between the
+interpolations of data points of lower $\chi$ and the data points of the highest value of
+$\chi$. Both options are suggested in \cite{sandvik2010computational}.
+
+A generalization of the latter option is presented in \cite{bhattacharjee2001measure}.
+Here, the fitness is judged not only relative to the highest value of $\chi$, but relative
+to all values of $\chi$ with equal weight.
+
+
+
+\includegraphics[]{testplot.tikz}

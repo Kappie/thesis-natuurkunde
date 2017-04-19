@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 FEB 2017 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  19 APR 2017 13:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1874,6 +1874,35 @@ Package: bm 2016/02/27 v1.2a Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 142.
 LaTeX Info: Redefining \bm on input line 208.
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use
+ the caption package interfaces in order to
+ configure your captions.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen278
+\captionmargin@=\dimen279
+\captionwidth=\dimen280
+\caption@tempdima=\dimen281
+\caption@indent=\dimen282
+\caption@parindent=\dimen283
+\caption@hangindent=\dimen284
+)
+\c@ContinuedFloat=\count183
+)
+\c@subfigure=\count184
+\c@subtable=\count185
+)
 (./images/tikz_declarations.tex
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -1883,9 +1912,9 @@ Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 \t@pgfplots@toka=\toks43
 \t@pgfplots@tokb=\toks44
 \t@pgfplots@tokc=\toks45
-\pgfplots@tmpa=\dimen278
-\c@pgfplots@coordindex=\count183
-\c@pgfplots@scanlineindex=\count184
+\pgfplots@tmpa=\dimen285
+\c@pgfplots@coordindex=\count186
+\c@pgfplots@scanlineindex=\count187
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1901,7 +1930,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count185
+\c@pgfmathroundto@lastzeros=\count188
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
 .tex
@@ -1911,13 +1940,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count186
+\c@pgfplotsarray@tmp=\count189
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count187
+\c@pgfplotstable@counta=\count190
 \t@pgfplotstable@a=\toks46
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -1930,7 +1959,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count188
+\c@pgfplotslibrarysurf@no=\count191
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1962,14 +1991,14 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen279
-\pgfdecoratedremainingdistance=\dimen280
-\pgfdecoratedinputsegmentcompleteddistance=\dimen281
-\pgfdecoratedinputsegmentremainingdistance=\dimen282
-\pgf@decorate@distancetomove=\dimen283
-\pgf@decorate@repeatstate=\count189
-\pgfdecorationsegmentamplitude=\dimen284
-\pgfdecorationsegmentlength=\dimen285
+\pgfdecoratedcompleteddistance=\dimen286
+\pgfdecoratedremainingdistance=\dimen287
+\pgfdecoratedinputsegmentcompleteddistance=\dimen288
+\pgfdecoratedinputsegmentremainingdistance=\dimen289
+\pgf@decorate@distancetomove=\dimen290
+\pgf@decorate@repeatstate=\count192
+\pgfdecorationsegmentamplitude=\dimen291
+\pgfdecorationsegmentlength=\dimen292
 )
 \tikz@lib@dec@box=\box45
 )
@@ -1981,13 +2010,13 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count190
-\pgfplots@xmin@reg=\dimen286
-\pgfplots@xmax@reg=\dimen287
-\pgfplots@ymin@reg=\dimen288
-\pgfplots@ymax@reg=\dimen289
-\pgfplots@zmin@reg=\dimen290
-\pgfplots@zmax@reg=\dimen291
+\pgfplots@numplots=\count193
+\pgfplots@xmin@reg=\dimen293
+\pgfplots@xmax@reg=\dimen294
+\pgfplots@ymin@reg=\dimen295
+\pgfplots@ymax@reg=\dimen296
+\pgfplots@zmin@reg=\dimen297
+\pgfplots@zmax@reg=\dimen298
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -2014,31 +2043,31 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count191
-\l_tmpa_int=\count192
-\l_tmpb_int=\count193
-\g_tmpa_int=\count194
-\g_tmpb_int=\count266
+\c_max_int=\count194
+\l_tmpa_int=\count266
+\l_tmpb_int=\count267
+\g_tmpa_int=\count268
+\g_tmpb_int=\count269
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count267
+\g__prg_map_int=\count270
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count268
-\l__iow_target_count_int=\count269
-\l__iow_current_line_int=\count270
-\l__iow_current_word_int=\count271
-\l__iow_current_indentation_int=\count272
+\l_iow_line_count_int=\count271
+\l__iow_target_count_int=\count272
+\l__iow_current_line_int=\count273
+\l__iow_current_word_int=\count274
+\l__iow_current_indentation_int=\count275
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen292
-\c_max_dim=\dimen293
-\l_tmpa_dim=\dimen294
-\l_tmpb_dim=\dimen295
-\g_tmpa_dim=\dimen296
-\g_tmpb_dim=\dimen297
+\c_zero_dim=\dimen299
+\c_max_dim=\dimen300
+\l_tmpa_dim=\dimen301
+\l_tmpb_dim=\dimen302
+\g_tmpa_dim=\dimen303
+\g_tmpb_dim=\dimen304
 \c_zero_skip=\skip191
 \c_max_skip=\skip192
 \l_tmpa_skip=\skip193
@@ -2052,18 +2081,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count273
-\l_keys_choice_int=\count274
+\g__keyval_level_int=\count276
+\l_keys_choice_int=\count277
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count275
-\c__fp_middle_shift_int=\count276
-\c__fp_trailing_shift_int=\count277
-\c__fp_big_leading_shift_int=\count278
-\c__fp_big_middle_shift_int=\count279
-\c__fp_big_trailing_shift_int=\count280
-\c__fp_Bigg_leading_shift_int=\count281
-\c__fp_Bigg_middle_shift_int=\count282
-\c__fp_Bigg_trailing_shift_int=\count283
+\c__fp_leading_shift_int=\count278
+\c__fp_middle_shift_int=\count279
+\c__fp_trailing_shift_int=\count280
+\c__fp_big_leading_shift_int=\count281
+\c__fp_big_middle_shift_int=\count282
+\c__fp_big_trailing_shift_int=\count283
+\c__fp_Bigg_leading_shift_int=\count284
+\c__fp_Bigg_middle_shift_int=\count285
+\c__fp_Bigg_trailing_shift_int=\count286
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box46
 \l_tmpa_box=\box47
@@ -2072,13 +2101,13 @@ L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \g_tmpb_box=\box50
 L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_internal_box=\box51
-\l__coffin_internal_dim=\dimen298
-\l__coffin_offset_x_dim=\dimen299
-\l__coffin_offset_y_dim=\dimen300
-\l__coffin_x_dim=\dimen301
-\l__coffin_y_dim=\dimen302
-\l__coffin_x_prime_dim=\dimen303
-\l__coffin_y_prime_dim=\dimen304
+\l__coffin_internal_dim=\dimen305
+\l__coffin_offset_x_dim=\dimen306
+\l__coffin_offset_y_dim=\dimen307
+\l__coffin_x_dim=\dimen308
+\l__coffin_y_dim=\dimen309
+\l__coffin_x_prime_dim=\dimen310
+\l__coffin_y_prime_dim=\dimen311
 \c_empty_coffin=\box52
 \l__coffin_aligned_coffin=\box53
 \l__coffin_aligned_internal_coffin=\box54
@@ -2087,41 +2116,41 @@ L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_display_coffin=\box57
 \l__coffin_display_coord_coffin=\box58
 \l__coffin_display_pole_coffin=\box59
-\l__coffin_display_offset_dim=\dimen305
-\l__coffin_display_x_dim=\dimen306
-\l__coffin_display_y_dim=\dimen307
+\l__coffin_display_offset_dim=\dimen312
+\l__coffin_display_x_dim=\dimen313
+\l__coffin_display_y_dim=\dimen314
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen308
-\l__box_bottom_dim=\dimen309
-\l__box_left_dim=\dimen310
-\l__box_right_dim=\dimen311
-\l__box_top_new_dim=\dimen312
-\l__box_bottom_new_dim=\dimen313
-\l__box_left_new_dim=\dimen314
-\l__box_right_new_dim=\dimen315
+\l__box_top_dim=\dimen315
+\l__box_bottom_dim=\dimen316
+\l__box_left_dim=\dimen317
+\l__box_right_dim=\dimen318
+\l__box_top_new_dim=\dimen319
+\l__box_bottom_new_dim=\dimen320
+\l__box_left_new_dim=\dimen321
+\l__box_right_new_dim=\dimen322
 \l__box_internal_box=\box60
-\l__coffin_bounding_shift_dim=\dimen316
-\l__coffin_left_corner_dim=\dimen317
-\l__coffin_right_corner_dim=\dimen318
-\l__coffin_bottom_corner_dim=\dimen319
-\l__coffin_top_corner_dim=\dimen320
-\l__coffin_scaled_total_height_dim=\dimen321
-\l__coffin_scaled_width_dim=\dimen322
+\l__coffin_bounding_shift_dim=\dimen323
+\l__coffin_left_corner_dim=\dimen324
+\l__coffin_right_corner_dim=\dimen325
+\l__coffin_bottom_corner_dim=\dimen326
+\l__coffin_top_corner_dim=\dimen327
+\l__coffin_scaled_total_height_dim=\dimen328
+\l__coffin_scaled_width_dim=\dimen329
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count284
+\l__driver_color_stack_int=\count287
 \l__driver_tmp_box=\box61
 ))
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count285
-\l__xparse_m_args_int=\count286
-\l__xparse_mandatory_args_int=\count287
-\l__xparse_processor_int=\count288
-\l__xparse_v_nesting_int=\count289
+\l__xparse_current_arg_int=\count288
+\l__xparse_m_args_int=\count289
+\l__xparse_mandatory_args_int=\count290
+\l__xparse_processor_int=\count291
+\l__xparse_v_nesting_int=\count292
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
 Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
@@ -2244,6 +2273,8 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 s.colorbrewer.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorb
 rewer.code.tex))
+\plotWidthTwoColumn=\skip258
+
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.markings.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
@@ -2261,13 +2292,23 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen323
-\pgfarrowlength=\dimen324
-\pgfarrowwidth=\dimen325
-\pgfarrowlinewidth=\dimen326
+\pgfarrowinset=\dimen330
+\pgfarrowlength=\dimen331
+\pgfarrowwidth=\dimen332
+\pgfarrowlinewidth=\dimen333
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.patchplots.code.tex)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.groupplots.code.tex
+\pgfplots@group@current@plot=\count293
+\pgfplots@group@current@row=\count294
+\pgfplots@group@current@column=\count295
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
 
@@ -2298,7 +2339,7 @@ and LuaTeX
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count290
+\lrq@indent=\count296
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -2307,56 +2348,56 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count291
-\c@listtotal=\count292
-\c@listcount=\count293
-\c@liststart=\count294
-\c@liststop=\count295
-\c@citecount=\count296
-\c@citetotal=\count297
-\c@multicitecount=\count298
-\c@multicitetotal=\count299
-\c@instcount=\count300
-\c@maxnames=\count301
-\c@minnames=\count302
-\c@maxitems=\count303
-\c@minitems=\count304
-\c@citecounter=\count305
-\c@savedcitecounter=\count306
-\c@uniquelist=\count307
-\c@uniquename=\count308
-\c@refsection=\count309
-\c@refsegment=\count310
-\c@maxextratitle=\count311
-\c@maxextratitleyear=\count312
-\c@maxextrayear=\count313
-\c@maxextraalpha=\count314
-\c@abbrvpenalty=\count315
-\c@highnamepenalty=\count316
-\c@lownamepenalty=\count317
-\c@maxparens=\count318
-\c@parenlevel=\count319
-\blx@tempcnta=\count320
-\blx@tempcntb=\count321
-\blx@tempcntc=\count322
-\blx@maxsection=\count323
-\blx@maxsegment@0=\count324
-\blx@notetype=\count325
-\blx@parenlevel@text=\count326
-\blx@parenlevel@foot=\count327
-\blx@sectionciteorder@0=\count328
-\labelnumberwidth=\skip258
-\labelalphawidth=\skip259
-\biblabelsep=\skip260
-\bibnamesep=\skip261
-\bibinitsep=\skip262
-\bibparsep=\skip263
-\bibhang=\skip264
+\c@tabx@nest=\count297
+\c@listtotal=\count298
+\c@listcount=\count299
+\c@liststart=\count300
+\c@liststop=\count301
+\c@citecount=\count302
+\c@citetotal=\count303
+\c@multicitecount=\count304
+\c@multicitetotal=\count305
+\c@instcount=\count306
+\c@maxnames=\count307
+\c@minnames=\count308
+\c@maxitems=\count309
+\c@minitems=\count310
+\c@citecounter=\count311
+\c@savedcitecounter=\count312
+\c@uniquelist=\count313
+\c@uniquename=\count314
+\c@refsection=\count315
+\c@refsegment=\count316
+\c@maxextratitle=\count317
+\c@maxextratitleyear=\count318
+\c@maxextrayear=\count319
+\c@maxextraalpha=\count320
+\c@abbrvpenalty=\count321
+\c@highnamepenalty=\count322
+\c@lownamepenalty=\count323
+\c@maxparens=\count324
+\c@parenlevel=\count325
+\blx@tempcnta=\count326
+\blx@tempcntb=\count327
+\blx@tempcntc=\count328
+\blx@maxsection=\count329
+\blx@maxsegment@0=\count330
+\blx@notetype=\count331
+\blx@parenlevel@text=\count332
+\blx@parenlevel@foot=\count333
+\blx@sectionciteorder@0=\count334
+\labelnumberwidth=\skip259
+\labelalphawidth=\skip260
+\biblabelsep=\skip261
+\bibnamesep=\skip262
+\bibinitsep=\skip263
+\bibparsep=\skip264
+\bibhang=\skip265
 \blx@bcfin=\read3
 \blx@bcfout=\write6
-\c@mincomprange=\count329
-\c@maxcomprange=\count330
-\c@mincompwidth=\count331
+\c@mincomprange=\count335
+\c@maxcomprange=\count336
+\c@mincompwidth=\count337
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -2365,78 +2406,78 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count332
-\c@savedafterword=\count333
-\c@annotator=\count334
-\c@savedannotator=\count335
-\c@author=\count336
-\c@savedauthor=\count337
-\c@bookauthor=\count338
-\c@savedbookauthor=\count339
-\c@commentator=\count340
-\c@savedcommentator=\count341
-\c@editor=\count342
-\c@savededitor=\count343
-\c@editora=\count344
-\c@savededitora=\count345
-\c@editorb=\count346
-\c@savededitorb=\count347
-\c@editorc=\count348
-\c@savededitorc=\count349
-\c@foreword=\count350
-\c@savedforeword=\count351
-\c@holder=\count352
-\c@savedholder=\count353
-\c@introduction=\count354
-\c@savedintroduction=\count355
-\c@namea=\count356
-\c@savednamea=\count357
-\c@nameb=\count358
-\c@savednameb=\count359
-\c@namec=\count360
-\c@savednamec=\count361
-\c@translator=\count362
-\c@savedtranslator=\count363
-\c@shortauthor=\count364
-\c@savedshortauthor=\count365
-\c@shorteditor=\count366
-\c@savedshorteditor=\count367
-\c@labelname=\count368
-\c@savedlabelname=\count369
-\c@institution=\count370
-\c@savedinstitution=\count371
-\c@lista=\count372
-\c@savedlista=\count373
-\c@listb=\count374
-\c@savedlistb=\count375
-\c@listc=\count376
-\c@savedlistc=\count377
-\c@listd=\count378
-\c@savedlistd=\count379
-\c@liste=\count380
-\c@savedliste=\count381
-\c@listf=\count382
-\c@savedlistf=\count383
-\c@location=\count384
-\c@savedlocation=\count385
-\c@organization=\count386
-\c@savedorganization=\count387
-\c@origlocation=\count388
-\c@savedoriglocation=\count389
-\c@origpublisher=\count390
-\c@savedorigpublisher=\count391
-\c@publisher=\count392
-\c@savedpublisher=\count393
-\c@language=\count394
-\c@savedlanguage=\count395
-\c@pageref=\count396
-\c@savedpageref=\count397
-\shorthandwidth=\skip265
-\shortjournalwidth=\skip266
-\shortserieswidth=\skip267
-\shorttitlewidth=\skip268
-\shortauthorwidth=\skip269
-\shorteditorwidth=\skip270
+\c@afterword=\count338
+\c@savedafterword=\count339
+\c@annotator=\count340
+\c@savedannotator=\count341
+\c@author=\count342
+\c@savedauthor=\count343
+\c@bookauthor=\count344
+\c@savedbookauthor=\count345
+\c@commentator=\count346
+\c@savedcommentator=\count347
+\c@editor=\count348
+\c@savededitor=\count349
+\c@editora=\count350
+\c@savededitora=\count351
+\c@editorb=\count352
+\c@savededitorb=\count353
+\c@editorc=\count354
+\c@savededitorc=\count355
+\c@foreword=\count356
+\c@savedforeword=\count357
+\c@holder=\count358
+\c@savedholder=\count359
+\c@introduction=\count360
+\c@savedintroduction=\count361
+\c@namea=\count362
+\c@savednamea=\count363
+\c@nameb=\count364
+\c@savednameb=\count365
+\c@namec=\count366
+\c@savednamec=\count367
+\c@translator=\count368
+\c@savedtranslator=\count369
+\c@shortauthor=\count370
+\c@savedshortauthor=\count371
+\c@shorteditor=\count372
+\c@savedshorteditor=\count373
+\c@labelname=\count374
+\c@savedlabelname=\count375
+\c@institution=\count376
+\c@savedinstitution=\count377
+\c@lista=\count378
+\c@savedlista=\count379
+\c@listb=\count380
+\c@savedlistb=\count381
+\c@listc=\count382
+\c@savedlistc=\count383
+\c@listd=\count384
+\c@savedlistd=\count385
+\c@liste=\count386
+\c@savedliste=\count387
+\c@listf=\count388
+\c@savedlistf=\count389
+\c@location=\count390
+\c@savedlocation=\count391
+\c@organization=\count392
+\c@savedorganization=\count393
+\c@origlocation=\count394
+\c@savedoriglocation=\count395
+\c@origpublisher=\count396
+\c@savedorigpublisher=\count397
+\c@publisher=\count398
+\c@savedpublisher=\count399
+\c@language=\count400
+\c@savedlanguage=\count401
+\c@pageref=\count402
+\c@savedpageref=\count403
+\shorthandwidth=\skip266
+\shortjournalwidth=\skip267
+\shortserieswidth=\skip268
+\shorttitlewidth=\skip269
+\shortauthorwidth=\skip270
+\shorteditorwidth=\skip271
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -2448,13 +2489,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count398
-\c@textcitetotal=\count399
-\c@textcitemaxnames=\count400
-\c@biburlnumpenalty=\count401
-\c@biburlucpenalty=\count402
-\c@biburllcpenalty=\count403
-\c@smartand=\count404
+\c@textcitecount=\count404
+\c@textcitetotal=\count405
+\c@textcitemaxnames=\count406
+\c@biburlnumpenalty=\count407
+\c@biburlucpenalty=\count408
+\c@biburllcpenalty=\count409
+\c@smartand=\count410
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -2466,8 +2507,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count405
-\c@bbx:relatedtotal=\count406
+\c@bbx:relatedcount=\count411
+\c@bbx:relatedtotal=\count412
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -2531,16 +2572,16 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen327
-\Hy@linkcounter=\count407
-\Hy@pagecounter=\count408
+\@linkdim=\dimen334
+\Hy@linkcounter=\count413
+\Hy@pagecounter=\count414
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count409
+\Hy@SavedSpaceFactor=\count415
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -2552,12 +2593,12 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count410
+\c@Hy@tempcnt=\count416
 LaTeX Info: Redefining \url on input line 5044.
-\XeTeXLinkMargin=\dimen328
-\Fld@menulength=\count411
-\Field@Width=\dimen329
-\Fld@charsize=\dimen330
+\XeTeXLinkMargin=\dimen335
+\Fld@menulength=\count417
+\Field@Width=\dimen336
+\Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6298.
 Package hyperref Info: Link nesting OFF on input line 6303.
 Package hyperref Info: Hyper index ON on input line 6306.
@@ -2567,33 +2608,33 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count412
-\c@Item=\count413
-\c@Hfootnote=\count414
+\Hy@abspage=\count418
+\c@Item=\count419
+\c@Hfootnote=\count420
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count415
-\c@Hpagenote=\count416
+\c@memhycontfloat=\count421
+\c@Hpagenote=\count422
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count417
-\c@bookmark@seq@number=\count418
+\Fld@listcount=\count423
+\c@bookmark@seq@number=\count424
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip271
+\Hy@SectionHShift=\skip272
 )
 LaTeX Font Info:    Try loading font information for T1+BaskervilleF-TLF on inp
-ut line 72.
+ut line 73.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/T1BaskervilleF-TLF.f
 d
@@ -2601,8 +2642,8 @@ File: T1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for T1/Baske
 rvilleF-TLF.
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-\tikzscale@accuracy=\skip272
+(Font)              scaled to size 10.0pt on input line 73.
+\tikzscale@accuracy=\skip273
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -2612,71 +2653,71 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count419
-\@quotereset=\count420
+\@quotelevel=\count425
+\@quotereset=\count426
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 72.
-LaTeX Font Info:    Try loading font information for OML+zbami on input line 72
+LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 73.
+LaTeX Font Info:    Try loading font information for OML+zbami on input line 73
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
 File: omlzbami.fd 2016/11/11 Fontinst v1.933 font definitions for OML/zbami.
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 73.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 73.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 72
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 73
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 73.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 7
-2.
+3.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 72.
-\c@mv@tabular=\count421
-\c@mv@boldtabular=\count422
+(Font)              scaled to size 9.0pt on input line 73.
+\c@mv@tabular=\count427
+\c@mv@boldtabular=\count428
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -2684,16 +2725,16 @@ tim
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
-\scratchdimen=\dimen331
+\scratchcounter=\count429
+\scratchdimen=\dimen338
 \scratchbox=\box67
-\nofMPsegments=\count424
-\nofMParguments=\count425
+\nofMPsegments=\count430
+\nofMParguments=\count431
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count426
-\MPscratchDim=\dimen332
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
+\MPscratchCnt=\count432
+\MPscratchDim=\dimen339
+\MPnumerator=\count433
+\makeMPintoPDFobject=\count434
 \everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2711,6 +2752,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.13} (current compat level: 1.5).
 
@@ -2722,52 +2767,99 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 72.
-Package biblatex Info: Reference segment=0 on input line 72.
+Package biblatex Info: Reference section=0 on input line 73.
+Package biblatex Info: Reference segment=0 on input line 73.
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 72.
+Package hyperref Info: Link coloring OFF on input line 73.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count429
+\c@section@level=\count435
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 72.
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 110.
+(Font)              scaled to size 17.28pt on input line 111.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 110.
+(Font)              scaled to size 17.28pt on input line 111.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 110.
+(Font)              scaled to size 14.4pt on input line 111.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 110.
+(Font)              scaled to size 14.4pt on input line 111.
  (./chapters/results.tex
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 3.
+LaTeX Font Info:    Try loading font information for OT1+BaskervilleF-TLF on in
+put line 7.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/OT1BaskervilleF-TLF.
-fd) (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd)
-Underfull \hbox (badness 2591) in paragraph at lines 17--17
-\OML/zbami/m/it/9 ^^X\LMS/ntxsy/m/n/9 ¹\OML/zbami/m/it/9 ^^_\LMS/ntxsy/m/n/9 º[
-]$\T1/BaskervilleF-TLF/m/n/9 , and vary-ing which data
+fd
+File: OT1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for OT1/Bas
+kervilleF-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 7.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 7.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 7.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 7.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 7.3pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 5.5pt on input line 7.
+
+Overfull \hbox (1.21577pt too wide) in paragraph at lines 5--11
+[]\T1/BaskervilleF-TLF/m/n/9 We present finite-size scal-ing re-sults us-ing th
+e cor-ner trans-fer ma-trix renor-
  []
 
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 24.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 24.
-(./plots/testplot.tikz
+[1
+
+
+
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./plots/order_parameter_vs_T.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -2778,37 +2870,117 @@ PGFPlots: reading {main.pgf-plot.table}
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-)) [1
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+)
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 51.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 51.
+
+Overfull \hbox (12.29477pt too wide) in paragraph at lines 53--57
+[][]\T1/BaskervilleF-TLF/m/n/9 Figure 1.1[][] shows the be-haviour of the or-de
+r pa-ram-e-ter of the two-dimensional
+ []
+
+[2]
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 103.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 103.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 6.1pt on input line 103.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 103.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 103.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 6.1pt on input line 103.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 103.
 
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\kappa' on input line 103.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 103.
+
+) [3] [4]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 127.
- [3
+(Font)              scaled to size 9.0pt on input line 128.
+
+Overfull \hbox (6.17421pt too wide) in paragraph at lines 129--129
+[]\T1/BaskervilleF-TLF/m/n/9 Tomotoshi Nishino and Kouichi Oku-n-ishi. ``Cor-ne
+r trans-fer ma-trix renor-
+ []
+
+[5
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DD9162C167FDF1763E66BB927AEF6F58;90.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 07BF59F474A2F1EADCB70134EBE262CE;287
+(rerunfilecheck)             After:  0E40A431E28C896E069806DFFF1F1E4E;287.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49775 strings out of 493014
- 1090595 string characters out of 6133351
- 1689437 words of memory out of 5000000
- 52483 multiletter control sequences out of 15000+600000
- 204778 words of font info for 104 fonts, out of 8000000 for 9000
+ 51262 strings out of 493014
+ 1122012 string characters out of 6133351
+ 1720225 words of memory out of 5000000
+ 53916 multiletter control sequences out of 15000+600000
+ 278300 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,86p,10417b,1922s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,19n,112p,10417b,2656s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
 enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
@@ -2816,15 +2988,15 @@ enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
 F-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/
 BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/n
-ewtx/txsys.pfb>
-Output written on main.pdf (3 pages, 99967 bytes).
+/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/t
+xsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrw8a
+.pfb>
+Output written on main.pdf (5 pages, 118233 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,5 @@
 \begin{tikzpicture}
+  \def \filelocation {'plots/data/m_vs_xi_loglogfit_chi8-112_tol1e-7_q2.dat'}
   \begin{semilogxaxis}[
     title=matige fit,
     xlabel={$\xi(\chi)$},
@@ -8,12 +9,12 @@
     mark=*,
     only marks,
   ]
-  gnuplot [raw gnuplot] {plot 'plots/data/testdata.dat' index 0};
+  gnuplot [raw gnuplot] {plot \filelocation index 0};
 
   \addplot+[
     solid,
     mark=none,
   ]
-  gnuplot [raw gnuplot] {plot 'plots/data/testdata.dat' index 1};
+  gnuplot [raw gnuplot] {plot \filelocation index 1};
 \end{semilogxaxis}
 \end{tikzpicture}

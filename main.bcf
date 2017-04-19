@@ -2096,8 +2096,16 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">sandvik2010computational</bcf:citekey>
-    <bcf:citekey order="2">bhattacharjee2001measure</bcf:citekey>
+    <bcf:citekey order="1">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="2">nishino1996numerical</bcf:citekey>
+    <bcf:citekey order="3">nishino1996numerical</bcf:citekey>
+    <bcf:citekey order="4">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="5">ostlund1995thermodynamic</bcf:citekey>
+    <bcf:citekey order="6">wolf2006quantum</bcf:citekey>
+    <bcf:citekey order="7">baxter1982exactly_correlation_length</bcf:citekey>
+    <bcf:citekey order="8">nishino1996numerical</bcf:citekey>
+    <bcf:citekey order="9">pollmann2009theory</bcf:citekey>
+    <bcf:citekey order="10">tagliacozzo2008scaling</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

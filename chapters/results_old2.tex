@@ -1,0 +1,105 @@
+\section{Abstract}
+We present the results of finite-size scaling in the bond dimension of the transfer
+matrices on the two-dimensional Ising model.
+
+\section{Two-dimensional Ising model}
+
+The corner transfer matrix renormalization group method was first used to perform a
+finite-size scaling analysis in \cite{nishino1996numerical}.
+
+\todo[inline]{This is a bad explanation. Cite Nishino more, since this is basically a
+review of his article}
+
+The error in the approximation of the partition function (and thus all thermodynamic
+quantities) in the thermodynamic limit with the corner transfer matrix method depends on
+two characteristic length
+scales. The first is the size of the system $N$. After $n$ steps of the infinite-system
+algorithm, we have
+\begin{equation}
+  N = 2n + 1.
+\end{equation}
+The second length scale is related to the finite bond dimension $m$. In the thermodynamic
+limit (corresponding to infinite $N$ and $m$)
+
+
+
+\cite{baxter1982exactly_correlation_length}
+\begin{equation}
+  \xi(T) = \frac{1}{\log\left(\frac{T_0}{T_1}\right)}.
+\end{equation}
+where $T_0$ and $T_1$ are the largest and second-largest eigenvalues of the row-to-row
+transfer matrix $T$, respectively.
+
+Let us denote by $T_{i}(N, m)$ the $i$th eigenvalue of the row-to-row transfer matrix of
+the system of size $N$ with bond dimension $m$ obtained through the corner transfer
+matrix. A natural way to define the characteristic length scale associated with the bond
+dimension $m$ is \footnote{This length scale can also be viewed as the finite correlation
+length inherent to a matrix product state of a 1D quantum system, see REF.}
+\begin{equation}
+  \xi(m) = \lim_{N \to \infty} \frac{1}{\log\left(\frac{T_0(N, m)}{T_1(N, m)}\right)}.
+\end{equation}
+
+\todo[inline]{How do we explain the box size, i.e. that we should take the maximum of
+$\xi(m)$ to be the effective length scale?}
+
+For off-critical systems, the true correlation length $\xi$ is finite, so we expect to be
+able to approximate thermodynamic quantities well if
+\begin{equation}\label{eq:correlation_lengths_big_enough}
+\begin{aligned}
+\xi(m) & \gg \xi, \\
+N & \gg \xi
+\end{aligned}
+\end{equation}
+are both satisfied.
+
+For critical systems, the correlation length diverges, so
+\autoref{eq:correlation_lengths_big_enough} is never satisfied. Instead, the correlation
+length is either limited by $N$ or $\xi(m)$, and we expect to see cross-over behaviour
+between the regions $N \gg \xi(m)$ and $N \ll \xi(m)$. This cross-over is studied in
+\cite{nishino1996numerical}. We reproduce some of the results of this work using the
+two-dimensional Ising model.
+
+For the magnetization at the critical temperature, we expect a scaling law of the form
+\begin{equation}
+  M(N, m) \thicksim
+  \begin{cases}
+    N^{\frac{\beta}{\nu}} &\text{if } \xi(m) \ll N \\
+    \xi(m)^{\frac{\beta}{\nu}} &\text{if } N \ll \xi(m)
+  \end{cases}.
+\end{equation}
+In \autoref{fig:crossover}, this crossover is clearly visible. For small $N$, $M \thicksim
+N^{\frac{-\beta}{\nu}} = N^{-\frac{1}{8}}$, for all values of $m$, because $N$ is the only
+important length scale. For large $N$, the magnetization tends towards a non-zero value
+set by the length scale $\xi(m)$.
+
+\autoref{fig:xi_vs_m_loglogfit} shows that in the limit $N \to
+\infty$, we indeed have
+
+\begin{equation}
+  M(N, m) \thicksim \xi(m)^{-\frac{\beta}{\nu}}.
+\end{equation}
+A least-squares fitting of this power law gives the fraction
+\begin{equation}
+\frac{\beta}{\nu} \approx 0.12499.
+\end{equation}
+which differs only very slightly from the exact value $\frac{\beta}{\nu} = \frac{1}{8}$.
+
+\todo[inline]{Tell how I got this (selecting m values etc)}
+
+\begin{figure}
+\includegraphics[]{N_vs_m_at_T_crit_chi4-148.tikz}
+\caption{Cross-over between $N = 2n + 1$, the system size and $\xi(m)$, the correlation
+length due to finite $m$.}
+\label{fig:crossover}
+\end{figure}
+
+\begin{figure}
+\includegraphics[]{xi_vs_m_loglogfit.tikz}
+\caption{The value of $M(N, m)$ in the limit $N \to \infty$ depends only on the length
+scale $\xi(m)$.}
+\label{fig:xi_vs_m_loglogfit}
+\end{figure}
+
+\subsection{Data collapse}
+
+\subsection{Determination of the critical point by the corner transfer matrix spectrum}

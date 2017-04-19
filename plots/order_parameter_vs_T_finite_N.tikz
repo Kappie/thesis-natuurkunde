@@ -1,0 +1,70 @@
+\begin{tikzpicture}
+  \def \finiteN {'plots/data/order_param_vs_T_q2_N40-1000_trunc_error1e-6.dat'}
+  \def \finiteChi {'plots/data/order_param_vs_T_q2_chi2-8.dat'}
+  \def \TCrit {2.26918}
+
+  \begin{groupplot}[
+      group style={
+        group size=1 by 2,
+        xlabels at=edge bottom,
+        ylabels at=all,
+        xticklabels at = edge bottom,
+        vertical sep = 1.5em,
+      },
+      legend style = {
+        legend pos = south west,
+      },
+      legend cell align = left,
+      height=0.33\textheight,
+      width=\textwidth,
+      xlabel={$T$},
+      ylabel={$M(T)$},
+    ]
+
+    \nextgroupplot
+
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteN index 3};
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteN index 2};
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteN index 1};
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteN index 0};
+
+    \addplot[mark=none, black, dashed, semithick, update limits=false]
+      coordinates {(\TCrit,-1) (\TCrit,1)};
+    \legend{$n = 40$, $n = 100$, $n = 400$, $n = 1000$};
+
+    \nextgroupplot
+
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteChi index 3};
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteChi index 2};
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteChi index 1};
+    \addplot+[] gnuplot [raw gnuplot] { plot \finiteChi index 0};
+
+    \addplot[mark=none, black, dashed, semithick, update limits=false]
+      coordinates {(\TCrit,-1) (\TCrit,1)};
+    \legend{$m = 2$, $m = 4$, $m = 6$, $m = 8$};
+
+  \end{groupplot}
+
+  % \begin{axis}[
+  %   width=\plotWidthTwoColumn,
+  %   name={plot1},
+  %   title={blaf},
+  %   xlabel={$T$},
+  %   ylabel={$M(N, T)$},
+  %   legend style = {
+  %     legend pos = south west,
+  %   },
+  %   legend cell align = left,
+  %   ]
+  % \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 3};
+  % \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 2};
+  % \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 1};
+  % \addplot+[] gnuplot [raw gnuplot] { plot \filelocation index 0};
+  %
+  % \addplot[mark=none, black, dashed, semithick, update limits=false]
+  %   coordinates {(2.26918,-1) (2.26918,1)};
+  %
+  % \legend{$n = 40$, $n = 100$, $n = 400$, $n = 1000$};
+  %
+  % \end{axis}
+\end{tikzpicture}

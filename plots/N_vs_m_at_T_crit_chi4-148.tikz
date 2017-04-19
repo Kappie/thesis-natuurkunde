@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+  \def \filelocation {'plots/data/N_vs_m_at_T_crit_chi4-148.dat'}
+  \begin{semilogxaxis}[
+    title=matige fit,
+    xlabel={$n$},
+    ylabel={$\langle \sigma_0 \rangle$},
+    legend entries={$m = 4$, $m = 10$, $m = 148$},
+    legend cell align = {left},
+    legend style = {column sep = 3pt},
+  ]
+  \addplot+[
+    only marks,
+  ]
+  gnuplot [raw gnuplot] {plot \filelocation index 0};
+
+  \addplot+[
+    only marks,
+  ]
+  gnuplot [raw gnuplot] {plot \filelocation index 1};
+
+  \addplot+[
+    only marks,
+  ]
+  gnuplot [raw gnuplot] {plot \filelocation index 2};
+
+\end{semilogxaxis}
+\end{tikzpicture}
