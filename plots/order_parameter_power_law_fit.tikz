@@ -1,0 +1,50 @@
+\begin{tikzpicture}
+  \def \finiteChi {'plots/data/order_parameter_vs_correlation_length_power_law_fit_chi2-64.dat'}
+  \def \finiteN {'plots/data/order_parameter_vs_N_power_law_fit_N5-4000.dat'}
+
+
+
+  \begin{groupplot}[
+      group style={
+        group size=2 by 1,
+        ylabels at=edge left,
+        % yticklabels at=all,
+        % xlabels at=edge bottom,
+        % ylabels at=all,
+        % xticklabels at = edge bottom,
+        horizontal sep = 1.5cm,
+      },
+      % legend style = {
+      %   legend pos = south west,
+      % },
+      % legend cell align = left,
+      % height=0.33\textheight,
+      % scale only axis,
+      width=0.5\textwidth,
+      % xlabel={$\xi(m)$},
+      ylabel={$M(T = T_c)$},
+    ]
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$\xi(m)$},
+    ]
+
+    \addplot+[black, only marks, mark size = 1.3pt] gnuplot [raw gnuplot] { plot \finiteChi index 0};
+    \addplot[black, thick, dashed, mark=none]
+      gnuplot [raw gnuplot] { plot \finiteChi index 1};
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$n$},
+    ]
+
+    \addplot+[black, only marks, mark size = 1.3pt] gnuplot [raw gnuplot] { plot \finiteN index 0};
+    \addplot[black, thick, dashed, mark=none]
+      gnuplot [raw gnuplot] { plot \finiteN index 1};
+
+  \end{groupplot}
+
+\end{tikzpicture}

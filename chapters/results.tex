@@ -39,9 +39,7 @@ limit, CTMRG and DMRG are variational optimizations in the space of matrix produ
 \includegraphics[]{order_parameter_vs_T.tikz}
 \caption{Upper panel: expectation value of the central spin $\langle \sigma_0 \rangle$
   after $n$ CTMRG steps. $m$ is chosen such that the truncation error is smaller than
-  $10^{-6}$. Lower panel: $\langle \sigma_0 \rangle$ for systems with bond dimension $m$.
-  \todo[inline]{where to explain convergence criteria?}}
-\label{fig:order_parameter_vs_T}
+  $10^{-6}$. Lower panel: $\langle \sigma_0 \rangle$ for systems with bond dimension $m$.}\label{fig:order_parameter_vs_T}
 \end{figure}
 
 It is known that an MPS-ansatz with finite bond dimension inherently limits the
@@ -56,6 +54,9 @@ that the truncation error is smaller than $10^{-6}$, and for systems of finite $
 the result is converged in the system size $N$. The results look very similar and support
 the above claim.
 
+\todo[inline]{Order parameter is not the same as magnetization central spin. Where to
+explain this?}
+
 In the thermodynamic limit (corresponding to infinite $m$ and $N$), we have the following
 expression for the correlation length of a classical system
 \cite{baxter1982exactly_correlation_length}
@@ -66,7 +67,7 @@ Here, $T_0$ and $T_1$ are the largest and second-largest eigenvalues of the row-
 transfer matrix $T$, respectively. With $N$ tending towards infinity and finite $m$, near
 the critical point $\xi(T)$ should obey a scaling law of the form
 \begin{equation}
-  \xi(T, m) = N_{\text{eff}}(m) \mathcal{F}(\frac{N_{\text{eff}}(m)}{\xi(T)})
+  \xi(T, m) = N_{\text{eff}}(m) \mathcal{F}(N_{\text{eff}}(m) / \xi(T))
 \end{equation}
 with
 \begin{equation}
@@ -82,9 +83,52 @@ proportional to the correlation length of the system at the critical point $t = 
   N_{\text{eff}}(m) \propto \xi(T = T_c, m).
 \end{equation}
 
-To test this assumption, the authors of \cite{nishino1996numerical} propose a scaling
-relation for the order parameter $M$ at the critical temperature of the form
-\begin{equation}
+Under this assumption, the order parameter should obey the following scaling relation at
+the critical temperature
+\begin{equation}\label{eq:order_param_scaling_relation_finite_m}
+  M(T = T_c, m) \propto \xi(T = T_c, m)^{-\beta/\nu}.
+\end{equation}
+The left panel of \autoref{fig:order_parameter_power_law_fit} shows that this scaling
+relation holds. The fit yields $\frac{\beta}{\nu} \approx 0.125(5)$, close to the true
+value of $\frac{1}{8}$.
+
+The right panel shows the conventional finite-size scaling relation
+\begin{equation}\label{eq:order_param_scaling_relation_finite_N}
+  M(T = T_c, N) \propto N^{-\beta/\nu},
+\end{equation}
+yielding $\beta/\nu \approx 0.1249(1)$, which can be systematically improved by
+fitting to larger system sizes, obtained with a fixed truncation error.
+
+In the case of scaling in correlation length $\xi(m)$, the exponent does not improve when
+taking bigger values of $m$, while keeping the termination criterion (relative change of
+singular values) fixed. This points to a flaw in the termination criterion of the
+algorithm.
+
+Furthermore, the correlation length $\xi(m)$ shows characteristic half-moon patterns on a
+log-log scale, stemming from the degeneracies in the corner transfer matrix spectrum. This
+makes the data harder to interpret, since the effect of increasing $m$ depends on how much
+of the spectrum is currently retained.
+
+\todo[inline]{Talk about how to alleviate this partially by using entropy $S$ as
+length scale.}
+
+\begin{figure}
+  % \includegraphics[width=\textwidth, axisratio=1]{order_parameter_power_law_fit.tikz}
+  \includegraphics[]{order_parameter_power_law_fit.tikz}
+  \caption{Left panel: fit to the relation in
+  \autoref{eq:order_param_scaling_relation_finite_m}, yielding $\frac{\beta}{\nu} \approx
+  0.125(5)$. The data points are obtained from simulations with $m = 2, 4, \dots, 64$. The
+  smallest 10 values of $m$ have not been used for fitting, to diminish correction terms
+  to the basic scaling law. Right panel: fit to conventional finite-size scaling law
+  given in \autoref{eq:order_param_scaling_relation_finite_N}.
+  }
+  \label{fig:order_parameter_power_law_fit}
+\end{figure}
+
+To further test the hypothesis that $N$ and $\xi(m)$ are the only relevant length scales,
+the authors of \cite{nishino1996numerical} propose a scaling relation for the order
+parameter $M$ at the critical temperature of the form
+\begin{equation}\label{eq:order_param_scaling_relation}
   M(N, m) = N^{-\beta/\nu} \mathcal{G}(\xi(m) / N)
 \end{equation}
 with
@@ -92,22 +136,50 @@ with
   \mathcal{G}(x) =
   \begin{cases}
     \text{const} & \text{if } x \to \infty, \\
-    x^{-\beta/\nu} & \text{if } x \to 0.
+    x^{-\beta/\nu} & \text{if } x \to 0,
   \end{cases}
 \end{equation}
+meaning that \autoref{order_param_scaling_relation} reduces to
+\autoref{eq:order_param_scaling_relation_finite_N} in the limit $\xi(m) \gg N$ and to
+\autoref{eq:order_param_scaling_relation_finite_m} in the limit $N \gg \xi(m)$.
+\autoref{fig:data_collapse_nishino} shows that the scaling relation of \autoref{eq:order_param_scaling_relation}
+is justified.
 
-\todo[inline]{Replicate Nishino's results. Get $\beta/\nu$ in both finite $N$ and $m$
-regime.}
+\autoref{fig:crossover_nishino} shows the cross-over behaviour from the $N$-limiting regime, where
+$M(N, m) \propto N^{-\beta/\nu}$ to the $\xi(m)$-limiting regime, where $M(N, m)$ does not depend on $N$.
+
+\begin{figure}
+  \includegraphics[]{data_collapse_nishino.tikz}
+  \caption{Scaling function $\mathcal{G}(\xi(m)/N)$ given in
+  \autoref{eq:order_param_scaling_relation}.}\label{fig:data_collapse_nishino}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[]{crossover_nishino.tikz}
+  \caption{Behaviour of the order parameter at fixed $m$ as function of
+  the number of renormalization steps $n$. For small $n$, all curves coincide, since the system size is the only
+  limiting length scale. For large enough $n$, the order parameter is only limited by the length scale
+  $xi(m)$. In between, there is a cross-over described by $\mathcal{G}(\xi(m)/N)$, given in
+  \autoref{eq:order_param_scaling_relation}.}\label{fig:crossover_nishino}
+\end{figure}
+% \begin{figure}
+%   \includegraphics[]{data_collapse_nishino.tikz}
+%   \caption{hoi}
+%   \label{fig:data_collapse_nishino}
+% \end{figure}
+%
+% \todo[inline]{Replicate Nishino's results. Get $\beta/\nu$ in both finite $N$ and $m$
+% regime.}
 
 
 
-\section{Exponent $\kappa$ and finite-entropy scaling}
-
-In the asymptotically large $m$ regime, it is proven that the correlation length for
-critical systems scales as
-\begin{equation}
-  \xi \propto m^{\kappa},
-\end{equation}
-where $\kappa$ depends only on the central charge of the phase transition
-\cite{pollmann2009theory}. In \cite{tagliacozzo2008scaling}, the authors show that already
-for modest $m$, this relation holds approximately.
+% \section{Exponent $\kappa$ and finite-entropy scaling}
+%
+% In the asymptotically large $m$ regime, it is proven that the correlation length for
+% critical systems scales as
+% \begin{equation}
+%   \xi \propto m^{\kappa},
+% \end{equation}
+% where $\kappa$ depends only on the central charge of the phase transition
+% \cite{pollmann2009theory}. In \cite{tagliacozzo2008scaling}, the authors show that already
+% for modest $m$, this relation holds approximately.

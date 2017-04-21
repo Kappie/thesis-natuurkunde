@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+  \def \collapsePlot {'plots/data/data_collapse_nishino_chi4-20.dat'}
+  \def \crossOverPlot {'plots/data/crossover_nishino_chi4-20.dat'}
+
+  \begin{groupplot}[
+    group style={
+      group size = 2 by 1,
+      horizontal sep=1.5cm,
+    },
+    width=0.5\textwidth,
+  ]
+    \nextgroupplot[
+      xlabel=$x$,
+      ylabel=$y$,
+      legend style = {
+        legend pos = south east,
+      },
+      legend cell align = left,
+    ]
+
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \collapsePlot index 4};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \collapsePlot index 3};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \collapsePlot index 2};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \collapsePlot index 1};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \collapsePlot index 0};
+
+    \legend{$m = 4$, $m = 8$, $m = 12$, $m = 16$, $m = 20$};
+
+    \nextgroupplot[
+      xlabel=$x$,
+      ylabel=$y$,
+      xmode=log,
+      ymode=log,
+    ]
+
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \crossOverPlot index 4};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \crossOverPlot index 3};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \crossOverPlot index 2};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \crossOverPlot index 1};
+    \addplot+[only marks, smallMarker] gnuplot [raw gnuplot] { plot \crossOverPlot index 0};
+
+  \end{groupplot}
+\end{tikzpicture}

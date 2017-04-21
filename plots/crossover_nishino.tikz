@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+  \def \crossOverPlot {'plots/data/crossover_nishino_chi4-20.dat'}
+
+  \begin{loglogaxis}[
+      xlabel={$n$},
+      ylabel={$M(T = T_c)$},
+      legend style = {
+        legend pos = south west,
+      },
+      legend cell align = left,
+      % scale only axis,
+      % width=\textwidth,
+    ]
+
+    \addplot+[only marks] gnuplot [raw gnuplot] { plot \crossOverPlot index 4};
+    \addplot+[only marks] gnuplot [raw gnuplot] { plot \crossOverPlot index 3};
+    \addplot+[only marks] gnuplot [raw gnuplot] { plot \crossOverPlot index 2};
+    \addplot+[only marks] gnuplot [raw gnuplot] { plot \crossOverPlot index 1};
+    \addplot+[only marks] gnuplot [raw gnuplot] { plot \crossOverPlot index 0};
+
+    \legend{$m = 4$, $m = 8$, $m = 12$, $m = 16$, $m = 20$};
+  \end{loglogaxis}
+\end{tikzpicture}

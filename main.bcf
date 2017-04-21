@@ -2104,8 +2104,6 @@
     <bcf:citekey order="6">wolf2006quantum</bcf:citekey>
     <bcf:citekey order="7">baxter1982exactly_correlation_length</bcf:citekey>
     <bcf:citekey order="8">nishino1996numerical</bcf:citekey>
-    <bcf:citekey order="9">pollmann2009theory</bcf:citekey>
-    <bcf:citekey order="10">tagliacozzo2008scaling</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
