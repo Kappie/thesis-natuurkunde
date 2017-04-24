@@ -130,6 +130,36 @@
       \field{pages}{P06002}
       \range{pages}{-1}
     \endentry
+    \entry{calabrese2008entanglement}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ff8cd1b95a97984f0ddd7974d624dcce}{%
+           family={Calabrese},
+           family_i={C\bibinitperiod},
+           given={Pasquale},
+           given_i={P\bibinitperiod}}}%
+        {{hash=2f8922f67d22274032acd6e541ece059}{%
+           family={Lefevre},
+           family_i={L\bibinitperiod},
+           given={Alexandre},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1ab044980e67f5fc6465a58e514d87e2}
+      \strng{fullhash}{1ab044980e67f5fc6465a58e514d87e2}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{3}
+      \field{title}{Entanglement spectrum in one-dimensional systems}
+      \field{volume}{78}
+      \field{year}{2008}
+      \field{pages}{032329}
+      \range{pages}{1}
+    \endentry
     \entry{ercolessi2010exact}{article}{}
       \name{author}{3}{}{%
         {{hash=22cfdaf1f3630990fc9261ad993ddad0}{%
@@ -538,6 +568,31 @@
       \field{volume}{78}
       \field{year}{2008}
       \field{pages}{024410}
+      \range{pages}{1}
+    \endentry
+    \entry{vidal2007classical}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d3f8c6663f1fa635f1b95e9d2da51116}{%
+           family={Vidal},
+           family_i={V\bibinitperiod},
+           given={Guifre},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d3f8c6663f1fa635f1b95e9d2da51116}
+      \strng{fullhash}{d3f8c6663f1fa635f1b95e9d2da51116}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{7}
+      \field{title}{Classical simulation of infinite-size quantum lattice systems in one spatial dimension}
+      \field{volume}{98}
+      \field{year}{2007}
+      \field{pages}{070201}
       \range{pages}{1}
     \endentry
     \entry{vidal2003entanglement}{article}{}

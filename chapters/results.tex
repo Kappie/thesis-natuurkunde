@@ -167,11 +167,16 @@ $M(N, m) \propto N^{-\beta/\nu}$ to the $\xi(m)$-limiting regime, where $M(N, m)
 
 \subsection{Scaling relations away from the critical point}
 In general, the position of the critical point is not known. In that situation, the scaling relation in
-\autoref{eq:order_param_scaling_relation} is no longer valid. Instead, in the limit $N \to \infty$, we should have
+\autoref{eq:order_param_scaling_relation} cannot be used to calculate thermodynamic information. Instead, in the limit
+$N \to \infty$, we should have
 \begin{equation}\label{eq:order_param_scaling_relation_finite_chi_t}
   M(t, m) \propto \xi(m)^{-\beta/\nu}\mathcal{P}(t \xi(m)^{1/\nu}),
 \end{equation}
 which is confirmed in \autoref{fig:data_collapse_chi_correlation_length}.
+
+However, in practice this is still problematic, since $\xi(m)$ is defined at the critical point. Thus, we must find a
+way to define the length scale corresponding to a finite bond dimension $m$ without making use of the position of the
+critical point.
 
 \begin{figure}
   \includegraphics[]{data_collapse_chi_correlation_length.tikz}
@@ -179,7 +184,75 @@ which is confirmed in \autoref{fig:data_collapse_chi_correlation_length}.
   \autoref{eq:order_param_scaling_relation_finite_chi_t}.}\label{fig:data_collapse_chi_correlation_length}
 \end{figure}
 
-\section{Finite-entropy scaling}
+\section{Finite-entanglement scaling and its relation to two-dimensional classical lattices}
+
+Another way to understand the fact that the CTMRG method with finite $m$ can never accurately represent systems at
+criticality, is by looking at the entanglement properties of the ground state of the corresponding one-dimensional
+quantum systems.
+
+It is known that near the critical point, when the correlation length $\xi$ is large but finite, the entanglement of a
+subsystem $A$ scales as
+\begin{equation}
+  S_A \propto \mathcal{A}(c/6)\log(\xi)
+\end{equation}
+where $\mathcal{A}$ is the number of boundary points of $A$ and $c$ is the central charge of the conformal field theory
+at the critical point \cite{calabrese2004entanglement, vidal2003entanglement, ercolessi2010exact}.
+
+Recalling the definition of the entanglement entropy
+\begin{equation}
+  S_A = - \tr(\rho_A \log \rho_A) = - \sum_{\alpha} \omega_{\alpha} \log \omega_{\alpha},
+\end{equation}
+it is trivially seen that the entropy of a state given by the DMRG (or any other MPS), which only
+retains $m$ basis states of $\rho_A$, is limited by
+\begin{equation}
+  S^{\text{max}}_A(m) = \log m
+\end{equation}
+by putting $\omega_{\alpha} = 1/m$ for $\alpha = 1, \dots, m$.
+
+Thus, by assuming $S^{\text{max}}_A(m) \propto S_A$ close to criticality, one may infer that the maximum correlation length
+that an MPS can capture scales as
+\begin{equation}
+  \xi(m) \propto m^{\kappa}.
+\end{equation}
+
+Numerical evidence of this fact was first given by the authors of \cite{andersson1999density}, who found
+\begin{equation}
+  \xi(m) \propto m^{1.3}
+\end{equation}
+for a gapless system of free fermions, using DMRG calculations. Later, using the iTEBD algorithm
+\cite{vidal2007classical}, the authors of \cite{tagliacozzo2008scaling} presented numerical evidence for such a relation
+for the Ising model with transverse field and the Heisenberg model, with
+\begin{align}
+  \kappa_{\text{Ising}} & \approx 2, \\
+  \kappa_{\text{Heisenberg}} & \approx 1.37.
+\end{align}
+
+A quantitative theory of this behaviour was given in \cite{pollmann2009theory}.
+Assuming the energy density as function of the effective correlation length $\xi$ takes the form
+\begin{equation}
+  E(\xi) = E_{\infty} + \frac{A}{\xi^2} + \frac{B}{\xi}P_r(m),
+\end{equation}
+where
+\begin{equation}
+  P_r(m) = \sum_{\alpha = m}^{\infty} \omega_{\alpha}
+\end{equation}
+is the residual probability.
+Using results in \cite{calabrese2008entanglement} for the spectrum of $\rho_A$ in limit $m \to \infty$, $\xi$ is found
+to obey
+\begin{equation}
+  \xi = m^{\kappa},
+\end{equation}
+with
+\begin{equation}
+  \kappa = \frac{6}{c(\sqrt{12/c} + 1)} + \mathcal{O}(1/\log m).
+\end{equation}
+
+
+\subsection{Numerical results}
+
+
+
+\section{To do}
 
 Articles to cite:
 
