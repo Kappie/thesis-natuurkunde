@@ -57,6 +57,8 @@ the above claim.
 \todo[inline]{Order parameter is not the same as magnetization central spin. Where to
 explain this?}
 
+\subsection{Definition of $N_{\text{eff}}$ in terms of the correlation length at $T_c$}
+
 In the thermodynamic limit (corresponding to infinite $m$ and $N$), we have the following
 expression for the correlation length of a classical system
 \cite{baxter1982exactly_correlation_length}
@@ -139,7 +141,7 @@ with
     x^{-\beta/\nu} & \text{if } x \to 0,
   \end{cases}
 \end{equation}
-meaning that \autoref{order_param_scaling_relation} reduces to
+meaning that \autoref{eq:order_param_scaling_relation} reduces to
 \autoref{eq:order_param_scaling_relation_finite_N} in the limit $\xi(m) \gg N$ and to
 \autoref{eq:order_param_scaling_relation_finite_m} in the limit $N \gg \xi(m)$.
 \autoref{fig:data_collapse_nishino} shows that the scaling relation of \autoref{eq:order_param_scaling_relation}
@@ -159,27 +161,67 @@ $M(N, m) \propto N^{-\beta/\nu}$ to the $\xi(m)$-limiting regime, where $M(N, m)
   \caption{Behaviour of the order parameter at fixed $m$ as function of
   the number of renormalization steps $n$. For small $n$, all curves coincide, since the system size is the only
   limiting length scale. For large enough $n$, the order parameter is only limited by the length scale
-  $xi(m)$. In between, there is a cross-over described by $\mathcal{G}(\xi(m)/N)$, given in
+  $\xi(m)$. In between, there is a cross-over described by $\mathcal{G}(\xi(m)/N)$, given in
   \autoref{eq:order_param_scaling_relation}.}\label{fig:crossover_nishino}
 \end{figure}
-% \begin{figure}
-%   \includegraphics[]{data_collapse_nishino.tikz}
-%   \caption{hoi}
-%   \label{fig:data_collapse_nishino}
-% \end{figure}
-%
-% \todo[inline]{Replicate Nishino's results. Get $\beta/\nu$ in both finite $N$ and $m$
-% regime.}
+
+\subsection{Scaling relations away from the critical point}
+In general, the position of the critical point is not known. In that situation, the scaling relation in
+\autoref{eq:order_param_scaling_relation} is no longer valid. Instead, in the limit $N \to \infty$, we should have
+\begin{equation}\label{eq:order_param_scaling_relation_finite_chi_t}
+  M(t, m) \propto \xi(m)^{-\beta/\nu}\mathcal{P}(t \xi(m)^{1/\nu}),
+\end{equation}
+which is confirmed in \autoref{fig:data_collapse_chi_correlation_length}.
+
+\begin{figure}
+  \includegraphics[]{data_collapse_chi_correlation_length.tikz}
+  \caption{Scaling function $\mathcal{P}(t \xi(m)^{1/\nu})$ in
+  \autoref{eq:order_param_scaling_relation_finite_chi_t}.}\label{fig:data_collapse_chi_correlation_length}
+\end{figure}
+
+\section{Finite-entropy scaling}
+
+Articles to cite:
+
+\begin{itemize}
+
+\item \cite{tagliacozzo2008scaling}: postulates exponent $\kappa$, provides numerical support and extracts basic results
+for 1D quantum systems with periodic boundary conditions. Also compares to nishino 2D results. Replicate his
+experiments? Because CTM seems to give different value for $\kappa$.
+\item \cite{andersson1999density}: establishes $\xi \propto m^{1.3}$ for correlation length of converged DMRG ground
+states of a gapless systems of free fermions.
+\item \cite{pirvu2012matrix}: assumes existence of $\kappa$ and compares finite-size scaling with finite-$m$ scaling
+for 1D quantum systems with periodic boundary conditions.
+\item \cite{pollmann2009theory}: proves expression for $\kappa$ in asymptotically large $m$ limit that depends only on
+central charge $c$, but with corrections of order $1 / \log(\chi)$.
+\item \cite{vidal2003entanglement}: Also finds $S_A \propto \log(L)$ for 1D quantum systems.
+\item \cite{calabrese2004entanglement}: proves relation $S_A \propto \mathcal{A}(c/6)\log(\xi)$, with $\mathcal{A}$
+the number of boundary points (verified for integrable 2d classical lattice systems).
+\item \cite{ercolessi2010exact}: proves relation for classical eight vertex model
+\end{itemize}
+
+Check for validity of $\xi(m) \propto m^{\kappa}$
+
+\begin{itemize}
+  \item entropy scaling at $T_c$ (using exact value of $c$).
+  \item correlation length scaling at $T_c$.
+  \item data collapse of order parameter (using exact value of $T_c$, $\beta$, $\nu$.)
+\end{itemize}
 
 
 
-% \section{Exponent $\kappa$ and finite-entropy scaling}
-%
-% In the asymptotically large $m$ regime, it is proven that the correlation length for
-% critical systems scales as
-% \begin{equation}
-%   \xi \propto m^{\kappa},
-% \end{equation}
-% where $\kappa$ depends only on the central charge of the phase transition
-% \cite{pollmann2009theory}. In \cite{tagliacozzo2008scaling}, the authors show that already
-% for modest $m$, this relation holds approximately.
+\section{Finding the critical point by maximizing entropy}
+
+Articles to cite:
+
+\begin{itemize}
+  \item \cite{huang2017holographic}: theory and numerical support for directly extracting information from ctm spectrum,
+  equivalence to 1D quantum systems.
+  \item \cite{krvcmar2016phase}: characterisation of phase transition by ctm spectrum for $q = 6$ clock model.
+  \item \cite{PhysRevE.94.022134}: characterisation of phase transition by ctm spectrum for truncated tetrahedal model.
+  \item \cite{krvcmar2015reentrant}: characterisation of phase transition by ctm spectrum for Widom-Rowlinson models.
+  \item \cite{osborne2002entanglement}: for XY and Ising model, proves that next-to-nearest neighbor entanglement peaks
+  at critical point (though not nearest-neighbor entanglement.)
+
+
+\end{itemize}

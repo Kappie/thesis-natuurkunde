@@ -2104,6 +2104,18 @@
     <bcf:citekey order="6">wolf2006quantum</bcf:citekey>
     <bcf:citekey order="7">baxter1982exactly_correlation_length</bcf:citekey>
     <bcf:citekey order="8">nishino1996numerical</bcf:citekey>
+    <bcf:citekey order="9">tagliacozzo2008scaling</bcf:citekey>
+    <bcf:citekey order="10">andersson1999density</bcf:citekey>
+    <bcf:citekey order="11">pirvu2012matrix</bcf:citekey>
+    <bcf:citekey order="12">pollmann2009theory</bcf:citekey>
+    <bcf:citekey order="13">vidal2003entanglement</bcf:citekey>
+    <bcf:citekey order="14">calabrese2004entanglement</bcf:citekey>
+    <bcf:citekey order="15">ercolessi2010exact</bcf:citekey>
+    <bcf:citekey order="16">huang2017holographic</bcf:citekey>
+    <bcf:citekey order="17">krvcmar2016phase</bcf:citekey>
+    <bcf:citekey order="18">PhysRevE.94.022134</bcf:citekey>
+    <bcf:citekey order="19">krvcmar2015reentrant</bcf:citekey>
+    <bcf:citekey order="20">osborne2002entanglement</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -1,17 +1,16 @@
 \begin{tikzpicture}
-  \def \collapsePlot {'plots/data/data_collapse_nishino_chi4-20.dat'}
-
+  \def \collapsePlot {'plots/data/data_collapse_chi4-20_correlation_length.dat'}
   \begin{axis}[
-      xlabel={$\xi(m) / n$},
-      ylabel={$M(T = T_c)N^{\beta/\nu}$},
+      xlabel={$t \xi(m)^{1/\nu}$},
+      ylabel={$M(t, m)\xi(m)^{\beta/\nu}$},
       legend style = {
-        legend pos = north east,
+        legend pos = south west,
       },
       legend cell align = left,
       % domain=0:0.2,
       % restrict y to domain=0:1.2,
       % xmin = 0, xmax = 0.2,
-      % ymin = 0, ymax = 1.2,
+      xmin = -20, xmax = 5,
       % scale only axis,
       % width=\textwidth,
     ]
