@@ -2,8 +2,6 @@
   \def \finiteChi {'plots/data/order_parameter_vs_correlation_length_power_law_fit_chi2-64.dat'}
   \def \finiteN {'plots/data/order_parameter_vs_N_power_law_fit_N5-4000.dat'}
 
-
-
   \begin{groupplot}[
       group style={
         group size=2 by 1,

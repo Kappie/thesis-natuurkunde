@@ -54,6 +54,31 @@
       \field{pages}{10493}
       \range{pages}{1}
     \endentry
+    \entry{baxter1968dimers}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1aed507145de1146326799ff92d30c2e}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={RJ},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
+      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{4}
+      \field{title}{Dimers on a rectangular lattice}
+      \field{volume}{9}
+      \field{year}{1968}
+      \field{pages}{650\bibrangedash 654}
+      \range{pages}{5}
+    \endentry
     \entry{baxter1978variational}{article}{}
       \name{author}{1}{}{%
         {{hash=1aed507145de1146326799ff92d30c2e}{%
@@ -358,6 +383,36 @@
       \field{pages}{69\bibrangedash 72}
       \range{pages}{4}
     \endentry
+    \entry{nishino1997corner}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={Tomotoshi},
+           given_i={T\bibinitperiod}}}%
+        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={Kouichi},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Physical Society of Japan}%
+      }
+      \strng{namehash}{f7e512668257363d4c92111b5df681ca}
+      \strng{fullhash}{f7e512668257363d4c92111b5df681ca}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Physical Society of Japan}
+      \field{number}{10}
+      \field{title}{Corner transfer matrix algorithm for classical renormalization group}
+      \field{volume}{66}
+      \field{year}{1997}
+      \field{pages}{3040\bibrangedash 3047}
+      \range{pages}{8}
+    \endentry
     \entry{nishino1996corner}{article}{}
       \name{author}{2}{}{%
         {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
@@ -387,6 +442,56 @@
       \field{year}{1996}
       \field{pages}{891\bibrangedash 894}
       \range{pages}{4}
+    \endentry
+    \entry{okunishi2005real}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={Kouichi},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Physical Society of Japan}%
+      }
+      \strng{namehash}{e3b01978b5f2e4e8af91c42a277f79fd}
+      \strng{fullhash}{e3b01978b5f2e4e8af91c42a277f79fd}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Physical Society of Japan}
+      \field{number}{12}
+      \field{title}{Real-space renormalization group approach for the corner Hamiltonian}
+      \field{volume}{74}
+      \field{year}{2005}
+      \field{pages}{3186\bibrangedash 3192}
+      \range{pages}{7}
+    \endentry
+    \entry{orus2012exploring}{article}{}
+      \name{author}{1}{}{%
+        {{hash=220e5a12680385b58fbfac3e4405944d}{%
+           family={Orús},
+           family_i={O\bibinitperiod},
+           given={Román},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{220e5a12680385b58fbfac3e4405944d}
+      \strng{fullhash}{220e5a12680385b58fbfac3e4405944d}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{20}
+      \field{title}{Exploring corner transfer matrices and corner tensors for the classical simulation of quantum lattice systems}
+      \field{volume}{85}
+      \field{year}{2012}
+      \field{pages}{205117}
+      \range{pages}{1}
     \endentry
     \entry{osborne2002entanglement}{article}{}
       \name{author}{2}{}{%
@@ -633,6 +738,31 @@
       \field{volume}{90}
       \field{year}{2003}
       \field{pages}{227902}
+      \range{pages}{1}
+    \endentry
+    \entry{white1992density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d77dc1d7b121038d04902228d0ab5931}
+      \strng{fullhash}{d77dc1d7b121038d04902228d0ab5931}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{19}
+      \field{title}{Density matrix formulation for quantum renormalization groups}
+      \field{volume}{69}
+      \field{year}{1992}
+      \field{pages}{2863}
       \range{pages}{1}
     \endentry
     \entry{wolf2006quantum}{article}{}

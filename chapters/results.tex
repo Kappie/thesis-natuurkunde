@@ -209,9 +209,12 @@ retains $m$ basis states of $\rho_A$, is limited by
 \end{equation}
 by putting $\omega_{\alpha} = 1/m$ for $\alpha = 1, \dots, m$.
 
-Thus, by assuming $S^{\text{max}}_A(m) \propto S_A$ close to criticality, one may infer that the maximum correlation length
-that an MPS can capture scales as
+Empirically, MPS ground states of critical systems do not reach their maximum entropy $\log m$, but one may still assume
 \begin{equation}
+  S_A \propto S^{\text{max}}_A(m)
+\end{equation}
+close to criticality, which directly implies the relationship
+\begin{equation}\label{eq:xi_propto_kappa}
   \xi(m) \propto m^{\kappa}.
 \end{equation}
 
@@ -238,18 +241,60 @@ where
 \end{equation}
 is the residual probability.
 Using results in \cite{calabrese2008entanglement} for the spectrum of $\rho_A$ in limit $m \to \infty$, $\xi$ is found
-to obey
+to obey \autoref{eq:xi_propto_kappa} with
 \begin{equation}
-  \xi = m^{\kappa},
+  \kappa = \frac{6}{c(\sqrt{12/c} + 1)} + \mathcal{O}(1/\log m),
 \end{equation}
-with
+yielding
 \begin{equation}
-  \kappa = \frac{6}{c(\sqrt{12/c} + 1)} + \mathcal{O}(1/\log m).
+  \kappa_{\text{Ising}} & = 2.034\dots, \\
+  \kappa_{\text{Heisenberg}} & = 1.344\dots,
+\end{equation}
+which are in very good agreement with the findings in \cite{tagliacozzo2008scaling}.
+
+
+\subsection{Classical analogue of entanglement entropy}
+
+The key point of the corner transfer matrix renormalization group method \cite{nishino1997corner, nishino1996corner} is
+that it unifies White's density matrix renormalization group method \cite{white1992density} with Baxter's corner
+transfer matrix approach \cite{baxter1968dimers, baxter1978variational}, through the identification (in the isotropic
+case)
+\begin{equation}
+  \rho_{\text{half-chain}} = A^4.
 \end{equation}
 
+This allows one to define a 2D classical analogue to the half-chain entanglement entropy of a 1D quantum system
+\begin{equation}\label{eq:classical_entropy}
+  S_{\text{classical}} = - \tr A^4 \log A^4 = - \sum_{\alpha=1}^{m} \nu_{\alpha}^4 \log \nu_{\alpha}^4,
+\end{equation}
+where $\nu_{\alpha}$ are the eigenvalues of the corner transfer matrix $A$.
+In the CTMRG algorithm, $A$ is kept in diagonal form, making $S_{\text{classical}}$ trivial to compute.
+
+In \cite{huang2017holographic}, numerical evidence is given for the validity of \autoref{eq:classical_entropy} for a
+wide range of models, and the concept is generalized to higher dimensions. For an overview of applying corner transfer
+matrices in higher dimensions and to quantum systems, see \cite{orus2012exploring}.
 
 \subsection{Numerical results}
 
+We now check the validity of \autoref{eq:xi_propto_kappa} in the context of the CTMRG method for two-dimensional
+classical systems. Similar checks were done for one-dimensional quantum systems in \cite{tagliacozzo2008scaling}.
+
+Directly checking \autoref{eq:xi_propto_kappa} yields $\kappa = 1.93$, see top left panel of
+\autoref{fig:support_for_kappa}.
+
+\begin{figure}
+  \includegraphics[]{support_for_kappa.tikz}
+  \caption{Top left panel: }\label{fig:support_for_kappa}
+\end{figure}
+
+\subsubsection{Scaling of the correlation length at $T_c$}
+
+\begin{itemize}
+  \item correlation length scaling at $T_c$.
+  \item entropy scaling at $T_c$ (using exact value of $c$).
+  \item data collapse of order parameter (using exact value of $T_c$, $\beta$, $\nu$.)
+  \item scaling of pseudocritical point $T^{\star} - T_c \propto m^{-\kappa / \nu}$.
+\end{itemize}
 
 
 \section{To do}
@@ -273,13 +318,6 @@ the number of boundary points (verified for integrable 2d classical lattice syst
 \item \cite{ercolessi2010exact}: proves relation for classical eight vertex model
 \end{itemize}
 
-Check for validity of $\xi(m) \propto m^{\kappa}$
-
-\begin{itemize}
-  \item entropy scaling at $T_c$ (using exact value of $c$).
-  \item correlation length scaling at $T_c$.
-  \item data collapse of order parameter (using exact value of $T_c$, $\beta$, $\nu$.)
-\end{itemize}
 
 
 
@@ -288,6 +326,10 @@ Check for validity of $\xi(m) \propto m^{\kappa}$
 Articles to cite:
 
 \begin{itemize}
+  \item \cite{orus2012exploring}: contains lots of refs to first papers on corner transfer matrices (baxter).
+  Review paper on CTM methods, including mapping to 1D and entropy analogue, mapping to other algorithms.
+  \item \cite{okunishi2005real}: checks that corner hamiltonian yields same eigenvalue spectrum as reduced
+  density matrix of corresponding quantum system in the case of xxz model?
   \item \cite{huang2017holographic}: theory and numerical support for directly extracting information from ctm spectrum,
   equivalence to 1D quantum systems.
   \item \cite{krvcmar2016phase}: characterisation of phase transition by ctm spectrum for $q = 6$ clock model.

@@ -2112,18 +2112,28 @@
     <bcf:citekey order="12">tagliacozzo2008scaling</bcf:citekey>
     <bcf:citekey order="13">pollmann2009theory</bcf:citekey>
     <bcf:citekey order="14">calabrese2008entanglement</bcf:citekey>
-    <bcf:citekey order="15">tagliacozzo2008scaling</bcf:citekey>
-    <bcf:citekey order="16">andersson1999density</bcf:citekey>
-    <bcf:citekey order="17">pirvu2012matrix</bcf:citekey>
-    <bcf:citekey order="18">pollmann2009theory</bcf:citekey>
-    <bcf:citekey order="19">vidal2003entanglement</bcf:citekey>
-    <bcf:citekey order="20">calabrese2004entanglement</bcf:citekey>
-    <bcf:citekey order="21">ercolessi2010exact</bcf:citekey>
-    <bcf:citekey order="22">huang2017holographic</bcf:citekey>
-    <bcf:citekey order="23">krvcmar2016phase</bcf:citekey>
-    <bcf:citekey order="24">PhysRevE.94.022134</bcf:citekey>
-    <bcf:citekey order="25">krvcmar2015reentrant</bcf:citekey>
-    <bcf:citekey order="26">osborne2002entanglement</bcf:citekey>
+    <bcf:citekey order="15">nishino1997corner</bcf:citekey>
+    <bcf:citekey order="15">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="16">white1992density</bcf:citekey>
+    <bcf:citekey order="17">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="17">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="18">huang2017holographic</bcf:citekey>
+    <bcf:citekey order="19">orus2012exploring</bcf:citekey>
+    <bcf:citekey order="20">tagliacozzo2008scaling</bcf:citekey>
+    <bcf:citekey order="21">tagliacozzo2008scaling</bcf:citekey>
+    <bcf:citekey order="22">andersson1999density</bcf:citekey>
+    <bcf:citekey order="23">pirvu2012matrix</bcf:citekey>
+    <bcf:citekey order="24">pollmann2009theory</bcf:citekey>
+    <bcf:citekey order="25">vidal2003entanglement</bcf:citekey>
+    <bcf:citekey order="26">calabrese2004entanglement</bcf:citekey>
+    <bcf:citekey order="27">ercolessi2010exact</bcf:citekey>
+    <bcf:citekey order="28">orus2012exploring</bcf:citekey>
+    <bcf:citekey order="29">okunishi2005real</bcf:citekey>
+    <bcf:citekey order="30">huang2017holographic</bcf:citekey>
+    <bcf:citekey order="31">krvcmar2016phase</bcf:citekey>
+    <bcf:citekey order="32">PhysRevE.94.022134</bcf:citekey>
+    <bcf:citekey order="33">krvcmar2015reentrant</bcf:citekey>
+    <bcf:citekey order="34">osborne2002entanglement</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
