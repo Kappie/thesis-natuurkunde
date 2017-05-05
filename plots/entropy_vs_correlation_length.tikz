@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+  \def \entropyVsCorrLength {'plots/data/entropy_vs_correlation_length_chi8-70_tol1e-9_q2_Tcrit.dat'}
+  \def \entropyVsN {'plots/data/entropy_vs_N50-1000_q2_max_trunc_error1e-6.dat'}
+
+  \begin{groupplot}[
+      group style={
+        group size = 2 by 1,
+      },
+      width = .5\textwidth,
+    ]
+
+
+  \nextgroupplot[
+      xmode=log,
+      xlabel={$\xi$},
+      ylabel={$S$},
+  ]
+
+  \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \entropyVsCorrLength index 0};
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \entropyVsCorrLength index 1};
+
+  \nextgroupplot[
+    xmode=log,
+    xlabel={$n$},
+  ]
+  \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \entropyVsN index 0};
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 1};
+
+  \end{groupplot}
+\end{tikzpicture}

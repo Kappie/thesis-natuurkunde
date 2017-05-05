@@ -192,7 +192,7 @@ quantum systems.
 
 It is known that near the critical point, when the correlation length $\xi$ is large but finite, the entanglement of a
 subsystem $A$ scales as
-\begin{equation}
+\begin{equation}\label{eq:entropy_scaling_near_criticality}
   S_A \propto \mathcal{A}(c/6)\log(\xi)
 \end{equation}
 where $\mathcal{A}$ is the number of boundary points of $A$ and $c$ is the central charge of the conformal field theory
@@ -246,11 +246,11 @@ to obey \autoref{eq:xi_propto_kappa} with
   \kappa = \frac{6}{c(\sqrt{12/c} + 1)} + \mathcal{O}(1/\log m),
 \end{equation}
 yielding
-\begin{equation}
+\begin{align}
   \kappa_{\text{Ising}} & = 2.034\dots, \\
   \kappa_{\text{Heisenberg}} & = 1.344\dots,
-\end{equation}
-which are in very good agreement with the findings in \cite{tagliacozzo2008scaling}.
+\end{align}
+which are in good agreement with the findings in \cite{tagliacozzo2008scaling}.
 
 
 \subsection{Classical analogue of entanglement entropy}
@@ -259,7 +259,7 @@ The key point of the corner transfer matrix renormalization group method \cite{n
 that it unifies White's density matrix renormalization group method \cite{white1992density} with Baxter's corner
 transfer matrix approach \cite{baxter1968dimers, baxter1978variational}, through the identification (in the isotropic
 case)
-\begin{equation}
+\begin{equation}\label{eq:correspondence_density_matrix_ctm}
   \rho_{\text{half-chain}} = A^4.
 \end{equation}
 
@@ -274,6 +274,24 @@ In \cite{huang2017holographic}, numerical evidence is given for the validity of 
 wide range of models, and the concept is generalized to higher dimensions. For an overview of applying corner transfer
 matrices in higher dimensions and to quantum systems, see \cite{orus2012exploring}.
 
+\subsection{Locating the critical point with the entanglement spectrum}
+Since phase transitions of quantum systems can be located by studying their entanglement spectrum (\emph{cite here}),
+classical systems may be investigated in the same way through the correspondence in
+\autoref{eq:correspondence_density_matrix_ctm}. This is an alternative to the usual approach of studying an order
+parameter or derivatives of thermodynamical observables (\emph{cite here?}).
+
+Examples of studies using the spectrum of the corner transfer matrix to analyze two-dimensional classical systems are
+\cite{krvcmar2015reentrant, PhysRevE.94.022134, krvcmar2016phase}.
+
+
+\begin{itemize}
+  \item \cite{huang2017holographic}: refs [42] and [12] contain many papers which study the phenomenon of pinpointing
+  a phase transition without using physical observables (i.e. entanglement, spectrum, fidelity instead.)
+  \item \cite{osborne2002entanglement}: for XY and Ising model, proves that next-to-nearest neighbor entanglement peaks
+  at critical point (though not nearest-neighbor entanglement.)
+\end{itemize}
+
+
 \subsection{Numerical results}
 
 We now check the validity of \autoref{eq:xi_propto_kappa} in the context of the CTMRG method for two-dimensional
@@ -281,62 +299,129 @@ classical systems. Similar checks were done for one-dimensional quantum systems 
 
 Directly checking \autoref{eq:xi_propto_kappa} yields $\kappa = 1.93$, see top left panel of
 \autoref{fig:support_for_kappa}.
+Under the assumption of \autoref{eq:xi_propto_kappa}, we have the following scaling laws at the critical point
+\begin{align}\label{eq:scaling_laws_order_param_free_energy_kappa}
+  M(m) & \propto m^{-\beta \kappa / \nu} \\
+  f(m) - f_{\text{exact}} & \propto m^{(2-\alpha)\kappa / \nu}
+\end{align}
+for the order parameter and the singular part of the free energy, respectively. A fit to $M(m)$ yields $\kappa = 1.93$
+and a fit to $f(m) - f_{\text{exact}}$ yields $\kappa = 1.90$. See the top right and bottom left panels of
+\autoref{fig:support_for_kappa}. Here, we have used $\beta = 1/8$, $\nu = 1$ and $\alpha = 0$ for the Ising model.
+
+We may use \autoref{eq:entropy_scaling_near_criticality} and \autoref{eq:classical_entropy} to check the
+relation
+\begin{equation}\label{eq:scaling_law_entropy_kappa}
+  S_{\text{classical}} \propto \frac{c\kappa}{6}\log m,
+\end{equation}
+which also yields $\kappa = 1.93$, where $c = 1/2$ for the Ising model. See bottom right panel of
+\autoref{fig:support_for_kappa}.
+
+We may directly verify the value of the central charge $c$ associated with the conformal field theory at the critical
+point by fitting to
+\begin{equation}\label{eq:entropy_vs_correlation_length}
+  S_{\text{classical}} \propto \frac{c}{6} \log \xi(m),
+\end{equation}
+which yields $c = 0.501$, shown in the left panel of \autoref{fig:entropy_vs_correlation_length}.
+
+The right panel of \autoref{fig:entropy_vs_correlation_length} shows the fit to the scaling relation in $N$ (or,
+equivalently the number of CTMRG steps $n$)
+\begin{equation}\label{eq:entropy_vs_N}
+  S_{\text{classical}} \propto \frac{c}{6} \log N,
+\end{equation}
+which yields $c = 0.498$.
+
+To verify if the point of maximum entropy
+\begin{equation}
+  T^{\star}(m) = \max_{T} S(T, m)
+\end{equation}
+is a good definition of the pseudocritical point, we fit the relation
+\begin{equation}\label{eq:T_pseudocrit_scaling_law_chi}
+  T^{\star} - T_c \propto \xi(m)^{-1 / \nu}.
+\end{equation}
+which yields $\widetilde{T}_c = 2.2692$ and $\nu = 0.997$ when the length scale $\xi(T^{\star}, m)$ is used, shown in
+the left panel of \autoref{fig:T_pseudocrit_chi_power_law_fit}. Here, $\widetilde{T}_c$ denotes the critical temperature
+found by minimising the norm of squares of a fit of the form given in \autoref{eq:T_pseudocrit_scaling_law_chi}. In
+finding the position of the pseudoccritical temperature $T^{\star}$, a tolerance of $10^{-6}$ was used.
+
+If, however, the length scale $\xi(m, T_c)$ at the actual critical point is used, a much worse fit is obtained, yielding
+$\widetilde{T}_c = 2.2691$ and $\nu = 0.90$, shown in the right panel of
+\autoref{fig:T_pseudocrit_chi_power_law_fit}.
+
+This signifies the value of $S(T^{\star}, m)$ is heavily dependent on
+$T^{\star}$, and using the length scale at the actual pseudocritical temperature found somehow offsets the error on its
+position.
+\todo[inline]{this is unclear.}
+
+Fitting instead to scaling relation of the pseudocritical temperature for finite $N$
+\begin{equation}
+  T^{\star} - T_c \propto N^{-1/\nu}
+\end{equation}
+yields \emph{values}. See \autoref{fig:T_pseudocrit_N_power_law_fit}.
+
+
+
 
 \begin{figure}
   \includegraphics[]{support_for_kappa.tikz}
-  \caption{Top left panel: }\label{fig:support_for_kappa}
+  \caption{Numerical evidence for \autoref{eq:xi_propto_kappa}, \autoref{eq:scaling_laws_order_param_free_energy_kappa},
+  \autoref{eq:scaling_law_entropy_kappa}, yielding, from left to right and top to bottom, $\kappa = \{ 1.93, 1.93, 1.90,
+  1.93 \}$.}\label{fig:support_for_kappa}
 \end{figure}
 
-\subsubsection{Scaling of the correlation length at $T_c$}
+\begin{figure}
+  \includegraphics[]{entropy_vs_correlation_length.tikz}
+  \caption{Left panel: numerical fit to \autoref{eq:entropy_vs_correlation_length}, yielding $c = 0.501$. Right panel:
+  numerical fit to \autoref{eq:entropy_vs_N}, yielding $c = 0.498$. }\label{fig:entropy_vs_correlation_length}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[]{T_pseudocrit_chi_power_law_fit.tikz}
+  \caption{Left panel: numerical fit to \autoref{eq:T_pseudocrit_scaling_law_chi} with $\xi(T^{\star}(m), m)$ used as
+  relevant length scale. Right panel: same fit but using $\xi(T_c, m)$, the correlation length at the exact critical
+  point.}\label{fig:T_pseudocrit_chi_power_law_fit}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[]{T_pseudocrit_N_power_law_fit.tikz}
+  \caption{}\label{fig:T_pseudocrit_N_power_law_fit}
+\end{figure}
+
 
 \begin{itemize}
-  \item correlation length scaling at $T_c$.
-  \item entropy scaling at $T_c$ (using exact value of $c$).
-  \item data collapse of order parameter (using exact value of $T_c$, $\beta$, $\nu$.)
+  \item validate pseudocritical point by matching it to pseudocritical point given by correlation length and
+  magnetization (how?)
   \item scaling of pseudocritical point $T^{\star} - T_c \propto m^{-\kappa / \nu}$.
 \end{itemize}
-
 
 \section{To do}
 
 Articles to cite:
 
 \begin{itemize}
-
-\item \cite{tagliacozzo2008scaling}: postulates exponent $\kappa$, provides numerical support and extracts basic results
-for 1D quantum systems with periodic boundary conditions. Also compares to nishino 2D results. Replicate his
-experiments? Because CTM seems to give different value for $\kappa$.
-\item \cite{andersson1999density}: establishes $\xi \propto m^{1.3}$ for correlation length of converged DMRG ground
-states of a gapless systems of free fermions.
 \item \cite{pirvu2012matrix}: assumes existence of $\kappa$ and compares finite-size scaling with finite-$m$ scaling
 for 1D quantum systems with periodic boundary conditions.
-\item \cite{pollmann2009theory}: proves expression for $\kappa$ in asymptotically large $m$ limit that depends only on
-central charge $c$, but with corrections of order $1 / \log(\chi)$.
-\item \cite{vidal2003entanglement}: Also finds $S_A \propto \log(L)$ for 1D quantum systems.
-\item \cite{calabrese2004entanglement}: proves relation $S_A \propto \mathcal{A}(c/6)\log(\xi)$, with $\mathcal{A}$
-the number of boundary points (verified for integrable 2d classical lattice systems).
 \item \cite{ercolessi2010exact}: proves relation for classical eight vertex model
 \end{itemize}
 
-
-
-
-\section{Finding the critical point by maximizing entropy}
-
-Articles to cite:
+Things to check
 
 \begin{itemize}
-  \item \cite{orus2012exploring}: contains lots of refs to first papers on corner transfer matrices (baxter).
-  Review paper on CTM methods, including mapping to 1D and entropy analogue, mapping to other algorithms.
-  \item \cite{okunishi2005real}: checks that corner hamiltonian yields same eigenvalue spectrum as reduced
-  density matrix of corresponding quantum system in the case of xxz model?
-  \item \cite{huang2017holographic}: theory and numerical support for directly extracting information from ctm spectrum,
-  equivalence to 1D quantum systems.
-  \item \cite{krvcmar2016phase}: characterisation of phase transition by ctm spectrum for $q = 6$ clock model.
-  \item \cite{PhysRevE.94.022134}: characterisation of phase transition by ctm spectrum for truncated tetrahedal model.
-  \item \cite{krvcmar2015reentrant}: characterisation of phase transition by ctm spectrum for Widom-Rowlinson models.
-  \item \cite{osborne2002entanglement}: for XY and Ising model, proves that next-to-nearest neighbor entanglement peaks
-  at critical point (though not nearest-neighbor entanglement.)
+  \item does $S(T^{\star}, m) \propto \log \xi(T^{\star}, m)$ hold?
+  \item does $S(T^{\star}, N) \propto \log N$ hold better than $S(T_c, N) \propto \log N$?
+  \item does fitting $T_c - T^{\star}(N)$ to $N$ give better results than fitting against
+  $S(T^{\star}, N)$?
+  \item how does $T^{\star}(m)$ from entropy compare against $T^{\star}$ found from max correlation length, or
+  vanishing magnetization?
+  \item optimize $\kappa$ for scaling of pseudo critical point?
+  \item find $T^{\star, N}$ for larger $N$ for ising model.
 
+\end{itemize}
 
+Plots to make:
+
+\begin{itemize}
+  \item $T^{\star} - T_c$ vs $N$
+  \item $S(T_c, N) \propto \log N$
+  \item generally, why should there be a difference between using entropy at critical point
+  vs using entropy at pseudocritical point? How does each one scale?
 \end{itemize}

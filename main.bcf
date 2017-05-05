@@ -125,7 +125,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortscheme</bcf:key>
-      <bcf:value>nty</bcf:value>
+      <bcf:value>none</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
@@ -711,30 +711,7 @@
   <bcf:sorting>
     <bcf:presort>mm</bcf:presort>
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
-      <bcf:sortitem order="2">0000</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sorting>
   <!-- DATA MODEL -->
@@ -2096,72 +2073,18 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">nishino1996corner</bcf:citekey>
-    <bcf:citekey order="2">nishino1996numerical</bcf:citekey>
-    <bcf:citekey order="3">nishino1996numerical</bcf:citekey>
-    <bcf:citekey order="4">baxter1978variational</bcf:citekey>
-    <bcf:citekey order="5">ostlund1995thermodynamic</bcf:citekey>
-    <bcf:citekey order="6">wolf2006quantum</bcf:citekey>
-    <bcf:citekey order="7">baxter1982exactly_correlation_length</bcf:citekey>
-    <bcf:citekey order="8">nishino1996numerical</bcf:citekey>
-    <bcf:citekey order="9">calabrese2004entanglement</bcf:citekey>
-    <bcf:citekey order="9">vidal2003entanglement</bcf:citekey>
-    <bcf:citekey order="9">ercolessi2010exact</bcf:citekey>
-    <bcf:citekey order="10">andersson1999density</bcf:citekey>
-    <bcf:citekey order="11">vidal2007classical</bcf:citekey>
-    <bcf:citekey order="12">tagliacozzo2008scaling</bcf:citekey>
-    <bcf:citekey order="13">pollmann2009theory</bcf:citekey>
-    <bcf:citekey order="14">calabrese2008entanglement</bcf:citekey>
-    <bcf:citekey order="15">nishino1997corner</bcf:citekey>
-    <bcf:citekey order="15">nishino1996corner</bcf:citekey>
-    <bcf:citekey order="16">white1992density</bcf:citekey>
-    <bcf:citekey order="17">baxter1968dimers</bcf:citekey>
-    <bcf:citekey order="17">baxter1978variational</bcf:citekey>
-    <bcf:citekey order="18">huang2017holographic</bcf:citekey>
-    <bcf:citekey order="19">orus2012exploring</bcf:citekey>
-    <bcf:citekey order="20">tagliacozzo2008scaling</bcf:citekey>
-    <bcf:citekey order="21">tagliacozzo2008scaling</bcf:citekey>
-    <bcf:citekey order="22">andersson1999density</bcf:citekey>
-    <bcf:citekey order="23">pirvu2012matrix</bcf:citekey>
-    <bcf:citekey order="24">pollmann2009theory</bcf:citekey>
-    <bcf:citekey order="25">vidal2003entanglement</bcf:citekey>
-    <bcf:citekey order="26">calabrese2004entanglement</bcf:citekey>
-    <bcf:citekey order="27">ercolessi2010exact</bcf:citekey>
-    <bcf:citekey order="28">orus2012exploring</bcf:citekey>
-    <bcf:citekey order="29">okunishi2005real</bcf:citekey>
-    <bcf:citekey order="30">huang2017holographic</bcf:citekey>
-    <bcf:citekey order="31">krvcmar2016phase</bcf:citekey>
-    <bcf:citekey order="32">PhysRevE.94.022134</bcf:citekey>
-    <bcf:citekey order="33">krvcmar2015reentrant</bcf:citekey>
-    <bcf:citekey order="34">osborne2002entanglement</bcf:citekey>
+    <bcf:citekey order="1">kosterlitz1973ordering</bcf:citekey>
+    <bcf:citekey order="1">kosterlitz1974critical</bcf:citekey>
+    <bcf:citekey order="2">mermin1966absence</bcf:citekey>
+    <bcf:citekey order="2">hohenberg1967existence</bcf:citekey>
+    <bcf:citekey order="3">frohlich1981kosterlitz</bcf:citekey>
+    <bcf:citekey order="4">villain1975theory</bcf:citekey>
+    <bcf:citekey order="5">lapilli2006universality</bcf:citekey>
   </bcf:section>
-  <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
+  <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
-      <bcf:sortitem order="2">0000</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sorting>
   </bcf:sortlist>

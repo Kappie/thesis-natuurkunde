@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+  \def \CorrLengthAtTPseudocrit {'plots/data/T_pseudocrit_chi10-56_method_entropy_correlation_length_at_T_pseudocrit_power_law_fit_q2.dat'}
+  \def \CorrLengthAtTCrit {'plots/data/T_pseudocrit_chi10-56_method_entropy_correlation_length_at_T_crit_power_law_fit_q2.dat'}
+
+  \begin{groupplot}[
+      group style={
+        group size=2 by 1,
+        % xlabels at=edge bottom,
+        ylabels at=edge left,
+        yticklabels at =edge left,
+      },
+      width=0.5\textwidth,
+      ylabel={$T^{\star} - \widetilde{T}_c$},
+    ]
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$\xi(T^{\star}(m), m)$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 1};
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$\xi(T_c, m)$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 1};
+
+  \end{groupplot}
+\end{tikzpicture}

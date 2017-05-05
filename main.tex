@@ -25,7 +25,7 @@
 \input{images/tikz_declarations}
 
 % Just to make sure: import these packages last.
-\usepackage[backend=biber, style=numeric, hyperref]{biblatex}
+\usepackage[backend=biber, style=numeric, sorting=none, hyperref]{biblatex}
 \usepackage{hyperref}
 
 \definecolor{orange}{RGB}{252,210,190}
@@ -89,7 +89,7 @@
 \begingroup
 \renewcommand{\afterchaptertitle}{\vskip1.5em}
 
-% \tableofcontents*
+\tableofcontents*
 \endgroup
 
 \mainmatter
@@ -108,8 +108,11 @@
 %
 %
 
-\chapter{Results}
-\input{chapters/results}
+% \chapter{Results}
+% \input{chapters/results}
+
+\chapter{Results clock model}
+\input{chapters/results_clock_model}
 
 % \appendix
 % \chapter{Correspondence of quantum and classical lattice
