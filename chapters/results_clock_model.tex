@@ -8,6 +8,13 @@ Kosterlitz and Thouless \cite{kosterlitz1973ordering, kosterlitz1974critical} re
 transition is characterized not by an order parameter which indicates a breaking of symmetry, but by the proliferation
 of topological defects.
 
+In the low-temperature phase, the two-point correlation functions decay with a power-law with varying
+exponent $\eta(T)$. At the transition, the correlation length diverges as
+\begin{equation}
+  \xi \propto \exp(A |T - T_c|^{-1/2}),
+\end{equation}
+with $A$ a non-universal constant. Above the transition, the two-point correlators decay exponentially.
+
 The XY model consists of planar rotors on the square lattice. It exhibits the Kosterlitz-Thouless (BK) phase transition
 and by the Mermin-Wagner-Hohenberg theorem the symmetry of the ground state is broken for all temperatures, due to
 the $O(2)$ (planar rotational) symmetry of the potential \cite{mermin1966absence, hohenberg1967existence}.
@@ -15,20 +22,55 @@ the $O(2)$ (planar rotational) symmetry of the potential \cite{mermin1966absence
 The $q$-state clock model possesses the discrete $\mathbb{Z}_q$ symmetry and is an interpolation between the Ising
 model, which corresponds to $q = 2$, and the XY model, which corresponds to $q \to \infty$. Its energy function is given
 by
+\begin{equation}\label{eq:hamiltonian_clock_model}
+  H_q = -\sum_{\langle i j \rangle} \cos(\theta_i - \theta_j),
+\end{equation}
+with the spins taking the values
 \begin{equation}
-  H_q = -\sum_{\langle i j \rangle} \cos(\theta_i - \theta_j).
+  \theta = \frac{2 \pi n}{q} \qquad n \in \{ 0, \dots, q-1 \}.
 \end{equation}
 
 It has been proven that for high enough $q$, this model indeed exhibits a Kosterlitz-Thouless transition
-\cite{frohlich1981kosterlitz}.
+\cite{frohlich1981kosterlitz}. Furthermore, it has been proven that for $q \geq 5$, a general model with $\mathbb{Z}_q$
+symmetry (of which \autoref{eq:hamiltonian_clock_model} is a special case) has three phases: a symmetry broken phase for
+$T < T_1$, an intermediate phase with power law decay of the correlation function, and a high-temperature phase with
+exponential decay of the correlation function for $T > T_2$ \cite{cardy1980general}.
 
-In the Villain formulation of the potential \cite{villain1975theory}, it has been proven that the model has two phase
-transitions for $q \geq 5$: a symmetry broken phase for $T < T_1$, an intermediate phase with power law decay of the
-correlation function, and a high-temperature phase with exponential decay of the correlation function for $T > T_2$. The
-transition at $T_2$ is a BK-transition, and for a broad range of temperatures, the thermodynamic behaviour becomes
-identical to the XY model for high enough $q$ \cite{lapilli2006universality}.
+In the Villain formulation of the potential \cite{villain1975theory}, it has been proven that the transition at $T_2$ is
+a BK-transition \cite{jose1977renormalization}, and numerical results suggest that for a broad range of temperatures,
+the thermodynamic behaviour becomes identical to the XY model for high enough $q$ \cite{lapilli2006universality}.
 
+For the model in \autoref{eq:hamiltonian_clock_model}, the phase diagram and the value $q_c$ for which it first exhibits
+a BK-transition are not precisely known, making it a good candidate for numerical investigation. We briefly summarise
+previous numerical results below.
 
-\section{Previous work}
+\section{Previous numerical results}
+
+\begin{itemize}
+  \item \cite{chatelain2014dmrg} 2014 claims BK-transition for $q = 5$ by discrete helicity modulus using TMRG.
+  \item \cite{kumano2013response} 2013 claims BK-transition for $q = 5$ by discrete helicity modelus using Monte Carlo.
+  Shows infinitesimal helicity modulus does not vanish for finite $q$.
+  \item \cite{borisenko2011numerical} 2011 most comprehensive study? Claims BK-transition for $q = 5$ by calculating
+  Binder cumulants + stuff I don't understand using Monte Carlo.
+  \item \cite{borisenko2012phase} 2012 don't understand. Some numerical and theoretical validations for certain
+  assumptions for high $q$.
+  \item \cite{baek2010non} 2010 claims that $q = 5$ exhibits non-KT-transition, based on the fact that their (wrong)
+  definition of the helicity modulus does not vanish.
+  \item \cite{baek2013residual} 2013 claims that $q = 5$ exhibits weaker cousin of KT-transition, based on things I do
+  not fully understand, but among others on the correct, discrete definition of the helicity modulus (true?).
+  \item \cite{kim2017partition} 2017 uses partition function zeros (don't understand that concept) to show that the
+  behaviour of zeros of the $q = 5$ model significantly departs from the behaviour of $q \geq 6$.
+\end{itemize}
 
 \section{Results}
+
+What are the results that really should be in there? Focus on $q = 5, 6$.
+
+\begin{itemize}
+  \item show that scaling relation holds for magnetization and correlation length and calculate exponent. Should vary as
+  $\eta \propto T$ in the massless phase and probably (?) $\eta(T_2) = 1/4$ and $\eta(T_1) \propto 1/q^2$ or something.
+  \item show that $c = 1$ is massless phase.
+  \item show that $T^{\star} - T_c$ is compatible with correlation length at essential singularity (but what about
+  logarithmic corrections...?)
+  \item show data collapse of order parameter? Still don't understand this completely.
+\end{itemize}

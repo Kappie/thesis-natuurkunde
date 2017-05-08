@@ -307,6 +307,7 @@ Under the assumption of \autoref{eq:xi_propto_kappa}, we have the following scal
 for the order parameter and the singular part of the free energy, respectively. A fit to $M(m)$ yields $\kappa = 1.93$
 and a fit to $f(m) - f_{\text{exact}}$ yields $\kappa = 1.90$. See the top right and bottom left panels of
 \autoref{fig:support_for_kappa}. Here, we have used $\beta = 1/8$, $\nu = 1$ and $\alpha = 0$ for the Ising model.
+\todo[inline]{Tell that the $\kappa$ law is indeed valid, since it is a good fit.}
 
 We may use \autoref{eq:entropy_scaling_near_criticality} and \autoref{eq:classical_entropy} to check the
 relation
@@ -347,16 +348,22 @@ If, however, the length scale $\xi(m, T_c)$ at the actual critical point is used
 $\widetilde{T}_c = 2.2691$ and $\nu = 0.90$, shown in the right panel of
 \autoref{fig:T_pseudocrit_chi_power_law_fit}.
 
-This signifies the value of $S(T^{\star}, m)$ is heavily dependent on
+This signifies the value of $\xi(T^{\star}, m)$ is heavily dependent on
 $T^{\star}$, and using the length scale at the actual pseudocritical temperature found somehow offsets the error on its
 position.
 \todo[inline]{this is unclear.}
 
-Fitting instead to scaling relation of the pseudocritical temperature for finite $N$
+Assuming \autoref{eq:xi_propto_kappa}, \autoref{eq:T_pseudocrit_scaling_law_chi} becomes
 \begin{equation}
-  T^{\star} - T_c \propto N^{-1/\nu}
+  T^{\star} - T_c \propto m^{-\kappa / \nu},
 \end{equation}
-yields \emph{values}. See \autoref{fig:T_pseudocrit_N_power_law_fit}.
+which yields \emph{values}, shown in the bottom left panel of \autoref{fig:T_pseudocrit_chi_power_law_fit}.
+
+As a cross check, we can fit instead to scaling relation of the pseudocritical temperature for finite $N$
+\begin{equation}
+  T^{\star} - T_c \propto N^{-1/\nu},
+\end{equation}
+yielding \emph{values}. See the bottom right panel of \autoref{fig:T_pseudocrit_chi_power_law_fit}.
 
 
 
@@ -381,10 +388,10 @@ yields \emph{values}. See \autoref{fig:T_pseudocrit_N_power_law_fit}.
   point.}\label{fig:T_pseudocrit_chi_power_law_fit}
 \end{figure}
 
-\begin{figure}
-  \includegraphics[]{T_pseudocrit_N_power_law_fit.tikz}
-  \caption{}\label{fig:T_pseudocrit_N_power_law_fit}
-\end{figure}
+% \begin{figure}
+%   \includegraphics[]{T_pseudocrit_N_power_law_fit.tikz}
+%   \caption{}\label{fig:T_pseudocrit_N_power_law_fit}
+% \end{figure}
 
 
 \begin{itemize}
