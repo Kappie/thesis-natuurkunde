@@ -1,0 +1,66 @@
+\section{Abstract}
+
+We describe the technical details of the algorithms used to compute quantities of interest.
+We report the convergence behaviour of the algorithms and discuss validity and sources of error.
+
+\section{Technical details}
+lala
+
+\section{Convergence criteria}
+
+\subsection{Simulations with finite bond dimension}
+The convergence of the CTMRG algorithm with fixed bond dimension $m$ (the infinite system algorithm) can be defined
+in multiple ways (\emph{cite}). In this thesis, the convergence after step $i$ of the algorithm is defined as
+\begin{equation}
+  c_i = \sum_{\alpha = 1}^{m} | s_{\alpha}^{(i)} - s_{\alpha}^{(i - 1)} |,
+\end{equation}
+where $s_{\alpha}$ are the singular values of the corner transfer matrix $A$. If the convergence falls below some
+threshold $\epsilon$, the algorithm terminates.
+
+The assumption is that once the singular values stop changing to some precision, the optimal projection is sufficiently
+close to its fixed point and the transfer matrices $A$ and $T$ represent an environment only limited by the length scale
+given by $m$, i.e.
+\begin{equation}
+  \xi(m) \ll N
+\end{equation}
+is satisfied.
+
+The convergence of the order parameter of the Ising model is shown in
+\autoref{fig:convergence_order_parameter_finite_chi}.
+
+\todo[inline]{Cross check with correlation length, report on boundary conditions}
+
+\begin{figure}
+  \includegraphics[]{convergence_order_parameter_finite_chi.tikz}
+  \caption{hallootjes}\label{fig:convergence_order_parameter_finite_chi}
+\end{figure}
+
+
+\subsection{Simulations with finite system size}
+In the finite-system algorithm, we require
+\begin{equation}
+  N \ll \xi(m),
+\end{equation}
+so the question becomes at which $m$ the results are sufficiently converged in $m$. Throughout this work, we have used
+the residual probability (also called truncation error)
+\begin{equation}
+  P(m)^{(i)} = \frac{\sum_{\alpha = m + 1}^{dm} (s_{\alpha}^{(i)})^2 }{ \sum_{\alpha = 1}^{dm} (s_{\alpha}^{(i)})^2 },
+\end{equation}
+which quantifies the fraction of the spectrum of the corner transfer matrix that is thrown away, as a measure of how
+accurate the transfer matrices represent the finite system of size $N$. Here, $d$ is the
+dimension of the local tensors ($d = 2$ for the Ising model).
+
+If, for a given $m$, we have
+\begin{equation}
+  P(m) < P_{\text{max}}
+\end{equation}
+we deem the result accurate enough.
+
+In the limit $m \to d^n$, with
+\begin{equation}
+  n = \frac{N - 1}{2}
+\end{equation}
+the number of algorithm steps, we obtain the exact result for the transfer matrices and hence the partition function,
+i.e. $P(m) \to 0$.
+
+To justify that for small enough $P_{\max}$, we obtain good results for a wide range of $N$, figure bla bla.
