@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+  \def \convergenceVsN {'plots/data/convergence_vs_n_q2_Tcrit_chi10-50.dat'}
+  \def \orderParameterVsN {'plots/data/order_parameter_diff_vs_n_q2_Tcrit_chi10-50.dat'}
+
+  \begin{groupplot}[
+      group style = {
+        group size = 2 by 3,
+      },
+      width = 0.5*\textwidth,
+    ]
+
+    \nextgroupplot[
+      legend style = {
+        legend to name = grouplegend,
+      },
+    ]
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5}; \addlegendentry{$\m = 50$}
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4}; \addlegendentry{$\m = 42$}
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3}; \addlegendentry{$\m = 34$}
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2}; \addlegendentry{$\m = 26$}
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1}; \addlegendentry{$\m = 18$}
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0}; \addlegendentry{$\m = 10$}
+
+    \nextgroupplot
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+
+    \nextgroupplot
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+
+    \nextgroupplot
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+
+    \nextgroupplot
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+
+  \end{groupplot}
+\end{tikzpicture}

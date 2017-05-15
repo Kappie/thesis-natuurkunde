@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 MAY 2017 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 MAY 2017 12:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2862,14 +2862,165 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 
 ]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 43.
+ine 44.
+ (./plots/convergence_finite_chi.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
 
-(./plots/convergence_order_parameter_finite_chi.tikz) [2]
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+) [2] [3]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 67.
+(Font)              scaled to size 7.3pt on input line 68.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 67.
-) [3]
+(Font)              scaled to size 5.5pt on input line 68.
+)
+[4]
 
 LaTeX Warning: Empty bibliography on input line 134.
 
@@ -2888,13 +3039,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50581 strings out of 493014
- 1103694 string characters out of 6133351
- 1707814 words of memory out of 5000000
- 53248 multiletter control sequences out of 15000+600000
+ 51060 strings out of 493014
+ 1117949 string characters out of 6133351
+ 1788867 words of memory out of 5000000
+ 53721 multiletter control sequences out of 15000+600000
  274608 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,100p,10417b,1606s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,12n,112p,10417b,2302s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
 enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
@@ -2906,10 +3057,10 @@ baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/t
 xsys.pfb>
-Output written on main.pdf (4 pages, 94565 bytes).
+Output written on main.pdf (5 pages, 146275 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
