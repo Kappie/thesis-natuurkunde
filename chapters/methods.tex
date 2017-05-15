@@ -4,7 +4,19 @@ We describe the technical details of the algorithms used to compute quantities o
 We report the convergence behaviour of the algorithms and discuss validity and sources of error.
 
 \section{Technical details}
-lala
+For the models treated in this thesis, the corner transfer matrix $A$ and the row-to-row transfer matrix $T$ are
+symmetric. But due to the accumulation of machine-precision sized errors in the matrix multiplication and singular value
+decomposition, this will, after many algorithm steps, no longer be the case. In order for results to remain valid, we
+manually enforce symmetricity after each step.
+
+The tensor network contractions at each algorithm step will cause the elements of $A$ and $T$ to tend to infinity, which
+means that they will at some point exceed the maximum value of a floating point number as it can be stored in memory.
+But because the elements of $A$ and $T$ represent Boltzmann weights, they can be scaled by a constant factor, which
+allows us to prevent this overflow if we use a suitable scaling. For example by requiring that
+\begin{equation}
+  \tr A^4 = 1,
+\end{equation}
+so that the interpretation of $A^4$ as a reduced density matrix of an effective one-dimensional quantum is valid.
 
 \section{Convergence criteria}
 
