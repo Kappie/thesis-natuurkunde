@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 MAY 2017 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 MAY 2017 12:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2860,214 +2860,252 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
  [1
 
 
-] (./plots/convergence_finite_chi.tikz
+]
+
+LaTeX Warning: Reference `fig:convergence_finite_chi' on page 2 undefined on in
+put line 42.
+
+(./plots/quantities_vs_tolerance.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-10,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 )
-Overfull \hbox (10.12537pt too wide) in paragraph at lines 87--42
-[][] 
- []
-
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 49.
-[2] [3]
+ine 54.
+ [2]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 69.
+(Font)              scaled to size 7.3pt on input line 74.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 69.
-) [4]
+(Font)              scaled to size 5.5pt on input line 74.
+ [3]) [4]
 
 LaTeX Warning: Empty bibliography on input line 134.
 
@@ -3081,18 +3119,22 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 436422FDC6CB55828157147BCF5707AE;404.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51098 strings out of 493014
- 1118685 string characters out of 6133351
- 1866361 words of memory out of 5000000
- 53759 multiletter control sequences out of 15000+600000
+ 51127 strings out of 493014
+ 1119216 string characters out of 6133351
+ 1729098 words of memory out of 5000000
+ 53788 multiletter control sequences out of 15000+600000
  274608 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,112p,10417b,2368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,19n,112p,12719b,2367s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
 enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
@@ -3102,12 +3144,13 @@ BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/t
-xsys.pfb>
-Output written on main.pdf (5 pages, 177483 bytes).
+/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts
+/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.p
+fb>
+Output written on main.pdf (5 pages, 107969 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

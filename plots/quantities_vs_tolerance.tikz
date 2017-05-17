@@ -1,0 +1,82 @@
+\begin{tikzpicture}
+  \def \orderParameterVsTolerance {'plots/data/order_parameter_diff_vs_tolerance_q2_Tcrit_chi10-120.dat'}
+  \def \freeEnergyVsTolerance {'plots/data/free_energy_abs_diff_vs_tolerance_q2_Tcrit_chi10-120.dat'}
+  \def \entropyVsTolerance {'plots/data/entropy_abs_diff_vs_tolerance_q2_Tcrit_chi10-120.dat'}
+  \def \correlationLengthVsTolerance {'plots/data/correlation_length_abs_diff_vs_tolerance_q2_Tcrit_chi10-120.dat'}
+
+
+  \begin{groupplot}[
+      group style = {
+        group size = 2 by 2,
+        xlabels at = edge bottom,
+        xticklabels at = edge bottom,
+        ylabels at = all,
+        horizontal sep = 1.75cm,
+        vertical sep = 0.75cm,
+      },
+      width = 0.5*\textwidth,
+      xlabel={$\epsilon$},
+      ymode=log,
+      xmode=log,
+      % scaled x ticks = false
+    ]
+
+    \nextgroupplot[
+      legend style = {
+        legend to name = grouplegend,
+        legend entries = {$m = 10$, $m = 20$, $m = 30$, $m = 40$, $m = 60$, $m = 80$, $m = 100$, $m = 120$},
+      },
+      transpose legend,
+      legend columns = 2,
+      ylabel={$\Delta M$},
+    ]
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 7};
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 6};
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \orderParameterVsTolerance index 0};
+
+    \nextgroupplot[
+      ylabel={$\Delta f$},
+    ]
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 7};
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 6};
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \freeEnergyVsTolerance index 0};
+
+    \nextgroupplot[
+      ylabel={$\Delta S$},
+    ]
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 7};
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 6};
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsTolerance index 0};
+
+    \nextgroupplot[
+      ylabel={$\Delta \xi$},
+    ]
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 7};
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 6};
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 5};
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 4};
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 3};
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 2};
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 1};
+      \addplot+[] gnuplot [raw gnuplot] { plot \correlationLengthVsTolerance index 0};
+
+  \end{groupplot}
+
+  % \node at ($(group c1r3) + (.5\textwidth,0)$) {\pgfplotslegendfromname{grouplegend}};
+  \node at ($(group c1r2)!0.5!(group c2r2) + (0, -3cm)$) {\pgfplotslegendfromname{grouplegend}};
+\end{tikzpicture}

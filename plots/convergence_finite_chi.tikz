@@ -1,6 +1,9 @@
 \begin{tikzpicture}
   \def \convergenceVsN {'plots/data/convergence_vs_n_q2_Tcrit_chi10-50.dat'}
   \def \orderParameterVsN {'plots/data/order_parameter_diff_vs_n_q2_Tcrit_chi10-50.dat'}
+  \def \freeEnergyVsN {'plots/data/free_energy_abs_diff_vs_n_q2_Tcrit_chi10-50.dat'}
+  \def \entropyVsN {'plots/data/entropy_abs_diff_vs_n_q2_Tcrit_chi10-50.dat'}
+  \def \correlationLengthVsN {'plots/data/correlation_length_abs_diff_vs_n_q2_Tcrit_chi10-50.dat'}
 
   \begin{groupplot}[
       group style = {
@@ -17,71 +20,68 @@
       scaled x ticks = false
     ]
 
+    \pgfplotsset{
+      every line/.style={
+        thick,
+      }
+    }
+
     \nextgroupplot[
       legend style = {
         % legend columns = -1,
         legend to name = grouplegend,
         legend entries = {$m = 50$, $m = 42$, $m = 34$, $m = 26$, $m = 18$, $m = 10$},
       },
-      ylabel={$M$},
+      ylabel={$c_n$},
     ]
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
 
     \nextgroupplot[
-      ylabel={lalalal},
+      ylabel={$\Delta M$},
     ]
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 5};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 4};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 0};
 
     \nextgroupplot[
-      ylabel={lalalal}
+      ylabel={$\Delta f$}
     ]
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 5};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 4};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 0};
+    %
+    \nextgroupplot[
+      ylabel={$\Delta S$}
+    ]
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 5};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 4};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 0};
 
     \nextgroupplot[
-      ylabel={lalala}
+      ylabel={$\Delta \xi$}
     ]
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 5};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 4};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 0};
 
-    \nextgroupplot{
-      ylabel={lalalal}
-    }
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
-
-    \nextgroupplot[
-      ylabel={lalalal}
-    ]
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
-      \addplot+[] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
 
   \end{groupplot}
-  \node at ($(group c1r1) + (0,0cm)$) {\pgfplotslegendfromname{grouplegend}};
+  \node at ($(group c1r3) + (.5\textwidth,0)$) {\pgfplotslegendfromname{grouplegend}};
 \end{tikzpicture}
