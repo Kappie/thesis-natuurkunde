@@ -1,5 +1,4 @@
 \begin{tikzpicture}
-  \def \convergenceVsN {'plots/data/convergence_vs_n_q2_Tcrit_chi10-50.dat'}
   \def \orderParameterVsN {'plots/data/order_parameter_diff_vs_n_q2_Tcrit_chi10-50.dat'}
   \def \freeEnergyVsN {'plots/data/free_energy_abs_diff_vs_n_q2_Tcrit_chi10-50.dat'}
   \def \entropyVsN {'plots/data/entropy_abs_diff_vs_n_q2_Tcrit_chi10-50.dat'}
@@ -7,7 +6,7 @@
 
   \begin{groupplot}[
       group style = {
-        group size = 2 by 3,
+        group size = 2 by 2,
         xlabels at = edge bottom,
         xticklabels at = edge bottom,
         ylabels at = all,
@@ -20,29 +19,8 @@
       scaled x ticks = false
     ]
 
-    \pgfplotsset{
-      every line/.style={
-        thick,
-      }
-    }
-
     \nextgroupplot[
-      legend style = {
-        % legend columns = -1,
-        legend to name = grouplegend,
-        legend entries = {$m = 50$, $m = 42$, $m = 34$, $m = 26$, $m = 18$, $m = 10$},
-      },
-      ylabel={$c_n$},
-    ]
-      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
-      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
-      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
-      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
-      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
-      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
-
-    \nextgroupplot[
-      ylabel={$\Delta M$},
+      ylabel={$\Delta M_{\text{rel}}$},
     ]
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 5};
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 4};
@@ -52,7 +30,7 @@
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsN index 0};
 
     \nextgroupplot[
-      ylabel={$\Delta f$}
+      ylabel={$\Delta f_{\text{rel}}$}
     ]
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 5};
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 4};
@@ -62,7 +40,7 @@
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsN index 0};
     %
     \nextgroupplot[
-      ylabel={$\Delta S$}
+      ylabel={$\Delta S_{\text{rel}}$}
     ]
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 5};
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 4};
@@ -72,7 +50,7 @@
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsN index 0};
 
     \nextgroupplot[
-      ylabel={$\Delta \xi$}
+      ylabel={$\Delta \xi_{\text{rel}}$}
     ]
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 5};
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 4};
@@ -81,7 +59,5 @@
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 1};
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsN index 0};
 
-
   \end{groupplot}
-  \node at ($(group c1r3) + (.5\textwidth,0)$) {\pgfplotslegendfromname{grouplegend}};
 \end{tikzpicture}

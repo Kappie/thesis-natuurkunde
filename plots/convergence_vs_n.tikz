@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+  \def \convergenceVsN {'plots/data/convergence_vs_n_q2_Tcrit_chi10-50.dat'}
+
+  \begin{axis}[
+      xlabel={$n$},
+      ylabel={$c_n$},
+      ymode=log,
+      % scaled x ticks = false,
+      %
+      legend style = {
+        legend entries = {$m = 10$, $m = 18$, $m = 26$, $m = 34$, $m = 42$, $m = 50$},
+      },
+      height=0.5\textheight,
+      width=\textwidth,
+    ]
+
+    \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 5};
+    \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 4};
+    \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 3};
+    \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 2};
+    \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 1};
+    \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \convergenceVsN index 0};
+
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,56 @@
+\begin{tikzpicture}
+  \def \orderParameterVsChi {'plots/data/order_parameter_abs_rel_diff_vs_chi_q2_Tcrit_n200-2200.dat'}
+  \def \freeEnergyVsChi {'plots/data/free_energy_abs_rel_diff_vs_chi_q2_Tcrit_n200-2200.dat'}
+  \def \entropyVsChi {'plots/data/entropy_abs_rel_diff_vs_chi_q2_Tcrit_n200-2200.dat'}
+  \def \correlationLengthVsChi {'plots/data/correlation_length_abs_rel_diff_vs_chi_q2_Tcrit_n200-2200.dat'}
+
+  \begin{groupplot}[
+      group style = {
+        group size = 2 by 2,
+        xlabels at = edge bottom,
+        xticklabels at = edge bottom,
+        ylabels at = all,
+        horizontal sep = 1.75cm,
+        vertical sep = 0.75cm,
+      },
+      width = 0.5*\textwidth,
+      xlabel={$m$},
+      ymode=log,
+      xmode=log,
+      scaled x ticks = false
+    ]
+
+    \nextgroupplot[
+      ylabel={$\Delta M_{\text{rel}}$},
+    ]
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsChi index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsChi index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsChi index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsChi index 0};
+
+    \nextgroupplot[
+      ylabel={$\Delta f_{\text{rel}}$}
+    ]
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsChi index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsChi index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsChi index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \freeEnergyVsChi index 0};
+    %
+    \nextgroupplot[
+      ylabel={$\Delta S_{\text{rel}}$}
+    ]
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsChi index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsChi index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsChi index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \entropyVsChi index 0};
+
+    \nextgroupplot[
+      ylabel={$\Delta \xi_{\text{rel}}$}
+    ]
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsChi index 3};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsChi index 2};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsChi index 1};
+      \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsChi index 0};
+
+  \end{groupplot}
+\end{tikzpicture}

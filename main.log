@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 MAY 2017 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  19 MAY 2017 14:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1903,6 +1903,26 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@subfigure=\count184
 \c@subtable=\count185
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count186
+\l_MT_multwidth_dim=\dimen285
+\origjot=\skip191
+\l_MT_shortvdotswithinadjustabove_dim=\dimen286
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen287
+\l_MT_above_intertext_sep=\dimen288
+\l_MT_below_intertext_sep=\dimen289
+\l_MT_above_shortintertext_sep=\dimen290
+\l_MT_below_shortintertext_sep=\dimen291
+)
 (./images/tikz_declarations.tex
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -1912,9 +1932,9 @@ Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 \t@pgfplots@toka=\toks43
 \t@pgfplots@tokb=\toks44
 \t@pgfplots@tokc=\toks45
-\pgfplots@tmpa=\dimen285
-\c@pgfplots@coordindex=\count186
-\c@pgfplots@scanlineindex=\count187
+\pgfplots@tmpa=\dimen292
+\c@pgfplots@coordindex=\count187
+\c@pgfplots@scanlineindex=\count188
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1930,7 +1950,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count188
+\c@pgfmathroundto@lastzeros=\count189
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
 .tex
@@ -1940,13 +1960,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count189
+\c@pgfplotsarray@tmp=\count190
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count190
+\c@pgfplotstable@counta=\count191
 \t@pgfplotstable@a=\toks46
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -1959,7 +1979,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count191
+\c@pgfplotslibrarysurf@no=\count192
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1991,14 +2011,14 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen286
-\pgfdecoratedremainingdistance=\dimen287
-\pgfdecoratedinputsegmentcompleteddistance=\dimen288
-\pgfdecoratedinputsegmentremainingdistance=\dimen289
-\pgf@decorate@distancetomove=\dimen290
-\pgf@decorate@repeatstate=\count192
-\pgfdecorationsegmentamplitude=\dimen291
-\pgfdecorationsegmentlength=\dimen292
+\pgfdecoratedcompleteddistance=\dimen293
+\pgfdecoratedremainingdistance=\dimen294
+\pgfdecoratedinputsegmentcompleteddistance=\dimen295
+\pgfdecoratedinputsegmentremainingdistance=\dimen296
+\pgf@decorate@distancetomove=\dimen297
+\pgf@decorate@repeatstate=\count193
+\pgfdecorationsegmentamplitude=\dimen298
+\pgfdecorationsegmentlength=\dimen299
 )
 \tikz@lib@dec@box=\box45
 )
@@ -2010,13 +2030,13 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count193
-\pgfplots@xmin@reg=\dimen293
-\pgfplots@xmax@reg=\dimen294
-\pgfplots@ymin@reg=\dimen295
-\pgfplots@ymax@reg=\dimen296
-\pgfplots@zmin@reg=\dimen297
-\pgfplots@zmax@reg=\dimen298
+\pgfplots@numplots=\count194
+\pgfplots@xmin@reg=\dimen300
+\pgfplots@xmax@reg=\dimen301
+\pgfplots@ymin@reg=\dimen302
+\pgfplots@ymax@reg=\dimen303
+\pgfplots@zmin@reg=\dimen304
+\pgfplots@zmax@reg=\dimen305
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -2043,37 +2063,37 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count194
-\l_tmpa_int=\count266
-\l_tmpb_int=\count267
-\g_tmpa_int=\count268
-\g_tmpb_int=\count269
+\c_max_int=\count266
+\l_tmpa_int=\count267
+\l_tmpb_int=\count268
+\g_tmpa_int=\count269
+\g_tmpb_int=\count270
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count270
+\g__prg_map_int=\count271
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count271
-\l__iow_target_count_int=\count272
-\l__iow_current_line_int=\count273
-\l__iow_current_word_int=\count274
-\l__iow_current_indentation_int=\count275
+\l_iow_line_count_int=\count272
+\l__iow_target_count_int=\count273
+\l__iow_current_line_int=\count274
+\l__iow_current_word_int=\count275
+\l__iow_current_indentation_int=\count276
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen299
-\c_max_dim=\dimen300
-\l_tmpa_dim=\dimen301
-\l_tmpb_dim=\dimen302
-\g_tmpa_dim=\dimen303
-\g_tmpb_dim=\dimen304
-\c_zero_skip=\skip191
-\c_max_skip=\skip192
-\l_tmpa_skip=\skip193
-\l_tmpb_skip=\skip194
-\g_tmpa_skip=\skip256
-\g_tmpb_skip=\skip257
+\c_zero_dim=\dimen306
+\c_max_dim=\dimen307
+\l_tmpa_dim=\dimen308
+\l_tmpb_dim=\dimen309
+\g_tmpa_dim=\dimen310
+\g_tmpb_dim=\dimen311
+\c_zero_skip=\skip192
+\c_max_skip=\skip193
+\l_tmpa_skip=\skip194
+\l_tmpb_skip=\skip256
+\g_tmpa_skip=\skip257
+\g_tmpb_skip=\skip258
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
@@ -2081,18 +2101,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count276
-\l_keys_choice_int=\count277
+\g__keyval_level_int=\count277
+\l_keys_choice_int=\count278
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count278
-\c__fp_middle_shift_int=\count279
-\c__fp_trailing_shift_int=\count280
-\c__fp_big_leading_shift_int=\count281
-\c__fp_big_middle_shift_int=\count282
-\c__fp_big_trailing_shift_int=\count283
-\c__fp_Bigg_leading_shift_int=\count284
-\c__fp_Bigg_middle_shift_int=\count285
-\c__fp_Bigg_trailing_shift_int=\count286
+\c__fp_leading_shift_int=\count279
+\c__fp_middle_shift_int=\count280
+\c__fp_trailing_shift_int=\count281
+\c__fp_big_leading_shift_int=\count282
+\c__fp_big_middle_shift_int=\count283
+\c__fp_big_trailing_shift_int=\count284
+\c__fp_Bigg_leading_shift_int=\count285
+\c__fp_Bigg_middle_shift_int=\count286
+\c__fp_Bigg_trailing_shift_int=\count287
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box46
 \l_tmpa_box=\box47
@@ -2101,13 +2121,13 @@ L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \g_tmpb_box=\box50
 L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_internal_box=\box51
-\l__coffin_internal_dim=\dimen305
-\l__coffin_offset_x_dim=\dimen306
-\l__coffin_offset_y_dim=\dimen307
-\l__coffin_x_dim=\dimen308
-\l__coffin_y_dim=\dimen309
-\l__coffin_x_prime_dim=\dimen310
-\l__coffin_y_prime_dim=\dimen311
+\l__coffin_internal_dim=\dimen312
+\l__coffin_offset_x_dim=\dimen313
+\l__coffin_offset_y_dim=\dimen314
+\l__coffin_x_dim=\dimen315
+\l__coffin_y_dim=\dimen316
+\l__coffin_x_prime_dim=\dimen317
+\l__coffin_y_prime_dim=\dimen318
 \c_empty_coffin=\box52
 \l__coffin_aligned_coffin=\box53
 \l__coffin_aligned_internal_coffin=\box54
@@ -2116,41 +2136,41 @@ L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_display_coffin=\box57
 \l__coffin_display_coord_coffin=\box58
 \l__coffin_display_pole_coffin=\box59
-\l__coffin_display_offset_dim=\dimen312
-\l__coffin_display_x_dim=\dimen313
-\l__coffin_display_y_dim=\dimen314
+\l__coffin_display_offset_dim=\dimen319
+\l__coffin_display_x_dim=\dimen320
+\l__coffin_display_y_dim=\dimen321
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen315
-\l__box_bottom_dim=\dimen316
-\l__box_left_dim=\dimen317
-\l__box_right_dim=\dimen318
-\l__box_top_new_dim=\dimen319
-\l__box_bottom_new_dim=\dimen320
-\l__box_left_new_dim=\dimen321
-\l__box_right_new_dim=\dimen322
+\l__box_top_dim=\dimen322
+\l__box_bottom_dim=\dimen323
+\l__box_left_dim=\dimen324
+\l__box_right_dim=\dimen325
+\l__box_top_new_dim=\dimen326
+\l__box_bottom_new_dim=\dimen327
+\l__box_left_new_dim=\dimen328
+\l__box_right_new_dim=\dimen329
 \l__box_internal_box=\box60
-\l__coffin_bounding_shift_dim=\dimen323
-\l__coffin_left_corner_dim=\dimen324
-\l__coffin_right_corner_dim=\dimen325
-\l__coffin_bottom_corner_dim=\dimen326
-\l__coffin_top_corner_dim=\dimen327
-\l__coffin_scaled_total_height_dim=\dimen328
-\l__coffin_scaled_width_dim=\dimen329
+\l__coffin_bounding_shift_dim=\dimen330
+\l__coffin_left_corner_dim=\dimen331
+\l__coffin_right_corner_dim=\dimen332
+\l__coffin_bottom_corner_dim=\dimen333
+\l__coffin_top_corner_dim=\dimen334
+\l__coffin_scaled_total_height_dim=\dimen335
+\l__coffin_scaled_width_dim=\dimen336
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count287
+\l__driver_color_stack_int=\count288
 \l__driver_tmp_box=\box61
 ))
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count288
-\l__xparse_m_args_int=\count289
-\l__xparse_mandatory_args_int=\count290
-\l__xparse_processor_int=\count291
-\l__xparse_v_nesting_int=\count292
+\l__xparse_current_arg_int=\count289
+\l__xparse_m_args_int=\count290
+\l__xparse_mandatory_args_int=\count291
+\l__xparse_processor_int=\count292
+\l__xparse_v_nesting_int=\count293
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
 Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
@@ -2273,7 +2293,7 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 s.colorbrewer.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorb
 rewer.code.tex))
-\plotWidthTwoColumn=\skip258
+\plotWidthTwoColumn=\skip259
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.markings.code.tex
@@ -2292,18 +2312,18 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen330
-\pgfarrowlength=\dimen331
-\pgfarrowwidth=\dimen332
-\pgfarrowlinewidth=\dimen333
+\pgfarrowinset=\dimen337
+\pgfarrowlength=\dimen338
+\pgfarrowwidth=\dimen339
+\pgfarrowlinewidth=\dimen340
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.patchplots.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.groupplots.code.tex
-\pgfplots@group@current@plot=\count293
-\pgfplots@group@current@row=\count294
-\pgfplots@group@current@column=\count295
+\pgfplots@group@current@plot=\count294
+\pgfplots@group@current@row=\count295
+\pgfplots@group@current@column=\count296
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
@@ -2339,7 +2359,7 @@ and LuaTeX
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count296
+\lrq@indent=\count297
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -2348,56 +2368,56 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count297
-\c@listtotal=\count298
-\c@listcount=\count299
-\c@liststart=\count300
-\c@liststop=\count301
-\c@citecount=\count302
-\c@citetotal=\count303
-\c@multicitecount=\count304
-\c@multicitetotal=\count305
-\c@instcount=\count306
-\c@maxnames=\count307
-\c@minnames=\count308
-\c@maxitems=\count309
-\c@minitems=\count310
-\c@citecounter=\count311
-\c@savedcitecounter=\count312
-\c@uniquelist=\count313
-\c@uniquename=\count314
-\c@refsection=\count315
-\c@refsegment=\count316
-\c@maxextratitle=\count317
-\c@maxextratitleyear=\count318
-\c@maxextrayear=\count319
-\c@maxextraalpha=\count320
-\c@abbrvpenalty=\count321
-\c@highnamepenalty=\count322
-\c@lownamepenalty=\count323
-\c@maxparens=\count324
-\c@parenlevel=\count325
-\blx@tempcnta=\count326
-\blx@tempcntb=\count327
-\blx@tempcntc=\count328
-\blx@maxsection=\count329
-\blx@maxsegment@0=\count330
-\blx@notetype=\count331
-\blx@parenlevel@text=\count332
-\blx@parenlevel@foot=\count333
-\blx@sectionciteorder@0=\count334
-\labelnumberwidth=\skip259
-\labelalphawidth=\skip260
-\biblabelsep=\skip261
-\bibnamesep=\skip262
-\bibinitsep=\skip263
-\bibparsep=\skip264
-\bibhang=\skip265
+\c@tabx@nest=\count298
+\c@listtotal=\count299
+\c@listcount=\count300
+\c@liststart=\count301
+\c@liststop=\count302
+\c@citecount=\count303
+\c@citetotal=\count304
+\c@multicitecount=\count305
+\c@multicitetotal=\count306
+\c@instcount=\count307
+\c@maxnames=\count308
+\c@minnames=\count309
+\c@maxitems=\count310
+\c@minitems=\count311
+\c@citecounter=\count312
+\c@savedcitecounter=\count313
+\c@uniquelist=\count314
+\c@uniquename=\count315
+\c@refsection=\count316
+\c@refsegment=\count317
+\c@maxextratitle=\count318
+\c@maxextratitleyear=\count319
+\c@maxextrayear=\count320
+\c@maxextraalpha=\count321
+\c@abbrvpenalty=\count322
+\c@highnamepenalty=\count323
+\c@lownamepenalty=\count324
+\c@maxparens=\count325
+\c@parenlevel=\count326
+\blx@tempcnta=\count327
+\blx@tempcntb=\count328
+\blx@tempcntc=\count329
+\blx@maxsection=\count330
+\blx@maxsegment@0=\count331
+\blx@notetype=\count332
+\blx@parenlevel@text=\count333
+\blx@parenlevel@foot=\count334
+\blx@sectionciteorder@0=\count335
+\labelnumberwidth=\skip260
+\labelalphawidth=\skip261
+\biblabelsep=\skip262
+\bibnamesep=\skip263
+\bibinitsep=\skip264
+\bibparsep=\skip265
+\bibhang=\skip266
 \blx@bcfin=\read3
 \blx@bcfout=\write6
-\c@mincomprange=\count335
-\c@maxcomprange=\count336
-\c@mincompwidth=\count337
+\c@mincomprange=\count336
+\c@maxcomprange=\count337
+\c@mincompwidth=\count338
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -2406,78 +2426,78 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count338
-\c@savedafterword=\count339
-\c@annotator=\count340
-\c@savedannotator=\count341
-\c@author=\count342
-\c@savedauthor=\count343
-\c@bookauthor=\count344
-\c@savedbookauthor=\count345
-\c@commentator=\count346
-\c@savedcommentator=\count347
-\c@editor=\count348
-\c@savededitor=\count349
-\c@editora=\count350
-\c@savededitora=\count351
-\c@editorb=\count352
-\c@savededitorb=\count353
-\c@editorc=\count354
-\c@savededitorc=\count355
-\c@foreword=\count356
-\c@savedforeword=\count357
-\c@holder=\count358
-\c@savedholder=\count359
-\c@introduction=\count360
-\c@savedintroduction=\count361
-\c@namea=\count362
-\c@savednamea=\count363
-\c@nameb=\count364
-\c@savednameb=\count365
-\c@namec=\count366
-\c@savednamec=\count367
-\c@translator=\count368
-\c@savedtranslator=\count369
-\c@shortauthor=\count370
-\c@savedshortauthor=\count371
-\c@shorteditor=\count372
-\c@savedshorteditor=\count373
-\c@labelname=\count374
-\c@savedlabelname=\count375
-\c@institution=\count376
-\c@savedinstitution=\count377
-\c@lista=\count378
-\c@savedlista=\count379
-\c@listb=\count380
-\c@savedlistb=\count381
-\c@listc=\count382
-\c@savedlistc=\count383
-\c@listd=\count384
-\c@savedlistd=\count385
-\c@liste=\count386
-\c@savedliste=\count387
-\c@listf=\count388
-\c@savedlistf=\count389
-\c@location=\count390
-\c@savedlocation=\count391
-\c@organization=\count392
-\c@savedorganization=\count393
-\c@origlocation=\count394
-\c@savedoriglocation=\count395
-\c@origpublisher=\count396
-\c@savedorigpublisher=\count397
-\c@publisher=\count398
-\c@savedpublisher=\count399
-\c@language=\count400
-\c@savedlanguage=\count401
-\c@pageref=\count402
-\c@savedpageref=\count403
-\shorthandwidth=\skip266
-\shortjournalwidth=\skip267
-\shortserieswidth=\skip268
-\shorttitlewidth=\skip269
-\shortauthorwidth=\skip270
-\shorteditorwidth=\skip271
+\c@afterword=\count339
+\c@savedafterword=\count340
+\c@annotator=\count341
+\c@savedannotator=\count342
+\c@author=\count343
+\c@savedauthor=\count344
+\c@bookauthor=\count345
+\c@savedbookauthor=\count346
+\c@commentator=\count347
+\c@savedcommentator=\count348
+\c@editor=\count349
+\c@savededitor=\count350
+\c@editora=\count351
+\c@savededitora=\count352
+\c@editorb=\count353
+\c@savededitorb=\count354
+\c@editorc=\count355
+\c@savededitorc=\count356
+\c@foreword=\count357
+\c@savedforeword=\count358
+\c@holder=\count359
+\c@savedholder=\count360
+\c@introduction=\count361
+\c@savedintroduction=\count362
+\c@namea=\count363
+\c@savednamea=\count364
+\c@nameb=\count365
+\c@savednameb=\count366
+\c@namec=\count367
+\c@savednamec=\count368
+\c@translator=\count369
+\c@savedtranslator=\count370
+\c@shortauthor=\count371
+\c@savedshortauthor=\count372
+\c@shorteditor=\count373
+\c@savedshorteditor=\count374
+\c@labelname=\count375
+\c@savedlabelname=\count376
+\c@institution=\count377
+\c@savedinstitution=\count378
+\c@lista=\count379
+\c@savedlista=\count380
+\c@listb=\count381
+\c@savedlistb=\count382
+\c@listc=\count383
+\c@savedlistc=\count384
+\c@listd=\count385
+\c@savedlistd=\count386
+\c@liste=\count387
+\c@savedliste=\count388
+\c@listf=\count389
+\c@savedlistf=\count390
+\c@location=\count391
+\c@savedlocation=\count392
+\c@organization=\count393
+\c@savedorganization=\count394
+\c@origlocation=\count395
+\c@savedoriglocation=\count396
+\c@origpublisher=\count397
+\c@savedorigpublisher=\count398
+\c@publisher=\count399
+\c@savedpublisher=\count400
+\c@language=\count401
+\c@savedlanguage=\count402
+\c@pageref=\count403
+\c@savedpageref=\count404
+\shorthandwidth=\skip267
+\shortjournalwidth=\skip268
+\shortserieswidth=\skip269
+\shorttitlewidth=\skip270
+\shortauthorwidth=\skip271
+\shorteditorwidth=\skip272
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -2489,13 +2509,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count404
-\c@textcitetotal=\count405
-\c@textcitemaxnames=\count406
-\c@biburlnumpenalty=\count407
-\c@biburlucpenalty=\count408
-\c@biburllcpenalty=\count409
-\c@smartand=\count410
+\c@textcitecount=\count405
+\c@textcitetotal=\count406
+\c@textcitemaxnames=\count407
+\c@biburlnumpenalty=\count408
+\c@biburlucpenalty=\count409
+\c@biburllcpenalty=\count410
+\c@smartand=\count411
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -2507,8 +2527,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count411
-\c@bbx:relatedtotal=\count412
+\c@bbx:relatedcount=\count412
+\c@bbx:relatedtotal=\count413
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -2572,16 +2592,16 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen334
-\Hy@linkcounter=\count413
-\Hy@pagecounter=\count414
+\@linkdim=\dimen341
+\Hy@linkcounter=\count414
+\Hy@pagecounter=\count415
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count415
+\Hy@SavedSpaceFactor=\count416
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -2593,12 +2613,12 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count416
+\c@Hy@tempcnt=\count417
 LaTeX Info: Redefining \url on input line 5044.
-\XeTeXLinkMargin=\dimen335
-\Fld@menulength=\count417
-\Field@Width=\dimen336
-\Fld@charsize=\dimen337
+\XeTeXLinkMargin=\dimen342
+\Fld@menulength=\count418
+\Field@Width=\dimen343
+\Fld@charsize=\dimen344
 Package hyperref Info: Hyper figures OFF on input line 6298.
 Package hyperref Info: Link nesting OFF on input line 6303.
 Package hyperref Info: Hyper index ON on input line 6306.
@@ -2608,33 +2628,33 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count418
-\c@Item=\count419
-\c@Hfootnote=\count420
+\Hy@abspage=\count419
+\c@Item=\count420
+\c@Hfootnote=\count421
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count421
-\c@Hpagenote=\count422
+\c@memhycontfloat=\count422
+\c@Hpagenote=\count423
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count423
-\c@bookmark@seq@number=\count424
+\Fld@listcount=\count424
+\c@bookmark@seq@number=\count425
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip272
+\Hy@SectionHShift=\skip273
 )
 LaTeX Font Info:    Try loading font information for T1+BaskervilleF-TLF on inp
-ut line 73.
+ut line 74.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/T1BaskervilleF-TLF.f
 d
@@ -2642,8 +2662,8 @@ File: T1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for T1/Baske
 rvilleF-TLF.
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 73.
-\tikzscale@accuracy=\skip273
+(Font)              scaled to size 10.0pt on input line 74.
+\tikzscale@accuracy=\skip274
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -2653,71 +2673,71 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count425
-\@quotereset=\count426
+\@quotelevel=\count426
+\@quotereset=\count427
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 73.
-LaTeX Font Info:    Try loading font information for OML+zbami on input line 73
+LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 74.
+LaTeX Font Info:    Try loading font information for OML+zbami on input line 74
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
 File: omlzbami.fd 2016/11/11 Fontinst v1.933 font definitions for OML/zbami.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 73.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 74.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 73.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 74.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 73
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 74
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 74.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 7
-3.
+4.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 73.
-\c@mv@tabular=\count427
-\c@mv@boldtabular=\count428
+(Font)              scaled to size 9.0pt on input line 74.
+\c@mv@tabular=\count428
+\c@mv@boldtabular=\count429
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -2725,16 +2745,16 @@ tim
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count429
-\scratchdimen=\dimen338
+\scratchcounter=\count430
+\scratchdimen=\dimen345
 \scratchbox=\box67
-\nofMPsegments=\count430
-\nofMParguments=\count431
+\nofMPsegments=\count431
+\nofMParguments=\count432
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count432
-\MPscratchDim=\dimen339
-\MPnumerator=\count433
-\makeMPintoPDFobject=\count434
+\MPscratchCnt=\count433
+\MPscratchDim=\dimen346
+\MPnumerator=\count434
+\makeMPintoPDFobject=\count435
 \everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2767,31 +2787,31 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 73.
-Package biblatex Info: Reference segment=0 on input line 73.
+Package biblatex Info: Reference section=0 on input line 74.
+Package biblatex Info: Reference segment=0 on input line 74.
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 73.
+Package hyperref Info: Link coloring OFF on input line 74.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count435
+\c@section@level=\count436
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 73.
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \nameref on input line 74.
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 92.
+(Font)              scaled to size 14.4pt on input line 93.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 92.
+(Font)              scaled to size 14.4pt on input line 93.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 5.
@@ -2844,9 +2864,9 @@ LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 111.
+(Font)              scaled to size 17.28pt on input line 112.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 111.
+(Font)              scaled to size 17.28pt on input line 112.
 
 (./chapters/methods.tex
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
@@ -2861,280 +2881,451 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 
 
 ]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 52.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 52.
+ [2]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 90.
+ (./plots/convergence_vs_n.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
 
-LaTeX Warning: Reference `fig:convergence_finite_chi' on page 2 undefined on in
-put line 42.
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
-(./plots/quantities_vs_tolerance.tikz
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+(./plots/convergence_finite_chi.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
 
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.4000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (4.0000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (9.2000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (9.0000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (3.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (6.8000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-09,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (4.8000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (5.2000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (9.0000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (6.2000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (6.4000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (7.8000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (9.4000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (6.8000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.4000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-09,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (7.8000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-10,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (9.0000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (6.4000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (8.2000000e+04,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
-nbounded (in y). (see also unbounded coords=jump). 
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-NOTE: coordinate (1.0000000e-11,0.0000000e+00) has been dropped because it is u
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
 nbounded (in y). (see also unbounded coords=jump). 
 )
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 54.
- [2]
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 74.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 74.
- [3]) [4]
+Overfull \hbox (11.95633pt too wide) in paragraph at lines 64--102
+[][] 
+ []
 
-LaTeX Warning: Empty bibliography on input line 134.
+(./plots/stepwise_diffs_vs_tolerance.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+
+NOTE: coordinate (1.0000000e-11,-1.3322700e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,-3.5527100e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-08,-0.0000000e+00) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-10,-8.8817800e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,-5.3290700e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,-2.6645400e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-10,-1.3322700e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-10,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,-0.0000000e+00) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+Overfull \hbox (2.21434pt too wide) in paragraph at lines 83--113
+[][] 
+ []
+
+) [3] [4] [5] [6]
+
+LaTeX Warning: Empty bibliography on input line 135.
 
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 436422FDC6CB55828157147BCF5707AE;404.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51127 strings out of 493014
- 1119216 string characters out of 6133351
- 1729098 words of memory out of 5000000
- 53788 multiletter control sequences out of 15000+600000
- 274608 words of font info for 124 fonts, out of 8000000 for 9000
+ 51661 strings out of 493014
+ 1129326 string characters out of 6133351
+ 1759078 words of memory out of 5000000
+ 54287 multiletter control sequences out of 15000+600000
+ 281230 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,112p,12719b,2367s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,19n,112p,12719b,2354s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
 enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
@@ -3147,10 +3338,10 @@ baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts
 /txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.p
 fb>
-Output written on main.pdf (5 pages, 107969 bytes).
+Output written on main.pdf (7 pages, 127314 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

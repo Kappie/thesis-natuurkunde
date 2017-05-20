@@ -23,7 +23,7 @@ so that the interpretation of $A^4$ as a reduced density matrix of an effective 
 \subsection{Simulations with finite bond dimension}
 The convergence of the CTMRG algorithm with fixed bond dimension $m$ (the infinite system algorithm) can be defined
 in multiple ways (\emph{cite}). In this thesis, the convergence after step $i$ of the algorithm is defined as
-\begin{equation}
+\begin{equation}\label{eq:convergence}
   c_i = \sum_{\alpha = 1}^{m} | s_{\alpha}^{(i)} - s_{\alpha}^{(i - 1)} |,
 \end{equation}
 where $s_{\alpha}$ are the singular values of the corner transfer matrix $A$. If the convergence falls below some
@@ -37,18 +37,80 @@ given by $m$, i.e.
 \end{equation}
 is satisfied.
 
-\subsubsection{Convergence of quantities at the critical point}
-The convergence of the various quantities at the critical point of the Ising model is shown in
-\autoref{fig:convergence_finite_chi}.
+\subsubsection{Convergence at the critical point of the Ising model}
+The convergence is shown in \autoref{fig:convergence_vs_n}. It is clear that the
+phenomenological law
+\begin{equation}
+  \log c_n \propto \alpha(m) n
+\end{equation}
+holds to high precision, with deviations only occuring at values of $c$ of around $10^{-12}$.
+
+The convergence of the various quantities as function of the number of algorithm steps is shown in
+\autoref{fig:convergence_finite_chi}. For all quantities $Q$, the absolute relative difference
+with the final algorithm step
+\begin{equation}\label{eq:abs_rel_diff}
+  \Delta Q_{\text{rel}}(n) = \left| \frac{Q(n) - Q(n = 10^5)}{Q(n = 10^5)} \right|
+\end{equation}
+is shown. Again, a law of the form
+\begin{equation}
+  \log(\Delta Q_{\text{rel}}) \propto n
+\end{equation}
+seems to hold.
+
+To make an estimate of a quantity in the limit $N \to \infty$, or equivalently $\epsilon \to 0$,
+we can study the change in a quantity as function of the convergence threshold $\epsilon$. We define
+\begin{equation}\label{eq:stepwise_difference_epsilon}
+  \Delta Q(\epsilon) = M(\epsilon) - M(10\epsilon),
+\end{equation}
+i.e. the change of quantity $Q$ when we decrease the threshold $\epsilon$ by an order of magnitude. The results in
+\autoref{fig:stepwise_diffs_vs_tolerance} show that, remarkably, the order parameter, entropy and correlation length
+to high precision follow the linear relationship
+\begin{equation}
+  \Delta Q(\epsilon) = \alpha_1(m) \epsilon,
+\end{equation}
+whereas the free energy follows a quadratic relationship
+\begin{equation}
+  \Delta f(\epsilon) = \alpha_2(m) \epsilon^2.
+\end{equation}
+
+This means that we can confidently extrapolate the value of a quantity in the fully converged limit as
+\begin{equation}
+  Q(\epsilon \to 0) = Q(\epsilon_{\text{min}}) + \sum_{\epsilon = \frac{\epsilon_{\text{min}}}{10},
+  \frac{\epsilon_{\text{min}}}{100}, \dots} \Delta Q(\epsilon),
+\end{equation}
+where $\epsilon_{\text{min}}$ is the lowest threshold used in simulation, and $\Delta Q(\epsilon)$ is determined
+by fitting to suitable higher values of the threshold.
+
+% Another way to define the error in the convergence of a quantity is directly as function of the threshold $\epsilon$,
+% as shown in \autoref{fig:quantities_vs_tolerance}. Here, the absolute relative error in a quantity is defined as
+% \begin{equation}
+%   \Delta M_{\text{rel}} = \left| \frac{Q(\epsilon) - Q(\epsilon = 10^{-11})}{Q(\epsilon = 10^{-11})} \right|.
+% \end{equation}
+
+\todo[inline]{technically this is not correct for the already converged values of $m$}
+
+
+\begin{figure}
+  \includegraphics[]{convergence_vs_n.tikz}
+  \caption{Convergence as defined in \autoref{eq:convergence} versus $n$, the number of ctmrg
+  steps.}\label{fig:convergence_vs_n}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[]{convergence_finite_chi.tikz}
+  \caption{Absolute relative difference of quantities (see \autoref{eq:abs_rel_diff}).
+  Same legend as \autoref{fig:convergence_vs_n}.}\label{fig:convergence_finite_chi}
+\end{figure}
 
 % \begin{figure}
-%   \includegraphics[]{convergence_finite_chi.tikz}
-%   \caption{hallootjes}\label{fig:convergence_finite_chi}
+%   \includegraphics[]{quantities_vs_tolerance.tikz}
+%   \caption{hallootjes}\label{fig:quantities_vs_tolerance}
 % \end{figure}
 
 \begin{figure}
-  \includegraphics[]{quantities_vs_tolerance.tikz}
-  \caption{hallootjes}\label{fig:quantities_vs_tolerance}
+  \includegraphics[]{stepwise_diffs_vs_tolerance.tikz}
+  \caption{Stepwise differences upon decreasing the threshold $\epsilon$ by an order of magnitude,
+  as in \autoref{eq:stepwise_difference_epsilon}. }\label{fig:stepwise_diffs_vs_tolerance}
 \end{figure}
 
 \todo[inline]{Cross check with correlation length, report on boundary conditions}
@@ -56,30 +118,53 @@ The convergence of the various quantities at the critical point of the Ising mod
 
 
 \subsection{Simulations with finite system size}
-In the finite-system algorithm, we require
+In the finite-system algorithm, we want to reliably extrapolate quantities in the bond dimension $m$.
+The convergence behaviour is shown in \autoref{fig:quantities_vs_chi}.
+For each quantity $Q$, we plot the absolute relative difference with the value at the highest $m$
 \begin{equation}
-  N \ll \xi(m),
+  \Delta Q_{\text{rel}}(m) = \left| \frac{Q(m) - Q(m = 200)}{Q(m = 200)} \right|
 \end{equation}
-so the question becomes at which $m$ the results are sufficiently converged in $m$. Throughout this work, we have used
-the residual probability (also called truncation error)
-\begin{equation}
-  P(m)^{(i)} = \frac{\sum_{\alpha = m + 1}^{dm} (s_{\alpha}^{(i)})^2 }{ \sum_{\alpha = 1}^{dm} (s_{\alpha}^{(i)})^2 },
-\end{equation}
-which quantifies the fraction of the spectrum of the corner transfer matrix that is thrown away, as a measure of how
-accurate the transfer matrices represent the finite system of size $N$. Here, $d$ is the
-dimension of the local tensors ($d = 2$ for the Ising model).
+versus the bond dimension $m$.
 
-If, for a given $m$, we have
+The plateaus of $m$-values that barely increase the precision are due to the degeneracies in the spectrum of the reduced
+density matrix. Apart from this structure, the law
 \begin{equation}
-  P(m) < P_{\text{max}}
+  \Delta Q_{\text{rel}}(m) \propto m^{\alpha}
 \end{equation}
-we deem the result accurate enough.
+is seen to hold.
 
-In the limit $m \to d^n$, with
-\begin{equation}
-  n = \frac{N - 1}{2}
-\end{equation}
-the number of algorithm steps, we obtain the exact result for the transfer matrices and hence the partition function,
-i.e. $P(m) \to 0$.
+\todo[inline]{What is $\alpha$? Refer to section where you discuss the spectrum of the reduced density matrix.}
 
-To justify that for small enough $P_{\max}$, we obtain good results for a wide range of $N$, figure bla bla.
+
+\begin{figure}
+  \includegraphics[]{quantities_vs_chi.tikz}
+  \caption{hallooooo}\label{fig:quantities_vs_chi}
+\end{figure}
+
+% In the finite-system algorithm, we require
+% \begin{equation}
+%   N \ll \xi(m),
+% \end{equation}
+% so the  question becomes at which $m$ the results are sufficiently converged in $m$. Throughout this work, we have used
+% the residual probability (also called truncation error)
+% \begin{equation}
+%   P(m)^{(i)} = \frac{\sum_{\alpha = m + 1}^{dm} (s_{\alpha}^{(i)})^2 }{ \sum_{\alpha = 1}^{dm} (s_{\alpha}^{(i)})^2 },
+% \end{equation}
+% which quantifies the fraction of the spectrum of the corner transfer matrix that is thrown away, as a measure of how
+% accurate the transfer matrices represent the finite system of size $N$. Here, $d$ is the
+% dimension of the local tensors ($d = 2$ for the Ising model).
+
+% If, for a given $m$, we have
+% \begin{equation}
+%   P(m) < P_{\text{max}}
+% \end{equation}
+% we deem the result accurate enough.
+%
+% In the limit $m \to d^n$, with
+% \begin{equation}
+%   n = \frac{N - 1}{2}
+% \end{equation}
+% the number of algorithm steps, we obtain the exact result for the transfer matrices and hence the partition function,
+% i.e. $P(m) \to 0$.
+%
+% To justify that for small enough $P_{\max}$, we obtain good results for a wide range of $N$, figure bla bla.
