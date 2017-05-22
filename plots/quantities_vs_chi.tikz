@@ -22,6 +22,12 @@
 
     \nextgroupplot[
       ylabel={$\Delta M_{\text{rel}}$},
+      legend style = {
+        legend to name = grouplegend,
+        legend entries = {$n = 200$, $n = 600$, $n = 1000$, $n = 2200$},
+      },
+      transpose legend,
+      legend columns = 2,
     ]
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsChi index 3};
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \orderParameterVsChi index 2};
@@ -53,4 +59,6 @@
       \addplot+[mark=none, thick] gnuplot [raw gnuplot] { plot \correlationLengthVsChi index 0};
 
   \end{groupplot}
+
+  \node at ($(group c1r2)!0.5!(group c2r2) + (0, -3cm)$) {\pgfplotslegendfromname{grouplegend}};
 \end{tikzpicture}

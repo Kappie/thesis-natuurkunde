@@ -1,2 +1,2 @@
 set table "main.pgf-plot.table"; set format "%.5f"
-set format "%.7e";; plot 'plots/data/correlation_length_stepwise_diff_vs_tolerance_q2_Tcrit_chi10-120.dat'index 0
+set format "%.7e";; plot 'plots/data/correlation_length_abs_rel_diff_vs_chi_q2_Tcrit_n200-2200.dat'index 0
