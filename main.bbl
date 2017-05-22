@@ -16,5 +16,136 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{davies1988corner}{article}{}
+      \name{author}{1}{}{%
+        {{hash=381930248144a6d86214a0eea3a4db95}{%
+           family={Davies},
+           family_i={D\bibinitperiod},
+           given={Brian},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{381930248144a6d86214a0eea3a4db95}
+      \strng{fullhash}{381930248144a6d86214a0eea3a4db95}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{1}
+      \field{title}{Corner transfer matrices for the Ising model}
+      \field{volume}{154}
+      \field{year}{1988}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+    \endentry
+    \entry{peschel2009reduced}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={Ingo},
+           given_i={I\bibinitperiod}}}%
+        {{hash=ac3a020f554064dfe1ce516053b38117}{%
+           family={Eisler},
+           family_i={E\bibinitperiod},
+           given={Viktor},
+           given_i={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{813b78c3075a5536d9dce5d3820778b4}
+      \strng{fullhash}{813b78c3075a5536d9dce5d3820778b4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of physics a: mathematical and theoretical}
+      \field{number}{50}
+      \field{title}{Reduced density matrices and entanglement entropy in free lattice models}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{pages}{504003}
+      \range{pages}{1}
+    \endentry
+    \entry{huang2017holographic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2acbd39722be557c34901c2c5af2d8a2}{%
+           family={Huang},
+           family_i={H\bibinitperiod},
+           given={Ching-Yu},
+           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=84121b863e7717cc258740606b188370}{%
+           family={Wei},
+           family_i={W\bibinitperiod},
+           given={Tzu-Chieh},
+           given_i={T\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=99b8d996d1c8efaf7f5ba24de4b15f9d}{%
+           family={Orus},
+           family_i={O\bibinitperiod},
+           given={Roman},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0165477934983720f3d0eb2718ef0fe3}
+      \strng{fullhash}{0165477934983720f3d0eb2718ef0fe3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1702.01598}
+      \field{title}{Holographic encoding of universality in corner spectra}
+      \field{year}{2017}
+    \endentry
+    \entry{peschel1999density}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={Ingo},
+           given_i={I\bibinitperiod}}}%
+        {{hash=06d6662abf759b92a282eef6ef0b8dac}{%
+           family={Kaulke},
+           family_i={K\bibinitperiod},
+           given={Matthias},
+           given_i={M\bibinitperiod}}}%
+        {{hash=ba39c78ac5c222ecef703337bda34a9b}{%
+           family={Legeza},
+           family_i={L\bibinitperiod},
+           given={Örs},
+           given_i={Ö\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WILEY-VCH Verlag}%
+      }
+      \strng{namehash}{8db5cab50ea921d0e9141bb59b52640f}
+      \strng{fullhash}{8db5cab50ea921d0e9141bb59b52640f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1521-3889}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{2}
+      \field{title}{Density-matrix spectra for integrable models}
+      \field{volume}{8}
+      \field{year}{1999}
+      \field{pages}{153\bibrangedash 164}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/(SICI)1521-3889(199902)8:2<153::AID-ANDP153>3.0.CO;2-N
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/(SICI)1521-3889(199902)8:2%3C153::AID-ANDP153%3E3.0.CO;2-N
+      \endverb
+      \keyw{Density-matrix renormalization,Integrable systems,Corner transfer matrices}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 

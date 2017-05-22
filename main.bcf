@@ -2073,6 +2073,10 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">peschel2009reduced</bcf:citekey>
+    <bcf:citekey order="1">peschel1999density</bcf:citekey>
+    <bcf:citekey order="2">davies1988corner</bcf:citekey>
+    <bcf:citekey order="3">okunishi1999universal</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
