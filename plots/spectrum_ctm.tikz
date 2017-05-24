@@ -1,0 +1,49 @@
+\begin{tikzpicture}
+  \def \spectrumSpinUp {'plots/data/spectrum_ctm_spin_up_boundary_N1000.dat'};
+  \def \spectrumSymmetric {'plots/data/spectrum_ctm_symmetric_boundary_N1000.dat'};
+
+  \begin{groupplot}[
+      group style = {
+        group size = 2 by 1,
+        ylabels at = edge left,
+        yticklabels at = edge left,
+        vertical sep = 0.75cm,
+      },
+      width = .5\textwidth,
+      xlabel = {$i$},
+      ylabel = {$A_i$},
+      ymode = log,
+    ]
+
+  \nextgroupplot[
+    legend style = {
+      legend to name = spectrumlegend,
+      legend entries = {$T = 2$, $T = 2.2692$, $T = 2.6$},
+    },
+    transpose legend,
+    legend columns = -1,
+    title = {free boundary},
+    ytick={1e-5, 1e-10, 1e-15, 1e-20, 1e-25},
+    ymin=1e-25,
+    ymax=1,
+  ]
+
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumSymmetric index 2};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumSymmetric index 1};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumSymmetric index 0};
+
+  \nextgroupplot[
+    title={fixed boundary},
+    ytick={1e-5, 1e-10, 1e-15, 1e-20, 1e-25},
+    ymin=1e-25,
+    ymax=1,
+  ]
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumSpinUp index 2};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumSpinUp index 1};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumSpinUp index 0};
+
+  \end{groupplot}
+
+  \node at ($(group c1r1)!0.5!(group c2r1) + (0, -3cm)$) {\pgfplotslegendfromname{spectrumlegend}};
+
+\end{tikzpicture}

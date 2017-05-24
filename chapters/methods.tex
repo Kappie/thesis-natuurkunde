@@ -131,15 +131,25 @@ For each quantity $Q$, we plot the absolute relative difference with the value a
 \end{equation}
 versus the bond dimension $m$.
 
-The plateaus of $m$-values that barely increase the precision are due to the degeneracies in the spectrum of the reduced
-density matrix. Apart from this structure, the law
+The plateaus of $m$-values that barely increase the precision are due to the structure in the spectrum of the reduced
+density matrix. Apart from this noise, the law
 \begin{equation}\label{eq:abs_rel_diff_power_law_m}
   \Delta Q_{\text{rel}}(m) \propto m^{\alpha(N)}
 \end{equation}
 is seen to hold for high enough $m$ for the order parameter, free energy and entropy.
 
-\todo[inline]{What is $\alpha$? Refer to section where you discuss the spectrum of the reduced density matrix.
-log log law doesn't seem to work out for correlation length. why??}
+\todo[inline]{Why does the free energy converge much faster?}
+
+To extrapolate to $m \to \infty$, analogously to the finite-$m$ case we define
+\begin{equation}
+  \Delta Q_{\text{step}}(m) = Q(m) - Q(m - 1),
+\end{equation}
+which is plotted in the left panel of \autoref{fig:stepwise_diffs_vs_m}.
+As expected from \autoref{eq:abs_rel_diff_power_law_m}, the overall trend looks like a power law,
+but the noise makes it hard to determine it accurately. 
+
+\todo[inline]{Don't know enough about this yet}
+
 
 \begin{figure}
   \includegraphics[]{quantities_vs_chi.tikz}
@@ -153,14 +163,19 @@ log log law doesn't seem to work out for correlation length. why??}
   Note that $\Delta \xi_{\text{rel}}$ does not obey a power law.}\label{fig:quantities_vs_chi}
 \end{figure}
 
+\begin{figure}
+  \includegraphics[]{stepwise_diffs_vs_m.tikz}
+  \caption{same legend as \autoref{fig:quantities_vs_chi}}\label{fig:stepwise_diffs_vs_m}
+\end{figure}
+
 
 \section{Spectrum of the corner transfer matrix}
 
 \subsection{Analytical results for the Ising model}
-In what follows, we largely follow \cite{peschel2009reduced, peschel1999density}.
+In what follows, we present results established in \cite{peschel2009reduced, peschel1999density}.
 
 For the off-critical Ising model on a square lattice, we have \cite{davies1988corner}
-\begin{equation}
+\begin{equation}\label{eq:rho_exact_expression_off_critical}
   \hat{\rho} = \hat{A}^4 = \exp(-\hat{H}_{\text{CTM}}),
 \end{equation}
 where
@@ -175,6 +190,7 @@ with $c_l$ and $c^{\dagger}_l$ fermionic annihilation and creation operators and
     2l\epsilon(T) & \text{if } T < T_c.
   \end{cases}
 \end{equation}
+with $\epsilon(T)$ a model-specific factor that only depends on temperature.
 
 In other words, the reduced density matrix (or equivalently, the corner transfer matrix $A$) can be written as a
 density matrix of an effective free fermionic Hamiltonian with equally spaced excitations.
@@ -189,12 +205,17 @@ The single-fermion excitations give $\epsilon, 3\epsilon, 5\epsilon,
 $6\epsilon$ ($c^{\dagger}_0 c^{\dagger}_2 \ket{0}$) and $8\epsilon$ ($c^{\dagger}_0 c^{\dagger}_3 \ket{0}$ \emph{or}
 $c^{\dagger}_1 c^{\dagger}_2 \ket{0}$).
 So the first degeneracy appears at $8\epsilon$.
-$9\epsilon$ is triply degenerate:
-it can be constructed with a single-fermion excitation and in two ways with a three-fermion excitation.
+$9\epsilon$ is also degenerate:
+it can be constructed with a single-fermion excitation ($ c^{\dagger}_4 \ket{0} $) and a three-fermion
+excitation ($ c^{\dagger}_2 c^{\dagger}_1 c^{\dagger}_0 \ket{0} $).
 
-In the ordered phase, we have a two-fold degeneracy for every state due to symmetry.
-The ground state energy $E = 0$.
-After that, we can only make the levels $2\epsilon, 4\epsilon, 6\epsilon,
+The numerical results from the CTMRG algorithm exactly confirm this picture.
+See the $T = 2.6$ line in the left panel of \autoref{fig:spectrum_ctm}. The gap after the first two eigenvalues is due
+to the absence of the level $2\epsilon$. The $\epsilon_l$ are linear and the degeneracies are correct.
+
+In the ordered phase, we have a two-fold degeneracy for every state due to symmetry and
+ground state energy $E = 0$.
+After that, the only available levels are $2\epsilon, 4\epsilon, 6\epsilon,
 \dots$.
 The degeneracy of the $n$th energy level is given by $2p(n)$, twice the number of partitions of $n$ into distinct integers
 \cite{okunishi1999universal}, with the factor of two coming from symmetry.
@@ -203,5 +224,23 @@ To illustrate:
 $c^{\dagger}_1 c^{\dagger}_2 \ket{0}$ and $c^{\dagger}_3 \ket{0}$ both have $E = 6\epsilon$,
 the third energy level (counting the vacuum as the zeroth energy level),
 which is to say $p(3) = 2$ since $\{3, 2 + 1 \}$ are the ways to write $3$.
+The line $T = 2$ in the left panel of \autoref{fig:spectrum_ctm} confirms these results.
 
-\todo[inline]{Boundary conditions, plots.}
+With a fixed boundary, the spectrum in the disordered phase doesn't change.
+In the ordered phase however, the two-fold degeneracy due to symmetry is lifted,
+so the degeneracy of the $n$th energy level becomes $p(n)$.
+As a consequence, the spectrum decays much faster. See the right panel of \autoref{fig:spectrum_ctm}.
+
+At or close to criticality, the expression in \autoref{eq:rho_exact_expression_off_critical} breaks down,
+and the spectrum of $\hat{\rho}$ is smoothened out.
+In general, below and at criticality, the spectrum decays slower for a free boundary.
+This is to be expected, since $A$ preserves the symmetry when the boundary is free.
+At $T = 0$, $A$ has two equally large non-zero eigenvalues, representing either all up or all down spins on the boundary
+of the quadrant, while for a fixed boundary, $A$ has one non-zero eigenvalue:
+it represents a completely polarized state.
+
+\begin{figure}
+  \includegraphics[]{spectrum_ctm.tikz}
+  \caption{First part of the spectrum of $A$ after $n = 1000$ steps with a bond dimension of $m =
+  250$.}\label{fig:spectrum_ctm}
+\end{figure}

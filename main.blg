@@ -1,17 +1,17 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'main.blg'
-[81] biber-darwin:290> INFO - === Mon May 22, 2017, 15:49:10
-[118] Biber.pm:351> INFO - Reading 'main.bcf'
-[251] Biber.pm:776> INFO - Found 4 citekeys in bib section 0
-[268] Biber.pm:3493> INFO - Processing section 0
-[295] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
-[301] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[306] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
-[311] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
-[349] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[349] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[349] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[349] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[354] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[355] bbl.pm:619> INFO - Output to main.bbl
-[355] Biber.pm:108> INFO - WARNINGS: 1
+[62] biber-darwin:290> INFO - === Tue May 23, 2017, 11:08:15
+[97] Biber.pm:351> INFO - Reading 'main.bcf'
+[212] Biber.pm:776> INFO - Found 4 citekeys in bib section 0
+[228] Biber.pm:3493> INFO - Processing section 0
+[264] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
+[269] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[274] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
+[279] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
+[315] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[315] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[315] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[315] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[320] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[321] bbl.pm:619> INFO - Output to main.bbl
+[322] Biber.pm:108> INFO - WARNINGS: 1

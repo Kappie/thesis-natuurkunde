@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+  \def \stepwiseDiffsAllValues {'plots/data/stepwise_diff_vs_chi_Tcrit_chi4-200_N50-2200.dat'}
+  \def \stepwiseDiffsPlateauValues {'plots/data/stepwise_diff_vs_chi_Tcrit_plateau_values_N50-2200.dat'}
+
+  \begin{groupplot}[
+      group style = {
+        group size = 2 by 1,
+        ylabels at = edge left,
+        yticklabels at = edge left,
+      },
+      width = 0.5\textwidth,
+      xlabel = {$m$},
+      ylabel = {$\Delta M_{\text{step}}$},
+      ymode = log,
+      xmode = log,
+    ]
+
+    \nextgroupplot[]
+      \addplot+[miniMarker, only marks] gnuplot [raw gnuplot] { plot \stepwiseDiffsAllValues index 3};
+      \addplot+[miniMarker, only marks] gnuplot [raw gnuplot] { plot \stepwiseDiffsAllValues index 2};
+      \addplot+[miniMarker, only marks] gnuplot [raw gnuplot] { plot \stepwiseDiffsAllValues index 1};
+      \addplot+[miniMarker, only marks] gnuplot [raw gnuplot] { plot \stepwiseDiffsAllValues index 0};
+
+    \nextgroupplot[]
+      \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \stepwiseDiffsPlateauValues index 3};
+      \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \stepwiseDiffsPlateauValues index 2};
+      \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \stepwiseDiffsPlateauValues index 1};
+      \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \stepwiseDiffsPlateauValues index 0};
+
+  \end{groupplot}
+\end{tikzpicture}

@@ -19,31 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
-    \entry{davies1988corner}{article}{}
-      \name{author}{1}{}{%
-        {{hash=381930248144a6d86214a0eea3a4db95}{%
-           family={Davies},
-           family_i={D\bibinitperiod},
-           given={Brian},
-           given_i={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{381930248144a6d86214a0eea3a4db95}
-      \strng{fullhash}{381930248144a6d86214a0eea3a4db95}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
-      \field{number}{1}
-      \field{title}{Corner transfer matrices for the Ising model}
-      \field{volume}{154}
-      \field{year}{1988}
-      \field{pages}{1\bibrangedash 20}
-      \range{pages}{20}
-    \endentry
     \entry{peschel2009reduced}{article}{}
       \name{author}{2}{}{%
         {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
@@ -73,34 +48,6 @@
       \field{year}{2009}
       \field{pages}{504003}
       \range{pages}{1}
-    \endentry
-    \entry{huang2017holographic}{article}{}
-      \name{author}{3}{}{%
-        {{hash=2acbd39722be557c34901c2c5af2d8a2}{%
-           family={Huang},
-           family_i={H\bibinitperiod},
-           given={Ching-Yu},
-           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=84121b863e7717cc258740606b188370}{%
-           family={Wei},
-           family_i={W\bibinitperiod},
-           given={Tzu-Chieh},
-           given_i={T\bibinithyphendelim C\bibinitperiod}}}%
-        {{hash=99b8d996d1c8efaf7f5ba24de4b15f9d}{%
-           family={Orus},
-           family_i={O\bibinitperiod},
-           given={Roman},
-           given_i={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{0165477934983720f3d0eb2718ef0fe3}
-      \strng{fullhash}{0165477934983720f3d0eb2718ef0fe3}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1702.01598}
-      \field{title}{Holographic encoding of universality in corner spectra}
-      \field{year}{2017}
     \endentry
     \entry{peschel1999density}{article}{}
       \name{author}{3}{}{%
@@ -144,6 +91,66 @@
       \verb http://dx.doi.org/10.1002/(SICI)1521-3889(199902)8:2%3C153::AID-ANDP153%3E3.0.CO;2-N
       \endverb
       \keyw{Density-matrix renormalization,Integrable systems,Corner transfer matrices}
+    \endentry
+    \entry{davies1988corner}{article}{}
+      \name{author}{1}{}{%
+        {{hash=381930248144a6d86214a0eea3a4db95}{%
+           family={Davies},
+           family_i={D\bibinitperiod},
+           given={Brian},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{381930248144a6d86214a0eea3a4db95}
+      \strng{fullhash}{381930248144a6d86214a0eea3a4db95}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{1}
+      \field{title}{Corner transfer matrices for the Ising model}
+      \field{volume}{154}
+      \field{year}{1988}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+    \endentry
+    \entry{okunishi1999universal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={Kouichi},
+           given_i={K\bibinitperiod}}}%
+        {{hash=e6215f01c3f6f2d06044132fccc0dd83}{%
+           family={Hieida},
+           family_i={H\bibinitperiod},
+           given={Yasuhiro},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=73f8f9eddbbaf2d2da1f1264743c9cd3}{%
+           family={Akutsu},
+           family_i={A\bibinitperiod},
+           given={Yasuhiro},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{19eee34a31bb782cda9faa0007d79bdd}
+      \strng{fullhash}{19eee34a31bb782cda9faa0007d79bdd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{6}
+      \field{title}{Universal asymptotic eigenvalue distribution of density matrices and corner transfer matrices in the thermodynamic limit}
+      \field{volume}{59}
+      \field{year}{1999}
+      \field{pages}{R6227}
+      \range{pages}{-1}
     \endentry
   \endsortlist
 \endrefsection
