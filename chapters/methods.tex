@@ -61,7 +61,7 @@ seems to hold.
 To make an estimate of a quantity in the limit $N \to \infty$, or equivalently $\epsilon \to 0$,
 we can study the change in a quantity as function of the convergence threshold $\epsilon$. We define
 \begin{equation}\label{eq:stepwise_difference_epsilon}
-  \Delta Q(\epsilon) = M(\epsilon) - M(10\epsilon),
+  \Delta Q(\epsilon) = Q(\epsilon) - Q(10\epsilon),
 \end{equation}
 i.e. the change of quantity $Q$ when we decrease the threshold $\epsilon$ by an order of magnitude. The results in
 \autoref{fig:stepwise_diffs_vs_tolerance} show that, remarkably, the order parameter, entropy and correlation length
@@ -141,15 +141,36 @@ is seen to hold for high enough $m$ for the order parameter, free energy and ent
 \todo[inline]{Why does the free energy converge much faster?}
 
 To extrapolate to $m \to \infty$, analogously to the finite-$m$ case we define
-\begin{equation}
+\begin{equation}\label{eq:delta_q_step_finite_N}
   \Delta Q_{\text{step}}(m) = Q(m) - Q(m - 1),
 \end{equation}
 which is plotted in the left panel of \autoref{fig:stepwise_diffs_vs_m}.
 As expected from \autoref{eq:abs_rel_diff_power_law_m}, the overall trend looks like a power law,
-but the noise makes it hard to determine it accurately. 
+but the noise makes it hard to determine it accurately.
+It is anyway neither practical nor needed to calculate a system of finite size for many consecutive values of $m$,
+in order to get a good approximation to \autoref{eq:delta_q_step_finite_N}.
 
-\todo[inline]{Don't know enough about this yet}
+As described in (\emph{ref here to section about spectrum}) and in \cite{okunishi1999universal,
+davies1988corner, peschel2009reduced}, for the off-critical Ising model the degeneracies in the corner transfer matrix
+$A$ are exactly known.
+These degeneracies are smoothed out, but not completely lost for finite systems near criticality. This is directly related to the convergence of quantities in $m$.
+The right panel of \autoref{fig:stepwise_diffs_vs_m} shows the convergence using only the values of $m$ for which all basis states with a certain energy level are present, i.e. \cite{okunishi1999universal}
+\begin{equation}
+  m(j) = \sum_{k = 0}^{k = j} p(k).
+\end{equation}
+The first few values of $m(j)$ are
+\begin{equation}\label{eq:m_values_all_degenerate_basis_states}
+  1, 2, 3, 5, 7, 10, 14, 19, 25, 33, 43, 55, 70, 88, 110, 137, 169, 207, \dots
+\end{equation}
+Using these values of $m$, the noise largely disappears, but the convergence behaviour is still not devoid of structure entirely.
 
+Nevertheless, the error on a quantity calculated at bond dimension $m_{\text{max}}$ can be approximated as
+\begin{equation}
+  M(m \to \infty) = \sum_{m = m_{\text{max}} + 1}^{\infty} \Delta Q_{\text{step}}(m),
+\end{equation}
+where $\Delta Q_{\text{step}}$ is fitted from aptly chosen lower values of $m$.
+
+\todo[inline]{Make connection with paper by Calabrese and Lefevre?}
 
 \begin{figure}
   \includegraphics[]{quantities_vs_chi.tikz}
@@ -165,7 +186,7 @@ but the noise makes it hard to determine it accurately.
 
 \begin{figure}
   \includegraphics[]{stepwise_diffs_vs_m.tikz}
-  \caption{same legend as \autoref{fig:quantities_vs_chi}}\label{fig:stepwise_diffs_vs_m}
+  \caption{Same legend as \autoref{fig:quantities_vs_chi}}\label{fig:stepwise_diffs_vs_m}
 \end{figure}
 
 

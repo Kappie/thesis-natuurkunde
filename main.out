@@ -1,9 +1,9 @@
-\BOOKMARK [0][-]{chapter.1}{Methods}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Critical behaviour and finite-size scaling}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Abstract}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Technical details}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Convergence criteria}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.3.1}{Simulations with finite bond dimension}{section.1.3}% 5
-\BOOKMARK [2][-]{subsection.1.3.2}{Simulations with finite system size}{section.1.3}% 6
-\BOOKMARK [1][-]{section.1.4}{Spectrum of the corner transfer matrix}{chapter.1}% 7
-\BOOKMARK [2][-]{subsection.1.4.1}{Analytical results for the Ising model}{section.1.4}% 8
-\BOOKMARK [0][-]{section*.12}{Bibliography}{}% 9
+\BOOKMARK [1][-]{section.1.2}{Introduction}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Phase transitions}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Finite systems}{section.1.3}% 5
+\BOOKMARK [1][-]{section.1.4}{Critical behaviour}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.4.1}{Finite-size scaling}{section.1.4}% 7
+\BOOKMARK [1][-]{section.1.5}{Effective length scale related to the bond dimension m}{chapter.1}% 8
+\BOOKMARK [0][-]{section*.4}{Bibliography}{}% 9

@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+  \def \orderParamVsT {'plots/data/order_parameter_vs_T_N8-24_exact.dat'};
+  \def \TCrit {2.26918}
+
+  \begin{axis}[
+      legend cell align = left,
+      xlabel={$T$},
+      ylabel={$\langle \sigma_0 \rangle$},
+    ]
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \orderParamVsT index 3};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \orderParamVsT index 2};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \orderParamVsT index 1};
+
+    \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \orderParamVsT index 0};
+
+    \addplot[mark=none, black, dashed, thick, update limits=false]
+      coordinates {(\TCrit,-1) (\TCrit, 2)};
+    \legend{$n = 8$, $n = 16$, $n = 24$, $n \rightarrow \infty$};
+
+
+  \end{axis}
+
+\end{tikzpicture}

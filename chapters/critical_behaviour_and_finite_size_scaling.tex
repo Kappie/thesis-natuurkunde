@@ -1,5 +1,108 @@
+\section{Abstract}
+
+In this chapter, we introduce the central concepts in critical phenomena
+and finite-size scaling.
+
+We follow the excellent review by Barber \cite{barber1983finite} and
+chapter five of Cardy's book \cite{cardy1996scaling}.
+
 \section{Introduction}
 
+\section{Phase transitions}
+When matter exhibits a sudden change in behaviour, characterized by a change in one or more thermodynamic quantities,
+we say it undergoes a \emph{phase transition}.
+A quantity that signifies this change is called an \emph{order parameter}.
+For the transition of a ferromagnet, this is the net magnetization, while for percolation transition,
+this is the size of the largest connected graph.
+
+For a historical account of the classification of phase transitions,
+see \cite{jaeger1998ehrenfest}.
+At the present time, we distinguish between two different types \cite{kadanoff2009more}.
+
+When some thermodynamic quantity changes discontinuously, i.e.
+shows a jump, we call the transition \emph{first order}.
+In contrast, during a \emph{continuous} phase transition a variable undergoes change continuously.
+The point at which a continuous phase transition occurs, is called the critical point.
+
+The two-dimensional Ising model (\emph{ref here}) in a magnetic field shows both types of transition.
+At zero magnetic field and $T = T_c = 1 / (\log(1 + \sqrt{2}))$, the magnetization changes from zero for $T > T_c$ to
+a finite value for $T < T_c$ in a continuous manner.
+
+Below the critical temperature $T_c$, when the magnetic field $h$ tends to zero from $h > 0$,
+the magnetization tends to a positive value.
+Conversely, when the magnetic field tends to zero from $h < 0$,
+the magnetization tends to a negative value.
+Thus, across the region $h = 0, T < T_c$ the system undergoes a first-order phase transition.
+
+\subsection{Finite systems}
+
+We will now argue that a phase transition cannot occur in a finite system,
+but only happens when the number of particles tends to infinity.
+
+Because thermodynamic quantities are averages over all possible
+microstates of a system, those quantities are completely defined in terms
+of the system's partition function, or equivalently its free energy.
+
+Since in a finite system, the partition function is a finite sum of
+exponentials, it is analytic (infinitely differentiable). Hence, thermodynamic
+quantities cannot show true discontinuities and the phase transitions
+described in the above section do not occur.
+
+\todo[inline]{pictures?}
+
+\section{Critical behaviour}
+We will now focus our attention on continuous phase transitions, more specifically the one that occurs in the
+two-dimensional Ising model.
+Before we discuss the behaviour of the free energy around the critical point,
+we briefly summarize how the thermodynamic limit is approached far away from it.
+Here, we largely follow \cite{barber1983finite}.
+
+We assume that the free energy per site in the thermodynamic limit
+\begin{equation}
+  f_{\infty}(T) = \lim_{N \to \infty} \frac{F(T, N)}{N}
+\end{equation}
+exists, and is not dependent on boundary conditions.
+By definition, it is not analytic in a region around the critical point.
+
+Outside that region, however, we can write
+\begin{equation}\label{eq:free_energy_finite_system_outside_critical_region}
+  F(T, N) = N f_{\infty}(T) + o(N),
+\end{equation}
+where corrections $f(N)$ of $o(N)$ (little-o of $N$) mean that
+\begin{equation}
+  \lim_{N \to \infty} \frac{f(N)}{N} = 0.
+\end{equation}
+These corrections, of course, do depend on boundary conditions.
+
+\autoref{eq:free_energy_finite_system_outside_critical_region} is valid only outside the critical region precisely
+because $F(T, N)$ is analytic \emph{everywhere}, and $f_{\infty}(T)$ is only analytic away from the critical point.
+
+The behaviour of $F(T, N)$ (and hence, all thermodynamic quantities) at criticality is approached is described by
+\emph{finite-size scaling}.
+
+\subsection{Finite-size scaling}
+
+
+
+\begin{figure}
+  \includegraphics[]{order_parameter_finite_N_exact.tikz}
+  \caption{The magnetization of the central spin for small lattices with boundary spins fixed to
+  $+1$. The black line is the exact solution in the thermodynamic limit.}\label{fig:order_parameter_finite_N_exact}
+\end{figure}
+
+
+
+
+\section{Effective length scale related to the bond dimension $m$}
 
 
 Excellent reviews \cite{barber1983finite}, \cite{cardy1996scaling}.
+
+To cite
+
+\begin{itemize}
+  \item \cite{fisher1972scaling} original physical derivation of finite-size scaling
+  \item \cite{fisher1967interfacial} rounding and displacement exponents
+  \item \cite{kadanoff2009more} Basic (philosophical) introduction to phase transitions
+  \item \cite{jaeger1998ehrenfest} Historical account of classification of phase transitions
+\end{itemize}
