@@ -9,11 +9,12 @@ chapter five of Cardy's book \cite{cardy1996scaling}.
 \section{Introduction}
 
 \section{Phase transitions}
-When matter exhibits a sudden change in behaviour, characterized by a change in one or more thermodynamic quantities,
-we say it undergoes a \emph{phase transition}.
-A quantity that signifies this change is called an \emph{order parameter}.
-For the transition of a ferromagnet, this is the net magnetization, while for percolation transition,
-this is the size of the largest connected graph.
+When matter exhibits a sudden change in behaviour, characterized by a sudden change in one or more thermodynamic
+quantities, we say it undergoes a \emph{phase transition}.
+A quantity that signifies this change is called an \emph{order parameter},
+that can take vastly different forms across systems and transitions.
+For example, for the transition of a ferromagnet, the order parameter is the net magnetization of the system,
+while for a percolation transition, it is the size of the largest connected graph.
 
 For a historical account of the classification of phase transitions,
 see \cite{jaeger1998ehrenfest}.
@@ -82,6 +83,54 @@ The behaviour of $F(T, N)$ (and hence, all thermodynamic quantities) at critical
 
 \subsection{Finite-size scaling}
 
+\autoref{fig:order_parameter_finite_N_exact} shows the behaviour of the order parameter obtained by exact
+diagonalization of the partition function of small lattices.
+It is clear that far from the critical point, the order parameter is essentially not dependent on system size,
+while in critical region there are significant deviations from the thermodynamic behaviour.
+
+One can now define two characteristic temperatures \cite{fisher1967interfacial,
+barber1983finite}.
+The first being the cross-over temperature $T_X$ at which finite-size effects become important,
+which is predicted to scale as
+\begin{equation}
+  |T_X - T_c| \propto N^{-\theta}.
+\end{equation}
+$\theta$ is called the cross-over or rounding exponent.
+
+The second characteristic temperature is the pseudocritical temperature, denoted by $T^{\star}$.
+It can be defined in several ways, one being the point where the order parameter becomes almost zero (in which case it is the same as the cross-over temperature), or the point where the heat capacity
+\begin{equation}
+  C = T^2 \frac{\partial^2 F}{\partial T^2}
+\end{equation}
+reaches its maximum.
+$T^{\star}$ can be regarded as the point where the finite system in some sense comes closest to undergoing a transition.
+Generally $T^{\star}$ will not equal $T_X$, if only because $T^{\star}$ depends on boundary conditions:
+periodic or fixed boundary conditions will nudge the system into an ordered state,
+therefore $T^{\star} > T_c$.
+Free boundary conditions will cause the system to favor disorder and the pseudocritical temperature to be lowered.
+
+In any case, it is predicted that
+\begin{equation}
+  |T^{\star} - T_c| \propto N^{-\lambda}.
+\end{equation}
+
+It is generally accepted that \cite{barber1983finite}
+\begin{equation}
+  \lambda = \theta.
+\end{equation}
+
+Furthermore, if one assumes that finite-size effects become important once the correlation length of the system becomes of order of the system size, i.e. \cite{fisher1967interfacial}
+\begin{equation}
+  \xi(T_X(N)) \propto N,
+\end{equation}
+then the correlation length exponent $\nu$, given by
+\begin{equation}
+  \xi(T) \propto |T - T_c|^{-\nu}
+\end{equation}
+can be related to $\theta$ as
+\begin{equation}
+  \theta = \frac{1}{\nu}.
+\end{equation}
 
 
 \begin{figure}
@@ -95,9 +144,6 @@ The behaviour of $F(T, N)$ (and hence, all thermodynamic quantities) at critical
 
 \section{Effective length scale related to the bond dimension $m$}
 
-
-Excellent reviews \cite{barber1983finite}, \cite{cardy1996scaling}.
-
 To cite
 
 \begin{itemize}
@@ -105,4 +151,10 @@ To cite
   \item \cite{fisher1967interfacial} rounding and displacement exponents
   \item \cite{kadanoff2009more} Basic (philosophical) introduction to phase transitions
   \item \cite{jaeger1998ehrenfest} Historical account of classification of phase transitions
+\end{itemize}
+
+Todo
+\begin{itemize}
+  \item finite-size scaling ansatz, basic scaling laws, data collapse, etc.
+  \item renormalization group derivation? (in appendix?)
 \end{itemize}

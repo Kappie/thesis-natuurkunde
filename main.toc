@@ -16,6 +16,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4.1}Finite-size scaling}{3}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Effective length scale related to the bond dimension $m$}{3}{section.1.5}
+\contentsline {section}{\numberline {1.5}Effective length scale related to the bond dimension $m$}{4}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{5}{section*.4}
+\contentsline {chapter}{Bibliography}{6}{section*.4}

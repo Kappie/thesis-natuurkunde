@@ -125,36 +125,6 @@
       \field{pages}{777}
       \range{pages}{1}
     \endentry
-    \entry{fisher1972scaling}{article}{}
-      \name{author}{2}{}{%
-        {{hash=55bd076db1ee225826a4ebda1c6f95a1}{%
-           family={Fisher},
-           family_i={F\bibinitperiod},
-           given={Michael\bibnamedelima E},
-           given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=6a8128bfc369cd489d13a7c575f440ab}{%
-           family={Barber},
-           family_i={B\bibinitperiod},
-           given={Michael\bibnamedelima N},
-           given_i={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{a26da430b283fd5102ba42b3331489d5}
-      \strng{fullhash}{a26da430b283fd5102ba42b3331489d5}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{23}
-      \field{title}{Scaling theory for finite-size effects in the critical region}
-      \field{volume}{28}
-      \field{year}{1972}
-      \field{pages}{1516}
-      \range{pages}{1}
-    \endentry
     \entry{fisher1967interfacial}{article}{}
       \name{author}{2}{}{%
         {{hash=55bd076db1ee225826a4ebda1c6f95a1}{%
@@ -183,6 +153,36 @@
       \field{volume}{19}
       \field{year}{1967}
       \field{pages}{169}
+      \range{pages}{1}
+    \endentry
+    \entry{fisher1972scaling}{article}{}
+      \name{author}{2}{}{%
+        {{hash=55bd076db1ee225826a4ebda1c6f95a1}{%
+           family={Fisher},
+           family_i={F\bibinitperiod},
+           given={Michael\bibnamedelima E},
+           given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6a8128bfc369cd489d13a7c575f440ab}{%
+           family={Barber},
+           family_i={B\bibinitperiod},
+           given={Michael\bibnamedelima N},
+           given_i={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{a26da430b283fd5102ba42b3331489d5}
+      \strng{fullhash}{a26da430b283fd5102ba42b3331489d5}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{23}
+      \field{title}{Scaling theory for finite-size effects in the critical region}
+      \field{volume}{28}
+      \field{year}{1972}
+      \field{pages}{1516}
       \range{pages}{1}
     \endentry
   \endsortlist

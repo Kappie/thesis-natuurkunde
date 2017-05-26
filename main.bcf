@@ -2078,12 +2078,16 @@
     <bcf:citekey order="3">jaeger1998ehrenfest</bcf:citekey>
     <bcf:citekey order="4">kadanoff2009more</bcf:citekey>
     <bcf:citekey order="5">barber1983finite</bcf:citekey>
+    <bcf:citekey order="6">fisher1967interfacial</bcf:citekey>
     <bcf:citekey order="6">barber1983finite</bcf:citekey>
-    <bcf:citekey order="7">cardy1996scaling</bcf:citekey>
-    <bcf:citekey order="8">fisher1972scaling</bcf:citekey>
-    <bcf:citekey order="9">fisher1967interfacial</bcf:citekey>
-    <bcf:citekey order="10">kadanoff2009more</bcf:citekey>
-    <bcf:citekey order="11">jaeger1998ehrenfest</bcf:citekey>
+    <bcf:citekey order="7">barber1983finite</bcf:citekey>
+    <bcf:citekey order="8">fisher1967interfacial</bcf:citekey>
+    <bcf:citekey order="9">barber1983finite</bcf:citekey>
+    <bcf:citekey order="10">cardy1996scaling</bcf:citekey>
+    <bcf:citekey order="11">fisher1972scaling</bcf:citekey>
+    <bcf:citekey order="12">fisher1967interfacial</bcf:citekey>
+    <bcf:citekey order="13">kadanoff2009more</bcf:citekey>
+    <bcf:citekey order="14">jaeger1998ehrenfest</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
