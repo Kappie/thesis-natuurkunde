@@ -1,6 +1,6 @@
 \begin{tikzpicture}
-  \def \finiteN {'plots/data/order_param_vs_T_q2_N40-1000_trunc_error1e-6.dat'}
-  \def \finiteChi {'plots/data/order_param_vs_T_q2_chi2-8.dat'}
+  \def \finiteN {'/Users/geertkapteijns/Documents/Natuurkunde/Scriptie/LatexFiles/plots/data/order_param_vs_T_q2_N40-1000_trunc_error1e-6.dat'}
+  \def \finiteChi {'/Users/geertkapteijns/Documents/Natuurkunde/Scriptie/LatexFiles/plots/data/order_param_vs_T_q2_chi2-8.dat'}
   \def \TCrit {2.26918}
 
   \begin{groupplot}[

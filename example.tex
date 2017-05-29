@@ -1,0 +1,8 @@
+    \begin{tikzpicture}
+      \def \dataFile {'plots/data/sample_data.dat'}
+
+      \begin{axis}
+        \addplot[] gnuplot [raw gnuplot] { plot \dataFile index 0};
+      \end{axis}
+
+    \end{tikzpicture}
