@@ -6,13 +6,12 @@ and finite-size scaling.
 We follow the excellent review by Barber \cite{barber1983finite} and
 chapter five of Cardy's book \cite{cardy1996scaling}.
 
-\section{Introduction}
-
 \section{Phase transitions}
-When matter exhibits a sudden change in behaviour, characterized by a change in one or more thermodynamic
-quantities, we say it undergoes a \emph{phase transition}.
+When matter exhibits a sudden change in behaviour, often characterized by a discontinuity or divergence of one or more
+thermodynamic quantities, we say it undergoes a \emph{phase transition}.
+
 A quantity that signifies this change is called an \emph{order parameter},
-that can take vastly different forms across systems and transitions.
+which can take vastly different forms across systems and transitions.
 For example, for the transition of a ferromagnet, the order parameter is the net magnetization of the system,
 while for a percolation transition, it is the size of the largest connected graph.
 
@@ -88,23 +87,32 @@ diagonalization of the partition function of small lattices.
 It is clear that far from the critical point, the order parameter is essentially not dependent on system size,
 while in critical region there are significant deviations from the thermodynamic behaviour.
 
+\begin{figure}
+  \includegraphics[]{order_parameter_finite_N_exact.tikz}
+  \caption{The magnetization of the central spin for small lattices with boundary spins fixed to
+  $+1$. The black line is the exact solution in the thermodynamic limit.}\label{fig:order_parameter_finite_N_exact}
+\end{figure}
+
 One can now define two characteristic temperatures \cite{fisher1967interfacial,
 barber1983finite}.
 The first being the cross-over temperature $T_X$ at which finite-size effects become important,
 which is predicted to scale as
-\begin{equation}
+\begin{equation}\label{eq:cross_over_temperature_scaling}
   |T_X - T_c| \propto N^{-\theta}.
 \end{equation}
 $\theta$ is called the cross-over or rounding exponent.
 
-The second characteristic temperature is the pseudocritical temperature, denoted by $T^{\star}$.
-It can be defined in several ways, one being the point where the order parameter becomes almost zero (in which case it is the same as the cross-over temperature), or the point where the heat capacity
+The second characteristic temperature is the pseudocritical temperature,
+denoted by $T^{\star}$.
+It can be defined in several ways, one being the point where the order parameter becomes almost zero,
+or the point where the heat capacity
 \begin{equation}
   C = T^2 \frac{\partial^2 F}{\partial T^2}
 \end{equation}
 reaches its maximum.
 $T^{\star}$ can be regarded as the point where the finite system in some sense comes closest to undergoing a transition.
-Generally $T^{\star}$ will not equal $T_X$, if only because $T^{\star}$ depends on boundary conditions:
+
+Generally $T^{\star}$ will not equal $T_X$. Furthermore, $T^{\star}$ depends on boundary conditions:
 periodic or fixed boundary conditions will nudge the system into an ordered state,
 therefore $T^{\star} > T_c$.
 Free boundary conditions will cause the system to favor disorder and the pseudocritical temperature to be lowered.
@@ -120,41 +128,171 @@ It is generally accepted that \cite{barber1983finite}
 \end{equation}
 
 Furthermore, if one assumes that finite-size effects become important once the correlation length of the system becomes of order of the system size, i.e. \cite{fisher1967interfacial}
-\begin{equation}
+\begin{equation}\label{eq:correlation_length_propto_N}
   \xi(T_X(N)) \propto N,
 \end{equation}
 then the correlation length exponent $\nu$, given by
 \begin{equation}
   \xi(T) \propto |T - T_c|^{-\nu}
 \end{equation}
-can be related to $\theta$ as
+is, by using \autoref{eq:cross_over_temperature_scaling}, related to $\theta$ as
 \begin{equation}
   \theta = \frac{1}{\nu}.
 \end{equation}
 
+\subsubsection{The finite-size scaling ansatz}
+
+The behaviour of a system of finite size $N$ is expected to be a function of the ratio
+\begin{equation}
+  y = \frac{N}{\xi(T)},
+\end{equation}
+where $\xi(T)$ is the correlation length of the thermodynamic system \cite{fisher1972scaling}.
+
+\todo[inline]{Footnote about systems that are not completely finite, but finite in one direction.}
+
+With the assumption in \autoref{eq:correlation_length_propto_N}, this means that in the limit $y \gg 1$,
+we expect to see thermodynamic behaviour, while for $y \ll 1$,
+the finite system size should enter in the analysis.
+
+To see exactly how this happens, consider as an example the order parameter $M$,
+which in the thermodynamic limit, close to the critical point obeys
+\begin{equation}
+  M(T) \propto
+  \begin{cases}
+    (-t)^{\beta} & \text{if } T \leq T_c, \\
+    0 & \text{if } T \geq T_c,
+  \end{cases}
+\end{equation}
+where we have defined the reduced temperature
+\begin{equation}
+  t = \frac{T - T_c}{T_c}.
+\end{equation}
+
+Assuming the correlation length diverges algebraically
+\begin{equation}\label{eq:xi_propto_t}
+  \xi(T) \propto |t|^{-\nu},
+\end{equation}
+for $T < T_c$ we have
+\begin{equation}\label{eq:order_parameter_propto_correlation_length}
+  M(T) \propto \xi(T)^{-\beta / \nu}.
+\end{equation}
+
+The \emph{finite-size scaling ansatz} now says that for finite systems
+\begin{equation}\label{eq:finite_size_scaling_ansatz}
+  M(T, N) = N^{-\beta/\nu}\mathcal{F}(y),
+\end{equation}
+with the requirement that for $N \to \infty$, it should reproduce the thermodynamic behaviour
+in \autoref{eq:order_parameter_propto_correlation_length}, leading to
+\begin{equation}
+  \lim_{y \to \infty} \mathcal{F}(y) \propto y^{\beta/\nu}.
+\end{equation}
+At the critical point, however, the bulk correlation length diverges and the only relevant length scale is $N$,
+so that we must have
+\begin{equation}
+  M(T = T_c, N) \propto N^{-\beta / \nu},
+\end{equation}
+from which it follows that
+\begin{equation}
+  \lim_{y \to 0} \mathcal{F}(y) = \text{const}.
+\end{equation}
+
+\subsubsection{Extracting exponents from numerical simulation}
+
+To extract critical exponents from (finite) numerical simulations, \autoref{eq:finite_size_scaling_ansatz} may be
+written as
+\begin{equation}\label{eq:finite_size_scaling_ansatz_tN}
+  M(T, N) = N^{-\beta/\nu} \mathcal{G}(t N^{1/\nu})
+\end{equation}
+where it is used that (per \autoref{eq:xi_propto_t})
+\begin{equation}
+  y = \frac{N}{\xi(T)} \propto t^{\nu} N,
+\end{equation}
+and the new scaling function is customarily written as having argument $t N^{1/\nu} = (t^{\nu} N)^{1/\nu}$.
+
+The critical exponents $\beta$ and $\nu$ and the critical temperature can now be extracted by asserting that the
+numerical data for different system sizes should collapse on a single curve
+\begin{equation}
+  \mathcal{G}(t N^{1/\nu}) = M(T, N) N^{\beta/\nu}.
+\end{equation}
+
+The authors of \cite{bhattacharjee2001measure} propose a measure of the fitness $P_b$ of such a data collapse
+\begin{equation}
+  P(\beta, \nu, T_c) = \frac{1}{\mathcal{N}_{\text{overlap}}} \sum_p \sum_{j \neq p} \sum_{i_{\text{overlap}}}
+    |  M(t_{i j}, N_j) N_{j}^{\beta/\nu} - \mathcal{E}_{p}(t_{i j} N_{j}^{1/\nu} ) |,
+\end{equation}
+where for each system size $N_p$, the data points collected for the other system sizes $N_j$ that overlap (that is,
+fall between any two data points collected for $N_p$) are compared with the interpolation $\mathcal{E}_{p}(t_{i j}
+N_{j}^{1/\nu})$ between those two data points. $\mathcal{N}_{\text{overlap}}$ is the number of overlapping pairs.
+
+It is clear that
+\begin{equation}
+  P(\beta, \nu, T_c) \geq 0
+\end{equation}
+and the optimal values for $\beta$, $\nu$ and $T_c$ minimize $P(\beta, \nu, T_c)$.
+
+This measure for the data collapse is found, for data collected for this thesis,
+to work significantly better than other proposed measures such as fitting a polynomial or order 3-8 through all data
+points.
+
+\section{Finite bond dimension scaling in the CTMRG algorithm}
+
+Up until now, we have developed our scaling analysis in terms of a finite system size $N$.
+But the approximation of the infinite-system partition function with the CTMRG algorithm depends on two parameters;
+the system size $N$ and the bond dimension $m$.
+
+A finite bond dimension $m$ carries a characteristic length scale.
+Baxter \cite{baxter1978variational}, and later Östlund and Rommer \cite{ostlund1995thermodynamic} (in the context of
+one-dimensional quantum systems) showed that in the thermodynamic limit,
+CTMRG and DMRG are variational optimizations in the space of matrix product states.
+\todo[inline]{Can extend this idea a bit.}
+
+It is known that an MPS-ansatz with finite bond dimension inherently limits the
+correlation length of the system to a finite value \cite{wolf2006quantum, rommer1997class}. Hence,
+thermodynamic quantities obtained from the CTMRG algorithm with finite $m$, in the limit
+$N \to \infty$, cannot diverge and must show finite-size effects similar to those of some
+effective finite system of size $N_{\text{eff}}(m)$ depending on the bond dimension $m$.
+
+\autoref{fig:order_parameter_vs_T} shows the behaviour of the order parameter of the
+two-dimensional Ising model for systems of finite-size,
+where the result is converged in $m$, and for systems of finite $m$, where
+the result is converged in the system size $N$. The results look very similar and support
+the theory.
 
 \begin{figure}
-  \includegraphics[]{order_parameter_finite_N_exact.tikz}
-  \caption{The magnetization of the central spin for small lattices with boundary spins fixed to
-  $+1$. The black line is the exact solution in the thermodynamic limit.}\label{fig:order_parameter_finite_N_exact}
+\includegraphics[]{order_parameter_vs_T.tikz}
+\caption{Upper panel: expectation value of the central spin $\langle \sigma_0 \rangle$
+  after $n$ CTMRG steps. $m$ is chosen such that the truncation error is smaller than
+  $10^{-6}$. Lower panel: $\langle \sigma_0 \rangle$ for systems with bond dimension $m$.}\label{fig:order_parameter_vs_T}
 \end{figure}
 
+\subsection{Definition of $N_{\text{eff}}$ in terms of the correlation length at $T_c$}
 
+The first direct comparison of finite-size scaling in the system size $N$ with scaling in
+the bond dimension of the CTMRG method $m$ was done
+in \cite{nishino1996numerical}.
 
+In the thermodynamic limit (corresponding to infinite $m$ and $N$), we have the following
+expression for the correlation length of a classical system
+\cite{baxter1982exactly_correlation_length}
+\begin{equation}
+  \xi(T) = \frac{1}{\log\left(\frac{T_0}{T_1}\right)}.
+\end{equation}
+Here, $T_0$ and $T_1$ are the largest and second-largest eigenvalues of the row-to-row
+transfer matrix $T$, respectively. With $N$ tending towards infinity and finite $m$, near
+the critical point $\xi(T)$ should obey a scaling law of the form
+\begin{equation}
+  \xi(T, m) = N_{\text{eff}}(m) \mathcal{F}(N_{\text{eff}}(m) / \xi(T))
+\end{equation}
+with
+\begin{equation}
+  \mathcal{F}(x) = \begin{cases}
+      \text{const} & \text{if } x \to 0, \\
+      x^{-1} & \text{if } x \to \infty.
+    \end{cases}
+\end{equation}
 
-\section{Effective length scale related to the bond dimension $m$}
-
-To cite
-
-\begin{itemize}
-  \item \cite{fisher1972scaling} original physical derivation of finite-size scaling
-  \item \cite{fisher1967interfacial} rounding and displacement exponents
-  \item \cite{kadanoff2009more} Basic (philosophical) introduction to phase transitions
-  \item \cite{jaeger1998ehrenfest} Historical account of classification of phase transitions
-\end{itemize}
-
-Todo
-\begin{itemize}
-  \item finite-size scaling ansatz, basic scaling laws, data collapse, etc.
-  \item renormalization group derivation? (in appendix?)
-\end{itemize}
+Hence, the effective length scale corresponding to the finite bond dimension $m$ is
+proportional to the correlation length of the system at the critical point $t = 0$.
+\begin{equation}
+  N_{\text{eff}}(m) \propto \xi(T = T_c, m).
+\end{equation}

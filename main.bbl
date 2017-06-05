@@ -19,161 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
-    \entry{nishino1995density}{article}{}
-      \name{author}{1}{}{%
-        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={Tomotoshi},
-           given_i={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Physical Society of Japan}%
-      }
-      \strng{namehash}{d5b07ca69d0b3a5496281746f00e4300}
-      \strng{fullhash}{d5b07ca69d0b3a5496281746f00e4300}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the Physical Society of Japan}
-      \field{number}{10}
-      \field{title}{Density matrix renormalization group method for 2D classical models}
-      \field{volume}{64}
-      \field{year}{1995}
-      \field{pages}{3598\bibrangedash 3601}
-      \range{pages}{4}
-    \endentry
-    \entry{nishino1996corner}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={Tomotoshi},
-           given_i={T\bibinitperiod}}}%
-        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
-           family={Okunishi},
-           family_i={O\bibinitperiod},
-           given={Kouichi},
-           given_i={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Physical Society of Japan}%
-      }
-      \strng{namehash}{f7e512668257363d4c92111b5df681ca}
-      \strng{fullhash}{f7e512668257363d4c92111b5df681ca}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the Physical Society of Japan}
-      \field{number}{4}
-      \field{title}{Corner transfer matrix renormalization group method}
-      \field{volume}{65}
-      \field{year}{1996}
-      \field{pages}{891\bibrangedash 894}
-      \range{pages}{4}
-    \endentry
-    \entry{baxter1968dimers}{article}{}
-      \name{author}{1}{}{%
-        {{hash=1aed507145de1146326799ff92d30c2e}{%
-           family={Baxter},
-           family_i={B\bibinitperiod},
-           given={RJ},
-           given_i={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
-      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Mathematical Physics}
-      \field{number}{4}
-      \field{title}{Dimers on a rectangular lattice}
-      \field{volume}{9}
-      \field{year}{1968}
-      \field{pages}{650\bibrangedash 654}
-      \range{pages}{5}
-    \endentry
-    \entry{baxter1978variational}{article}{}
-      \name{author}{1}{}{%
-        {{hash=1aed507145de1146326799ff92d30c2e}{%
-           family={Baxter},
-           family_i={B\bibinitperiod},
-           given={RJ},
-           given_i={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
-      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Statistical Physics}
-      \field{number}{5}
-      \field{title}{Variational approximations for square lattice models in statistical mechanics}
-      \field{volume}{19}
-      \field{year}{1978}
-      \field{pages}{461\bibrangedash 478}
-      \range{pages}{18}
-    \endentry
-    \entry{white1992density}{article}{}
-      \name{author}{1}{}{%
-        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
-           family={White},
-           family_i={W\bibinitperiod},
-           given={Steven\bibnamedelima R},
-           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{d77dc1d7b121038d04902228d0ab5931}
-      \strng{fullhash}{d77dc1d7b121038d04902228d0ab5931}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{19}
-      \field{title}{Density matrix formulation for quantum renormalization groups}
-      \field{volume}{69}
-      \field{year}{1992}
-      \field{pages}{2863}
-      \range{pages}{1}
-    \endentry
-    \entry{ising1925beitrag}{article}{}
-      \name{author}{1}{}{%
-        {{hash=ac607f8a2f05ebe851db6cea5d807d8f}{%
-           family={Ising},
-           family_i={I\bibinitperiod},
-           given={Ernst},
-           given_i={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{ac607f8a2f05ebe851db6cea5d807d8f}
-      \strng{fullhash}{ac607f8a2f05ebe851db6cea5d807d8f}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Zeitschrift für Physik}
-      \field{number}{1}
-      \field{title}{Beitrag zur theorie des ferromagnetismus}
-      \field{volume}{31}
-      \field{year}{1925}
-      \field{pages}{253\bibrangedash 258}
-      \range{pages}{6}
-    \endentry
     \entry{barber1983finite}{incollection}{}
       \name{author}{1}{}{%
         {{hash=300ea62e6e22cb1f05aaaefa11a0979d}{%
@@ -340,173 +185,60 @@
       \field{pages}{1516}
       \range{pages}{1}
     \endentry
-    \entry{okunishi1999universal}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
-           family={Okunishi},
-           family_i={O\bibinitperiod},
-           given={Kouichi},
-           given_i={K\bibinitperiod}}}%
-        {{hash=e6215f01c3f6f2d06044132fccc0dd83}{%
-           family={Hieida},
-           family_i={H\bibinitperiod},
-           given={Yasuhiro},
-           given_i={Y\bibinitperiod}}}%
-        {{hash=73f8f9eddbbaf2d2da1f1264743c9cd3}{%
-           family={Akutsu},
-           family_i={A\bibinitperiod},
-           given={Yasuhiro},
-           given_i={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{19eee34a31bb782cda9faa0007d79bdd}
-      \strng{fullhash}{19eee34a31bb782cda9faa0007d79bdd}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{6}
-      \field{title}{Universal asymptotic eigenvalue distribution of density matrices and corner transfer matrices in the thermodynamic limit}
-      \field{volume}{59}
-      \field{year}{1999}
-      \field{pages}{R6227}
-      \range{pages}{-1}
-    \endentry
-    \entry{davies1988corner}{article}{}
-      \name{author}{1}{}{%
-        {{hash=381930248144a6d86214a0eea3a4db95}{%
-           family={Davies},
-           family_i={D\bibinitperiod},
-           given={Brian},
-           given_i={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{381930248144a6d86214a0eea3a4db95}
-      \strng{fullhash}{381930248144a6d86214a0eea3a4db95}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
-      \field{number}{1}
-      \field{title}{Corner transfer matrices for the Ising model}
-      \field{volume}{154}
-      \field{year}{1988}
-      \field{pages}{1\bibrangedash 20}
-      \range{pages}{20}
-    \endentry
-    \entry{peschel2009reduced}{article}{}
+    \entry{bhattacharjee2001measure}{article}{}
       \name{author}{2}{}{%
-        {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
-           family={Peschel},
-           family_i={P\bibinitperiod},
-           given={Ingo},
-           given_i={I\bibinitperiod}}}%
-        {{hash=ac3a020f554064dfe1ce516053b38117}{%
-           family={Eisler},
-           family_i={E\bibinitperiod},
-           given={Viktor},
-           given_i={V\bibinitperiod}}}%
+        {{hash=4b6492f0e913c650b731d3ab32366ff1}{%
+           family={Bhattacharjee},
+           family_i={B\bibinitperiod},
+           given={Somendra\bibnamedelima M},
+           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e36627c91cecf5c7828339d1b38e4999}{%
+           family={Seno},
+           family_i={S\bibinitperiod},
+           given={Flavio},
+           given_i={F\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {IOP Publishing}%
       }
-      \strng{namehash}{813b78c3075a5536d9dce5d3820778b4}
-      \strng{fullhash}{813b78c3075a5536d9dce5d3820778b4}
+      \strng{namehash}{4068101cfd4c4a4eb855d3476c02a459}
+      \strng{fullhash}{4068101cfd4c4a4eb855d3476c02a459}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of physics a: mathematical and theoretical}
-      \field{number}{50}
-      \field{title}{Reduced density matrices and entanglement entropy in free lattice models}
-      \field{volume}{42}
-      \field{year}{2009}
-      \field{pages}{504003}
+      \field{journaltitle}{Journal of Physics A: Mathematical and General}
+      \field{number}{33}
+      \field{title}{A measure of data collapse for scaling}
+      \field{volume}{34}
+      \field{year}{2001}
+      \field{pages}{6375}
       \range{pages}{1}
     \endentry
-    \entry{peschel1999density}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
-           family={Peschel},
-           family_i={P\bibinitperiod},
-           given={Ingo},
-           given_i={I\bibinitperiod}}}%
-        {{hash=06d6662abf759b92a282eef6ef0b8dac}{%
-           family={Kaulke},
-           family_i={K\bibinitperiod},
-           given={Matthias},
-           given_i={M\bibinitperiod}}}%
-        {{hash=ba39c78ac5c222ecef703337bda34a9b}{%
-           family={Legeza},
-           family_i={L\bibinitperiod},
-           given={Örs},
-           given_i={Ö\bibinitperiod}}}%
+    \entry{baxter1978variational}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1aed507145de1146326799ff92d30c2e}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={RJ},
+           given_i={R\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {WILEY-VCH Verlag}%
+        {Springer}%
       }
-      \strng{namehash}{8db5cab50ea921d0e9141bb59b52640f}
-      \strng{fullhash}{8db5cab50ea921d0e9141bb59b52640f}
+      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
+      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1521-3889}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{2}
-      \field{title}{Density-matrix spectra for integrable models}
-      \field{volume}{8}
-      \field{year}{1999}
-      \field{pages}{153\bibrangedash 164}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1002/(SICI)1521-3889(199902)8:2<153::AID-ANDP153>3.0.CO;2-N
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1002/(SICI)1521-3889(199902)8:2%3C153::AID-ANDP153%3E3.0.CO;2-N
-      \endverb
-      \keyw{Density-matrix renormalization,Integrable systems,Corner transfer matrices}
-    \endentry
-    \entry{nishino1996numerical}{article}{}
-      \name{author}{3}{}{%
-        {{hash=03cfed04dc9c1cf1a7c22ac27253d8ce}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={T},
-           given_i={T\bibinitperiod}}}%
-        {{hash=eef0d64eb48e1ea8c00c09d72ed6a37b}{%
-           family={Okunishi},
-           family_i={O\bibinitperiod},
-           given={K},
-           given_i={K\bibinitperiod}}}%
-        {{hash=98383d4c01dfa3b91b4425078fc5b8c1}{%
-           family={Kikuchi},
-           family_i={K\bibinitperiod},
-           given={M},
-           given_i={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{63ac2895dc630ead4fa9370fcb92c2f0}
-      \strng{fullhash}{63ac2895dc630ead4fa9370fcb92c2f0}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physics Letters A}
-      \field{number}{1-2}
-      \field{title}{Numerical renormalization group at criticality}
-      \field{volume}{213}
-      \field{year}{1996}
-      \field{pages}{69\bibrangedash 72}
-      \range{pages}{4}
+      \field{journaltitle}{Journal of Statistical Physics}
+      \field{number}{5}
+      \field{title}{Variational approximations for square lattice models in statistical mechanics}
+      \field{volume}{19}
+      \field{year}{1978}
+      \field{pages}{461\bibrangedash 478}
+      \range{pages}{18}
     \endentry
     \entry{ostlund1995thermodynamic}{article}{}
       \name{author}{2}{}{%
@@ -578,6 +310,71 @@
       \field{pages}{110403}
       \range{pages}{1}
     \endentry
+    \entry{rommer1997class}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c205f82eecd5c2e343f5cef85ebee59b}{%
+           family={Rommer},
+           family_i={R\bibinitperiod},
+           given={Stefan},
+           given_i={S\bibinitperiod}}}%
+        {{hash=8e8d55df638706d717ba5833841a239a}{%
+           family={Östlund},
+           family_i={Ö\bibinitperiod},
+           given={Stellan},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{f654ce67148a2148408682e7b30bab23}
+      \strng{fullhash}{f654ce67148a2148408682e7b30bab23}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review b}
+      \field{number}{4}
+      \field{title}{Class of ansatz wave functions for one-dimensional spin systems and their relation to the density matrix renormalization group}
+      \field{volume}{55}
+      \field{year}{1997}
+      \field{pages}{2164}
+      \range{pages}{1}
+    \endentry
+    \entry{nishino1996numerical}{article}{}
+      \name{author}{3}{}{%
+        {{hash=03cfed04dc9c1cf1a7c22ac27253d8ce}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={T},
+           given_i={T\bibinitperiod}}}%
+        {{hash=eef0d64eb48e1ea8c00c09d72ed6a37b}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={K},
+           given_i={K\bibinitperiod}}}%
+        {{hash=98383d4c01dfa3b91b4425078fc5b8c1}{%
+           family={Kikuchi},
+           family_i={K\bibinitperiod},
+           given={M},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{63ac2895dc630ead4fa9370fcb92c2f0}
+      \strng{fullhash}{63ac2895dc630ead4fa9370fcb92c2f0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters A}
+      \field{number}{1-2}
+      \field{title}{Numerical renormalization group at criticality}
+      \field{volume}{213}
+      \field{year}{1996}
+      \field{pages}{69\bibrangedash 72}
+      \range{pages}{4}
+    \endentry
     \entry{baxter1982exactly_correlation_length}{book}{}
       \name{author}{1}{}{%
         {{hash=5d7938845ab1d10daf812e33b6b814a9}{%
@@ -598,6 +395,36 @@
       \field{chapter}{7}
       \field{title}{Exactly solved models in statistical mechanics}
       \field{year}{1982}
+    \endentry
+    \entry{nishino1996corner}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={Tomotoshi},
+           given_i={T\bibinitperiod}}}%
+        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={Kouichi},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Physical Society of Japan}%
+      }
+      \strng{namehash}{f7e512668257363d4c92111b5df681ca}
+      \strng{fullhash}{f7e512668257363d4c92111b5df681ca}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Physical Society of Japan}
+      \field{number}{4}
+      \field{title}{Corner transfer matrix renormalization group method}
+      \field{volume}{65}
+      \field{year}{1996}
+      \field{pages}{891\bibrangedash 894}
+      \range{pages}{4}
     \endentry
     \entry{calabrese2004entanglement}{article}{}
       \name{author}{2}{}{%
@@ -906,6 +733,56 @@
       \field{pages}{3040\bibrangedash 3047}
       \range{pages}{8}
     \endentry
+    \entry{white1992density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d77dc1d7b121038d04902228d0ab5931}
+      \strng{fullhash}{d77dc1d7b121038d04902228d0ab5931}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{19}
+      \field{title}{Density matrix formulation for quantum renormalization groups}
+      \field{volume}{69}
+      \field{year}{1992}
+      \field{pages}{2863}
+      \range{pages}{1}
+    \endentry
+    \entry{baxter1968dimers}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1aed507145de1146326799ff92d30c2e}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={RJ},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
+      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{4}
+      \field{title}{Dimers on a rectangular lattice}
+      \field{volume}{9}
+      \field{year}{1968}
+      \field{pages}{650\bibrangedash 654}
+      \range{pages}{5}
+    \endentry
     \entry{huang2017holographic}{article}{}
       \name{author}{3}{}{%
         {{hash=2acbd39722be557c34901c2c5af2d8a2}{%
@@ -1130,7 +1007,6 @@
       \range{pages}{1}
     \endentry
   \endsortlist
-  \missing{baxter1982exactly}
 \endrefsection
 \endinput
 
