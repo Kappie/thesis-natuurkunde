@@ -20,26 +20,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Finite bond dimension scaling in the CTMRG algorithm}{7}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Definition of $N_{\text {eff}}$ in terms of the correlation length at $T_c$}{7}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.1}Definition of the effective length scale in terms of the correlation length at $T_c$}{7}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {2}Results}{9}{chapter.2}
+\contentsline {subsection}{\numberline {1.4.2}Relation to finite-entropy scaling and the exponent $\kappa $.}{9}{subsection.1.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Abstract}{9}{section.2.1}
+\contentsline {subsubsection}{\numberline {1.4.2.1}Quantitative theory for $\kappa $}{9}{subsubsection.1.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Introduction}{9}{section.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Definition of $N_{\text {eff}}$ in terms of the correlation length at $T_c$}{11}{subsection.2.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Scaling relations away from the critical point}{13}{subsection.2.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Finite-entanglement scaling and its relation to two-dimensional classical lattices}{14}{section.2.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Classical analogue of entanglement entropy}{17}{subsection.2.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Locating the critical point with the entanglement spectrum}{17}{subsection.2.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Numerical results}{18}{subsection.2.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}To do}{19}{section.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{22}{section*.20}
+\contentsline {chapter}{Bibliography}{13}{section*.9}

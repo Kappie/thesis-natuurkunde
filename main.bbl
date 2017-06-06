@@ -396,141 +396,6 @@
       \field{title}{Exactly solved models in statistical mechanics}
       \field{year}{1982}
     \endentry
-    \entry{nishino1996corner}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={Tomotoshi},
-           given_i={T\bibinitperiod}}}%
-        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
-           family={Okunishi},
-           family_i={O\bibinitperiod},
-           given={Kouichi},
-           given_i={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Physical Society of Japan}%
-      }
-      \strng{namehash}{f7e512668257363d4c92111b5df681ca}
-      \strng{fullhash}{f7e512668257363d4c92111b5df681ca}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the Physical Society of Japan}
-      \field{number}{4}
-      \field{title}{Corner transfer matrix renormalization group method}
-      \field{volume}{65}
-      \field{year}{1996}
-      \field{pages}{891\bibrangedash 894}
-      \range{pages}{4}
-    \endentry
-    \entry{calabrese2004entanglement}{article}{}
-      \name{author}{2}{}{%
-        {{hash=ff8cd1b95a97984f0ddd7974d624dcce}{%
-           family={Calabrese},
-           family_i={C\bibinitperiod},
-           given={Pasquale},
-           given_i={P\bibinitperiod}}}%
-        {{hash=4ac5aa12178c604ccb16b418a3bdc44c}{%
-           family={Cardy},
-           family_i={C\bibinitperiod},
-           given={John},
-           given_i={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{7c41d949114e1e57289dfa73c9196c8d}
-      \strng{fullhash}{7c41d949114e1e57289dfa73c9196c8d}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Statistical Mechanics: Theory and Experiment}
-      \field{number}{06}
-      \field{title}{Entanglement entropy and quantum field theory}
-      \field{volume}{2004}
-      \field{year}{2004}
-      \field{pages}{P06002}
-      \range{pages}{-1}
-    \endentry
-    \entry{vidal2003entanglement}{article}{}
-      \name{author}{4}{}{%
-        {{hash=d3f8c6663f1fa635f1b95e9d2da51116}{%
-           family={Vidal},
-           family_i={V\bibinitperiod},
-           given={Guifre},
-           given_i={G\bibinitperiod}}}%
-        {{hash=e282ebaa91540c723f7705543aa5f7bf}{%
-           family={Latorre},
-           family_i={L\bibinitperiod},
-           given={José\bibnamedelima Ignacio},
-           given_i={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=88448e461ffcedda1c94ea6aaf03b092}{%
-           family={Rico},
-           family_i={R\bibinitperiod},
-           given={Enrique},
-           given_i={E\bibinitperiod}}}%
-        {{hash=59949d44a3903dfabb88bff3220ff2e0}{%
-           family={Kitaev},
-           family_i={K\bibinitperiod},
-           given={Alexei},
-           given_i={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{48d36160c785b919243f8baa3d62e08e}
-      \strng{fullhash}{8fad87b6936c69ff2030718266de379e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical review letters}
-      \field{number}{22}
-      \field{title}{Entanglement in quantum critical phenomena}
-      \field{volume}{90}
-      \field{year}{2003}
-      \field{pages}{227902}
-      \range{pages}{1}
-    \endentry
-    \entry{ercolessi2010exact}{article}{}
-      \name{author}{3}{}{%
-        {{hash=22cfdaf1f3630990fc9261ad993ddad0}{%
-           family={Ercolessi},
-           family_i={E\bibinitperiod},
-           given={Elisa},
-           given_i={E\bibinitperiod}}}%
-        {{hash=ac9175c70987b019bc27f49b918d3cd0}{%
-           family={Evangelisti},
-           family_i={E\bibinitperiod},
-           given={Stefano},
-           given_i={S\bibinitperiod}}}%
-        {{hash=e0d18cbab5ba966c0f0fe01b2fa2c37d}{%
-           family={Ravanini},
-           family_i={R\bibinitperiod},
-           given={Francesco},
-           given_i={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{dc8aad29a20f78e154cb2df198a8f457}
-      \strng{fullhash}{dc8aad29a20f78e154cb2df198a8f457}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physics Letters A}
-      \field{number}{21}
-      \field{title}{Exact entanglement entropy of the XYZ model and its sine-Gordon limit}
-      \field{volume}{374}
-      \field{year}{2010}
-      \field{pages}{2101\bibrangedash 2105}
-      \range{pages}{5}
-    \endentry
     \entry{andersson1999density}{article}{}
       \name{author}{3}{}{%
         {{hash=fe1925cecbb3e3433192df58d77c9fc2}{%
@@ -673,6 +538,226 @@
       \field{pages}{255701}
       \range{pages}{1}
     \endentry
+    \entry{calabrese2004entanglement}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ff8cd1b95a97984f0ddd7974d624dcce}{%
+           family={Calabrese},
+           family_i={C\bibinitperiod},
+           given={Pasquale},
+           given_i={P\bibinitperiod}}}%
+        {{hash=4ac5aa12178c604ccb16b418a3bdc44c}{%
+           family={Cardy},
+           family_i={C\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{7c41d949114e1e57289dfa73c9196c8d}
+      \strng{fullhash}{7c41d949114e1e57289dfa73c9196c8d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Mechanics: Theory and Experiment}
+      \field{number}{06}
+      \field{title}{Entanglement entropy and quantum field theory}
+      \field{volume}{2004}
+      \field{year}{2004}
+      \field{pages}{P06002}
+      \range{pages}{-1}
+    \endentry
+    \entry{vidal2003entanglement}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d3f8c6663f1fa635f1b95e9d2da51116}{%
+           family={Vidal},
+           family_i={V\bibinitperiod},
+           given={Guifre},
+           given_i={G\bibinitperiod}}}%
+        {{hash=e282ebaa91540c723f7705543aa5f7bf}{%
+           family={Latorre},
+           family_i={L\bibinitperiod},
+           given={José\bibnamedelima Ignacio},
+           given_i={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=88448e461ffcedda1c94ea6aaf03b092}{%
+           family={Rico},
+           family_i={R\bibinitperiod},
+           given={Enrique},
+           given_i={E\bibinitperiod}}}%
+        {{hash=59949d44a3903dfabb88bff3220ff2e0}{%
+           family={Kitaev},
+           family_i={K\bibinitperiod},
+           given={Alexei},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{48d36160c785b919243f8baa3d62e08e}
+      \strng{fullhash}{8fad87b6936c69ff2030718266de379e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{22}
+      \field{title}{Entanglement in quantum critical phenomena}
+      \field{volume}{90}
+      \field{year}{2003}
+      \field{pages}{227902}
+      \range{pages}{1}
+    \endentry
+    \entry{ercolessi2010exact}{article}{}
+      \name{author}{3}{}{%
+        {{hash=22cfdaf1f3630990fc9261ad993ddad0}{%
+           family={Ercolessi},
+           family_i={E\bibinitperiod},
+           given={Elisa},
+           given_i={E\bibinitperiod}}}%
+        {{hash=ac9175c70987b019bc27f49b918d3cd0}{%
+           family={Evangelisti},
+           family_i={E\bibinitperiod},
+           given={Stefano},
+           given_i={S\bibinitperiod}}}%
+        {{hash=e0d18cbab5ba966c0f0fe01b2fa2c37d}{%
+           family={Ravanini},
+           family_i={R\bibinitperiod},
+           given={Francesco},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{dc8aad29a20f78e154cb2df198a8f457}
+      \strng{fullhash}{dc8aad29a20f78e154cb2df198a8f457}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters A}
+      \field{number}{21}
+      \field{title}{Exact entanglement entropy of the XYZ model and its sine-Gordon limit}
+      \field{volume}{374}
+      \field{year}{2010}
+      \field{pages}{2101\bibrangedash 2105}
+      \range{pages}{5}
+    \endentry
+    \entry{affleck1986universal}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a947b64dcc23ff78f9e6ce799bd832bd}{%
+           family={Affleck},
+           family_i={A\bibinitperiod},
+           given={Ian},
+           given_i={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{a947b64dcc23ff78f9e6ce799bd832bd}
+      \strng{fullhash}{a947b64dcc23ff78f9e6ce799bd832bd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{7}
+      \field{title}{Universal term in the free energy at a critical point and the conformal anomaly}
+      \field{volume}{56}
+      \field{year}{1986}
+      \field{pages}{746}
+      \range{pages}{1}
+    \endentry
+    \entry{lieb1961two}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1b288c8b1fbf5a7ce1098f34c9bfdce4}{%
+           family={Lieb},
+           family_i={L\bibinitperiod},
+           given={Elliott},
+           given_i={E\bibinitperiod}}}%
+        {{hash=2ec6fe930f464499746548243b79fcf5}{%
+           family={Schultz},
+           family_i={S\bibinitperiod},
+           given={Theodore},
+           given_i={T\bibinitperiod}}}%
+        {{hash=c95e7126775d85fd2dacb9b3d545ab76}{%
+           family={Mattis},
+           family_i={M\bibinitperiod},
+           given={Daniel},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5c1e9dc3e9d61b2b3770091f247551be}
+      \strng{fullhash}{5c1e9dc3e9d61b2b3770091f247551be}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Physics}
+      \field{number}{3}
+      \field{title}{Two soluble models of an antiferromagnetic chain}
+      \field{volume}{16}
+      \field{year}{1961}
+      \field{pages}{407\bibrangedash 466}
+      \range{pages}{60}
+    \endentry
+    \entry{mata1989energy}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3aac5900c7c60432c09b38d48c274c8c}{%
+           family={Mata},
+           family_i={M\bibinitperiod},
+           given={GJ},
+           given_i={G\bibinitperiod}}}%
+        {{hash=0f346ef4d6f941f0fd1429acefa2d27a}{%
+           family={Arnold},
+           family_i={A\bibinitperiod},
+           given={GB},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{443cd660eb40b7806fb5d082315bb8da}
+      \strng{fullhash}{443cd660eb40b7806fb5d082315bb8da}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{13}
+      \field{title}{Energy gap, dynamic correlations, and correlation length in two-dimensional antiferromagnets}
+      \field{volume}{39}
+      \field{year}{1989}
+      \field{pages}{9768}
+      \range{pages}{1}
+    \endentry
+    \entry{pfeuty1970one}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6ea25921b547574dab57c4cc9eff8d9d}{%
+           family={Pfeuty},
+           family_i={P\bibinitperiod},
+           given={Pierre},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \strng{fullhash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ANNALS of Physics}
+      \field{number}{1}
+      \field{title}{The one-dimensional Ising model with a transverse field}
+      \field{volume}{57}
+      \field{year}{1970}
+      \field{pages}{79\bibrangedash 90}
+      \range{pages}{12}
+    \endentry
     \entry{calabrese2008entanglement}{article}{}
       \name{author}{2}{}{%
         {{hash=ff8cd1b95a97984f0ddd7974d624dcce}{%
@@ -701,309 +786,6 @@
       \field{volume}{78}
       \field{year}{2008}
       \field{pages}{032329}
-      \range{pages}{1}
-    \endentry
-    \entry{nishino1997corner}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={Tomotoshi},
-           given_i={T\bibinitperiod}}}%
-        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
-           family={Okunishi},
-           family_i={O\bibinitperiod},
-           given={Kouichi},
-           given_i={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Physical Society of Japan}%
-      }
-      \strng{namehash}{f7e512668257363d4c92111b5df681ca}
-      \strng{fullhash}{f7e512668257363d4c92111b5df681ca}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the Physical Society of Japan}
-      \field{number}{10}
-      \field{title}{Corner transfer matrix algorithm for classical renormalization group}
-      \field{volume}{66}
-      \field{year}{1997}
-      \field{pages}{3040\bibrangedash 3047}
-      \range{pages}{8}
-    \endentry
-    \entry{white1992density}{article}{}
-      \name{author}{1}{}{%
-        {{hash=d77dc1d7b121038d04902228d0ab5931}{%
-           family={White},
-           family_i={W\bibinitperiod},
-           given={Steven\bibnamedelima R},
-           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{d77dc1d7b121038d04902228d0ab5931}
-      \strng{fullhash}{d77dc1d7b121038d04902228d0ab5931}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{19}
-      \field{title}{Density matrix formulation for quantum renormalization groups}
-      \field{volume}{69}
-      \field{year}{1992}
-      \field{pages}{2863}
-      \range{pages}{1}
-    \endentry
-    \entry{baxter1968dimers}{article}{}
-      \name{author}{1}{}{%
-        {{hash=1aed507145de1146326799ff92d30c2e}{%
-           family={Baxter},
-           family_i={B\bibinitperiod},
-           given={RJ},
-           given_i={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{1aed507145de1146326799ff92d30c2e}
-      \strng{fullhash}{1aed507145de1146326799ff92d30c2e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Mathematical Physics}
-      \field{number}{4}
-      \field{title}{Dimers on a rectangular lattice}
-      \field{volume}{9}
-      \field{year}{1968}
-      \field{pages}{650\bibrangedash 654}
-      \range{pages}{5}
-    \endentry
-    \entry{huang2017holographic}{article}{}
-      \name{author}{3}{}{%
-        {{hash=2acbd39722be557c34901c2c5af2d8a2}{%
-           family={Huang},
-           family_i={H\bibinitperiod},
-           given={Ching-Yu},
-           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=84121b863e7717cc258740606b188370}{%
-           family={Wei},
-           family_i={W\bibinitperiod},
-           given={Tzu-Chieh},
-           given_i={T\bibinithyphendelim C\bibinitperiod}}}%
-        {{hash=99b8d996d1c8efaf7f5ba24de4b15f9d}{%
-           family={Orus},
-           family_i={O\bibinitperiod},
-           given={Roman},
-           given_i={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{0165477934983720f3d0eb2718ef0fe3}
-      \strng{fullhash}{0165477934983720f3d0eb2718ef0fe3}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1702.01598}
-      \field{title}{Holographic encoding of universality in corner spectra}
-      \field{year}{2017}
-    \endentry
-    \entry{orus2012exploring}{article}{}
-      \name{author}{1}{}{%
-        {{hash=220e5a12680385b58fbfac3e4405944d}{%
-           family={Orús},
-           family_i={O\bibinitperiod},
-           given={Román},
-           given_i={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{220e5a12680385b58fbfac3e4405944d}
-      \strng{fullhash}{220e5a12680385b58fbfac3e4405944d}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review B}
-      \field{number}{20}
-      \field{title}{Exploring corner transfer matrices and corner tensors for the classical simulation of quantum lattice systems}
-      \field{volume}{85}
-      \field{year}{2012}
-      \field{pages}{205117}
-      \range{pages}{1}
-    \endentry
-    \entry{krvcmar2015reentrant}{article}{}
-      \name{author}{2}{}{%
-        {{hash=bbdf109b9243eb34fb4f2ac5de20a83e}{%
-           family={Krčmár},
-           family_i={K\bibinitperiod},
-           given={Roman},
-           given_i={R\bibinitperiod}}}%
-        {{hash=793b122cbaa5865e583b9292d3595279}{%
-           family={Šamaj},
-           family_i={Š\bibinitperiod},
-           given={Ladislav},
-           given_i={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{6363068da13d83dcef3e9449c1a4ab99}
-      \strng{fullhash}{6363068da13d83dcef3e9449c1a4ab99}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{5}
-      \field{title}{Reentrant disorder-disorder transitions in generalized multicomponent Widom-Rowlinson models}
-      \field{volume}{92}
-      \field{year}{2015}
-      \field{pages}{052103}
-      \range{pages}{1}
-    \endentry
-    \entry{PhysRevE.94.022134}{article}{}
-      \name{author}{3}{}{%
-        {{hash=49b1c514d8e278e55f4bba715f1cedb4}{%
-           family={Krcmar},
-           family_i={K\bibinitperiod},
-           given={Roman},
-           given_i={R\bibinitperiod}}}%
-        {{hash=888a0bbc52e7e11c5741931977ae69f7}{%
-           family={Gendiar},
-           family_i={G\bibinitperiod},
-           given={Andrej},
-           given_i={A\bibinitperiod}}}%
-        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={Tomotoshi},
-           given_i={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{05e9e660f12725ea0c5abe56b9814719}
-      \strng{fullhash}{05e9e660f12725ea0c5abe56b9814719}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{2}
-      \field{journaltitle}{Phys. Rev. E}
-      \field{month}{08}
-      \field{title}{Phase diagram of a truncated tetrahedral model}
-      \field{volume}{94}
-      \field{year}{2016}
-      \field{pages}{022134}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevE.94.022134
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.94.022134
-      \endverb
-    \endentry
-    \entry{krvcmar2016phase}{article}{}
-      \name{author}{3}{}{%
-        {{hash=bbdf109b9243eb34fb4f2ac5de20a83e}{%
-           family={Krčmár},
-           family_i={K\bibinitperiod},
-           given={Roman},
-           given_i={R\bibinitperiod}}}%
-        {{hash=888a0bbc52e7e11c5741931977ae69f7}{%
-           family={Gendiar},
-           family_i={G\bibinitperiod},
-           given={Andrej},
-           given_i={A\bibinitperiod}}}%
-        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={Tomotoshi},
-           given_i={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{579cd140038d9a45caf11280cd31e395}
-      \strng{fullhash}{579cd140038d9a45caf11280cd31e395}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1612.07611}
-      \field{title}{Phase transition of the six-state clock model observed from the entanglement entropy}
-      \field{year}{2016}
-    \endentry
-    \entry{osborne2002entanglement}{article}{}
-      \name{author}{2}{}{%
-        {{hash=ba1ec5bee7cbdbabb2e87d1cda08a301}{%
-           family={Osborne},
-           family_i={O\bibinitperiod},
-           given={Tobias\bibnamedelima J},
-           given_i={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=da3999c0b61c4be4685fd532efeccdf1}{%
-           family={Nielsen},
-           family_i={N\bibinitperiod},
-           given={Michael\bibnamedelima A},
-           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{b5d79694235b56fb3ff8070ab0307317}
-      \strng{fullhash}{b5d79694235b56fb3ff8070ab0307317}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review A}
-      \field{number}{3}
-      \field{title}{Entanglement in a simple quantum phase transition}
-      \field{volume}{66}
-      \field{year}{2002}
-      \field{pages}{032110}
-      \range{pages}{1}
-    \endentry
-    \entry{pirvu2012matrix}{article}{}
-      \name{author}{4}{}{%
-        {{hash=bf009036b4fb2930621cc6a2dc041ac8}{%
-           family={Pirvu},
-           family_i={P\bibinitperiod},
-           given={B},
-           given_i={B\bibinitperiod}}}%
-        {{hash=f62d54d12f1933af26fb09ba7084c940}{%
-           family={Vidal},
-           family_i={V\bibinitperiod},
-           given={G},
-           given_i={G\bibinitperiod}}}%
-        {{hash=085ab1d28e21b822e7bebcfb7d68f99f}{%
-           family={Verstraete},
-           family_i={V\bibinitperiod},
-           given={F},
-           given_i={F\bibinitperiod}}}%
-        {{hash=3927d455d9d2dd281ac3ebbe1e91450d}{%
-           family={Tagliacozzo},
-           family_i={T\bibinitperiod},
-           given={L},
-           given_i={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{e267ba26302c01fb1d9e4f58d52129e6}
-      \strng{fullhash}{0b0fee18578a0e357a4f5a8e280a4265}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical review b}
-      \field{number}{7}
-      \field{title}{Matrix product states for critical spin chains: Finite-size versus finite-entanglement scaling}
-      \field{volume}{86}
-      \field{year}{2012}
-      \field{pages}{075117}
       \range{pages}{1}
     \endentry
   \endsortlist
