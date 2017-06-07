@@ -1,5 +1,4 @@
-\section{Abstract}
-This chapter explains how to apply to ideas of the density matrix renormalization group to
+\chapterprecishere{This chapter explains how to apply to ideas of the density matrix renormalization group to
 two-dimensional classical lattices. The Ising model is used throughout.
 
 First, we explain the transfer-matrix formulation for
@@ -12,10 +11,12 @@ matrix in terms of a tensor network.
 Then, we explain the
 corner transfer matrix renormalization group. This method, first introduced by Nishino and
 Okunishi \cite{nishino1996corner}, combines ideas from Baxter \cite{baxter1968dimers,
-baxter1978variational, baxter1982exactly} and White \cite{white1992density} to
-significantly speed up the renormalization of the transfer matrix.
+baxter1978variational, baxter1982exactly_ctm} and White \cite{white1992density} to
+significantly speed up the renormalization of the transfer matrix.}
 
-\section{Partition functions of classical lattices}
+\section{Statistical mechanics on classical lattices}
+For a general introduction to statistical mechanics, we refer to \cite{tong2011lectures}.
+
 The central quantity in equilibrium statistical mechanics is the partition
 function $Z$, which, for a discrete system such as a lattice, is defined as
 \begin{equation}
@@ -23,6 +24,33 @@ function $Z$, which, for a discrete system such as a lattice, is defined as
 \end{equation}
 where the sum is over all microstates $s$, $H$ is the energy function, and
 $\beta = T^{-1}$ the inverse temperature.
+
+The probability that the system is in a particular microstate
+\begin{equation}
+  p(s) = \frac{\exp (-\beta H(s)) }{Z}
+\end{equation}
+is also called the \emph{Boltzmann weight}.
+
+At first glance, the partition function is a simple normalization factor.
+But its importance stems from the fact that since it contains all statistical information about the system,
+all thermodynamic quantities can be expressed as a function of $Z$.
+
+The energy of the system is expressed as
+\begin{equation}
+  \langle E \rangle = \frac{\sum_{s} H(s) \exp{(-\beta H(s))}}{Z} = -\frac{\partial}{\partial \beta} \log Z,
+\end{equation}
+the entropy as
+\begin{equation}
+  S = - \sum_{s} p(s) \log p(s) = \frac{\partial}{\partial T}(T \log Z),
+\end{equation}
+and the free energy as
+\begin{equation}
+  F = \langle E \rangle - TS = T^2 \frac{\partial}{\partial T} \log Z - T \frac{\partial}{\partial T}(T \log Z) = -T \log Z.
+\end{equation}
+
+
+
+
 
 \section{Transfer matrices of lattice models}
 
@@ -85,7 +113,7 @@ In terms of this matrix, $Z_N$ is written as
 \end{equation}
 
 $T$ is called the transfer matrix. In the basis of \autoref{eq:basis_transfer_matrix_1d},
-$T$ is written as
+it is written as
 \begin{equation}
   T = \begin{bmatrix}
     e^K & e^{-K} \\
@@ -588,12 +616,79 @@ matrices in higher dimensions and to quantum systems, see \cite{orus2012explorin
 
 \section{Spectrum of the corner transfer matrix}
 
+\subsection{Analytical results for the Ising model}
+In what follows, we present results established in \cite{peschel2009reduced, peschel1999density}.
 
-\section{Validity of approximation}
+For the off-critical Ising model on a square lattice, we have \cite{davies1988corner}
+\begin{equation}\label{eq:rho_exact_expression_off_critical}
+  \hat{\rho} = \hat{A}^4 = \exp(-\hat{H}_{\text{CTM}}),
+\end{equation}
+where
+\begin{equation}
+  \hat{H}_{\text{CTM}} = \sum_{l = 0}^{\infty} \epsilon_l(T) c^{\dagger}_l c_l,
+\end{equation}
+with $c_l$ and $c^{\dagger}_l$ fermionic annihilation and creation operators and
+\begin{equation}
+  \epsilon_l =
+  \begin{cases}
+    (2l + 1)\epsilon(T) & \text{if } T > T_c, \\
+    2l\epsilon(T) & \text{if } T < T_c.
+  \end{cases}
+\end{equation}
+with $\epsilon(T)$ a model-specific factor that only depends on temperature.
 
-\todo[inline]{To do. Talk about spectrum of reduced density matrix/ctm and how it relates
-to energy gap/correlation length and critical behaviour.}
+In other words, the reduced density matrix (or equivalently, the corner transfer matrix $A$) can be written as a
+density matrix of an effective free fermionic Hamiltonian with equally spaced excitations.
 
+What does this mean for the spectrum of $A$?
+If we assume a free boundary, we have to distinguish between the ordered and disordered phase.
+
+In the disordered phase, we have $\epsilon_l = (2l + 1)\epsilon(T)$.
+The ground state, $E = 0$, corresponds to the vacuum state of the effective system described by $H_{\text{CTM}}$.
+The single-fermion excitations give $\epsilon, 3\epsilon, 5\epsilon,
+\dots$, while two-fermion excitations give $4\epsilon$ ($c^{\dagger}_0 c^{\dagger}_1 \ket{0}$),
+$6\epsilon$ ($c^{\dagger}_0 c^{\dagger}_2 \ket{0}$) and $8\epsilon$ ($c^{\dagger}_0 c^{\dagger}_3 \ket{0}$ \emph{or}
+$c^{\dagger}_1 c^{\dagger}_2 \ket{0}$).
+So the first degeneracy appears at $8\epsilon$.
+$9\epsilon$ is also degenerate:
+it can be constructed with a single-fermion excitation ($ c^{\dagger}_4 \ket{0} $) and a three-fermion
+excitation ($ c^{\dagger}_2 c^{\dagger}_1 c^{\dagger}_0 \ket{0} $).
+
+The numerical results from the CTMRG algorithm exactly confirm this picture.
+See the $T = 2.6$ line in the left panel of \autoref{fig:spectrum_ctm}. The gap after the first two eigenvalues is due
+to the absence of the level $2\epsilon$. The $\epsilon_l$ are linear and the degeneracies are correct.
+
+In the ordered phase, we have a two-fold degeneracy for every state due to symmetry and
+ground state energy $E = 0$.
+After that, the only available levels are $2\epsilon, 4\epsilon, 6\epsilon,
+\dots$.
+The degeneracy of the $n$th energy level is given by $2p(n)$, twice the number of partitions of $n$ into distinct integers
+\cite{okunishi1999universal}, with the factor of two coming from symmetry.
+
+To illustrate:
+$c^{\dagger}_1 c^{\dagger}_2 \ket{0}$ and $c^{\dagger}_3 \ket{0}$ both have $E = 6\epsilon$,
+the third energy level (counting the vacuum as the zeroth energy level),
+which is to say $p(3) = 2$ since $\{3, 2 + 1 \}$ are the ways to write $3$.
+The line $T = 2$ in the left panel of \autoref{fig:spectrum_ctm} confirms these results.
+
+With a fixed boundary, the spectrum in the disordered phase doesn't change.
+In the ordered phase however, the two-fold degeneracy due to symmetry is lifted,
+so the degeneracy of the $n$th energy level becomes $p(n)$.
+As a consequence, the spectrum decays much faster. See the right panel of \autoref{fig:spectrum_ctm}.
+
+At or close to criticality, the expression in \autoref{eq:rho_exact_expression_off_critical} breaks down,
+and the spectrum of $\hat{\rho}$ is smoothened out.
+In general, below and at criticality, the spectrum decays slower for a free boundary.
+This is to be expected, since $A$ preserves the symmetry when the boundary is free.
+At $T = 0$, $A$ has two equally large non-zero eigenvalues, representing either all up or all down spins on the boundary
+of the quadrant, while for a fixed boundary, $A$ has one non-zero eigenvalue:
+it represents a completely polarized state.
+
+\begin{figure}
+  \includegraphics[]{spectrum_ctm.tikz}
+  \caption{First part of the spectrum of $A$ after $n = 1000$ steps with a bond dimension of $m =
+  250$.}\label{fig:spectrum_ctm}
+\end{figure}
 
 \section{Equivalence to variational approximation in the space of matrix product states.}
 

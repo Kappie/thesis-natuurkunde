@@ -124,6 +124,27 @@
       \field{pages}{461\bibrangedash 478}
       \range{pages}{18}
     \endentry
+    \entry{baxter1982exactly_ctm}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5d7938845ab1d10daf812e33b6b814a9}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={Rodney\bibnamedelima J},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5d7938845ab1d10daf812e33b6b814a9}
+      \strng{fullhash}{5d7938845ab1d10daf812e33b6b814a9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{13}
+      \field{title}{Exactly solved models in statistical mechanics}
+      \field{year}{1982}
+    \endentry
     \entry{white1992density}{article}{}
       \name{author}{1}{}{%
         {{hash=d77dc1d7b121038d04902228d0ab5931}{%
@@ -149,6 +170,29 @@
       \field{pages}{2863}
       \range{pages}{1}
     \endentry
+    \entry{tong2011lectures}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e1841c0c41b5a5ffe8310253191fe07f}{%
+           family={Tong},
+           family_i={T\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \strng{fullhash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lectures on statistical physics}
+      \field{urlday}{07}
+      \field{urlmonth}{06}
+      \field{urlyear}{2017}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://www.damtp.cam.ac.uk/user/tong/statphys.html
+      \endverb
+    \endentry
     \entry{ising1925beitrag}{article}{}
       \name{author}{1}{}{%
         {{hash=ac607f8a2f05ebe851db6cea5d807d8f}{%
@@ -173,27 +217,6 @@
       \field{year}{1925}
       \field{pages}{253\bibrangedash 258}
       \range{pages}{6}
-    \endentry
-    \entry{baxter1982exactly_ctm}{book}{}
-      \name{author}{1}{}{%
-        {{hash=5d7938845ab1d10daf812e33b6b814a9}{%
-           family={Baxter},
-           family_i={B\bibinitperiod},
-           given={Rodney\bibnamedelima J},
-           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{5d7938845ab1d10daf812e33b6b814a9}
-      \strng{fullhash}{5d7938845ab1d10daf812e33b6b814a9}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{chapter}{13}
-      \field{title}{Exactly solved models in statistical mechanics}
-      \field{year}{1982}
     \endentry
     \entry{nishino1997corner}{article}{}
       \name{author}{2}{}{%
@@ -278,8 +301,140 @@
       \field{pages}{205117}
       \range{pages}{1}
     \endentry
+    \entry{peschel2009reduced}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={Ingo},
+           given_i={I\bibinitperiod}}}%
+        {{hash=ac3a020f554064dfe1ce516053b38117}{%
+           family={Eisler},
+           family_i={E\bibinitperiod},
+           given={Viktor},
+           given_i={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{813b78c3075a5536d9dce5d3820778b4}
+      \strng{fullhash}{813b78c3075a5536d9dce5d3820778b4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of physics a: mathematical and theoretical}
+      \field{number}{50}
+      \field{title}{Reduced density matrices and entanglement entropy in free lattice models}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{pages}{504003}
+      \range{pages}{1}
+    \endentry
+    \entry{peschel1999density}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e1ba1952c7fe69b64b991e46cf17e237}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={Ingo},
+           given_i={I\bibinitperiod}}}%
+        {{hash=06d6662abf759b92a282eef6ef0b8dac}{%
+           family={Kaulke},
+           family_i={K\bibinitperiod},
+           given={Matthias},
+           given_i={M\bibinitperiod}}}%
+        {{hash=ba39c78ac5c222ecef703337bda34a9b}{%
+           family={Legeza},
+           family_i={L\bibinitperiod},
+           given={Örs},
+           given_i={Ö\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WILEY-VCH Verlag}%
+      }
+      \strng{namehash}{8db5cab50ea921d0e9141bb59b52640f}
+      \strng{fullhash}{8db5cab50ea921d0e9141bb59b52640f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1521-3889}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{2}
+      \field{title}{Density-matrix spectra for integrable models}
+      \field{volume}{8}
+      \field{year}{1999}
+      \field{pages}{153\bibrangedash 164}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/(SICI)1521-3889(199902)8:2<153::AID-ANDP153>3.0.CO;2-N
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/(SICI)1521-3889(199902)8:2%3C153::AID-ANDP153%3E3.0.CO;2-N
+      \endverb
+      \keyw{Density-matrix renormalization,Integrable systems,Corner transfer matrices}
+    \endentry
+    \entry{davies1988corner}{article}{}
+      \name{author}{1}{}{%
+        {{hash=381930248144a6d86214a0eea3a4db95}{%
+           family={Davies},
+           family_i={D\bibinitperiod},
+           given={Brian},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{381930248144a6d86214a0eea3a4db95}
+      \strng{fullhash}{381930248144a6d86214a0eea3a4db95}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{1}
+      \field{title}{Corner transfer matrices for the Ising model}
+      \field{volume}{154}
+      \field{year}{1988}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+    \endentry
+    \entry{okunishi1999universal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e3b01978b5f2e4e8af91c42a277f79fd}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={Kouichi},
+           given_i={K\bibinitperiod}}}%
+        {{hash=e6215f01c3f6f2d06044132fccc0dd83}{%
+           family={Hieida},
+           family_i={H\bibinitperiod},
+           given={Yasuhiro},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=73f8f9eddbbaf2d2da1f1264743c9cd3}{%
+           family={Akutsu},
+           family_i={A\bibinitperiod},
+           given={Yasuhiro},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{19eee34a31bb782cda9faa0007d79bdd}
+      \strng{fullhash}{19eee34a31bb782cda9faa0007d79bdd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{6}
+      \field{title}{Universal asymptotic eigenvalue distribution of density matrices and corner transfer matrices in the thermodynamic limit}
+      \field{volume}{59}
+      \field{year}{1999}
+      \field{pages}{R6227}
+      \range{pages}{-1}
+    \endentry
   \endsortlist
-  \missing{baxter1982exactly}
 \endrefsection
 \endinput
 
