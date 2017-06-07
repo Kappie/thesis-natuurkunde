@@ -565,10 +565,29 @@ until a convergence criterion is reached.
 
 
 \section{Calculation of observable quantities}
+The key point of the corner transfer matrix renormalization group method \cite{nishino1997corner, nishino1996corner} is
+that it unifies White's density matrix renormalization group method \cite{white1992density} with Baxter's corner
+transfer matrix approach \cite{baxter1968dimers, baxter1978variational}, through the identification (in the isotropic
+case)
+\begin{equation}\label{eq:correspondence_density_matrix_ctm}
+  \rho_{\text{half-chain}} = A^4.
+\end{equation}
+
+This allows one to define a 2D classical analogue to the half-chain entanglement entropy of a 1D quantum system
+\begin{equation}\label{eq:classical_entropy}
+  S_{\text{classical}} = - \tr A^4 \log A^4 = - \sum_{\alpha=1}^{m} \nu_{\alpha}^4 \log \nu_{\alpha}^4,
+\end{equation}
+where $\nu_{\alpha}$ are the eigenvalues of the corner transfer matrix $A$.
+In the CTMRG algorithm, $A$ is kept in diagonal form, making $S_{\text{classical}}$ trivial to compute.
+
+In \cite{huang2017holographic}, numerical evidence is given for the validity of \autoref{eq:classical_entropy} for a
+wide range of models, and the concept is generalized to higher dimensions. For an overview of applying corner transfer
+matrices in higher dimensions and to quantum systems, see \cite{orus2012exploring}.
 
 \todo[inline]{To do}
 
 \section{Spectrum of the corner transfer matrix}
+
 
 \section{Validity of approximation}
 
