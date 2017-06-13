@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=a-tensor] (0) at (0, 0) {};
+		\node [style=generic2] (1) at (0, 1) {};
+		\node [style=generic2] (2) at (1, 0) {};
+		\node [style=generic2] (3) at (0, -1) {};
+		\node [style=generic2] (4) at (-1, 0) {};
+		\node [style=ctm] (5) at (-1, 1) {};
+		\node [style=ctm] (6) at (1, 1) {};
+		\node [style=ctm] (7) at (1, -1) {};
+		\node [style=ctm] (8) at (-1, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (1) to (0);
+		\draw [style=simple] (0) to (3);
+		\draw [style=simple] (0) to (2);
+		\draw [style=simple] (0) to (4);
+		\draw [style=thick leg] (1) to (6);
+		\draw [style=thick leg] (6) to (2);
+		\draw [style=thick leg] (2) to (7);
+		\draw [style=thick leg] (7) to (3);
+		\draw [style=thick leg] (3) to (8);
+		\draw [style=thick leg] (8) to (4);
+		\draw [style=thick leg] (4) to (5);
+		\draw [style=thick leg] (5) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

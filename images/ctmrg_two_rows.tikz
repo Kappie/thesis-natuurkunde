@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=ctm] (0) at (-1, 1) {};
+		\node [style=ctm] (1) at (1, 1) {};
+		\node [style=ctm] (2) at (1, 0) {};
+		\node [style=ctm] (3) at (-1, 0) {};
+		\node [style=generic2] (4) at (0, 1) {};
+		\node [style=generic2] (5) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=thick leg] (0) to (4);
+		\draw [style=thick leg] (0) to (3);
+		\draw [style=thick leg] (3) to (5);
+		\draw [style=thick leg] (5) to (2);
+		\draw [style=thick leg] (4) to (1);
+		\draw [style=thick leg] (1) to (2);
+		\draw [style=simple] (4) to (5);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -67,12 +67,12 @@ Ising model, first introduced and solved using the transfer matrix method by Isi
 \todo[inline]{Somewhere, I should introduce -- very briefly -- how the magnetization and
 free energy per site are defined. Maybe just calculate them for 1D Ising model.}
 
-Consider the 1D zero-field ferromagnetic Ising model \cite{ising1925beitrag}, defined by the energy function
+Consider the 1D ferromagnetic Ising model \cite{ising1925beitrag}, defined by the energy function
 \begin{equation}\label{ising_energy_function}
-  H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j.
+  H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j - h \sum_{i} \sigma_i.
 \end{equation}
 Here, we sum over nearest neighbors $\langle i j \rangle$ and the spins
-$\sigma_i$ take the values $\pm 1$. $J > 0$.
+$\sigma_i$ take the values $\pm 1$. $J > 0$ is the spin coupling and $h > 0$ an external magnetic field.
 
 Assume, for the moment, that the chain
 consists of $N$ spins, and apply periodic boundary conditions.
@@ -82,17 +82,15 @@ The partition function of this system is given by
 \end{equation}
 Exploiting the local nature of the interaction between spins, we can write
 \begin{equation}
-  Z_{N} = \sum_{\sigma_1, \cdots, \sigma_N \in \{-1, 1\}} \prod_{\langle i, j \rangle} e^{K\sigma_i \sigma_j}
+  Z_{N} = \sum_{\sigma_1, \cdots, \sigma_N \in \{-1, 1\}} \prod_{\langle i, j \rangle} e^{K\sigma_i \sigma_j + \frac{H}{2}(\sigma_i + \sigma_j)}
 \end{equation}
-where we defined $K \equiv \beta J$.
+where we defined $K \equiv \beta J$ and $H \equiv \beta h$.
 
 Now, we define the $2 \times 2$ matrix
 \begin{equation}\label{eq:transfer_matrix_1d_ising}
-  T_{\sigma \sigma'} = \exp(K \sigma \sigma').
+  T_{\sigma \sigma'} = \exp(K \sigma \sigma' + \frac{H}{2}(\sigma + \sigma')).
 \end{equation}
-
-A possible
-choice of basis is
+for which a possible choice of basis is
 \begin{equation}\label{eq:basis_transfer_matrix_1d}
   \bigl( \ket{\uparrow} = 1, \ket{\downarrow} = -1 \bigr) =
   \bigl(
@@ -111,13 +109,12 @@ In terms of this matrix, $Z_N$ is written as
 \begin{equation}\label{eq:partition_function_transfer_matrix_1d}
   Z_N = \sum_{\sigma_1, \cdots, \sigma_N} T_{\sigma_1 \sigma_2} \dotsm T_{\sigma_N \sigma_1} = \tr T^N.
 \end{equation}
-
 $T$ is called the transfer matrix. In the basis of \autoref{eq:basis_transfer_matrix_1d},
 it is written as
 \begin{equation}
   T = \begin{bmatrix}
-    e^K & e^{-K} \\
-    e^{-K} & e^{K}
+    e^{K+H} & e^{-K} \\
+    e^{-K} & e^{K-H}
   \end{bmatrix}.
 \end{equation}
 
@@ -125,22 +122,29 @@ $T$ is, in fact, diagonalizable. So, we can write $T^N = P D^N
 P^{-1}$, where $P$ consists of the eigenvectors of $T$, and $D$ has the corresponding eigenvalues on the diagonal. By the cyclic property of the
 trace, we have
 \begin{equation}
-  Z_N = \lambda_{1}^{N} + \lambda_{2}^{N},
+  Z_N = \lambda_{+}^{N} + \lambda_{-}^{N},
 \end{equation}
 where
-\begin{align*}
-  \lambda_1 = e^K + e^{-K}, \\
-  \lambda_2 = e^K - e^{-K}.
-\end{align*}
-
+\begin{equation}
+  \lambda_{\pm} = e^{K} \left[ \cosh(H) \pm \sqrt{\sinh^2(H) + e^{-4K}} \right]
+\end{equation}
 Thus, we have reduced the problem of finding the partition function to an
 eigenvalue problem.
 
 In the thermodynamic limit $N \to \infty$
 \begin{equation}
-  Z = \lim_{N \to \infty} \lambda_{1}^{N}
+  Z = \lim_{N \to \infty} \lambda_{+}^{N}
 \end{equation}
-where $\lambda_1$ is the non-degenerate largest eigenvalue (in absolute value) of $T$.
+where $\lambda_+$ is the non-degenerate largest eigenvalue (in absolute value) of $T$.
+Thermodynamic quantities like the free energy per site
+\begin{equation}
+  \frac{F}{N} = -T \log \lambda_{+}
+\end{equation}
+and the magnetization per site
+\begin{equation}
+  \frac{M}{N} = \frac{\sum_{i}^{N} \langle \sigma_i \rangle}{N} = - \frac{1}{N}\frac{\partial F}{\partial h}
+\end{equation}
+can now readily be calculated.
 
 \subsubsection{Fixed boundary conditions}\label{sec:fixed_boundary_conditions}
 We may also apply fixed boundary conditions. The partition function is then written as
@@ -152,10 +156,10 @@ where $\ket{\sigma}$ and $\ket{\sigma'}$ are the right and left boundary spins.
 In the large-$N$ limit, $T^N$ tends towards the projector onto the eigenspace spanned by
 the eigenvector belonging to the largest eigenvalue
 \begin{equation}\label{eq:largest_eigenvector}
-  \ket{\lambda_1} = \lim_{N \to \infty} \frac{T^N \ket{\sigma}}{\left\lVert T^N \ket{\sigma} \right\rVert}.
+  \ket{\lambda_+} = \lim_{N \to \infty} \frac{T^N \ket{\sigma}}{\left\lVert T^N \ket{\sigma} \right\rVert}.
 \end{equation}
 
-\autoref{eq:largest_eigenvector} is true for any $\ket{\sigma}$ that is not orthogonal to $\ket{\lambda_1}$.
+\autoref{eq:largest_eigenvector} is true for any $\ket{\sigma}$ that is not orthogonal to $\ket{\lambda_+}$.
 
 The physical significance of the normalized lowest-lying eigenvector $\ket{\lambda_1}$ is
 that
@@ -496,7 +500,7 @@ In a symmetric and isotropic model such as the Ising model, we have
   W(a, b, c, d) = W(b, a, d, c) = W(c, a, d, b) = W(d, c, b, a)
 \end{equation}
 and the partition of an $N \times N$ lattice is expressed as
-\begin{equation}\label{z_n_times_n}
+\begin{equation}\label{eq:z_n_times_n}
   Z_{N \times N} = \tr A^4.
 \end{equation}
 
@@ -526,12 +530,19 @@ of $A$ are related by a basis tranformation
   A_{\text{new}} = P A_{\text{old}} P^T.
 \end{equation}
 
-\todo[inline]{Something about $A$ being symmetric. What about non-symmetric cases?}
+The partition function, as in \autoref{eq:z_n_times_n}, is given by the tensor network in
+\autoref{fig:partition_function_tensor_network}.
 
 \begin{figure}
   \input{images/corner_transfer_matrix_as_tensor_network.tikz}
   \caption{Corner transfer matrix expressed as a contraction of $a$-tensors.}
   \label{fig:corner_transfer_matrix_as_tensor_network}
+\end{figure}
+
+\begin{figure}
+  \input{images/partition_function_tensor_network.tikz}
+  \caption{Tensor network approximation to $Z_{N \times N}$ in the CTMRG method.}
+  \label{fig:partition_function_tensor_network}
 \end{figure}
 
 \subsection{Corner transfer matrix renormalization group method}
@@ -593,6 +604,67 @@ until a convergence criterion is reached.
 
 
 \section{Calculation of observable quantities}
+\subsection{Free energy per site}
+Baxter \cite{baxter1978variational, baxter1982exactly_ctm} showed that the partition function per site
+\begin{equation}
+  \kappa = Z^{1/N^2}
+\end{equation}
+is, within the corner transfer matrix renormalization group method, written as
+\begin{equation}\label{eq:partition_function_per_site_variational_approximation}
+  \kappa = \frac{r_1 r_4}{r_2 r_3},
+\end{equation}
+with $r_2$, $r_3$ and $r_4$ as in \autoref{fig:partition_function_per_site_tensor_networks} and $r_1 = Z_{N \times N}$
+as in \autoref{fig:partition_function_tensor_network}. The free energy per site is then simply
+\begin{equation}
+  \frac{F}{N^2} = -T \log \kappa.
+\end{equation}
+
+\begin{figure}
+  \begin{subfigure}{.33\linewidth}
+    \input{images/ctmrg_two_columns.tikz}
+    % \caption{A subfigure}\label{fig:1a}
+  \end{subfigure}%
+  \begin{subfigure}{.33\linewidth}
+    \input{images/ctmrg_two_rows.tikz}
+    % \caption{Another subfigure}\label{fig:1b}
+  \end{subfigure}
+  \begin{subfigure}{.33\linewidth}
+    \input{images/ctmrg_four_corners.tikz}
+    % \caption{Another subfigure}\label{fig:1b}
+  \end{subfigure}
+  \caption{From left to right:
+  $r_2$, $r_3$ and $r_4$ as in
+  \autoref{eq:partition_function_per_site_variational_approximation}.}
+  \label{fig:partition_function_per_site_tensor_networks}
+\end{figure}
+
+
+\subsection{Magnetization per site}
+The magnetization per site may be calculated as
+\begin{equation}
+  \frac{M}{N^2} = T \frac{\partial (\log \kappa)}{\partial h},
+\end{equation}
+but this involves a numerical derivative and a numerical limit $h \to 0$ in the case of the spontaneous magnetization.
+A more practical method, that is employed in this thesis, is to use the magnetization of the central spin
+\begin{equation}
+  \langle \sigma_0 \rangle = \frac{\tr A_{+}^4 - \tr A_{-}^4}{\tr A^4}
+\end{equation}
+as a proxy quantity to the magnetization per site.
+Here, $A_{\pm}$ is the corner transfer matrix with the central spin fixed to $\pm$.
+
+$\tr A_{+}^4 - \tr A_{-}^4$ is written as the tensor network in \autoref{fig:magnetization_central_spin_tensor_network},
+with the tensor $b_{i j k l}$ defined as
+\begin{equation}\label{eq:b_tensor}
+  b_{i j k l} = \sum_{\sigma \in \{ -1, 1 \} } \sigma \delta_{\sigma i j k l}.
+\end{equation}
+
+\begin{figure}
+  \input{images/magnetization_central_spin_tensor_network.tikz}
+  \caption{Unnormalized expectation value of central spin, with the tensor $b_{i j k l}$ defined in \autoref{eq:b_tensor}.}
+  \label{fig:magnetization_central_spin_tensor_network}
+\end{figure}
+
+\subsection{Analogy to entanglement entropy for classical systems}
 The key point of the corner transfer matrix renormalization group method \cite{nishino1997corner, nishino1996corner} is
 that it unifies White's density matrix renormalization group method \cite{white1992density} with Baxter's corner
 transfer matrix approach \cite{baxter1968dimers, baxter1978variational}, through the identification (in the isotropic
