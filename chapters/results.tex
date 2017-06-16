@@ -1,91 +1,16 @@
-\section{Abstract}
+\chapterprecishere{abstract}
 
-\todo[inline]{Cite more}
+\section{At the critical point}
 
-We present finite-size scaling results using the corner transfer matrix renormalization
-group method on two-dimensional classical square lattices \cite{nishino1996corner}. We
-compare the results of conventional finite-size scaling in the system size $N$ with
-scaling in the number of states kept during the renormalization step of the algorithm,
-denoted by $m$. Such a comparison was first done in \cite{nishino1996numerical}. We
-highlight the areas in which method excels over the other.
+\subsection{Existence of two length scales}
 
-Calculate critical temperature and exponents using information that is directly
-extractable from the corner transfer matrix.
+First, we reproduce the results presented in \cite{nishino1996numerical} to validate the assumption that at the critical
+point, the only relevant length scales are the system size $N$ and the length scale associated to a finite dimension $m$
+of the corner transfer matrix $\xi(m)$.
+Here, we assume that $\xi(m)$ is given by the correlation length at the critical point,
+see \autoref{sec:definition_effective_length_scale_in_terms_of_xi}.
 
-
-\section{Introduction}
-
-The first direct comparison of finite-size scaling in the system size $N$ with scaling in
-the bond dimension of the corner transfer matrix renormalization group method $m$ was done
-in \cite{nishino1996numerical}. In explaining the basic concepts, we largely follow this
-paper.
-
-The error in the approximation of the partition function (and thus all thermodynamic
-quantities) in the thermodynamic limit with the corner transfer matrix method depends on
-two characteristic length
-scales. The first is the size of the system $N$. After $n$ steps of the infinite-system
-algorithm, we have
-\begin{equation}
-  N = 2n + 1.
-\end{equation}
-
-The second length scale is related to the finite bond dimension $m$. Baxter
-\cite{baxter1978variational}, and later Östlund and Rommer \cite{ostlund1995thermodynamic}
-(in the context of one-dimensional quantum systems) showed that in the thermodynamic
-limit, CTMRG and DMRG are variational optimizations in the space of matrix product states.
-\todo[inline]{Can extend this idea a bit.}
-
-\begin{figure}
-\includegraphics[]{order_parameter_vs_T.tikz}
-\caption{Upper panel: expectation value of the central spin $\langle \sigma_0 \rangle$
-  after $n$ CTMRG steps. $m$ is chosen such that the truncation error is smaller than
-  $10^{-6}$. Lower panel: $\langle \sigma_0 \rangle$ for systems with bond dimension $m$.}\label{fig:order_parameter_vs_T}
-\end{figure}
-
-It is known that an MPS-ansatz with finite bond dimension inherently limits the
-correlation length of the system to a finite value \cite{wolf2006quantum}. Hence,
-thermodynamic quantities obtained from the CTMRG algorithm with finite $m$, in the limit
-$N \to \infty$, cannot diverge and must show finite-size effects similar to those of some
-effective finite system of size $N_{\text{eff}}(m)$ depending on the bond dimension $m$.
-
-\autoref{fig:order_parameter_vs_T} shows the behaviour of the order parameter of the
-two-dimensional Ising model for systems of finite-size, where $m$ has been chosen such
-that the truncation error is smaller than $10^{-6}$, and for systems of finite $m$, where
-the result is converged in the system size $N$. The results look very similar and support
-the above claim.
-
-\todo[inline]{Order parameter is not the same as magnetization central spin. Where to
-explain this?}
-
-\subsection{Definition of  in terms of the correlation length at $T_c$}
-
-In the thermodynamic limit (corresponding to infinite $m$ and $N$), we have the following
-expression for the correlation length of a classical system
-\cite{baxter1982exactly_correlation_length}
-\begin{equation}
-  \xi(T) = \frac{1}{\log\left(\frac{T_0}{T_1}\right)}.
-\end{equation}
-Here, $T_0$ and $T_1$ are the largest and second-largest eigenvalues of the row-to-row
-transfer matrix $T$, respectively. With $N$ tending towards infinity and finite $m$, near
-the critical point $\xi(T)$ should obey a scaling law of the form
-\begin{equation}
-  \xi(T, m) = N_{\text{eff}}(m) \mathcal{F}(N_{\text{eff}}(m) / \xi(T))
-\end{equation}
-with
-\begin{equation}
-  \mathcal{F}(x) = \begin{cases}
-      \text{const} & \text{if } x \to 0, \\
-      x^{-1} & \text{if } x \to \infty.
-    \end{cases}
-\end{equation}
-
-Hence, the effective length scale corresponding to the finite bond dimension $m$ is
-proportional to the correlation length of the system at the critical point $t = 0$.
-\begin{equation}
-  N_{\text{eff}}(m) \propto \xi(T = T_c, m).
-\end{equation}
-
-Under this assumption, the order parameter should obey the following scaling relation at
+The order parameter should obey the following scaling relation at
 the critical temperature
 \begin{equation}\label{eq:order_param_scaling_relation_finite_m}
   M(T = T_c, m) \propto \xi(T = T_c, m)^{-\beta/\nu}.
@@ -98,15 +23,9 @@ The right panel shows the conventional finite-size scaling relation
 \begin{equation}\label{eq:order_param_scaling_relation_finite_N}
   M(T = T_c, N) \propto N^{-\beta/\nu},
 \end{equation}
-yielding $\beta/\nu \approx 0.1249(1)$, which can be systematically improved by
-fitting to larger system sizes, obtained with a fixed truncation error.
+yielding $\beta/\nu \approx 0.1249(1)$.
 
-In the case of scaling in correlation length $\xi(m)$, the exponent does not improve when
-taking bigger values of $m$, while keeping the termination criterion (relative change of
-singular values) fixed. This points to a flaw in the termination criterion of the
-algorithm.
-
-Furthermore, the correlation length $\xi(m)$ shows characteristic half-moon patterns on a
+The correlation length $\xi(m)$ shows characteristic half-moon patterns on a
 log-log scale, stemming from the degeneracies in the corner transfer matrix spectrum. This
 makes the data harder to interpret, since the effect of increasing $m$ depends on how much
 of the spectrum is currently retained.
@@ -165,69 +84,7 @@ $M(N, m) \propto N^{-\beta/\nu}$ to the $\xi(m)$-limiting regime, where $M(N, m)
   \autoref{eq:order_param_scaling_relation}.}\label{fig:crossover_nishino}
 \end{figure}
 
-\subsection{Scaling relations away from the critical point}
-In general, the position of the critical point is not known. In that situation, the scaling relation in
-\autoref{eq:order_param_scaling_relation} cannot be used to calculate thermodynamic information. Instead, in the limit
-$N \to \infty$, we should have
-\begin{equation}\label{eq:order_param_scaling_relation_finite_chi_t}
-  M(t, m) \propto \xi(m)^{-\beta/\nu}\mathcal{P}(t \xi(m)^{1/\nu}),
-\end{equation}
-which is confirmed in \autoref{fig:data_collapse_chi_correlation_length}.
-
-However, in practice this is still problematic, since $\xi(m)$ is defined at the critical point. Thus, we must find a
-way to define the length scale corresponding to a finite bond dimension $m$ without making use of the position of the
-critical point.
-
-\begin{figure}
-  \includegraphics[]{data_collapse_chi_correlation_length.tikz}
-  \caption{Scaling function $\mathcal{P}(t \xi(m)^{1/\nu})$ in
-  \autoref{eq:order_param_scaling_relation_finite_chi_t}.}\label{fig:data_collapse_chi_correlation_length}
-\end{figure}
-
-
-\subsection{Locating the critical point with the entanglement spectrum}
-Since phase transitions of quantum systems can be located by studying their entanglement spectrum (\emph{cite here}),
-classical systems may be investigated in the same way through the correspondence in
-\autoref{eq:correspondence_density_matrix_ctm}. This is an alternative to the usual approach of studying an order
-parameter or derivatives of thermodynamical observables (\emph{cite here?}).
-
-Examples of studies using the spectrum of the corner transfer matrix to analyze two-dimensional classical systems are
-\cite{krvcmar2015reentrant, PhysRevE.94.022134, krvcmar2016phase}.
-
-
-\begin{itemize}
-  \item \cite{huang2017holographic}: refs [42] and [12] contain many papers which study the phenomenon of pinpointing
-  a phase transition without using physical observables (i.e. entanglement, spectrum, fidelity instead.)
-  \item \cite{osborne2002entanglement}: for XY and Ising model, proves that next-to-nearest neighbor entanglement peaks
-  at critical point (though not nearest-neighbor entanglement.)
-\end{itemize}
-
-
-\subsection{Numerical results}
-
-We now check the validity of \autoref{eq:xi_propto_kappa} in the context of the CTMRG method for two-dimensional
-classical systems. Similar checks were done for one-dimensional quantum systems in \cite{tagliacozzo2008scaling}.
-
-Directly checking \autoref{eq:xi_propto_kappa} yields $\kappa = 1.93$, see top left panel of
-\autoref{fig:support_for_kappa}.
-Under the assumption of \autoref{eq:xi_propto_kappa}, we have the following scaling laws at the critical point
-\begin{align}\label{eq:scaling_laws_order_param_free_energy_kappa}
-  M(m) & \propto m^{-\beta \kappa / \nu} \\
-  f(m) - f_{\text{exact}} & \propto m^{(2-\alpha)\kappa / \nu}
-\end{align}
-for the order parameter and the singular part of the free energy, respectively. A fit to $M(m)$ yields $\kappa = 1.93$
-and a fit to $f(m) - f_{\text{exact}}$ yields $\kappa = 1.90$. See the top right and bottom left panels of
-\autoref{fig:support_for_kappa}. Here, we have used $\beta = 1/8$, $\nu = 1$ and $\alpha = 0$ for the Ising model.
-\todo[inline]{Tell that the $\kappa$ law is indeed valid, since it is a good fit.}
-
-We may use \autoref{eq:entropy_scaling_near_criticality} and \autoref{eq:classical_entropy} to check the
-relation
-\begin{equation}\label{eq:scaling_law_entropy_kappa}
-  S_{\text{classical}} \propto \frac{c\kappa}{6}\log m,
-\end{equation}
-which also yields $\kappa = 1.93$, where $c = 1/2$ for the Ising model. See bottom right panel of
-\autoref{fig:support_for_kappa}.
-
+\subsection{Central charge}
 We may directly verify the value of the central charge $c$ associated with the conformal field theory at the critical
 point by fitting to
 \begin{equation}\label{eq:entropy_vs_correlation_length}
@@ -242,104 +99,94 @@ equivalently the number of CTMRG steps $n$)
 \end{equation}
 which yields $c = 0.498$.
 
-To verify if the point of maximum entropy
-\begin{equation}
-  T^{\star}(m) = \max_{T} S(T, m)
-\end{equation}
-is a good definition of the pseudocritical point, we fit the relation
-\begin{equation}\label{eq:T_pseudocrit_scaling_law_chi}
-  T^{\star} - T_c \propto \xi(m)^{-1 / \nu}.
-\end{equation}
-which yields $\widetilde{T}_c = 2.2692$ and $\nu = 0.997$ when the length scale $\xi(T^{\star}, m)$ is used, shown in
-the left panel of \autoref{fig:T_pseudocrit_chi_power_law_fit}. Here, $\widetilde{T}_c$ denotes the critical temperature
-found by minimising the norm of squares of a fit of the form given in \autoref{eq:T_pseudocrit_scaling_law_chi}. In
-finding the position of the pseudoccritical temperature $T^{\star}$, a tolerance of $10^{-6}$ was used.
-
-If, however, the length scale $\xi(m, T_c)$ at the actual critical point is used, a much worse fit is obtained, yielding
-$\widetilde{T}_c = 2.2691$ and $\nu = 0.90$, shown in the right panel of
-\autoref{fig:T_pseudocrit_chi_power_law_fit}.
-
-This signifies the value of $\xi(T^{\star}, m)$ is heavily dependent on
-$T^{\star}$, and using the length scale at the actual pseudocritical temperature found somehow offsets the error on its
-position.
-\todo[inline]{this is unclear.}
-
-Assuming \autoref{eq:xi_propto_kappa}, \autoref{eq:T_pseudocrit_scaling_law_chi} becomes
-\begin{equation}
-  T^{\star} - T_c \propto m^{-\kappa / \nu},
-\end{equation}
-which yields \emph{values}, shown in the bottom left panel of \autoref{fig:T_pseudocrit_chi_power_law_fit}.
-
-As a cross check, we can fit instead to scaling relation of the pseudocritical temperature for finite $N$
-\begin{equation}
-  T^{\star} - T_c \propto N^{-1/\nu},
-\end{equation}
-yielding \emph{values}. See the bottom right panel of \autoref{fig:T_pseudocrit_chi_power_law_fit}.
-
-
-
-
-\begin{figure}
-  \includegraphics[]{support_for_kappa.tikz}
-  \caption{Numerical evidence for \autoref{eq:xi_propto_kappa}, \autoref{eq:scaling_laws_order_param_free_energy_kappa},
-  \autoref{eq:scaling_law_entropy_kappa}, yielding, from left to right and top to bottom, $\kappa = \{ 1.93, 1.93, 1.90,
-  1.93 \}$.}\label{fig:support_for_kappa}
-\end{figure}
-
 \begin{figure}
   \includegraphics[]{entropy_vs_correlation_length.tikz}
   \caption{Left panel: numerical fit to \autoref{eq:entropy_vs_correlation_length}, yielding $c = 0.501$. Right panel:
   numerical fit to \autoref{eq:entropy_vs_N}, yielding $c = 0.498$. }\label{fig:entropy_vs_correlation_length}
 \end{figure}
 
+\subsection{Using the entropy to define the correlation length}
+Via \autoref{eq:entropy_scaling_near_criticality}, the correlation length is expressed as
+\begin{equation}
+  \xi \propto \exp(\frac{6}{c}S).
+\end{equation}
+
+\autoref{fig:order_parameter_power_law_fit_entropy} shows the results of fitting the relation in
+\autoref{eq:order_param_scaling_relation_finite_m} with this definition of the correlation length. The fit is an order
+of magnitude better in the least-squares sense, and the half-moon shapes have almost disappeared,
+yielding a much more robust exponent of $\beta/\nu = 0.12498$.
+
+The entropy uses all eigenvalues of the corner transfer matrix, making it apparently less prone to structure in the
+spectrum than the correlation length as defined in \autoref{eq:correlation_length_row_to_row_transfer_matrix},
+which uses only two eigenvalues of the row-to-row transfer matrix.
+Furthermore, the corner transfer matrix $A$ is kept diagonal in the CTMRG algorithm,
+so $S$ is much cheaper to compute than $\xi$.
+
 \begin{figure}
-  \includegraphics[]{T_pseudocrit_chi_power_law_fit.tikz}
-  \caption{Left panel: numerical fit to \autoref{eq:T_pseudocrit_scaling_law_chi} with $\xi(T^{\star}(m), m)$ used as
-  relevant length scale. Right panel: same fit but using $\xi(T_c, m)$, the correlation length at the exact critical
-  point.}\label{fig:T_pseudocrit_chi_power_law_fit}
+  \includegraphics[]{order_parameter_power_law_fit_entropy.tikz}
+  \caption{}\label{fig:order_parameter_power_law_fit_entropy}
 \end{figure}
 
-% \begin{figure}
-%   \includegraphics[]{T_pseudocrit_N_power_law_fit.tikz}
-%   \caption{}\label{fig:T_pseudocrit_N_power_law_fit}
-% \end{figure}
+\subsection{Exponent $\kappa$}
 
+We now check the validity of the relation
+\begin{equation}\label{eq:xi_propto_kappa_2}
+  \xi(m) \propto m^{\kappa}
+\end{equation}
+in the context of the CTMRG method for two-dimensional
+classical systems. Similar checks were done for one-dimensional quantum systems in \cite{tagliacozzo2008scaling}.
 
-\begin{itemize}
-  \item validate pseudocritical point by matching it to pseudocritical point given by correlation length and
-  magnetization (how?)
-  \item scaling of pseudocritical point $T^{\star} - T_c \propto m^{-\kappa / \nu}$.
-\end{itemize}
+Let us first state that boundary conditions are relevant.
+From (\emph{cite here!!}) we expect that for fixed boundary conditions,
+the entropy and therefore the correlation length is lower for a given bond dimension $m$.
 
-\section{To do}
+There are various ways of extracting the exponent $\kappa$.
+\autoref{fig:support_for_kappa} shows the results for fixed boundary conditions and \autoref{fig:support_for_kappa_free}
+for free boundary conditions.
 
-Articles to cite:
+Directly checking \autoref{eq:xi_propto_kappa_2} yields $\kappa = 1.93$ for a fixed boundary
+and $\kappa = 1.96$ for a free boundary.
 
-\begin{itemize}
-\item \cite{pirvu2012matrix}: assumes existence of $\kappa$ and compares finite-size scaling with finite-$m$ scaling
-for 1D quantum systems with periodic boundary conditions.
-\item \cite{ercolessi2010exact}: proves relation for classical eight vertex model
-\end{itemize}
+Under the assumption of \autoref{eq:xi_propto_kappa_2}, we have the following scaling laws at the critical point
+\begin{align}\label{eq:scaling_laws_order_param_free_energy_kappa}
+  M(m) & \propto m^{-\beta \kappa / \nu} \\
+  f(m) - f_{\text{exact}} & \propto m^{(2-\alpha)\kappa / \nu}
+\end{align}
+for the order parameter and the singular part of the free energy, respectively.
+With a fixed boundary, a fit to $M(m)$ yields $\kappa = 1.93$.
+For a free boundary we cannot extract any exponent, since $M = 0$ for every temperature.
+A fit to $f(m) - f_{\text{exact}}$ yields $\kappa = 1.90$ for a fixed boundary and $\kappa = 1.93$ for a free boundary.
+\autoref{fig:support_for_kappa}. Here, we have used $\beta = 1/8$, $\nu = 1$ and $\alpha = 0$ for the Ising model.
+\todo[inline]{Tell that the $\kappa$ law is indeed valid, since it is a good fit.}
 
-Things to check
+We may use \autoref{eq:entropy_scaling_near_criticality} and \autoref{eq:classical_entropy} to check the
+relation
+\begin{equation}\label{eq:scaling_law_entropy_kappa}
+  S_{\text{classical}} \propto \frac{c\kappa}{6}\log m,
+\end{equation}
+which yields $\kappa = 1.93$ for a fixed boundary and $\kappa = 1.96$ for a free boundary,
+with $c = 1/2$ for the Ising model.
 
-\begin{itemize}
-  \item does $S(T^{\star}, m) \propto \log \xi(T^{\star}, m)$ hold?
-  \item does $S(T^{\star}, N) \propto \log N$ hold better than $S(T_c, N) \propto \log N$?
-  \item does fitting $T_c - T^{\star}(N)$ to $N$ give better results than fitting against
-  $S(T^{\star}, N)$?
-  \item how does $T^{\star}(m)$ from entropy compare against $T^{\star}$ found from max correlation length, or
-  vanishing magnetization?
-  \item optimize $\kappa$ for scaling of pseudo critical point?
-  \item find $T^{\star, N}$ for larger $N$ for ising model.
+\begin{figure}
+  \includegraphics[]{support_for_kappa.tikz}
+  \caption{Numerical evidence for \autoref{eq:xi_propto_kappa_2}, \autoref{eq:scaling_laws_order_param_free_energy_kappa},
+  \autoref{eq:scaling_law_entropy_kappa} with fixed boundary, yielding, from left to right and top to bottom, $\kappa = \{ 1.93, 1.93, 1.90,
+  1.93 \}$.}\label{fig:support_for_kappa}
+\end{figure}
 
-\end{itemize}
+\begin{figure}
+  \includegraphics[]{support_for_kappa_free.tikz}
+  \caption{Numerical evidence for \autoref{eq:xi_propto_kappa_2} with free boundary,
+  yielding from left to right and then bottom $\kappa = \{ 1.96,
+  1.93, 1.96 \}$.}\label{fig:support_for_kappa_free} \end{figure}
 
-Plots to make:
+The predicted value for $\kappa$ \cite{pollmann2009theory} is $2.034\dots$ (see also \autoref{eq:exact_value_kappa}).
+With the CTMRG method, we extract the slightly lower value of $1.96$ (corresponding to free boundary conditions).
+But, the structure in the quantities as function of $m$ makes it hard to get an accurate fit to $\kappa$.
 
-\begin{itemize}
-  \item $T^{\star} - T_c$ vs $N$
-  \item $S(T_c, N) \propto \log N$
-  \item generally, why should there be a difference between using entropy at critical point
-  vs using entropy at pseudocritical point? How does each one scale?
-\end{itemize}
+It is interesting to note that for fixed boundary conditions, the relation in \autoref{eq:xi_propto_kappa_2} holds,
+but with a lower exponent $\kappa$. This is to be expected, since half the spectrum is missing.
+
+\section{Locating the critical point}
+
+\section{Away from $T_c$}

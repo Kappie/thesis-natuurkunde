@@ -1,21 +1,16 @@
-\BOOKMARK [0][-]{chapter.1}{Critical behaviour and finite-size scaling}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Abstract}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Phase transitions}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.2.1}{Finite systems}{section.1.2}% 4
-\BOOKMARK [1][-]{section.1.3}{Critical behaviour}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.3.1}{Finite-size scaling}{section.1.3}% 6
-\BOOKMARK [3][-]{subsubsection.1.3.1.1}{The finite-size scaling ansatz}{subsection.1.3.1}% 7
-\BOOKMARK [3][-]{subsubsection.1.3.1.2}{Extracting exponents from numerical simulation}{subsection.1.3.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Finite-m scaling in the CTMRG algorithm}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Definition of the effective length scale in terms of the correlation length at Tc}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Relation to finite-entropy scaling and the exponent .}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.1}{Quantitative theory for }{section.2.2}% 12
-\BOOKMARK [0][-]{chapter.3}{Results}{}% 13
-\BOOKMARK [1][-]{section.3.1}{Abstract}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Introduction}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.2.1}{Definition of in terms of the correlation length at Tc}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.2}{Scaling relations away from the critical point}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.3}{Locating the critical point with the entanglement spectrum}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.4}{Numerical results}{section.3.2}% 19
-\BOOKMARK [1][-]{section.3.3}{To do}{chapter.3}% 20
-\BOOKMARK [0][-]{section*.23}{Bibliography}{}% 21
+\BOOKMARK [0][-]{chapter.1}{Numerical results for the Ising model}{}% 1
+\BOOKMARK [1][-]{section.1.1}{At the critical point}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Existence of two length scales}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Central charge}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Using the entropy to define the correlation length}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{Exponent }{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Locating the critical point}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Away from Tc}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Results old}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Abstract}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Introduction}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Definition of in terms of the correlation length at Tc}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Scaling relations away from the critical point}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Numerical results}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{To do}{chapter.2}% 15
+\BOOKMARK [0][-]{section*.21}{Bibliography}{}% 16

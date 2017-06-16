@@ -1,0 +1,59 @@
+\begin{tikzpicture}
+  \def \chiVsCorrLength {'plots/data/correlation_length_vs_chi10-66_symmetric_tol1e-7_Tcrit.dat'};
+  \def \chiVsFreeEnergyDiff {'plots/data/free_energy_diff_vs_chi10-66_symmetric_tol1e-7_Tcrit.dat'};
+  \def \chiVsEntropy {'plots/data/entropy_vs_chi10-66_symmetric_tol1e-7_Tcrit.dat'};
+
+  \begin{groupplot}[
+      group style={
+        group size=2 by 2,
+        xlabels at=edge bottom,
+        % ylabels at=edge left,
+        % yticklabels at=all,
+        % xlabels at=edge bottom,
+        % ylabels at=all,
+        xticklabels at = edge bottom,
+        horizontal sep = 1.5cm,
+        vertical sep = 0.5cm,
+      },
+      % legend style = {
+      %   legend pos = south west,
+      % },
+      % legend cell align = left,
+      % height=0.33\textheight,
+      % scale only axis,
+      width=0.5\textwidth,
+      xlabel={$m$},
+      xtick={20, 40, 60},
+      xticklabel=\pgfmathparse{exp(\tick)}\pgfmathprintnumber{\pgfmathresult},
+    ]
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      ylabel={$\xi$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \chiVsCorrLength index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \chiVsCorrLength index 1};
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      ylabel={$f - f_{\text{exact}}$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \chiVsFreeEnergyDiff index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \chiVsFreeEnergyDiff index 1};
+
+    \nextgroupplot[
+      % ymode=log,
+      xmode=log,
+      ylabel={$S$},
+      log ticks with fixed point,
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \chiVsEntropy index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \chiVsEntropy index 1};
+  \end{groupplot}
+
+\end{tikzpicture}

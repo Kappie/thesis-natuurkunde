@@ -3,7 +3,7 @@
 We describe the technical details of the algorithms used to compute quantities of interest.
 We report the convergence behaviour of the algorithms and discuss validity and sources of error.
 
-\section{Technical details}
+\section{Symmetricity and normalization of tensors}
 For the models treated in this thesis, the corner transfer matrix $A$ and the row-to-row transfer matrix $T$ are
 symmetric. But due to the accumulation of machine-precision sized errors in the matrix multiplication and singular value
 decomposition, this will, after many algorithm steps, no longer be the case. In order for results to remain valid, we
@@ -17,6 +17,10 @@ allows us to prevent this overflow if we use a suitable scaling. For example by 
   \tr A^4 = 1,
 \end{equation}
 so that the interpretation of $A^4$ as a reduced density matrix of an effective one-dimensional quantum is valid.
+
+\section{Boundary conditions}
+Unless otherwise stated, all simulations are run with the boundary spins of the lattice fixed to $+1$.
+For specific purposes, free boundary conditions are used.
 
 \section{Convergence criteria}
 
@@ -154,6 +158,7 @@ As described in (\emph{ref here to section about spectrum}) and in \cite{okunish
 davies1988corner, peschel2009reduced}, for the off-critical Ising model the degeneracies in the corner transfer matrix
 $A$ are exactly known.
 These degeneracies are smoothed out, but not completely lost for finite systems near criticality. This is directly related to the convergence of quantities in $m$.
+
 The right panel of \autoref{fig:stepwise_diffs_vs_m} shows the convergence using only the values of $m$ for which all basis states with a certain energy level are present, i.e. \cite{okunishi1999universal}
 \begin{equation}
   m(j) = \sum_{k = 0}^{k = j} p(k).
@@ -171,6 +176,7 @@ Nevertheless, the error on a quantity calculated at bond dimension $m_{\text{max
 where $\Delta Q_{\text{step}}$ is fitted from aptly chosen lower values of $m$.
 
 \todo[inline]{Make connection with paper by Calabrese and Lefevre?}
+\todo[inline]{Free energy error is lower since the networks appear quadratically}
 
 \begin{figure}
   \includegraphics[]{quantities_vs_chi.tikz}
@@ -188,3 +194,17 @@ where $\Delta Q_{\text{step}}$ is fitted from aptly chosen lower values of $m$.
   \includegraphics[]{stepwise_diffs_vs_m.tikz}
   \caption{Same legend as \autoref{fig:quantities_vs_chi}}\label{fig:stepwise_diffs_vs_m}
 \end{figure}
+
+
+\section{Values of hyperparameters for the Ising model}
+\todo[inline]{Justify these statements}
+
+We have found that for practical purposes, in the infinite-system algorithm the convergence threshold $\epsilon$ may be
+set to $10^{-7}$.
+For the highest value of $m = 120$, this leads to a relative error,
+as compared with the theoretically fully converged limit $\epsilon \to 0$,
+of about $0.07\%$ in the correlation length, and less than $0.02\%$ in the order parameter,
+entropy and free energy.
+For lower values of $m$, the relative errors are substantially lower.
+
+For simulations of finite systems, we have chosen $m$ such that the truncation error is smaller than $10^{-6}$.

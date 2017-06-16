@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+  \def \orderParameter {'plots/data/order_parameter_power_law_fit_entropy_length_scale_chi10-66_tol1e-9.dat'};
+
+  \begin{loglogaxis}[
+      xlabel={$S$},
+      ylabel={$M$},
+      yticklabel=\pgfmathparse{exp(\tick)}\pgfmathprintnumber{\pgfmathresult},
+    ]
+
+    \addplot+[black, only marks, mark size = 1.3pt] gnuplot [raw gnuplot] { plot \orderParameter index 0};
+    \addplot[black, thick, dashed, mark=none]
+      gnuplot [raw gnuplot] { plot \orderParameter index 1};
+
+  \end{loglogaxis}
+
+\end{tikzpicture}

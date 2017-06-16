@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  13 JUN 2017 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  16 JUN 2017 16:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2677,7 +2677,23 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotereset=\count427
 (./main.aux
 
-LaTeX Warning: Label `fig:order_parameter_vs_T' multiply defined.
+LaTeX Warning: Label `eq:scaling_laws_order_param_free_energy_kappa' multiply d
+efined.
+
+
+LaTeX Warning: Label `eq:scaling_law_entropy_kappa' multiply defined.
+
+
+LaTeX Warning: Label `eq:entropy_vs_correlation_length' multiply defined.
+
+
+LaTeX Warning: Label `eq:entropy_vs_N' multiply defined.
+
+
+LaTeX Warning: Label `fig:support_for_kappa' multiply defined.
+
+
+LaTeX Warning: Label `fig:entropy_vs_correlation_length' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -2867,289 +2883,25 @@ LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 109.
+(Font)              scaled to size 17.28pt on input line 119.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 109.
+(Font)              scaled to size 17.28pt on input line 119.
 
-(./chapters/critical_behaviour_and_finite_size_scaling.tex
+(./chapters/results.tex
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 1.
+(Font)              scaled to size 10.95pt on input line 3.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 1.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 11.
- [1
-
-
-]
+(Font)              scaled to size 10.95pt on input line 3.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
+(Font)              scaled to size 10.0pt on input line 5.
 
-Overfull \hbox (4.64493pt too wide) in paragraph at lines 42--45
-[]\T1/BaskervilleF-TLF/m/n/9 Because ther-mo-dy-namic quan-ti-ties are av-er-ag
-es over all pos-si-ble mi-crostates
- []
+
+LaTeX Warning: Reference `sec:definition_effective_length_scale_in_terms_of_xi'
+ on page 1 undefined on input line 11.
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 51.
-[2]
-Overfull \hbox (10.5367pt too wide) in paragraph at lines 77--79
-[][]\T1/BaskervilleF-TLF/m/n/9 Equation 1.2[][] is valid only out-side the crit
--i-cal re-gion pre-cisely be-cause $\OML/zbami/m/it/9 F\LMS/ntxsy/m/n/9 ¹\OML/z
-bami/m/it/9 T; N\LMS/ntxsy/m/n/9 º$
- []
-
-(./plots/order_parameter_finite_N_exact.tikz
-Missing character: There is no ; in font nullfont!
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-) [3] [4]
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 162.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 162.
- [5]
-Overfull \hbox (3.98486pt too wide) in paragraph at lines 201--203
-\T1/BaskervilleF-TLF/m/n/9 To ex-tract crit-i-cal ex-po-nents from (fi-nite) nu
--mer-i-cal sim-u-la-tions, []Equa-tion 1.16[][]
- []
-
-
-Overfull \hbox (3.7967pt too wide) in paragraph at lines 209--211
-\T1/BaskervilleF-TLF/m/n/9 and the new scal-ing func-tion is cus-tom-ar-ily wri
-t-ten as hav-ing ar-gu-ment $\OML/zbami/m/it/9 tN[] \U/ntxmia/m/it/9 =
- []
-
-) [6] [7]
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 112.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.5pt on input line 112.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.9pt on input line 112.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 112.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.5pt on input line 112.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 7.9pt on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 112.
-
-(./chapters/finite_m_scaling.tex
-Overfull \hbox (12.29477pt too wide) in paragraph at lines 19--25
-[][]\T1/BaskervilleF-TLF/m/n/9 Figure 3.1[][] shows the be-haviour of the or-de
-r pa-ram-e-ter of the two-dimensional
- []
-
-(./plots/order_parameter_vs_T.tikz
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-)
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 33.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 33.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 33.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 33.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 33.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 6.1pt on input line 33.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 33.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 33.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 33.
-
-[8
-
-] [9]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 67.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\kappa' on input line 67.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 67.
-
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 110.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 110.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 110.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\kappa' on input line 110.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 110.
-
-
-Overfull \hbox (5.25378pt too wide) in paragraph at lines 111--113
-\T1/BaskervilleF-TLF/m/n/9 re-pro-duce the ar-gu-ment, which is pre-sented in t
-he lan-guage of one-dimensional
- []
-
-[10]
-Overfull \hbox (10.25171pt too wide) in paragraph at lines 135--137
-[]\T1/BaskervilleF-TLF/m/n/9 The lead-ing en-ergy cor-rec-tion to the free en-e
-rgy per site of a one-dimensional
- []
-
-[11] [12]) [13] (./chapters/results.tex
-Overfull \hbox (1.21577pt too wide) in paragraph at lines 5--11
-[]\T1/BaskervilleF-TLF/m/n/9 We present finite-size scal-ing re-sults us-ing th
-e cor-ner trans-fer ma-trix renor-
- []
-
-[14
-
-] (./plots/order_parameter_vs_T.tikz
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-)
-Overfull \hbox (12.29477pt too wide) in paragraph at lines 51--56
-[][]\T1/BaskervilleF-TLF/m/n/9 Figure 3.1[][] shows the be-haviour of the or-de
-r pa-ram-e-ter of the two-dimensional
- []
-
-[15]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-[16] (./plots/order_parameter_power_law_fit.tikz
+ine 34.
+(./plots/order_parameter_power_law_fit.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -3171,19 +2923,27 @@ runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
 )
-Overfull \hbox (7.64594pt too wide) in paragraph at lines 48--126
+Overfull \hbox (7.64594pt too wide) in paragraph at lines 48--45
 [][] 
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 126--126
+Underfull \hbox (badness 1616) in paragraph at lines 45--45
 \OT1/BaskervilleF-TLF/m/n/9 0\OML/zbami/m/it/9 :\OT1/BaskervilleF-TLF/m/n/9 125
 \LMS/ntxsy/m/n/9 ¹\OT1/BaskervilleF-TLF/m/n/9 5\LMS/ntxsy/m/n/9 º$\T1/Baskervil
 leF-TLF/m/n/9 . The data points are ob-tained from sim-u-la-tions with $\OML/zb
 ami/m/it/9 m \U/ntxmia/m/it/9 =
  []
 
-[17] (./plots/data_collapse_nishino.tikz
+[1
+
+
+]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 59.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 59.
+ (./plots/data_collapse_nishino.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -3238,7 +2998,7 @@ runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 PGFPlots: reading {main.pgf-plot.table}
 Missing character: There is no ; in font nullfont!
 )
-[18] (./plots/data_collapse_chi_correlation_length.tikz
+[2] (./plots/entropy_vs_correlation_length.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -3259,50 +3019,57 @@ PGFPlots: reading {main.pgf-plot.table}
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
+)
 
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+LaTeX Warning: Reference `eq:entropy_scaling_near_criticality' on page 3 undefi
+ned on input line 109.
 
-PGFPlots: reading {main.pgf-plot.table}
+[3] [4]
+
+LaTeX Warning: Reference `eq:correlation_length_row_to_row_transfer_matrix' on 
+page 5 undefined on input line 120.
+
+(./plots/order_parameter_power_law_fit_entropy.tikz
 Missing character: There is no ; in font nullfont!
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
 )
-
-LaTeX Warning: Reference `eq:correspondence_density_matrix_ctm' on page 19 unde
-fined on input line 191.
-
-[19]
-LaTeX Font Info:    Try loading font information for TS1+BaskervilleF-TLF on in
-put line 199.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/TS1BaskervilleF-TLF.
-fd
-File: TS1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for TS1/Bas
-kervilleF-TLF.
-)
-LaTeX Font Info:    Font shape `TS1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 199.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 130.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 130.
 
 
-LaTeX Warning: Reference `eq:xi_propto_kappa' on page 20 undefined on input lin
-e 208.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 130.
 
 
-LaTeX Warning: Reference `eq:xi_propto_kappa' on page 20 undefined on input lin
-e 211.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\kappa' on input line 130.
 
 
-LaTeX Warning: Reference `eq:xi_propto_kappa' on page 20 undefined on input lin
-e 213.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 130.
 
-[20]
+[5]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 140.
 
-LaTeX Warning: Reference `eq:classical_entropy' on page 21 undefined on input l
-ine 223.
 
-[21]
+LaTeX Warning: Reference `eq:entropy_scaling_near_criticality' on page 6 undefi
+ned on input line 162.
 
-LaTeX Warning: Reference `eq:xi_propto_kappa' on page 22 undefined on input lin
-e 267.
+
+LaTeX Warning: Reference `eq:classical_entropy' on page 6 undefined on input li
+ne 162.
 
 (./plots/support_for_kappa.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
@@ -3345,14 +3112,255 @@ PGFPlots: reading {main.pgf-plot.table}
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+) (./plots/support_for_kappa_free.tikz
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
 )
 
-LaTeX Warning: Reference `eq:xi_propto_kappa' on page 22 undefined on input lin
-e 286.
+LaTeX Warning: Reference `eq:exact_value_kappa' on page 6 undefined on input li
+ne 183.
+
+[6]
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 192.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 192.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 6.1pt on input line 192.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 192.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 192.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 6.1pt on input line 192.
 
 
-LaTeX Warning: Reference `eq:xi_propto_kappa' on page 22 undefined on input lin
-e 286.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 192.
+
+) [7] [8] (./chapters/results_old3.tex
+Overfull \hbox (1.21577pt too wide) in paragraph at lines 5--11
+[]\T1/BaskervilleF-TLF/m/n/9 We present finite-size scal-ing re-sults us-ing th
+e cor-ner trans-fer ma-trix renor-
+ []
+
+[9
+
+] (./plots/order_parameter_vs_T.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (12.29477pt too wide) in paragraph at lines 51--56
+[][]\T1/BaskervilleF-TLF/m/n/9 Figure 2.1[][] shows the be-haviour of the or-de
+r pa-ram-e-ter of the two-dimensional
+ []
+
+[10]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+(./plots/data_collapse_chi_correlation_length.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+)
+
+LaTeX Warning: Reference `eq:xi_propto_kappa' on page 11 undefined on input lin
+e 111.
+
+[11]
+
+LaTeX Warning: Reference `eq:xi_propto_kappa' on page 12 undefined on input lin
+e 114.
+
+
+LaTeX Warning: Reference `eq:xi_propto_kappa' on page 12 undefined on input lin
+e 116.
+
+
+LaTeX Warning: Reference `eq:entropy_scaling_near_criticality' on page 12 undef
+ined on input line 126.
+
+
+LaTeX Warning: Reference `eq:classical_entropy' on page 12 undefined on input l
+ine 126.
+
+[12]
+
+LaTeX Warning: Reference `eq:xi_propto_kappa' on page 13 undefined on input lin
+e 170.
+
+[13]
+LaTeX Font Info:    Try loading font information for TS1+BaskervilleF-TLF on in
+put line 184.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/TS1BaskervilleF-TLF.
+fd
+File: TS1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for TS1/Bas
+kervilleF-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 184.
+ (./plots/support_for_kappa.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+
+LaTeX Warning: Reference `eq:xi_propto_kappa' on page 14 undefined on input lin
+e 194.
+
+
+LaTeX Warning: Reference `eq:xi_propto_kappa' on page 14 undefined on input lin
+e 194.
 
 (./plots/entropy_vs_correlation_length.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
@@ -3398,7 +3406,7 @@ runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
 )
-Overfull \hbox (9.12175pt too wide) in paragraph at lines 329--331
+Overfull \hbox (9.12175pt too wide) in paragraph at lines 237--239
 []\T1/BaskervilleF-TLF/m/n/9 does fit-ting $\OML/zbami/m/it/9 T[] \LMS/ntxsy/m/
 n/9 ^^@ \OML/zbami/m/it/9 T[]\LMS/ntxsy/m/n/9 ¹\OML/zbami/m/it/9 N\LMS/ntxsy/m/
 n/9 º$ \T1/BaskervilleF-TLF/m/n/9 to $\OML/zbami/m/it/9 N$ \T1/BaskervilleF-TLF
@@ -3407,64 +3415,27 @@ sy/m/n/9 ¹\OML/zbami/m/it/9 T[]; N\LMS/ntxsy/m/n/9 º$\T1/BaskervilleF-TLF/m/n/9
  ? 
  []
 
-[22] [23]) [24]
-Overfull \hbox (2.72528pt too wide) in paragraph at lines 140--140
+[14] [15]) [16]
+Overfull \hbox (2.72528pt too wide) in paragraph at lines 143--143
 \T1/BaskervilleF-TLF/m/n/9 tis-ti-cal me-chan-ics''. In: \T1/BaskervilleF-TLF/m
 /it/9 Jour-nal of Sta-tis-ti-cal Physics \T1/BaskervilleF-TLF/m/n/9 19.5 (1978)
 , pp. 461^^U
  []
 
-[25
+[17
 
 
 ]
-Overfull \hbox (15.06429pt too wide) in paragraph at lines 140--140
-\T1/BaskervilleF-TLF/m/n/9 in one-dimensional sys-tems''. In: \T1/BaskervilleF-
-TLF/m/it/9 Phys-i-cal Re-view A \T1/BaskervilleF-TLF/m/n/9 78.3 (2008), p. 0323
-29. 
- []
-
-[26]
-Overfull \hbox (1.96237pt too wide) in paragraph at lines 140--140
-[]\T1/BaskervilleF-TLF/m/n/9 Roman Kr£már and Ladislav ’a-maj. ``Reen-trant dis
-order-disorder tran-
- []
-
-
-Overfull \hbox (0.92734pt too wide) in paragraph at lines 140--140
-\T1/BaskervilleF-TLF/m/n/9 si-tions in gen-er-al-ized mul-ti-com-po-nent Widom-
-Rowlinson mod-els''. In:
- []
-
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 139.
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 139.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
-)
-Overfull \hbox (28.73174pt too wide) in paragraph at lines 140--140
-\T1/BaskervilleF-TLF/m/n/9 en-cod-ing of uni-ver-sal-ity in cor-ner spec-tra''.
- In: \T1/BaskervilleF-TLF/m/it/9 arXiv preprint arXiv:1702.01598
- []
-
-
-Overfull \hbox (5.93832pt too wide) in paragraph at lines 140--140
-\T1/BaskervilleF-TLF/m/n/9 quan-tum phase tran-si-tion''. In: \T1/BaskervilleF-
-TLF/m/it/9 Phys-i-cal Re-view A \T1/BaskervilleF-TLF/m/n/9 66.3 (2002), p. 0321
-10. 
- []
-
-[27]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B6F3F1FEB322CD59ABC77614326817AA;1629.
+(rerunfilecheck)             Checksum: 4358ED046D176B05597A9689983E3605;1126.
 
 
 LaTeX Warning: There were undefined references.
@@ -3477,35 +3448,30 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52314 strings out of 493014
- 1144638 string characters out of 6133351
- 1757016 words of memory out of 5000000
- 54742 multiletter control sequences out of 15000+600000
- 372460 words of font info for 264 fonts, out of 8000000 for 9000
+ 52084 strings out of 493014
+ 1139668 string characters out of 6133351
+ 1758733 words of memory out of 5000000
+ 54613 multiletter control sequences out of 15000+600000
+ 324340 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,19n,112p,10417b,2664s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-7.enc}{
-/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_fj77ru.enc}
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_3oppw2.enc
-}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.en
-c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
-nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}<
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF
--Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/B
-askervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/b
-askervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/t
-xfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts
-/txsyc.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (28 pages, 292191 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_3oppw2.e
+nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.
+enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer
+.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc
+}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/Baskervill
+eF-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef
+/BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
+txsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrw8
+a.pfb>
+Output written on main.pdf (18 pages, 252713 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 169 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
