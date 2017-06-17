@@ -1,13 +1,15 @@
 \begin{tikzpicture}
-  \def \CorrLengthAtTPseudocrit {'plots/data/T_pseudocrit_chi10-56_method_entropy_correlation_length_at_T_pseudocrit_power_law_fit_q2.dat'}
-  \def \CorrLengthAtTCrit {'plots/data/T_pseudocrit_chi10-56_method_entropy_correlation_length_at_T_crit_power_law_fit_q2.dat'}
+  \def \CorrLengthAtTPseudocrit {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_correlation_length_at_T_pseudocrit_power_law_fit_q2.dat'}
+  \def \CorrLengthAtTCrit {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_correlation_length_at_T_crit_power_law_fit_q2.dat'}
+  \def \entropyAtTPseudocrit {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_entropy_at_T_pseudocrit_power_law_fit_q2.dat'}
+  \def \chi {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_chi_power_law_fit_q2.dat'}
 
   \begin{groupplot}[
       group style={
-        group size=2 by 1,
+        group size=2 by 2,
         % xlabels at=edge bottom,
         ylabels at=edge left,
-        yticklabels at =edge left,
+        yticklabels at=edge left,
       },
       width=0.5\textwidth,
       ylabel={$T^{\star} - \widetilde{T}_c$},
@@ -16,7 +18,7 @@
     \nextgroupplot[
       ymode=log,
       xmode=log,
-      xlabel={$\xi(T^{\star}(m), m)$},
+      xlabel={$\xi(T^{\star}(m))$},
     ]
 
     \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 0};
@@ -30,6 +32,24 @@
 
     \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 0};
     \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 1};
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$\exp\left(\frac{6}{c}S(T^{\star}(m))\right)$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \entropyAtTPseudocrit index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \entropyAtTPseudocrit index 1};
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$m$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \chi index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \chi index 1};
 
   \end{groupplot}
 \end{tikzpicture}

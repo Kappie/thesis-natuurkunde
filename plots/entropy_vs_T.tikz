@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+  \def \entropy {'plots/data/entropy_vs_T_chi4-16_tol1e-7_q2.dat'};
+  \def \TCrit {2.26918};
+
+  \begin{axis}[
+      xlabel={$T$},
+      ylabel={$S(m)$},
+      legend cell align = left,
+    ]
+
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropy index 3};
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropy index 2};
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropy index 1};
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropy index 0};
+    \addplot[mark=none, black, dashed, semithick, update limits=false]
+      coordinates {(\TCrit,-1) (\TCrit,1)};
+
+    \legend{$m = 4$, $m = 8$, $m = 12$, $m = 16$};
+
+  \end{axis}
+
+\end{tikzpicture}

@@ -180,13 +180,54 @@ with $c = 1/2$ for the Ising model.
   yielding from left to right and then bottom $\kappa = \{ 1.96,
   1.93, 1.96 \}$.}\label{fig:support_for_kappa_free} \end{figure}
 
+\subsubsection{Comparison with exact result in asymptotic limit}
+
 The predicted value for $\kappa$ \cite{pollmann2009theory} is $2.034\dots$ (see also \autoref{eq:exact_value_kappa}).
 With the CTMRG method, we extract the slightly lower value of $1.96$ (corresponding to free boundary conditions).
 But, the structure in the quantities as function of $m$ makes it hard to get an accurate fit to $\kappa$.
 
 It is interesting to note that for fixed boundary conditions, the relation in \autoref{eq:xi_propto_kappa_2} holds,
 but with a lower exponent $\kappa$. This is to be expected, since half the spectrum is missing.
+\todo[inline]{phrase this better. Maybe subsubsection?}
+\todo[inline]{MUST SAY THAT I LEFT AWAY VALUES OF $m$ in symmetric case!!}
 
 \section{Locating the critical point}
+
+In general, the critical point is not known, but it may be located using the spectrum of the corner transfer matrix as
+described in \autoref{sec:locating_critical_point_entanglement}. For a given value of $m$ (or $N$, in a finite-size approximation), the pseudocritical temperature is defined as the point of maximum entropy.
+
+\autoref{fig:entropy_vs_T} shows the classical analogue to the entanglement entropy as a function of temperature for
+different values of $m$.
+
+The critical point is located by fitting the scaling law in \autoref{eq:scaling_law_T_star}.
+
+\subsection{Finite-$m$}
+For approximations with finite bond dimension $m$, it is not clear what length scale should be used to fit the scaling
+behaviour of $T^{\star}(m)$. \autoref{fig:T_pseudocrit_chi_power_law_fit} shows bla
+
+\begin{itemize}
+  \item corr length $T^{\star}$: $T_c = 2.269183, \nu = 1.002$
+  \item corr length at $T_c$: $T_c = 2.269173, \nu = 1.057$
+  \item entropy at $T^{\star}$: $T_c = 2.269183, \nu = 1.02$
+  \item chi: $T_c = 2.269181, \kappa/\nu = 1.91$
+\end{itemize}
+
+\begin{figure}
+  \includegraphics[]{entropy_vs_T.tikz}
+  \caption{Classical analogue to the entanglement entropy, as in \autoref{eq:classical_entropy},
+  near the critical point (shown as dashed line).}\label{fig:entropy_vs_T}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[]{T_pseudocrit_chi_power_law_fit.tikz}
+  \caption{Left panel: numerical fit to \autoref{eq:T_pseudocrit_scaling_law_chi} with $\xi(T^{\star}(m), m)$ used as
+  relevant length scale. Right panel: same fit but using $\xi(T_c, m)$, the correlation length at the exact critical
+  point.}\label{fig:T_pseudocrit_chi_power_law_fit}
+\end{figure}
+
+
+
+
+
 
 \section{Away from $T_c$}
