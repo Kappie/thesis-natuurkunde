@@ -105,9 +105,9 @@ which yields $c = 0.498$.
   numerical fit to \autoref{eq:entropy_vs_N}, yielding $c = 0.498$. }\label{fig:entropy_vs_correlation_length}
 \end{figure}
 
-\subsection{Using the entropy to define the correlation length}
+\subsection{Using the entropy to define the correlation length}\label{sec:entropy_to_define_correlation_length}
 Via \autoref{eq:entropy_scaling_near_criticality}, the correlation length is expressed as
-\begin{equation}
+\begin{equation}\label{eq:correlation_length_as_function_of_entropy}
   \xi \propto \exp(\frac{6}{c}S).
 \end{equation}
 
@@ -191,7 +191,7 @@ but with a lower exponent $\kappa$. This is to be expected, since half the spect
 \todo[inline]{phrase this better. Maybe subsubsection?}
 \todo[inline]{MUST SAY THAT I LEFT AWAY VALUES OF $m$ in symmetric case!!}
 
-\section{Locating the critical point}
+\section{Locating the critical point}\label{sec:locating_the_critical_point}
 
 In general, the critical point is not known, but it may be located using the spectrum of the corner transfer matrix as
 described in \autoref{sec:locating_critical_point_entanglement}. For a given value of $m$ (or $N$, in a finite-size approximation), the pseudocritical temperature is defined as the point of maximum entropy.
@@ -201,16 +201,48 @@ different values of $m$.
 
 The critical point is located by fitting the scaling law in \autoref{eq:scaling_law_T_star}.
 
-\subsection{Finite-$m$}
+\subsection{Finite $m$}
 For approximations with finite bond dimension $m$, it is not clear what length scale should be used to fit the scaling
-behaviour of $T^{\star}(m)$. \autoref{fig:T_pseudocrit_chi_power_law_fit} shows bla
+behaviour of $T^{\star}(m)$.
+\autoref{fig:T_pseudocrit_chi_power_law_fit} shows the results for different choices of this length scale.
+To obtain $T^{\star}$, a convergence threshold of $10^{-8}$ and a temperature tolerance of $10^{-6}$ are used.
+The boundaries are fixed to $+1$.
 
-\begin{itemize}
-  \item corr length $T^{\star}$: $T_c = 2.269183, \nu = 1.002$
-  \item corr length at $T_c$: $T_c = 2.269173, \nu = 1.057$
-  \item entropy at $T^{\star}$: $T_c = 2.269183, \nu = 1.02$
-  \item chi: $T_c = 2.269181, \kappa/\nu = 1.91$
-\end{itemize}
+\todo[inline]{Maybe I've used a too low TolX??}
+\todo[inline]{Explain results here}
+
+We denote the estimated value of the critical temperature as $\widetilde{T_c}$. Recall that the exact value is
+\begin{equation}
+  T_c = 2.2691853\dots
+\end{equation}
+and $\nu = 1$.
+
+When using $\xi(T_c, m)$, the correlation length at the exact critical point,
+the result shows a lot of structure, yielding $\widetilde{T_c} = 2.269172$ and $\nu = 1.057$.
+
+If, instead, the correlation length at the estimated pseudocritical temperature $\xi(T^{\star}(m))$ is used,
+the data shows less structure and we obtain the much more precise results $\widetilde{T_c} = 2.269183$ and $\nu =
+1.002$.
+
+Another option is to use the entropy to define the correlation length,
+via \autoref{eq:correlation_length_as_function_of_entropy}, which gave more accurate results than using the transfer
+matrix definition in \autoref{sec:entropy_to_define_correlation_length}.
+In this case, the results are slightly worse than the transfer matrix definition:
+$T_c = 2.269183$ and $\nu = 1.02$.
+
+Finally, we may directly fit the law
+\begin{equation}
+  |T_c - T^{\star}(m)| \propto m^{-\kappa/\nu},
+\end{equation}
+yielding $T_c = 2.269181$ and $\kappa/\nu = 1.91$.
+Incidentally, this is another way to confirm $\kappa \approx 1.9$ for systems with a fixed boundary.
+
+\todo[inline]{Why do length scales defined at $T^{\star}$ work better??
+It is fortunate that we don't need the length scales at $T_c$, since we don't know it.}
+
+\subsection{Finite $N$}
+As a cross check, we can instead use systems of finite size to extract $T_c$ and $\nu$.
+This yields \emph{values}. See the \emph{figure}.
 
 \begin{figure}
   \includegraphics[]{entropy_vs_T.tikz}
@@ -220,14 +252,54 @@ behaviour of $T^{\star}(m)$. \autoref{fig:T_pseudocrit_chi_power_law_fit} shows 
 
 \begin{figure}
   \includegraphics[]{T_pseudocrit_chi_power_law_fit.tikz}
-  \caption{Left panel: numerical fit to \autoref{eq:T_pseudocrit_scaling_law_chi} with $\xi(T^{\star}(m), m)$ used as
-  relevant length scale. Right panel: same fit but using $\xi(T_c, m)$, the correlation length at the exact critical
-  point.}\label{fig:T_pseudocrit_chi_power_law_fit}
+  \caption{haloalaoalalalalaalkk}\label{fig:T_pseudocrit_chi_power_law_fit}
 \end{figure}
 
+\section{Away from the critical point}
 
+We may also verify the validity of the different length scales by asserting that the data for different values of $m$
+should collapse on a single curve
+\begin{equation}
+  \mathcal{G}(t N_{\text{eff}}(m)^{1/\nu}) = M(T, m) N_{\text{eff}}(m)^{\beta/\nu}.
+\end{equation}
 
+All data points were calculated with a convergence threshold of $10^{-7}$.
+The values of the pseudocritical temperatures are taken from the results in \autoref{sec:locating_the_critical_point}.
+No temperatures beyond $T_c$ is considered because the order parameter drops off sharply,
+causing the curve $\mathcal{G}(x)$ to tend to zero almost vertically, making the fitness $P$ unreliable.
 
+\autoref{fig:data_collapse_chi} shows that for all length scales, the results more or less fall on one curve.
+\autoref{table:fitness_data_collapse_different_length_scales} shows the fitness of the data collapse
+\cite{bhattacharjee2001measure} (given by \autoref{eq:fitness_data_collapse}) for all length scales used.
 
+\todo[inline]{Say which length scales apparently don't work so well}
 
-\section{Away from $T_c$}
+Using $m^{\kappa}$ as a length scale for optimized fitness $P(\kappa)$ yields $\kappa \approx 1.98$,
+substantially higher than found previously for fixed boundary conditions.
+
+As a cross-check, the bottom-right panel of \autoref{fig:data_collapse_chi} shows data points for finite-$N$
+simulations. Here, the bond dimension is chosen such that the truncation error is smaller than $10^{-6}$.
+
+\begin{figure}
+  \includegraphics[]{data_collapse_chi.tikz}
+  \caption{Data collapses using different length scales.
+  For the bottom-right plot, approximations with finite $N$ instead of finite $m$ have been used,
+  with $n = \{160, 480, 1000, 1500 \}$ ($n = \frac{N - 1}{2}$ is the number of algorithm
+  steps).}\label{fig:data_collapse_chi}
+\end{figure}
+
+\begin{table}[]
+\centering
+\begin{tabular}{@{}ll@{}} \toprule
+$N_{\text{eff}}$                  & fitness $P$ \\ \midrule
+$\xi(T_c, m)$                     & 0.0075      \\
+$\xi(T^{\star}(m))$               & 0.066       \\
+$\exp((6/c)S(T_c, m))$            & 0.057       \\
+$\exp((6/c)S(T^{\star}(m))$       & 0.087       \\
+$m^{\kappa}$                      & 0.0080      \\
+$N$                               & 0.0075      \\ \bottomrule
+\end{tabular}
+  \caption{Fitness of data collapse (\autoref{eq:fitness_data_collapse}) for different length scales.
+  $\kappa \approx 1.98$ was found to be optimal for the length scale $m^{\kappa}$.}
+  \label{table:fitness_data_collapse_different_length_scales}
+\end{table}

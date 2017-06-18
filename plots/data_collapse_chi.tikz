@@ -1,0 +1,88 @@
+\begin{tikzpicture}
+  \def \CorrLengthAtTCrit {'plots/data/data_collapse_chi8-20_correlation_length_T_crit_tol1e-7.dat'};
+  \def \CorrLengthAtTPseudocrit {'plots/data/data_collapse_chi8-20_correlation_length_T_pseudocrit_tol1e-7.dat'};
+  \def \entropyAtTCrit {'plots/data/data_collapse_chi8-20_entropy_T_crit_tol1e-7.dat'};
+  \def \entropyAtTPseudocrit {'plots/data/data_collapse_chi8-20_entropy_T_pseudocrit_tol1e-7.dat'};
+  \def \optimizedKappa {'plots/data/data_collapse_chi8-20_kappa_optimized_tol1e-7.dat'};
+  \def \dataCollapseN {'plots/data/data_collapse_N160-1500_max_trunc_error1e-6.dat'}
+
+  \begin{groupplot}[
+      group style={
+        group size=2 by 3,
+        horizontal sep = 1.75cm,
+        vertical sep = 1.2cm,
+      },
+      width=0.5\textwidth,
+    ]
+
+    \nextgroupplot[
+      xlabel={$t\xi(T_c, m)^{1/\nu}$},
+      ylabel={$M(T, m)\xi(T_c, m)^{\beta/\nu}$},
+      legend style = {
+        legend to name = grouplegend,
+        legend entries = {$m = 8$, $m = 12$, $m = 16$, $m = 20$},
+      },
+      transpose legend,
+      legend columns = 2,
+      legend cell align = left,
+    ]
+
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 3};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 2};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 1};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 0};
+
+    \nextgroupplot[
+      xlabel={$t \xi(T^{\star}(m))$},
+      ylabel={$M(T, m)\xi(T^{\star}(m))^{\beta/\nu}$},
+    ]
+
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 3};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 2};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 1};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 0};
+
+    \nextgroupplot[
+      xlabel={$t \exp(\frac{6}{\nu c}S(T_c, m))$},
+      ylabel={$M(T, m)\exp(\frac{6}{c}S(T_c, m))^{\beta/\nu}$},
+    ]
+
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTCrit index 3};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTCrit index 2};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTCrit index 1};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTCrit index 0};
+
+    \nextgroupplot[
+      xlabel={$t \exp(\frac{6}{\nu c}S(T^{\star}(m)))$},
+      ylabel={$M(T, m)\exp(\frac{6}{c}S(T^{\star(m)}))^{\beta/\nu}$},
+    ]
+
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTPseudocrit index 3};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTPseudocrit index 2};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTPseudocrit index 1};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \entropyAtTPseudocrit index 0};
+
+    \nextgroupplot[
+      xlabel={$t m^{\kappa / \nu}$},
+      ylabel={$M(T, m) m^{\kappa \beta / \nu}$},
+    ]
+
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \optimizedKappa index 3};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \optimizedKappa index 2};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \optimizedKappa index 1};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \optimizedKappa index 0};
+
+    \nextgroupplot[
+      xlabel={$t N^{1/\nu}$},
+      ylabel={$M(T, N) N^{\beta / \nu}$},
+    ]
+
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \dataCollapseN index 3};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \dataCollapseN index 2};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \dataCollapseN index 1};
+    \addplot+[only marks, miniMarker] gnuplot [raw gnuplot] { plot \dataCollapseN index 0};
+
+  \end{groupplot}
+
+  \node at ($(group c1r3)!0.5!(group c2r3) + (0, -3cm)$) {\pgfplotslegendfromname{grouplegend}};
+\end{tikzpicture}

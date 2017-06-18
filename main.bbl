@@ -136,6 +136,36 @@
       \field{pages}{255701}
       \range{pages}{1}
     \endentry
+    \entry{bhattacharjee2001measure}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4b6492f0e913c650b731d3ab32366ff1}{%
+           family={Bhattacharjee},
+           family_i={B\bibinitperiod},
+           given={Somendra\bibnamedelima M},
+           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e36627c91cecf5c7828339d1b38e4999}{%
+           family={Seno},
+           family_i={S\bibinitperiod},
+           given={Flavio},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{4068101cfd4c4a4eb855d3476c02a459}
+      \strng{fullhash}{4068101cfd4c4a4eb855d3476c02a459}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics A: Mathematical and General}
+      \field{number}{33}
+      \field{title}{A measure of data collapse for scaling}
+      \field{volume}{34}
+      \field{year}{2001}
+      \field{pages}{6375}
+      \range{pages}{1}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

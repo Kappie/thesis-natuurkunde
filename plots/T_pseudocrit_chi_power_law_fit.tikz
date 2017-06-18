@@ -18,20 +18,20 @@
     \nextgroupplot[
       ymode=log,
       xmode=log,
-      xlabel={$\xi(T^{\star}(m))$},
-    ]
-
-    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 0};
-    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 1};
-
-    \nextgroupplot[
-      ymode=log,
-      xmode=log,
       xlabel={$\xi(T_c, m)$},
     ]
 
     \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 0};
     \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \CorrLengthAtTCrit index 1};
+
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$\xi(T^{\star}(m))$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \CorrLengthAtTPseudocrit index 1};
 
     \nextgroupplot[
       ymode=log,
