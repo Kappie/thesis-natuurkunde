@@ -204,18 +204,19 @@ The critical point is located by fitting the scaling law in \autoref{eq:scaling_
 \subsection{Finite $m$}
 For approximations with finite bond dimension $m$, it is not clear what length scale should be used to fit the scaling
 behaviour of $T^{\star}(m)$.
-\autoref{fig:T_pseudocrit_chi_power_law_fit} shows the results for different choices of this length scale.
-To obtain $T^{\star}$, a convergence threshold of $10^{-8}$ and a temperature tolerance of $10^{-6}$ are used.
+\autoref{fig:T_pseudocrit_chi_power_law_fit} shows the fits for different choices of this length scale.
+The results are tabulated in \autoref{table:T_star_nu_results}.
+To obtain $T^{\star}$, a convergence threshold of $10^{-8}$ and a temperature tolerance of $10^{-8}$ are used.
 The boundaries are fixed to $+1$.
-
-\todo[inline]{Maybe I've used a too low TolX??}
-\todo[inline]{Explain results here}
 
 We denote the estimated value of the critical temperature as $\widetilde{T_c}$. Recall that the exact value is
 \begin{equation}
   T_c = 2.2691853\dots
 \end{equation}
-and $\nu = 1$.
+and
+\begin{equation}
+  \nu = 1.
+\end{equation}
 
 When using $\xi(T_c, m)$, the correlation length at the exact critical point,
 the result shows a lot of structure, yielding $\widetilde{T_c} = 2.269172$ and $\nu = 1.057$.
@@ -244,6 +245,21 @@ It is fortunate that we don't need the length scales at $T_c$, since we don't kn
 As a cross check, we can instead use systems of finite size to extract $T_c$ and $\nu$.
 This yields \emph{values}. See the \emph{figure}.
 
+\begin{table}[]
+\centering
+\begin{tabular}{@{}lll@{}} \toprule
+$N_{\text{eff}}$                  & $T_c$   & $\nu$   \\ \midrule
+$\xi(T_c, m)$                     & 2.269172  & 1.057         \\
+$\xi(T^{\star}(m))$               & 2.269183   & 1.002        \\
+$\exp((6/c)S(T^{\star}(m))$       & 2.269183   & 1.02       \\
+$m^{\kappa}$                      & 2.269181  & --        \\
+$N$                               & 2.269171  & 0.97          \\ \bottomrule
+\end{tabular}
+  \caption{Results for fits to the scaling law \autoref{eq:scaling_law_T_star} using different length scales.
+  When using $m^{\kappa}$, $\kappa \approx 1.91$ was found to give the best fit.} \label{table:T_star_nu_results}
+\end{table}
+
+
 \begin{figure}
   \includegraphics[]{entropy_vs_T.tikz}
   \caption{Classical analogue to the entanglement entropy, as in \autoref{eq:classical_entropy},
@@ -252,7 +268,9 @@ This yields \emph{values}. See the \emph{figure}.
 
 \begin{figure}
   \includegraphics[]{T_pseudocrit_chi_power_law_fit.tikz}
-  \caption{haloalaoalalalalaalkk}\label{fig:T_pseudocrit_chi_power_law_fit}
+  \caption{Fits to the scaling law \autoref{eq:scaling_law_T_star}.
+  Results for the critical temperature and exponent $\nu$ are tabulated in
+  \autoref{table:T_star_nu_results}.}\label{fig:T_pseudocrit_chi_power_law_fit}
 \end{figure}
 
 \section{Away from the critical point}

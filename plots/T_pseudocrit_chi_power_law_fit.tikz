@@ -3,13 +3,15 @@
   \def \CorrLengthAtTCrit {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_correlation_length_at_T_crit_power_law_fit_q2.dat'}
   \def \entropyAtTPseudocrit {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_entropy_at_T_pseudocrit_power_law_fit_q2.dat'}
   \def \chi {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_chi_power_law_fit_q2.dat'}
+  \def \finiteN {'plots/data/T_pseudocrit_N20-2200_max_truncation_error1e-7_method_entropy_power_law_fit_q2.dat'}
 
   \begin{groupplot}[
       group style={
-        group size=2 by 2,
+        group size=2 by 3,
         % xlabels at=edge bottom,
         ylabels at=edge left,
         yticklabels at=edge left,
+        vertical sep = 1.5cm,
       },
       width=0.5\textwidth,
       ylabel={$T^{\star} - \widetilde{T}_c$},
@@ -51,5 +53,15 @@
     \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \chi index 0};
     \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \chi index 1};
 
+    \nextgroupplot[
+      ymode=log,
+      xmode=log,
+      xlabel={$N$},
+    ]
+
+    \addplot+[only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \finiteN index 0};
+    \addplot[black, thick, dashed, mark=none] gnuplot [raw gnuplot] { plot \finiteN index 1};
+
   \end{groupplot}
+
 \end{tikzpicture}

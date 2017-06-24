@@ -79,7 +79,7 @@ whereas the free energy follows a quadratic relationship
 \end{equation}
 
 This means that we can confidently extrapolate the value of a quantity in the fully converged limit as
-\begin{equation}
+\begin{equation}\label{eq:extrapolation_fully_converged_limit_finite_m}
   Q(\epsilon \to 0) = Q(\epsilon_{\text{min}}) + \sum_{\epsilon = \frac{\epsilon_{\text{min}}}{10},
   \frac{\epsilon_{\text{min}}}{100}, \dots} \Delta Q(\epsilon),
 \end{equation}
@@ -171,7 +171,7 @@ Using these values of $m$, the noise largely disappears, but the convergence beh
 
 Nevertheless, the error on a quantity calculated at bond dimension $m_{\text{max}}$ can be approximated as
 \begin{equation}
-  M(m \to \infty) = \sum_{m = m_{\text{max}} + 1}^{\infty} \Delta Q_{\text{step}}(m),
+  M(m \to \infty) = M(m_{\text{max}}) + \sum_{m = m_{\text{max}} + 1}^{\infty} \Delta Q_{\text{step}}(m),
 \end{equation}
 where $\Delta Q_{\text{step}}$ is fitted from aptly chosen lower values of $m$.
 
@@ -197,14 +197,30 @@ where $\Delta Q_{\text{step}}$ is fitted from aptly chosen lower values of $m$.
 
 
 \section{Values of hyperparameters for the Ising model}
-\todo[inline]{Justify these statements}
-
 We have found that for practical purposes, in the infinite-system algorithm the convergence threshold $\epsilon$ may be
-set to $10^{-7}$.
+set to $10^{-7}$ for values of $m$ below, say, 40, and to $10^{-8}$ for $m$-values above 40.
 For the highest value of $m = 120$, this leads to a relative error,
 as compared with the theoretically fully converged limit $\epsilon \to 0$,
-of about $0.07\%$ in the correlation length, and less than $0.02\%$ in the order parameter,
+of about $1.1\%$ in the correlation length, and less than $0.3\%$ in the order parameter,
 entropy and free energy.
 For lower values of $m$, the relative errors are substantially lower.
+See \autoref{table:rel_error_correlation_length_finite_m_T_crit}.
+
+\todo[inline]{What about convergence at $T^{\star}$?}
 
 For simulations of finite systems, we have chosen $m$ such that the truncation error is smaller than $10^{-6}$.
+This leads to a relative error with the fully converged limit $m \to \infty$ of at most $0.06\%$ in the order parameter,
+entropy and free energy for $N = 8000$. For lower values of $N$, the relative error is lower. 
+
+\begin{table}[]
+\centering
+\begin{tabular}{@{}lll@{}}
+$m$ & rel. error ($\epsilon = 10^{-7}$) & rel. error ($\epsilon = 10^{-8}$) \\ \midrule
+40  & 0.02                              & 0.02                              \\
+80  & 0.6                               & 0.05                              \\
+120 & 1.1                               & 0.1                               \\ \bottomrule
+\end{tabular}
+\caption{Relative errors on $\xi(T_c, \epsilon)$, as compared with the fully converged limit $\epsilon \to \infty$,
+approximated by
+\autoref{eq:extrapolation_fully_converged_limit_finite_m}.}\label{table:rel_error_correlation_length_finite_m_T_crit}
+\end{table}

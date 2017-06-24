@@ -1,19 +1,13 @@
-\section{Abstract}
 
-The density matrix renormalization group, proposed in 1992 by White
+\chapterprecishere{The density matrix renormalization group, proposed in 1992 by White
 \cite{white1992density}, is introduced in its historical context. To highlight the ideas
 that led to this method, we explain the real-space renormalization group, proposed by
 Wilson \cite{wilson1975renormalization} in 1975. We then explain how the shortcomings of
-Wilson's method led to the density matrix renormalization group.
+Wilson's method led to the density matrix renormalization group.}
 
 \section{Introduction}
-Consider the problem of numerically finding the ground state $\ket{\Psi_0}$ of the
-$N$-site 1-dimensional transverse-field Ising-model, given by
-
-\begin{equation}
-  H = -J \sum_{i = 1}^{N} \sigma_{i}^{z}\sigma_{i+1}^{z}
-  - h \sum_{i=1}^{N} \sigma_{i}^{x}.
-\end{equation}
+Consider the problem of numerically finding the ground state $\ket{\Psi_0}$ of an
+$N$-site one-dimensional spin-$\frac{1}{2}$ system.
 
 The underlying Hilbert space of the system is a tensor product of the
 local Hilbert spaces $\mathcal{H}_{\text{site}}$, which are spanned by the
@@ -85,8 +79,8 @@ This is equivalent to writing
 with $O$ an $m \times 2^L$ matrix, with rows being the $m$ lowest-lying
 eigenvectors of $H_{AA}$, and $L$ the number of lattice sites of a block. At
 the fixed point of this iteration procedure, $H_A$ represents the
-Hamiltonian of an infinite chain. \todo[inline]{Explain renormalization
-group idea somewhere.} In choosing this truncation, it is assumed that the
+Hamiltonian of an infinite chain.
+In choosing this truncation, it is assumed that the
 low-lying eigenstates of the system in the thermodynamic limit are
 composed of low-lying eigenstates of smaller blocks.
 
@@ -175,8 +169,6 @@ with $w_{\lambda}$ the eigenvalues of the reduced density matrix.
 \eqref{eq:truncation_error} is called the truncation error or residual
 probability, and quantifies the incurred error when taking a number $m < l$ states to
 represent $\mathcal{H}_{AA}$.
-
-\todo[inline]{Look ahead to SVD}
 
 We have proven that the optimal (in the sense that $\Vert \ket{\Psi}
 - \ket{\widetilde{\Psi}} \Vert$ is minimized\footnote{There are several other
