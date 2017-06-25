@@ -63,11 +63,6 @@ Ising model, first introduced and solved using the transfer matrix method by Isi
 \cite{ising1925beitrag} in his PhD thesis.
 
 \subsection{1D Ising model}
-
-\todo[inline]{talk a bit about model (magnetism etc).}
-\todo[inline]{Somewhere, I should introduce -- very briefly -- how the magnetization and
-free energy per site are defined. Maybe just calculate them for 1D Ising model.}
-
 Consider the 1D ferromagnetic Ising model \cite{ising1925beitrag}, defined by the energy function
 \begin{equation}\label{ising_energy_function}
   H(\sigma) = -J \sum_{\langle i j \rangle} \sigma_i \sigma_j - h \sum_{i} \sigma_i.
@@ -143,7 +138,7 @@ Thermodynamic quantities like the free energy per site
 \end{equation}
 and the magnetization per site
 \begin{equation}
-  \frac{M}{N} = \frac{\sum_{i}^{N} \langle \sigma_i \rangle}{N} = - \frac{1}{N}\frac{\partial F}{\partial h}
+   M = \frac{\sum_{i}^{N} \langle \sigma_i \rangle}{N} = - \frac{1}{N}\frac{\partial F}{\partial h}
 \end{equation}
 can now readily be calculated.
 
@@ -640,10 +635,10 @@ as in \autoref{fig:partition_function_tensor_network}. The free energy per site 
 \end{figure}
 
 
-\subsection{Magnetization per site}
+\subsection{Magnetization per site}\label{sec:magnetization_per_site}
 The magnetization per site may be calculated as
 \begin{equation}
-  \frac{M}{N^2} = T \frac{\partial (\log \kappa)}{\partial h},
+  M = T \frac{\partial (\log \kappa)}{\partial h},
 \end{equation}
 but this involves a numerical derivative and a numerical limit $h \to 0$ in the case of the spontaneous magnetization.
 A more practical method, that is employed in this thesis, is to use the magnetization of the central spin
@@ -658,6 +653,9 @@ with the tensor $b_{i j k l}$ defined as
 \begin{equation}\label{eq:b_tensor}
   b_{i j k l} = \sum_{\sigma \in \{ -1, 1 \} } \sigma \delta_{\sigma i j k l}.
 \end{equation}
+
+All numerical results in this thesis involving the magnetization per site are actually obtained by calculating $\langle
+\sigma_0 \rangle$, which shall be referred to simply as $M$ from now on.
 
 \begin{figure}
   \input{images/magnetization_central_spin_tensor_network.tikz}

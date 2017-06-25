@@ -11,14 +11,15 @@ of the corner transfer matrix $\xi(m)$.
 Here, we assume that $\xi(m)$ is given by the correlation length at the critical point,
 see \autoref{sec:definition_effective_length_scale_in_terms_of_xi}.
 
-The order parameter should obey the following scaling relation at
-the critical temperature
+The order parameter\footnote{It is worth stressing that the order parameter and the magnetization per site are used
+interchangeably for the Ising model, and that the magnetization per site is approximated,
+within the CTMRG algorithm, by the expectation value of the central spin.
+See \autoref{sec:magnetization_per_site}.} should obey the following scaling relation at the critical temperature
 \begin{equation}\label{eq:order_param_scaling_relation_finite_m}
-  M(T = T_c, m) \propto \xi(T = T_c, m)^{-\beta/\nu}.
+  M(T = T_c,m) \propto \xi(T = T_c, m)^{-\beta/\nu}.
 \end{equation}
-The left panel of \autoref{fig:order_parameter_power_law_fit} shows that this scaling
-relation holds. The fit yields $\frac{\beta}{\nu} \approx 0.125(5)$, close to the true
-value of $\frac{1}{8}$.
+The left panel of \autoref{fig:order_parameter_power_law_fit} shows that this scaling relation holds.
+The fit yields $\frac{\beta}{\nu} \approx 0.125(5)$, close to the true value of $\frac{1}{8}$.
 
 The right panel shows the conventional finite-size scaling relation
 \begin{equation}\label{eq:order_param_scaling_relation_finite_N}
@@ -244,7 +245,7 @@ It is fortunate that we don't need the length scales at $T_c$, since we don't kn
 
 \subsection{Finite $N$}
 As a cross check, we can instead use systems of finite size to extract $T_c$ and $\nu$.
-This yields $T_c = 2.269171$ and $\nu = 0.97$. 
+This yields $T_c = 2.269171$ and $\nu = 0.97$.
 
 \begin{table}[]
 \centering
