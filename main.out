@@ -6,4 +6,73 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{Single particle in a box}{section.2.2}% 6
 \BOOKMARK [2][-]{subsection.2.2.3}{Density matrix method}{section.2.2}% 7
 \BOOKMARK [2][-]{subsection.2.2.4}{Infinite-system method}{section.2.2}% 8
-\BOOKMARK [0][-]{section*.11}{Bibliography}{}% 9
+\BOOKMARK [0][-]{chapter.3}{DRMG applied to two-dimensional classical lattice models}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Statistical mechanics on classical lattices}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Transfer matrices of lattice models}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.2.1}{1D Ising model}{section.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{Fixed boundary conditions}{subsection.3.2.1}% 13
+\BOOKMARK [2][-]{subsection.3.2.2}{2D Ising model}{section.3.2}% 14
+\BOOKMARK [1][-]{section.3.3}{Partition function of the 2D Ising model as a tensor network}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.1}{Tensor network of the partition function of a system of four spins}{section.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.2}{Thermodynamic limit}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.3}{The transfer matrix as a tensor network}{section.3.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Transfer matrix renormalization group}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.4.1}{The infinite system algorithm for the transfer matrix}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.2}{Physical interpretation of the reduced density matrix}{section.3.4}% 21
+\BOOKMARK [1][-]{section.3.5}{Corner transfer matrix renormalization group}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.5.1}{Corner transfer matrices}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.2}{Corner transfer matrix as a tensor network}{section.3.5}% 24
+\BOOKMARK [2][-]{subsection.3.5.3}{Corner transfer matrix renormalization group method}{section.3.5}% 25
+\BOOKMARK [1][-]{section.3.6}{Calculation of observable quantities}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.6.1}{Free energy per site}{section.3.6}% 27
+\BOOKMARK [2][-]{subsection.3.6.2}{Magnetization per site}{section.3.6}% 28
+\BOOKMARK [2][-]{subsection.3.6.3}{Analogy to entanglement entropy for classical systems}{section.3.6}% 29
+\BOOKMARK [1][-]{section.3.7}{Spectrum of the corner transfer matrix}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.7.1}{Analytical results for the Ising model}{section.3.7}% 31
+\BOOKMARK [2][-]{subsection.3.7.2}{Implications for finite-m simulations}{section.3.7}% 32
+\BOOKMARK [1][-]{section.3.8}{Equivalence to variational approximation in the space of matrix product states.}{chapter.3}% 33
+\BOOKMARK [0][-]{chapter.4}{Critical behaviour and finite-size scaling}{}% 34
+\BOOKMARK [1][-]{section.4.1}{Phase transitions}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.1.1}{Finite systems}{section.4.1}% 36
+\BOOKMARK [1][-]{section.4.2}{Critical behaviour}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.2.1}{Finite-size scaling}{section.4.2}% 38
+\BOOKMARK [3][-]{subsubsection.4.2.1.1}{The finite-size scaling ansatz}{subsection.4.2.1}% 39
+\BOOKMARK [3][-]{subsubsection.4.2.1.2}{Extracting exponents from numerical simulation}{subsection.4.2.1}% 40
+\BOOKMARK [0][-]{chapter.5}{Finite-m scaling in the CTMRG algorithm}{}% 41
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.2}{Definition of the effective length scale in terms of the correlation length at Tc}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.3}{Relation to finite-entropy scaling and the exponent .}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.3.1}{Quantitative theory for }{section.5.3}% 45
+\BOOKMARK [1][-]{section.5.4}{Locating the critical point with the entanglement spectrum}{chapter.5}% 46
+\BOOKMARK [0][-]{chapter.6}{Methods}{}% 47
+\BOOKMARK [1][-]{section.6.1}{Symmetricity and normalization of tensors}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.2}{Boundary conditions}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.3}{Convergence criteria}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.3.1}{Simulations with finite bond dimension}{section.6.3}% 51
+\BOOKMARK [3][-]{subsubsection.6.3.1.1}{Convergence at the critical point of the Ising model}{subsection.6.3.1}% 52
+\BOOKMARK [2][-]{subsection.6.3.2}{Simulations with finite system size}{section.6.3}% 53
+\BOOKMARK [1][-]{section.6.4}{Values of hyperparameters for the Ising model}{chapter.6}% 54
+\BOOKMARK [0][-]{chapter.7}{Numerical results for the Ising model}{}% 55
+\BOOKMARK [1][-]{section.7.1}{At the critical point}{chapter.7}% 56
+\BOOKMARK [2][-]{subsection.7.1.1}{Existence of two length scales}{section.7.1}% 57
+\BOOKMARK [2][-]{subsection.7.1.2}{Central charge}{section.7.1}% 58
+\BOOKMARK [2][-]{subsection.7.1.3}{Using the entropy to define the correlation length}{section.7.1}% 59
+\BOOKMARK [2][-]{subsection.7.1.4}{Exponent }{section.7.1}% 60
+\BOOKMARK [3][-]{subsubsection.7.1.4.1}{Comparison with exact result in asymptotic limit}{subsection.7.1.4}% 61
+\BOOKMARK [1][-]{section.7.2}{Locating the critical point}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.2.1}{Finite m}{section.7.2}% 63
+\BOOKMARK [2][-]{subsection.7.2.2}{Finite N}{section.7.2}% 64
+\BOOKMARK [1][-]{section.7.3}{Away from the critical point}{chapter.7}% 65
+\BOOKMARK [0][-]{chapter.8}{Numerical results for the clock model}{}% 66
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 67
+\BOOKMARK [1][-]{section.8.2}{Previous numerical results}{chapter.8}% 68
+\BOOKMARK [1][-]{section.8.3}{Results}{chapter.8}% 69
+\BOOKMARK [0][-]{appendix.A}{Correspondence of quantum and classical lattice systems}{}% 70
+\BOOKMARK [0][-]{appendix.B}{Introduction to tensor networks}{}% 71
+\BOOKMARK [1][-]{section.B.1}{Tensors, or multidimensional arrays}{appendix.B}% 72
+\BOOKMARK [1][-]{section.B.2}{Tensor contraction}{appendix.B}% 73
+\BOOKMARK [1][-]{section.B.3}{Tensor networks}{appendix.B}% 74
+\BOOKMARK [2][-]{subsection.B.3.1}{Graphical notation}{section.B.3}% 75
+\BOOKMARK [2][-]{subsection.B.3.2}{Reshaping tensors}{section.B.3}% 76
+\BOOKMARK [2][-]{subsection.B.3.3}{Computational complexity of contraction}{section.B.3}% 77
+\BOOKMARK [0][-]{section*.81}{Bibliography}{}% 78

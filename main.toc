@@ -18,4 +18,142 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Infinite-system method}{7}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{9}{section*.11}
+\contentsline {chapter}{\chapternumberline {3}DRMG applied to two-dimensional classical lattice models}{9}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Statistical mechanics on classical lattices}{9}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Transfer matrices of lattice models}{10}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}1D Ising model}{10}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1.1}Fixed boundary conditions}{12}{subsubsection.3.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}2D Ising model}{13}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Partition function of the 2D Ising model as a tensor network}{14}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Tensor network of the partition function of a system of four spins}{15}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Thermodynamic limit}{15}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}The transfer matrix as a tensor network}{17}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Transfer matrix renormalization group}{17}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}The infinite system algorithm for the transfer matrix}{19}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Physical interpretation of the reduced density matrix}{20}{subsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Corner transfer matrix renormalization group}{22}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Corner transfer matrices}{22}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Corner transfer matrix as a tensor network}{23}{subsection.3.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.3}Corner transfer matrix renormalization group method}{23}{subsection.3.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Calculation of observable quantities}{26}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}Free energy per site}{26}{subsection.3.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Magnetization per site}{26}{subsection.3.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.3}Analogy to entanglement entropy for classical systems}{27}{subsection.3.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Spectrum of the corner transfer matrix}{28}{section.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7.1}Analytical results for the Ising model}{28}{subsection.3.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7.2}Implications for finite-$m$ simulations}{29}{subsection.3.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Equivalence to variational approximation in the space of matrix product states.}{29}{section.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}Critical behaviour and finite-size scaling}{31}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Phase transitions}{31}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Finite systems}{32}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Critical behaviour}{32}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Finite-size scaling}{33}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1.1}The finite-size scaling ansatz}{34}{subsubsection.4.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1.2}Extracting exponents from numerical simulation}{36}{subsubsection.4.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {5}Finite-$m$ scaling in the CTMRG algorithm}{37}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Introduction}{37}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Definition of the effective length scale in terms of the correlation length at $T_c$}{39}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Relation to finite-entropy scaling and the exponent $\kappa $.}{39}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Quantitative theory for $\kappa $}{40}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Locating the critical point with the entanglement spectrum}{42}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {6}Methods}{44}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Symmetricity and normalization of tensors}{44}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Boundary conditions}{44}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Convergence criteria}{45}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Simulations with finite bond dimension}{45}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.1.1}Convergence at the critical point of the Ising model}{45}{subsubsection.6.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Simulations with finite system size}{46}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Values of hyperparameters for the Ising model}{50}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {7}Numerical results for the Ising model}{53}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}At the critical point}{53}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}Existence of two length scales}{53}{subsection.7.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}Central charge}{55}{subsection.7.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.3}Using the entropy to define the correlation length}{57}{subsection.7.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.4}Exponent $\kappa $}{58}{subsection.7.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.4.1}Comparison with exact result in asymptotic limit}{58}{subsubsection.7.1.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Locating the critical point}{59}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Finite $m$}{60}{subsection.7.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.2}Finite $N$}{61}{subsection.7.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Away from the critical point}{61}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {8}Numerical results for the clock model}{66}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Introduction}{66}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Previous numerical results}{67}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Results}{68}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {appendix}{\chapternumberline {A}Correspondence of quantum and classical lattice systems}{69}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {appendix}{\chapternumberline {B}Introduction to tensor networks}{71}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Tensors, or multidimensional arrays}{71}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Tensor contraction}{72}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Tensor networks}{72}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.3.1}Graphical notation}{73}{subsection.B.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.3.2}Reshaping tensors}{74}{subsection.B.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.3.3}Computational complexity of contraction}{74}{subsection.B.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{75}{section*.81}

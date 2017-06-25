@@ -4,28 +4,21 @@ system size $N$, we perform a scaling analysis in the bond dimension -- or numbe
 basis states kept -- in approximating the corner transfer matrix of the system. This
 dimension is denoted $m$, though in other works it may appear as $\chi$.
 
-This thesis is laid out as follows. Chapter one introduces the density matrix
+This thesis is laid out as follows. Chapter two introduces the density matrix
 renormalization group (DMRG) method in the context of one-dimensional quantum systems.
 Since most of the literature and research focuses on quantum lattice models, it is helpful
 to keep this picture in mind.
 
-Chapter two explains how the ideas of DMRG can be applied to two-dimensional classical
-lattices. After making this connection clear, we describe the corner transfer matrix
-renormalization group (CTMRG) method.
+Chapter three explains how the ideas of DMRG can be applied to two-dimensional classical
+lattices. After making this connection clear, the corner transfer matrix
+renormalization group (CTMRG) method, a combination of DMRG and earlier ideas from Baxter, is introduced.
 
-Chapter three introduces the concepts of critical behaviour and finite-size scaling.
+Chapter four introduces the concepts of critical behaviour and finite-size scaling,
+while chapter five makes the connection to finite-size effects that appear as a consequence of a finite bond dimension
+$m$ within the CTMRG method.
 
-Chapter four makes the connection to finite-size effects that appear as a consequence of a finite bond dimension $m$
-within the CTMRG method.
+Chapter six describes implementation details and convergence behaviour of the CTMRG algorithm.
+Chapter seven presents numerical results of finite-$m$ scaling for the Ising model.
 
-Chapter five describes implementation details and convergence behaviour of the CTMRG algorithm.
-
-Chapter six presents numerical results on the Ising model.
-
-Chapter   
-
-\todo[inline]{
-Maybe it's better to start with a chapter on statistical mechanics (introducing transfer
-matrices, computing quantities, etc), then a chapter on critical behaviour and finite-size
-scaling, and THEN a chapter that introduces DMRG, TMRG and CTMRG in one go.
-}
+Chapter eight introduces the clock model and the basic concepts of the Kosterlitz-Thouless transition,
+presents results of finite-$m$ scaling and compares with works using other numerical methods.

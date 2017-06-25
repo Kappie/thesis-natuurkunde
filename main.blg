@@ -1,17 +1,17 @@
-[1] Config.pm:343> INFO - This is Biber 2.5
-[1] Config.pm:346> INFO - Logfile is 'main.blg'
-[78] biber-darwin:290> INFO - === Sat Jun 24, 2017, 17:22:25
-[110] Biber.pm:351> INFO - Reading 'main.bcf'
-[253] Biber.pm:776> INFO - Found 8 citekeys in bib section 0
-[287] Biber.pm:3493> INFO - Processing section 0
-[315] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
-[324] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[330] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
-[335] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
-[382] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[382] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[383] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[383] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[397] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[400] bbl.pm:619> INFO - Output to main.bbl
-[401] Biber.pm:108> INFO - WARNINGS: 1
+[0] Config.pm:343> INFO - This is Biber 2.5
+[0] Config.pm:346> INFO - Logfile is 'main.blg'
+[78] biber-darwin:290> INFO - === Sun Jun 25, 2017, 10:43:32
+[133] Biber.pm:351> INFO - Reading 'main.bcf'
+[428] Biber.pm:776> INFO - Found 66 citekeys in bib section 0
+[485] Biber.pm:3493> INFO - Processing section 0
+[517] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
+[525] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[534] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
+[540] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
+[988] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[989] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[989] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[990] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[1108] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1132] bbl.pm:619> INFO - Output to main.bbl
+[1134] Biber.pm:108> INFO - WARNINGS: 1
