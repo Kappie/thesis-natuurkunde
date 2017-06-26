@@ -3,7 +3,7 @@
   \def \CorrLengthAtTCrit {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_correlation_length_at_T_crit_power_law_fit_q2.dat'}
   \def \entropyAtTPseudocrit {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_entropy_at_T_pseudocrit_power_law_fit_q2.dat'}
   \def \chi {'plots/data/T_pseudocrit_chi10-60_tol1e-8_method_entropy_chi_power_law_fit_q2.dat'}
-  \def \finiteN {'plots/data/T_pseudocrit_N20-2200_max_truncation_error1e-7_method_entropy_power_law_fit_q2.dat'}
+  \def \finiteN {'plots/data/T_pseudocrit_N20-7900_max_truncation_error1e-6_method_entropy_power_law_fit_q2.dat'}
 
   \begin{groupplot}[
       group style={
