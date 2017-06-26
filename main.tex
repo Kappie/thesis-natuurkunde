@@ -97,9 +97,16 @@
 \author{Geert Kapteijns}
 \date{\today}
 
-%\begin{titlingpage}
-  %\maketitle
-%\end{titlingpage}
+\begin{titlingpage}
+  \maketitle
+\end{titlingpage}
+
+% \cleardoublepage
+% \phantomsection
+% % \addcontentsline{toc}{chapter}{Acknowledgements}
+% \chapter*{Acknowledgements}
+% Ik wil bedanken
+
 
 \begingroup
 \renewcommand{\afterchaptertitle}{\vskip1.5em}
@@ -107,10 +114,16 @@
 \tableofcontents*
 \endgroup
 
+\chapter{Abstract}
+\input{chapters/abstract}
+
+\chapter{Acknowledgements}
+\input{chapters/acknowledgements}
+
 \mainmatter
 
-% \chapter{Introduction}
-% \input{chapters/introduction}
+\chapter{Introduction}
+\input{chapters/introduction}
 %
 % \chapter{Density matrix renormalization group method}
 % \input{chapters/dmrg}
@@ -127,8 +140,8 @@
 % \chapter{Methods}
 % \input{chapters/methods}
 % %
-\chapter{Numerical results for the Ising model}
-\input{chapters/results}
+% \chapter{Numerical results for the Ising model}
+% \input{chapters/results}
 
 % \chapter{Numerical results for the clock model}
 % \input{chapters/results_clock_model}
