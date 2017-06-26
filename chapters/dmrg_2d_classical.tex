@@ -175,7 +175,7 @@ dimensions, the energy function is still written as in
 Let $N$ be the number of columns and $l$ be the number of rows of the lattice, and assume
 $l \gg N$. In the vertical direction, we apply periodic boundary conditions, as in the
 one-dimensional case. In the horizontal direction, we keep an open boundary. We refer to
-$N$ as the system size. \todo[inline]{Picture.}
+$N$ as the system size. \todo[inline]{Picture?}
 
 Similarly as in the 1D case, the partition function can be written as
 \begin{equation}
@@ -415,8 +415,8 @@ With this blocking procedure, we can successively find
 \begin{equation}
     P_{N + 1} \rightarrow P_{N + 2} \rightarrow \dots,
 \end{equation}
-until we have reached some termination condition.
-\todo[inline]{Say something about termination condition.}
+until we have reached some termination condition.\footnote{The termination condition for the infinite-system algorithm
+is discussed in \autoref{sec:convergence_criteria}.}
 
 \begin{figure}
   \input{images/tmrg_initial_half_row_transfer_matrix.tikz}
@@ -542,13 +542,11 @@ The partition function, as in \autoref{eq:z_n_times_n}, is given by the tensor n
 \end{figure}
 
 \subsection{Corner transfer matrix renormalization group method}
-\todo[inline]{Say something about boundary conditions, also with TMRG algorithm.}
-
 The algorithm proceeds very much like the transfer matrix renormalization group method. In addition to renormalizing the half-row transfer matrix $P$, we also renormalize the
 corner transfer matrix $A$ at each step, using the projector obtained from diagonalizing
 $A^4$.
 
-\todo[inline]{Compare complexities of both algorithms.}
+\todo[inline]{Compare complexities of both algorithms?}
 
 We first initialize $P_N$ and $A_N$, imposing boundary conditions as we see fit.
 
@@ -576,7 +574,6 @@ We repeat the above procedure to successively obtain
   T_{N + 1} & \rightarrow T_{N + 2} \rightarrow \dots
 \end{align}
 until a convergence criterion is reached.
-\todo[inline]{Talk about convergence criterion.}
 
 \begin{figure}
   \input{images/ctmrg_add_site_and_renormalize.tikz}
@@ -683,8 +680,6 @@ In \cite{huang2017holographic}, numerical evidence is given for the validity of 
 wide range of models, and the concept is generalized to higher dimensions. For an overview of applying corner transfer
 matrices in higher dimensions and to quantum systems, see \cite{orus2012exploring}.
 
-\todo[inline]{To do}
-
 \section{Spectrum of the corner transfer matrix}\label{sec:spectrum_of_ctm}
 
 \subsection{Analytical results for the Ising model}
@@ -767,7 +762,7 @@ When approximating the corner transfer matrix with a free boundary in the ordere
 it is crucial to retain all basis states corresponding to an energy level \cite{okunishi1999universal}.
 Failure to do so will lead to a symmetry-broken state.
 
-\todo[inline]{Picture?}
+\todo[inline]{Make this plot somewhere?}
 
 \section{Equivalence to variational approximation in the space of matrix product states.}
 

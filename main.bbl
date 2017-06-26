@@ -16,5 +16,109 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{okunishi1999universal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=796d0b09ba142fbdae193488b57b87c6}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=869003960519dd65caf7d0937b53778d}{%
+           family={Hieida},
+           family_i={H\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=e96bdba173a48b9e6b25db1d893bf745}{%
+           family={Akutsu},
+           family_i={A\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{9c89edb1bf617a553ea7dfd621808031}
+      \strng{fullhash}{71c3e16fe0dc102705027cb9478c0ed6}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{6}
+      \field{title}{Universal asymptotic eigenvalue distribution of density matrices and corner transfer matrices in the thermodynamic limit}
+      \field{volume}{59}
+      \field{year}{1999}
+      \field{pages}{R6227}
+      \range{pages}{-1}
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevE.59.R6227
+      \endverb
+    \endentry
+    \entry{davies1988corner}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9d03e2d25ca50da5189dae2609e7d7fd}{%
+           family={Davies},
+           family_i={D\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9d03e2d25ca50da5189dae2609e7d7fd}
+      \strng{fullhash}{9d03e2d25ca50da5189dae2609e7d7fd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{1}
+      \field{title}{Corner transfer matrices for the {Ising} model}
+      \field{volume}{154}
+      \field{year}{1988}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+      \verb{url}
+      \verb https://doi.org/10.1016/0378-4371(88)90178-1
+      \endverb
+    \endentry
+    \entry{peschel2009reduced}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a8e231c904a9df3e5300782b54c0a49a}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=26f4c78065bf22cb415872eddefdead3}{%
+           family={Eisler},
+           family_i={E\bibinitperiod},
+           given={V.},
+           given_i={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{3e5d344b4c0dd56687ad0fcf7501ea23}
+      \strng{fullhash}{3e5d344b4c0dd56687ad0fcf7501ea23}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics A: Mathematical and Theoretical}
+      \field{number}{50}
+      \field{title}{Reduced density matrices and entanglement entropy in free lattice models}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{pages}{504003}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://doi.org/10.1088/1751-8113/42/50/504003
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 

@@ -20,7 +20,7 @@ so that the interpretation of $A^4$ as a reduced density matrix of an effective 
 Unless otherwise stated, all simulations are run with the boundary spins of the lattice fixed to $+1$.
 For specific purposes, free boundary conditions are used.
 
-\section{Convergence criteria}
+\section{Convergence criteria}\label{sec:convergence_criteria}
 
 \subsection{Simulations with finite bond dimension}
 The convergence of the CTMRG algorithm with fixed bond dimension $m$ (the infinite system algorithm) can be defined
@@ -63,17 +63,17 @@ seems to hold.
 To make an estimate of a quantity in the limit $N \to \infty$, or equivalently $\epsilon \to 0$,
 we can study the change in a quantity as function of the convergence threshold $\epsilon$. We define
 \begin{equation}\label{eq:stepwise_difference_epsilon}
-  \Delta Q(\epsilon) = Q(\epsilon) - Q(10\epsilon),
+  \Delta Q_{\text{step}}(\epsilon) = Q(\epsilon) - Q(10\epsilon),
 \end{equation}
 i.e. the change of quantity $Q$ when we decrease the threshold $\epsilon$ by an order of magnitude. The results in
 \autoref{fig:stepwise_diffs_vs_tolerance} show that, the order parameter, entropy and correlation length
 to high precision follow the linear relationship
 \begin{equation}\label{eq:stepwise_difference_linear}
-  \Delta Q(\epsilon) = \alpha_1(m) \epsilon,
+  \Delta Q_{\text{step}}(\epsilon) = \alpha_{Q}(m) \epsilon,
 \end{equation}
 whereas the free energy follows a quadratic relationship
 \begin{equation}\label{eq:stepwise_difference_quadratic}
-  \Delta f(\epsilon) = \alpha_2(m) \epsilon^2.
+  \Delta f(\epsilon) = \alpha_{f}(m) \epsilon^2.
 \end{equation}
 
 \todo[inline]{Why is this case?
@@ -82,9 +82,9 @@ It must have something to do with the fact that in the definition of the free en
 This means that we can confidently extrapolate the value of a quantity in the fully converged limit as
 \begin{equation}\label{eq:extrapolation_fully_converged_limit_finite_m}
   Q(\epsilon \to 0) = Q(\epsilon_{\text{min}}) + \sum_{\epsilon = \frac{\epsilon_{\text{min}}}{10},
-  \frac{\epsilon_{\text{min}}}{100}, \dots} \Delta Q(\epsilon),
+  \frac{\epsilon_{\text{min}}}{100}, \dots} \Delta Q_{\text{step}}(\epsilon),
 \end{equation}
-where $\epsilon_{\text{min}}$ is the lowest threshold used in simulation, and $\Delta Q(\epsilon)$ is determined
+where $\epsilon_{\text{min}}$ is the lowest threshold used in simulation, and $\Delta Q_{\text{step}}(\epsilon)$ is determined
 by fitting to suitable higher values of the threshold.
 
 \begin{figure}
@@ -101,11 +101,6 @@ by fitting to suitable higher values of the threshold.
   Same legend as \autoref{fig:convergence_vs_n}.}\label{fig:convergence_finite_chi}
 \end{figure}
 
-% \begin{figure}
-%   \includegraphics[]{quantities_vs_tolerance.tikz}
-%   \caption{hallootjes}\label{fig:quantities_vs_tolerance}
-% \end{figure}
-
 \begin{figure}
   \includegraphics[]{stepwise_diffs_vs_tolerance.tikz}
   \caption{Stepwise differences upon decreasing the threshold $\epsilon$ by an order of magnitude,
@@ -113,10 +108,6 @@ by fitting to suitable higher values of the threshold.
   For the order parameter, entropy and correlation length, a linear relationship holds to high precision,
   while for the free energy the relationship is quadratic.}\label{fig:stepwise_diffs_vs_tolerance}
 \end{figure}
-
-\todo[inline]{Cross check with correlation length, report on boundary conditions}
-
-
 
 \subsection{Simulations with finite system size}
 In the finite-system algorithm, we want to reliably extrapolate quantities in the bond dimension $m$.
@@ -133,8 +124,6 @@ density matrix. Apart from this noise, the law
   \Delta Q_{\text{rel}}(m) \propto m^{\alpha(N)}
 \end{equation}
 is seen to hold for high enough $m$ for the order parameter, free energy and entropy.
-
-\todo[inline]{Why does the free energy converge much faster?}
 
 To extrapolate to $m \to \infty$, analogously to the finite-$m$ case we define
 \begin{equation}\label{eq:delta_q_step_finite_N}
@@ -171,12 +160,10 @@ Using these values of $m$, the result is again a power law, and the noise largel
 behaviour is still not devoid of structure entirely.
 
 The error on a quantity calculated at bond dimension $m_{\text{max}}$ can be approximated as
-\begin{equation}
+\begin{equation}\label{eq:extrapolation_finite_N}
   M(m \to \infty) = M(m_{\text{max}}) + \sum_{\text{higher values of $m$}} \Delta Q_{\text{step}}(m),
 \end{equation}
 where $\Delta Q_{\text{step}}$ is fitted from aptly chosen lower values of $m$.
-
-\todo[inline]{Free energy error is lower since the networks appear quadratically}
 
 \begin{figure}
   \includegraphics[]{quantities_vs_chi.tikz}
@@ -207,11 +194,14 @@ For lower values of $m$, the relative errors are substantially lower.
 See \autoref{table:rel_error_correlation_length_finite_m_T_crit}.
 
 \todo[inline]{What about convergence at $T^{\star}$?}
-\todo[inline]{Similar table for some $N$-values?}
 
-For simulations of finite systems, we have chosen $m$ such that the truncation error is smaller than $10^{-6}$.
+For simulations of finite systems, we have found that choosing $m$ such that the truncation error $P_r$ (for
+\emph{residual probability}, its other common name) is smaller than $10^{-6}$ is sufficient for most purposes.
 This leads to a relative error with the fully converged limit $m \to \infty$ of at most $0.06\%$ in the order parameter,
-entropy and free energy for $N = 8000$. For lower values of $N$, the relative error is lower.
+entropy and free energy for $n = 8000$.
+For lower values of $N$, the relative error is lower.
+Here, we have taken the order parameter as the main benchmark, since the correlation length is not used for finite-size
+calculations. See \autoref{table:rel_error_order_param_finite_N_T_crit}.
 
 \begin{table}[]
 \centering
@@ -221,7 +211,20 @@ $m$ & rel. error \% ($\epsilon = 10^{-7}$) & rel. error \% ($\epsilon = 10^{-8}$
 80  & 0.6                               & 0.05                              \\
 120 & 1.1                               & 0.1                               \\ \bottomrule
 \end{tabular}
-\caption{Relative errors on $\xi(T_c, \epsilon)$, as compared with the fully converged limit $\epsilon \to \infty$,
+\caption{Relative errors of $\xi(T_c, m, \epsilon)$, as compared with the fully converged limit $\epsilon \to 0$,
 approximated by
 \autoref{eq:extrapolation_fully_converged_limit_finite_m}.}\label{table:rel_error_correlation_length_finite_m_T_crit}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabularx}{\linewidth}{cXXX}
+$n$ & rel. error \% ($ P_r < 10^{-5} $)  & rel. error \% ($P_r < 10^{-6}$) & rel. error \% ($P_r < 10^{-7}$) \\ \midrule
+1000  & 0.08 (40)                         & 0.005 (80)    & 0.001 (120)                               \\
+2000  & 0.08 (60)                         & 0.008 (100)   & 0.002 (160)                             \\
+8000  & 0.6  (80)                         & 0.07  (140)   & 0.005 (280)                              \\ \bottomrule
+\end{tabularx}
+\caption{Relative errors of $M(T_c, n)$, calculated such that the truncation error $P_r$ does not exceed listed threshold,
+as compared with the fully converged limit of $m \to \infty$ (zero truncation error),
+approximated by \autoref{eq:extrapolation_finite_N}. The number in brackets is the value of $m$ used. To approximate the error, steps in $m$-value of 5, 10 or 20 were used, depending on $m_{\text{max}}$.} \label{table:rel_error_order_param_finite_N_T_crit}
 \end{table}
