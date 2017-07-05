@@ -27,18 +27,25 @@
 \input{images/tikz_declarations}
 
 % Just to make sure: import these packages last.
-% \usepackage[backend=biber, citestyle=numeric-comp, bibstyle=phys, hyperref]{biblatex}
 \usepackage[backend=biber, style=phys, hyperref]{biblatex}
 \usepackage[]{hyperref}
 
 \newcommand\myshade{80}
 \hypersetup{
+  linktocpage,
   backref,
   pdfpagemode=FullScreen,
   linkcolor  = scientific7,
   citecolor  = scientific8,
   urlcolor   = scientific9,
   colorlinks = true,
+}
+\addto\extrasenglish{%
+  \def\subsectionautorefname{section}%
+  \def\subsubsectionautorefname{section}%
+  \def\equationautorefname{Eq.}%
+  \def\figureautorefname{Fig.}%
+  \def\chapterautorefname{Chap.}%
 }
 
 \definecolor{orange}{RGB}{252,210,190}
@@ -96,9 +103,10 @@
 \author{Geert Kapteijns}
 \date{\today}
 
-\begin{titlingpage}
-  \maketitle
-\end{titlingpage}
+% \begin{titlingpage}
+%   \maketitle
+% \end{titlingpage}
+\input{chapters/titlepage}
 
 \begingroup
 \renewcommand{\afterchaptertitle}{\vskip1.5em}
@@ -106,11 +114,11 @@
 \tableofcontents*
 \endgroup
 
-\chapter{Abstract}
-\input{chapters/abstract}
-
-\chapter{Acknowledgements}
-\input{chapters/acknowledgements}
+% \chapter{Abstract}
+% \input{chapters/abstract}
+%
+% \chapter{Acknowledgements}
+% \input{chapters/acknowledgements}
 
 \mainmatter
 
