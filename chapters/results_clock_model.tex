@@ -5,7 +5,7 @@ five- and six-state clock model.}
 
 \section{Introduction}
 In the field of phase transitions and critical phenomena, the two-dimensional topological phase transition discovered by
-Kosterlitz and Thouless \cite{kosterlitz1973ordering, kosterlitz1974critical} received much attention. This phase
+Kosterlitz and Thouless \cite{kosterlitz1973ordering, kosterlitz1974critical} receives much attention. This phase
 transition is characterized not by an order parameter which indicates a breaking of symmetry, but by the proliferation
 of topological defects.
 
@@ -16,7 +16,7 @@ exponent $\eta(T)$. At the transition, the correlation length diverges as
 \end{equation}
 with $A$ a non-universal constant. Above the transition, the two-point correlators decay exponentially.
 
-The XY model consists of planar rotors on the square lattice. It exhibits the Kosterlitz-Thouless (BK) phase transition
+The XY model consists of planar rotors on the square lattice. It exhibits the Kosterlitz-Thouless (KT) phase transition
 and by the Mermin-Wagner-Hohenberg theorem the symmetry of the ground state is broken for all temperatures, due to
 the $O(2)$ (planar rotational) symmetry of the potential \cite{mermin1966absence, hohenberg1967existence}.
 
@@ -41,12 +41,82 @@ In the Villain formulation of the potential \cite{villain1975theory}, it has bee
 a BK-transition \cite{jose1977renormalization}, and numerical results suggest that for a broad range of temperatures,
 the thermodynamic behaviour becomes identical to the XY model for high enough $q$ \cite{lapilli2006universality}.
 
-For the model in \autoref{eq:hamiltonian_clock_model}, the phase diagram and the value $q_c$ for which it first exhibits
-a BK-transition are not precisely known, making it a good candidate for numerical investigation. We briefly summarise
-previous numerical results below.
+Furthermore, in the Villain formulation it is known that \cite{elitzur1979phase, nienhuis1984critical}
+\begin{equation}\label{eq:eta_villain}
+  \eta(T_1) =\frac{4}{q^2}, \qquad \eta(T_2) = \frac{1}{4},
+\end{equation}
+where $\frac{\eta}{2} = \frac{\beta}{\nu}$, the magnetization exponent in the finite-size regime.
+
+For the cosine model in \autoref{eq:hamiltonian_clock_model}, the value $q_c$ for which it first exhibits a
+BK-transition and critical indices are not precisely known, though it is generally accepted that $q = 6$ exhibits two
+BK-transitions. The $q = 5$ case is contested (see previous numerical results below).
+
+In our simulations we will focus on the cases $q = 5, 6$, to (i) study the nature of the phase transition from a new
+perspective in the case of $q = 5$ and (ii) compare the accuracy of finite-$m$ and finite-$N$ scaling within the CTMRG
+method to other established methods for both cases.
+
+We briefly summarise previous numerical results, then present results from the CTMRG algorithm.
 
 \section{Previous numerical results}
+\subsection{The $q = 5$ clock model}
 
+The general consensus is that the two transitions of the $q = 5$ clock model with cosine potential are of the KT-type,
+though there are no rigorous results.
+It is also assumed that the critical indices are the same as those in the Villain formulation.
+
+The disagreement about the nature of the phase transitions
+stems from numerical results for the helicity modulus
+\cite{fisher1973helicity}.
+
+Most notably, Baek and Minnhagen \cite{baek2010non} claim that since the helicity modulus does
+not vanish in the high-temperature phase, the upper transition is not of the KT-type.
+
+It was shown by Kumano et al.
+in \cite{kumano2013response}, however, that the definition used by Baek and Minnhagen is not suitable for systems with a
+discrete symmetry.
+The correct discrete definition yields the expected result, namely that the helicity modulus does vanish and the
+three-phase KT-picture holds.
+
+The conclusion of Kumano et al, which was obtained by a Monte Carlo study,
+was verified by Chatelain \cite{chatelain2014dmrg} using the TMRG algorithm \cite{nishino1995density} (see also
+\autoref{sec:tmrg}).
+Chatelain also found that the critical indices match those of the Villain model (\autoref{eq:eta_villain}),
+implying the cosine model is in the same universality class as the Villain model.
+
+After the rebuttal by Kumano et al., Baek et al.
+published another work \cite{baek2013residual} in which they again use the (in the eyes of Kumano et al.) wrong
+definition of the helicity modulus, yet calculated in a different way.
+Again they conclude the transition is not of the KT-type.
+
+Meanwhile, Borisenko et al.
+\cite{borisenko2011numerical} carried out a very detailed Monte Carlo study confirming the KT-picture,
+using Binder-cumulants to find the critical points and the magnetization and susceptability to find the critical
+indices.
+
+Brito et al.
+\cite{brito2010twodimensional} conclude from a Monte Carlo study that while the transition is of KT-type,
+the resolution of their numerical method is not high enough to distinguish between $T_1$ and $T_2$.
+
+\begin{table}[]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+ & $T_1$ & $T_2$ \\ \midrule
+Brito et al. (2010) & 0.91(2) & 0.90(2) \\
+Borisenko et al. (2011) &  &  \\
+Kumano et al. (2013) &  &  \\
+Chatelain (2014) &  &  \\ \bottomrule
+\end{tabular}
+\caption{My caption}
+\label{my-label}
+\end{table}
+
+\todo[inline]{List critical points found by other authors}
+
+\subsection{The $q = 6$ clock model}
+
+
+For $q = 5$:
 \begin{itemize}
   \item \cite{chatelain2014dmrg} 2014 claims BK-transition for $q = 5$ by discrete helicity modulus using TMRG.
   \item \cite{kumano2013response} 2013 claims BK-transition for $q = 5$ by discrete helicity modelus using Monte Carlo.
@@ -55,12 +125,21 @@ previous numerical results below.
   Binder cumulants + stuff I don't understand using Monte Carlo.
   \item \cite{borisenko2012phase} 2012 don't understand. Some numerical and theoretical validations for certain
   assumptions for high $q$.
+  \item \cite{brito2010twodimensional} 2010 claims BK-transition for $q = 5$ based on Monte Carlo simulation and mapping
+  to solid-on-solid growth model.
   \item \cite{baek2010non} 2010 claims that $q = 5$ exhibits non-KT-transition, based on the fact that their (wrong)
   definition of the helicity modulus does not vanish.
   \item \cite{baek2013residual} 2013 claims that $q = 5$ exhibits weaker cousin of KT-transition, based on things I do
   not fully understand, but among others on the correct, discrete definition of the helicity modulus (true?).
   \item \cite{kim2017partition} 2017 uses partition function zeros (don't understand that concept) to show that the
   behaviour of zeros of the $q = 5$ model significantly departs from the behaviour of $q \geq 6$.
+\end{itemize}
+
+For $q = 6$:
+\begin{itemize}
+  \item \cite{krvcmar2016phase} 2016 KT-transition from entropy.
+  \item \cite{baek2013residual}
+  \item \cite{kumano2013response}
 \end{itemize}
 
 \section{Results}
