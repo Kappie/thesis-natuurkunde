@@ -2095,17 +2095,18 @@
     <bcf:citekey order="13">nishino1995density</bcf:citekey>
     <bcf:citekey order="14">baek2013residual</bcf:citekey>
     <bcf:citekey order="15">borisenko2011numerical</bcf:citekey>
-    <bcf:citekey order="16">chatelain2014dmrg</bcf:citekey>
-    <bcf:citekey order="17">kumano2013response</bcf:citekey>
-    <bcf:citekey order="18">borisenko2011numerical</bcf:citekey>
-    <bcf:citekey order="19">borisenko2012phase</bcf:citekey>
-    <bcf:citekey order="20">brito2010twodimensional</bcf:citekey>
-    <bcf:citekey order="21">baek2010non</bcf:citekey>
-    <bcf:citekey order="22">baek2013residual</bcf:citekey>
-    <bcf:citekey order="23">kim2017partition</bcf:citekey>
-    <bcf:citekey order="24">krvcmar2016phase</bcf:citekey>
-    <bcf:citekey order="25">baek2013residual</bcf:citekey>
+    <bcf:citekey order="16">brito2010twodimensional</bcf:citekey>
+    <bcf:citekey order="17">lapilli2006universality</bcf:citekey>
+    <bcf:citekey order="18">hwang2009six</bcf:citekey>
+    <bcf:citekey order="19">brito2010twodimensional</bcf:citekey>
+    <bcf:citekey order="20">borisenko2011numerical</bcf:citekey>
+    <bcf:citekey order="21">kumano2013response</bcf:citekey>
+    <bcf:citekey order="22">chatelain2014dmrg</bcf:citekey>
+    <bcf:citekey order="23">tomita2002probability</bcf:citekey>
+    <bcf:citekey order="24">hwang2009six</bcf:citekey>
+    <bcf:citekey order="25">brito2010twodimensional</bcf:citekey>
     <bcf:citekey order="26">kumano2013response</bcf:citekey>
+    <bcf:citekey order="27">krvcmar2016phase</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

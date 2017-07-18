@@ -646,59 +646,6 @@
       \verb https://doi.org/10.1103/PhysRevE.83.041120
       \endverb
     \endentry
-    \entry{borisenko2012phase}{article}{}
-      \name{author}{6}{}{%
-        {{hash=838c5a9e5901386a9b875b5f177b2f4c}{%
-           family={Borisenko},
-           family_i={B\bibinitperiod},
-           given={O.},
-           given_i={O\bibinitperiod}}}%
-        {{hash=9b334116a4ec666b58d4ea412a0a48f2}{%
-           family={Chelnokov},
-           family_i={C\bibinitperiod},
-           given={V.},
-           given_i={V\bibinitperiod}}}%
-        {{hash=4925c8f69fed2d82aa37c28c143c64bf}{%
-           family={Cortese},
-           family_i={C\bibinitperiod},
-           given={G.},
-           given_i={G\bibinitperiod}}}%
-        {{hash=f3cede7a7bb35a90e6dea4241ab9ace6}{%
-           family={Fiore},
-           family_i={F\bibinitperiod},
-           given={R.},
-           given_i={R\bibinitperiod}}}%
-        {{hash=36370cff842c796b1822c6e7d14b918b}{%
-           family={Gravina},
-           family_i={G\bibinitperiod},
-           given={M.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=f40d3be3b4bbd46cca791b6ed45905f8}{%
-           family={Papa},
-           family_i={P\bibinitperiod},
-           given={A.},
-           given_i={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{c99f3d0ead5f13b47681926f4b805010}
-      \strng{fullhash}{abfcc1752fce6542be7bf7fe2471c948}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{2}
-      \field{title}{Phase transitions in two-dimensional {$Z(N)$} vector models for {$N > 4$}}
-      \field{volume}{85}
-      \field{year}{2012}
-      \field{pages}{021114}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevE.85.021114
-      \endverb
-    \endentry
     \entry{brito2010twodimensional}{article}{}
       \name{author}{3}{}{%
         {{hash=a29cd676cb0a1228a5ea4010375e6414}{%
@@ -741,25 +688,73 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevE.81.031130
       \endverb
     \endentry
-    \entry{kim2017partition}{article}{}
+    \entry{hwang2009six}{article}{}
       \name{author}{1}{}{%
-        {{hash=09cb2759052785db0300206d6d0fca16}{%
-           family={Kim},
-           family_i={K\bibinitperiod},
-           given={D.-H.},
-           given_i={D\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=a44f1d007931ab45c719c619815254bd}{%
+           family={Hwang},
+           family_i={H\bibinitperiod},
+           given={Chi-Ok},
+           given_i={C\bibinithyphendelim O\bibinitperiod}}}%
       }
-      \strng{namehash}{09cb2759052785db0300206d6d0fca16}
-      \strng{fullhash}{09cb2759052785db0300206d6d0fca16}
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{a44f1d007931ab45c719c619815254bd}
+      \strng{fullhash}{a44f1d007931ab45c719c619815254bd}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv:1704.04973}
-      \field{title}{Partition function zeros of the $p$-state clock model in the complex temperature plane}
-      \field{year}{2017}
+      \field{issue}{4}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{10}
+      \field{title}{Six-state clock model on the square lattice: {Fisher} zero approach with {Wang-Landau} sampling}
+      \field{volume}{80}
+      \field{year}{2009}
+      \field{pages}{042103}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.80.042103
+      \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/1704.04973
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.80.042103
+      \endverb
+    \endentry
+    \entry{tomita2002probability}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5f60772ad133b69701d16ec0e64aaec4}{%
+           family={Tomita},
+           family_i={T\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=32df49fb42a424be07636fba7afe6168}{%
+           family={Okabe},
+           family_i={O\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{12136f0400b69a80b9009a74155947ee}
+      \strng{fullhash}{12136f0400b69a80b9009a74155947ee}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{18}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{04}
+      \field{title}{Probability-changing cluster algorithm for two-dimensional {$\mathrm{XY}$} and clock models}
+      \field{volume}{65}
+      \field{year}{2002}
+      \field{pages}{184405}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.65.184405
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.65.184405
       \endverb
     \endentry
     \entry{krvcmar2016phase}{article}{}

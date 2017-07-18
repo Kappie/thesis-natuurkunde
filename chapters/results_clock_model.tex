@@ -97,50 +97,49 @@ Brito et al.
 \cite{brito2010twodimensional} conclude from a Monte Carlo study that while the transition is of KT-type,
 the resolution of their numerical method is not high enough to distinguish between $T_1$ and $T_2$.
 
+\autoref{table:q5_previous_results} shows the results for the transition temperatures found by other authors.
+
+\subsection{The $q = 6$ clock model}
+
+Here, there is overwhelming consensus that both transitions are of the KT-type.
+The only exceptions are Lapilli et al. \cite{lapilli2006universality} and Hwang \cite{hwang2009six}.
+
+Lapilli et al. use the incorrect definition of the helicity modulus.
+
+Hwang asserts that the transition is not of KT-type because the data,
+which was obtained from systems of rather small size ($L \times L$-systems with $L = 20,
+\dots, 28$), also agrees with a power-law divergence of the correlation length. We will get back to this point.
+
+The previous results for the transition temperatures are listed in \autoref{table:q6_previous_results}.
+
 \begin{table}[]
 \centering
 \begin{tabular}{@{}lll@{}}
 \toprule
  & $T_1$ & $T_2$ \\ \midrule
-Brito et al. (2010) & 0.91(2) & 0.90(2) \\
-Borisenko et al. (2011) &  &  \\
-Kumano et al. (2013) &  &  \\
-Chatelain (2014) &  &  \\ \bottomrule
+Brito et al.\tablefootnote{These authors found $T_1 > T_2$, which is not an error in the text, but due to the low resolution of the methods used.} (2010) \cite{brito2010twodimensional} & 0.91 & 0.90 \\
+Borisenko et al. (2011) \cite{borisenko2011numerical} & 0.9056 & 0.9432 \\
+Kumano et al. (2013) \cite{kumano2013response} & 0.908  & 0.944  \\
+Chatelain (2014) \cite{chatelain2014dmrg} & 0.914 & 0.945  \\ \bottomrule
 \end{tabular}
-\caption{My caption}
-\label{my-label}
+\caption{Previous results for the transition temperatures for $q = 5$.}
+\label{table:q5_previous_results}
 \end{table}
 
-\todo[inline]{List critical points found by other authors}
-
-\subsection{The $q = 6$ clock model}
-
-
-For $q = 5$:
-\begin{itemize}
-  \item \cite{chatelain2014dmrg} 2014 claims BK-transition for $q = 5$ by discrete helicity modulus using TMRG.
-  \item \cite{kumano2013response} 2013 claims BK-transition for $q = 5$ by discrete helicity modelus using Monte Carlo.
-  Shows infinitesimal helicity modulus does not vanish for finite $q$.
-  \item \cite{borisenko2011numerical} 2011 most comprehensive study? Claims BK-transition for $q = 5$ by calculating
-  Binder cumulants + stuff I don't understand using Monte Carlo.
-  \item \cite{borisenko2012phase} 2012 don't understand. Some numerical and theoretical validations for certain
-  assumptions for high $q$.
-  \item \cite{brito2010twodimensional} 2010 claims BK-transition for $q = 5$ based on Monte Carlo simulation and mapping
-  to solid-on-solid growth model.
-  \item \cite{baek2010non} 2010 claims that $q = 5$ exhibits non-KT-transition, based on the fact that their (wrong)
-  definition of the helicity modulus does not vanish.
-  \item \cite{baek2013residual} 2013 claims that $q = 5$ exhibits weaker cousin of KT-transition, based on things I do
-  not fully understand, but among others on the correct, discrete definition of the helicity modulus (true?).
-  \item \cite{kim2017partition} 2017 uses partition function zeros (don't understand that concept) to show that the
-  behaviour of zeros of the $q = 5$ model significantly departs from the behaviour of $q \geq 6$.
-\end{itemize}
-
-For $q = 6$:
-\begin{itemize}
-  \item \cite{krvcmar2016phase} 2016 KT-transition from entropy.
-  \item \cite{baek2013residual}
-  \item \cite{kumano2013response}
-\end{itemize}
+\begin{table}[]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+ & $T_1$ & $T_2$ \\ \midrule
+Tomita and Okabe (2002) \cite{tomita2002probability} & 0.7014 & 0.9008 \\
+Hwang\tablefootnote{To obtain these values, the author assumed an algebraic divergence of the correlation length.} (2009) \cite{hwang2009six} & 0.632 & 0.997 \\
+Brito et al. (2010) \cite{brito2010twodimensional} & 0.68 & 0.90 \\
+Kumano et al. (2013) \cite{kumano2013response} & 0.700 & 0.904 \\
+Krčmár et al. (2016) \cite{krvcmar2016phase} & 0.70 & 0.88 \\ \bottomrule
+\end{tabular}
+\caption{Previous results for the transition temperatures for $q = 6$.}
+\label{table:q6_previous_results}
+\end{table}
 
 \section{Results}
 
