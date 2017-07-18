@@ -1,0 +1,49 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=ctm] (0) at (-1, -1) {};
+		\node [style=generic2] (1) at (-3, 0) {};
+		\node [style=ctm] (2) at (-1, 1) {};
+		\node [style=ctm] (3) at (-3, -1) {};
+		\node [style=generic2] (4) at (-1, 0) {};
+		\node [style=ctm] (5) at (-3, 1) {};
+		\node [style=generic2] (6) at (-2, -1) {};
+		\node [style=generic2] (7) at (-2, 1) {};
+		\node [style=generic] (8) at (-2, 0) {$b$};
+		\node [style=white no border] (9) at (0, 0) {$/$};
+		\node [style=generic2] (10) at (2, 1) {};
+		\node [style=generic2] (11) at (3, 0) {};
+		\node [style=ctm] (12) at (1, 1) {};
+		\node [style=ctm] (13) at (3, -1) {};
+		\node [style=ctm] (14) at (1, -1) {};
+		\node [style=generic2] (15) at (1, 0) {};
+		\node [style=ctm] (16) at (3, 1) {};
+		\node [style=generic2] (17) at (2, -1) {};
+		\node [style=a-tensor] (18) at (2, 0) {$a$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=simple] (7) to (8);
+		\draw [style=simple] (8) to (6);
+		\draw [style=simple] (8) to (4);
+		\draw [style=simple] (8) to (1);
+		\draw [style=thick leg] (7) to (2);
+		\draw [style=thick leg] (2) to (4);
+		\draw [style=thick leg] (4) to (0);
+		\draw [style=thick leg] (0) to (6);
+		\draw [style=thick leg] (6) to (3);
+		\draw [style=thick leg] (3) to (1);
+		\draw [style=thick leg] (1) to (5);
+		\draw [style=thick leg] (5) to (7);
+		\draw [style=thick leg] (10) to (16);
+		\draw [style=thick leg] (16) to (11);
+		\draw [style=thick leg] (11) to (13);
+		\draw [style=thick leg] (13) to (17);
+		\draw [style=thick leg] (17) to (14);
+		\draw [style=thick leg] (14) to (15);
+		\draw [style=thick leg] (15) to (12);
+		\draw [style=thick leg] (12) to (10);
+		\draw [style=simple] (15) to (18);
+		\draw [style=simple] (18) to (11);
+		\draw [style=simple] (18) to (17);
+		\draw [style=simple] (18) to (10);
+	\end{pgfonlayer}
+\end{tikzpicture}

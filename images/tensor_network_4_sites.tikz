@@ -8,7 +8,7 @@
 		\node [style=q-tensor, label={$Q$}] (5) at (0, 2) {};
 		\node [style=q-tensor] (6) at (-1, 1) {};
 		\node [style=q-tensor] (7) at (0, 0) {};
-		\node [style=white no border] (8) at (-2, 1) {$Z_{2 \times 2} = $};
+		\node [style=white no border] (8) at (-2.5, 1) {$Z_{2 \times 2} = $};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=simple] (3) to (6);
