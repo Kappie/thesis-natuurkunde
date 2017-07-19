@@ -1,0 +1,75 @@
+\begin{tikzpicture}
+  \def \spectrumQFive {'plots/data/spectrum_ctm_q5_chi100_tol1e-8.dat'};
+  \def \spectrumQSix {'plots/data/spectrum_ctm_q6_chi100_tol1e-8.dat'};
+  \pgfplotsset{
+    legend image code/.code={
+    \draw[mark repeat=2,mark phase=2]
+    plot coordinates {
+    (0cm,0cm)
+    (0.0cm,0cm)        %% default is (0.3cm,0cm)
+    (0.0cm,0cm)         %% default is (0.6cm,0cm)
+    };%
+  }
+  }
+
+  \begin{groupplot}[
+      group style = {
+        group size = 2 by 1,
+        ylabels at = edge left,
+        yticklabels at = edge left,
+        vertical sep = 0.75cm,
+      },
+      width = .5\textwidth,
+      xlabel = {$i$},
+      ylabel = {$A_i$},
+      ymode = log,
+    ]
+
+  \nextgroupplot[
+    legend style = {
+      font=\tiny,
+      legend entries = {$T = 0.4$, $T = 0.925$, $T = 1.5$},
+      legend pos = south west,
+      draw = none,
+      fill = none,
+    },
+    % legend style = {
+    %   legend to name = spectrumlegend,
+    %   legend entries = {$T = 2$, $T = 2.2692$, $T = 2.6$},
+    % },
+    % transpose legend,
+    % legend columns = -1,
+    title = {$q = 5$},
+    ytick={1e0, 1e-2, 1e-4, 1e-6, 1e-8},
+    % ymin=1e-25,
+    % ymax=1,
+    legend cell align=left,
+  ]
+
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumQFive index 2};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumQFive index 1};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumQFive index 0};
+
+  \nextgroupplot[
+    title={$q = 6$},
+    ytick={1e0, 1e-2, 1e-4, 1e-6, 1e-8},
+    % ymin=1e-25,
+    % ymax=1,
+    legend style = {
+      font=\tiny,
+      legend entries = {$T = 0.3$, $T = 0.8$, $T = 1.5$},
+      legend pos = south west,
+      draw = none,
+      fill = none,
+    },
+    legend cell align=left,
+  ]
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumQSix index 2};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumQSix index 1};
+    \addplot+[smallMarker] gnuplot [raw gnuplot] { plot \spectrumQSix index 0};
+
+  \end{groupplot}
+
+  % \node at ($(group c1r1)!0.5!(group c2r1) + (0, -3cm)$) {\pgfplotslegendfromname{spectrumlegend}};
+
+\end{tikzpicture}

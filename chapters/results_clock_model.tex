@@ -48,14 +48,15 @@ Furthermore, in the Villain formulation it is known that \cite{elitzur1979phase,
 where $\frac{\eta}{2} = \frac{\beta}{\nu}$, the magnetization exponent in the finite-size regime.
 
 For the cosine model in \autoref{eq:hamiltonian_clock_model}, the value $q_c$ for which it first exhibits a
-BK-transition and critical indices are not precisely known, though it is generally accepted that $q = 6$ exhibits two
-BK-transitions. The $q = 5$ case is contested (see previous numerical results below).
+BK-transition is not precisely known.
+There is some disagreement about whether the cases $q = 5, 6$ exhibit KT-type transitions (see previous numerical
+results below).
 
 In our simulations we will focus on the cases $q = 5, 6$, to (i) study the nature of the phase transition from a new
-perspective in the case of $q = 5$ and (ii) compare the accuracy of finite-$m$ and finite-$N$ scaling within the CTMRG
-method to other established methods for both cases.
+perspective and (ii) compare the accuracy of finite-$m$ and finite-$N$ scaling within the CTMRG
+method to other established numerical methods.
 
-We briefly summarise previous numerical results, then present results from the CTMRG algorithm.
+We briefly summarise previous numerical results, then present results obtained with the CTMRG algorithm.
 
 \section{Previous numerical results}
 \subsection{The $q = 5$ clock model}
@@ -111,6 +112,11 @@ which was obtained from systems of rather small size ($L \times L$-systems with 
 \dots, 28$), also agrees with a power-law divergence of the correlation length. We will get back to this point.
 
 The previous results for the transition temperatures are listed in \autoref{table:q6_previous_results}.
+For an overview that goes further back, see \cite{krvcmar2016phase}.
+
+We note that \cite{tomita2002probability, brito2010twodimensional, kumano2013response} use Monte Carlo methods,
+while \cite{krvcmar2016phase} uses the CTMRG algorithm (combined with finite-size scaling,
+but not with finite-$m$ scaling).
 
 \begin{table}[]
 \centering
@@ -141,15 +147,31 @@ Krčmár et al. (2016) \cite{krvcmar2016phase} & 0.70 & 0.88 \\ \bottomrule
 \label{table:q6_previous_results}
 \end{table}
 
-\section{Results}
+\section{Spectrum of the corner transfer matrix}
 
-What are the results that really should be in there? Focus on $q = 5, 6$.
+In order to get an idea of the accuracy that we might expect, we have plotted the spectrum of the $q = \{5,
+6\}$ clock models in \autoref{fig:spectrum_ctm_clock}.
 
-\begin{itemize}
-  \item show that scaling relation holds for magnetization and correlation length and calculate exponent. Should vary as
-  $\eta \propto T$ in the massless phase and probably (?) $\eta(T_2) = 1/4$ and $\eta(T_1) \propto 1/q^2$ or something.
-  \item show that $c = 1$ massless phase exists.
-  \item show that $T^{\star} - T_c$ is compatible with correlation length at essential singularity (but what about
-  logarithmic corrections...?)
-  \item data collapse in magnetization around Kosterlitz-transition
-\end{itemize}
+It is clear that the spectra of both clock models fall off at about the same pace,
+if we compare points in the ordered, massless and disordered phase.
+The $q = 6$ clock model has a slightly more degenerate spectrum, as might be expected from its larger symmetry group,
+but there is no clear pattern.
+
+As compared to the Ising model (see \autoref{sec:spectrum_of_ctm}), the spectra of the $q = \{5,
+6\}$ clock models fall off much more slowly\footnote{For the calculation of the spectrum of the Ising model in this
+work, a bond dimension of $m = 250$ was used, as opposed to $m = 100$ for the clock model.
+This means that, in small part, the slower decay of the spectrum is due to the normalization $\tr A^4 = 1$.
+But this does not change the general picture that the spectra of the $q = \{5,
+6\}$ clock models decay more slowly.}.
+This implies that a much larger bond dimension is needed to obtain the same accuracy for quantities in the thermodynamic
+limit.
+
+\begin{figure}
+  \includegraphics[]{spectrum_ctm_clock.tikz}
+  \caption{First part of the spectrum of $A$ with fixed boundary,
+  calculated with $m = 100$ and a convergence threshold of $10^{-8}$,
+  at temperatures corresponding to the ordered phase, approximate midpoint of the massless phase and disordered phase,
+  respectively.}\label{fig:spectrum_ctm_clock}
+\end{figure}
+
+\section{Magnetization and entanglement entropy}
