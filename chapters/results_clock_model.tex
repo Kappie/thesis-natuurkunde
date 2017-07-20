@@ -175,3 +175,33 @@ limit.
 \end{figure}
 
 \section{Magnetization and entanglement entropy}
+
+For the clock model, we define the magnetization per site as
+\begin{equation}\label{eq:magnetization_clock_model}
+  M = \langle \cos \theta_0 \rangle,
+\end{equation}
+where $\theta_0$ is the central spin.
+
+This quantity can be computed in the same way as for the Ising model (see \autoref{sec:magnetization_per_site}) by
+generalizing the tensor $b_{i j k l}$ to
+\begin{equation}
+  b_{i j k l} = \sum_{n \in \{ 0, \dots, q-1 \}} \cos \left( \frac{2\pi n}{q} \right) \delta_{n i j k l}.
+\end{equation}
+
+The classical analogue to the half-chain entanglement entropy $S$ is defined in \autoref{sec:analogy_to_entropy}.
+Its definition remains valid.
+
+\autoref{figure:entropy_and_order_param_vs_T_clock5} shows these quantities for $q = 5$ for systems with a fixed
+boundary.
+\todo[inline]{Finish this paragraph when results of $q = 6$ are in.}
+
+\begin{figure}
+  \includegraphics[]{entropy_and_order_param_vs_T_clock5.tikz}
+  \caption{Classical analogue to half chain entanglement entropy (\autoref{sec:analogy_to_entropy}) and magnetization
+  (\autoref{eq:magnetization_clock_model}) computed for systems with a fixed boundary.
+  Simulations were done with a convergence threshold of $2.5 \times
+  10^{-8}$.}\label{figure:entropy_and_order_param_vs_T_clock5}
+\end{figure}
+
+\section{Transition temperatures}
+\subsection{Transition from the ordered to the massless phase $T_1$}

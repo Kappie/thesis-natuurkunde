@@ -16,4 +16,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Magnetization and entanglement entropy}{5}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{6}{section*.6}
+\contentsline {chapter}{Bibliography}{8}{section*.8}

@@ -1,0 +1,65 @@
+\begin{tikzpicture}
+  \def \entropyVsT {'plots/data/entropy_vs_T_q5_chi20-100_tol25e-9.dat'}
+  \def \orderParamVsT {'plots/data/order_param_vs_T_q5_chi20-100_tol25e-9.dat'}
+
+  \pgfplotsset{
+    legend image code/.code={
+    \draw[mark repeat=2,mark phase=2]
+    plot coordinates {
+    (0cm,0cm)
+    (0.0cm,0cm)        %% default is (0.3cm,0cm)
+    (0.0cm,0cm)         %% default is (0.6cm,0cm)
+    };%
+  }
+  }
+
+  \begin{groupplot}[
+      group style={
+        group size=1 by 2,
+        xlabels at=edge bottom,
+        ylabels at=all,
+        xticklabels at = edge bottom,
+        vertical sep = 0.5cm,
+      },
+      legend style = {
+        legend pos = south west,
+        font=\small,
+        % draw = none,
+        % fill = none,
+      },
+      legend cell align = left,
+      height=0.35\textheight,
+      width=\textwidth,
+      xlabel={$T$},
+    ]
+
+    \nextgroupplot[
+      title={$q = 5$ clock model},
+      ylabel={$M$},
+    ]
+
+    \addplot+[] gnuplot [raw gnuplot] { plot \orderParamVsT index 4};
+    \addplot+[] gnuplot [raw gnuplot] { plot \orderParamVsT index 3};
+    \addplot+[] gnuplot [raw gnuplot] { plot \orderParamVsT index 2};
+    \addplot+[] gnuplot [raw gnuplot] { plot \orderParamVsT index 1};
+    \addplot+[] gnuplot [raw gnuplot] { plot \orderParamVsT index 0};
+
+    % \addplot[mark=none, black, dashed, semithick, update limits=false]
+    %   coordinates {(\TCrit,-1) (\TCrit,1)};
+    \legend{$m = 20$, $m = 40$, $m = 60$, $m = 80$, $m = 100$};
+
+    \nextgroupplot[
+      ylabel={$S$},
+    ]
+
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsT index 4};
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsT index 3};
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsT index 2};
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsT index 1};
+    \addplot+[] gnuplot [raw gnuplot] { plot \entropyVsT index 0};
+
+    % \addplot[mark=none, black, dashed, semithick, update limits=false]
+    %   coordinates {(\TCrit,-1) (\TCrit,1)};
+
+  \end{groupplot}
+\end{tikzpicture}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  19 JUL 2017 13:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  20 JUL 2017 11:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3001,7 +3001,88 @@ PGFPlots: reading {main.pgf-plot.table}
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-)) [5]
+)
+
+LaTeX Warning: Reference `sec:magnetization_per_site' on page 5 undefined on in
+put line 185.
+
+[5]
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 6 undefined on input 
+line 191.
+
+(./plots/entropy_and_order_param_vs_T_clock5.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 53.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 53.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 53.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 53.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 6.2pt on input line 53.
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 6 undefined on input 
+line 204.
+
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 6 undefined on input 
+line 204.
+
+) [6] [7]
 
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
@@ -3273,7 +3354,7 @@ mily. Using \mkbibnamefamily.
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
-[6
+[8
 
 
 ]
@@ -3625,7 +3706,7 @@ mily. Using \mkbibnamefamily.
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
-[7]
+[9]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -3635,24 +3716,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AAF284F102A6F137AF5D49D483463EA3;566.
+(rerunfilecheck)             Checksum: 3F685ED1D446B7A570CA2B5E3EB8FA0C;566.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51899 strings out of 493014
- 1134575 string characters out of 6133351
- 1737995 words of memory out of 5000000
- 54474 multiletter control sequences out of 15000+600000
- 314677 words of font info for 174 fonts, out of 8000000 for 9000
+ 51996 strings out of 493014
+ 1136570 string characters out of 6133351
+ 1741669 words of memory out of 5000000
+ 54546 multiletter control sequences out of 15000+600000
+ 360101 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,19n,112p,10417b,2675s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.e
@@ -3667,10 +3745,10 @@ baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/t
 xsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrl8a
 .pfb>
-Output written on main.pdf (8 pages, 135700 bytes).
+Output written on main.pdf (10 pages, 152051 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
  77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
