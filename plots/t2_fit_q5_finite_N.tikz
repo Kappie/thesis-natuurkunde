@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+  \def \finiteN {'plots/data/t2_fit_q5_N10-110_TolX1e-6_max_trunc_error1e-6.dat'}
+
+  \begin{axis}[
+      title = {$q = 5$},
+      xlabel={$l^{-1}$},
+      ylabel={$T_{2}^{\star}(N)$},
+      xticklabel style={
+              /pgf/number format/fixed,
+              /pgf/number format/precision=2,
+              % /pgf/number format/fixed zerofill
+      },
+      scaled x ticks=false,
+  ]
+
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \finiteN index 0};
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \finiteN index 1};
+
+  \end{axis}
+\end{tikzpicture}

@@ -264,20 +264,70 @@ such that
 
 \subsection{Transition from the ordered to the massless phase $T_1$}
 
+\todo[inline]{Change in description what actually the system sizes used are (for finite-N case)}
+\todo[inline]{Say what length scale is used in case of finite-$m$}
+
 \begin{figure}
-  \includegraphics[]{t1_fit.tikz}
+  \centering
+  \includegraphics[]{t1_fit_q5.tikz}
   \caption{For $q = 5$, we find $T_1 = 0.917$, fitting the final 6 points.
-  Max truncation error = $10^{-6}$, TolX = $10^{-6}$}\label{figure:t1_fit}
+  Max truncation error = $10^{-6}$, TolX = $10^{-6}$}\label{figure:t1_fit_q5}
 \end{figure}
 
 \subsection{Transition from the massless to the disordered phase $T_2$}
 
+\begin{itemize}
+  \item talk about how structure makes it hard to fit finite-$m$ data, but it simulates much larger systems,
+  thus yielding much better results.
+\end{itemize}
+
 \begin{figure}
-  \includegraphics[]{t2_fit_q5.tikz}
-  \caption{}\label{figure:t2_fit_q5}
+  \centering
+  \includegraphics[]{t2_fit_q5_finite_N.tikz}
+  \caption{$T_2 = 0.935$, fitted the last six points ($n = 85,
+  90, \dots, 110$).
+  max trunc error = $10^{-6}$.}\label{figure:t2_fit_q5_finite_N}
 \end{figure}
 
+\begin{figure}
+  \centering
+  \includegraphics[]{t2_fit_q5_finite_m.tikz}
+  \caption{
+  For the finite-$m$ simulations, the values $m = 20, 25, \dots,
+  90$ with a convergence threshold of $10^{-7}$ were used. The fit yields $T_2 = 0.944$.
+  The pseudocritical temperature belonging to $m = 10$ is also shown,
+  but is not included in the fit.}\label{figure:t2_fit_q5_finite_m}
+\end{figure}
 
 \section{Central charge of the massless phase}
 
+\begin{figure}
+  \centering
+  \includegraphics[]{t2_fit_q5_finite_m.tikz}
+  \caption{
+  For the finite-$m$ simulations, the values $m = 20, 25, \dots,
+  90$ with a convergence threshold of $10^{-7}$ were used. The fit yields $T_2 = 0.944$.
+  The pseudocritical temperature belonging to $m = 10$ is also shown,
+  but is not included in the fit.}\label{figure:t2_fit_q5_finite_m}
+\end{figure}
+
 \section{Varying exponent for the magnetization}
+
+\section{Discussion}
+
+\begin{itemize}
+  \item doesn't apparently make sense to take many consecutive $m$-values. Rather take sparse, but bigger $m$-values.
+  \item For finite-$N$: tradeoff between truncation error and finite-size effects are not clear.
+  \item finite-$\chi$ reaches much bigger system sizes, but has structure that needs to be overcome while fitting.
+  \item fix bug where I attached an $a$-tensor with wrong temperature.
+  \item omitting $m$ values seems to give worse results than just taking them all, except for the really small ones.
+  \item second-order phase transition cannot be ruled on grounds of this data, but is there theory that forbids it?
+\end{itemize}
+
+Possible simulations left to run:
+\begin{itemize}
+  \item $q = 5, 6$ finite-$m$ for locating $T_1$.
+  Just don't care about symmetry breaking -- this means that for some values of $m$,
+  it will be very hard to locate a maximum, but we just hope those values don't come up.
+  \item zoom a little bit past 0.95 to see whether massless behaviour still holds.
+\end{itemize}
