@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+  \def \qFiveFit {'plots/data/t1_fit_q5_N10-70_TolX1e-6_max_trunc_error1e-6.dat'}
+  % \def \qSixFit {'plots/data/'}
+
+  \begin{groupplot}[
+      group style={
+        group size = 2 by 1,
+        horizontal sep = 1.65cm,
+      },
+      width = .5\textwidth,
+    ]
+
+
+  \nextgroupplot[
+      xlabel={$\ell^{-1}$},
+      ylabel={$T_{1}^{\star}(N)$},
+  ]
+
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \qFiveFit index 0};
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \qFiveFit index 1};
+
+  \nextgroupplot[
+    xlabel={$\ell^{-1}$},
+    ylabel={$T_{2}^{\star}(N)$},
+  ]
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \qFiveFit index 0};
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \qFiveFit index 1};
+
+  \end{groupplot}
+\end{tikzpicture}

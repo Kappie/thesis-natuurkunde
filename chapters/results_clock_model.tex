@@ -11,7 +11,7 @@ of topological defects.
 
 In the low-temperature phase, the two-point correlation functions decay with a power-law with varying
 exponent $\eta(T)$. At the transition, the correlation length diverges as
-\begin{equation}
+\begin{equation}\label{eq:corr_length_divergence_kt}
   \xi \propto \exp(A |T - T_c|^{-1/2}),
 \end{equation}
 with $A$ a non-universal constant. Above the transition, the two-point correlators decay exponentially.
@@ -174,7 +174,7 @@ limit.
   respectively.}\label{fig:spectrum_ctm_clock}
 \end{figure}
 
-\section{Magnetization and entanglement entropy}
+\section{Magnetization}
 
 For the clock model, we define the magnetization per site as
 \begin{equation}\label{eq:magnetization_clock_model}
@@ -188,8 +188,37 @@ generalizing the tensor $b_{i j k l}$ to
   b_{i j k l} = \sum_{n \in \{ 0, \dots, q-1 \}} \cos \left( \frac{2\pi n}{q} \right) \delta_{n i j k l}.
 \end{equation}
 
+\section{Classical analogue to the entanglement entropy}
+
 The classical analogue to the half-chain entanglement entropy $S$ is defined in \autoref{sec:analogy_to_entropy}.
 Its definition remains valid.
+
+In the limit $T \to \infty$, for both a fixed and free boundary, we have
+\begin{equation}
+  S(T \to \infty) = 0.
+\end{equation}
+
+To see this, consider that all $2^2N$ configurations on the inner edges of the $N \times N$ quadrant represented by the
+corner transfer matrix are equally likely in this limit, hence
+\begin{equation}
+  A_{i j} = \frac{1}{2^{2N}}
+\end{equation}
+which is matrix with one eigenvalue of 1 and the others 0\footnote{One can also make the argument that the corresponding
+quantum state tends to a product state in the limit $T \to 0$,
+yielding the same conclusion.}.
+
+In the limit $T \to 0$, there is only one non-zero matrix element in the case of a fixed boundary (namely all inner
+spins having the same value as the outer boundary), and $q$ equally likely configurations in the case of a free
+boundary, yielding
+\begin{align*}
+  S^{\text{fixed}}(T = 0) &= 0, \\
+  S^{\text{free}}(T = 0)  &= \log q.
+\end{align*}
+
+For a fixed boundary, the point of maximum entropy approaches the massless phase from the high-temperature region,
+hence tending towards $T_2$.
+In contrast, the point of maximum entropy approaches $T_1$ for systems with a free boundary.
+\todo[inline]{Maybe make intuitive why?}
 
 \autoref{figure:entropy_and_order_param_vs_T_clock5} shows these quantities for $q = 5$ for systems with a fixed
 boundary.
@@ -204,4 +233,51 @@ boundary.
 \end{figure}
 
 \section{Transition temperatures}
+
+Since we expect an essential singularity of the form in \autoref{eq:corr_length_divergence_kt} for both transition
+temperatures, for finite systems we have
+\begin{equation}\label{eq:kt_t_pseudocrit}
+  N = a \exp \left( b |T^{\star}(N) - T_c|^{-1/2}  \right),
+\end{equation}
+where $N$ is an effective finite length scale of the system and $a$ and $b$ are non-universal constants.
+$N$ is the system size in the case of finite-size scaling and a length scale derived from the bond dimension $m$ in the
+case of finite-$m$ scaling.
+
+We define $T^{\star}(N)$ as the point of maximum entanglement entropy, as discussed in
+\autoref{sec:locating_critical_point_entanglement}.
+
+Inverting \autoref{eq:kt_t_pseudocrit} gives the following relations for the pseudocritical transition temperatures
+\begin{align}
+  T^{\star}_{1}(N) &= -\frac{\alpha_1}{(\log \beta_1 N)^2} + T_1 \\
+  T^{\star}_{2}(N) &= \frac{\alpha_2}{(\log \beta_2 N)^2} + T_2
+\end{align}
+where $\alpha = b^2$ and $\beta = 1/a$ (we drop the subscripts denoting the transition).
+
+For convenience, we define the scaled length variable
+\begin{equation}
+  \ell = (\log \beta N)^2,
+\end{equation}
+such that
+\begin{equation}
+  T^{\star}(N) - T_c \propto \frac{1}{\ell}.
+\end{equation}
+
 \subsection{Transition from the ordered to the massless phase $T_1$}
+
+\begin{figure}
+  \includegraphics[]{t1_fit.tikz}
+  \caption{For $q = 5$, we find $T_1 = 0.917$, fitting the final 6 points.
+  Max truncation error = $10^{-6}$, TolX = $10^{-6}$}\label{figure:t1_fit}
+\end{figure}
+
+\subsection{Transition from the massless to the disordered phase $T_2$}
+
+\begin{figure}
+  \includegraphics[]{t2_fit_q5.tikz}
+  \caption{}\label{figure:t2_fit_q5}
+\end{figure}
+
+
+\section{Central charge of the massless phase}
+
+\section{Varying exponent for the magnetization}
