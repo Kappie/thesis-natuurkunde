@@ -126,7 +126,9 @@ but not with finite-$m$ scaling).
 Brito et al.\tablefootnote{These authors found $T_1 > T_2$, which is not an error in the text, but due to the low resolution of the methods used.} (2010) \cite{brito2010twodimensional} & 0.91 & 0.90 \\
 Borisenko et al. (2011) \cite{borisenko2011numerical} & 0.9056 & 0.9432 \\
 Kumano et al. (2013) \cite{kumano2013response} & 0.908  & 0.944  \\
-Chatelain (2014) \cite{chatelain2014dmrg} & 0.914 & 0.945  \\ \bottomrule
+Chatelain (2014) \cite{chatelain2014dmrg} & 0.914 & 0.945  \\ \midrule
+This work (finite-$N$ scaling) & 0.915 & 0.935 \\
+This work (finite-$m$ scaling) & - & 0.944 \\ \bottomrule
 \end{tabular}
 \caption{Previous results for the transition temperatures for $q = 5$.}
 \label{table:q5_previous_results}
@@ -141,7 +143,9 @@ Tomita and Okabe (2002) \cite{tomita2002probability} & 0.7014 & 0.9008 \\
 Hwang\tablefootnote{To obtain these values, the author assumed an algebraic divergence of the correlation length.} (2009) \cite{hwang2009six} & 0.632 & 0.997 \\
 Brito et al. (2010) \cite{brito2010twodimensional} & 0.68 & 0.90 \\
 Kumano et al. (2013) \cite{kumano2013response} & 0.700 & 0.904 \\
-Krčmár et al. (2016) \cite{krvcmar2016phase} & 0.70 & 0.88 \\ \bottomrule
+Krčmár et al. (2016) \cite{krvcmar2016phase} & 0.70 & 0.88 \\ \midrule
+This work (finite-$N$ scaling) & - & - \\
+This work (finite-$m$ scaling) & - & - \\ \bottomrule
 \end{tabular}
 \caption{Previous results for the transition temperatures for $q = 6$.}
 \label{table:q6_previous_results}
@@ -264,14 +268,18 @@ such that
 
 \subsection{Transition from the ordered to the massless phase $T_1$}
 
-\todo[inline]{Change in description what actually the system sizes used are (for finite-N case)}
 \todo[inline]{Say what length scale is used in case of finite-$m$}
 
 \begin{figure}
   \centering
   \includegraphics[]{t1_fit_q5.tikz}
-  \caption{For $q = 5$, we find $T_1 = 0.917$, fitting the final 6 points.
-  Max truncation error = $10^{-6}$, TolX = $10^{-6}$}\label{figure:t1_fit_q5}
+  \caption{We find $T_1 = 0.915$ for the $q = 5$ clock model.
+  We have fitted the final 8 points $n = \{ 60, 65, 70, 80, 90,
+  100, 110, 120 \}$.
+  $m$ was chosen such that the truncation error was smaller than $10^{-6}$ for $n \leq 70$ and smaller than $10^{-5}$
+  for $n > 70$.
+  In finding the maximum of the entropy, a tolerance in temperature of $10^{-5}$ was used.
+  }\label{figure:t1_fit_q5}
 \end{figure}
 
 \subsection{Transition from the massless to the disordered phase $T_2$}
@@ -284,34 +292,71 @@ such that
 \begin{figure}
   \centering
   \includegraphics[]{t2_fit_q5_finite_N.tikz}
-  \caption{$T_2 = 0.935$, fitted the last six points ($n = 85,
-  90, \dots, 110$).
-  max trunc error = $10^{-6}$.}\label{figure:t2_fit_q5_finite_N}
+  \caption{We find $T_1 = 0.935$ for the $q = 5$ clock model with finite-size scaling.
+  We have fitted the final 6 points $n = \{ 85, 90, \dots, 110 \}$.
+  $m$ was chosen such that the truncation error was smaller than $10^{-6}$.
+  In finding the maximum of the entropy, a tolerance in temperature of $10^{-6}$ was used.}
+  \label{figure:t2_fit_q5_finite_N}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[]{t2_fit_q5_finite_m.tikz}
   \caption{
-  For the finite-$m$ simulations, the values $m = 20, 25, \dots,
-  90$ with a convergence threshold of $10^{-7}$ were used. The fit yields $T_2 = 0.944$.
+  For the finite-$m$ simulations, the fit yields $T_2 = 0.944$.
+  using $m = 20, 25, \dots,
+  90$ with a convergence threshold of $10^{-7}$.
   The pseudocritical temperature belonging to $m = 10$ is also shown,
   but is not included in the fit.}\label{figure:t2_fit_q5_finite_m}
 \end{figure}
 
 \section{Central charge of the massless phase}
+Since the massless phase corresponds to a Gaussian model, we expect the central charge to be 1 there
+\cite{kosterlitz1974critical}.
+
+By fitting the relation
+\begin{equation}\label{eq:entropy_as_function_of_xi2}
+  S \propto \frac{c}{6} \log \xi(m),
+\end{equation}
+where $\xi(m)$ is calculated as in \autoref{sec:definition_effective_length_scale_in_terms_of_xi},
+we can directly extract the central charge in this region.
+
+The result is shown in the top panel of \autoref{figure:c_and_magnetic_exponent_vs_T}.
+It is seen to precisely agree with $c = 1$ in the massless phase.
+
+Outside the massless phase, a good fit to \autoref{eq:entropy_as_function_of_xi2} can no longer be obtained.
+This is consistent with the location of $T_1$ and $T_2$ that are found in this work.
+
+
+\section{Varying exponent for the magnetization}
+We may verify the exponent with which the magnetization goes to zero in the massless phase by fitting
+\begin{equation}\label{eq:magnetization_scaling_massless_phase}
+  M(m, T) = \xi(m)^{-\frac{\eta(T)}{2}},
+\end{equation}
+where we defined $\xi(m)$ via \autoref{eq:entropy_as_function_of_xi2}.
+
+The result is shown in the middle panel of \autoref{figure:c_and_magnetic_exponent_vs_T}.
+It agree very well with bla bla.
+Refer to villain exponents.
+
+\todo[inline]{Finish this when $T_1$ is definite}
 
 \begin{figure}
   \centering
-  \includegraphics[]{t2_fit_q5_finite_m.tikz}
-  \caption{
-  For the finite-$m$ simulations, the values $m = 20, 25, \dots,
-  90$ with a convergence threshold of $10^{-7}$ were used. The fit yields $T_2 = 0.944$.
-  The pseudocritical temperature belonging to $m = 10$ is also shown,
-  but is not included in the fit.}\label{figure:t2_fit_q5_finite_m}
+  \includegraphics[]{c_and_magnetic_exponent_vs_T.tikz}
+  \caption{$\frac{2\beta}{\nu}$ reaches $\frac{4}{25}$ around $T = 0.906$ and $\frac{1}{4}$ around $T = 0.952$.
+  First 4 values were left out of the fit.
+}\label{figure:c_and_magnetic_exponent_vs_T}
 \end{figure}
 
-\section{Varying exponent for the magnetization}
+\begin{figure}
+  \centering
+  \includegraphics[]{fits_magnetization_massless_phase.tikz}
+  \caption{Fits to \autoref{eq:magnetization_scaling_massless_phase} for temperatures a little bit to the left of,
+  in the middle of and a little bit to the right of the massless phase,
+  respectively.
+}\label{figure:fits_magnetization_massless_phase}
+\end{figure}
 
 \section{Discussion}
 
@@ -322,12 +367,5 @@ such that
   \item fix bug where I attached an $a$-tensor with wrong temperature.
   \item omitting $m$ values seems to give worse results than just taking them all, except for the really small ones.
   \item second-order phase transition cannot be ruled on grounds of this data, but is there theory that forbids it?
-\end{itemize}
-
-Possible simulations left to run:
-\begin{itemize}
-  \item $q = 5, 6$ finite-$m$ for locating $T_1$.
-  Just don't care about symmetry breaking -- this means that for some values of $m$,
-  it will be very hard to locate a maximum, but we just hope those values don't come up.
-  \item zoom a little bit past 0.95 to see whether massless behaviour still holds.
+  \item If you make convergence too low, it can get impossible to reach, even for fixed boundary?
 \end{itemize}

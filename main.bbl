@@ -720,6 +720,37 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevE.80.042103
       \endverb
     \endentry
+    \entry{krvcmar2016phase}{article}{}
+      \name{author}{3}{}{%
+        {{hash=648e9fdcdf19bd9fd851ff3fc7f108ec}{%
+           family={Krčmár},
+           family_i={K\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+        {{hash=bc23e2b5c5c311138c5ec17188d97222}{%
+           family={Gendiar},
+           family_i={G\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=0481bd1868281072e0d664b2e5dccb42}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={T.},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{79d930fd2b3a07effe4c9097fec6390f}
+      \strng{fullhash}{6c7ac03f54298230a2c1abcddf33d030}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv:1612.07611}
+      \field{title}{Phase transition of the six-state clock model observed from the entanglement entropy}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://arxiv.org/abs/1612.07611
+      \endverb
+    \endentry
     \entry{tomita2002probability}{article}{}
       \name{author}{2}{}{%
         {{hash=5f60772ad133b69701d16ec0e64aaec4}{%
@@ -755,37 +786,6 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevB.65.184405
-      \endverb
-    \endentry
-    \entry{krvcmar2016phase}{article}{}
-      \name{author}{3}{}{%
-        {{hash=648e9fdcdf19bd9fd851ff3fc7f108ec}{%
-           family={Krčmár},
-           family_i={K\bibinitperiod},
-           given={R.},
-           given_i={R\bibinitperiod}}}%
-        {{hash=bc23e2b5c5c311138c5ec17188d97222}{%
-           family={Gendiar},
-           family_i={G\bibinitperiod},
-           given={A.},
-           given_i={A\bibinitperiod}}}%
-        {{hash=0481bd1868281072e0d664b2e5dccb42}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={T.},
-           given_i={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{79d930fd2b3a07effe4c9097fec6390f}
-      \strng{fullhash}{6c7ac03f54298230a2c1abcddf33d030}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv:1612.07611}
-      \field{title}{Phase transition of the six-state clock model observed from the entanglement entropy}
-      \field{year}{2016}
-      \verb{url}
-      \verb https://arxiv.org/abs/1612.07611
       \endverb
     \endentry
   \endsortlist

@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+  \def \badLeft {'plots/data/magnetization_fit_T0p883_q5_chi10-100.dat'}
+  \def \goodMiddle {'plots/data/magnetization_fit_T0p925_q5_chi10-100.dat'}
+  \def \badRight {'plots/data/magnetization_fit_T0p966_q5_chi10-100.dat'}
+
+  \begin{groupplot}[
+      group style = {
+        group size = 2 by 2,
+        xlabels at = all,
+        ylabels at = edge left,
+        vertical sep = 2cm,
+      },
+      xlabel={$\exp 6S$},
+      ylabel={$M$},
+      width=0.5\textwidth,
+    ]
+
+  \nextgroupplot[
+    title={$T = 0.883$},
+    xmode=log,
+    ymode=log,
+  ]
+
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \badLeft index 0};
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \badLeft index 1};
+
+  \nextgroupplot[
+    title={$T = 0.925$},
+    xmode=log,
+    ymode=log,
+  ]
+
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \goodMiddle index 0};
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \goodMiddle index 1};
+
+  \nextgroupplot[
+    title={$T = 0.966$},
+    xmode=log,
+    ymode=log,
+  ]
+
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \badRight index 0};
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \badRight index 1};
+
+  \end{groupplot}
+
+\end{tikzpicture}

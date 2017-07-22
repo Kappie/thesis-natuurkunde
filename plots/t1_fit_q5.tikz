@@ -1,5 +1,5 @@
 \begin{tikzpicture}
-  \def \qFiveFit {'plots/data/t1_fit_q5_N10-70_TolX1e-6_max_trunc_error1e-6.dat'}
+  \def \qFiveFit {'plots/data/t1_fit_q5_N10-120_TolX1e-5_max_trunc_error1e-5.dat'}
 
   \begin{axis}[
       title={$q = 5$},

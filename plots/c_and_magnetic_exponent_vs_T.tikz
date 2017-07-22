@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+  \def \centralCharge {'plots/data/central_charge_vs_T_q5_chi10-100.dat'}
+  \def \magneticExponent {'plots/data/magnetic_exponent_vs_T_q5_chi10-100.dat'}
+  \def \normOfResiduals {'plots/data/mse_vs_T_q5_chi10-100.dat'}
+
+  \begin{groupplot}[
+      group style={
+        group size=1 by 3,
+        xlabels at=edge bottom,
+        xticklabels at = edge bottom,
+        vertical sep = 0.5cm,
+      },
+      scaled y ticks=false,
+      height=0.3\textheight,
+      width=\textwidth,
+      xlabel={$T$},
+    ]
+
+    \nextgroupplot[
+      ylabel={$c$},
+    ]
+
+    \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \centralCharge index 0};
+    % \addplot[mark=none, black, dashed, semithick]
+    % coordinates {(\pgfkeysvalueof{/pgfplots/xmin},1) (\pgfkeysvalueof{/pgfplots/xmax},1)};
+    \draw[black, dashed, semithick]
+    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},1) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},1);
+
+    \nextgroupplot[
+      ylabel={$\eta(T)$},
+    ]
+
+    \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \magneticExponent index 0};
+    \draw[black, dashed, semithick]
+    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.16) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.16);
+    \draw[black, dashed, semithick]
+    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.25) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.25);
+
+    \nextgroupplot[
+      ylabel={norm of residuals},
+      ymode=log,
+    ]
+
+    \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \normOfResiduals index 0};
+
+  \end{groupplot}
+\end{tikzpicture}
