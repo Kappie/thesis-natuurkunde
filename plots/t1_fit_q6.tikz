@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+  \def \qSixFit {'plots/data/t1_fit_q6_N15-80_TolX1e-5_max_trunc_error1e-5.dat'}
+
+  \begin{axis}[
+      title={$q = 6$},
+      xlabel={$\ell^{-1}$},
+      ylabel={$T_{1}^{\star}(N)$},
+      xticklabel style={
+              /pgf/number format/fixed,
+              /pgf/number format/precision=2,
+              % /pgf/number format/fixed zerofill
+      },
+    ]
+
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \qSixFit index 0};
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \qSixFit index 1};
+
+  \end{axis}
+\end{tikzpicture}

@@ -26,8 +26,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.7}Central charge of the massless phase}{11}{section.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Varying exponent for the magnetization}{12}{section.1.8}
+\contentsline {section}{\numberline {1.8}Varying exponent for the magnetization}{13}{section.1.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.9}Discussion}{15}{section.1.9}
+\contentsline {section}{\numberline {1.9}Discussion}{14}{section.1.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{16}{section*.17}
+\contentsline {chapter}{Bibliography}{19}{section*.21}

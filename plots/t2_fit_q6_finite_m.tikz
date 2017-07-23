@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+  \def \finiteM {'plots/data/t2_fit_q6_chi10-90_TolX1e-6_tol1e-7.dat'}
+
+  \begin{axis}[
+      title = {$q = 6$},
+      xlabel={$l^{-1}$},
+      ylabel={$T_{2}^{\star}(m)$},
+      xticklabel style={
+              /pgf/number format/fixed,
+              /pgf/number format/precision=2,
+              % /pgf/number format/fixed zerofill
+      },
+      scaled x ticks=false,
+  ]
+
+  \addplot+[mark=none, black, thick] gnuplot [raw gnuplot] { plot \finiteM index 0};
+  \addplot+[mark=o, only marks, black, smallMarker] gnuplot [raw gnuplot] { plot \finiteM index 1};
+
+  \end{axis}
+
+\end{tikzpicture}
