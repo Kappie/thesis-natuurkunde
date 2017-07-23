@@ -21,20 +21,32 @@
     ]
 
     \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \centralCharge index 0};
-    % \addplot[mark=none, black, dashed, semithick]
-    % coordinates {(\pgfkeysvalueof{/pgfplots/xmin},1) (\pgfkeysvalueof{/pgfplots/xmax},1)};
+
     \draw[black, dashed, semithick]
     (axis cs:\pgfkeysvalueof{/pgfplots/xmin},1) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},1);
+    \draw[black, dashed, semithick]
+    (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymax});
 
     \nextgroupplot[
       ylabel={$\eta(T)$},
     ]
 
     \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \magneticExponent index 0};
+
     \draw[black, dashed, semithick]
     (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.16) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.16);
     \draw[black, dashed, semithick]
     (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.25) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.25);
+    \draw[black, dashed, semithick]
+    (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymax});
 
     \nextgroupplot[
       ylabel={norm of residuals},
@@ -42,6 +54,11 @@
     ]
 
     \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \normOfResiduals index 0};
+
+    \draw[black, dashed, semithick] ({axis cs:0.915,0}|-{rel axis cs:0,1}) -- ({axis cs:0.915,0}|-{rel axis cs:0,0});
+    \draw[black, dashed, semithick] ({axis cs:0.935,0}|-{rel axis cs:0,1}) -- ({axis cs:0.935,0}|-{rel axis cs:0,0});
+    \draw[black, dashed, semithick] ({axis cs:0.944,0}|-{rel axis cs:0,1}) -- ({axis cs:0.944,0}|-{rel axis cs:0,0});
+
 
   \end{groupplot}
 \end{tikzpicture}

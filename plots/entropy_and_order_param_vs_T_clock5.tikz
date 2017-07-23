@@ -43,8 +43,13 @@
     \addplot+[only marks, mediumMarker] gnuplot [raw gnuplot] { plot \orderParamVsT index 1};
     \addplot+[only marks, mediumMarker] gnuplot [raw gnuplot] { plot \orderParamVsT index 0};
 
-    % \addplot[mark=none, black, dashed, semithick, update limits=false]
-    %   coordinates {(\TCrit,-1) (\TCrit,1)};
+    \draw[black, dashed, semithick]
+    (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymax});
+
     \legend{$m = 20$, $m = 40$, $m = 60$, $m = 80$};
 
     \nextgroupplot[
@@ -55,6 +60,13 @@
     \addplot+[only marks, mediumMarker] gnuplot [raw gnuplot] { plot \entropyVsT index 2};
     \addplot+[only marks, mediumMarker] gnuplot [raw gnuplot] { plot \entropyVsT index 1};
     \addplot+[only marks, mediumMarker] gnuplot [raw gnuplot] { plot \entropyVsT index 0};
+
+    \draw[black, dashed, semithick]
+    (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.915,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.935,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.944,\pgfkeysvalueof{/pgfplots/ymax});
 
     % \addplot[mark=none, black, dashed, semithick, update limits=false]
     %   coordinates {(\TCrit,-1) (\TCrit,1)};
