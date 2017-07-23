@@ -1,19 +1,19 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
-[1] Config.pm:346> INFO - Logfile is 'main.blg'
-[144] biber-darwin:290> INFO - === Sat Jul 22, 2017, 16:52:54
-[194] Biber.pm:351> INFO - Reading 'main.bcf'
-[458] Biber.pm:776> INFO - Found 22 citekeys in bib section 0
-[494] Biber.pm:3493> INFO - Processing section 0
-[529] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
-[542] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[552] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
-[565] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
-[570] Utils.pm:149> WARN - Duplicate entry key: 'nienhuis1984critical' in file 'references.bib', skipping ...
-[571] Utils.pm:149> WARN - Duplicate entry key: 'lapilli2006universality' in file 'references.bib', skipping ...
-[688] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[688] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[688] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[688] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[718] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[724] bbl.pm:619> INFO - Output to main.bbl
-[725] Biber.pm:108> INFO - WARNINGS: 3
+[0] Config.pm:346> INFO - Logfile is 'main.blg'
+[68] biber-darwin:290> INFO - === Sun Jul 23, 2017, 20:52:54
+[102] Biber.pm:351> INFO - Reading 'main.bcf'
+[243] Biber.pm:776> INFO - Found 22 citekeys in bib section 0
+[267] Biber.pm:3493> INFO - Processing section 0
+[312] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
+[325] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[337] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
+[355] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
+[359] Utils.pm:149> WARN - Duplicate entry key: 'nienhuis1984critical' in file 'references.bib', skipping ...
+[360] Utils.pm:149> WARN - Duplicate entry key: 'lapilli2006universality' in file 'references.bib', skipping ...
+[464] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[464] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[464] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[464] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[496] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[507] bbl.pm:619> INFO - Output to main.bbl
+[508] Biber.pm:108> INFO - WARNINGS: 3

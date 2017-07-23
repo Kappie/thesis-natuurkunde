@@ -1,6 +1,8 @@
 \begin{tikzpicture}
   \def \qFiveFit {'plots/data/t1_fit_q5_N10-120_TolX1e-5_max_trunc_error1e-5.dat'}
 
+  \pgfplotsset{scaled x ticks=false}
+
   \begin{axis}[
       title={$q = 5$},
       xlabel={$\ell^{-1}$},

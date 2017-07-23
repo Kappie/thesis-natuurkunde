@@ -1,6 +1,8 @@
 \begin{tikzpicture}
   \def \qSixFit {'plots/data/t1_fit_q6_N15-80_TolX1e-5_max_trunc_error1e-5.dat'}
 
+  \pgfplotsset{scaled x ticks=false}
+
   \begin{axis}[
       title={$q = 6$},
       xlabel={$\ell^{-1}$},

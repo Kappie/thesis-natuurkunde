@@ -202,12 +202,12 @@ In the limit $T \to \infty$, for both a fixed and free boundary, we have
   S(T \to \infty) = 0.
 \end{equation}
 
-To see this, consider that all $2^2N$ configurations on the inner edges of the $N \times N$ quadrant represented by the
-corner transfer matrix are equally likely in this limit, hence
+To see this, consider that all $2^{2N}$ configurations on the inner edges of the $N \times N$ quadrant represented by
+the corner transfer matrix are equally likely in this limit, hence
 \begin{equation}
-  A_{i j} = \frac{1}{2^{2N}}
+  A_{i j} = \frac{1}{2^{2N}},
 \end{equation}
-which is matrix with one eigenvalue of 1 and the others 0\footnote{One can also make the argument that the corresponding
+which has one eigenvalue of 1 and the others 0\footnote{One can also make the argument that the corresponding
 quantum state tends to a product state in the limit $T \to 0$,
 yielding the same conclusion.}.
 
@@ -224,9 +224,8 @@ hence tending towards $T_2$.
 In contrast, the point of maximum entropy approaches $T_1$ for systems with a free boundary.
 \todo[inline]{Maybe make intuitive why?}
 
-\autoref{figure:entropy_and_order_param_vs_T_clock5} shows these quantities for $q = 5$ for systems with a fixed
-boundary.
-\todo[inline]{Finish this paragraph when results of $q = 6$ are in.}
+\autoref{figure:entropy_and_order_param_vs_T_clock5} and \autoref{figure:entropy_and_order_param_vs_T_clock6} show
+these quantities for $q = 5$ and $q = 6$ for systems with a fixed boundary, clearly confirming the three-phase picture.
 
 \begin{figure}
   \includegraphics[]{entropy_and_order_param_vs_T_clock5.tikz}
@@ -239,19 +238,26 @@ boundary.
   \includegraphics[]{entropy_and_order_param_vs_T_clock6.tikz}
   \caption{Classical analogue to half chain entanglement entropy (\autoref{sec:analogy_to_entropy}) and magnetization
   (\autoref{eq:magnetization_clock_model}) computed for systems with a fixed boundary for the $q = 6$ clock model.
-  Simulations were done with a convergence threshold of $10^{-7}$.}\label{figure:entropy_and_order_param_vs_T_clock5}
+  Simulations were done with a convergence threshold of $10^{-7}$.}\label{figure:entropy_and_order_param_vs_T_clock6}
 \end{figure}
 
 \section{Transition temperatures}
 
-Since we expect an essential singularity of the form in \autoref{eq:corr_length_divergence_kt} for both transition
-temperatures, for finite systems we have
+Since we expect an essential singularity of the form in \autoref{eq:corr_length_divergence_kt} for both transitions,
+for finite systems we have
 \begin{equation}\label{eq:kt_t_pseudocrit}
   N = a \exp \left( b |T^{\star}(N) - T_c|^{-1/2}  \right),
 \end{equation}
 where $N$ is an effective finite length scale of the system and $a$ and $b$ are non-universal constants.
-$N$ is the system size in the case of finite-size scaling and a length scale derived from the bond dimension $m$ in the
-case of finite-$m$ scaling.
+
+$N$ is the system size in the case of finite-size scaling and a length scale derived $\xi(m)$ from the bond dimension
+$m$ in the case of finite-$m$ scaling.
+Throughout this chapter, we have defined $\xi(m)$ through the relation
+\begin{equation}\label{eq:entropy_as_function_of_xi2}
+  S \propto \frac{c}{6} \log \xi(m)
+\end{equation}
+where $c = 1$ is expected, since the massless phase corresponds to a Gaussian model \cite{kosterlitz1974critical}.
+These assumptions are validated in \autoref{sec:central_charge_massless_phase}.
 
 We define $T^{\star}(N)$ as the point of maximum entanglement entropy, as discussed in
 \autoref{sec:locating_critical_point_entanglement}.
@@ -264,7 +270,7 @@ Inverting \autoref{eq:kt_t_pseudocrit} gives the following relations for the pse
 where $\alpha = b^2$ and $\beta = 1/a$ (we drop the subscripts denoting the transition).
 
 For convenience, we define the scaled length variable
-\begin{equation}
+\begin{equation}\label{eq:scaled_length_scale_kt}
   \ell = (\log \beta N)^2,
 \end{equation}
 such that
@@ -272,9 +278,30 @@ such that
   T^{\star}(N) - T_c \propto \frac{1}{\ell}.
 \end{equation}
 
+\subsection{Numerical difficulties with finite-$m$ simulations around $T_1$}
+
+For both the $q = \{5, 6\}$ clock models, it has been found that locating $T_1^{\star}(m)$ is not possible,
+since for systems with a free boundary, numerical errors cause the matrices $A$ and $P$ to lose their symmetry and
+converge to a fixed boundary fixed point instead.
+This happens after a modest amount of steps, especially near $T_1(m)^{\star}$,
+making it impossible to reach any feasible convergence threshold such as $10^{-6}$.
+
+This means that for locating $T_1$, we must rely on finite-size scaling,
+whereas for locating $T_2$ we can rely on both finite-size and finite-$m$ scaling.
+
 \subsection{Transition from the ordered to the massless phase $T_1$}
 
-\todo[inline]{Say what length scale is used in case of finite-$m$}
+\autoref{figure:t1_fit_q5} and \autoref{figure:t1_fit_q6} show the fits to \autoref{eq:kt_t_pseudocrit} for $q = \{ 5,
+6\}$, yielding
+\begin{equation}
+  T_1^{q = 5} = 0.915, \qquad T_1^{q = 6} = 0.700.
+\end{equation}
+
+Conform to the Kosterlitz-Thouless divergence of the correlation length,
+the pseudocritical temperatures indeed become linear in $\frac{1}{\ell}$,
+with $\ell$ defined in \autoref{eq:scaled_length_scale_kt}.
+
+It is interesting to note that finite-size effects are much more pronounced for $q = 5$.
 
 \begin{figure}
   \centering
@@ -303,10 +330,30 @@ such that
 
 \subsection{Transition from the massless to the disordered phase $T_2$}
 
-\begin{itemize}
-  \item talk about how structure makes it hard to fit finite-$m$ data, but it simulates much larger systems,
-  thus yielding much better results.
-\end{itemize}
+\subsubsection{Finite-size scaling}
+Finite-size scaling, shown in \autoref{figure:t2_fit_q5_finite_N} for $q = 5$ and \autoref{figure:t2_fit_q6_finite_N}
+for $q = 6$ yields
+\begin{equation}
+  T_2^{q = 5} = 0.935, \qquad T_2^{q = 6} = 0.883.
+\end{equation}
+
+For both clock models, finite-size effects are large. For $q = 6$, the finite-size effects are more pronounced
+than at $T_1$.
+
+\subsubsection{Finite-$m$ scaling}
+Finite-$m$ scaling, shown in \autoref{figure:t2_fit_q5_finite_m} for $q = 5$ and \autoref{figure:t2_fit_q6_finite_m}
+for $q = 6$ yields
+\begin{equation}
+  T_2^{q = 5} = 0.944, \qquad T_2^{q = 6} = 0.901.
+\end{equation}
+
+It is seen that with finite-$m$ simulations,
+systems of significantly larger effective size can be simulated.
+From the finite-size fits to $T_2^{\star}(N)$, it can be estimated that a system of $m = 90$ approximately corresponds
+to a $2700 \times 2700$ lattice for $q = 5$ and a $2400 \times 2400$ lattice for $q = 6$.
+
+There is some structure in the data, but as long as a wide range of $m$ values is included,
+the estimation of $T_2$ is robust.
 
 \begin{figure}
   \centering
@@ -362,14 +409,11 @@ such that
   but is not included in the fit.}\label{figure:t2_fit_q5_finite_m}
 \end{figure}
 
-\section{Central charge of the massless phase}
-Since the massless phase corresponds to a Gaussian model, we expect the central charge to be 1 there
-\cite{kosterlitz1974critical}.
+\section{The massless phase}
 
-By fitting the relation
-\begin{equation}\label{eq:entropy_as_function_of_xi2}
-  S \propto \frac{c}{6} \log \xi(m),
-\end{equation}
+\subsection{Central charge of the massless phase}\label{sec:central_charge_massless_phase}
+
+By fitting the relation in \autoref{eq:entropy_as_function_of_xi2},
 where $\xi(m)$ is calculated as in \autoref{sec:definition_effective_length_scale_in_terms_of_xi},
 we can directly extract the central charge in this region.
 
@@ -379,13 +423,12 @@ It is seen to precisely agree with $c = 1$ in the massless phase.
 Outside the massless phase, a good fit to \autoref{eq:entropy_as_function_of_xi2} can no longer be obtained.
 This is consistent with the location of $T_1$ and $T_2$ that are found in this work.
 
-
-\section{Varying exponent for the magnetization}
+\subsection{Varying exponent for the magnetization}
 We may verify the exponent with which the magnetization goes to zero in the massless phase by fitting
 \begin{equation}\label{eq:magnetization_scaling_massless_phase}
   M(m, T) = \xi(m)^{-\frac{\eta(T)}{2}},
 \end{equation}
-where we defined $\xi(m)$ via \autoref{eq:entropy_as_function_of_xi2}.
+where $\xi(m)$ again defined via \autoref{eq:entropy_as_function_of_xi2}.
 
 The result is shown in the middle panel of \autoref{figure:c_and_magnetic_exponent_vs_T}.
 It agree very well with bla bla.
@@ -396,7 +439,7 @@ Refer to villain exponents.
 \begin{figure}
   \centering
   \includegraphics[]{c_and_magnetic_exponent_vs_T.tikz}
-  \caption{$\frac{2\beta}{\nu}$ reaches $\frac{4}{25}$ around $T = 0.906$ and $\frac{1}{4}$ around $T = 0.952$.
+  \caption{$\eta = \frac{2\beta}{\nu}$ reaches $\frac{4}{25}$ around $T = 0.906$ and $\frac{1}{4}$ around $T = 0.952$.
   First 4 values were left out of the fit.
 }\label{figure:c_and_magnetic_exponent_vs_T}
 \end{figure}

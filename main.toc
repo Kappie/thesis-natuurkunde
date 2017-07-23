@@ -20,14 +20,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.6}Transition temperatures}{7}{section.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.1}Transition from the ordered to the massless phase $T_1$}{10}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.1}Numerical difficulties with finite-$m$ simulations around $T_1$}{10}{subsection.1.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.2}Transition from the massless to the disordered phase $T_2$}{10}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.2}Transition from the ordered to the massless phase $T_1$}{10}{subsection.1.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Central charge of the massless phase}{11}{section.1.7}
+\contentsline {subsection}{\numberline {1.6.3}Transition from the massless to the disordered phase $T_2$}{10}{subsection.1.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Varying exponent for the magnetization}{13}{section.1.8}
+\contentsline {subsubsection}{\numberline {1.6.3.1}Finite-size scaling}{10}{subsubsection.1.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.9}Discussion}{14}{section.1.9}
+\contentsline {subsubsection}{\numberline {1.6.3.2}Finite-$m$ scaling}{11}{subsubsection.1.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{19}{section*.21}
+\contentsline {section}{\numberline {1.7}The massless phase}{12}{section.1.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7.1}Central charge of the massless phase}{12}{subsection.1.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7.2}Varying exponent for the magnetization}{14}{subsection.1.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.8}Discussion}{15}{section.1.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{20}{section*.19}
