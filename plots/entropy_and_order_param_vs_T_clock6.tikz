@@ -1,6 +1,6 @@
 \begin{tikzpicture}
-  \def \entropyVsT {'plots/data/entropy_vs_T_q5_tol1e-7_all_temperatures.dat'}
-  \def \orderParamVsT {'plots/data/order_parameter_vs_T_q5_tol1e-7_all_temperatures.dat'}
+  \def \entropyVsT {'plots/data/entropy_vs_T_q6_tol1e-7_all_temperatures.dat'}
+  \def \orderParamVsT {'plots/data/order_parameter_vs_T_q6_tol1e-7_all_temperatures.dat'}
 
   \pgfplotsset{
     legend image code/.code={
@@ -34,7 +34,7 @@
     ]
 
     \nextgroupplot[
-      title={$q = 5$ clock model},
+      title={$q = 6$ clock model},
       ylabel={$M$},
     ]
 
