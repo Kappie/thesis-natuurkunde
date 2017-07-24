@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  23 JUL 2017 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  24 JUL 2017 17:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2705,17 +2705,14 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count428
 \@quotereset=\count429
-(./main.aux
-
-LaTeX Warning: Label `figure:t2_fit_q5_finite_m' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 95.
 LaTeX Font Info:    Try loading font information for OML+zbami on input line 95
 .
- (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
 File: omlzbami.fd 2016/11/11 Fontinst v1.933 font definitions for OML/zbami.
 )
 LaTeX Font Info:    ... okay on input line 95.
@@ -2921,60 +2918,61 @@ Overfull \hbox (3.91988pt too wide) in paragraph at lines 2--2
 te clock model. 
  []
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 4.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 6.
+(Font)              scaled to size 10.95pt on input line 4.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 6.
+(Font)              scaled to size 10.95pt on input line 4.
 [1
 
 
 ]
+
+LaTeX Warning: Reference `sec:finite_size_scaling' on page 2 undefined on input
+ line 52.
+
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 62.
+(Font)              scaled to size 10.0pt on input line 66.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 62.
+(Font)              scaled to size 10.0pt on input line 66.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 62.
+(Font)              scaled to size 10.0pt on input line 66.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 62.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 62.
+(hyperref)                removing `math shift' on input line 66.
 
 [2]
 
-LaTeX Warning: Reference `sec:tmrg' on page 3 undefined on input line 83.
+LaTeX Warning: Reference `sec:tmrg' on page 3 undefined on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
+(hyperref)                removing `math shift' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
+(hyperref)                removing `math shift' on input line 107.
 
 [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 121.
+               Default added (so using `tbp') on input line 125.
 
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 135.
+(Font)              scaled to size 7.0pt on input line 139.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 135.
+(Font)              scaled to size 5.5pt on input line 139.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 137.
+               Default added (so using `tbp') on input line 141.
 
 [4]
 
 LaTeX Warning: Reference `sec:spectrum_of_ctm' on page 5 undefined on input lin
-e 164.
+e 168.
 
 (./plots/spectrum_ctm_clock.tikz
 Missing character: There is no ; in font nullfont!
@@ -3014,12 +3012,14 @@ PGFPlots: reading {main.pgf-plot.table}
 ) [5]
 
 LaTeX Warning: Reference `sec:magnetization_per_site' on page 6 undefined on in
-put line 189.
+put line 193.
 
 
 LaTeX Warning: Reference `sec:analogy_to_entropy' on page 6 undefined on input 
-line 197.
+line 201.
 
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 229.
 [6] (./plots/entropy_and_order_param_vs_T_clock5.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
@@ -3075,11 +3075,11 @@ PGFPlots: reading {main.pgf-plot.table}
 )
 
 LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
-line 234.
+line 238.
 
 
 LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
-line 234.
+line 238.
 
 (./plots/entropy_and_order_param_vs_T_clock6.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
@@ -3126,14 +3126,14 @@ PGFPlots: reading {main.pgf-plot.table}
 )
 
 LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
-line 241.
+line 245.
 
 
 LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
-line 241.
+line 245.
 
 
-Overfull \hbox (4.02184pt too wide) in paragraph at lines 253--256
+Overfull \hbox (4.02184pt too wide) in paragraph at lines 257--260
 \T1/BaskervilleF-TLF/m/n/9 rived $\OML/zbami/m/it/9 ^^X\LMS/ntxsy/m/n/9 ¹\OML/z
 bami/m/it/9 m\LMS/ntxsy/m/n/9 º$ \T1/BaskervilleF-TLF/m/n/9 from the bond di-me
 n-sion $\OML/zbami/m/it/9 m$ \T1/BaskervilleF-TLF/m/n/9 in the case of finite-$
@@ -3142,40 +3142,40 @@ n-sion $\OML/zbami/m/it/9 m$ \T1/BaskervilleF-TLF/m/n/9 in the case of finite-$
 
 
 LaTeX Warning: Reference `sec:locating_critical_point_entanglement' on page 7 u
-ndefined on input line 263.
+ndefined on input line 267.
 
 [7] [8] [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 281.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 281.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 281.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 281.
+(hyperref)                removing `subscript' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 281.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 292.
+(hyperref)                removing `math shift' on input line 296.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 292.
+(hyperref)                removing `subscript' on input line 296.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 292.
+(hyperref)                removing `math shift' on input line 296.
 
 (./plots/t1_fit_q5.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
@@ -3202,23 +3202,23 @@ PGFPlots: reading {main.pgf-plot.table}
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 331.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 331.
+(hyperref)                removing `subscript' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 331.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 343.
+(hyperref)                removing `math shift' on input line 347.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 343.
+(hyperref)                removing `math shift' on input line 347.
 
 [10] (./plots/t2_fit_q5_finite_N.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
@@ -3280,9 +3280,18 @@ PGFPlots: reading {main.pgf-plot.table}
 )
 
 LaTeX Warning: Reference `sec:definition_effective_length_scale_in_terms_of_xi'
- on page 12 undefined on input line 417.
+ on page 12 undefined on input line 421.
 
-[12] [13] (./plots/c_and_magnetic_exponent_vs_T.tikz
+
+LaTeX Warning: Reference `figure:c_and_magnetic_exponent_vs_T' on page 12 undef
+ined on input line 424.
+
+[12] [13]
+
+LaTeX Warning: Reference `figure:c_and_magnetic_exponent_vs_T' on page 14 undef
+ined on input line 437.
+
+(./plots/c_and_magnetic_exponent_vs_T.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -3330,9 +3339,43 @@ PGFPlots: reading {main.pgf-plot.table}
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-)
+) [14]
+
+LaTeX Warning: Reference `sec:simulations_with_finite_system_size' on page 15 u
+ndefined on input line 483.
+
+
+LaTeX Warning: Reference `sec:simulations_with_finite_bond_dimension' on page 1
+5 undefined on input line 487.
+
+[15]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 493.
+
+[16] [17] [18] [19]
 LaTeX Font Info:    Try loading font information for TS1+BaskervilleF-TLF on in
-put line 467.
+put line 523.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/TS1BaskervilleF-TLF.
 fd
@@ -3340,14 +3383,14 @@ File: TS1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for TS1/Bas
 kervilleF-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 467.
+(Font)              scaled to size 9.0pt on input line 523.
 
-Overfull \hbox (5.68196pt too wide) in paragraph at lines 467--468
+Overfull \hbox (5.68196pt too wide) in paragraph at lines 533--534
 []\T1/BaskervilleF-TLF/m/n/9 doesn't ap-par-ently make sense to take many con-s
 ec-u-tive $\OML/zbami/m/it/9 m$\T1/BaskervilleF-TLF/m/n/9 -values. Rather
  []
 
-[14] [15]) [16] [17] [18] [19]
+) [20] [21]
 
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
@@ -3619,7 +3662,7 @@ mily. Using \mkbibnamefamily.
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
-[20
+[22
 
 
 ]
@@ -3971,7 +4014,7 @@ mily. Using \mkbibnamefamily.
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
-[21]
+[23]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -3980,27 +4023,36 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 866A3F84283684747D496D31500BB641;1498.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: C81BB995CF51BC8FC7C2B43B26CE2288;1499
+(rerunfilecheck)             After:  3717AC4F3AF5664FCE148C2EFB3BE1A2;1652.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52246 strings out of 493014
- 1142389 string characters out of 6133351
- 1892972 words of memory out of 5000000
- 54703 multiletter control sequences out of 15000+600000
+ 52254 strings out of 493014
+ 1142574 string characters out of 6133351
+ 1892645 words of memory out of 5000000
+ 54705 multiletter control sequences out of 15000+600000
  361383 words of font info for 222 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,112p,10417b,2675s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,19n,112p,10417b,2676s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_3oppw2.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
 enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
@@ -4014,10 +4066,10 @@ s/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 c/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
 txsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrl8
 a.pfb>
-Output written on main.pdf (22 pages, 281445 bytes).
+Output written on main.pdf (24 pages, 287162 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
- 392 compressed objects within 4 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

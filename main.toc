@@ -32,10 +32,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.7}The massless phase}{12}{section.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.7.1}Central charge of the massless phase}{12}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.1}Central charge}{12}{subsection.1.7.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.7.2}Varying exponent for the magnetization}{14}{subsection.1.7.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.8}Discussion}{15}{section.1.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{20}{section*.19}
+\contentsline {subsection}{\numberline {1.8.1}Finite-size effects}{15}{subsection.1.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.2}Other means of studying the transitions $T_1$ and $T_2$}{17}{subsection.1.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{22}{section*.18}

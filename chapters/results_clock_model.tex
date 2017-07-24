@@ -1,8 +1,6 @@
 \chapterprecishere{We present results of scaling in bond dimension and system size with the CTMRG algorithm for the
 five- and six-state clock model.}
 
-\todo[inline]{Not finished yet.}
-
 \section{Introduction}
 In the field of phase transitions and critical phenomena, the two-dimensional topological phase transition discovered by
 Kosterlitz and Thouless \cite{kosterlitz1973ordering, kosterlitz1974critical} receives much attention. This phase
@@ -45,16 +43,22 @@ Furthermore, in the Villain formulation it is known that \cite{elitzur1979phase,
 \begin{equation}\label{eq:eta_villain}
   \eta(T_1) =\frac{4}{q^2}, \qquad \eta(T_2) = \frac{1}{4},
 \end{equation}
-where $\frac{\eta}{2} = \frac{\beta}{\nu}$, the magnetization exponent in the finite-size regime.
+where $\eta$ is the spin-spin correlation function exponent.
+In CTMRG simulations, it is possible to obtain this exponent through the relation
+\begin{equation}
+  \frac{\eta}{2} = \frac{\beta}{\nu},
+\end{equation}
+where the fraction $\frac{\beta}{\nu}$ is found by finite-size scaling of the magnetization (see
+\autoref{sec:finite_size_scaling}).
 
 For the cosine model in \autoref{eq:hamiltonian_clock_model}, the value $q_c$ for which it first exhibits a
 BK-transition is not precisely known.
 There is some disagreement about whether the cases $q = 5, 6$ exhibit KT-type transitions (see previous numerical
 results below).
 
-In our simulations we will focus on the cases $q = 5, 6$, to (i) study the nature of the phase transition from a new
-perspective and (ii) compare the accuracy of finite-$m$ and finite-$N$ scaling within the CTMRG
-method to other established numerical methods.
+In our simulations we will focus on the cases $q = 5, 6$, to (i) study the nature of the phase transition from the new
+perspective provided by the corner transfer matrix formalism and (ii) compare the accuracy of finite-$m$ and finite-$N$
+scaling within the CTMRG method to other established numerical methods.
 
 We briefly summarise previous numerical results, then present results obtained with the CTMRG algorithm.
 
@@ -231,14 +235,14 @@ these quantities for $q = 5$ and $q = 6$ for systems with a fixed boundary, clea
   \includegraphics[]{entropy_and_order_param_vs_T_clock5.tikz}
   \caption{Classical analogue to half chain entanglement entropy (\autoref{sec:analogy_to_entropy}) and magnetization
   (\autoref{eq:magnetization_clock_model}) computed for systems with a fixed boundary for the $q = 5$ clock model.
-  Simulations were done with a convergence threshold of $10^{-7}$.}\label{figure:entropy_and_order_param_vs_T_clock5}
+  Simulations were done with a convergence threshold of $10^{-7}$. The dashed lines denote the transition temperatures found in this study.}\label{figure:entropy_and_order_param_vs_T_clock5}
 \end{figure}
 
 \begin{figure}
   \includegraphics[]{entropy_and_order_param_vs_T_clock6.tikz}
   \caption{Classical analogue to half chain entanglement entropy (\autoref{sec:analogy_to_entropy}) and magnetization
   (\autoref{eq:magnetization_clock_model}) computed for systems with a fixed boundary for the $q = 6$ clock model.
-  Simulations were done with a convergence threshold of $10^{-7}$.}\label{figure:entropy_and_order_param_vs_T_clock6}
+  Simulations were done with a convergence threshold of $10^{-7}$. The dashed lines denote the transition temperatures found in this study.}\label{figure:entropy_and_order_param_vs_T_clock6}
 \end{figure}
 
 \section{Transition temperatures}
@@ -278,7 +282,7 @@ such that
   T^{\star}(N) - T_c \propto \frac{1}{\ell}.
 \end{equation}
 
-\subsection{Numerical difficulties with finite-$m$ simulations around $T_1$}
+\subsection{Numerical difficulties with finite-$m$ simulations around $T_1$}\label{sec:numerical_difficulties_t1}
 
 For both the $q = \{5, 6\}$ clock models, it has been found that locating $T_1^{\star}(m)$ is not possible,
 since for systems with a free boundary, numerical errors cause the matrices $A$ and $P$ to lose their symmetry and
@@ -411,7 +415,7 @@ the estimation of $T_2$ is robust.
 
 \section{The massless phase}
 
-\subsection{Central charge of the massless phase}\label{sec:central_charge_massless_phase}
+\subsection{Central charge}\label{sec:central_charge_massless_phase}
 
 By fitting the relation in \autoref{eq:entropy_as_function_of_xi2},
 where $\xi(m)$ is calculated as in \autoref{sec:definition_effective_length_scale_in_terms_of_xi},
@@ -428,7 +432,7 @@ We may verify the exponent with which the magnetization goes to zero in the mass
 \begin{equation}\label{eq:magnetization_scaling_massless_phase}
   M(m, T) = \xi(m)^{-\frac{\eta(T)}{2}},
 \end{equation}
-where $\xi(m)$ again defined via \autoref{eq:entropy_as_function_of_xi2}.
+with $\xi(m)$ again defined via \autoref{eq:entropy_as_function_of_xi2}.
 
 The result is shown in the middle panel of \autoref{figure:c_and_magnetic_exponent_vs_T}.
 It agree very well with bla bla.
@@ -463,12 +467,66 @@ Refer to villain exponents.
 
 \section{Discussion}
 
+\subsection{Finite-size effects}
+
+Overall, the values of $T_1$ and $T_2$ for $q = \{ 5, 6 \}$ in this work agree well with the values found by other
+authors, see \autoref{table:q5_previous_results} and \autoref{table:q6_previous_results}.
+
+Finite-size scaling within the CTMRG is suffers more from finite-size effects than finite-$m$ scaling,
+since smaller system sizes are accessible.
+It is plausible that this is the reason that finite-size scaling yields values that differ somewhat from previous
+results and the results of finite-$m$ scaling.
+
+There are two straightforward ways that might improve the finite-size results.
+The first is to systematically study how the chosen bond dimension (and correspondingly,
+the truncation error) influences the precision of the pseudocritical point.
+A start with this has been made in \autoref{sec:simulations_with_finite_system_size} for the Ising model.
+It might be possible to simulate larger system sizes without much loss of accuracy,
+but it seems unlikely that the same system sizes as in the finite-$m$ regime are accessible.
+Furthermore, for finite-$m$ results it is much easier to assess the convergence of quantities (see
+\autoref{sec:simulations_with_finite_bond_dimension}).
+
+However, finite-size data is of much higher quality than the finite-$m$ data,
+since the latter suffers from structure due to the spectrum of the corner transfer matrix.
+Therefore, it is not unlikely that results might improve if correction to scaling terms are included in the fits.
+
+\subsection{Other means of studying the transitions $T_1$ and $T_2$}
+
+In this study, we have used the point of maximum entanglement entropy as a definition of the pseudocritical point.
+The most obvious drawback of this method is that locating $T_1$ is not possible with finite-$m$ simulations,
+as described in \autoref{sec:numerical_difficulties_t1}.
+Finite-size simulations near $T_1$ are possible, but costly, since the spectrum of the corner transfer matrix decays
+slowly for systems with a free boundary.
+
+A different way of finding $T_1$ is through the higher order parameters
+\begin{equation}
+  M_a = \langle e^{i a \theta_0 } \rangle,
+\end{equation}
+which should obey
+\begin{equation}
+  |M_a| \propto \exp \left(-Ca^2 / (T_1 - T)^{1/2} \right),
+\end{equation}
+with $C$ a non-universal constant \cite{cardy1980general}.
+
+$M_a$ is readily obtainable with the CTMRG method and does not require a free boundary.
+However, it is not clear if this will increase the precision of $T_1$.
+
+The transition $T_2$ may also be found by studying the magnetic susceptibility,
+as was done by \cite{borisenko2011numerical}.
+The susceptibility diverges more strongly than the entropy, but requires numerical derivatives to find.
+It is plausible that this method would yield an accuracy comparable to the current method,
+since it requires the same simulations to obtain $T_2$. Nonetheless, it would serve as a good consistency check.
+
+
 \begin{itemize}
-  \item doesn't apparently make sense to take many consecutive $m$-values. Rather take sparse, but bigger $m$-values.
-  \item For finite-$N$: tradeoff between truncation error and finite-size effects are not clear.
-  \item finite-$\chi$ reaches much bigger system sizes, but has structure that needs to be overcome while fitting.
+  \item use finite-size corrections for exponent $\eta$, though this would probably require finite-size scaling
+  as opposed to finite-$m$ scaling.
+  \item second-order phase transition impossible with varying exponent.
+  \item how does effective central charge diverge from 1 outside massless phase? This is not clear
+\end{itemize}
+
+
+\begin{itemize}
   \item fix bug where I attached an $a$-tensor with wrong temperature.
-  \item omitting $m$ values seems to give worse results than just taking them all, except for the really small ones.
-  \item second-order phase transition cannot be ruled on grounds of this data, but is there theory that forbids it?
   \item If you make convergence too low, it can get impossible to reach, even for fixed boundary?
 \end{itemize}
