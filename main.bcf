@@ -2077,44 +2077,6 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">kosterlitz1973ordering</bcf:citekey>
-    <bcf:citekey order="1">kosterlitz1974critical</bcf:citekey>
-    <bcf:citekey order="2">mermin1966absence</bcf:citekey>
-    <bcf:citekey order="2">hohenberg1967existence</bcf:citekey>
-    <bcf:citekey order="3">frohlich1981kosterlitz</bcf:citekey>
-    <bcf:citekey order="4">cardy1980general</bcf:citekey>
-    <bcf:citekey order="5">villain1975theory</bcf:citekey>
-    <bcf:citekey order="6">jose1977renormalization</bcf:citekey>
-    <bcf:citekey order="7">lapilli2006universality</bcf:citekey>
-    <bcf:citekey order="8">elitzur1979phase</bcf:citekey>
-    <bcf:citekey order="8">nienhuis1984critical</bcf:citekey>
-    <bcf:citekey order="9">fisher1973helicity</bcf:citekey>
-    <bcf:citekey order="10">baek2010non</bcf:citekey>
-    <bcf:citekey order="11">kumano2013response</bcf:citekey>
-    <bcf:citekey order="12">chatelain2014dmrg</bcf:citekey>
-    <bcf:citekey order="13">nishino1995density</bcf:citekey>
-    <bcf:citekey order="14">baek2013residual</bcf:citekey>
-    <bcf:citekey order="15">borisenko2011numerical</bcf:citekey>
-    <bcf:citekey order="16">brito2010twodimensional</bcf:citekey>
-    <bcf:citekey order="17">lapilli2006universality</bcf:citekey>
-    <bcf:citekey order="18">hwang2009six</bcf:citekey>
-    <bcf:citekey order="19">krvcmar2016phase</bcf:citekey>
-    <bcf:citekey order="20">tomita2002probability</bcf:citekey>
-    <bcf:citekey order="20">brito2010twodimensional</bcf:citekey>
-    <bcf:citekey order="20">kumano2013response</bcf:citekey>
-    <bcf:citekey order="21">krvcmar2016phase</bcf:citekey>
-    <bcf:citekey order="22">brito2010twodimensional</bcf:citekey>
-    <bcf:citekey order="23">borisenko2011numerical</bcf:citekey>
-    <bcf:citekey order="24">kumano2013response</bcf:citekey>
-    <bcf:citekey order="25">chatelain2014dmrg</bcf:citekey>
-    <bcf:citekey order="26">tomita2002probability</bcf:citekey>
-    <bcf:citekey order="27">hwang2009six</bcf:citekey>
-    <bcf:citekey order="28">brito2010twodimensional</bcf:citekey>
-    <bcf:citekey order="29">kumano2013response</bcf:citekey>
-    <bcf:citekey order="30">krvcmar2016phase</bcf:citekey>
-    <bcf:citekey order="31">kosterlitz1974critical</bcf:citekey>
-    <bcf:citekey order="32">cardy1980general</bcf:citekey>
-    <bcf:citekey order="33">borisenko2011numerical</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
