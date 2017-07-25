@@ -2077,6 +2077,44 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">nishino1995density</bcf:citekey>
+    <bcf:citekey order="2">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="3">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="3">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="3">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="4">white1992density</bcf:citekey>
+    <bcf:citekey order="5">tong2011lectures</bcf:citekey>
+    <bcf:citekey order="6">ising1925beitrag</bcf:citekey>
+    <bcf:citekey order="7">ising1925beitrag</bcf:citekey>
+    <bcf:citekey order="8">onsager1944two_dimensional</bcf:citekey>
+    <bcf:citekey order="9">bhattacharjee1995fifty</bcf:citekey>
+    <bcf:citekey order="10">nishino1995density</bcf:citekey>
+    <bcf:citekey order="10">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="11">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="12">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="12">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="12">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="13">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="13">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="14">nishino1997corner</bcf:citekey>
+    <bcf:citekey order="15">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="15">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="16">nishino1997corner</bcf:citekey>
+    <bcf:citekey order="16">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="17">white1992density</bcf:citekey>
+    <bcf:citekey order="18">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="18">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="19">huang2017holographic</bcf:citekey>
+    <bcf:citekey order="20">orus2012exploring</bcf:citekey>
+    <bcf:citekey order="21">peschel2009reduced</bcf:citekey>
+    <bcf:citekey order="21">peschel1999density</bcf:citekey>
+    <bcf:citekey order="22">davies1988corner</bcf:citekey>
+    <bcf:citekey order="23">okunishi1999universal</bcf:citekey>
+    <bcf:citekey order="24">okunishi1999universal</bcf:citekey>
+    <bcf:citekey order="25">ostlund1995thermodynamic</bcf:citekey>
+    <bcf:citekey order="25">rommer1997class</bcf:citekey>
+    <bcf:citekey order="26">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="27">nishino1999density</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

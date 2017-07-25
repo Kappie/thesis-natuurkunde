@@ -19,514 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
-    \entry{kosterlitz1973ordering}{article}{}
-      \name{author}{2}{}{%
-        {{hash=aa140a938a8c1585f5bd71821662e2c7}{%
-           family={Kosterlitz},
-           family_i={K\bibinitperiod},
-           given={J.\bibnamedelimi M.},
-           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=6785e32aaba21a1b4bf602c86e423b79}{%
-           family={Thouless},
-           family_i={T\bibinitperiod},
-           given={D.\bibnamedelimi J.},
-           given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{3af58fdee203c9b17b35f370744fdbdd}
-      \strng{fullhash}{3af58fdee203c9b17b35f370744fdbdd}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics C: Solid State Physics}
-      \field{number}{7}
-      \field{title}{Ordering, metastability and phase transitions in two-dimensional systems}
-      \field{volume}{6}
-      \field{year}{1973}
-      \field{pages}{1181}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1088/0022-3719/6/7/010
-      \endverb
-    \endentry
-    \entry{kosterlitz1974critical}{article}{}
-      \name{author}{1}{}{%
-        {{hash=aa140a938a8c1585f5bd71821662e2c7}{%
-           family={Kosterlitz},
-           family_i={K\bibinitperiod},
-           given={J.\bibnamedelimi M.},
-           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{aa140a938a8c1585f5bd71821662e2c7}
-      \strng{fullhash}{aa140a938a8c1585f5bd71821662e2c7}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics C: Solid State Physics}
-      \field{number}{6}
-      \field{title}{The critical properties of the two-dimensional xy model}
-      \field{volume}{7}
-      \field{year}{1974}
-      \field{pages}{1046}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1088/0022-3719/7/6/005
-      \endverb
-    \endentry
-    \entry{mermin1966absence}{article}{}
-      \name{author}{2}{}{%
-        {{hash=7f4d283dd2e837430fdda258c66c4030}{%
-           family={Mermin},
-           family_i={M\bibinitperiod},
-           given={N.\bibnamedelimi D.},
-           given_i={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=6877f3f678da831be88b6b78341b2385}{%
-           family={Wagner},
-           family_i={W\bibinitperiod},
-           given={H.},
-           given_i={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{d50c581f7a33539d4b6877e2acd25218}
-      \strng{fullhash}{d50c581f7a33539d4b6877e2acd25218}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{22}
-      \field{title}{Absence of ferromagnetism or antiferromagnetism in one-or two-dimensional isotropic {Heisenberg} models}
-      \field{volume}{17}
-      \field{year}{1966}
-      \field{pages}{1133}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevLett.17.1133
-      \endverb
-    \endentry
-    \entry{hohenberg1967existence}{article}{}
-      \name{author}{1}{}{%
-        {{hash=86f34281d36cc1a8813ca3eb3fd9c803}{%
-           family={Hohenberg},
-           family_i={H\bibinitperiod},
-           given={P.\bibnamedelimi C.},
-           given_i={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{86f34281d36cc1a8813ca3eb3fd9c803}
-      \strng{fullhash}{86f34281d36cc1a8813ca3eb3fd9c803}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review}
-      \field{number}{2}
-      \field{title}{Existence of long-range order in one and two dimensions}
-      \field{volume}{158}
-      \field{year}{1967}
-      \field{pages}{383}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRev.158.383
-      \endverb
-    \endentry
-    \entry{frohlich1981kosterlitz}{article}{}
-      \name{author}{2}{}{%
-        {{hash=0586baddd78f679896a7ec12fd758808}{%
-           family={Fröhlich},
-           family_i={F\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-        {{hash=c639533726e54816e2461113b0b6252c}{%
-           family={Spencer},
-           family_i={S\bibinitperiod},
-           given={T.},
-           given_i={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{b5e9da3620312236ed830b58aba8e865}
-      \strng{fullhash}{b5e9da3620312236ed830b58aba8e865}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Communications in Mathematical Physics}
-      \field{number}{4}
-      \field{title}{The {Kosterlitz-Thouless} transition in two-dimensional abelian spin systems and the {Coulomb} gas}
-      \field{volume}{81}
-      \field{year}{1981}
-      \field{pages}{527\bibrangedash 602}
-      \range{pages}{76}
-      \verb{url}
-      \verb https://doi.org/10.1007/BF01208273
-      \endverb
-    \endentry
-    \entry{cardy1980general}{article}{}
-      \name{author}{1}{}{%
-        {{hash=ce211a99f143bf5b9a1c178101da859e}{%
-           family={Cardy},
-           family_i={C\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{ce211a99f143bf5b9a1c178101da859e}
-      \strng{fullhash}{ce211a99f143bf5b9a1c178101da859e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics A: Mathematical and General}
-      \field{number}{4}
-      \field{title}{General discrete planar models in two dimensions: Duality properties and phase diagrams}
-      \field{volume}{13}
-      \field{year}{1980}
-      \field{pages}{1507}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1088/0305-4470/13/4/037
-      \endverb
-    \endentry
-    \entry{villain1975theory}{article}{}
-      \name{author}{1}{}{%
-        {{hash=125b02bab6393e68ba3b6f8bc2646423}{%
-           family={Villain},
-           family_i={V\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Société Française de Physique}%
-      }
-      \strng{namehash}{125b02bab6393e68ba3b6f8bc2646423}
-      \strng{fullhash}{125b02bab6393e68ba3b6f8bc2646423}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal de Physique}
-      \field{number}{6}
-      \field{title}{Theory of one-and two-dimensional magnets with an easy magnetization plane. {II}. The planar, classical, two-dimensional magnet}
-      \field{volume}{36}
-      \field{year}{1975}
-      \field{pages}{581\bibrangedash 590}
-      \range{pages}{10}
-      \verb{url}
-      \verb https://doi.org/10.1051/jphys:01975003606058100
-      \endverb
-    \endentry
-    \entry{jose1977renormalization}{article}{}
-      \name{author}{4}{}{%
-        {{hash=3e861bcb5ba241af8323a7952d6d1879}{%
-           family={José},
-           family_i={J\bibinitperiod},
-           given={J.\bibnamedelimi V.},
-           given_i={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=58aa3d3840a2a4caeb4c31fe83a8a22b}{%
-           family={Kadanoff},
-           family_i={K\bibinitperiod},
-           given={L.\bibnamedelimi P.},
-           given_i={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=dd8c9103b9bc9a0ffea4a618a83d9444}{%
-           family={Kirkpatrick},
-           family_i={K\bibinitperiod},
-           given={S.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=5e33c9806c0892dead3167836e01e0aa}{%
-           family={Nelson},
-           family_i={N\bibinitperiod},
-           given={D.\bibnamedelimi R.},
-           given_i={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{65a6850d1cc476714f4b164d1600fdcb}
-      \strng{fullhash}{9a0bbb5a308251c4af376a50e7615146}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review B}
-      \field{number}{3}
-      \field{title}{Renormalization, vortices, and symmetry-breaking perturbations in the two-dimensional planar model}
-      \field{volume}{16}
-      \field{year}{1977}
-      \field{pages}{1217}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevB.16.1217
-      \endverb
-    \endentry
-    \entry{lapilli2006universality}{article}{}
-      \name{author}{3}{}{%
-        {{hash=31bc4fbce9d54e49cd4a5d26f7a2f1a7}{%
-           family={Lapilli},
-           family_i={L\bibinitperiod},
-           given={C.\bibnamedelimi M.},
-           given_i={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=2864ff1ea7b7786c20dc100cd49a6a41}{%
-           family={Pfeifer},
-           family_i={P\bibinitperiod},
-           given={P.},
-           given_i={P\bibinitperiod}}}%
-        {{hash=adc3fb0de561f8c755f43527ad632d74}{%
-           family={Wexler},
-           family_i={W\bibinitperiod},
-           given={C.},
-           given_i={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{dae250492e29a06879b0ae21fdf5a044}
-      \strng{fullhash}{f39fa7475ddc451d05179a7f7f26b256}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{14}
-      \field{title}{Universality away from critical points in two-dimensional phase transitions}
-      \field{volume}{96}
-      \field{year}{2006}
-      \field{pages}{140603}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevLett.96.140603
-      \endverb
-    \endentry
-    \entry{elitzur1979phase}{article}{}
-      \name{author}{3}{}{%
-        {{hash=c768c5ead95aaa70ac6ca98ca1e40a82}{%
-           family={Elitzur},
-           family_i={E\bibinitperiod},
-           given={S.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=b39ee607fb0b076a9b017d5b684cdac6}{%
-           family={Pearson},
-           family_i={P\bibinitperiod},
-           given={R.\bibnamedelimi B.},
-           given_i={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=4ece275a7fc24eb9c61020132d25c78d}{%
-           family={Shigemitsu},
-           family_i={S\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{e5e45548ec363b381b059c02508f1ba0}
-      \strng{fullhash}{bc65e3b8200f36fda5d205a2cc797837}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{12}
-      \field{journaltitle}{Physical Review D}
-      \field{month}{06}
-      \field{title}{Phase structure of discrete Abelian spin and gauge systems}
-      \field{volume}{19}
-      \field{year}{1979}
-      \field{pages}{3698\bibrangedash 3714}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1103/PhysRevD.19.3698
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevD.19.3698
-      \endverb
-    \endentry
-    \entry{nienhuis1984critical}{article}{}
-      \name{author}{1}{}{%
-        {{hash=2567f03f1070a54169f00f0c6f778813}{%
-           family={Nienhuis},
-           family_i={N\bibinitperiod},
-           given={B.},
-           given_i={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{2567f03f1070a54169f00f0c6f778813}
-      \strng{fullhash}{2567f03f1070a54169f00f0c6f778813}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Statistical Physics}
-      \field{number}{5-6}
-      \field{title}{Critical behavior of two-dimensional spin models and charge asymmetry in the {Coulomb} gas}
-      \field{volume}{34}
-      \field{year}{1984}
-      \field{pages}{731\bibrangedash 761}
-      \range{pages}{31}
-      \verb{url}
-      \verb https://doi.org/10.1007/BF01009437
-      \endverb
-    \endentry
-    \entry{fisher1973helicity}{article}{}
-      \name{author}{3}{}{%
-        {{hash=ca103cfc9912e8dc5321143b9b3e0fa6}{%
-           family={Fisher},
-           family_i={F\bibinitperiod},
-           given={M.\bibnamedelimi E.},
-           given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=300ea62e6e22cb1f05aaaefa11a0979d}{%
-           family={Barber},
-           family_i={B\bibinitperiod},
-           given={M.\bibnamedelimi N.},
-           given_i={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=1e7a1122e2e4f1cc6d3aa4e6a7937d0a}{%
-           family={Jasnow},
-           family_i={J\bibinitperiod},
-           given={D.},
-           given_i={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{d995ccefb357c04f63c5fb862d21619a}
-      \strng{fullhash}{f98c78c5fb54cb94e5d2c00b83d1133a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{2}
-      \field{journaltitle}{Physical Review A}
-      \field{month}{08}
-      \field{title}{Helicity Modulus, Superfluidity, and Scaling in Isotropic Systems}
-      \field{volume}{8}
-      \field{year}{1973}
-      \field{pages}{1111\bibrangedash 1124}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1103/PhysRevA.8.1111
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevA.8.1111
-      \endverb
-    \endentry
-    \entry{baek2010non}{article}{}
-      \name{author}{2}{}{%
-        {{hash=2ae3b5ff7130b1313ba6f56e65920b89}{%
-           family={Baek},
-           family_i={B\bibinitperiod},
-           given={S.\bibnamedelimi K.},
-           given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=fe20add6baed8a323f6ca681440397d5}{%
-           family={Minnhagen},
-           family_i={M\bibinitperiod},
-           given={P.},
-           given_i={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{928a0f7386078530450dac0a4df6af78}
-      \strng{fullhash}{928a0f7386078530450dac0a4df6af78}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{3}
-      \field{title}{{Non-Kosterlitz-Thouless} transitions for the $q$-state clock models}
-      \field{volume}{82}
-      \field{year}{2010}
-      \field{pages}{031102}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevE.82.031102
-      \endverb
-    \endentry
-    \entry{kumano2013response}{article}{}
-      \name{author}{4}{}{%
-        {{hash=8180d33c3c0c8eb26d8740582e0d9040}{%
-           family={Kumano},
-           family_i={K\bibinitperiod},
-           given={Y.},
-           given_i={Y\bibinitperiod}}}%
-        {{hash=524b572ecb746b4cd0532f4048fcdcf8}{%
-           family={Hukushima},
-           family_i={H\bibinitperiod},
-           given={K.},
-           given_i={K\bibinitperiod}}}%
-        {{hash=5f60772ad133b69701d16ec0e64aaec4}{%
-           family={Tomita},
-           family_i={T\bibinitperiod},
-           given={Y.},
-           given_i={Y\bibinitperiod}}}%
-        {{hash=c0166153e7d09434179aefb9b93ebefc}{%
-           family={Oshikawa},
-           family_i={O\bibinitperiod},
-           given={M.},
-           given_i={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{12afdbc8a06538392556e7bd7cc42f15}
-      \strng{fullhash}{1a5d716ee664d98dbd23d39538872a86}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review B}
-      \field{number}{10}
-      \field{title}{Response to a twist in systems with {$Z_p$} symmetry: The two-dimensional $p$-state clock model}
-      \field{volume}{88}
-      \field{year}{2013}
-      \field{pages}{104427}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevB.88.104427
-      \endverb
-    \endentry
-    \entry{chatelain2014dmrg}{article}{}
-      \name{author}{1}{}{%
-        {{hash=d0afed9368035a9353e873e1ce4c58a7}{%
-           family={Chatelain},
-           family_i={C\bibinitperiod},
-           given={C.},
-           given_i={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{d0afed9368035a9353e873e1ce4c58a7}
-      \strng{fullhash}{d0afed9368035a9353e873e1ce4c58a7}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Statistical Mechanics: Theory and Experiment}
-      \field{number}{11}
-      \field{title}{{DMRG} study of the {Berezinskii--Kosterlitz--Thouless} transitions of the {2D} five-state clock model}
-      \field{volume}{2014}
-      \field{year}{2014}
-      \field{pages}{P11022}
-      \range{pages}{-1}
-      \verb{url}
-      \verb https://doi.org/10.1088/1742-5468/2014/11/P11022
-      \endverb
-    \endentry
     \entry{nishino1995density}{article}{}
       \name{author}{1}{}{%
         {{hash=0481bd1868281072e0d664b2e5dccb42}{%
@@ -555,237 +47,612 @@
       \verb http://doi.org/10.1143/jpsj.64.3598
       \endverb
     \endentry
-    \entry{baek2013residual}{article}{}
-      \name{author}{4}{}{%
-        {{hash=2ae3b5ff7130b1313ba6f56e65920b89}{%
-           family={Baek},
-           family_i={B\bibinitperiod},
-           given={S.\bibnamedelimi K.},
-           given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=1e11f39a045d276c8edc98ceb2d62764}{%
-           family={Mäkelä},
-           family_i={M\bibinitperiod},
-           given={H.},
-           given_i={H\bibinitperiod}}}%
-        {{hash=fe20add6baed8a323f6ca681440397d5}{%
-           family={Minnhagen},
-           family_i={M\bibinitperiod},
-           given={P.},
-           given_i={P\bibinitperiod}}}%
-        {{hash=83d6f00fae4c4ddb4781f4e475e5ef5a}{%
-           family={Kim},
-           family_i={K\bibinitperiod},
-           given={B.\bibnamedelimi J.},
-           given_i={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{488c3a47b79d45f3f3b3b7be3222dfd2}
-      \strng{fullhash}{c302c0205d6da270c27357f0ea7e0036}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{1}
-      \field{title}{Residual discrete symmetry of the five-state clock model}
-      \field{volume}{88}
-      \field{year}{2013}
-      \field{pages}{012125}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevE.88.012125
-      \endverb
-    \endentry
-    \entry{borisenko2011numerical}{article}{}
-      \name{author}{5}{}{%
-        {{hash=838c5a9e5901386a9b875b5f177b2f4c}{%
-           family={Borisenko},
-           family_i={B\bibinitperiod},
-           given={O.},
-           given_i={O\bibinitperiod}}}%
-        {{hash=4925c8f69fed2d82aa37c28c143c64bf}{%
-           family={Cortese},
-           family_i={C\bibinitperiod},
-           given={G.},
-           given_i={G\bibinitperiod}}}%
-        {{hash=f3cede7a7bb35a90e6dea4241ab9ace6}{%
-           family={Fiore},
-           family_i={F\bibinitperiod},
-           given={R.},
-           given_i={R\bibinitperiod}}}%
-        {{hash=36370cff842c796b1822c6e7d14b918b}{%
-           family={Gravina},
-           family_i={G\bibinitperiod},
-           given={M.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=f40d3be3b4bbd46cca791b6ed45905f8}{%
-           family={Papa},
-           family_i={P\bibinitperiod},
-           given={A.},
-           given_i={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{c99f3d0ead5f13b47681926f4b805010}
-      \strng{fullhash}{4ee0caf44720c652cd939b986a5dc001}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{4}
-      \field{title}{Numerical study of the phase transitions in the two-dimensional {$Z(5)$} vector model}
-      \field{volume}{83}
-      \field{year}{2011}
-      \field{pages}{041120}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevE.83.041120
-      \endverb
-    \endentry
-    \entry{brito2010twodimensional}{article}{}
-      \name{author}{3}{}{%
-        {{hash=a29cd676cb0a1228a5ea4010375e6414}{%
-           family={Brito},
-           family_i={B\bibinitperiod},
-           given={A.\bibnamedelimi F.},
-           given_i={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=c39421c7bd927a364f93dc4ef8d78de7}{%
-           family={Redinz},
-           family_i={R\bibinitperiod},
-           given={J.\bibnamedelimi A.},
-           given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=57eeebfdcff0ff65194173bacc6af391}{%
-           family={Plascak},
-           family_i={P\bibinitperiod},
-           given={J.\bibnamedelimi A.},
-           given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{e77d50460782139fc97abd52e150208e}
-      \strng{fullhash}{51d868ca65fc714f2caf455d88693987}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{3}
-      \field{journaltitle}{Physical Review E}
-      \field{month}{03}
-      \field{title}{Two-dimensional {$XY$} and clock models studied via the dynamics generated by rough surfaces}
-      \field{volume}{81}
-      \field{year}{2010}
-      \field{pages}{031130}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevE.81.031130
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.81.031130
-      \endverb
-    \endentry
-    \entry{hwang2009six}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a44f1d007931ab45c719c619815254bd}{%
-           family={Hwang},
-           family_i={H\bibinitperiod},
-           given={Chi-Ok},
-           given_i={C\bibinithyphendelim O\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{a44f1d007931ab45c719c619815254bd}
-      \strng{fullhash}{a44f1d007931ab45c719c619815254bd}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{4}
-      \field{journaltitle}{Physical Review E}
-      \field{month}{10}
-      \field{title}{Six-state clock model on the square lattice: {Fisher} zero approach with {Wang-Landau} sampling}
-      \field{volume}{80}
-      \field{year}{2009}
-      \field{pages}{042103}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevE.80.042103
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.80.042103
-      \endverb
-    \endentry
-    \entry{krvcmar2016phase}{article}{}
-      \name{author}{3}{}{%
-        {{hash=648e9fdcdf19bd9fd851ff3fc7f108ec}{%
-           family={Krčmár},
-           family_i={K\bibinitperiod},
-           given={R.},
-           given_i={R\bibinitperiod}}}%
-        {{hash=bc23e2b5c5c311138c5ec17188d97222}{%
-           family={Gendiar},
-           family_i={G\bibinitperiod},
-           given={A.},
-           given_i={A\bibinitperiod}}}%
+    \entry{nishino1996corner}{article}{}
+      \name{author}{2}{}{%
         {{hash=0481bd1868281072e0d664b2e5dccb42}{%
            family={Nishino},
            family_i={N\bibinitperiod},
            given={T.},
            given_i={T\bibinitperiod}}}%
+        {{hash=796d0b09ba142fbdae193488b57b87c6}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
       }
-      \strng{namehash}{79d930fd2b3a07effe4c9097fec6390f}
-      \strng{fullhash}{6c7ac03f54298230a2c1abcddf33d030}
+      \list{publisher}{1}{%
+        {The Physical Society of Japan}%
+      }
+      \strng{namehash}{523aba250f01075cfb656033a58b0d95}
+      \strng{fullhash}{523aba250f01075cfb656033a58b0d95}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv:1612.07611}
-      \field{title}{Phase transition of the six-state clock model observed from the entanglement entropy}
-      \field{year}{2016}
+      \field{journaltitle}{Journal of the Physical Society of Japan}
+      \field{number}{4}
+      \field{title}{Corner transfer matrix renormalization group method}
+      \field{volume}{65}
+      \field{year}{1996}
+      \field{pages}{891\bibrangedash 894}
+      \range{pages}{4}
       \verb{url}
-      \verb https://arxiv.org/abs/1612.07611
+      \verb http://dx.doi.org/10.1143/JPSJ.65.891
       \endverb
     \endentry
-    \entry{tomita2002probability}{article}{}
-      \name{author}{2}{}{%
-        {{hash=5f60772ad133b69701d16ec0e64aaec4}{%
-           family={Tomita},
+    \entry{baxter1968dimers}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed0df457cfd5c4c92016a5a14719247f}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{ed0df457cfd5c4c92016a5a14719247f}
+      \strng{fullhash}{ed0df457cfd5c4c92016a5a14719247f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{4}
+      \field{title}{Dimers on a rectangular lattice}
+      \field{volume}{9}
+      \field{year}{1968}
+      \field{pages}{650\bibrangedash 654}
+      \range{pages}{5}
+      \verb{url}
+      \verb http://dx.doi.org/10.1063/1.1664623
+      \endverb
+    \endentry
+    \entry{baxter1978variational}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed0df457cfd5c4c92016a5a14719247f}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ed0df457cfd5c4c92016a5a14719247f}
+      \strng{fullhash}{ed0df457cfd5c4c92016a5a14719247f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Physics}
+      \field{number}{5}
+      \field{title}{Variational approximations for square lattice models in statistical mechanics}
+      \field{volume}{19}
+      \field{year}{1978}
+      \field{pages}{461\bibrangedash 478}
+      \range{pages}{18}
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01011693
+      \endverb
+    \endentry
+    \entry{baxter1982exactly_ctm}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ed0df457cfd5c4c92016a5a14719247f}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ed0df457cfd5c4c92016a5a14719247f}
+      \strng{fullhash}{ed0df457cfd5c4c92016a5a14719247f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{13}
+      \field{title}{Exactly solved models in statistical mechanics}
+      \field{year}{1982}
+    \endentry
+    \entry{white1992density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=71a6e7abbc94103a7d00b0c465968e06}{%
+           family={White},
+           family_i={W\bibinitperiod},
+           given={S.\bibnamedelimi R.},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{71a6e7abbc94103a7d00b0c465968e06}
+      \strng{fullhash}{71a6e7abbc94103a7d00b0c465968e06}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{19}
+      \field{title}{Density matrix formulation for quantum renormalization groups}
+      \field{volume}{69}
+      \field{year}{1992}
+      \field{pages}{2863}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevLett.69.2863
+      \endverb
+    \endentry
+    \entry{tong2011lectures}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6ade2bfb9e9c1708f2530a368243019d}{%
+           family={Tong},
            family_i={T\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ade2bfb9e9c1708f2530a368243019d}
+      \strng{fullhash}{6ade2bfb9e9c1708f2530a368243019d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lectures on statistical physics}
+      \field{urlday}{07}
+      \field{urlmonth}{06}
+      \field{urlyear}{2017}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://www.damtp.cam.ac.uk/user/tong/statphys.html
+      \endverb
+    \endentry
+    \entry{ising1925beitrag}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3bc4675810712a439baf555fb23923f9}{%
+           family={Ising},
+           family_i={I\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3bc4675810712a439baf555fb23923f9}
+      \strng{fullhash}{3bc4675810712a439baf555fb23923f9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeitschrift für Physik}
+      \field{number}{1}
+      \field{title}{Beitrag zur theorie des ferromagnetismus}
+      \field{volume}{31}
+      \field{year}{1925}
+      \field{pages}{253\bibrangedash 258}
+      \range{pages}{6}
+      \verb{url}
+      \verb https://doi.org/10.1007/BF02980577
+      \endverb
+    \endentry
+    \entry{onsager1944two_dimensional}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9877368167726dd57abaab368f6e4a94}{%
+           family={Onsager},
+           family_i={O\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{9877368167726dd57abaab368f6e4a94}
+      \strng{fullhash}{9877368167726dd57abaab368f6e4a94}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3-4}
+      \field{journaltitle}{Phys. Rev.}
+      \field{month}{02}
+      \field{title}{Crystal Statistics. {I.} A Two-Dimensional Model with an Order-Disorder Transition}
+      \field{volume}{65}
+      \field{year}{1944}
+      \field{pages}{117\bibrangedash 149}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1103/PhysRev.65.117
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.65.117
+      \endverb
+    \endentry
+    \entry{bhattacharjee1995fifty}{article}{}
+      \name{author}{2}{}{%
+        {{hash=92bc4b8660e65c901514570254f077b3}{%
+           family={Bhattacharjee},
+           family_i={B\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ac9a53827b81475645d1960c99f36aee}{%
+           family={Khare},
+           family_i={K\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Current Science Association}%
+      }
+      \strng{namehash}{81d45b345d6d8446c06d4b50f9fc6a27}
+      \strng{fullhash}{81d45b345d6d8446c06d4b50f9fc6a27}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Current Science}
+      \field{number}{10}
+      \field{title}{Fifty Years of the Exact solution of the Two-dimensional Ising Model by Onsager}
+      \field{volume}{69}
+      \field{year}{1995}
+      \field{pages}{816\bibrangedash 821}
+      \range{pages}{6}
+      \verb{url}
+      \verb https://arxiv.org/abs/cond-mat/9511003
+      \endverb
+    \endentry
+    \entry{nishino1997corner}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0481bd1868281072e0d664b2e5dccb42}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={T.},
+           given_i={T\bibinitperiod}}}%
+        {{hash=796d0b09ba142fbdae193488b57b87c6}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Physical Society of Japan}%
+      }
+      \strng{namehash}{523aba250f01075cfb656033a58b0d95}
+      \strng{fullhash}{523aba250f01075cfb656033a58b0d95}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Physical Society of Japan}
+      \field{number}{10}
+      \field{title}{Corner transfer matrix algorithm for classical renormalization group}
+      \field{volume}{66}
+      \field{year}{1997}
+      \field{pages}{3040\bibrangedash 3047}
+      \range{pages}{8}
+      \verb{url}
+      \verb http://dx.doi.org/10.1143/JPSJ.66.3040
+      \endverb
+    \endentry
+    \entry{huang2017holographic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2acbd39722be557c34901c2c5af2d8a2}{%
+           family={Huang},
+           family_i={H\bibinitperiod},
+           given={Ching-Yu},
+           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=84121b863e7717cc258740606b188370}{%
+           family={Wei},
+           family_i={W\bibinitperiod},
+           given={Tzu-Chieh},
+           given_i={T\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=220e5a12680385b58fbfac3e4405944d}{%
+           family={Orús},
+           family_i={O\bibinitperiod},
+           given={Román},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{1c260e5e596ce0d705bcc8b882a0f0ce}
+      \strng{fullhash}{c1272b1d8347690e91323ea4b5952f8c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{19}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{05}
+      \field{title}{Holographic encoding of universality in corner spectra}
+      \field{volume}{95}
+      \field{year}{2017}
+      \field{pages}{195170}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.95.195170
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevB.95.195170
+      \endverb
+    \endentry
+    \entry{orus2012exploring}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6eeb11c3fd7e439c3cebb433317efcc6}{%
+           family={Orús},
+           family_i={O\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{6eeb11c3fd7e439c3cebb433317efcc6}
+      \strng{fullhash}{6eeb11c3fd7e439c3cebb433317efcc6}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{20}
+      \field{title}{Exploring corner transfer matrices and corner tensors for the classical simulation of quantum lattice systems}
+      \field{volume}{85}
+      \field{year}{2012}
+      \field{pages}{205117}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevB.85.205117
+      \endverb
+    \endentry
+    \entry{peschel2009reduced}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a8e231c904a9df3e5300782b54c0a49a}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=26f4c78065bf22cb415872eddefdead3}{%
+           family={Eisler},
+           family_i={E\bibinitperiod},
+           given={V.},
+           given_i={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{3e5d344b4c0dd56687ad0fcf7501ea23}
+      \strng{fullhash}{3e5d344b4c0dd56687ad0fcf7501ea23}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics A: Mathematical and Theoretical}
+      \field{number}{50}
+      \field{title}{Reduced density matrices and entanglement entropy in free lattice models}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{pages}{504003}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://doi.org/10.1088/1751-8113/42/50/504003
+      \endverb
+    \endentry
+    \entry{peschel1999density}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a8e231c904a9df3e5300782b54c0a49a}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=b2f952ff20c0329a29812f6df113cde7}{%
+           family={Kaulke},
+           family_i={K\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=4932366873813bfff59e517936167997}{%
+           family={Legeza},
+           family_i={L\bibinitperiod},
+           given={Ö.},
+           given_i={Ö\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WILEY-VCH Verlag}%
+      }
+      \strng{namehash}{bed38e5de65f7cfe8d08032a4c978ddc}
+      \strng{fullhash}{08ff5f2ba6967851e70e54d897e6110b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1521-3889}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{2}
+      \field{title}{Density-matrix spectra for integrable models}
+      \field{volume}{8}
+      \field{year}{1999}
+      \field{pages}{153\bibrangedash 164}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/(SICI)1521-3889(199902)8:2<153::AID-ANDP153>3.0.CO;2-N
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/(SICI)1521-3889(199902)8:2%3C153::AID-ANDP153%3E3.0.CO;2-N
+      \endverb
+      \keyw{Density-matrix renormalization,Integrable systems,Corner transfer matrices}
+    \endentry
+    \entry{davies1988corner}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9d03e2d25ca50da5189dae2609e7d7fd}{%
+           family={Davies},
+           family_i={D\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9d03e2d25ca50da5189dae2609e7d7fd}
+      \strng{fullhash}{9d03e2d25ca50da5189dae2609e7d7fd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{1}
+      \field{title}{Corner transfer matrices for the {Ising} model}
+      \field{volume}{154}
+      \field{year}{1988}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+      \verb{url}
+      \verb https://doi.org/10.1016/0378-4371(88)90178-1
+      \endverb
+    \endentry
+    \entry{okunishi1999universal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=796d0b09ba142fbdae193488b57b87c6}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=869003960519dd65caf7d0937b53778d}{%
+           family={Hieida},
+           family_i={H\bibinitperiod},
            given={Y.},
            given_i={Y\bibinitperiod}}}%
-        {{hash=32df49fb42a424be07636fba7afe6168}{%
-           family={Okabe},
-           family_i={O\bibinitperiod},
+        {{hash=e96bdba173a48b9e6b25db1d893bf745}{%
+           family={Akutsu},
+           family_i={A\bibinitperiod},
            given={Y.},
            given_i={Y\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {American Physical Society}%
       }
-      \strng{namehash}{12136f0400b69a80b9009a74155947ee}
-      \strng{fullhash}{12136f0400b69a80b9009a74155947ee}
+      \strng{namehash}{9c89edb1bf617a553ea7dfd621808031}
+      \strng{fullhash}{71c3e16fe0dc102705027cb9478c0ed6}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{18}
-      \field{journaltitle}{Physical Review B}
-      \field{month}{04}
-      \field{title}{Probability-changing cluster algorithm for two-dimensional {$\mathrm{XY}$} and clock models}
-      \field{volume}{65}
-      \field{year}{2002}
-      \field{pages}{184405}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevB.65.184405
-      \endverb
+      \field{journaltitle}{Physical Review E}
+      \field{number}{6}
+      \field{title}{Universal asymptotic eigenvalue distribution of density matrices and corner transfer matrices in the thermodynamic limit}
+      \field{volume}{59}
+      \field{year}{1999}
+      \field{pages}{R6227}
+      \range{pages}{-1}
       \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevB.65.184405
+      \verb https://doi.org/10.1103/PhysRevE.59.R6227
+      \endverb
+    \endentry
+    \entry{ostlund1995thermodynamic}{article}{}
+      \name{author}{2}{}{%
+        {{hash=813a376645c5f09e5b01f21b5296b7d8}{%
+           family={Östlund},
+           family_i={Ö\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=0c63035d92c7b37a8a0cec88433b0738}{%
+           family={Rommer},
+           family_i={R\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{dbf00f20d856f6550883dc9068d63871}
+      \strng{fullhash}{dbf00f20d856f6550883dc9068d63871}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{19}
+      \field{title}{Thermodynamic limit of density matrix renormalization}
+      \field{volume}{75}
+      \field{year}{1995}
+      \field{pages}{3537}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevLett.75.3537
+      \endverb
+    \endentry
+    \entry{rommer1997class}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0c63035d92c7b37a8a0cec88433b0738}{%
+           family={Rommer},
+           family_i={R\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=813a376645c5f09e5b01f21b5296b7d8}{%
+           family={Östlund},
+           family_i={Ö\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{186340f2473880a367205a2876ac1b31}
+      \strng{fullhash}{186340f2473880a367205a2876ac1b31}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{4}
+      \field{title}{Class of ansatz wave functions for one-dimensional spin systems and their relation to the density matrix renormalization group}
+      \field{volume}{55}
+      \field{year}{1997}
+      \field{pages}{2164}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevB.55.2164
+      \endverb
+    \endentry
+    \entry{nishino1999density}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0481bd1868281072e0d664b2e5dccb42}{%
+           family={Nishino},
+           family_i={N\bibinitperiod},
+           given={T.},
+           given_i={T\bibinitperiod}}}%
+        {{hash=8686a0c07cbeee493ed8f215b21bb307}{%
+           family={Hikihara},
+           family_i={H\bibinitperiod},
+           given={T.},
+           given_i={T\bibinitperiod}}}%
+        {{hash=796d0b09ba142fbdae193488b57b87c6}{%
+           family={Okunishi},
+           family_i={O\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=869003960519dd65caf7d0937b53778d}{%
+           family={Hieida},
+           family_i={H\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{cfe1358022976657390cd0581c774187}
+      \strng{fullhash}{d76b42ef2bd74530d183008cd7e935f2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Modern Physics B}
+      \field{number}{01}
+      \field{title}{Density matrix renormalization group: Introduction from a variational point of view}
+      \field{volume}{13}
+      \field{year}{1999}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{url}
+      \verb https://doi.org/10.1142/S0217979299000023
       \endverb
     \endentry
   \endsortlist

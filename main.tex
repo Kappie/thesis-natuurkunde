@@ -60,6 +60,7 @@
 
 \maxtocdepth{subsubsection}
 \setsecnumdepth{subsubsection}
+\setfloatadjustment{figure}{\centering}
 
 
 % Commands below define chapter title style.
@@ -87,12 +88,18 @@
 \makeatother
 
 % To make chapter abstracts regular font
-\renewcommand*{\precisfont}{\normalfont}
+% \renewcommand*{\precisfont}{\normalfont}
+% \renewcommand{\prechapterprecis}{%
+%    \vspace*{\prechapterprecisshift}%
+%    \precisfont}
+% \renewcommand{\postchapterprecis}{}
 
 \DeclareMathOperator{\tr}{Tr}
 
 
 \begin{document}
+\renewcommand{\abstractname}{}
+\renewcommand{\absnamepos}{empty}
 
 \pagestyle{simple}
 
@@ -104,7 +111,7 @@
 \author{Geert Kapteijns}
 \date{\today}
 
-\input{chapters/titlepage}
+% \input{chapters/titlepage}
 
 \begingroup
 \renewcommand{\afterchaptertitle}{\vskip1.5em}
@@ -126,8 +133,8 @@
 % \chapter{Density matrix renormalization group method}
 % \input{chapters/dmrg}
 %
-% \chapter{DRMG applied to two-dimensional classical lattice models}
-% \input{chapters/dmrg_2d_classical}
+\chapter{DRMG applied to two-dimensional classical lattice models}
+\input{chapters/dmrg_2d_classical}
 %
 % \chapter{Critical behaviour and finite-size scaling}
 % \input{chapters/critical_behaviour_and_finite_size_scaling}

@@ -1,9 +1,10 @@
-
-\chapterprecishere{The density matrix renormalization group, proposed in 1992 by White
+\begin{abstract}
+\noindent The density matrix renormalization group, proposed in 1992 by White
 \cite{white1992density}, is introduced in its historical context. To highlight the ideas
 that led to this method, we explain the real-space renormalization group, proposed by
 Wilson \cite{wilson1975renormalization} in 1975. We then explain how the shortcomings of
-Wilson's method led to the density matrix renormalization group.}
+Wilson's method led to the density matrix renormalization group.
+\end{abstract}
 
 \section{Introduction}
 Consider the problem of numerically finding the ground state $\ket{\Psi_0}$ of an
@@ -33,15 +34,12 @@ very well approximated by a polynomial number of parameters. This explains the e
 of algorithms, of which the density matrix normalization group is the most widely
 celebrated one, that can approximate certain quantum systems to machine precision.
 
-\todo[inline]{Refer to where this will be made more precise.}
-
 \section{Density matrix renormalization group}
 
 The density matrix renormalization group (DMRG), introduced in 1992 by
 White \cite{white1992density}, aims to find the best approximation of
 a many-body quantum state, given that only a fixed amount of basis vectors
 is kept. This amounts to finding the best truncation
-
 \begin{equation}
   \mathcal{H}_N \rightarrow \mathcal{H}_{\text{eff}}
 \end{equation}
@@ -58,11 +56,12 @@ invention of the density-matrix renormalization group method by White.
 Consider again the problem of finding the ground state of a many-body
 Hamiltonian $H$. A natural way of renormalizing $H$ in real-space is by
 partitioning the lattice in blocks, and writing $H$ as
-
 \begin{equation}
   H = H_A \otimes \ldots \otimes H_A
 \end{equation}
-where $H_A$ is the Hamiltonian of a block. \todo[inline]{Make figures.} The real-space
+where $H_A$ is the Hamiltonian of a block.
+
+The real-space
 renormalization procedure now entails finding an effective Hamiltonian $H_{A}'$ of the
 two-block Hamiltonian $H_{AA} = H_A \otimes H_A$. In the method introduced
 by Wilson, $H_{A}'$ is formed by keeping the $m$ lowest lying eigenstates
@@ -78,6 +77,7 @@ with $O$ an $m \times 2^L$ matrix, with rows being the $m$ lowest-lying
 eigenvectors of $H_{AA}$, and $L$ the number of lattice sites of a block. At
 the fixed point of this iteration procedure, $H_A$ represents the
 Hamiltonian of an infinite chain.
+
 In choosing this truncation, it is assumed that the
 low-lying eigenstates of the system in the thermodynamic limit are
 composed of low-lying eigenstates of smaller blocks.
@@ -107,7 +107,7 @@ combining the lowest eigenstates of each.
 Additionally, they noted that
 diagonalizing $p > 2$ blocks, and projecting out $p - 2$ blocks to arrive
 at $H_{AA}$ also gives accurate results, and that this is a generalization
-of applying multiple boundary conditions. \todo[inline]{Figure.}
+of applying multiple boundary conditions.
 
 In the limit $p \to \infty$
 this method becomes exact, since we then find exactly the correct
@@ -198,8 +198,6 @@ finding the ground state of a system in the thermodynamic limit proceeds
 as follows.
 
 \subsection{Infinite-system method}
-
-\todo[inline]{Add figures.} \todo[inline]{Mention boundary conditions somewere}
 Instead of using an exponential blocking procedure (doubling or tripling the
 amount of effective sites in a block at each iteration), the infinite-system
 method in the DMRG formulation adds a single site before truncating the Hilbert
@@ -257,9 +255,5 @@ space to have at most $m$ basis states.
 
 \end{enumerate}
 
-\todo[inline]{Expand. Present or link to some results. Finite-system algorithm. Maybe in
-other chapter: rephrase in MPS, validity of approximation: primer on entropy and
-eigenvalue spectrum of density matrix.}
-
-This methods finds ground state energies with astounding accuracy, and has been
+This method finds ground state energies in the thermodynamic limit with astounding accuracy, and has been
 the reference point in all 1D quantum lattice simulation since its invention.
