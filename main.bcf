@@ -2077,15 +2077,10 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">nishino1996numerical</bcf:citekey>
-    <bcf:citekey order="2">nishino1996numerical</bcf:citekey>
-    <bcf:citekey order="3">tagliacozzo2008scaling</bcf:citekey>
-    <bcf:citekey order="4">pollmann2009theory</bcf:citekey>
-    <bcf:citekey order="5">bhattacharjee2001measure</bcf:citekey>
-    <bcf:citekey order="6">pollmann2009theory</bcf:citekey>
-    <bcf:citekey order="7">vidal2007classical</bcf:citekey>
-    <bcf:citekey order="8">tagliacozzo2008scaling</bcf:citekey>
-    <bcf:citekey order="9">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="1">okunishi1999universal</bcf:citekey>
+    <bcf:citekey order="1">davies1988corner</bcf:citekey>
+    <bcf:citekey order="1">peschel2009reduced</bcf:citekey>
+    <bcf:citekey order="2">okunishi1999universal</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

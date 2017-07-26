@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  26 JUL 2017 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  26 JUL 2017 22:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2722,14 +2722,17 @@ Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `grouplegend' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 101.
 LaTeX Font Info:    Try loading font information for OML+zbami on input line 10
 1.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
 File: omlzbami.fd 2016/11/11 Fontinst v1.933 font definitions for OML/zbami.
 )
 LaTeX Font Info:    ... okay on input line 101.
@@ -2921,52 +2924,36 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 149.
+(Font)              scaled to size 17.28pt on input line 146.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 149.
- (./chapters/results.tex
+(Font)              scaled to size 17.28pt on input line 146.
+ (./chapters/methods.tex
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 2.
+(Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 2.
+(Font)              scaled to size 6.2pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 2.
+(Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 6.2pt on input line 2.
+(Font)              scaled to size 6.2pt on input line 4.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 20.
+(Font)              scaled to size 10.95pt on input line 16.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 20.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 22.
-
-
-LaTeX Warning: Reference `sec:definition_effective_length_scale_in_terms_of_xi'
- on page 1 undefined on input line 28.
-
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 33.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
-
-LaTeX Warning: Reference `sec:magnetization_per_site' on page 1 undefined on in
-put line 33.
-
-[1
+(Font)              scaled to size 10.95pt on input line 16.
+ [1
 
 
 ]
-
-LaTeX Warning: Reference `sec:spectrum_of_ctm' on page 2 undefined on input lin
-e 48.
-
-(./plots/order_parameter_power_law_fit.tikz
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 37.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 67.
+ [2]
+(./plots/convergence_vs_n.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -2987,338 +2974,521 @@ PGFPlots: reading {main.pgf-plot.table}
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+) (./plots/convergence_finite_chi.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+
+NOTE: coordinate (1.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (4.0000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (9.2000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (9.0000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (3.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (6.8000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (4.8000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (5.2000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (9.0000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (6.2000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (6.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (7.8000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (9.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (6.8000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (7.8000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (7.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (9.0000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (6.4000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (8.2000000e+04,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e+05,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 )
-Overfull \hbox (7.64594pt too wide) in paragraph at lines 48--61
+Overfull \hbox (11.95633pt too wide) in paragraph at lines 63--110
  [][] 
  []
 
-[2]
-Overfull \hbox (1.04477pt too wide) in paragraph at lines 85--87
-[][][]\T1/BaskervilleF-TLF/m/n/9 Fig. 1.3[][][] shows the cross-over be-haviour
- from the $\OML/zbami/m/it/9 N$\T1/BaskervilleF-TLF/m/n/9 -limiting regime, whe
-re
+(./plots/stepwise_diffs_vs_tolerance.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+
+NOTE: coordinate (1.0000000e-11,-1.3322700e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,-3.5527100e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-08,-0.0000000e+00) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-10,-8.8817800e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-11,-5.3290700e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,-2.6645400e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-10,-1.3322700e-15) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (1.0000000e-09,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-10,-4.4408900e-16) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1.0000000e-11,-0.0000000e+00) has been dropped because it is 
+unbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+Overfull \hbox (2.21434pt too wide) in paragraph at lines 83--118
+ [][] 
  []
 
-(./plots/data_collapse_nishino.tikz
+[3] [4]
+
+LaTeX Warning: Reference `sec:spectrum_of_ctm' on page 5 undefined on input lin
+e 149.
+
+[5] [6] (./plots/quantities_vs_chi.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-) (./plots/crossover_nishino.tikz
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-) [3]
-(./plots/entropy_vs_correlation_length.tikz
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+NOTE: coordinate (2.0000000e+02,0.0000000e+00) has been dropped because it is u
+nbounded (in y). (see also unbounded coords=jump). 
 )
-
-LaTeX Warning: Reference `eq:entropy_scaling_near_criticality' on page 4 undefi
-ned on input line 132.
-
-[4]
-
-LaTeX Warning: Reference `eq:correlation_length_row_to_row_transfer_matrix' on 
-page 5 undefined on input line 143.
-
-(./plots/order_parameter_power_law_fit_entropy.tikz
-Missing character: There is no ; in font nullfont!
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-)
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 157.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 157.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\kappa' on input line 157.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
-
-[5]
-
-LaTeX Warning: Reference `sec:spectrum_of_ctm' on page 6 undefined on input lin
-e 167.
-
-[6]
-
-LaTeX Warning: Reference `eq:entropy_scaling_near_criticality' on page 7 undefi
-ned on input line 188.
-
-
-LaTeX Warning: Reference `eq:classical_entropy' on page 7 undefined on input li
-ne 188.
-
-(./plots/support_for_kappa.tikz
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-)
-Underfull \hbox (badness 1478) in paragraph at lines 200--200
-[]\T1/BaskervilleF-TLF/m/n/9 Figure 1.6: |Nu-mer-i-cal ev-i-dence for [][]Eq. 1
-.8[][][], [][]Eq. 1.9[][][], [][]Eq. 1.11[][][] with
+Overfull \hbox (4.47511pt too wide) in paragraph at lines 64--186
+ [][] 
  []
 
-
-Underfull \hbox (badness 1552) in paragraph at lines 200--200
-\T1/BaskervilleF-TLF/m/n/9 fixed bound-ary, yield-ing, from left to right and t
-op to bot-tom, $\OML/zbami/m/it/9 ^^T \U/ntxmia/m/it/9 =
- []
-
-(./plots/support_for_kappa_free.tikz
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-)
-
-LaTeX Warning: Reference `sec:implications_for_finite_m_simulations' on page 7 
-undefined on input line 214.
-
-
-LaTeX Warning: Reference `sec:implications_for_finite_m_simulations' on page 7 
-undefined on input line 214.
-
-
-LaTeX Warning: Reference `eq:exact_value_kappa' on page 7 undefined on input li
-ne 220.
-
-
-LaTeX Warning: Reference `sec:locating_critical_point_entanglement' on page 7 u
-ndefined on input line 234.
-
-
-LaTeX Warning: Reference `eq:scaling_law_T_star' on page 7 undefined on input l
-ine 238.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
-
-
-LaTeX Warning: Reference `sec:definition_effective_length_scale_in_terms_of_xi'
- on page 7 undefined on input line 243.
-
-[7]
-
-LaTeX Warning: Reference `eq:correlation_length_row_to_row_transfer_matrix' on 
-page 8 undefined on input line 249.
-
-[8] [9]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 287.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 287.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 294.
-
-
-LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
-line 305.
-
-
-LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
-line 305.
-
-(./plots/entropy_vs_T.tikz
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-Missing character: There is no ; in font nullfont!
-)
-
-LaTeX Warning: Reference `eq:classical_entropy' on page 10 undefined on input l
-ine 311.
-
-
-LaTeX Warning: Reference `eq:classical_entropy' on page 10 undefined on input l
-ine 311.
-
-(./plots/T_pseudocrit_chi_power_law_fit.tikz
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
+(./plots/stepwise_diffs_vs_m.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -3360,387 +3530,91 @@ runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
 )
-
-LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
-line 318.
-
-
-LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
-line 318.
-
-[10]
-
-LaTeX Warning: Reference `eq:fitness_data_collapse' on page 11 undefined on inp
-ut line 336.
-
-(./plots/data_collapse_chi.tikz
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-\openout5 = `main.pgf-plot.gnuplot'.
-
-runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
-
-PGFPlots: reading {main.pgf-plot.table}
-)
-
-LaTeX Warning: Float too large for page by 16.36656pt on input line 350.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 352.
-
-
-LaTeX Warning: Reference `eq:fitness_data_collapse' on page 11 undefined on inp
-ut line 364.
-
-
-LaTeX Warning: Reference `eq:fitness_data_collapse' on page 11 undefined on inp
-ut line 364.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 371.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 371.
-
-[11] [12] [13]
-
-LaTeX Warning: Reference `sec:simulations_with_finite_system_size' on page 14 u
-ndefined on input line 387.
-
-
-LaTeX Warning: Reference `sec:simulations_with_finite_bond_dimension' on page 1
-4 undefined on input line 393.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 396.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\kappa' on input line 396.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 396.
-
-[14]) [15]
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Overfull \hbox (0.40271pt too wide) in paragraph at lines 169--169
-[]\T1/BaskervilleF-TLF/m/n/9 T. Nishino, K. Oku-n-ishi, and M. Kikuchi, ^^P  Nu
--mer-i-cal renor-mal-iza-tion group
- []
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 168.
+(Font)              scaled to size 9.0pt on input line 206.
 
-Overfull \hbox (12.56697pt too wide) in paragraph at lines 169--169
-[]\T1/BaskervilleF-TLF/m/n/9 R. J. Bax-ter, \T1/BaskervilleF-TLF/m/it/9 Ex-actl
-y solved mod-els in sta-tis-ti-cal me-chan-ics \T1/BaskervilleF-TLF/m/n/9 (El-s
-e-vier, 1982) Chap. 13. 
- []
 
-[16
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 213.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 226.
+
+) [7] [8] [9]
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+[10
 
 
 ]
@@ -3753,23 +3627,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 70E9EEEADABA5067536718DF56768CFC;1095.
+(rerunfilecheck)             Checksum: DA6450DF72ADA775A4C1D8662C1D5B7B;693.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52670 strings out of 493014
- 1148794 string characters out of 6133351
- 1981881 words of memory out of 5000000
- 55197 multiletter control sequences out of 15000+600000
- 378166 words of font info for 193 fonts, out of 8000000 for 9000
+ 52600 strings out of 493014
+ 1146675 string characters out of 6133351
+ 1865373 words of memory out of 5000000
+ 55164 multiletter control sequences out of 15000+600000
+ 384758 words of font info for 232 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,112p,10417b,2671s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,19n,112p,12719b,2362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
 enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
@@ -3779,13 +3656,13 @@ BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/t
-xsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrw8a
-.pfb>
-Output written on main.pdf (17 pages, 309374 bytes).
+/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts
+/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.p
+fb>
+Output written on main.pdf (11 pages, 198761 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

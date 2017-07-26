@@ -19,211 +19,104 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
-    \entry{nishino1996numerical}{article}{}
+    \entry{okunishi1999universal}{article}{}
       \name{author}{3}{}{%
-        {{hash=0481bd1868281072e0d664b2e5dccb42}{%
-           family={Nishino},
-           family_i={N\bibinitperiod},
-           given={T.},
-           given_i={T\bibinitperiod}}}%
         {{hash=796d0b09ba142fbdae193488b57b87c6}{%
            family={Okunishi},
            family_i={O\bibinitperiod},
            given={K.},
            given_i={K\bibinitperiod}}}%
-        {{hash=b450c83841b4182cb4c259fe2f9c60bd}{%
-           family={Kikuchi},
-           family_i={K\bibinitperiod},
-           given={M.},
-           given_i={M\bibinitperiod}}}%
+        {{hash=869003960519dd65caf7d0937b53778d}{%
+           family={Hieida},
+           family_i={H\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=e96bdba173a48b9e6b25db1d893bf745}{%
+           family={Akutsu},
+           family_i={A\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{9c89edb1bf617a553ea7dfd621808031}
+      \strng{fullhash}{71c3e16fe0dc102705027cb9478c0ed6}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{6}
+      \field{title}{Universal asymptotic eigenvalue distribution of density matrices and corner transfer matrices in the thermodynamic limit}
+      \field{volume}{59}
+      \field{year}{1999}
+      \field{pages}{R6227}
+      \range{pages}{-1}
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevE.59.R6227
+      \endverb
+    \endentry
+    \entry{davies1988corner}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9d03e2d25ca50da5189dae2609e7d7fd}{%
+           family={Davies},
+           family_i={D\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
       }
-      \strng{namehash}{cfe1358022976657390cd0581c774187}
-      \strng{fullhash}{b104a0395c60818e7d96592b8b74b5d8}
+      \strng{namehash}{9d03e2d25ca50da5189dae2609e7d7fd}
+      \strng{fullhash}{9d03e2d25ca50da5189dae2609e7d7fd}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Physics Letters A}
-      \field{number}{1-2}
-      \field{title}{Numerical renormalization group at criticality}
-      \field{volume}{213}
-      \field{year}{1996}
-      \field{pages}{69\bibrangedash 72}
-      \range{pages}{4}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{1}
+      \field{title}{Corner transfer matrices for the {Ising} model}
+      \field{volume}{154}
+      \field{year}{1988}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
       \verb{url}
-      \verb https://doi.org/10.1016/0375-9601(96)00128-4
+      \verb https://doi.org/10.1016/0378-4371(88)90178-1
       \endverb
     \endentry
-    \entry{tagliacozzo2008scaling}{article}{}
-      \name{author}{4}{}{%
-        {{hash=60cf28156f2ce5aa5ff1fbc3f4c10d32}{%
-           family={Tagliacozzo},
-           family_i={T\bibinitperiod},
-           given={L.},
-           given_i={L\bibinitperiod}}}%
-        {{hash=34d42dae2e062bd593bb01839e37ba5e}{%
-           family={De\bibnamedelima Oliveira},
-           family_i={D\bibinitperiod\bibinitdelim O\bibinitperiod},
-           given={T.\bibnamedelimi R.},
-           given_i={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=6a1b27ce006a8c740d9aca1755c36626}{%
-           family={Iblisdir},
-           family_i={I\bibinitperiod},
-           given={S.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=9f8cd46280dce3c312d3853fbdbc4789}{%
-           family={Latorre},
-           family_i={L\bibinitperiod},
-           given={J.\bibnamedelimi I.},
-           given_i={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{6807ee2b161ad335767dfc1b6a1edb4d}
-      \strng{fullhash}{fe74e14abaa9e3ca6fda1a10cf7c70f8}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review B}
-      \field{number}{2}
-      \field{title}{Scaling of entanglement support for matrix product states}
-      \field{volume}{78}
-      \field{year}{2008}
-      \field{pages}{024410}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevB.78.024410
-      \endverb
-    \endentry
-    \entry{pollmann2009theory}{article}{}
-      \name{author}{4}{}{%
-        {{hash=dc4d3fa9ab3b4c2f36bc98342eb2ccc7}{%
-           family={Pollmann},
-           family_i={P\bibinitperiod},
-           given={F.},
-           given_i={F\bibinitperiod}}}%
-        {{hash=8f47998f95e6b3357329b7fb3ae7967a}{%
-           family={Mukerjee},
-           family_i={M\bibinitperiod},
-           given={S.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=c56282ffc535a7c015d94fba3b6b78dc}{%
-           family={Turner},
-           family_i={T\bibinitperiod},
-           given={A.\bibnamedelimi M.},
-           given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=5b3623959558d1b3c31acab3a064caf3}{%
-           family={Moore},
-           family_i={M\bibinitperiod},
-           given={J.\bibnamedelimi E.},
-           given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{25cbc11eecbb2e5e1a27a13546d68b6f}
-      \strng{fullhash}{3fdceca52c5c0222d525c5d376685f9e}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{25}
-      \field{title}{Theory of finite-entanglement scaling at one-dimensional quantum critical points}
-      \field{volume}{102}
-      \field{year}{2009}
-      \field{pages}{255701}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevLett.102.255701
-      \endverb
-    \endentry
-    \entry{bhattacharjee2001measure}{article}{}
+    \entry{peschel2009reduced}{article}{}
       \name{author}{2}{}{%
-        {{hash=92bc4b8660e65c901514570254f077b3}{%
-           family={Bhattacharjee},
-           family_i={B\bibinitperiod},
-           given={S.\bibnamedelimi M.},
-           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=4b8b236dca3f1c5bf3bf7d2b2e78d21c}{%
-           family={Seno},
-           family_i={S\bibinitperiod},
-           given={F.},
-           given_i={F\bibinitperiod}}}%
+        {{hash=a8e231c904a9df3e5300782b54c0a49a}{%
+           family={Peschel},
+           family_i={P\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=26f4c78065bf22cb415872eddefdead3}{%
+           family={Eisler},
+           family_i={E\bibinitperiod},
+           given={V.},
+           given_i={V\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {IOP Publishing}%
       }
-      \strng{namehash}{4a8d93d5b0e54b825b0741696d6ada2d}
-      \strng{fullhash}{4a8d93d5b0e54b825b0741696d6ada2d}
+      \strng{namehash}{3e5d344b4c0dd56687ad0fcf7501ea23}
+      \strng{fullhash}{3e5d344b4c0dd56687ad0fcf7501ea23}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics A: Mathematical and General}
-      \field{number}{33}
-      \field{title}{A measure of data collapse for scaling}
-      \field{volume}{34}
-      \field{year}{2001}
-      \field{pages}{6375}
+      \field{journaltitle}{Journal of Physics A: Mathematical and Theoretical}
+      \field{number}{50}
+      \field{title}{Reduced density matrices and entanglement entropy in free lattice models}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{pages}{504003}
       \range{pages}{1}
       \verb{url}
-      \verb https://doi.org/10.1088/0305-4470/34/33/302
+      \verb https://doi.org/10.1088/1751-8113/42/50/504003
       \endverb
-    \endentry
-    \entry{vidal2007classical}{article}{}
-      \name{author}{1}{}{%
-        {{hash=b11973d196179a77278edeaa262f44e0}{%
-           family={Vidal},
-           family_i={V\bibinitperiod},
-           given={G.},
-           given_i={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{b11973d196179a77278edeaa262f44e0}
-      \strng{fullhash}{b11973d196179a77278edeaa262f44e0}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{number}{7}
-      \field{title}{Classical simulation of infinite-size quantum lattice systems in one spatial dimension}
-      \field{volume}{98}
-      \field{year}{2007}
-      \field{pages}{070201}
-      \range{pages}{1}
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevLett.98.070201
-      \endverb
-    \endentry
-    \entry{baxter1982exactly_ctm}{book}{}
-      \name{author}{1}{}{%
-        {{hash=ed0df457cfd5c4c92016a5a14719247f}{%
-           family={Baxter},
-           family_i={B\bibinitperiod},
-           given={R.\bibnamedelimi J.},
-           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{ed0df457cfd5c4c92016a5a14719247f}
-      \strng{fullhash}{ed0df457cfd5c4c92016a5a14719247f}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{chapter}{13}
-      \field{title}{Exactly solved models in statistical mechanics}
-      \field{year}{1982}
     \endentry
   \endsortlist
 \endrefsection

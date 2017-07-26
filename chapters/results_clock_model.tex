@@ -1,6 +1,19 @@
 \begin{abstract}
-We present results of scaling in bond dimension and system size with the CTMRG algorithm for the
-five- and six-state clock model.
+\noindent We present a numerical study of the square-lattice clock model with $q = \{5, 6\}$ states.
+We employ the corner transfer matrix renormalization group method,
+working in both finite-size and finite-$m$ regimes.
+
+The model has a low-temperature ordered phase, a massless phase and a high-temperature disordered phase.
+We locate the transition temperatures $T_1$ and $T_2$ by extrapolating the positions of pseudocritical temperatures,
+assuming the transitions are of the Kosterlitz-Thouless type.
+
+The pseudocritical temperature is defined as the point where the classical analogue of the entanglement entropy reaches
+its maxixum. For free (fixed) boundary conditions the entropy peaks near $T_1$ ($T_2$).
+
+In addition, we calculate the central charge and the magnetization exponent in the massless phase.
+In comparison with exact results for the Villain formulation, the magnetization exponent suggests that the locations of
+$T_1$ and $T_2$ found in this work might underestimate the extent of the massless phase,
+but we argue it is plausible that this is due to finite-size effects.
 \end{abstract}
 
 \section{Introduction}
@@ -62,7 +75,8 @@ In our simulations we will focus on the cases $q = 5, 6$, to (i) study the natur
 perspective provided by the corner transfer matrix formalism and (ii) compare the accuracy of finite-$m$ and finite-$N$
 scaling within the CTMRG method to other established numerical methods.
 
-We briefly summarise previous numerical results, then present results obtained with the CTMRG algorithm.
+We summarise previous numerical results, then present results obtained with the CTMRG algorithm and finish with a
+discussion.
 
 \section{Previous numerical results}
 \subsection{The $q = 5$ clock model}
@@ -228,7 +242,6 @@ boundary, yielding
 For a fixed boundary, the point of maximum entropy approaches the massless phase from the high-temperature region,
 hence tending towards $T_2$.
 In contrast, the point of maximum entropy approaches $T_1$ for systems with a free boundary.
-\todo[inline]{Maybe make intuitive why?}
 
 \autoref{figure:entropy_and_order_param_vs_T_clock5} and \autoref{figure:entropy_and_order_param_vs_T_clock6} show
 these quantities for $q = 5$ and $q = 6$ for systems with a fixed boundary, clearly confirming the three-phase picture.
@@ -503,30 +516,29 @@ This did not significantly influence the values of $c$ and $\eta$ found.
 Overall, the values of $T_1$ and $T_2$ for $q = \{ 5, 6 \}$ in this work agree reasonable well with the values found by
 other authors, see \autoref{table:q5_previous_results} and \autoref{table:q6_previous_results}.
 
-Finite-size scaling within the CTMRG suffers more from finite-size effects than finite-$m$ scaling,
-since smaller system sizes are accessible.
+Finite-size scaling within the CTMRG suffers more from finite-size effects than finite-$m$ scaling does,
+since with finite-size simulations smaller system sizes can be reached.
+
 It is plausible that this is the reason that finite-size scaling yields values of the critical temperatures that differ
 somewhat from previous results and the results of finite-$m$ scaling.
 
-There are two straightforward ways that might improve the finite-size results.
-The first is to systematically study how the chosen bond dimension (and correspondingly,
-the truncation error) influences the precision of the pseudocritical point.
-A start with this has been made in \autoref{sec:simulations_with_finite_system_size} for the Ising model.
-It might be possible to simulate larger system sizes without much loss of accuracy,
-but it seems unlikely that the same system sizes as in the finite-$m$ regime are accessible.
-Furthermore, for finite-$m$ results it is much easier to assess the convergence of quantities (see
-\autoref{sec:simulations_with_finite_bond_dimension}).
+The discussion in \autoref{sec:finite_m_vs_finite_N} for the Ising model is applicable here as well. In summary,
+the most straightforward way of improving finite-size results is to include finite-size corrections,
+which should be feasible since the data is of high quality.
+In conjunction with this, a more systematic study of the convergence of quantities and the location of the
+pseudocritical points (extending results in \autoref{sec:simulations_with_finite_system_size}) may reveal that
+simulating larger system sizes is in fact possible without too much loss of accuracy.
 
-However, finite-size data is of much higher quality than the finite-$m$ data,
-since the latter suffers from structure due to the spectrum of the corner transfer matrix.
-Therefore, it is not unlikely that results might improve if correction to scaling terms are included in the fits.
+For finite-$m$ scaling, inherent deviations from the basic scaling laws, stemming from the underlying CTM spectrum, make
+including finite-size corrections less feasible.
+Using $m$-values that are far apart or that are specifically selected to mitigate the effects of the half-moon patterns
+may yield better results.
 
 Results for the exponent $\eta$ indicate that the critical temperatures found in both this study and previous work might
 be too close together.
-In further studies, it is necessary to consider larger systems (in both finite-$m$ and finite-size studies)
-and take corrections to scaling properly into account (in the finite-size study).
-It is conceivable that this causes both critical temperatures and the values of $\eta$ to be adjusted outwards
-towards their true values, thereby completely reconciling the results.
+It is conceivable that, after considering larger systems and taking into account finite-size corrections,
+both critical temperatures and the values of $\eta$ will be adjusted outwards towards their true values,
+thereby completely reconciling the results.
 
 \subsection{Other means of studying the transitions $T_1$ and $T_2$}
 

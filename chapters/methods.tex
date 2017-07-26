@@ -1,6 +1,16 @@
 \begin{abstract}
-We describe the technical details of the algorithms used to compute quantities of interest.
-We report the convergence behaviour of the algorithms and discuss validity and sources of error.
+\noindent We describe some technical details of the CTMRG algorithm.
+
+We then report convergence behaviour in the number of steps of the algorithm $n$ and a convergence threshold
+$\epsilon$. $\epsilon$ is based on the change of eigenvalues of the corner transfer matrix after an algorithm step.
+We find a precise way to extrapolate values of observables in the limit $\epsilon \to 0$.
+
+After that, we turn to finite-size approximations.
+Convergence in the limit $m \to \infty$ is harder to extrapolate, but we can still draw some conclusions.
+
+Finally, we give a table with relative errors of observables at the critical point of the Ising model for both
+finite-$m$ and finite-size approximations, obtained with values of parameters that are typically used throughout the
+rest of this thesis.
 \end{abstract}
 
 \section{Symmetricity and normalization of tensors}
@@ -25,8 +35,8 @@ For specific purposes, free boundary conditions are used.
 \section{Convergence criteria}\label{sec:convergence_criteria}
 
 \subsection{Simulations with finite bond dimension}\label{sec:simulations_with_finite_bond_dimension}
-The convergence of the CTMRG algorithm with fixed bond dimension $m$ (the infinite system algorithm) can be defined
-in multiple ways (\emph{cite}). In this thesis, the convergence after step $n$ of the algorithm is defined as
+The convergence of the CTMRG algorithm with fixed bond dimension $m$ (the infinite system algorithm) in this thesis is
+defined as
 \begin{equation}\label{eq:convergence}
   c_n = \sum_{\alpha = 1}^{m} | s_{\alpha}^{(n)} - s_{\alpha}^{(n - 1)} |,
 \end{equation}
@@ -48,7 +58,7 @@ phenomenological law
   \log c_n \propto n
 \end{equation}
 holds to high precision, with the slope depending on $m$.
-Deviations only occur at values of $c$ of around $10^{-12}$.
+Deviations only occur at values of the convergence of around $10^{-12}$.
 
 The convergence of the various quantities as function of the number of algorithm steps is shown in
 \autoref{fig:convergence_finite_chi}. For all quantities $Q$, the absolute value of the relative difference

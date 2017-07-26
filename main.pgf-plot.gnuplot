@@ -1,2 +1,2 @@
 set table "main.pgf-plot.table"; set format "%.5f"
-set format "%.7e";; plot 'plots/data/data_collapse_N160-1500_max_trunc_error1e-6.dat'index 0
+set format "%.7e";; plot 'plots/data/stepwise_diff_vs_chi_Tcrit_plateau_values_N50-2200.dat'index 0
