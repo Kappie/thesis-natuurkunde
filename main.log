@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  25 JUL 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  26 JUL 2017 11:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1932,18 +1932,37 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 ))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
+\csq@reset=\count187
+\csq@gtype=\count188
+\csq@glevel=\count189
+\csq@qlevel=\count190
+\csq@maxlvl=\count191
+\csq@tshold=\count192
+\csq@ltx@everypar=\toks43
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
 (./images/tikz_declarations.tex
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks43
-\t@pgfplots@tokb=\toks44
-\t@pgfplots@tokc=\toks45
+\t@pgfplots@toka=\toks44
+\t@pgfplots@tokb=\toks45
+\t@pgfplots@tokc=\toks46
 \pgfplots@tmpa=\dimen292
-\c@pgfplots@coordindex=\count187
-\c@pgfplots@scanlineindex=\count188
+\c@pgfplots@coordindex=\count193
+\c@pgfplots@scanlineindex=\count194
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1959,7 +1978,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count189
+\c@pgfmathroundto@lastzeros=\count266
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
 .tex
@@ -1969,14 +1988,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count190
+\c@pgfplotsarray@tmp=\count267
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count191
-\t@pgfplotstable@a=\toks46
+\c@pgfplotstable@counta=\count268
+\t@pgfplotstable@a=\toks47
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -1988,7 +2007,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count192
+\c@pgfplotslibrarysurf@no=\count269
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -2025,7 +2044,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen295
 \pgfdecoratedinputsegmentremainingdistance=\dimen296
 \pgf@decorate@distancetomove=\dimen297
-\pgf@decorate@repeatstate=\count193
+\pgf@decorate@repeatstate=\count270
 \pgfdecorationsegmentamplitude=\dimen298
 \pgfdecorationsegmentlength=\dimen299
 )
@@ -2039,7 +2058,7 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count194
+\pgfplots@numplots=\count271
 \pgfplots@xmin@reg=\dimen300
 \pgfplots@xmax@reg=\dimen301
 \pgfplots@ymin@reg=\dimen302
@@ -2072,24 +2091,24 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count266
-\l_tmpa_int=\count267
-\l_tmpb_int=\count268
-\g_tmpa_int=\count269
-\g_tmpb_int=\count270
+\c_max_int=\count272
+\l_tmpa_int=\count273
+\l_tmpb_int=\count274
+\g_tmpa_int=\count275
+\g_tmpb_int=\count276
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count271
+\g__prg_map_int=\count277
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count272
-\l__iow_target_count_int=\count273
-\l__iow_current_line_int=\count274
-\l__iow_current_word_int=\count275
-\l__iow_current_indentation_int=\count276
+\l_iow_line_count_int=\count278
+\l__iow_target_count_int=\count279
+\l__iow_current_line_int=\count280
+\l__iow_current_word_int=\count281
+\l__iow_current_indentation_int=\count282
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen306
 \c_max_dim=\dimen307
@@ -2110,18 +2129,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count277
-\l_keys_choice_int=\count278
+\g__keyval_level_int=\count283
+\l_keys_choice_int=\count284
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count279
-\c__fp_middle_shift_int=\count280
-\c__fp_trailing_shift_int=\count281
-\c__fp_big_leading_shift_int=\count282
-\c__fp_big_middle_shift_int=\count283
-\c__fp_big_trailing_shift_int=\count284
-\c__fp_Bigg_leading_shift_int=\count285
-\c__fp_Bigg_middle_shift_int=\count286
-\c__fp_Bigg_trailing_shift_int=\count287
+\c__fp_leading_shift_int=\count285
+\c__fp_middle_shift_int=\count286
+\c__fp_trailing_shift_int=\count287
+\c__fp_big_leading_shift_int=\count288
+\c__fp_big_middle_shift_int=\count289
+\c__fp_big_trailing_shift_int=\count290
+\c__fp_Bigg_leading_shift_int=\count291
+\c__fp_Bigg_middle_shift_int=\count292
+\c__fp_Bigg_trailing_shift_int=\count293
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box46
 \l_tmpa_box=\box47
@@ -2171,15 +2190,15 @@ L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count288
+\l__driver_color_stack_int=\count294
 \l__driver_tmp_box=\box61
 ))
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count289
-\l__xparse_m_args_int=\count290
-\l__xparse_mandatory_args_int=\count291
-\l__xparse_processor_int=\count292
-\l__xparse_v_nesting_int=\count293
+\l__xparse_current_arg_int=\count295
+\l__xparse_m_args_int=\count296
+\l__xparse_mandatory_args_int=\count297
+\l__xparse_processor_int=\count298
+\l__xparse_v_nesting_int=\count299
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2327,9 +2346,9 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 ts.patchplots.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.groupplots.code.tex
-\pgfplots@group@current@plot=\count294
-\pgfplots@group@current@row=\count295
-\pgfplots@group@current@column=\count296
+\pgfplots@group@current@plot=\count300
+\pgfplots@group@current@row=\count301
+\pgfplots@group@current@column=\count302
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
@@ -2365,7 +2384,7 @@ and LuaTeX
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count297
+\lrq@indent=\count303
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -2374,44 +2393,44 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count298
-\c@listtotal=\count299
-\c@listcount=\count300
-\c@liststart=\count301
-\c@liststop=\count302
-\c@citecount=\count303
-\c@citetotal=\count304
-\c@multicitecount=\count305
-\c@multicitetotal=\count306
-\c@instcount=\count307
-\c@maxnames=\count308
-\c@minnames=\count309
-\c@maxitems=\count310
-\c@minitems=\count311
-\c@citecounter=\count312
-\c@savedcitecounter=\count313
-\c@uniquelist=\count314
-\c@uniquename=\count315
-\c@refsection=\count316
-\c@refsegment=\count317
-\c@maxextratitle=\count318
-\c@maxextratitleyear=\count319
-\c@maxextrayear=\count320
-\c@maxextraalpha=\count321
-\c@abbrvpenalty=\count322
-\c@highnamepenalty=\count323
-\c@lownamepenalty=\count324
-\c@maxparens=\count325
-\c@parenlevel=\count326
-\blx@tempcnta=\count327
-\blx@tempcntb=\count328
-\blx@tempcntc=\count329
-\blx@maxsection=\count330
-\blx@maxsegment@0=\count331
-\blx@notetype=\count332
-\blx@parenlevel@text=\count333
-\blx@parenlevel@foot=\count334
-\blx@sectionciteorder@0=\count335
+\c@tabx@nest=\count304
+\c@listtotal=\count305
+\c@listcount=\count306
+\c@liststart=\count307
+\c@liststop=\count308
+\c@citecount=\count309
+\c@citetotal=\count310
+\c@multicitecount=\count311
+\c@multicitetotal=\count312
+\c@instcount=\count313
+\c@maxnames=\count314
+\c@minnames=\count315
+\c@maxitems=\count316
+\c@minitems=\count317
+\c@citecounter=\count318
+\c@savedcitecounter=\count319
+\c@uniquelist=\count320
+\c@uniquename=\count321
+\c@refsection=\count322
+\c@refsegment=\count323
+\c@maxextratitle=\count324
+\c@maxextratitleyear=\count325
+\c@maxextrayear=\count326
+\c@maxextraalpha=\count327
+\c@abbrvpenalty=\count328
+\c@highnamepenalty=\count329
+\c@lownamepenalty=\count330
+\c@maxparens=\count331
+\c@parenlevel=\count332
+\blx@tempcnta=\count333
+\blx@tempcntb=\count334
+\blx@tempcntc=\count335
+\blx@maxsection=\count336
+\blx@maxsegment@0=\count337
+\blx@notetype=\count338
+\blx@parenlevel@text=\count339
+\blx@parenlevel@foot=\count340
+\blx@sectionciteorder@0=\count341
 \labelnumberwidth=\skip260
 \labelalphawidth=\skip261
 \biblabelsep=\skip262
@@ -2421,9 +2440,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip266
 \blx@bcfin=\read3
 \blx@bcfout=\write6
-\c@mincomprange=\count336
-\c@maxcomprange=\count337
-\c@mincompwidth=\count338
+\c@mincomprange=\count342
+\c@maxcomprange=\count343
+\c@mincompwidth=\count344
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -2432,72 +2451,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'phys.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count339
-\c@savedafterword=\count340
-\c@annotator=\count341
-\c@savedannotator=\count342
-\c@author=\count343
-\c@savedauthor=\count344
-\c@bookauthor=\count345
-\c@savedbookauthor=\count346
-\c@commentator=\count347
-\c@savedcommentator=\count348
-\c@editor=\count349
-\c@savededitor=\count350
-\c@editora=\count351
-\c@savededitora=\count352
-\c@editorb=\count353
-\c@savededitorb=\count354
-\c@editorc=\count355
-\c@savededitorc=\count356
-\c@foreword=\count357
-\c@savedforeword=\count358
-\c@holder=\count359
-\c@savedholder=\count360
-\c@introduction=\count361
-\c@savedintroduction=\count362
-\c@namea=\count363
-\c@savednamea=\count364
-\c@nameb=\count365
-\c@savednameb=\count366
-\c@namec=\count367
-\c@savednamec=\count368
-\c@translator=\count369
-\c@savedtranslator=\count370
-\c@shortauthor=\count371
-\c@savedshortauthor=\count372
-\c@shorteditor=\count373
-\c@savedshorteditor=\count374
-\c@labelname=\count375
-\c@savedlabelname=\count376
-\c@institution=\count377
-\c@savedinstitution=\count378
-\c@lista=\count379
-\c@savedlista=\count380
-\c@listb=\count381
-\c@savedlistb=\count382
-\c@listc=\count383
-\c@savedlistc=\count384
-\c@listd=\count385
-\c@savedlistd=\count386
-\c@liste=\count387
-\c@savedliste=\count388
-\c@listf=\count389
-\c@savedlistf=\count390
-\c@location=\count391
-\c@savedlocation=\count392
-\c@organization=\count393
-\c@savedorganization=\count394
-\c@origlocation=\count395
-\c@savedoriglocation=\count396
-\c@origpublisher=\count397
-\c@savedorigpublisher=\count398
-\c@publisher=\count399
-\c@savedpublisher=\count400
-\c@language=\count401
-\c@savedlanguage=\count402
-\c@pageref=\count403
-\c@savedpageref=\count404
+\c@afterword=\count345
+\c@savedafterword=\count346
+\c@annotator=\count347
+\c@savedannotator=\count348
+\c@author=\count349
+\c@savedauthor=\count350
+\c@bookauthor=\count351
+\c@savedbookauthor=\count352
+\c@commentator=\count353
+\c@savedcommentator=\count354
+\c@editor=\count355
+\c@savededitor=\count356
+\c@editora=\count357
+\c@savededitora=\count358
+\c@editorb=\count359
+\c@savededitorb=\count360
+\c@editorc=\count361
+\c@savededitorc=\count362
+\c@foreword=\count363
+\c@savedforeword=\count364
+\c@holder=\count365
+\c@savedholder=\count366
+\c@introduction=\count367
+\c@savedintroduction=\count368
+\c@namea=\count369
+\c@savednamea=\count370
+\c@nameb=\count371
+\c@savednameb=\count372
+\c@namec=\count373
+\c@savednamec=\count374
+\c@translator=\count375
+\c@savedtranslator=\count376
+\c@shortauthor=\count377
+\c@savedshortauthor=\count378
+\c@shorteditor=\count379
+\c@savedshorteditor=\count380
+\c@labelname=\count381
+\c@savedlabelname=\count382
+\c@institution=\count383
+\c@savedinstitution=\count384
+\c@lista=\count385
+\c@savedlista=\count386
+\c@listb=\count387
+\c@savedlistb=\count388
+\c@listc=\count389
+\c@savedlistc=\count390
+\c@listd=\count391
+\c@savedlistd=\count392
+\c@liste=\count393
+\c@savedliste=\count394
+\c@listf=\count395
+\c@savedlistf=\count396
+\c@location=\count397
+\c@savedlocation=\count398
+\c@organization=\count399
+\c@savedorganization=\count400
+\c@origlocation=\count401
+\c@savedoriglocation=\count402
+\c@origpublisher=\count403
+\c@savedorigpublisher=\count404
+\c@publisher=\count405
+\c@savedpublisher=\count406
+\c@language=\count407
+\c@savedlanguage=\count408
+\c@pageref=\count409
+\c@savedpageref=\count410
 \shorthandwidth=\skip267
 \shortjournalwidth=\skip268
 \shortserieswidth=\skip269
@@ -2515,13 +2534,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count405
-\c@textcitetotal=\count406
-\c@textcitemaxnames=\count407
-\c@biburlnumpenalty=\count408
-\c@biburlucpenalty=\count409
-\c@biburllcpenalty=\count410
-\c@smartand=\count411
+\c@textcitecount=\count411
+\c@textcitetotal=\count412
+\c@textcitemaxnames=\count413
+\c@biburlnumpenalty=\count414
+\c@biburlucpenalty=\count415
+\c@biburllcpenalty=\count416
+\c@smartand=\count417
 )
 Package biblatex Info: Trying to load bibliography style 'phys'...
 Package biblatex Info: ... file 'phys.bbx' found.
@@ -2543,8 +2562,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count412
-\c@bbx:relatedtotal=\count413
+\c@bbx:relatedcount=\count418
+\c@bbx:relatedtotal=\count419
 ))))
 Package biblatex Info: Trying to load citation style 'phys'...
 Package biblatex Info: ... file 'phys.cbx' found.
@@ -2556,8 +2575,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count414
-\c@cbx@tempcntb=\count415
+\c@cbx@tempcnta=\count420
+\c@cbx@tempcntb=\count421
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -2616,15 +2635,15 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen341
-\Hy@linkcounter=\count416
-\Hy@pagecounter=\count417
+\Hy@linkcounter=\count422
+\Hy@pagecounter=\count423
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count418
+\Hy@SavedSpaceFactor=\count424
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -2636,10 +2655,10 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count419
+\c@Hy@tempcnt=\count425
 LaTeX Info: Redefining \url on input line 5044.
 \XeTeXLinkMargin=\dimen342
-\Fld@menulength=\count420
+\Fld@menulength=\count426
 \Field@Width=\dimen343
 \Fld@charsize=\dimen344
 Package hyperref Info: Hyper figures OFF on input line 6298.
@@ -2651,23 +2670,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count421
-\c@Item=\count422
-\c@Hfootnote=\count423
+\Hy@abspage=\count427
+\c@Item=\count428
+\c@Hfootnote=\count429
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count424
-\c@Hpagenote=\count425
+\c@memhycontfloat=\count430
+\c@Hpagenote=\count431
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count426
-\c@bookmark@seq@number=\count427
+\Fld@listcount=\count432
+\c@bookmark@seq@number=\count433
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -2676,15 +2695,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip273
 )
-Package hyperref Info: Option `linktocpage' set `true' on input line 43.
+Package hyperref Info: Option `linktocpage' set `true' on input line 44.
 
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 43.
+(hyperref)                setting the option has no effect on input line 44.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+Package hyperref Info: Option `colorlinks' set `true' on input line 44.
 LaTeX Font Info:    Try loading font information for T1+BaskervilleF-TLF on inp
-ut line 100.
+ut line 101.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/T1BaskervilleF-TLF.f
 d
@@ -2692,84 +2711,85 @@ File: T1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for T1/Baske
 rvilleF-TLF.
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 100.
+(Font)              scaled to size 10.0pt on input line 101.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
 \tikzscale@accuracy=\skip274
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
+(./main.aux
 
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
+LaTeX Warning: Label `figure:t2_fit_q5_finite_m' multiply defined.
 
-\@quotelevel=\count428
-\@quotereset=\count429
-(./main.aux)
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 100.
+LaTeX Font Info:    Checking defaults for OML/zbami/m/it on input line 101.
 LaTeX Font Info:    Try loading font information for OML+zbami on input line 10
-0.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
+1.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/omlzbami.fd
 File: omlzbami.fd 2016/11/11 Fontinst v1.933 font definitions for OML/zbami.
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 100.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 100
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 101
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 100.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 101.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 101.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 101.
 LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 10
-0.
+1.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 101.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 1
-00.
+01.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 100.
-\c@mv@tabular=\count430
-\c@mv@boldtabular=\count431
+(Font)              scaled to size 9.0pt on input line 101.
+\c@mv@tabular=\count434
+\c@mv@boldtabular=\count435
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -2777,17 +2797,17 @@ tim
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count432
+\scratchcounter=\count436
 \scratchdimen=\dimen345
 \scratchbox=\box67
-\nofMPsegments=\count433
-\nofMParguments=\count434
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count435
+\nofMPsegments=\count437
+\nofMParguments=\count438
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count439
 \MPscratchDim=\dimen346
-\MPnumerator=\count436
-\makeMPintoPDFobject=\count437
-\everyMPtoPDFconversion=\toks48
+\MPnumerator=\count440
+\makeMPintoPDFobject=\count441
+\everyMPtoPDFconversion=\toks49
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2820,7 +2840,7 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl
 LaTeX Font Info:    Try loading font information for OT1+BaskervilleF-TLF on in
-put line 49.
+put line 54.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/OT1BaskervilleF-TLF.
 fd
@@ -2828,51 +2848,51 @@ File: OT1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for OT1/Bas
 kervilleF-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 49.
+(Font)              scaled to size 9.0pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
+(Font)              scaled to size 7.3pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 49.
+(Font)              scaled to size 5.5pt on input line 54.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 54.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 49.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 54.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 49.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 54.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 49.
+(Font)              scaled to size 9.0pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
+(Font)              scaled to size 7.3pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
+(Font)              scaled to size 5.5pt on input line 54.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
+(Font)              scaled to size 7.3pt on input line 54.
 )
-Package biblatex Info: Reference section=0 on input line 100.
-Package biblatex Info: Reference segment=0 on input line 100.
+Package biblatex Info: Reference section=0 on input line 101.
+Package biblatex Info: Reference segment=0 on input line 101.
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring ON on input line 100.
+Package hyperref Info: Link coloring ON on input line 101.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2880,115 +2900,446 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count438
+\c@section@level=\count442
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 100.
-LaTeX Info: Redefining \ref on input line 100.
-LaTeX Info: Redefining \pageref on input line 100.
-LaTeX Info: Redefining \nameref on input line 100.
+LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 119.
+(Font)              scaled to size 14.4pt on input line 120.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 119.
+(Font)              scaled to size 14.4pt on input line 120.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 5.
+
+Overfull \hbox (0.86583pt too wide) in paragraph at lines 23--23
+ [][] []\T1/BaskervilleF-TLF/m/n/9 Numerical dif-fi-cul-ties with finite-$\OML/
+zbami/m/it/9 m$ \T1/BaskervilleF-TLF/m/n/9 sim-u-la-tions around 
+ []
+
 ) [1
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 136.
+(Font)              scaled to size 17.28pt on input line 152.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 136.
- (./chapters/dmrg_2d_classical.tex
+(Font)              scaled to size 17.28pt on input line 152.
+
+(./chapters/results_clock_model.tex
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 19.
+(Font)              scaled to size 10.95pt on input line 6.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 19.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 34.
+(Font)              scaled to size 10.95pt on input line 6.
  [1
 
 
 ]
+
+LaTeX Warning: Reference `sec:finite_size_scaling' on page 2 undefined on input
+ line 54.
+
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 66.
+(Font)              scaled to size 10.0pt on input line 68.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 68.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 68.
 
-[2] [3]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 68.
+
+[2]
+
+LaTeX Warning: Reference `sec:tmrg' on page 3 undefined on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 109.
+
+[3]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 127.
+
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 172.
+(Font)              scaled to size 7.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 172.
- [4] [5]
+(Font)              scaled to size 5.5pt on input line 141.
 
-LaTeX Warning: Reference `chapter:introduction_to_tensor_networks' on page 6 un
-defined on input line 237.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 143.
 
-[6] (./images/tensor_network_4_sites.tikz) (./images/q_to_p.tikz)
-(./images/a_tensor.tikz) [7] (./images/2d_ising.tikz)
-Overfull \hbox (16.80244pt too wide) in paragraph at lines 120--332
+[4]
+
+LaTeX Warning: Reference `sec:spectrum_of_ctm' on page 5 undefined on input lin
+e 170.
+
+(./plots/spectrum_ctm_clock.tikz
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 66.
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+) [5]
+
+LaTeX Warning: Reference `sec:magnetization_per_site' on page 6 undefined on in
+put line 195.
+
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 6 undefined on input 
+line 203.
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 231.
+[6] (./plots/entropy_and_order_param_vs_T_clock5.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 57.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 57.
+LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 6.2pt on input line 57.
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
+line 240.
+
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
+line 240.
+
+(./plots/entropy_and_order_param_vs_T_clock6.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+Missing character: There is no ; in font nullfont!
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
+line 247.
+
+
+LaTeX Warning: Reference `sec:analogy_to_entropy' on page 7 undefined on input 
+line 247.
+
+
+Overfull \hbox (4.02184pt too wide) in paragraph at lines 259--262
+\T1/BaskervilleF-TLF/m/n/9 rived $\OML/zbami/m/it/9 ^^X\LMS/ntxsy/m/n/9 ¹\OML/z
+bami/m/it/9 m\LMS/ntxsy/m/n/9 º$ \T1/BaskervilleF-TLF/m/n/9 from the bond di-me
+n-sion $\OML/zbami/m/it/9 m$ \T1/BaskervilleF-TLF/m/n/9 in the case of finite-$
+\OML/zbami/m/it/9 m$ \T1/BaskervilleF-TLF/m/n/9 scal-ing. Through-
+ []
+
+
+LaTeX Warning: Reference `sec:locating_critical_point_entanglement' on page 7 u
+ndefined on input line 269.
+
+[7] [8] [9]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 298.
+
+(./plots/t1_fit_q5.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+) (./plots/t1_fit_q6.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 337.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 337.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 337.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+[10] (./plots/t2_fit_q5_finite_N.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+) [11] (./plots/t2_fit_q5_finite_m.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+(./plots/t2_fit_q6_finite_N.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+) (./plots/t2_fit_q6_finite_m.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+(./plots/t2_fit_q5_finite_m.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+
+LaTeX Warning: Reference `sec:definition_effective_length_scale_in_terms_of_xi'
+ on page 12 undefined on input line 423.
+
+[12] [13] (./plots/c_and_magnetic_exponent_vs_T.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+(./plots/c_and_magnetic_exponent_vs_T_q6.tikz
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+\openout5 = `main.pgf-plot.gnuplot'.
+
+runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
+
+PGFPlots: reading {main.pgf-plot.table}
+)
+Overfull \hbox (3.81721pt too wide) in paragraph at lines 66--458
  [][] 
  []
 
-[8] [9] (./images/transfer_matrix.tikz)
-
-LaTeX Warning: Reference `chapter:correspondence_quantum_classical' on page 10 
-undefined on input line 366.
-
-[10]
-Overfull \hbox (2.8718pt too wide) in paragraph at lines 385--387
-[]\T1/BaskervilleF-TLF/m/n/9 To spec-ify fixed in-stead of open bound-ary con-d
-i-tions, we may use as bound-
- []
-
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 423.
-
-LaTeX Warning: Reference `sec:convergence_criteria' on page 11 undefined on inp
-ut line 423.
-
-(./images/tmrg_initial_half_row_transfer_matrix.tikz)
-(./images/tmrg_add_site_and_renormalize.tikz)
-(./images/tmrg_eigenvalue_equation.tikz)
-(./images/tmrg_reduced_density_matrix.tikz) [11] [12] [13]
-(./images/corner_transfer_matrix_as_tensor_network.tikz)
-(./images/partition_function_tensor_network.tikz)
-Underfull \hbox (badness 1009) in paragraph at lines 541--541
-[]\T1/BaskervilleF-TLF/m/n/9 Figure 1.11: |Ten-sor net-work ap-prox-i-ma-tion t
-o $\OML/zbami/m/it/9 Z[]$ \T1/BaskervilleF-TLF/m/n/9 in the CTMRG
- []
-
-[14] [15] (./images/ctmrg_add_site_and_renormalize.tikz)
-(./images/ctmrg_reduced_density_matrix.tikz) [16] [17]
-(./images/ctmrg_two_columns.tikz) (./images/ctmrg_two_rows.tikz)
-(./images/ctmrg_four_corners.tikz) [18]
-(./images/magnetization_central_spin_tensor_network.tikz) [19]
-Overfull \hbox (8.22356pt too wide) in paragraph at lines 741--743
-\T1/BaskervilleF-TLF/m/n/9 trans-fer ma-trix $\OML/zbami/m/it/9 A$\T1/Baskervil
-leF-TLF/m/n/9 ) can be writ-ten as a den-sity ma-trix of an ef-fec-tive free fe
-rmionic
- []
-
-[20]
-Overfull \hbox (4.70781pt too wide) in paragraph at lines 775--779
-[]\T1/BaskervilleF-TLF/m/n/9 With a fixed bound-ary, the spec-trum in the dis-o
-r-dered phase doesn't change.
- []
-
-(./plots/spectrum_ctm.tikz
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+(./plots/fits_magnetization_massless_phase.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
 
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
@@ -3019,134 +3370,118 @@ PGFPlots: reading {main.pgf-plot.table}
 runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 
 PGFPlots: reading {main.pgf-plot.table}
-)
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 795.
-LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 795.
+) [14]
+
+LaTeX Warning: Reference `sec:simulations_with_finite_system_size' on page 15 u
+ndefined on input line 485.
+
+
+LaTeX Warning: Reference `sec:simulations_with_finite_bond_dimension' on page 1
+5 undefined on input line 489.
+
+[15]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 495.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 795.
+(hyperref)                removing `subscript' on input line 495.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 795.
-
-[21]) [22]
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
+(hyperref)                removing `math shift' on input line 495.
 
 
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 495.
 
 
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 495.
 
 
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 495.
 
+[16] [17] [18] [19] [20]
+LaTeX Font Info:    Try loading font information for TS1+BaskervilleF-TLF on in
+put line 523.
 
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Overfull \hbox (3.02013pt too wide) in paragraph at lines 168--168
-[]\T1/BaskervilleF-TLF/m/n/9 T. Nishino, and K. Oku-n-ishi, ``Cor-ner trans-fer
- ma-trix renor-mal-iza-tion group
- []
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Overfull \hbox (16.65497pt too wide) in paragraph at lines 168--168
-[]\T1/BaskervilleF-TLF/m/n/9 R. J. Bax-ter, \T1/BaskervilleF-TLF/m/it/9 Ex-actl
-y solved mod-els in sta-tis-ti-cal me-chan-ics \T1/BaskervilleF-TLF/m/n/9 (El-s
-e-vier, 1982) Chap. 13. 
- []
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 167.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/baskervillef/TS1BaskervilleF-TLF.
+fd
+File: TS1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for TS1/Bas
+kervilleF-TLF.
 )
+LaTeX Font Info:    Font shape `TS1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 523.
+) [21]
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Overfull \hbox (0.40518pt too wide) in paragraph at lines 169--169
+\T1/BaskervilleF-TLF/m/n/9 mag-netism in one-or two-dimensional isotropic Heise
+n-berg mod-els^^Q, [][]Phys-
+ []
+
 
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
@@ -3256,6 +3591,12 @@ Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
 
+Overfull \hbox (1.64037pt too wide) in paragraph at lines 169--169
+\T1/BaskervilleF-TLF/m/n/9 tion, vor-tices, and symmetry-breaking per-tur-ba-ti
+ons in the two-dimensional
+ []
+
+
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
 
@@ -3267,7 +3608,86 @@ mily. Using \mkbibnamefamily.
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
-[23
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Overfull \hbox (2.04512pt too wide) in paragraph at lines 169--169
+\T1/BaskervilleF-TLF/m/n/9 abelian spin and gauge sys-tems^^Q, [][]Phys-i-cal R
+e-view D \T1/BaskervilleF-TLF/b/n/9 19\T1/BaskervilleF-TLF/m/n/9 , 3698^^U3714 
+(1979)[][]. 
+ []
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+[22
 
 
 ]
@@ -3404,12 +3824,6 @@ Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
 
-Overfull \hbox (4.5681pt too wide) in paragraph at lines 168--168
-[]\T1/BaskervilleF-TLF/m/n/9 S. Östlund, and S. Rom-mer, ``Ther-mo-dy-namic lim
-it of den-sity ma-trix renor-
- []
-
-
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
 
@@ -3420,30 +3834,6 @@ mily. Using \mkbibnamefamily.
 
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
-
-
-Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
-iven. Using \mkbibnamegiven.
-
-
-Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
-mily. Using \mkbibnamefamily.
-
-
-Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
-uffix. Using \mkbibnamesuffix.
-
-
-Overfull \hbox (18.68901pt too wide) in paragraph at lines 168--168
-[]\T1/BaskervilleF-TLF/m/n/9 S. Rom-mer, and S. Östlund, ``Class of ansatz wave
- func-tions for one-dimensional
- []
-
-
-Overfull \hbox (1.25783pt too wide) in paragraph at lines 168--168
-\T1/BaskervilleF-TLF/m/n/9 spin sys-tems and their re-la-tion to the den-sity m
-a-trix renor-mal-iza-tion group'',
- []
 
 
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
@@ -3494,57 +3884,208 @@ Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
 
-Overfull \hbox (1.19121pt too wide) in paragraph at lines 168--168
-[]\T1/BaskervilleF-TLF/m/n/9 T. Nishino, T. Hik-i-hara, K. Oku-n-ishi, and Y. H
-ieida, ``Den-sity ma-trix renor-
- []
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
 
-[24]
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+[23]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AE4A3747E2F690EABD39C7BBEEDCDCAA;2444.
+(rerunfilecheck)             Checksum: 0AA27D7266C2DC538CE8949ABE74C335;1652.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52640 strings out of 493014
- 1148160 string characters out of 6133351
- 1761030 words of memory out of 5000000
- 55062 multiletter control sequences out of 15000+600000
- 359354 words of font info for 171 fonts, out of 8000000 for 9000
+ 52772 strings out of 493014
+ 1151410 string characters out of 6133351
+ 1919738 words of memory out of 5000000
+ 55209 multiletter control sequences out of 15000+600000
+ 377784 words of font info for 224 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,112p,10417b,2350s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-7.enc}{
-/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.enc}
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.enc
-}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}</u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-B
-old.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/Bas
-kervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/bas
-kervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/newtx/rtxbmi-rev.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/newtx/txbsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
-tx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txs
-yc.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (25 pages, 226357 bytes).
+ 75i,19n,112p,10417b,2684s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_3oppw2.e
+nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.
+enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.enc
+}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/Baskervill
+eF-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef
+/BaskervilleF-Italic.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
+txsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrl8
+a.pfb>
+Output written on main.pdf (24 pages, 299516 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 418 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,7 @@
 \begin{tikzpicture}
-  \def \centralCharge {'plots/data/central_charge_vs_T_q5_chi10-100.dat'}
-  \def \magneticExponent {'plots/data/magnetic_exponent_vs_T_q5_chi10-100.dat'}
-  \def \normOfResiduals {'plots/data/mse_vs_T_q5_chi10-100.dat'}
+  \def \centralCharge {'plots/data/central_charge_vs_T_q6_chi10-100.dat'}
+  \def \magneticExponent {'plots/data/magnetic_exponent_vs_T_q6_chi10-100.dat'}
+  \def \normOfResiduals {'plots/data/mse_vs_T_q6_chi10-100.dat'}
 
   \begin{groupplot}[
       group style={
@@ -21,10 +21,16 @@
     ]
 
     \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \centralCharge index 0};
-    % \addplot[mark=none, black, dashed, semithick]
-    % coordinates {(\pgfkeysvalueof{/pgfplots/xmin},1) (\pgfkeysvalueof{/pgfplots/xmax},1)};
     \draw[black, dashed, semithick]
     (axis cs:\pgfkeysvalueof{/pgfplots/xmin},1) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},1);
+
+    % Critical points
+    \draw[black, dashed, semithick]
+    (axis cs:0.700,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.700,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.883,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.883,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.901,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.901,\pgfkeysvalueof{/pgfplots/ymax});
 
     \nextgroupplot[
       ylabel={$\eta(T)$},
@@ -32,9 +38,17 @@
 
     \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \magneticExponent index 0};
     \draw[black, dashed, semithick]
-    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.16) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.16);
+    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.11111) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.11111);
     \draw[black, dashed, semithick]
     (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.25) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.25);
+
+    % Critical points
+    \draw[black, dashed, semithick]
+    (axis cs:0.700,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.700,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.883,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.883,\pgfkeysvalueof{/pgfplots/ymax});
+    \draw[black, dashed, semithick]
+    (axis cs:0.901,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0.901,\pgfkeysvalueof{/pgfplots/ymax});
 
     \nextgroupplot[
       ylabel={norm of residuals},
@@ -42,6 +56,11 @@
     ]
 
     \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \normOfResiduals index 0};
+
+    % Critical points
+    \draw[black, dashed, semithick] ({axis cs:0.700,0}|-{rel axis cs:0,1}) -- ({axis cs:0.700,0}|-{rel axis cs:0,0});
+    \draw[black, dashed, semithick] ({axis cs:0.883,0}|-{rel axis cs:0,1}) -- ({axis cs:0.883,0}|-{rel axis cs:0,0});
+    \draw[black, dashed, semithick] ({axis cs:0.901,0}|-{rel axis cs:0,1}) -- ({axis cs:0.901,0}|-{rel axis cs:0,0});
 
   \end{groupplot}
 \end{tikzpicture}

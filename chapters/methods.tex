@@ -26,9 +26,9 @@ For specific purposes, free boundary conditions are used.
 
 \subsection{Simulations with finite bond dimension}\label{sec:simulations_with_finite_bond_dimension}
 The convergence of the CTMRG algorithm with fixed bond dimension $m$ (the infinite system algorithm) can be defined
-in multiple ways (\emph{cite}). In this thesis, the convergence after step $i$ of the algorithm is defined as
+in multiple ways (\emph{cite}). In this thesis, the convergence after step $n$ of the algorithm is defined as
 \begin{equation}\label{eq:convergence}
-  c_i = \sum_{\alpha = 1}^{m} | s_{\alpha}^{(i)} - s_{\alpha}^{(i - 1)} |,
+  c_n = \sum_{\alpha = 1}^{m} | s_{\alpha}^{(n)} - s_{\alpha}^{(n - 1)} |,
 \end{equation}
 where $s_{\alpha}$ are the singular values of the corner transfer matrix $A$. If the convergence falls below some
 threshold $\epsilon$, the algorithm terminates.
@@ -77,9 +77,6 @@ whereas the free energy follows a quadratic relationship
 \begin{equation}\label{eq:stepwise_difference_quadratic}
   \Delta f(\epsilon) = \alpha_{f}(m) \epsilon^2.
 \end{equation}
-
-\todo[inline]{Why is this case?
-It must have something to do with the fact that in the definition of the free energy the log is taken.}
 
 This means that we can confidently extrapolate the value of a quantity in the fully converged limit as
 \begin{equation}\label{eq:extrapolation_fully_converged_limit_finite_m}
@@ -194,8 +191,6 @@ of about $0.1\%$ in the correlation length, and less than $0.02\%$ in the order 
 entropy and free energy (the relative error on the free energy being basically zero).
 For lower values of $m$, the relative errors are substantially lower.
 See \autoref{table:rel_error_correlation_length_finite_m_T_crit}.
-
-\todo[inline]{What about convergence at $T^{\star}$?}
 
 For simulations of finite systems, we have found that choosing $m$ such that the truncation error $P_r$ (for
 \emph{residual probability}, its other common name) is smaller than $10^{-6}$ is sufficient for most purposes.

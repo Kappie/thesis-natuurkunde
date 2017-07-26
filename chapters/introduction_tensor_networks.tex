@@ -1,3 +1,6 @@
+This appendix discusses only what is strictly necessary to understand the tensor network notation in this thesis.
+For a more comprehensive introduction, see \cite{orus2014practical}.
+
 \section{Tensors, or multidimensional arrays}
 In the field of tensor networks, a tensor is a multidimensional table with numbers -- a
 convenient way to organize information. It is the generalization of a vector
@@ -124,4 +127,22 @@ tensor network. See \autoref{fig:reshaped_tensor} for an example.
 \end{figure}
 
 \subsection{Computational complexity of contraction}
-\todo[inline]{Computational complexity.}
+
+A contraction between two tensors
+\begin{equation}
+  C_{a_1 \dots a_m b_1 \dots b_n} = \sum_{z} A_{a_1 \dots a_m z} B_{z b_1 \dots b_n}
+\end{equation}
+takes
+\begin{equation}
+  \mathcal{O} \left( |z| \prod_{i} |a_i| \prod_{i} |b_i| \right)
+\end{equation}
+operations, where $|i|$ is the dimension of index $i$.
+This is a straightforward generalisation of the fact that multiplication of an $n \times m$-matrix and an $m \times
+p$-matrix takes $\mathcal{O}(n m p)$ operations.
+
+This implies that the complexity of contracting an entire network of tensors depends vitally on the order in which the
+indices are summed over (in which order the \enquote{legs are closed}).
+For a simple example of this, see section 4.2.1 of \cite{schollwock2011density}.
+
+Determining the optimal order is highly non-trivial (in fact, known to be NP-hard) and also depends on available
+computer memory \cite{pfeifer2014faster}.

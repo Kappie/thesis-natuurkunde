@@ -211,9 +211,11 @@ This is to be expected, since half the spectrum of the corner transfer matrix is
 
 \section{Locating the critical point}\label{sec:locating_the_critical_point}
 
-In general, the critical point is not known, but it may be located using the spectrum of the corner transfer matrix as
-described in \autoref{sec:locating_critical_point_entanglement}. For a given value of $m$ (or $N$, in a finite-size approximation), the pseudocritical temperature is defined as the point of maximum entropy.
+In general, the critical point is not known, but it may be located by extrapolating the position of the pseudocritical temperature at finite system sizes.
 
+The pseudocritical point can be defined in a variety of ways.
+In this chapter, we will define the pseudocritical point as the point of maximum entropy,
+as described in \autoref{sec:locating_critical_point_entanglement}.
 \autoref{fig:entropy_vs_T} shows the classical analogue to the entanglement entropy as a function of temperature for
 different values of $m$.
 
@@ -257,8 +259,6 @@ Finally, we may directly fit the law
 yielding $T_c = 2.269181$ and $\kappa/\nu = 1.91$.
 Incidentally, this is another way to confirm $\kappa \approx 1.9$ for systems with a fixed boundary.
 
-\todo[inline]{Why do length scales defined at $T^{\star}$ work better??
-It is fortunate that we don't need the length scales at $T_c$, since we don't know it.}
 
 \subsection{Finite $N$}
 
@@ -299,7 +299,7 @@ $N$                               & 2.269185  & 0.98          \\ \bottomrule
 We may also verify the validity of the different length scales by asserting that the data for different values of $m$
 should collapse on a single curve
 \begin{equation}
-  \mathcal{G}(t N_{\text{eff}}(m)^{1/\nu}) = M(T, m) N_{\text{eff}}(m)^{\beta/\nu}.
+  \mathcal{G}(t \xi(m)^{1/\nu}) = M(T, m) N_{\xi(m)^{\beta/\nu}}.
 \end{equation}
 
 All data points were calculated with a convergence threshold of $10^{-7}$.
@@ -347,3 +347,6 @@ $N$                               & 0.0075      \\ \bottomrule
 \section{Conclusions}
 
 \todo[inline]{TODO}
+
+\todo[inline]{Why do length scales defined at $T^{\star}$ work better??
+It is fortunate that we don't need the length scales at $T_c$, since we don't know it.}
