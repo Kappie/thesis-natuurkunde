@@ -223,8 +223,17 @@ different values of $m$.
 The critical point is located by fitting the scaling law in \autoref{eq:scaling_law_T_star}.
 
 \subsection{Finite $m$}
-For approximations with finite bond dimension $m$,
-it is not clear what length scale should be used to fit the scaling behaviour of $T^{\star}(m)$.
+For approximations with finite bond dimension $m$, we may use different length scales to fit the scaling behaviour of
+$T^{\star}(m)$.
+In light of the discussion in \autoref{sec:definition_effective_length_scale_in_terms_of_xi},
+we can choose either $\xi(T_c, m)$ or $\xi(T^{\star}(m), m)$.
+The latter suffers less from finite-size effects, but is dependent on the accuracy with which $T^{\star}$ is located.
+It is, of course, of more general interest since $T_c$ is normally not known.
+
+Furthermore, we will consider both $\xi(m)$ derived from the row-to-row transfer matrix
+(\autoref{eq:correlation_length_row_to_row_transfer_matrix}) and derived from the entanglement entropy
+(\autoref{eq:correlation_length_as_function_of_entropy}).
+
 \autoref{fig:T_pseudocrit_chi_power_law_fit} shows the fits for different choices of this length scale.
 The results are tabulated in \autoref{table:T_star_nu_results}.
 To obtain $T^{\star}$, we have calculated $T^{\star}(m)$ for $m \in \{10,
@@ -259,7 +268,6 @@ Finally, we may directly fit the law
 \end{equation}
 yielding $T_c = 2.269181$ and $\kappa/\nu = 1.91$.
 Incidentally, this is another way to confirm $\kappa \approx 1.9$ for systems with a fixed boundary.
-
 
 \subsection{Finite $N$}
 
@@ -300,7 +308,7 @@ $N$                               & 2.269185  & 0.98          \\ \bottomrule
 We may also verify the validity of the different length scales by asserting that the data for different values of $m$
 should collapse on a single curve
 \begin{equation}
-  \mathcal{G}(t \xi(m)^{1/\nu}) = M(T, m) N_{\xi(m)^{\beta/\nu}}.
+  \mathcal{G}(t \xi(m)^{1/\nu}) = M(T, m) \xi(m)^{\beta/\nu}.
 \end{equation}
 
 All data points were calculated with a convergence threshold of $10^{-7}$.
@@ -311,8 +319,6 @@ causing the curve $\mathcal{G}(x)$ to tend to zero almost vertically, making the
 \autoref{fig:data_collapse_chi} shows that for all length scales, the results more or less fall on one curve.
 \autoref{table:fitness_data_collapse_different_length_scales} shows the fitness of the data collapse
 \cite{bhattacharjee2001measure} (given by \autoref{eq:fitness_data_collapse}) for all length scales used.
-
-\todo[inline]{Say which length scales apparently don't work so well}
 
 Using $m^{\kappa}$ as a length scale for optimized fitness $P(\kappa)$ yields $\kappa \approx 1.98$,
 substantially higher than found previously for fixed boundary conditions.
@@ -347,5 +353,8 @@ $N$                               & 0.0075      \\ \bottomrule
 
 \section{Discussion}
 
-\todo[inline]{Why do length scales defined at $T^{\star}$ work better??
-It is fortunate that we don't need the length scales at $T_c$, since we don't know it.}
+\subsection{Finite-$m$ vs finite-size simulations}
+
+
+
+\subsection{Exponent $\kappa$}

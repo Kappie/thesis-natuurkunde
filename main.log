@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  26 JUL 2017 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  26 JUL 2017 16:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3245,26 +3245,35 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 225.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 264.
+LaTeX Warning: Reference `sec:definition_effective_length_scale_in_terms_of_xi'
+ on page 9 undefined on input line 228.
+
+
+LaTeX Warning: Reference `eq:correlation_length_row_to_row_transfer_matrix' on 
+page 9 undefined on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 264.
+(hyperref)                removing `math shift' on input line 272.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 272.
+
+[9]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 271.
+               Default added (so using `tbp') on input line 279.
 
 
-LaTeX Warning: Reference `eq:scaling_law_T_star' on page 9 undefined on input l
-ine 282.
+LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
+line 290.
 
 
-LaTeX Warning: Reference `eq:scaling_law_T_star' on page 9 undefined on input l
-ine 282.
+LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
+line 290.
 
-[9] (./plots/entropy_vs_T.tikz
+(./plots/entropy_vs_T.tikz
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 \openout5 = `main.pgf-plot.gnuplot'.
@@ -3291,11 +3300,11 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `eq:classical_entropy' on page 10 undefined on input l
-ine 288.
+ine 296.
 
 
 LaTeX Warning: Reference `eq:classical_entropy' on page 10 undefined on input l
-ine 288.
+ine 296.
 
 (./plots/T_pseudocrit_chi_power_law_fit.tikz
 \openout5 = `main.pgf-plot.gnuplot'.
@@ -3351,19 +3360,18 @@ PGFPlots: reading {main.pgf-plot.table}
 )
 
 LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
-line 295.
+line 303.
 
 
 LaTeX Warning: Reference `eq:scaling_law_T_star' on page 10 undefined on input 
-line 295.
+line 303.
 
-[10] [11]
 
-LaTeX Warning: Reference `eq:fitness_data_collapse' on page 12 undefined on inp
-ut line 313.
+LaTeX Warning: Reference `eq:fitness_data_collapse' on page 10 undefined on inp
+ut line 321.
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 315.
+ine 323.
 (./plots/data_collapse_chi.tikz
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -3492,21 +3500,22 @@ runsystem(gnuplot main.pgf-plot.gnuplot)...executed.
 PGFPlots: reading {main.pgf-plot.table}
 )
 
-LaTeX Warning: Float too large for page by 16.36656pt on input line 329.
+LaTeX Warning: Float too large for page by 16.36656pt on input line 337.
 
+[10]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 331.
+               Default added (so using `tbp') on input line 339.
 
 
-LaTeX Warning: Reference `eq:fitness_data_collapse' on page 12 undefined on inp
-ut line 343.
+LaTeX Warning: Reference `eq:fitness_data_collapse' on page 11 undefined on inp
+ut line 351.
 
 
-LaTeX Warning: Reference `eq:fitness_data_collapse' on page 12 undefined on inp
-ut line 343.
+LaTeX Warning: Reference `eq:fitness_data_collapse' on page 11 undefined on inp
+ut line 351.
 
-) [12] [13] [14]
+) [11] [12] [13] [14]
 
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
@@ -3695,11 +3704,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52682 strings out of 493014
- 1149523 string characters out of 6133351
- 1818419 words of memory out of 5000000
- 55218 multiletter control sequences out of 15000+600000
- 354894 words of font info for 187 fonts, out of 8000000 for 9000
+ 52653 strings out of 493014
+ 1148481 string characters out of 6133351
+ 1982630 words of memory out of 5000000
+ 55198 multiletter control sequences out of 15000+600000
+ 351564 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,19n,112p,10417b,2671s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.e
@@ -3714,10 +3723,10 @@ baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /newtx/txexs.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/t
 xsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/boondox/zxxrw8a
 .pfb>
-Output written on main.pdf (16 pages, 301330 bytes).
+Output written on main.pdf (16 pages, 301899 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
+ 299 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
  66 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
