@@ -1,6 +1,20 @@
 \begin{abstract}
-We present numerical results of finite-$m$ and finite-size scaling within the CTMRG method on the
-Ising model.
+We present numerical results of finite-$m$ and finite-size scaling within the CTMRG method on the Ising model.
+
+With finite-$m$ simulations, it is much easier to reach large system sizes,
+but thermodynamic quantities do not grow smoothly as a function of $m$,
+as a result of the underlying spectrum of the corner transfer matrix.
+This makes it harder to fit the basic power law divergences. Defining the correlation length in terms of the classical
+analogue to the entanglement entropy mitigates this effect somewhat.
+
+Quantities calculated with finite-size simulations do not suffer this unsmooth behaviour.
+Results for both methods are comparable, but it is plausible that finite-size data turns out to be more accurate when
+corrections to scaling are included.
+
+Apart from thermodynamic quantities, we also accurately compute the central charge of the critical point with both
+methods.
+Additionally, we verify the relation $\xi(m) \propto m^{\kappa}$ at the critical point,
+although the value of $\kappa$ found in this work is slightly lower than predicted in the literature.
 \end{abstract}
 
 \section{At the critical point}
@@ -196,7 +210,8 @@ These values have been calculated from simulations with $m \in \{10,
 59 \}$ left out, because for those values $m$ the system breaks its symmetry (see
 \autoref{sec:implications_for_finite_m_simulations}).
 The convergence threshold was chosen to be $\epsilon = 10^{-7}$.
-It is not lower since more values $m$ break symmetry as machine precision is approached.}
+It is not feasible to choose a lower threshold since more values of $m$ break symmetry as machine precision is
+approached.}
 \label{fig:support_for_kappa_free}
 \end{figure}
 
@@ -355,6 +370,49 @@ $N$                               & 0.0075      \\ \bottomrule
 
 \subsection{Finite-$m$ vs finite-size simulations}
 
+With finite-$m$ simulations, larger system sizes are accessible.
+This is clearly seen from the fact that for modest values of $m$,
+$T^{\star}(m)$ is already closer to the critical point than $T^{\star}(N)$ for the largest values of $N$.
 
+For the Ising model, finite-size and finite-$m$ scaling give comparable results.
+However, finite-size data is of much higher quality than the finite-$m$ data,
+since the latter suffers from structure due to the spectrum of the corner transfer matrix,
+even when defining the correlation via the entanglement entropy.
+Therefore, it is likely that finite-size results improve significantly if correction to scaling terms are
+included in the fits.
+
+For finite-size simulations, it is not entirely clear how the chosen bond dimension (and correspondingly,
+the truncation error) influences the precision of quantities and the position of the pseudocritical point.
+This could be analysed more thoroughly.
+A start with this has been made in \autoref{sec:simulations_with_finite_system_size}.
+
+It might be possible to simulate larger system sizes without much loss of accuracy,
+but it seems unlikely that the same system sizes as in the finite-$m$ regime are accessible.
+
+For finite-$m$ results it is much easier to assess the convergence of quantities (see
+\autoref{sec:simulations_with_finite_bond_dimension}).
+The quality of the fit remains limited by the structure that is inherent in the data.
 
 \subsection{Exponent $\kappa$}
+
+We consistently find a value for the exponent $\kappa$ that is between 1.93 and 1.96 (for simulations with free
+boundary conditions), while the theoretically predicted value is approximately $2.034$.
+
+The first reason for this might simply be the fact that the data has half-moon shaped patterns that make it
+hard to extract an exponent reliably.
+
+A second possibility is that, since the predicted value for $\kappa$ is only valid in the limit $m \to \infty$,
+finite-$m$ effects cause the exponent obtained from numerical simulation to be lower.
+This is confirmed by the authors of \cite{pollmann2009theory}, who use the iTEBD algorithm \cite{vidal2007classical} to
+obtain $\kappa = 1.92$ for the Ising model and $\kappa = 1.26$ for the XXZ model (predicted value $1.34\dots$),
+among other results.
+However, the authors of \cite{tagliacozzo2008scaling} consistently find $\kappa \approx 2$ for the Ising model using
+iTEBD.
+
+A third possibility is that the corner transfer matrices used for the calculations in this work do not represent optimal
+matrix-product states.
+In theory, the CTMRG algorithm should produce an optimized row-to-row transfer matrix with matrix product structure in
+the thermodynamic limit \cite{baxter1982exactly_ctm}.
+But because simulations with free boundary conditions are sensitive to numerical errors,
+we could only choose a moderately low convergence threshold.
+This might in part explain the observed discrepancy.

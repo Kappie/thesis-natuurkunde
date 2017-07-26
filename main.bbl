@@ -176,6 +176,55 @@
       \verb https://doi.org/10.1088/0305-4470/34/33/302
       \endverb
     \endentry
+    \entry{vidal2007classical}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b11973d196179a77278edeaa262f44e0}{%
+           family={Vidal},
+           family_i={V\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{b11973d196179a77278edeaa262f44e0}
+      \strng{fullhash}{b11973d196179a77278edeaa262f44e0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{7}
+      \field{title}{Classical simulation of infinite-size quantum lattice systems in one spatial dimension}
+      \field{volume}{98}
+      \field{year}{2007}
+      \field{pages}{070201}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevLett.98.070201
+      \endverb
+    \endentry
+    \entry{baxter1982exactly_ctm}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ed0df457cfd5c4c92016a5a14719247f}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ed0df457cfd5c4c92016a5a14719247f}
+      \strng{fullhash}{ed0df457cfd5c4c92016a5a14719247f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{13}
+      \field{title}{Exactly solved models in statistical mechanics}
+      \field{year}{1982}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput
