@@ -50,7 +50,7 @@ the length scale associated to the finite bond dimension $m$.
 
 The first direct comparison of finite-size scaling in the system size $N$ with scaling in
 the bond dimension of the CTMRG method $m$ was done
-in \cite{nishino1996numerical}.
+in \cite{nishino1996numerical}, which proceeds as follows.
 
 In the thermodynamic limit (corresponding to infinite $m$ and $N$), we have the following
 expression for the correlation length of a classical system
@@ -77,6 +77,14 @@ proportional to the correlation length of the system at the critical point $t = 
 \begin{equation}
   N_{\text{eff}}(m) \propto \xi(T = T_c, m).
 \end{equation}
+
+In general, when the location of the critical point is not exactly known,
+we can make use of \autoref{eq:finite_size_scaling_ansatz_tstarN} to obtain
+\begin{equation}\label{eq:N_eff_propto_xi_at_Tstar}
+  N_{\text{eff}}(m) \propto \xi(T = T^{\star}(m), m),
+\end{equation}
+which suffers less from finite-size effects, but is sensitive to the precision of $T^{\star}(m)$ in the case of a
+divergent quantity such as the correlation length.
 
 \section{Relation to finite-entropy scaling and the exponent $\kappa$.}
 

@@ -88,7 +88,7 @@ The conclusion of Kumano et al, which was obtained by a Monte Carlo study,
 was verified by Chatelain \cite{chatelain2014dmrg} using the TMRG algorithm \cite{nishino1995density} (see also
 \autoref{sec:tmrg}).
 Chatelain also found that the critical indices match those of the Villain model (\autoref{eq:eta_villain}),
-implying the cosine model is in the same universality class as the Villain model.
+implying the cosine model is in the same universality class.
 
 After the rebuttal by Kumano et al., Baek et al.
 published another work \cite{baek2013residual} in which they again use the (in the eyes of Kumano et al.) wrong
@@ -115,7 +115,7 @@ Lapilli et al. use the incorrect definition of the helicity modulus.
 
 Hwang asserts that the transition is not of KT-type because the data,
 which was obtained from systems of rather small size ($L \times L$-systems with $L = 20,
-\dots, 28$), also agrees with a power-law divergence of the correlation length. We will get back to this point.
+\dots, 28$), also agrees with a power-law divergence of the correlation length.
 
 The previous results for the transition temperatures are listed in \autoref{table:q6_previous_results}.
 For an overview that goes further back, see \cite{krvcmar2016phase}.
@@ -421,13 +421,18 @@ the estimation of $T_2$ is robust.
 
 By fitting the relation in \autoref{eq:entropy_as_function_of_xi2},
 where $\xi(m)$ is calculated as in \autoref{sec:definition_effective_length_scale_in_terms_of_xi},
-we can directly extract the central charge in this region.
+we can directly extract the central charge of the massless phase.
 
-The result is shown in the top panel of \autoref{figure:c_and_magnetic_exponent_vs_T}.
-It is seen to precisely agree with $c = 1$ in the massless phase.
+For $q = \{5, 6\}$ the results are shown in the top panels of \autoref{figure:c_and_magnetic_exponent_vs_T} and
+\autoref{figure:c_and_magnetic_exponent_vs_T_q6}.
+For both models, we recover $c = 1$.
 
-Outside the massless phase, a good fit to \autoref{eq:entropy_as_function_of_xi2} can no longer be obtained.
-This is consistent with the location of $T_1$ and $T_2$ that are found in this work.
+For $q = 5$, the positions of $T_1$ and $T_2$ do not precisely agree with the region in which a good fit to
+\autoref{eq:entropy_as_function_of_xi2} can be obtained.
+The actual massless phase seems to be larger than what the critical temperatures indicate.
+
+However, it is not clear how an effective value of $c$ diverges from 1 outside the massless phase,
+so we do not draw any conclusions about the correctness of $T_1$ and $T_2$ for $q = 5$ based on these results.
 
 \subsection{Varying exponent for the magnetization}
 We may verify the exponent with which the magnetization goes to zero in the massless phase by fitting
@@ -436,48 +441,72 @@ We may verify the exponent with which the magnetization goes to zero in the mass
 \end{equation}
 with $\xi(m)$ again defined via \autoref{eq:entropy_as_function_of_xi2}.
 
-The result is shown in the middle panel of \autoref{figure:c_and_magnetic_exponent_vs_T}.
-It agree very well with bla bla.
-Refer to villain exponents.
+The result is shown in the middle panels of \autoref{figure:c_and_magnetic_exponent_vs_T} and
+\autoref{figure:c_and_magnetic_exponent_vs_T_q6} for $q = \{5, 6\}$,
+respectively.
 
-\todo[inline]{Finish this when $T_1$ is definite}
+If we assume that the model under study is in the same universality class as the Villain formulation,
+$\eta$ should take the values listed in \autoref{eq:eta_villain} at the critical points.
+Again, the positions of the critical points found in this work seem to be too close together,
+except for the lower transition of $q = 6$, which agrees well with the theoretical value.
+
+Since the lower transition for $q = 6$ suffers the least from finite-size effects,
+it is plausible that the disagreement between the other transitions and the value of $\eta$ will be resolved when larger
+systems are considered, or finite-size effects are properly taken into account.
+We come back to this point in the discussion.
+
+The lower panels of \autoref{figure:c_and_magnetic_exponent_vs_T} and \autoref{figure:c_and_magnetic_exponent_vs_T_q6}
+show the norm of residuals of the fit to \autoref{eq:magnetization_scaling_massless_phase}.
+For $q = 6$, there were values of the magnetization for $0.7 < T < 0.83$ that were lower than expected
+for certain values of $m$, reflected by the higher norm of residuals in this region.
+This did not significantly influence the values of $c$ and $\eta$ found.
 
 \begin{figure}
   \centering
   \includegraphics[]{c_and_magnetic_exponent_vs_T.tikz}
-  \caption{$\eta = \frac{2\beta}{\nu}$ reaches $\frac{4}{25}$ around $T = 0.906$ and $\frac{1}{4}$ around $T = 0.952$.
+  \caption{Top panel: central charge obtained from fit to \autoref{eq:entropy_as_function_of_xi2}. The horizontal dashed line marks $c = 1$.
+  Middle panel: $\eta = 2 \beta / \nu$ obtained from fit to \autoref{eq:magnetization_scaling_massless_phase}.
   First 4 values were left out of the fit.
+  The horizontal dashed lines mark $\eta = 4/25$ and $\eta = 1/4$, the exact values obtained in the Villain formulation.
+  Bottom panel: norm of residuals for the fit to \autoref{eq:magnetization_scaling_massless_phase}.
+  For all calculations, we have used $m = 10, 20, \dots, 100$, simulated with a convergence threshold of $5 \times
+  10^{-8}$. The first four values of $m$ were left out of the fits to mitigate finite-size effects.
+  The vertical dashed lines mark the values of the critical points found in this work,
+  where both results of $T_2$ are included.
 }\label{figure:c_and_magnetic_exponent_vs_T}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[]{c_and_magnetic_exponent_vs_T_q6.tikz}
-  \caption{$\frac{2\beta}{\nu}$ reaches $\frac{4}{25}$ around $T = 0.906$ and $\frac{1}{4}$ around $T = 0.952$.
-  First 4 values were left out of the fit.
+  \caption{Same as \autoref{figure:c_and_magnetic_exponent_vs_T}, except that in the middle panel,
+  the horizontal lines mark $\eta = 4/36$ and $\eta = 1/4$.
+  Finite-size effects were less prominent, but there were some anomalous simulations for $0.7 < T < 0.83$ that showed
+  lower magnetization than expected for certain $m$-values.
+  We have found that including every $m$-value in the fit gave the best results.
 }\label{figure:c_and_magnetic_exponent_vs_T_q6}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[]{fits_magnetization_massless_phase.tikz}
-  \caption{Fits to \autoref{eq:magnetization_scaling_massless_phase} for temperatures a little bit to the left of,
-  in the middle of and a little bit to the right of the massless phase,
-  respectively.
-}\label{figure:fits_magnetization_massless_phase}
-\end{figure}
+% \begin{figure}
+%   \centering
+%   \includegraphics[]{fits_magnetization_massless_phase.tikz}
+%   \caption{Fits to \autoref{eq:magnetization_scaling_massless_phase} for temperatures a little bit to the left of,
+%   in the middle of and a little bit to the right of the massless phase,
+%   respectively.
+% }\label{figure:fits_magnetization_massless_phase}
+% \end{figure}
 
 \section{Discussion}
 
 \subsection{Finite-size effects}
 
-Overall, the values of $T_1$ and $T_2$ for $q = \{ 5, 6 \}$ in this work agree well with the values found by other
-authors, see \autoref{table:q5_previous_results} and \autoref{table:q6_previous_results}.
+Overall, the values of $T_1$ and $T_2$ for $q = \{ 5, 6 \}$ in this work agree reasonable well with the values found by
+other authors, see \autoref{table:q5_previous_results} and \autoref{table:q6_previous_results}.
 
-Finite-size scaling within the CTMRG is suffers more from finite-size effects than finite-$m$ scaling,
+Finite-size scaling within the CTMRG suffers more from finite-size effects than finite-$m$ scaling,
 since smaller system sizes are accessible.
-It is plausible that this is the reason that finite-size scaling yields values that differ somewhat from previous
-results and the results of finite-$m$ scaling.
+It is plausible that this is the reason that finite-size scaling yields values of the critical temperatures that differ
+somewhat from previous results and the results of finite-$m$ scaling.
 
 There are two straightforward ways that might improve the finite-size results.
 The first is to systematically study how the chosen bond dimension (and correspondingly,
@@ -491,6 +520,13 @@ Furthermore, for finite-$m$ results it is much easier to assess the convergence 
 However, finite-size data is of much higher quality than the finite-$m$ data,
 since the latter suffers from structure due to the spectrum of the corner transfer matrix.
 Therefore, it is not unlikely that results might improve if correction to scaling terms are included in the fits.
+
+Results for the exponent $\eta$ indicate that the critical temperatures found in both this study and previous work might
+be too close together.
+In further studies, it is necessary to consider larger systems (in both finite-$m$ and finite-size studies)
+and take corrections to scaling properly into account (in the finite-size study).
+It is conceivable that this causes both critical temperatures and the values of $\eta$ to be adjusted outwards
+towards their true values, thereby completely reconciling the results.
 
 \subsection{Other means of studying the transitions $T_1$ and $T_2$}
 
@@ -516,18 +552,5 @@ However, it is not clear if this will increase the precision of $T_1$.
 The transition $T_2$ may also be found by studying the magnetic susceptibility,
 as was done by \cite{borisenko2011numerical}.
 The susceptibility diverges more strongly than the entropy, but requires numerical derivatives to find.
-It is plausible that this method would yield an accuracy comparable to the current method,
+It is plausible that this method would not yield a better accuracy than current method,
 since it requires the same simulations to obtain $T_2$. Nonetheless, it would serve as a good consistency check.
-
-\begin{itemize}
-  \item use finite-size corrections for exponent $\eta$, though this would probably require finite-size scaling
-  as opposed to finite-$m$ scaling.
-  \item second-order phase transition impossible with varying exponent.
-  \item how does effective central charge diverge from 1 outside massless phase? This is not clear
-\end{itemize}
-
-
-\begin{itemize}
-  \item fix bug where I attached an $a$-tensor with wrong temperature.
-  \item If you make convergence too low, it can get impossible to reach, even for fixed boundary?
-\end{itemize}

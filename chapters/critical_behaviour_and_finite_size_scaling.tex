@@ -132,7 +132,7 @@ then the correlation length exponent $\nu$, given by
   \xi(T) \propto |T - T_c|^{-\nu}
 \end{equation}
 is, by using \autoref{eq:cross_over_temperature_scaling}, related to $\theta$ as
-\begin{equation}
+\begin{equation}\label{eq:theta_nu_relation}
   \theta = \frac{1}{\nu}.
 \end{equation}
 
@@ -182,7 +182,7 @@ in \autoref{eq:order_parameter_propto_correlation_length}, leading to
 \end{equation}
 At the critical point, however, the bulk correlation length diverges and the only relevant length scale is $N$,
 so that we must have
-\begin{equation}
+\begin{equation}\label{eq:finite_size_scaling_at_Tc}
   M(T = T_c, N) \propto N^{-\beta / \nu},
 \end{equation}
 from which it follows that
@@ -202,6 +202,27 @@ where it is used that (per \autoref{eq:xi_propto_t})
   y = \frac{N}{\xi(T)} \propto t^{\nu} N,
 \end{equation}
 and the new scaling function is customarily written as having argument $t N^{1/\nu} = (t^{\nu} N)^{1/\nu}$.
+
+As a side note, we mention that the most generally valid ansatz is actually
+\begin{equation}\label{eq:finite_size_scaling_ansatz_tstarN}
+  M(T, N) = N^{-\beta/\nu} \mathcal{G}(t^{\star}(N) N^{1/\nu})
+\end{equation}
+with
+\begin{equation}
+  t^{\star}(N) = T - T^{\star}(N).
+\end{equation}
+
+At $T_c$, we recover \autoref{eq:finite_size_scaling_at_Tc}. To see this, consider that at $T_c$
+\begin{equation}
+  t^{\star}(N) = T^{\star}(N) - T_c = a N^{-\lambda} = a N^{-1/\nu},
+\end{equation}
+where in the final equality we have used \autoref{eq:theta_nu_relation}, so that we have
+\begin{equation}
+  M(T = T_c, N) = N^{-\beta/\nu}\mathcal{G}(a N^{-1/\nu}N^{1/\nu}) \propto N^{-\beta/\nu}.
+\end{equation}
+
+In this thesis, we will mostly work with \autoref{eq:finite_size_scaling_ansatz_tN},
+but return to \autoref{eq:finite_size_scaling_ansatz_tstarN} when the value of $T_c$ is not exactly known.
 
 The critical exponents $\beta$ and $\nu$ and the critical temperature can now be extracted by asserting that the
 numerical data for different system sizes should collapse on a single curve

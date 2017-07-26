@@ -18,6 +18,7 @@
 
     \nextgroupplot[
       ylabel={$c$},
+      title={$q = 5$},
     ]
 
     \addplot+[only marks, black] gnuplot [raw gnuplot] { plot \centralCharge index 0};

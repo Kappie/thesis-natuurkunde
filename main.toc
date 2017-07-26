@@ -2,44 +2,28 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {1}Numerical results for the clock model}{1}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}Numerical results for the Ising model}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}At the critical point}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Previous numerical results}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.1.1}Existence of two length scales}{1}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}The $q = 5$ clock model}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.1.2}Central charge}{3}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}The $q = 6$ clock model}{3}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.1.3}Using the entropy to define the correlation length}{4}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Spectrum of the corner transfer matrix}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Exponent $\kappa $}{5}{subsection.1.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Magnetization}{6}{section.1.4}
+\contentsline {subsubsection}{\numberline {1.1.4.1}Comparison with exact result in asymptotic limit}{7}{subsubsection.1.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Classical analogue to the entanglement entropy}{6}{section.1.5}
+\contentsline {section}{\numberline {1.2}Locating the critical point}{8}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Transition temperatures}{7}{section.1.6}
+\contentsline {subsection}{\numberline {1.2.1}Finite $m$}{9}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.1}Numerical difficulties with finite-$m$ simulations around $T_1$}{10}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.2.2}Finite $N$}{9}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.2}Transition from the ordered to the massless phase $T_1$}{10}{subsection.1.6.2}
+\contentsline {section}{\numberline {1.3}Away from the critical point}{12}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.3}Transition from the massless to the disordered phase $T_2$}{10}{subsection.1.6.3}
+\contentsline {section}{\numberline {1.4}Discussion}{14}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.6.3.1}Finite-size scaling}{10}{subsubsection.1.6.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.6.3.2}Finite-$m$ scaling}{11}{subsubsection.1.6.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}The massless phase}{12}{section.1.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.7.1}Central charge}{12}{subsection.1.7.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.7.2}Varying exponent for the magnetization}{14}{subsection.1.7.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Discussion}{15}{section.1.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.1}Finite-size effects}{15}{subsection.1.8.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.2}Other means of studying the transitions $T_1$ and $T_2$}{17}{subsection.1.8.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{22}{section*.19}
+\contentsline {chapter}{Bibliography}{15}{section*.16}
