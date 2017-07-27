@@ -2077,10 +2077,28 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">okunishi1999universal</bcf:citekey>
-    <bcf:citekey order="1">davies1988corner</bcf:citekey>
-    <bcf:citekey order="1">peschel2009reduced</bcf:citekey>
-    <bcf:citekey order="2">okunishi1999universal</bcf:citekey>
+    <bcf:citekey order="1">baxter1978variational</bcf:citekey>
+    <bcf:citekey order="1">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="1">tsang1979square</bcf:citekey>
+    <bcf:citekey order="2">nishino1996corner</bcf:citekey>
+    <bcf:citekey order="3">white1992density</bcf:citekey>
+    <bcf:citekey order="4">nishino1996numerical</bcf:citekey>
+    <bcf:citekey order="5">kadanoff2009more</bcf:citekey>
+    <bcf:citekey order="5">domb1996critical</bcf:citekey>
+    <bcf:citekey order="6">peierls1936on_ising</bcf:citekey>
+    <bcf:citekey order="7">onsager1944two_dimensional</bcf:citekey>
+    <bcf:citekey order="8">griffiths1970dependence</bcf:citekey>
+    <bcf:citekey order="8">fisher1966quantum</bcf:citekey>
+    <bcf:citekey order="9">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="9">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="10">ostlund1995thermodynamic</bcf:citekey>
+    <bcf:citekey order="10">rommer1997class</bcf:citekey>
+    <bcf:citekey order="11">nightingale1986gap</bcf:citekey>
+    <bcf:citekey order="12">calabrese2004entanglement</bcf:citekey>
+    <bcf:citekey order="13">orus2014practical</bcf:citekey>
+    <bcf:citekey order="14">vidal2007entanglement</bcf:citekey>
+    <bcf:citekey order="15">verstraete2004renormalization</bcf:citekey>
+    <bcf:citekey order="15">jordan2008classical</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

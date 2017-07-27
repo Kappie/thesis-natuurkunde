@@ -99,8 +99,6 @@
 
 
 \begin{document}
-\renewcommand{\abstractname}{}
-\renewcommand{\absnamepos}{empty}
 
 \pagestyle{simple}
 
@@ -114,22 +112,28 @@
 
 % \input{chapters/titlepage}
 
+% \thispagestyle{empty}
+% \begin{abstract}
+% \input{chapters/abstract}
+% \end{abstract}
+%
+% \cleardoublepage
+
 \begingroup
 \renewcommand{\afterchaptertitle}{\vskip1.5em}
-
 \tableofcontents*
 \endgroup
 
-% \chapter{Abstract}
-% \input{chapters/abstract}
-%
+\renewcommand{\abstractname}{}
+\renewcommand{\absnamepos}{empty}
+
 % \chapter{Acknowledgements}
 % \input{chapters/acknowledgements}
 
 \mainmatter
 
-% \chapter{Introduction}
-% \input{chapters/introduction}
+\chapter{Introduction}
+\input{chapters/introduction}
 %
 % \chapter{Density matrix renormalization group method}
 % \input{chapters/dmrg}
@@ -142,17 +146,17 @@
 %
 % \chapter{Finite-$m$ scaling in the CTMRG algorithm}\label{chap:finite_m_scaling}
 % \input{chapters/finite_m_scaling}
-% %
-\chapter{Methods}
-\input{chapters/methods}
 % % %
+% \chapter{Methods}
+% \input{chapters/methods}
+% % % %
 % \chapter{Numerical results for the Ising model}
 % \input{chapters/results}
-
+%
 % \chapter{Numerical results for the clock model}
 % \input{chapters/results_clock_model}
-
-\appendix
+%
+% \appendix
 % \chapter{Correspondence of quantum and classical lattice
 % systems}\label{chapter:correspondence_quantum_classical}
 % \input{chapters/correspondence_quantum_classical}

@@ -1,24 +1,146 @@
-We investigate finite-size scaling behaviour in two-dimensional classical systems using
-the corner transfer matrix renormalization group (CTMRG) method. Instead of scaling in the
-system size $N$, we perform a scaling analysis in the bond dimension -- or numbers of
-basis states kept -- in approximating the corner transfer matrix of the system. This
-dimension is denoted $m$, though in other works it may appear as $\chi$ or $D$.
+This thesis investigates a numerical approximation method put forth by
+Baxter in 1978 \cite{baxter1978variational, baxter1982exactly_ctm,
+tsang1979square} based on the corner transfer matrix formulation of the
+partition function for two-dimensional classical lattice models with
+a round-a-face interaction. 
 
-This thesis is laid out as follows. Chapter two introduces the density matrix
-renormalization group (DMRG) method in the context of one-dimensional quantum systems.
-Since most of the literature and research focuses on quantum lattice models, it is helpful
-to keep this picture in mind.
+The method rose to prominence in 1996, under the name \emph{corner
+transfer matrix renormalization group} (CTMRG), when Nishino showed
+\cite{nishino1996corner} that in the thermodynamic limit, it is equivalent
+to the hugely successful density matrix renormalization group (DMRG)
+method for one-dimensional quantum systems \cite{white1992density},
+discovered a few years earlier by White.
 
-Chapter three explains how the ideas of DMRG can be applied to two-dimensional classical
-lattices. After making this connection clear, the corner transfer matrix
-renormalization group (CTMRG) method, a unification of DMRG and earlier ideas from Baxter, is introduced.
+The error in the CTMRG method comes from the fact that the corner transfer
+matrices, whose dimension diverges exponentially in the lattice size, have
+to be truncated at a maximum size $m$ in order to make numerical
+manipulation possible. This finite \emph{bond dimension} $m$ introduces
+finite-size effects, comparable to those observed for systems that are
+finite in one or more spatial dimensions. This was already realized by
+Nishino \cite{nishino1996numerical}.
 
-Chapter four introduces the concepts of critical behaviour and finite-size scaling,
-while chapter five makes the connection to finite-size effects that appear as a consequence of a finite bond dimension
-$m$ within the CTMRG method.
+The main objective of this thesis is to study how \emph{finite bond
+dimension scaling} may be performed with the CTMRG method.
 
-Chapter six describes implementation details and convergence behaviour of the CTMRG algorithm.
-Chapter seven presents numerical results of finite-$m$ scaling for the Ising model.
+Before the structure of this thesis is laid out, I will first make some
+general remarks on statistical mechanics and phase transitions, and on how
+the CTMRG method relates to the class of methods for simulating many-body
+systems that grew out of White's breakthrough, known as \emph{tensor
+network algorithms}.
 
-Chapter eight introduces the clock model and the basic concepts of the Kosterlitz-Thouless transition,
-presents results of finite-$m$ scaling and compares with works using other numerical methods.
+\section{Phase transitions}
+Statistical mechanics is concerned with describing the average properties
+of systems consisting of many particles. Examples of such systems are the
+atoms making up a bar magnet, the water molecules in a glass of water, or
+virtually any other instance of matter around us.
+
+Matter can arrange itself in various structures with fundamentally
+different properties. We call these distinct states of matter
+\emph{phases}. When matter changes from one phase to another, we say it
+undergoes a phase transition.
+
+Physics has made great strides in understanding these transitions. The
+complete history of the field is beyond the scope of this introduction and this
+thesis, but the reader may wish to consult \cite{kadanoff2009more,
+domb1996critical} to get an idea.
+
+Only as late as 1936, the occurrence of a phase transition
+within the framework of statistical physics was established by R. Peierls
+\cite{peierls1936on_ising}. He showed that the two-dimensional Ising model
+has a non-zero magnetization for sufficiently low temperatures. Since for
+high enough temperatures the Ising model loses its magnetization, it
+follows that there must be phase transition in between.
+
+The effort to understand the Ising model culminated with Onsager's exact
+solution in 1944 \cite{onsager1944two_dimensional}, which rigorously
+established a sharp transition point in the thermodynamic limit.
+
+One may question the relevance of studying very simple models such as the
+Ising model. As it turns out, systems that are at first sight vastly
+different may show qualitatively similar behaviour near a phase
+transition. For example, exponents that characterize the divergence of
+quantities near a transition are conjectured to be independent on
+microscopic details of the interactions between particles, but instead
+fall into distinct \emph{universality classes}
+\cite{griffiths1970dependence, fisher1966quantum}. Thus, studying the very
+simplest model may yield universal results.
+
+\section{Baxter's method as a precursor to tensor network methods}
+
+Baxter showed that the optimal truncation of corner transfer matrices
+corresponds, in the thermodynamic limit, to a variational optimization of
+the row-to-row transfer matrix within a certain subspace, now known as the
+subspace of \emph{matrix product states} (MPSs) \cite{baxter1968dimers,
+baxter1982exactly_ctm}.
+
+After the success of White's DMRG, which, as Nishino showed, is equivalent
+to Baxter's method, the underlying matrix-product structure was
+rediscovered in the context of one-dimensional quantum systems by Östlund
+and Rommer \cite{ostlund1995thermodynamic, rommer1997class}.
+
+It is historically significant but little known that Nightingale, in
+a footnote of a 1986 paper \cite{nightingale1986gap}, already made the
+remark that \enquote{The generalization [of Baxter's method] to quantum
+mechanical systems is straightforward.}
+
+After Östlund and Rommer, it was realized that reformulating White's
+algorithm directly in terms of matrix product states provided the
+explanation of the algorithm's shortcomings around phase transitions. An
+MPS-ansatz fundamentally limits the entropy of the ground state
+approximation and since the entropy diverges at a conformally invariant
+critical point \cite{calabrese2004entanglement}, DMRG gives inaccurate
+results.
+
+This gave rise to other ansätze, formulated in the language of tensor
+networks \cite{orus2014practical}, specifically designed to represent
+states with a certain amount of entropy. Examples are multi-scale
+entanglement renormalization ansatz (MERA) for critical one-dimensional
+quantum systems \cite{vidal2007entanglement} and projected entangled-pair
+states (PEPS) \cite{verstraete2004renormalization}
+for two-dimensional quantum systems.
+
+Other tensor network algorithms, such as infinite time-evolving block
+decimation \cite{vidal2007classical} in one dimension and iPEPS (infinite
+PEPS) \cite{jordan2008classical} in two dimensions, made it possible to
+directly approximate quantum systems in the thermodynamic limit.
+
+
+
+\section{Structure of this thesis}
+
+It is in the mostly quantum-oriented context sketched above that the
+research for this thesis was carried out. Therefore, I have chosen to
+begin by introducing White's algorithm in its original description
+(chapter two), before making the connection to two-dimensional classical
+lattices and properly introducing the corner transfer matrix formulation
+(chapter three).
+
+Chapter four introduces the concepts of critical behaviour and finite-size
+scaling and chapter five 
+
+
+
+% We investigate finite-size scaling behaviour in two-dimensional classical systems using
+% the corner transfer matrix renormalization group (CTMRG) method. Instead of scaling in the
+% system size $N$, we perform a scaling analysis in the bond dimension -- or numbers of
+% basis states kept -- in approximating the corner transfer matrix of the system. This
+% dimension is denoted $m$, though in other works it may appear as $\chi$ or $D$.
+%
+% This thesis is laid out as follows. Chapter two introduces the density matrix
+% renormalization group (DMRG) method in the context of one-dimensional quantum systems.
+% Since most of the literature and research focuses on quantum lattice models, it is helpful
+% to keep this picture in mind.
+%
+% Chapter three explains how the ideas of DMRG can be applied to two-dimensional classical
+% lattices. After making this connection clear, the corner transfer matrix
+% renormalization group (CTMRG) method, a unification of DMRG and earlier ideas from Baxter, is introduced.
+%
+% Chapter four introduces the concepts of critical behaviour and finite-size scaling,
+% while chapter five makes the connection to finite-size effects that appear as a consequence of a finite bond dimension
+% $m$ within the CTMRG method.
+%
+% Chapter six describes implementation details and convergence behaviour of the CTMRG algorithm.
+% Chapter seven presents numerical results of finite-$m$ scaling for the Ising model.
+%
+% Chapter eight introduces the clock model and the basic concepts of the Kosterlitz-Thouless transition,
+% presents results of finite-$m$ scaling and compares with works using other numerical methods.
