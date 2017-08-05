@@ -1,0 +1,59 @@
+In this thesis, we investigated finite bond dimension scaling with the corner transfer matrix renormalization group
+(CTMRG) method for two-dimensional classical models.
+The two main questions posed at the outset were
+\begin{enumerate}[(i)]
+  \item how finite bond dimension scaling works within the CTMRG method
+  and relatedly, how it compares to finite-size scaling within the same method, and\label{enumerate:1}
+  \item how finite bond dimension scaling with CTMRG compares to other numerical approaches.\label{enumerate:2}
+\end{enumerate}
+
+To address (i), we studied the square-lattice Ising model in \autoref{chapter:results_ising_model}.
+It is shown that exponents and the transition temperature may be approximated with an effective length scale defined in
+terms of the row-to-row transfer matrix at the (pseudo-)critical point,
+as was suggested by \cite{nishino1996numerical}.
+However, the calculated quantities show inherent deviations from the basic scaling laws,
+due to the spectrum of the underlying corner transfer matrix (CTM).
+These deviations are mitigated to some extent when we define the correlation length in terms of the classical analogue
+of the entanglement entropy.
+
+Scaling directly in the bond dimension $m$ is also possible, but less accurate since the law for the correlation
+length
+\begin{equation*}
+  \xi \propto m^{\kappa}
+\end{equation*}
+holds only in the limit $m \to \infty$ and does not take into account the spectrum of the CTM that is obtained.
+Our results indicate that $\kappa$ is between 1.93 and 1.96, while a theoretical analysis \cite{pollmann2009theory}
+predicts $\kappa \approx 2.03$, but the discrepancy can be explained by finite-$m$ effects and low quality of the fit
+because of to deviations due to the CTM spectrum.
+
+It was found that finite-$m$ scaling and finite-size scaling yield comparable accuracy for critical exponents and the
+transition temperature.
+With finite-$m$ scaling larger effective system sizes are obtainable,
+but finite-size approximations do not suffer from the deviations due to the CTM spectrum and are
+consequently of much higher quality. Therefore it is plausible that finite-size results will improve significantly if
+corrections to scaling are included in the fits.
+
+In \autoref{chapter:methods}, the convergence properties of both finite-$m$ and finite-size calculations were studied.
+For finite-size simulations, it is not entirely clear how the chosen bond dimension (and correspondingly,
+the truncation error) influences the precision of quantities and the position of the pseudocritical point.
+It might be possible to simulate larger system sizes without much loss of accuracy,
+but it seems unlikely that the same system sizes as in the finite-$m$ regime are accessible.
+
+For finite-$m$ results it is much easier to assess the convergence of quantities.
+The quality of the fit remains limited by the structure that is inherent in the data.
+
+In \autoref{chapter:results_clock_model}
+
+
+
+
+
+
+
+\section{Outlook}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
