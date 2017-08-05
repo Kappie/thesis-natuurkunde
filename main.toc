@@ -2,8 +2,4 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {1}Conclusions}{1}{chapter.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Outlook}{3}{section.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{4}{section*.2}
+\contentsline {chapter}{Acknowledgements}{ii}{chapter*.1}
