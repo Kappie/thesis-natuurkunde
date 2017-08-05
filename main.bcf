@@ -2098,7 +2098,10 @@
     <bcf:citekey order="13">orus2014practical</bcf:citekey>
     <bcf:citekey order="14">vidal2007entanglement</bcf:citekey>
     <bcf:citekey order="15">verstraete2004renormalization</bcf:citekey>
-    <bcf:citekey order="15">jordan2008classical</bcf:citekey>
+    <bcf:citekey order="16">vidal2007classical</bcf:citekey>
+    <bcf:citekey order="17">jordan2008classical</bcf:citekey>
+    <bcf:citekey order="18">tagliacozzo2008scaling</bcf:citekey>
+    <bcf:citekey order="19">pollmann2009theory</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
