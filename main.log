@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  27 JUL 2017 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  5 AUG 2017 11:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2909,60 +2909,40 @@ LaTeX Info: Redefining \nameref on input line 101.
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
- (./chapters/titlepage.tex
-<images/logo-amsterdam.png, id=31, 1127.21124pt x 168.63pt>
-File: images/logo-amsterdam.png Graphic file (type png)
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 124.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 124.
+ (./main.toc
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 5.
+) [1
 
-<use images/logo-amsterdam.png>
-Package pdftex.def Info: images/logo-amsterdam.png used on input line 33.
-(pdftex.def)             Requested size: 289.0pt x 43.23294pt.
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 35.
+(Font)              scaled to size 17.28pt on input line 135.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 37.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 37.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
+(Font)              scaled to size 17.28pt on input line 135.
+ (./chapters/introduction.tex
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 7.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 45.
+(Font)              scaled to size 10.95pt on input line 31.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 45.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 63.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 71.
+(Font)              scaled to size 10.95pt on input line 31.
  [1
 
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/logo-amsterdam.png>])
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 116.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 116.
-
-(./chapters/abstract.tex)pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.i}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.120 \cleardoublepage
-                       [1
-
-] (./main.toc) [2
-
-] (./chapters/acknowledgements.tex)
-[3
-
 ]
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 135.
+Overfull \hbox (2.48186pt too wide) in paragraph at lines 62--68
+\T1/BaskervilleF-TLF/m/n/9 rapidly im-prov-ing com-put-ers, the method of sta-t
+is-ti-cal sam-pling (Monte Carlo)
+ []
+
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 135.
- (./chapters/introduction.tex [1
-
-
-] [2] [3]) [4]
+(Font)              scaled to size 10.0pt on input line 69.
+[2] [3]) [4]
 
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
@@ -3199,15 +3179,123 @@ Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
 
-Overfull \hbox (4.5681pt too wide) in paragraph at lines 173--173
-[]\T1/BaskervilleF-TLF/m/n/9 S. Östlund, and S. Rom-mer, ^^P  Ther-mo-dy-namic 
-limit of den-sity ma-trix renor-
- []
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
 
 [5
 
 
 ]
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Overfull \hbox (4.5681pt too wide) in paragraph at lines 173--173
+[]\T1/BaskervilleF-TLF/m/n/9 S. Östlund, and S. Rom-mer, ^^P  Ther-mo-dy-namic 
+limit of den-sity ma-trix renor-
+ []
+
 
 Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
 iven. Using \mkbibnamegiven.
@@ -3535,7 +3623,7 @@ mily. Using \mkbibnamefamily.
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
-[6]
+[6] [7]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -3545,19 +3633,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7854ED6BA9E4F72C57B2842F234D1EB7;408.
+(rerunfilecheck)             Checksum: 603161935A7DC1167B509874687BE5AA;421.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51832 strings out of 493014
- 1127520 string characters out of 6133351
- 1744163 words of memory out of 5000000
- 54456 multiletter control sequences out of 15000+600000
- 305838 words of font info for 111 fonts, out of 8000000 for 9000
+ 51793 strings out of 493014
+ 1127183 string characters out of 6133351
+ 1746425 words of memory out of 5000000
+ 54446 multiletter control sequences out of 15000+600000
+ 251251 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,100p,10417b,1553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,100p,10417b,1553s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_gleaer.e
 nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervaldx/bvalph.enc}{
 /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.enc}
@@ -3568,10 +3656,10 @@ baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /newtx/txsys.pfb>
-Output written on main.pdf (10 pages, 126545 bytes).
+Output written on main.pdf (8 pages, 116833 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

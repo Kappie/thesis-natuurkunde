@@ -1,21 +1,21 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'main.blg'
-[91] biber-darwin:290> INFO - === Thu Jul 27, 2017, 17:58:00
-[127] Biber.pm:351> INFO - Reading 'main.bcf'
-[355] Biber.pm:776> INFO - Found 24 citekeys in bib section 0
-[387] Biber.pm:3493> INFO - Processing section 0
-[455] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
-[479] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[498] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
-[510] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
-[522] Utils.pm:149> WARN - Duplicate entry key: 'nienhuis1984critical' in file 'references.bib', skipping ...
-[544] Utils.pm:149> WARN - Duplicate entry key: 'lapilli2006universality' in file 'references.bib', skipping ...
-[632] Utils.pm:149> WARN - The field 'note' in entry 'orus2014practical' cannot be null, deleting it
-[632] Utils.pm:149> WARN - The field 'number' in entry 'orus2014practical' cannot be null, deleting it
-[667] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[667] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[667] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[668] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[731] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[738] bbl.pm:619> INFO - Output to main.bbl
-[738] Biber.pm:108> INFO - WARNINGS: 5
+[81] biber-darwin:290> INFO - === Sat Aug  5, 2017, 11:59:29
+[115] Biber.pm:351> INFO - Reading 'main.bcf'
+[257] Biber.pm:776> INFO - Found 29 citekeys in bib section 0
+[276] Biber.pm:3493> INFO - Processing section 0
+[329] Biber.pm:3657> INFO - Looking for bibtex format file 'references.bib' for section 0
+[340] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[355] bibtex.pm:1048> INFO - Found BibTeX data source 'references.bib'
+[364] Utils.pm:149> WARN - Duplicate entry key: 'jose1977renormalization' in file 'references.bib', skipping ...
+[367] Utils.pm:149> WARN - Duplicate entry key: 'nienhuis1984critical' in file 'references.bib', skipping ...
+[368] Utils.pm:149> WARN - Duplicate entry key: 'lapilli2006universality' in file 'references.bib', skipping ...
+[465] Utils.pm:149> WARN - The field 'note' in entry 'orus2014practical' cannot be null, deleting it
+[465] Utils.pm:149> WARN - The field 'number' in entry 'orus2014practical' cannot be null, deleting it
+[507] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[508] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[508] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[509] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[555] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[564] bbl.pm:619> INFO - Output to main.bbl
+[565] Biber.pm:108> INFO - WARNINGS: 5

@@ -2087,21 +2087,26 @@
     <bcf:citekey order="5">domb1996critical</bcf:citekey>
     <bcf:citekey order="6">peierls1936on_ising</bcf:citekey>
     <bcf:citekey order="7">onsager1944two_dimensional</bcf:citekey>
-    <bcf:citekey order="8">griffiths1970dependence</bcf:citekey>
-    <bcf:citekey order="8">fisher1966quantum</bcf:citekey>
-    <bcf:citekey order="9">baxter1968dimers</bcf:citekey>
-    <bcf:citekey order="9">baxter1982exactly_ctm</bcf:citekey>
-    <bcf:citekey order="10">ostlund1995thermodynamic</bcf:citekey>
-    <bcf:citekey order="10">rommer1997class</bcf:citekey>
-    <bcf:citekey order="11">nightingale1986gap</bcf:citekey>
-    <bcf:citekey order="12">calabrese2004entanglement</bcf:citekey>
-    <bcf:citekey order="13">orus2014practical</bcf:citekey>
-    <bcf:citekey order="14">vidal2007entanglement</bcf:citekey>
-    <bcf:citekey order="15">verstraete2004renormalization</bcf:citekey>
-    <bcf:citekey order="16">vidal2007classical</bcf:citekey>
-    <bcf:citekey order="17">jordan2008classical</bcf:citekey>
-    <bcf:citekey order="18">tagliacozzo2008scaling</bcf:citekey>
-    <bcf:citekey order="19">pollmann2009theory</bcf:citekey>
+    <bcf:citekey order="8">berlin1952spherical</bcf:citekey>
+    <bcf:citekey order="9">sutherland1967exact</bcf:citekey>
+    <bcf:citekey order="10">baxter1971eight-vertex</bcf:citekey>
+    <bcf:citekey order="11">baxter1982exactly</bcf:citekey>
+    <bcf:citekey order="12">kramers1941statistics</bcf:citekey>
+    <bcf:citekey order="13">griffiths1970dependence</bcf:citekey>
+    <bcf:citekey order="13">fisher1966quantum</bcf:citekey>
+    <bcf:citekey order="14">baxter1968dimers</bcf:citekey>
+    <bcf:citekey order="14">baxter1982exactly_ctm</bcf:citekey>
+    <bcf:citekey order="15">ostlund1995thermodynamic</bcf:citekey>
+    <bcf:citekey order="15">rommer1997class</bcf:citekey>
+    <bcf:citekey order="16">nightingale1986gap</bcf:citekey>
+    <bcf:citekey order="17">calabrese2004entanglement</bcf:citekey>
+    <bcf:citekey order="18">orus2014practical</bcf:citekey>
+    <bcf:citekey order="19">vidal2007entanglement</bcf:citekey>
+    <bcf:citekey order="20">verstraete2004renormalization</bcf:citekey>
+    <bcf:citekey order="21">vidal2007classical</bcf:citekey>
+    <bcf:citekey order="22">jordan2008classical</bcf:citekey>
+    <bcf:citekey order="23">tagliacozzo2008scaling</bcf:citekey>
+    <bcf:citekey order="24">pollmann2009theory</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

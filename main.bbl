@@ -309,6 +309,174 @@
       \verb https://link.aps.org/doi/10.1103/PhysRev.65.117
       \endverb
     \endentry
+    \entry{berlin1952spherical}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c103975f8e58f474a6d8547d6f518824}{%
+           family={Berlin},
+           family_i={B\bibinitperiod},
+           given={T.\bibnamedelimi H.},
+           given_i={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=b6fdb1f15e1ce8fc27c66640c1f6ccdd}{%
+           family={Kac},
+           family_i={K\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{5f43392a60aa29f7167f30f78f6044bc}
+      \strng{fullhash}{5f43392a60aa29f7167f30f78f6044bc}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{6}
+      \field{journaltitle}{Physical Review}
+      \field{month}{06}
+      \field{title}{The Spherical Model of a Ferromagnet}
+      \field{volume}{86}
+      \field{year}{1952}
+      \field{pages}{821\bibrangedash 835}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1103/PhysRev.86.821
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.86.821
+      \endverb
+    \endentry
+    \entry{sutherland1967exact}{article}{}
+      \name{author}{3}{}{%
+        {{hash=02564211434eed12c8ec3fbe698886f6}{%
+           family={Sutherland},
+           family_i={S\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+        {{hash=787602ad821c773b77299e44a3caa399}{%
+           family={Yang},
+           family_i={Y\bibinitperiod},
+           given={C.\bibnamedelimi N.},
+           given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=0a757dccd9d796d30767d961db8bcbbb}{%
+           family={Yang},
+           family_i={Y\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           given_i={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{280f3714d5e44d3c7a13a9ca103b44fa}
+      \strng{fullhash}{19a3c4b751a081f148baa52d9c6d51b9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{10}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{09}
+      \field{title}{Exact Solution of a Model of Two-Dimensional Ferroelectrics in an Arbitrary External Electric Field}
+      \field{volume}{19}
+      \field{year}{1967}
+      \field{pages}{588\bibrangedash 591}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.19.588
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.19.588
+      \endverb
+    \endentry
+    \entry{baxter1971eight-vertex}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed0df457cfd5c4c92016a5a14719247f}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{ed0df457cfd5c4c92016a5a14719247f}
+      \strng{fullhash}{ed0df457cfd5c4c92016a5a14719247f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{14}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{04}
+      \field{title}{Eight-Vertex Model in Lattice Statistics}
+      \field{volume}{26}
+      \field{year}{1971}
+      \field{pages}{832\bibrangedash 833}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.26.832
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.26.832
+      \endverb
+    \endentry
+    \entry{baxter1982exactly}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ed0df457cfd5c4c92016a5a14719247f}{%
+           family={Baxter},
+           family_i={B\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ed0df457cfd5c4c92016a5a14719247f}
+      \strng{fullhash}{ed0df457cfd5c4c92016a5a14719247f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Exactly solved models in statistical mechanics}
+      \field{year}{1982}
+    \endentry
+    \entry{kramers1941statistics}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f5932e7539e4f224d93f67e1f5084374}{%
+           family={Kramers},
+           family_i={K\bibinitperiod},
+           given={H.\bibnamedelimi A.},
+           given_i={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=924ec31687b7ae63b278693dbc2cd425}{%
+           family={Wannier},
+           family_i={W\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           given_i={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c1cbc4576a399f5a3666eb25fb9c7eb2}
+      \strng{fullhash}{c1cbc4576a399f5a3666eb25fb9c7eb2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Phys. Rev.}
+      \field{month}{08}
+      \field{title}{Statistics of the Two-Dimensional Ferromagnet. Part II}
+      \field{volume}{60}
+      \field{year}{1941}
+      \field{pages}{263\bibrangedash 276}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1103/PhysRev.60.263
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.60.263
+      \endverb
+    \endentry
     \entry{griffiths1970dependence}{article}{}
       \name{author}{1}{}{%
         {{hash=4ab6bc615333ce6e00f6e1cc0455b387}{%

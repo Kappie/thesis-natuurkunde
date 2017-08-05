@@ -52,10 +52,21 @@ has a non-zero magnetization for sufficiently low temperatures. Since for
 high enough temperatures the Ising model loses its magnetization, it
 follows that there must be phase transition in between.
 
-The effort to understand the Ising model culminated with Onsager's exact
-solution in 1944 \cite{onsager1944two_dimensional}, which rigorously
-established a sharp transition point in the thermodynamic limit.
+The effort to understand the Ising model culminated with Onsager's exact solution in 1944
+\cite{onsager1944two_dimensional}, which rigorously established a sharp transition point in the thermodynamic limit.
+In the years that followed, more models were exactly solved.
+Examples are the spherical model \cite{berlin1952spherical} (1952),
+ice-type models \cite{sutherland1967exact} (1967) and the eight-vertex model \cite{baxter1971eight-vertex} (1971).
+A pedagogical treatment of these and other models can be found in \cite{baxter1982exactly}.
 
+In the meantime, various approximation methods were developed.
+With rapidly improving computers, the method of statistical sampling (Monte Carlo) became one of the most prominent and
+its significance has not waned.
+Other methods are, among others, series expansions and variational approximations.
+A variational approximation put forth by Kramers and Wannier (1941) \cite{kramers1941statistics} was later seen to be
+equivalent to Baxter's corner transfer matrix method with $m = 1$.
+
+\subsection{Universality}
 One may question the relevance of studying very simple models such as the
 Ising model. As it turns out, systems that are at first sight vastly
 different may show qualitatively similar behaviour near a phase
@@ -155,5 +166,3 @@ The transition temperatures $T_1$ and $T_2$ are located by extrapolating the pos
 assuming the transitions are of the Kosterlitz-Thouless type.
 I find slightly contradictory results, based on exact results in a related formulation of the model,
 but argue it is plausible that this is due to finite-size effects.
-
-
