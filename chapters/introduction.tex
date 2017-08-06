@@ -4,11 +4,12 @@ tsang1979square} based on the corner transfer matrix formulation of the
 partition function for two-dimensional classical lattice models.
 
 The method rose to prominence in 1996, under the name \emph{corner
-transfer matrix renormalization group} (CTMRG), when Nishino showed
+transfer matrix renormalization group} (CTMRG), when Nishino and Okunishi showed
 \cite{nishino1996corner} that in the thermodynamic limit, it is equivalent
 to the hugely successful density matrix renormalization group (DMRG)
-method for one-dimensional quantum systems \cite{white1992density},
-discovered a few years earlier by White.
+method for one-dimensional quantum systems \cite{white1992density} (discovered in 1992 by White),
+which does not suffer from the \emph{negative sign problem} \cite{troyer2005computational} that makes Monte Carlo
+sampling of frustrated or fermionic systems infeasible.
 
 The error in the CTMRG method comes from the fact that the corner transfer
 matrices, whose dimension diverges exponentially in the lattice size, have
@@ -17,7 +18,7 @@ manipulation possible. This finite \emph{bond dimension} $m$ (also denoted
 by $\chi$ or $D$ in the literature) introduces
 finite-size effects, comparable to those observed for systems that are
 finite in one or more spatial dimensions. This was already realized by
-Nishino \cite{nishino1996numerical}.
+Nishino et al. \cite{nishino1996numerical}.
 
 The main objective of this thesis is to study how \emph{finite bond
 dimension scaling} may be performed with the CTMRG method.
@@ -64,7 +65,7 @@ With rapidly improving computers, the method of statistical sampling (Monte Carl
 its significance has not waned.
 Other methods are, among others, series expansions and variational approximations.
 A variational approximation put forth by Kramers and Wannier (1941) \cite{kramers1941statistics} was later seen to be
-equivalent to Baxter's corner transfer matrix method with $m = 1$.
+equivalent to Baxter's corner transfer matrix method with $m = 2$.
 
 \subsection{Universality}
 One may question the relevance of studying very simple models such as the
@@ -85,7 +86,7 @@ the row-to-row transfer matrix within a certain subspace, now known as the
 subspace of \emph{matrix product states} (MPSs) \cite{baxter1968dimers,
 baxter1982exactly_ctm}.
 
-After the success of White's DMRG, which, as Nishino pointed out, is equivalent
+After the success of White's DMRG, which, as Nishino and Okunishi pointed out, is equivalent
 to Baxter's method, the underlying matrix-product structure was rediscovered in
 the context of one-dimensional quantum systems by Östlund and Rommer
 \cite{ostlund1995thermodynamic, rommer1997class}.

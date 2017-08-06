@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  5 AUG 2017 19:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  6 AUG 2017 13:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2858,9 +2858,17 @@ LaTeX Info: Redefining \nameref on input line 101.
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 124.
+(Font)              scaled to size 8.0pt on input line 116.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 124.
+(Font)              scaled to size 8.0pt on input line 116.
+ (./chapters/abstract.tex) [1
+
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 123.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 123.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 5.
@@ -2908,43 +2916,49 @@ LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 7.3pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 5.5pt on input line 5.
-) [1
-
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./chapters/acknowledgements.tex) [2
+) [2
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 175.
+LaTeX Warning: Empty bibliography on input line 174.
 
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7CB5BA54362960D5D67FC903B0C22ACC;52.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 50DB72CCBCBE77AF369551975C129156;48
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51515 strings out of 493014
- 1120505 string characters out of 6133351
- 1739815 words of memory out of 5000000
- 54238 multiletter control sequences out of 15000+600000
- 119157 words of font info for 68 fonts, out of 8000000 for 9000
+ 51527 strings out of 493014
+ 1120870 string characters out of 6133351
+ 1737899 words of memory out of 5000000
+ 54249 multiletter control sequences out of 15000+600000
+ 151628 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,100p,10417b,1608s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.e
-nc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/Baskervi
-lleF-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervill
-ef/BaskervilleF-Regular.pfb>
-Output written on main.pdf (2 pages, 51771 bytes).
+pdfTeX warning (dest): name{section*.2} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/baskervillef/zba_taxp3x.enc
+}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef/Baskervill
+eF-Bold.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/baskervillef
+/BaskervilleF-Regular.pfb>
+Output written on main.pdf (2 pages, 46977 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
